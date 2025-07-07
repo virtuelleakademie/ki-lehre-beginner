@@ -1,0 +1,118 @@
+
+---
+title: "Aufgabe: Prompten Lernen"
+date: 07 Jul, 2025
+date-format: "DD MMM, YYYY"
+author: 
+  - name: Stefan Hackstein
+    affiliation: Virtual Academy, Bern University of Applied Sciences
+    affiliation-url: https://virtuelleakademie.ch
+license: CC BY
+bibliography: ../../bibliography.bib
+---
+
+# Lernziele
+
+- Promptingtechniken kennen & verstehen
+- Verschiedene Lernmodi mit Chatbots kennen lernen
+
+# Aufgabe 1 (10 min)
+**Prompten lernen mit Chatbots**
+
+Schaffen Sie sich mithilfe von Chatbots ein besseres Verständnis von Prompting und dessen verschiedenen Techniken. 
+
+Welchen Unterschied macht es, wenn Sie für neue Anfragen einen neuen Chat beginnen?
+
+## Einfache Prompts
+
+```markdown
+Wo finde ich einen offiziellen Leitfaden zum guten Prompting?
+```
+
+```markdown
+Bitte übersetze diesen Text auf Deutsch:  
+>>> Text in English/French/Italian/… <<<
+```
+
+## Erweiterte Prompts:
+
+### Neue Techniken kennen lernen
+
+```markdown
+Rolle: Prompt Experte  
+Aufgabe: Bitte hilf mir, mein prompten zu verbessern.  
+Details: Ich möchte verschiedene Prompting Techniken kennenlernen 
+sowie deren Vorteile, Nachteile und Einsatzmöglichkeiten verstehen.  
+Format: Diskutiere jeweils nur eine neue Technik.
+```
+
+### Verständnis prüfen lassen
+
+```markdown
+Rolle: Prompt Experte  
+Aufgabe: Bitte hilf mir, mein Verständnis zu festigen.  
+Details: Bitte stelle mir Verständnisfragen zu Promptingtechniken.  
+Format: Stelle jeweils nur eine Frage und warte auf meine Antwort. 
+Dann bewerte meine Antwort kritisch, gib eine Musterantwort und stelle
+die nächste Frage.
+```
+
+### Feedback und Verbesserungsvorchläge vom Experten
+
+```markdown
+Rolle: Prompt Experte  
+Aufgabe: Bitte hilf mir, meinen Prompt zu verbessern.  
+Details: Bewerte kritisch die Qualität meines Prompts und
+ schlage Verbesserungen vor. Diskutiere, ob weitere Prompting-
+ techniken für die Aufgabe geeignet wären; wenn ja, schlage 
+ eine entsprechende Erweiterung vor.  
+Format:   
+1. Diskutiere zuerst die Qualität meines Prompts und schliesse 
+mit einer Gesamtnote (ungenügend bis sehr gut).  
+2. Diskutiere dann die Eignung von weiteren Promptingtechniken.
+3. Antworte mit einem verbesserten Prompt in einer Codebox.  
+Mein Prompt: >>> Prompt einfuegen <<<
+```
+
+[Übersicht: Effektive Prompting Strategien](../resources/prompting/index.qmd)
+
+
+# Aufgabe 2 (5 min) 
+**Ihr ständiger Prompt Assistent**
+
+Generieren Sie mithilfe des folgenden Prompts die Anweisungen für einen Prompt Assistenten. Erstellen Sie damit einen neuen Custom Agenten, um künftig jederzeit einen Prompting Assistenten an Ihrer Seite zu haben. Der Assistent wird noch besser, wenn Sie ihm ein Nachschlagewerk an die Hand geben, zB die Prompting Guides, die Sie in Aufgabe 1 gefunden haben oder die im Referenzmaterial.
+
+### Bonus Frage
+
+Schaffen Sie es, mit den erlernten Techniken den folgenden Prompt zu verbessern, um den resultierenden Assistenten noch hilfreicher zu machen?
+
+## Professionellen Prompt erstellen
+
+```markdown
+# Prompt Engineer
+
+## Aufgabe  
+Erstelle einen Prompt für einen Prompt Assistenten
+
+## Zusatz  
+- Antworte mit einem Markdown prompt.   
+- Füge **weitere detaillierte Anweisungen** hinzu für   
+  1. primäre Aufgabe   
+  2. Anweisungen für gute Prompts
+```
+
+*Dieser Prompt ist in Markdown geschrieben. Das ist ein Satz von Formatierungsregeln, der es ermöglicht, mit reinem Text schnell und einfach verschiedenen visuelle Elemente wie Überschriften und Listen zu erstellen, ohne auf komplexe Formatierungswerkzeuge angewiesen zu sein. Syntax in 5 Minuten lernen: [Mardkown Guide](https://www.markdownguide.org/)*
+
+# Referenzmaterial
+
+
+[Best practices for prompt engineering - OpenAI](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+
+[GPT-4.1 Prompting Guide | OpenAI Cookbook](https://cookbook.openai.com/examples/gpt4-1_prompting_guide)
+
+[Prompt Engineering Guide](https://www.promptingguide.ai/)
+
+[Offizieller MS Copilot Prompting Guide](https://support.microsoft.com/de-de/topic/informationen-zu-copilot-eingabeaufforderungen-f6c3b467-f07c-4db1-ae54-ffac96184dd5)
+
+
+

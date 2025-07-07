@@ -1,0 +1,100 @@
+---
+title: "Aufgabe: Denken, nicht delegieren"
+date: 07 Jul, 2025
+date-format: "DD MMM, YYYY"
+author: 
+  - name: Stefan Hackstein
+    affiliation: Virtual Academy, Bern University of Applied Sciences
+    affiliation-url: https://virtuelleakademie.ch
+license: CC BY
+bibliography: ../../bibliography.bib
+---
+
+# Lernziele
+
+- Verständnis für die Wichtigkeit verschiedener kognitiver Prozesse für das Lernen
+- Einsicht, wie KI-Nutzung lernrelevante kongitive Prozesse wie kritisches Denken und Verständnis beeinflusst
+- Abschätzen, wie und wo KI das Lernen fördert oder behindert
+
+# Aufgabe (15 Minuten)
+
+## Ablauf
+
+In dieser Aufgabe werden wir die folgenden vier Fragen erforschen. Jeder recherchiert zwei Fragen, jeweils in unterschiedlichem Modus
+
+1. Zuerts klassisch: Ohne Chatbot
+2. Dann mithilfe von Chatbots
+
+*Wie Sie (mit dem Chatbot) recherchieren, ist Ihnen überlassen. Seien Sie kreativ!*
+
+
+::: {.pro-tip collapse="false"}
+## Antwortformat
+
+Statt einer Vollständigen Antwort, notieren Sie
+
+- relevante Aspekte
+- wichtige Fragen
+- kreative Ideen
+
+auf einem post-it und kleben diesen and die Flipchart der entsprechenden Frage
+:::
+
+
+<!-- ::: {.callout-important} -->
+```
+Wähle 2 der 4 Fragen → Verwende 2 verchiedene Lernmodi
+                                             ↓
+                     Frage 1 → Modus 1: Ohne Chatbot (5 min)
+                     Frage 2 → Modus 2: Mit Chatbot (5 min)  
+                                             ↓
+                      Aspekte / Fragen / Ideen auf die Flipchart
+```
+<!-- ::: -->
+
+
+
+
+
+::: {.callout-note collapse="true"}
+## Fragen
+
+1. Wie bildet sich Verständnis beim Lesen nur von Text und welche Faktoren entscheiden über die Effektivität? 
+2. Wie beeinflussen Zusammenfassungen das Verständnis? Was ist wichtig, um einen positiven Effekt zu erreichen?
+3. Wie wird kritisches Denken durch das Verfassen eigener Erklärungen gestärkt und wo sind die Grenzen dessen?
+4. Wie wichtig ist Feedback für den Lernprozess und in welcher Form erzielt es die grösste Wirkung?
+:::
+
+
+
+
+::: {.callout-note collapse="true"}
+## Reflection (20 Minuten)
+
+
+
+Nachdem wir nun von erster Hand die überschnelle Recherche kennengelernt haben, welche die Standardnutzung von Chatbots zur Recherche darstellt, möchten wir über diese Erfahrung Reflektieren.
+
+1. **Think (3 Minuten):** Durchatmen und über die Fragen unten reflektieren.
+2. **Pair (7 Minuten):** Reflektionen mit Sitznachbar diskutieren und Erkenntnisse notieren.
+3. **Share (10 Minuten):** Wichtigsten Erkenntnisse mit allen teilen.
+
+### Reflektionsfragen
+1. Wie unterschiedlich haben Sie die Lernmodi wahrgenommen, bzgl was Sie gelernt haben und wie es sich anfühlte.
+2. Welche Vor- und Nachteile haben Sie bei der Chatbotnutzung erlebt?
+3. Was ist Ihr wertvollster Ratschlag um mit Chatbots etwas neues zu lernen? Gilt das für Experten wie für Neulinge?
+::: 
+
+
+::: {.callout-note collapse="true"}
+## Für Ihren Unterricht
+
+Mit Studierenden eignet sich diese Art von Übung, um die Lösungen von kurzen Aufgaben mit und ohne KI zu vergleichen. Durch Fragen wie
+
+- Welche Lösung stammt von KI, welche nicht?
+- Wo half KI, wo war's mühselig?
+- Tipps für Mitstudierende
+
+schulen Sie die kritische, ergebnisorientierte Nutzung von KI und bekommen einen Einblick in die KI Nutzung ihrer Studierenden, ohne selbst ein tiefes Verständnis dafür haben zu müssen.
+::: 
+

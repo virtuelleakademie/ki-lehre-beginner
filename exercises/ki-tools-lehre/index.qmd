@@ -1,0 +1,44 @@
+---
+title: "Aufgabe: KI Tools für die Lehre"
+date: 07 Jul, 2025
+date-format: "DD MMM, YYYY"
+author: 
+  - name: Stefan Hackstein
+    affiliation: Virtual Academy, Bern University of Applied Sciences
+    affiliation-url: https://virtuelleakademie.ch
+license: CC BY
+bibliography: ../../bibliography.bib
+---
+
+# Lernziele
+
+- Reflexion über den bisherigen Einsatz von KI Tools im Unterricht
+- Auseinandersetzung mit den didaktischen Vorteilen verschiedener Tools
+- Erfahrungsaustausch über die Nützlichkeit von Tools im Lernkontext
+
+# Aufgabe (20 Minuten)
+
+In dieser Aufgabe reflektieren wir über den bisherigen Einsatz von Tools und deren Mehrwert im Unterricht.
+
+## Ablauf
+
+::: {.pro-tip collapse="true"}
+### 1. Think (3 MInuten)
+
+Welche Tools haben Sie bereits gewinnbringend eingesetzt?
+:::
+
+
+::: {.pro-tip collapse="true"}
+### 2. Pair (7 Minuten)
+
+Diskutieren Sie den didaktischen Mehrwert des bisherigen Einsatzes.
+:::
+
+::: {.pro-tip collapse="true"}
+### 3. Share (10 Minuten)
+
+Teilen Sie Ihre Erkenntnisse über den Nutzen der Tools: Welcher Einsatz war besonders nützlich? Warum?
+
+:::
+
