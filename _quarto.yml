@@ -12,11 +12,12 @@ project:
     - index.qmd
     - workshop/**/*.qmd
     - exercises/**/*.qmd
+    - slides/**/*.qmd
     - resources/**/*.qmd
 
 website:
-  title: "KI in der Lehre: Intermediate"
-  site-url: https://virtuelleakademie.github.io/ki-lehre-intermediate/
+  title: "KI in der Lehre: Beginner"
+  site-url: https://virtuelleakademie.github.io/ki-lehre-beginner/
   # repo-url: https://github.com/virtuelleakademie/cas-hochschuldidaktik/
   # repo-actions: [edit, issue]
   favicon: /assets/robot.png
@@ -36,12 +37,16 @@ website:
         href: workshop/index.qmd
         text: Workshop
 
+      - icon: file-slides
+        href: slides/index.qmd
+        text: Slides
+
       - icon: pencil
         href: exercises/index.qmd
         text: Übungen
 
     right:
-      - icon: file-slides
+      - icon: briefcase
         text: "Dokumente" # {{< fa person-chalkboard >}}
         menu:
           - text: "Begleitdokument: KI Weiterbildung"
@@ -70,10 +75,26 @@ website:
       background: light
       contents:
         - workshop/index.qmd
-        - workshop/umfrage/index.qmd
-        - workshop/wie-chatbots-denken/index.qmd
-        - workshop/chatbot-agenten/index.qmd
-        - workshop/prompting/index.qmd
+        - workshop/einstieg/index.qmd
+        - slides/grundlagen/index.qmd
+        - exercises/prompten-lernen/index.qmd
+        - slides/chatbots-grenzen/index.qmd
+        - exercises/denken-delegieren/index.qmd
+        - slides/chatbots-einfluss-lernen/index.qmd
+        - exercises/ki-tools-lehre/index.qmd
+        - slides/ki-tool-lehre/index.qmd
+
+    - title: "Slides"
+      style: "docked"
+      search: true
+      background: light
+      contents:
+        - slides/index.qmd
+        - slides/grundlagen/index.qmd
+        - slides/chatbots-grenzen/index.qmd
+        - slides/chatbots-einfluss-lernen/index.qmd
+        - slides/ki-tool-lehre/index.qmd
+
 
     - title: "Übungen"
       style: "docked"
@@ -81,10 +102,9 @@ website:
       background: light
       contents:
         - exercises/index.qmd
-        - exercises/exercise-1/index.qmd
-        - exercises/exercise-2/index.qmd
-        - exercises/exercise-3/index.qmd
-        - exercises/miro-board/index.qmd
+        - exercises/prompten-lernen/index.qmd
+        - exercises/denken-delegieren/index.qmd
+        - exercises/ki-tools-lehre/index.qmd
 
 page-footer:
   right:
@@ -93,6 +113,7 @@ page-footer:
 
 format:
   html:
+    code-copy: true
     theme:
       light: [simplex]
     toc: true

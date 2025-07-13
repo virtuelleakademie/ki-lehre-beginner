@@ -28,4 +28,4 @@ Die folgenden 4 Präsentationen vermitteln ein grundlegendes Verständnis über
 
 ## Übung: Chatbot nutzen lernen
 
-[Hier geht es zur Übung](../exercises/chatbots-nutzen/index.qmd)
+[Hier geht es zur Übung](../../exercises/prompten-lernen/index.qmd)

@@ -1,5 +1,5 @@
 ---
-title: "Aufgabe: Denken, nicht delegieren"
+title: "Aufgabe: Denken statt delegieren"
 date: 07 Jul, 2025
 date-format: "DD MMM, YYYY"
 author: 

@@ -74,7 +74,7 @@ mit einer Gesamtnote (ungenügend bis sehr gut).
 Mein Prompt: >>> Prompt einfuegen <<<
 ```
 
-[Übersicht: Effektive Prompting Strategien](../resources/prompting/index.qmd)
+[Übersicht: Effektive Prompting Strategien](../../resources/prompting/index.qmd)
 
 
 # Aufgabe 2 (5 min) 

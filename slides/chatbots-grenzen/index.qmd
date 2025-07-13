@@ -1,5 +1,5 @@
 ---
-title: Chatbots: Möglichkeiten & Grenzen
+title: Chatbots - Möglichkeiten & Grenzen
 ---
 
 
@@ -9,6 +9,5 @@ Diese Präsentation thematisiert
 2. Positiven & negativen Auswirkungen auf Lernerfolg
 3. Strategische Rolle von (Fach-)Hochschulen
 
-## Funktionsweise von KI Modellen
 
 <iframe src="https://slides.com/stefanhackstein/chatbots-grenzen/embed" height="500px" class="ratio ratio-16x9"></iframe>
