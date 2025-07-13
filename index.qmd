@@ -22,11 +22,9 @@ about:
 ---
 
 
-{{< bi calendar-event >}} 27. März 2025
 
-{{< bi clock >}} 9:00–12:00 Uhr
+{{< bi clock >}} 3:00 
 
-{{< bi map >}} Raum E103, Effingerstrasse 47, 3008 Bern
 
 <br>
 
@@ -40,11 +38,11 @@ Zusammen erforschen sie, wie künstliche Intelligenz in Bildungssystemen wirkung
 
 ## Website
 
-{{< bi link >}} [virtuelleakademie.github.io/ki-lehre-intermediate/](https://virtuelleakademie.github.io/ki-lehre-intermediate/)
+{{< bi link >}} [virtuelleakademie.github.io/ki-lehre-beginner/](https://virtuelleakademie.github.io/ki-lehre-beginner/)
 
 <br>
 <!-- ## QR Code -->
-{{< qrcode https://virtuelleakademie.github.io/ki-lehre-intermediate/ width=200 height=200 colorDark='#000000' >}}
+{{< qrcode https://virtuelleakademie.github.io/ki-lehre-beginner/ width=200 height=200 colorDark='#000000' >}}
 
 
 

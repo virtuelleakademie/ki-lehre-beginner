@@ -1,0 +1,15 @@
+---
+title: KI & Datenschutz
+---
+
+
+Diese Präsentation thematisiert
+
+1. Erkennen fehlerhafter KI-Nutzung
+2. KI-sichere Prüfungen
+3. Datenschutz in KI-Systemen
+4. Sorgfaltspflicht von Dozierenden
+
+## Funktionsweise von KI Modellen
+
+<iframe src="https://slides.com/stefanhackstein/ki-datenschutz/embed" height="500px" class="ratio ratio-16x9"></iframe>
