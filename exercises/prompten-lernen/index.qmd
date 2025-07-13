@@ -19,7 +19,7 @@ bibliography: ../../bibliography.bib
 # Aufgabe 1 (10 min)
 **Prompten lernen mit Chatbots**
 
-Schaffen Sie sich mithilfe von Chatbots ein besseres Verständnis von Prompting und dessen verschiedenen Techniken. 
+Schaffen Sie sich mithilfe von Chatbots und den folgenden Prompts ein besseres Verständnis von Prompting und dessen verschiedenen Techniken. 
 
 Welchen Unterschied macht es, wenn Sie für neue Anfragen einen neuen Chat beginnen?
 

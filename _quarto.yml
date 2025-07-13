@@ -58,6 +58,7 @@ website:
           - text: "Begleitdokument: Orientierungshilfe (PDF)"
             file: assets/pdfs/Orientierungshilfe.pdf
 
+
     tools:
       - icon: lightbulb-fill
         text: Knowledge Base
