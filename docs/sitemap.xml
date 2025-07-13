@@ -1,51 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/resources/resources.html</loc>
-    <lastmod>2025-03-24T17:35:37.563Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/resources/resources.html</loc>
+    <lastmod>2025-07-07T14:40:33.574Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/exercises/index.html</loc>
-    <lastmod>2025-03-27T00:14:22.749Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/exercises/prompten-lernen/index.html</loc>
+    <lastmod>2025-07-07T22:48:23.823Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/exercises/exercise-2/index.html</loc>
-    <lastmod>2025-03-27T00:12:44.959Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/exercises/ki-tools-lehre/index.html</loc>
+    <lastmod>2025-07-07T22:42:31.272Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/workshop/wie-chatbots-denken/index.html</loc>
-    <lastmod>2025-03-26T23:56:01.921Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/exercises/exercise-3/index.html</loc>
+    <lastmod>2025-07-07T14:40:33.569Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/workshop/prompting/index.html</loc>
-    <lastmod>2025-03-27T08:13:38.072Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/exercises/exercise-1/index.html</loc>
+    <lastmod>2025-07-07T14:40:33.568Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/workshop/chatbot-agenten/index.html</loc>
-    <lastmod>2025-03-26T23:59:36.580Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/workshop/index.html</loc>
+    <lastmod>2025-07-13T10:16:14.825Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/index.html</loc>
-    <lastmod>2025-03-26T13:08:17.380Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/index.html</loc>
+    <lastmod>2025-07-07T21:05:43.293Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/workshop/index.html</loc>
-    <lastmod>2025-03-27T07:06:14.579Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/workshop/einstieg/index.html</loc>
+    <lastmod>2025-07-07T20:10:52.964Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/workshop/umfrage/index.html</loc>
-    <lastmod>2025-03-27T06:59:54.312Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/exercises/denken-delegieren/index.html</loc>
+    <lastmod>2025-07-07T22:31:41.759Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/exercises/exercise-1/index.html</loc>
-    <lastmod>2025-03-27T00:09:22.159Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/exercises/exercise-2/index.html</loc>
+    <lastmod>2025-07-07T14:40:33.568Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/exercises/exercise-3/index.html</loc>
-    <lastmod>2025-03-27T07:48:40.467Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/exercises/index.html</loc>
+    <lastmod>2025-07-07T14:40:33.569Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/ki-lehre-intermediate/exercises/miro-board/index.html</loc>
-    <lastmod>2025-03-26T13:58:29.336Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/exercises/miro-board/index.html</loc>
+    <lastmod>2025-07-07T14:40:33.574Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/resources/prompting/index.html</loc>
+    <lastmod>2025-07-07T14:40:33.582Z</lastmod>
   </url>
 </urlset>
