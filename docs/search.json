@@ -14,100 +14,79 @@
     "text": "KI-basierte Schreibtools in der Lehre – Knowledge Base"
   },
   {
-    "objectID": "exercises/prompten-lernen/index.html",
-    "href": "exercises/prompten-lernen/index.html",
-    "title": "Aufgabe: Prompten Lernen",
+    "objectID": "slides/ki-tool-lehre/index.html",
+    "href": "slides/ki-tool-lehre/index.html",
+    "title": "KI-Tools für Lehre",
     "section": "",
-    "text": "Promptingtechniken kennen & verstehen\nVerschiedene Lernmodi mit Chatbots kennen lernen"
-  },
-  {
-    "objectID": "exercises/prompten-lernen/index.html#einfache-prompts",
-    "href": "exercises/prompten-lernen/index.html#einfache-prompts",
-    "title": "Aufgabe: Prompten Lernen",
-    "section": "Einfache Prompts",
-    "text": "Einfache Prompts\nWo finde ich einen offiziellen Leitfaden zum guten Prompting?\nBitte übersetze diesen Text auf Deutsch:  \n&gt;&gt;&gt; Text in English/French/Italian/… &lt;&lt;&lt;"
-  },
-  {
-    "objectID": "exercises/prompten-lernen/index.html#erweiterte-prompts",
-    "href": "exercises/prompten-lernen/index.html#erweiterte-prompts",
-    "title": "Aufgabe: Prompten Lernen",
-    "section": "Erweiterte Prompts:",
-    "text": "Erweiterte Prompts:\n\nNeue Techniken kennen lernen\nRolle: Prompt Experte  \nAufgabe: Bitte hilf mir, mein prompten zu verbessern.  \nDetails: Ich möchte verschiedene Prompting Techniken kennenlernen \nsowie deren Vorteile, Nachteile und Einsatzmöglichkeiten verstehen.  \nFormat: Diskutiere jeweils nur eine neue Technik.\n\n\nVerständnis prüfen lassen\nRolle: Prompt Experte  \nAufgabe: Bitte hilf mir, mein Verständnis zu festigen.  \nDetails: Bitte stelle mir Verständnisfragen zu Promptingtechniken.  \nFormat: Stelle jeweils nur eine Frage und warte auf meine Antwort. \nDann bewerte meine Antwort kritisch, gib eine Musterantwort und stelle\ndie nächste Frage.\n\n\nFeedback und Verbesserungsvorchläge vom Experten\nRolle: Prompt Experte  \nAufgabe: Bitte hilf mir, meinen Prompt zu verbessern.  \nDetails: Bewerte kritisch die Qualität meines Prompts und\n schlage Verbesserungen vor. Diskutiere, ob weitere Prompting-\n techniken für die Aufgabe geeignet wären; wenn ja, schlage \n eine entsprechende Erweiterung vor.  \nFormat:   \n1. Diskutiere zuerst die Qualität meines Prompts und schliesse \nmit einer Gesamtnote (ungenügend bis sehr gut).  \n2. Diskutiere dann die Eignung von weiteren Promptingtechniken.\n3. Antworte mit einem verbesserten Prompt in einer Codebox.  \nMein Prompt: &gt;&gt;&gt; Prompt einfuegen &lt;&lt;&lt;\nÜbersicht: Effektive Prompting Strategien"
-  },
-  {
-    "objectID": "exercises/prompten-lernen/index.html#professionellen-prompt-erstellen",
-    "href": "exercises/prompten-lernen/index.html#professionellen-prompt-erstellen",
-    "title": "Aufgabe: Prompten Lernen",
-    "section": "Professionellen Prompt erstellen",
-    "text": "Professionellen Prompt erstellen\n# Prompt Engineer\n\n## Aufgabe  \nErstelle einen Prompt für einen Prompt Assistenten\n\n## Zusatz  \n- Antworte mit einem Markdown prompt.   \n- Füge **weitere detaillierte Anweisungen** hinzu für   \n  1. primäre Aufgabe   \n  2. Anweisungen für gute Prompts\nDieser Prompt ist in Markdown geschrieben. Das ist ein Satz von Formatierungsregeln, der es ermöglicht, mit reinem Text schnell und einfach verschiedenen visuelle Elemente wie Überschriften und Listen zu erstellen, ohne auf komplexe Formatierungswerkzeuge angewiesen zu sein. Syntax in 5 Minuten lernen: Mardkown Guide"
-  },
-  {
-    "objectID": "exercises/ki-tools-lehre/index.html",
-    "href": "exercises/ki-tools-lehre/index.html",
-    "title": "Aufgabe: KI Tools für die Lehre",
-    "section": "",
-    "text": "Reflexion über den bisherigen Einsatz von KI Tools im Unterricht\nAuseinandersetzung mit den didaktischen Vorteilen verschiedener Tools\nErfahrungsaustausch über die Nützlichkeit von Tools im Lernkontext"
-  },
-  {
-    "objectID": "exercises/ki-tools-lehre/index.html#ablauf",
-    "href": "exercises/ki-tools-lehre/index.html#ablauf",
-    "title": "Aufgabe: KI Tools für die Lehre",
-    "section": "Ablauf",
-    "text": "Ablauf\n\n\n\n\n\n\n1. Think (3 MInuten)\n\n\n\n\n\nWelche Tools haben Sie bereits gewinnbringend eingesetzt?\n\n\n\n\n\n\n\n\n\n2. Pair (7 Minuten)\n\n\n\n\n\nDiskutieren Sie den didaktischen Mehrwert des bisherigen Einsatzes.\n\n\n\n\n\n\n\n\n\n3. Share (10 Minuten)\n\n\n\n\n\nTeilen Sie Ihre Erkenntnisse über den Nutzen der Tools: Welcher Einsatz war besonders nützlich? Warum?"
-  },
-  {
-    "objectID": "exercises/exercise-3/index.html",
-    "href": "exercises/exercise-3/index.html",
-    "title": "Übung 3: Eigenen Agenten erstellen",
-    "section": "",
-    "text": "Beispiel: Erstellen Sie einen KI-basierten Tutor, der ein pädagogisches Prinzip verkörpert und die Nutzer dabei unterstützt, ein tieferes Verständnis für ein Thema zu erlangen.\n\n\n\nÜberlegen Sie sich, wie Sie die Qualität Ihres Agenten gewährleisten können. Welche Kriterien sind wichtig?\n\n\n\n\n\n\nHinweis zur Verwendung\n\n\n\n\n\n\nVerwenden Sie entweder Copilot oder HuggingChat um Ihren Agenten zu erstellen.\nSie können mit den Prompt-Templates aus der Chatbot Agenten Präsentation beginnen und diese dann anpassen, oder Ihre eigene Idee umsetzen.\nÜberlegen Sie sich, wie Sie die Qualität Ihres Agenten testen (und verbessern) können.",
+    "text": "Die erste Präsentation thematisiert",
     "crumbs": [
-      "Übungen",
-      "Übung 3: Eigenen Agenten erstellen"
+      "Workshop",
+      "KI-Tools für Lehre"
     ]
   },
   {
-    "objectID": "exercises/exercise-3/index.html#aufgabe",
-    "href": "exercises/exercise-3/index.html#aufgabe",
-    "title": "Übung 3: Eigenen Agenten erstellen",
-    "section": "",
-    "text": "Beispiel: Erstellen Sie einen KI-basierten Tutor, der ein pädagogisches Prinzip verkörpert und die Nutzer dabei unterstützt, ein tieferes Verständnis für ein Thema zu erlangen.\n\n\n\nÜberlegen Sie sich, wie Sie die Qualität Ihres Agenten gewährleisten können. Welche Kriterien sind wichtig?\n\n\n\n\n\n\nHinweis zur Verwendung\n\n\n\n\n\n\nVerwenden Sie entweder Copilot oder HuggingChat um Ihren Agenten zu erstellen.\nSie können mit den Prompt-Templates aus der Chatbot Agenten Präsentation beginnen und diese dann anpassen, oder Ihre eigene Idee umsetzen.\nÜberlegen Sie sich, wie Sie die Qualität Ihres Agenten testen (und verbessern) können.",
+    "objectID": "slides/ki-tool-lehre/index.html#ki-datenschutz",
+    "href": "slides/ki-tool-lehre/index.html#ki-datenschutz",
+    "title": "KI-Tools für Lehre",
+    "section": "KI & Datenschutz",
+    "text": "KI & Datenschutz\nDie zweite Präsentation thematisiert\n\nErkennen fehlerhafter KI-Nutzung\nKI-sichere Prüfungen\nDatenschutz in KI-Systemen\nSorgfaltspflicht von Dozierenden",
     "crumbs": [
-      "Übungen",
-      "Übung 3: Eigenen Agenten erstellen"
+      "Workshop",
+      "KI-Tools für Lehre"
     ]
   },
   {
-    "objectID": "exercises/exercise-1/index.html",
-    "href": "exercises/exercise-1/index.html",
-    "title": "Übung 1: Tutor erstellen",
+    "objectID": "slides/index.html",
+    "href": "slides/index.html",
+    "title": "Übersicht",
     "section": "",
-    "text": "Passen Sie das gegebene Prompt-Template so an, dass der Chatbot in einen Tutor-Modus versetzt wird. Ziel ist es, dass der Chatbot didaktisch sinnvoll auf noch undefinierte Nutzereingaben reagiert und lernförderliches Verhalten zeigt.\n\n\n\n\n\n\nPrompt-Template\n\n\n\n\n\n# Lern-Tutor\n\nDu bist ein Tutor, der Nutzer dabei  unterstützt, ein tieferes Verständnis für ein Thema zu erlangen. \n\n---\n\n## Ziel\n\n*Der Nutzer soll ein echtes Verständnis für ein Thema entwickeln – nicht nur auswendig lernen, sondern nachvollziehen, wie und warum etwas funktioniert.*\n\n---\n\n## Verhaltensleitfaden\n\n### Wenn der Nutzer eine Frage stellt:\n- **[Platzhalter]**\n\n### Wenn der Nutzer eine Erklärung abgibt:\n- **[Platzhalter]**\n\n### Wenn der Nutzer eine Wissenslücke bemerkt:\n- **[Platzhalter]**\n\n### Wenn der Nutzer Fortschritte zeigt:\n- **[Platzhalter]**\n\n### Allgemein:\n- **[Platzhalter]**\n\n\n\n\n\n\n\n\n\n\nHinweis zur Verwendung\n\n\n\n\n\nDer Initial-Prompt wird einmalig zu Beginn eingegeben und dient dazu, den Chatbot in einen gewünschten Tutormodus zu versetzen. Er bildet die Grundlage für das Verhalten und die didaktische Interaktion im weiteren Verlauf. Wenn der Prompt weiter geändert werden soll, dann muss er direkt ganz oben im Chat editiert werden, oder mit dem geänderten Prompt ein neuer Chat gestartet werden.",
+    "text": "Thema\n Dauer\n\n\n\n\nSlides 1: KI-Grundlagen\n20 min\n\n\nSlides 2: Möglichkeiten & Grenzen von Chatbots\n5 min\n\n\nSlides 3: Einfluss von Chatbots aufs Lernen\n5 min\n\n\nSlides 4: KI - Tool für die Lehre\n10 min\n\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Übungen",
-      "Übung 1: Tutor erstellen"
+      "Slides",
+      "Übersicht"
     ]
   },
   {
-    "objectID": "exercises/exercise-1/index.html#aufgabe",
-    "href": "exercises/exercise-1/index.html#aufgabe",
-    "title": "Übung 1: Tutor erstellen",
+    "objectID": "slides/chatbots-grenzen/index.html",
+    "href": "slides/chatbots-grenzen/index.html",
+    "title": "Chatbots - Möglichkeiten & Grenzen",
     "section": "",
-    "text": "Passen Sie das gegebene Prompt-Template so an, dass der Chatbot in einen Tutor-Modus versetzt wird. Ziel ist es, dass der Chatbot didaktisch sinnvoll auf noch undefinierte Nutzereingaben reagiert und lernförderliches Verhalten zeigt.\n\n\n\n\n\n\nPrompt-Template\n\n\n\n\n\n# Lern-Tutor\n\nDu bist ein Tutor, der Nutzer dabei  unterstützt, ein tieferes Verständnis für ein Thema zu erlangen. \n\n---\n\n## Ziel\n\n*Der Nutzer soll ein echtes Verständnis für ein Thema entwickeln – nicht nur auswendig lernen, sondern nachvollziehen, wie und warum etwas funktioniert.*\n\n---\n\n## Verhaltensleitfaden\n\n### Wenn der Nutzer eine Frage stellt:\n- **[Platzhalter]**\n\n### Wenn der Nutzer eine Erklärung abgibt:\n- **[Platzhalter]**\n\n### Wenn der Nutzer eine Wissenslücke bemerkt:\n- **[Platzhalter]**\n\n### Wenn der Nutzer Fortschritte zeigt:\n- **[Platzhalter]**\n\n### Allgemein:\n- **[Platzhalter]**\n\n\n\n\n\n\n\n\n\n\nHinweis zur Verwendung\n\n\n\n\n\nDer Initial-Prompt wird einmalig zu Beginn eingegeben und dient dazu, den Chatbot in einen gewünschten Tutormodus zu versetzen. Er bildet die Grundlage für das Verhalten und die didaktische Interaktion im weiteren Verlauf. Wenn der Prompt weiter geändert werden soll, dann muss er direkt ganz oben im Chat editiert werden, oder mit dem geänderten Prompt ein neuer Chat gestartet werden.",
+    "text": "Diese Präsentation thematisiert\n\nPotenzial von KI in der Lehre\nPositiven & negativen Auswirkungen auf Lernerfolg\nStrategische Rolle von (Fach-)Hochschulen\n\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Übungen",
-      "Übung 1: Tutor erstellen"
+      "Workshop",
+      "Chatbots - Möglichkeiten & Grenzen"
     ]
   },
   {
-    "objectID": "exercises/exercise-1/index.html#beispielfragen-an-den-tutor",
-    "href": "exercises/exercise-1/index.html#beispielfragen-an-den-tutor",
-    "title": "Übung 1: Tutor erstellen",
-    "section": "Beispielfragen an den Tutor",
-    "text": "Beispielfragen an den Tutor\n\nWie funktioniert ein Initial-Prompt?\nWas sind System und User Prompt und wo liegt der Unterschied?\nWie lernen LLMs?\nWie wählt ein LLM zufällig passende Worte?\nWährend das LLM eine Antwort schreibt, welchen Einfluss haben die schon geschriebenen Worte auf jene, die noch kommen?\nWelchen Einfluss hat die Struktur eines Prompts auf die Antwort des LLM?",
+    "objectID": "slides/chatbot-agenten/index.html",
+    "href": "slides/chatbot-agenten/index.html",
+    "title": "Chatbot Agenten",
+    "section": "",
+    "text": "Diese Präsentation stellt KI-Chatbots als Analyse- und Lernwerkzeuge vor. Sie zeigt Beispiele wie zur Auswertung von Umfragen sowie die Sokratischen und Feynman-Tutoren, die durch gezielte Fragen und vereinfachte Erklärungen ein tieferes Verständnis fördern."
+  },
+  {
+    "objectID": "slides/chatbot-agenten/index.html#präsentation",
+    "href": "slides/chatbot-agenten/index.html#präsentation",
+    "title": "Chatbot Agenten",
+    "section": " Präsentation",
+    "text": "Präsentation\n    View webpage in full screen"
+  },
+  {
+    "objectID": "exercises/miro-board/index.html",
+    "href": "exercises/miro-board/index.html",
+    "title": "Miro Board",
+    "section": "",
+    "text": "View Miro board in new tab\n\n\n``\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "exercises/index.html",
+    "href": "exercises/index.html",
+    "title": "Übersicht",
+    "section": "",
+    "text": "Thema\n Dauer\n\n\n\n\nÜbung 1: Chatbot nutzen lernen\n20 min\n\n\nÜbung 2: Denken statt Delegieren\n40 min\n\n\nÜbung 3: KI-Tools für die Lehre\n20 min\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Übungen",
-      "Übung 1: Tutor erstellen"
+      "Übersicht"
     ]
   },
   {
@@ -115,7 +94,7 @@
     "href": "workshop/index.html",
     "title": "Ablauf",
     "section": "",
-    "text": "Thema\n Dauer\n\n\n\n\nEinstieg\n10 min\n\n\nInput: Grundlagen\n20 min\n\n\nExercise: Chatbot nutzen lernen\n20 min\n\n\nPause\n15 min\n\n\nInput: Möglichkeiten & Grenzen von Chatbots\n5 min\n\n\nExercise: Denken, nicht Delegieren\n40 min\n\n\nPause\n15 min\n\n\nInput: Einfluss von Chatbots aufs Lernen\n5 min\n\n\nExercise: KI Tools für die Lehre\n20 min\n\n\nInput: KI - Tool für die Lehre\n10 min\n\n\nOffene Diskussion\n20 min\n\n\n\n\n\n\n Back to topReuseCC BY 4.0",
+    "text": "Thema\n Dauer\n\n\n\n\nEinstieg\n10 min\n\n\nInput: Grundlagen\n20 min\n\n\nExercise: Chatbot nutzen lernen\n20 min\n\n\nPause\n15 min\n\n\n\n\n\n\nInput: Möglichkeiten & Grenzen von Chatbots\n5 min\n\n\nExercise: Denken, nicht Delegieren\n40 min\n\n\nPause\n15 min\n\n\nInput: Einfluss von Chatbots aufs Lernen\n5 min\n\n\nExercise: KI Tools für die Lehre\n20 min\n\n\nInput: KI - Tool für die Lehre\n10 min\n\n\nOffene Diskussion\n20 min\n\n\n\n\n\n\n Back to topReuseCC BY 4.0",
     "crumbs": [
       "Workshop",
       "Ablauf"
@@ -147,76 +126,190 @@
     "href": "workshop/einstieg/index.html",
     "title": "Begrüßungsaufgabe",
     "section": "",
-    "text": "Stellen Sie sich kurz vor:\n\nName\nInstitut & Lehrfächer\nSubjektives Erfahrungslevel mit KI (Skala von 0-10)\nErwartung vom Kurs (ein Satz)\n\n\n\n\n Back to topReuseCC BY 4.0"
+    "text": "Stellen Sie sich kurz vor:\n\nName\nInstitut & Lehrfächer\nSubjektives Erfahrungslevel mit KI (Skala von 0-10)\nErwartung vom Kurs (ein Satz)\n\n\n\n\n Back to topReuseCC BY 4.0",
+    "crumbs": [
+      "Workshop",
+      "Begrüßungsaufgabe"
+    ]
   },
   {
     "objectID": "exercises/denken-delegieren/index.html",
     "href": "exercises/denken-delegieren/index.html",
-    "title": "Aufgabe: Denken, nicht delegieren",
+    "title": "Aufgabe: Denken statt delegieren",
     "section": "",
-    "text": "Verständnis für die Wichtigkeit verschiedener kognitiver Prozesse für das Lernen\nEinsicht, wie KI-Nutzung lernrelevante kongitive Prozesse wie kritisches Denken und Verständnis beeinflusst\nAbschätzen, wie und wo KI das Lernen fördert oder behindert"
+    "text": "Verständnis für die Wichtigkeit verschiedener kognitiver Prozesse für das Lernen\nEinsicht, wie KI-Nutzung lernrelevante kongitive Prozesse wie kritisches Denken und Verständnis beeinflusst\nAbschätzen, wie und wo KI das Lernen fördert oder behindert",
+    "crumbs": [
+      "Workshop",
+      "Aufgabe: Denken statt delegieren"
+    ]
   },
   {
     "objectID": "exercises/denken-delegieren/index.html#ablauf",
     "href": "exercises/denken-delegieren/index.html#ablauf",
-    "title": "Aufgabe: Denken, nicht delegieren",
+    "title": "Aufgabe: Denken statt delegieren",
     "section": "Ablauf",
-    "text": "Ablauf\nIn dieser Aufgabe werden wir die folgenden vier Fragen erforschen. Jeder recherchiert zwei Fragen, jeweils in unterschiedlichem Modus\n\nZuerts klassisch: Ohne Chatbot\nDann mithilfe von Chatbots\n\nWie Sie (mit dem Chatbot) recherchieren, ist Ihnen überlassen. Seien Sie kreativ!\n\n\n\n\n\n\nAntwortformat\n\n\n\n\n\nStatt einer Vollständigen Antwort, notieren Sie\n\nrelevante Aspekte\nwichtige Fragen\nkreative Ideen\n\nauf einem post-it und kleben diesen and die Flipchart der entsprechenden Frage\n\n\n\n\nWähle 2 der 4 Fragen → Verwende 2 verchiedene Lernmodi\n                                             ↓\n                     Frage 1 → Modus 1: Ohne Chatbot (5 min)\n                     Frage 2 → Modus 2: Mit Chatbot (5 min)  \n                                             ↓\n                      Aspekte / Fragen / Ideen auf die Flipchart\n\n\n\n\n\n\n\nFragen\n\n\n\n\n\n\nWie bildet sich Verständnis beim Lesen nur von Text und welche Faktoren entscheiden über die Effektivität?\nWie beeinflussen Zusammenfassungen das Verständnis? Was ist wichtig, um einen positiven Effekt zu erreichen?\nWie wird kritisches Denken durch das Verfassen eigener Erklärungen gestärkt und wo sind die Grenzen dessen?\nWie wichtig ist Feedback für den Lernprozess und in welcher Form erzielt es die grösste Wirkung?\n\n\n\n\n\n\n\n\n\n\nReflection (20 Minuten)\n\n\n\n\n\nNachdem wir nun von erster Hand die überschnelle Recherche kennengelernt haben, welche die Standardnutzung von Chatbots zur Recherche darstellt, möchten wir über diese Erfahrung Reflektieren.\n\nThink (3 Minuten): Durchatmen und über die Fragen unten reflektieren.\nPair (7 Minuten): Reflektionen mit Sitznachbar diskutieren und Erkenntnisse notieren.\nShare (10 Minuten): Wichtigsten Erkenntnisse mit allen teilen.\n\n\nReflektionsfragen\n\nWie unterschiedlich haben Sie die Lernmodi wahrgenommen, bzgl was Sie gelernt haben und wie es sich anfühlte.\nWelche Vor- und Nachteile haben Sie bei der Chatbotnutzung erlebt?\nWas ist Ihr wertvollster Ratschlag um mit Chatbots etwas neues zu lernen? Gilt das für Experten wie für Neulinge?\n\n\n\n\n\n\n\n\n\n\n\nFür Ihren Unterricht\n\n\n\n\n\nMit Studierenden eignet sich diese Art von Übung, um die Lösungen von kurzen Aufgaben mit und ohne KI zu vergleichen. Durch Fragen wie\n\nWelche Lösung stammt von KI, welche nicht?\nWo half KI, wo war’s mühselig?\nTipps für Mitstudierende\n\nschulen Sie die kritische, ergebnisorientierte Nutzung von KI und bekommen einen Einblick in die KI Nutzung ihrer Studierenden, ohne selbst ein tiefes Verständnis dafür haben zu müssen."
+    "text": "Ablauf\nIn dieser Aufgabe werden wir die folgenden vier Fragen erforschen. Jeder recherchiert zwei Fragen, jeweils in unterschiedlichem Modus\n\nZuerts klassisch: Ohne Chatbot\nDann mithilfe von Chatbots\n\nWie Sie (mit dem Chatbot) recherchieren, ist Ihnen überlassen. Seien Sie kreativ!\n\n\n\n\n\n\nAntwortformat\n\n\n\n\n\nStatt einer Vollständigen Antwort, notieren Sie\n\nrelevante Aspekte\nwichtige Fragen\nkreative Ideen\n\nauf einem post-it und kleben diesen and die Flipchart der entsprechenden Frage\n\n\n\n\nWähle 2 der 4 Fragen → Verwende 2 verchiedene Lernmodi\n                                             ↓\n                     Frage 1 → Modus 1: Ohne Chatbot (5 min)\n                     Frage 2 → Modus 2: Mit Chatbot (5 min)  \n                                             ↓\n                      Aspekte / Fragen / Ideen auf die Flipchart\n\n\n\n\n\n\n\nFragen\n\n\n\n\n\n\nWie bildet sich Verständnis beim Lesen nur von Text und welche Faktoren entscheiden über die Effektivität?\nWie beeinflussen Zusammenfassungen das Verständnis? Was ist wichtig, um einen positiven Effekt zu erreichen?\nWie wird kritisches Denken durch das Verfassen eigener Erklärungen gestärkt und wo sind die Grenzen dessen?\nWie wichtig ist Feedback für den Lernprozess und in welcher Form erzielt es die grösste Wirkung?\n\n\n\n\n\n\n\n\n\n\nReflection (20 Minuten)\n\n\n\n\n\nNachdem wir nun von erster Hand die überschnelle Recherche kennengelernt haben, welche die Standardnutzung von Chatbots zur Recherche darstellt, möchten wir über diese Erfahrung Reflektieren.\n\nThink (3 Minuten): Durchatmen und über die Fragen unten reflektieren.\nPair (7 Minuten): Reflektionen mit Sitznachbar diskutieren und Erkenntnisse notieren.\nShare (10 Minuten): Wichtigsten Erkenntnisse mit allen teilen.\n\n\nReflektionsfragen\n\nWie unterschiedlich haben Sie die Lernmodi wahrgenommen, bzgl was Sie gelernt haben und wie es sich anfühlte.\nWelche Vor- und Nachteile haben Sie bei der Chatbotnutzung erlebt?\nWas ist Ihr wertvollster Ratschlag um mit Chatbots etwas neues zu lernen? Gilt das für Experten wie für Neulinge?\n\n\n\n\n\n\n\n\n\n\n\nFür Ihren Unterricht\n\n\n\n\n\nMit Studierenden eignet sich diese Art von Übung, um die Lösungen von kurzen Aufgaben mit und ohne KI zu vergleichen. Durch Fragen wie\n\nWelche Lösung stammt von KI, welche nicht?\nWo half KI, wo war’s mühselig?\nTipps für Mitstudierende\n\nschulen Sie die kritische, ergebnisorientierte Nutzung von KI und bekommen einen Einblick in die KI Nutzung ihrer Studierenden, ohne selbst ein tiefes Verständnis dafür haben zu müssen.",
+    "crumbs": [
+      "Workshop",
+      "Aufgabe: Denken statt delegieren"
+    ]
   },
   {
-    "objectID": "exercises/exercise-2/index.html",
-    "href": "exercises/exercise-2/index.html",
-    "title": "Übung 2: Copilot Agenten erstellen",
+    "objectID": "exercises/ki-tools-lehre/index.html",
+    "href": "exercises/ki-tools-lehre/index.html",
+    "title": "Aufgabe: KI Tools für die Lehre",
     "section": "",
-    "text": "Erstellen Sie einen MS Copilot Agenten mit Zugriff auf die Webseite der BFH Knowledge Base und instruieren Sie diesen zu didaktisch wertvollen Antworten, aber nur basierend auf Information in der Knowledge Base.\n\n\n\n\n\n\nURL der Knowledge Base\n\n\n\n\n\n https://virtuelleakademie.ch/knowledge-base/\n\n\n\n\n\n\n\n\n\nHinweis zur Verwendung\n\n\n\n\n\nSie können dem Agenten Webseiten zur Verfügung stellen. Per Webbrowser kann der Agent auf diese und untergeordnete Seiten zugreifen. Dann muss der Systemprompt so angepasst werden, dass die gegebene Antwort moeglichst korrekt und lehrreich ist.",
+    "text": "Reflexion über den bisherigen Einsatz von KI Tools im Unterricht\nAuseinandersetzung mit den didaktischen Vorteilen verschiedener Tools\nErfahrungsaustausch über die Nützlichkeit von Tools im Lernkontext",
     "crumbs": [
-      "Übungen",
-      "Übung 2: Copilot Agenten erstellen"
+      "Workshop",
+      "Aufgabe: KI Tools für die Lehre"
     ]
   },
   {
-    "objectID": "exercises/exercise-2/index.html#aufgabe",
-    "href": "exercises/exercise-2/index.html#aufgabe",
-    "title": "Übung 2: Copilot Agenten erstellen",
+    "objectID": "exercises/ki-tools-lehre/index.html#ablauf",
+    "href": "exercises/ki-tools-lehre/index.html#ablauf",
+    "title": "Aufgabe: KI Tools für die Lehre",
+    "section": "Ablauf",
+    "text": "Ablauf\n\n\n\n\n\n\n1. Think (3 MInuten)\n\n\n\n\n\nWelche Tools haben Sie bereits gewinnbringend eingesetzt?\n\n\n\n\n\n\n\n\n\n2. Pair (7 Minuten)\n\n\n\n\n\nDiskutieren Sie den didaktischen Mehrwert des bisherigen Einsatzes.\n\n\n\n\n\n\n\n\n\n3. Share (10 Minuten)\n\n\n\n\n\nTeilen Sie Ihre Erkenntnisse über den Nutzen der Tools: Welcher Einsatz war besonders nützlich? Warum?",
+    "crumbs": [
+      "Workshop",
+      "Aufgabe: KI Tools für die Lehre"
+    ]
+  },
+  {
+    "objectID": "exercises/prompten-lernen/index.html",
+    "href": "exercises/prompten-lernen/index.html",
+    "title": "Aufgabe: Prompten Lernen",
     "section": "",
-    "text": "Erstellen Sie einen MS Copilot Agenten mit Zugriff auf die Webseite der BFH Knowledge Base und instruieren Sie diesen zu didaktisch wertvollen Antworten, aber nur basierend auf Information in der Knowledge Base.\n\n\n\n\n\n\nURL der Knowledge Base\n\n\n\n\n\n https://virtuelleakademie.ch/knowledge-base/\n\n\n\n\n\n\n\n\n\nHinweis zur Verwendung\n\n\n\n\n\nSie können dem Agenten Webseiten zur Verfügung stellen. Per Webbrowser kann der Agent auf diese und untergeordnete Seiten zugreifen. Dann muss der Systemprompt so angepasst werden, dass die gegebene Antwort moeglichst korrekt und lehrreich ist.",
+    "text": "Promptingtechniken kennen & verstehen\nVerschiedene Lernmodi mit Chatbots kennen lernen",
     "crumbs": [
-      "Übungen",
-      "Übung 2: Copilot Agenten erstellen"
+      "Workshop",
+      "Aufgabe: Prompten Lernen"
     ]
   },
   {
-    "objectID": "exercises/exercise-2/index.html#beispielfragen-an-den-tutor",
-    "href": "exercises/exercise-2/index.html#beispielfragen-an-den-tutor",
-    "title": "Übung 2: Copilot Agenten erstellen",
-    "section": "Beispielfragen an den Tutor",
-    "text": "Beispielfragen an den Tutor\n\nWie kann ich mit dem Lernstick sicher prüfen?\nWelche Werkzeuge gibt es für die systematische Bewertung von mündlichen Präsentationen?\nWas ist mit dem Begriff Blended Learning gemeint?",
+    "objectID": "exercises/prompten-lernen/index.html#einfache-prompts",
+    "href": "exercises/prompten-lernen/index.html#einfache-prompts",
+    "title": "Aufgabe: Prompten Lernen",
+    "section": "Einfache Prompts",
+    "text": "Einfache Prompts\nWo finde ich einen offiziellen Leitfaden zum guten Prompting?\nBitte übersetze diesen Text auf Deutsch:  \n&gt;&gt;&gt; Text in English/French/Italian/… &lt;&lt;&lt;",
     "crumbs": [
-      "Übungen",
-      "Übung 2: Copilot Agenten erstellen"
+      "Workshop",
+      "Aufgabe: Prompten Lernen"
     ]
   },
   {
-    "objectID": "exercises/index.html",
-    "href": "exercises/index.html",
-    "title": "Übersicht",
+    "objectID": "exercises/prompten-lernen/index.html#erweiterte-prompts",
+    "href": "exercises/prompten-lernen/index.html#erweiterte-prompts",
+    "title": "Aufgabe: Prompten Lernen",
+    "section": "Erweiterte Prompts:",
+    "text": "Erweiterte Prompts:\n\nNeue Techniken kennen lernen\nRolle: Prompt Experte  \nAufgabe: Bitte hilf mir, mein prompten zu verbessern.  \nDetails: Ich möchte verschiedene Prompting Techniken kennenlernen \nsowie deren Vorteile, Nachteile und Einsatzmöglichkeiten verstehen.  \nFormat: Diskutiere jeweils nur eine neue Technik.\n\n\nVerständnis prüfen lassen\nRolle: Prompt Experte  \nAufgabe: Bitte hilf mir, mein Verständnis zu festigen.  \nDetails: Bitte stelle mir Verständnisfragen zu Promptingtechniken.  \nFormat: Stelle jeweils nur eine Frage und warte auf meine Antwort. \nDann bewerte meine Antwort kritisch, gib eine Musterantwort und stelle\ndie nächste Frage.\n\n\nFeedback und Verbesserungsvorchläge vom Experten\nRolle: Prompt Experte  \nAufgabe: Bitte hilf mir, meinen Prompt zu verbessern.  \nDetails: Bewerte kritisch die Qualität meines Prompts und\n schlage Verbesserungen vor. Diskutiere, ob weitere Prompting-\n techniken für die Aufgabe geeignet wären; wenn ja, schlage \n eine entsprechende Erweiterung vor.  \nFormat:   \n1. Diskutiere zuerst die Qualität meines Prompts und schliesse \nmit einer Gesamtnote (ungenügend bis sehr gut).  \n2. Diskutiere dann die Eignung von weiteren Promptingtechniken.\n3. Antworte mit einem verbesserten Prompt in einer Codebox.  \nMein Prompt: &gt;&gt;&gt; Prompt einfuegen &lt;&lt;&lt;\nÜbersicht: Effektive Prompting Strategien",
+    "crumbs": [
+      "Workshop",
+      "Aufgabe: Prompten Lernen"
+    ]
+  },
+  {
+    "objectID": "exercises/prompten-lernen/index.html#professionellen-prompt-erstellen",
+    "href": "exercises/prompten-lernen/index.html#professionellen-prompt-erstellen",
+    "title": "Aufgabe: Prompten Lernen",
+    "section": "Professionellen Prompt erstellen",
+    "text": "Professionellen Prompt erstellen\n# Prompt Engineer\n\n## Aufgabe  \nErstelle einen Prompt für einen Prompt Assistenten\n\n## Zusatz  \n- Antworte mit einem Markdown prompt.   \n- Füge **weitere detaillierte Anweisungen** hinzu für   \n  1. primäre Aufgabe   \n  2. Anweisungen für gute Prompts\nDieser Prompt ist in Markdown geschrieben. Das ist ein Satz von Formatierungsregeln, der es ermöglicht, mit reinem Text schnell und einfach verschiedenen visuelle Elemente wie Überschriften und Listen zu erstellen, ohne auf komplexe Formatierungswerkzeuge angewiesen zu sein. Syntax in 5 Minuten lernen: Mardkown Guide",
+    "crumbs": [
+      "Workshop",
+      "Aufgabe: Prompten Lernen"
+    ]
+  },
+  {
+    "objectID": "slides/chatbots-einfluss-lernen/index.html",
+    "href": "slides/chatbots-einfluss-lernen/index.html",
+    "title": "KI - Einfluss auf Lernen",
     "section": "",
-    "text": "Thema\n Dauer\n\n\n\n\nÜbung 1: Tutor erstellen\n10 min\n\n\nÜbung 2: Copilot Agenten erstellen\n25 min\n\n\nÜbung 3: Eigenen Agenten erstellen\n45 min\n\n\n\n\n\n\n Back to top",
+    "text": "Diese Präsentation thematisiert\n\nKI-Tool Nutzung von Studys\nPositiven & negativen Auswirkungen auf Lernerfolg\nPsychologisches Verständnis erfolgreichen Lernens\nPraktische Tipps für die Umsetzung\n\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Übungen",
-      "Übersicht"
+      "Workshop",
+      "KI - Einfluss auf Lernen"
     ]
   },
   {
-    "objectID": "exercises/miro-board/index.html",
-    "href": "exercises/miro-board/index.html",
-    "title": "Miro Board",
+    "objectID": "slides/grundlagen/index.html",
+    "href": "slides/grundlagen/index.html",
+    "title": "Grundlagen",
     "section": "",
-    "text": "View Miro board in new tab\n\n\n``\n\n\n\n Back to top",
+    "text": "Die folgenden 4 Präsentationen vermitteln ein grundlegendes Verständnis über",
     "crumbs": [
-      "Übungen",
-      "Miro Board"
+      "Workshop",
+      "Grundlagen"
     ]
+  },
+  {
+    "objectID": "slides/grundlagen/index.html#funktionsweise-von-ki-modellen",
+    "href": "slides/grundlagen/index.html#funktionsweise-von-ki-modellen",
+    "title": "Grundlagen",
+    "section": "Funktionsweise von KI Modellen",
+    "text": "Funktionsweise von KI Modellen",
+    "crumbs": [
+      "Workshop",
+      "Grundlagen"
+    ]
+  },
+  {
+    "objectID": "slides/grundlagen/index.html#funktionsweise-von-chatbots-im-speziellen",
+    "href": "slides/grundlagen/index.html#funktionsweise-von-chatbots-im-speziellen",
+    "title": "Grundlagen",
+    "section": "Funktionsweise von Chatbots im Speziellen",
+    "text": "Funktionsweise von Chatbots im Speziellen",
+    "crumbs": [
+      "Workshop",
+      "Grundlagen"
+    ]
+  },
+  {
+    "objectID": "slides/grundlagen/index.html#denkprozesse-von-chatbots",
+    "href": "slides/grundlagen/index.html#denkprozesse-von-chatbots",
+    "title": "Grundlagen",
+    "section": "Denkprozesse von Chatbots",
+    "text": "Denkprozesse von Chatbots",
+    "crumbs": [
+      "Workshop",
+      "Grundlagen"
+    ]
+  },
+  {
+    "objectID": "slides/grundlagen/index.html#umgang-mit-promptbasierten-ki-tools",
+    "href": "slides/grundlagen/index.html#umgang-mit-promptbasierten-ki-tools",
+    "title": "Grundlagen",
+    "section": "Umgang mit promptbasierten KI Tools",
+    "text": "Umgang mit promptbasierten KI Tools",
+    "crumbs": [
+      "Workshop",
+      "Grundlagen"
+    ]
+  },
+  {
+    "objectID": "slides/grundlagen/index.html#übung-chatbot-nutzen-lernen",
+    "href": "slides/grundlagen/index.html#übung-chatbot-nutzen-lernen",
+    "title": "Grundlagen",
+    "section": "Übung: Chatbot nutzen lernen",
+    "text": "Übung: Chatbot nutzen lernen\nHier geht es zur Übung",
+    "crumbs": [
+      "Workshop",
+      "Grundlagen"
+    ]
+  },
+  {
+    "objectID": "slides/ki-datenschutz/index.html",
+    "href": "slides/ki-datenschutz/index.html",
+    "title": "KI & Datenschutz",
+    "section": "",
+    "text": "Diese Präsentation thematisiert"
+  },
+  {
+    "objectID": "slides/ki-datenschutz/index.html#funktionsweise-von-ki-modellen",
+    "href": "slides/ki-datenschutz/index.html#funktionsweise-von-ki-modellen",
+    "title": "KI & Datenschutz",
+    "section": "Funktionsweise von KI Modellen",
+    "text": "Funktionsweise von KI Modellen"
   },
   {
     "objectID": "resources/prompting/index.html",
