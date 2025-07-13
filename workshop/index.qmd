@@ -17,3 +17,8 @@ title: "Ablauf"
 | [Exercise: KI Tools für die Lehre](../exercises/ki-tools-lehre/index.qmd) | 20 min |
 | [Input: KI - Tool für die Lehre](../slides/ki-tool-lehre/index.qmd) | 10 min |
 | Offene Diskussion | 20 min |
+
+## Selbststudium
+
+- [Wie man Kompetenzen erwirbt](../resources/kompetenz-erwerben/index.qmd)
+- [Produktive Anstrengung durch Design](../resources/produktive-anstrengung/index.qmd)

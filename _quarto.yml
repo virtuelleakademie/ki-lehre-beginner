@@ -49,6 +49,8 @@ website:
       - icon: briefcase
         text: "Dokumente" # {{< fa person-chalkboard >}}
         menu:
+          - text: "KI Policy der BFH"
+            file: https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf
           - text: "Begleitdokument: KI Weiterbildung"
             file: assets/pdfs/Begleitdokument.pdf
           - text: "Begleitdokument: Orientierungshilfe"
