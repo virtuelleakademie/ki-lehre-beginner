@@ -143,7 +143,7 @@
     "href": "workshop/index.html",
     "title": "Ablauf",
     "section": "",
-    "text": "Thema\n Dauer\n\n\n\n\nEinstieg\n10 min\n\n\nInput: Grundlagen\n20 min\n\n\nExercise: Chatbot nutzen lernen\n20 min\n\n\nPause\n15 min\n\n\n\n\n\n\nInput: Möglichkeiten & Grenzen von Chatbots\n5 min\n\n\nExercise: Denken, nicht Delegieren\n40 min\n\n\nPause\n15 min\n\n\n\n\n\n\nInput: Einfluss von Chatbots aufs Lernen\n5 min\n\n\nExercise: KI Tools für die Lehre\n20 min\n\n\nInput: KI - Tool für die Lehre\n10 min\n\n\nOffene Diskussion\n20 min",
+    "text": "Thema\n Dauer\n\n\n\n\nEinstieg\n10 min\n\n\nInput: Grundlagen\n20 min\n\n\nExercise: Chatbot nutzen lernen\n20 min\n\n\n\n\n\n\nPause\n15 min\n\n\n\n\n\n\nInput: Möglichkeiten & Grenzen von Chatbots\n5 min\n\n\nExercise: Denken, nicht Delegieren\n40 min\n\n\n\n\n\n\nPause\n15 min\n\n\n\n\n\n\nInput: Einfluss von Chatbots aufs Lernen\n5 min\n\n\nExercise: KI Tools für die Lehre\n20 min\n\n\nInput: KI - Tool für die Lehre\n10 min\n\n\nOffene Diskussion\n20 min",
     "crumbs": [
       "Workshop",
       "Ablauf"
@@ -510,5 +510,19 @@
     "title": "Effective Prompting Strategies in Education",
     "section": "Example Student Activities",
     "text": "Example Student Activities\n\nClarifying Concepts\n\n\n\n\n\n\nExample Prompt:\n\n\n\nSimplify and explain the concept of electrons behaving as waves.\n\n\n\n\nCreating Study Guides\n\n\n\n\n\n\nExample Prompt:\n\n\n\nSummarize thermodynamics laws and generate two review questions for each.\n\n\n\n\nSelf-Explanation and Reflection\n\n\n\n\n\n\nExample Prompt:\n\n\n\nEvaluate my explanation of buffer solutions and ask a clarifying follow-up question.\n\n\n\n\nError-Checking Practice\n\n\n\n\n\n\nExample Prompt:\n\n\n\nReview my solution to this equilibrium problem, identify mistakes, and guide me in correcting them.\n\n\n\n\nBrainstorming Project Ideas\n\n\n\n\n\n\nExample Prompt:\n\n\n\nSuggest three practical applications of electrochemistry suitable for a student project."
+  },
+  {
+    "objectID": "workshop/diskussion/index.html",
+    "href": "workshop/diskussion/index.html",
+    "title": "Offene Diskussion",
+    "section": "",
+    "text": "Jetzt möchten wir eine offene Diskussion führen. Bitte teilen Sie Ihre Gedanken zu folgenden Fragen:\n\nWas war die wichtigste Erkenntnis, die Sie aus diesem Workshop mitgenommen haben?\nGab es Aspekte, die Ihnen besonders schwierig oder verwirrend erschienen sind?\nWie planen Sie, das Gelernte in Ihrer Praxis oder Lehre anzuwenden?\nWelche Themen oder Fragestellungen würden Sie gerne in zukünftigen Workshops vertiefen?\nGibt es weitere Fragen oder Anmerkungen?\n\nWir freuen uns auf Ihre Beiträge und eine interessante Diskussion!"
+  },
+  {
+    "objectID": "workshop/diskussion/index.html#offene-diskussion",
+    "href": "workshop/diskussion/index.html#offene-diskussion",
+    "title": "Offene Diskussion",
+    "section": "",
+    "text": "Jetzt möchten wir eine offene Diskussion führen. Bitte teilen Sie Ihre Gedanken zu folgenden Fragen:\n\nWas war die wichtigste Erkenntnis, die Sie aus diesem Workshop mitgenommen haben?\nGab es Aspekte, die Ihnen besonders schwierig oder verwirrend erschienen sind?\nWie planen Sie, das Gelernte in Ihrer Praxis oder Lehre anzuwenden?\nWelche Themen oder Fragestellungen würden Sie gerne in zukünftigen Workshops vertiefen?\nGibt es weitere Fragen oder Anmerkungen?\n\nWir freuen uns auf Ihre Beiträge und eine interessante Diskussion!"
   }
 ]

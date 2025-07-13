@@ -7,10 +7,12 @@ title: "Ablauf"
 | [Einstieg](einstieg/index.qmd) | 10 min |
 | [Input: Grundlagen](/slides/grundlagen/index.qmd) | 20 min |
 | [Exercise: Chatbot nutzen lernen](/exercises/prompten-lernen/index.qmd) | 20 min |
+|
 | Pause | 15 min |
 |
 | [Input: Möglichkeiten & Grenzen von Chatbots](/slides/chatbots-grenzen/index.qmd) | 5 min |
 | [Exercise: Denken, nicht Delegieren](/exercises/denken-delegieren/index.qmd) | 40 min |
+|
 | Pause | 15 min |
 |
 | [Input: Einfluss von Chatbots aufs Lernen](/slides/chatbots-einfluss-lernen/index.qmd) | 5 min |
