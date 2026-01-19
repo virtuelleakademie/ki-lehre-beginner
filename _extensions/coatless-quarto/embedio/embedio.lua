@@ -77,7 +77,7 @@ local function iframe_helper(file_name, height, full_screen_link, class, templat
 
   -- Define a template for displaying a full-screen link
   local template_full_screen = [[
-    <p><a href=%q target="_blank">View %s in full screen</a></p>
+    <p><a href=%q target="_blank">%s in neuem Tab öffnen</a></p>
   ]]
 
   -- Combine the template with file name and height to generate HTML code
@@ -112,7 +112,7 @@ local function html(args, kwargs, meta, raw_args)
   ]]
 
   -- Call the iframe_helper() function with the HTML template
-  return iframe_helper(file_name, height, full_screen_link, class, template_html, "webpage")
+  return iframe_helper(file_name, height, full_screen_link, class, template_html, "Webseite")
 end
 
 -- Define the revealjs() function for embedding Reveal.js slides
@@ -137,7 +137,7 @@ local function revealjs(args, kwargs, meta, raw_args)
   ]]
 
   -- Call the iframe_helper() function with the Reveal.js template
-  return iframe_helper(file_name, height, full_screen_link, class, template_revealjs, "slides")
+  return iframe_helper(file_name, height, full_screen_link, class, template_revealjs, "Folien")
 end
 
 local function audio(args, kwargs, meta)
