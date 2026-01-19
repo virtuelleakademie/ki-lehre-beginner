@@ -1,0 +1,1139 @@
+---
+title: "KI in der Hochschulbildung"
+subtitle: "Werkzeuge für Experten, Herausforderungen für Lernende"
+author:
+  - name: Andrew Ellis
+    url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936X 
+# institute: "Virtuelle Akademie, Berner Fachhochschule"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    preview-links: auto
+    footer: "KI in der Lehre: Refresher"
+    navigation-mode: linear
+    controls: true
+    progress: true
+    hash: true
+    center: false
+    transition: fade
+    width: 1600
+    height: 900
+    margin: 0.1
+bibliography: ../../bibliography.bib
+---
+
+```{r}
+#| include: false
+library(tidyverse)
+
+# Set seed for reproducible simulated data
+set.seed(2025)
+
+# Color palette - define once, use everywhere
+color_primary <- "#A3195B"
+color_secondary <- "#666666"
+color_tertiary <- "#999999"
+
+# Base minimalist theme for all figures
+theme_minimal_custom <- theme_minimal(base_size = 18) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "grey90"),
+    axis.line = element_line(color = "black", linewidth = 0.5),
+    axis.ticks = element_line(color = "black"),
+    plot.title = element_text(face = "bold", size = 20),
+    plot.subtitle = element_text(color = "grey40"),
+    legend.position = "bottom"
+  )
+
+# Variant with top legend for line plots
+theme_minimal_top_legend <- theme_minimal_custom +
+  theme(
+    legend.position = "top",
+    legend.text = element_text(size = 16)
+  )
+```
+
+##
+
+::: {style="text-align: center; padding-top: 3em;"}
+
+```{r}
+#| fig-width: 10
+#| fig-height: 5
+#| echo: false
+#| fig-align: center
+
+# Eisberg-Metapher: Performance über Wasser, Learning unter Wasser
+eisberg <- data.frame(
+  x = c(0, 1.5, 3, 3, 2.6, 0.4, 0),
+  y = c(0, 1, 0, -2.5, -3, -3, -2.5)
+)
+
+ggplot() +
+  geom_polygon(data = eisberg, aes(x, y), fill = color_primary, alpha = 0.4) +
+  geom_hline(yintercept = 0, color = "#24526B", linewidth = 1.5) +
+  annotate("text", x = 1.5, y = 0.5, label = "Performance", size = 7, fontface = "bold", color = "#333") +
+  annotate("text", x = 1.5, y = -1.5, label = "Learning", size = 7, fontface = "bold", color = "#333") +
+  theme_void() +
+  coord_fixed(ratio = 1.2) +
+  xlim(-1, 4) +
+  ylim(-3.5, 1.5)
+```
+
+<br><br>
+
+[Werkzeuge für [Experten]{style="color: #666;"},<br>Herausforderungen für [Lernende]{style="color: #A3195B; font-weight: 600;"}]{style="font-size: 1.6em;"}
+
+:::
+
+::: {.notes}
+- Zwei Narrative zu KI in Bildung: "revolutioniert" vs. "zerstört" — beide zu einfach
+- Kognitionspsychologie liefert Rahmen: wann hilft KI, wann schadet sie?
+- Eisberg-Metapher: Performance (sichtbar) ≠ Learning (unsichtbar)
+- Aufbau: Studie → Warum? (Gedächtnisarchitektur) → Rahmen für differenzierte Beurteilung
+:::
+
+## Ein überraschendes Ergebnis
+
+<br>
+
+::: {.columns}
+::: {.column width="50%"}
+
+**Mit KI-Zugang:**
+
+<br>
+
+[+48% / +127%]{.fragment style="font-size: 2em; font-weight: bold; color: #2E7D32;"}
+
+[Aufgaben korrekt gelöst]{.fragment}
+
+[GPT Base / GPT Tutor]{.fragment style="font-size: 0.7em; color: #666;"}
+
+:::
+
+::: {.column width="50%"}
+
+**Ohne KI (später):**
+
+<br>
+
+[−17% / ±0%]{.fragment style="font-size: 2em; font-weight: bold; color: #A3195B;"}
+
+[vs. Kontrollgruppe]{.fragment}
+
+[GPT Base / GPT Tutor]{.fragment style="font-size: 0.7em; color: #666;"}
+
+:::
+:::
+
+. . .
+
+<br><br>
+
+::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px;"}
+**Quelle:** @bastaniGenerativeAIGuardrails2025:
+
+~1000 Gymnasiasten, GPT-4 Zugang während Mathe-Übungen
+:::
+
+::: {.notes}
+- Studie: ~1000 Gymnasiasten, GPT-4 bei Mathe-Übungen
+- GPT Base: +48% Aufgaben gelöst, GPT Tutor: +127%
+- Prüfung ohne KI: GPT Base −17%, GPT Tutor ±0% vs. Kontrolle
+- Fazit: Uneingeschränkter KI-Zugang = bessere Performance, schlechteres Lernen
+- Pädagogische Leitplanken neutralisieren Schaden, aber kein Lernvorteil
+:::
+
+## Das Paradox
+
+<br>
+
+```{r}
+#| fig-width: 12
+#| fig-height: 6
+#| echo: false
+
+# Simulated data showing the paradox with uncertainty
+# In test phase, groups are similar (overlapping confidence intervals)
+paradox_data <- tibble(
+  phase = factor(
+    rep(c("Übungsphase\n(mit/ohne KI)", "Test\n(alle ohne KI)"), each = 2),
+    levels = c("Übungsphase\n(mit/ohne KI)", "Test\n(alle ohne KI)")
+  ),
+  gruppe = rep(c("Mit KI", "Ohne KI"), 2),
+  leistung = c(85, 60, 55, 60),
+  se = c(3, 3, 6, 5)
+)
+
+ggplot(paradox_data, aes(x = phase, y = leistung, group = gruppe, color = gruppe)) +
+  geom_line(linewidth = 1.5) +
+  geom_errorbar(
+    aes(ymin = leistung - se, ymax = leistung + se),
+    width = 0.1,
+    linewidth = 0.8
+  ) +
+  geom_point(size = 5) +
+  scale_color_manual(
+    values = c("Mit KI" = color_primary, "Ohne KI" = color_secondary),
+    name = NULL
+  ) +
+  scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 25)) +
+  labs(
+    x = NULL,
+    y = "Aufgabenleistung (%)"
+  ) +
+  theme_minimal_top_legend
+```
+
+. . .
+
+<br>
+
+**Aufgabenleistung ≠ Lernen**
+
+::: {.notes}
+- Magenta = KI-Gruppe, Grau = Kontrollgruppe
+- Übungsphase: KI-Gruppe klar besser (keine Überlappung der Fehlerbalken)
+- Test: KI-Gruppe schlechter, aber Fehlerbalken überlappen
+- Kernaussage: Aufgabenleistung ≠ Lernen
+- Mit KI-Hilfe sehen wir Systemperformanz, nicht Lernen
+:::
+
+## Das Nadelöhr des Lernens {.nostretch}
+
+```{r}
+#| fig-width: 14
+#| fig-height: 5.5
+#| echo: false
+#| out-width: "95%"
+#| fig-align: "center"
+
+# Bottleneck visualization with hourglass shape for working memory
+
+ggplot() +
+  # Left box: Neue Information (wide)
+  geom_rect(
+    aes(xmin = 0.5, xmax = 2, ymin = 0.2, ymax = 0.8),
+    fill = color_tertiary, color = "white", linewidth = 2
+  ) +
+  # Right box: Langzeitgedächtnis (wide)
+  geom_rect(
+    aes(xmin = 4, xmax = 5.5, ymin = 0.2, ymax = 0.8),
+    fill = color_secondary, color = "white", linewidth = 2
+  ) +
+  # Middle: Bottleneck/hourglass shape using polygon
+  geom_polygon(
+    aes(
+      x = c(2.4, 2.85, 3.15, 3.6, 3.6, 3.15, 2.85, 2.4),
+      y = c(0.8, 0.55, 0.55, 0.8, 0.2, 0.45, 0.45, 0.2)
+    ),
+    fill = color_primary, color = "white", linewidth = 2
+  ) +
+  # Arrows connecting components
+  geom_segment(
+    aes(x = 2.05, xend = 2.35, y = 0.5, yend = 0.5),
+    arrow = arrow(length = unit(0.4, "cm"), type = "closed"),
+    linewidth = 2, color = "grey40"
+  ) +
+  geom_segment(
+    aes(x = 3.65, xend = 3.95, y = 0.5, yend = 0.5),
+    arrow = arrow(length = unit(0.4, "cm"), type = "closed"),
+    linewidth = 2, color = "grey40"
+  ) +
+  # Labels above shapes
+  geom_text(
+    aes(x = 1.25, y = 0.93, label = "Neue\nInformation"),
+    size = 6, fontface = "bold", lineheight = 0.9
+  ) +
+  geom_text(
+    aes(x = 3, y = 0.93, label = "Arbeitsgedächtnis"),
+    size = 6, fontface = "bold"
+  ) +
+  geom_text(
+    aes(x = 4.75, y = 0.93, label = "Langzeit-\ngedächtnis"),
+    size = 6, fontface = "bold", lineheight = 0.9
+  ) +
+  # Capacity labels inside shapes
+  geom_text(
+    aes(x = 1.25, y = 0.5, label = "∞"),
+    size = 14, color = "white", fontface = "bold"
+  ) +
+  geom_text(
+    aes(x = 3, y = 0.5, label = "4±1"),
+    size = 7, color = "white", fontface = "bold"
+  ) +
+  geom_text(
+    aes(x = 4.75, y = 0.5, label = "∞"),
+    size = 14, color = "white", fontface = "bold"
+  ) +
+  # Bottleneck annotation
+  geom_text(
+    aes(x = 3, y = 0.07, label = "DAS NADELÖHR"),
+    size = 6, color = color_primary, fontface = "bold"
+  ) +
+  coord_cartesian(xlim = c(0.2, 5.8), ylim = c(0, 1)) +
+  theme_void() +
+  theme(plot.margin = margin(5, 5, 5, 5))
+```
+
+. . .
+
+::: {style="background-color: #F5E6C8; padding: 0.8em; border-radius: 8px; margin-top: 0.5em;"}
+{{< fa lightbulb >}} **Kernaussage:** Alles Lernen muss durch das Nadelöhr des Arbeitsgedächtnisses [@swellerCognitiveLoadTheory2024].
+:::
+
+::: {.notes}
+- Vereinfachtes Gedächtnismodell: Neue Info → Arbeitsgedächtnis → Langzeitgedächtnis
+- Arbeitsgedächtnis: nur 4±1 Elemente gleichzeitig
+- Neue Info und Langzeitgedächtnis: unbegrenzt
+- Cognitive Load Theory: Alles Lernen muss durch dieses Nadelöhr
+- Keine Abkürzung, keine KI kann biologischen Engpass umgehen
+:::
+
+## Erwünschte Schwierigkeiten
+
+<br><br>
+
+::: {style="font-size: 1.4em; text-align: center; font-style: italic; max-width: 80%; margin: 0 auto;"}
+"Conditions that slow the rate of apparent learning often optimize long-term retention and transfer."
+:::
+
+<br>
+
+::: {style="text-align: center; color: #666;"}
+Robert Bjork [@bjorkMakingThingsHard2011]
+:::
+
+. . .
+
+<br><br>
+
+::: {style="text-align: center; font-size: 1.2em;"}
+**Schwerer fühlt sich schlechter an, ist aber besser für langfristiges Lernen.**
+:::
+
+::: {.notes}
+- "Desirable Difficulties" (erwünschte Schwierigkeiten)
+- Bjork: Bedingungen, die Lernen verlangsamen, optimieren langfristiges Behalten
+- Schwerer fühlt sich schlechter an, ist aber besser fürs Lernen
+- Wenn Lernen sich leicht anfühlt, lernen wir wahrscheinlich weniger
+:::
+
+## Die vier Strategien
+
+<br>
+
+::: {.columns}
+::: {.column width="25%"}
+
+{{< fa pen size=3x >}}
+
+<br>
+
+**Selbst generieren**
+
+[Eigene Antworten formulieren]{style="color: #666; font-size: 0.9em;"}
+
+:::
+
+::: {.column width="25%"}
+
+{{< fa calendar size=3x >}}
+
+<br>
+
+**Verteilt lernen**
+
+[Zeitliche Abstände einbauen]{style="color: #666; font-size: 0.9em;"}
+
+:::
+
+::: {.column width="25%"}
+
+{{< fa brain size=3x >}}
+
+<br>
+
+**Aktiv abrufen**
+
+[Wissen aus dem Gedächtnis holen]{style="color: #666; font-size: 0.9em;"}
+
+:::
+
+::: {.column width="25%"}
+
+{{< fa shuffle size=3x >}}
+
+<br>
+
+**Variieren**
+
+[Themen und Aufgaben mischen]{style="color: #666; font-size: 0.9em;"}
+
+:::
+:::
+
+. . .
+
+<br><br>
+
+::: {style="background-color: #f0f0f0; padding: 1em; border-radius: 8px; text-align: center;"}
+{{< fa robot >}} **KI kann jede dieser Strategien untergraben, wenn sie die kognitive Arbeit übernimmt.**
+:::
+
+::: {.notes}
+- Vier Strategien nach Bjork:
+  1. Selbst generieren (eigene Antworten)
+  2. Verteilt lernen (zeitliche Abstände)
+  3. Aktiv abrufen (aus Gedächtnis holen)
+  4. Variieren (Themen/Aufgaben mischen)
+- KI kann alle vier untergraben, wenn sie kognitive Arbeit übernimmt
+:::
+
+## Der Generierungseffekt {.nostretch}
+
+```{r}
+#| fig-width: 10
+#| fig-height: 5
+#| out-width: "50%"
+#| fig-align: "center"
+#| echo: false
+
+# Simulated data based on generation effect literature
+generation_data <- tibble(
+  methode = factor(
+    c("Selbst\ngeneriert", "Gelesen", "Von KI\nerhalten"),
+    levels = c("Selbst\ngeneriert", "Gelesen", "Von KI\nerhalten")
+  ),
+  retention = c(70, 50, 35),
+  se = c(5, 5, 8)
+)
+
+ggplot(generation_data, aes(x = methode, y = retention, fill = methode)) +
+  geom_col(width = 0.6) +
+  scale_fill_manual(
+    values = c(
+      "Selbst\ngeneriert" = color_primary,
+      "Gelesen" = color_secondary,
+      "Von KI\nerhalten" = color_tertiary
+    ),
+    guide = "none"
+  ) +
+  geom_errorbar(
+    aes(ymin = retention - se, ymax = retention + se),
+    width = 0.2,
+    linewidth = 0.8
+  ) +
+  scale_y_continuous(
+    limits = c(0, 100),
+    breaks = seq(0, 100, 25),
+    labels = function(x) paste0(x, "%")
+  ) +
+  labs(
+    x = NULL,
+    y = "Behaltensleistung"
+  ) +
+  theme_minimal_custom
+
+```
+
+Selbst generierte Information wird besser behalten [@slameckaGenerationEffectDelineation1978].
+
+. . .
+
+<br>
+
+**Wenn KI generiert, was Studierende selbst produzieren sollten, entfällt der Lerneffekt.**
+
+. . .
+
+<br>
+
+[Der Generierungseffekt ist nicht neu. Immer wenn Technologie kognitive Arbeit übernimmt, sehen wir ähnliche Muster...]{style="color: #666; font-style: italic;"}
+
+::: {.notes}
+- Behaltensleistung: Selbst generiert (~70%) > Gelesen (~50%) > Von KI (~35%)
+- Forschung seit 1970er (Slamecka & Graf)
+- Wenn KI generiert statt Studierende → Lerneffekt entfällt
+- Effekt nicht neu → historische Analogien
+:::
+
+## Historische Analogien {.nostretch}
+
+```{r}
+#| fig-width: 14
+#| fig-height: 4
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+
+# Timeline data
+timeline_data <- tibble(
+  x = c(1, 2, 3, 4),
+  name = c("Taschenrechner", "GPS", "Google", "KI"),
+  decade = c("1970er", "1990er", "2000er", "2020er"),
+  effect = c("Konzeptuelles\nVerständnis ↓", "Räumliches\nGedächtnis ↓", "\"Wo\" ersetzt\n\"Was\"", "Alles vorherige\n+ mehr?"),
+  highlight = c(FALSE, FALSE, FALSE, TRUE)
+)
+
+ggplot(timeline_data) +
+
+  # Timeline line
+
+  geom_segment(aes(x = 0.6, xend = 4.5, y = 0, yend = 0),
+               color = "#cccccc", linewidth = 3) +
+  # Arrow head
+
+  geom_segment(aes(x = 4.45, xend = 4.55, y = 0.08, yend = 0),
+               color = "#cccccc", linewidth = 2) +
+  geom_segment(aes(x = 4.45, xend = 4.55, y = -0.08, yend = 0),
+               color = "#cccccc", linewidth = 2) +
+  # Node circles
+
+  geom_point(aes(x = x, y = 0, color = highlight), size = 16, show.legend = FALSE) +
+  geom_point(aes(x = x, y = 0), size = 14, color = "white", show.legend = FALSE) +
+  geom_point(aes(x = x, y = 0, color = highlight), size = 12, show.legend = FALSE) +
+  scale_color_manual(values = c("FALSE" = "#666666", "TRUE" = color_primary)) +
+  # Technology names
+  geom_text(aes(x = x, y = -0.25, label = name, color = highlight),
+            size = 6, fontface = "bold", show.legend = FALSE) +
+  # Decade labels
+  geom_text(aes(x = x, y = -0.45, label = decade),
+            size = 4.5, color = "#999999") +
+  # Effect labels
+  geom_text(aes(x = x, y = 0.35, label = effect, color = highlight),
+            size = 4, fontface = "italic", lineheight = 0.9, show.legend = FALSE) +
+  coord_cartesian(xlim = c(0.4, 4.7), ylim = c(-0.6, 0.55)) +
+  theme_void() +
+  theme(plot.margin = margin(10, 10, 10, 10))
+```
+
+. . .
+
+<br>
+
+::: {style="text-align: center;"}
+**Das Muster wiederholt sich. Aber: KI ist breiter als GPS oder Taschenrechner.**
+
+[[@dahmaniHabitualUseGPS2020; @sparrowGoogleEffectsMemory2011]]{style="color: #999; font-size: 0.8em;"}
+:::
+
+::: {.notes}
+- 1970er Taschenrechner: konzeptuelles Mathe-Verständnis ↓
+- 1990er GPS: räumliches Gedächtnis ↓
+- 2000er Google: "Wo" ersetzt "Was"
+- 2020er KI: kombiniert und verstärkt alle Effekte
+- Unterschied: KI betrifft alle kognitiven Domänen, nicht nur eine
+:::
+
+## Die entscheidende Frage
+
+<br><br>
+
+::: {style="font-size: 1.3em; text-align: center;"}
+Dasselbe Werkzeug, unterschiedliche Ergebnisse.
+:::
+
+. . .
+
+<br>
+
+::: {style="text-align: left;"}
+{{< fa calculator >}} Taschenrechner helfen Mathematikern, können aber Lernenden schaden.
+
+{{< fa map-location-dot >}} GPS unterstützt Taxifahrer, schwächt aber das räumliche Gedächtnis von Neulingen.
+:::
+
+. . .
+
+<br><br>
+
+::: {style="font-size: 1.4em; text-align: center; font-weight: bold;"}
+Die Frage ist nicht *ob* KI, sondern *wer* davon profitiert.
+:::
+
+. . .
+
+<br>
+
+[Die Antwort liegt in dem, was Experten von Lernenden unterscheidet.]{style="color: #666; font-style: italic; display: block; text-align: center;"}
+
+::: {.notes}
+- Dasselbe Werkzeug, unterschiedliche Ergebnisse
+- Taschenrechner: hilft Mathematikern, kann Lernenden schaden
+- GPS: hilft Taxifahrern, schwächt räumliches Gedächtnis von Neulingen
+- Frage nicht OB KI nützt/schadet, sondern WER profitiert
+- Antwort: Was unterscheidet Experten von Lernenden?
+:::
+
+## Was Experten sehen
+
+<br>
+
+::: {.columns}
+::: {.column width="50%"}
+
+![](../../assets/images/chess.png){width="90%"}
+
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+**Novize:** sieht Einzelteile
+
+"64 Felder, 32 Figuren, viele Möglichkeiten"
+
+. . .
+
+**Experte:** sieht Muster und Bedeutung
+
+"Sizilianische Verteidigung, Königsangriff möglich, Schwäche auf f7"
+
+. . .
+
+<br>
+
+Experten speichern Wissen in **Chunks**: vernetzte Wissensstrukturen, die automatisch abgerufen werden [@grootThoughtChoiceChess1978; @chasePerceptionChess1973].
+
+:::
+:::
+
+::: {.notes}
+- Schachforschung als klassisches Beispiel
+- Novize: sieht Einzelteile (64 Felder, 32 Figuren)
+- Experte: sieht Muster und Bedeutung ("Sizilianische Verteidigung")
+- Experten speichern Wissen in "Chunks" (vernetzte Strukturen)
+- Schachmeister: ~50.000 Chunks (de Groot, Chase & Simon)
+:::
+
+## Der Expertise-Umkehr-Effekt
+
+::: {style="background-color: #f5f5f5; padding: 0.6em 1em; border-radius: 6px; font-size: 0.9em; margin-bottom: 0.5em;"}
+{{< fa hand-pointer >}} **Interaktiv:** Klicke auf die Prozentwerte, um zu sehen, wie sich die optimale Lehrmethode je nach Vorwissen verändert.
+:::
+
+```{ojs}
+//| echo: false
+
+// =============================================================================
+// Configuration: All parameters in one place for easy maintenance
+// =============================================================================
+config = ({
+  // Color palette
+  colors: {
+    highSupport: "#A3195B",
+    lowSupport: "#666666",
+    neutral: "#333",
+    background: "#f5f5f5"
+  },
+  // Line equations: y = intercept + slope * x
+  // Lines cross where: highIntercept + highSlope*x = lowIntercept + lowSlope*x
+  lines: {
+    high: { intercept: 65, slope: -0.4 },
+    low: { intercept: 25, slope: 0.4 }
+  },
+  // Input options
+  steps: [0, 20, 40, 60, 80, 100],
+  defaultValue: 20,
+  // Plot dimensions
+  plot: {
+    width: 900,
+    height: 480,
+    margins: { left: 70, bottom: 60, top: 30, right: 40 }
+  },
+  // Labels
+  labels: {
+    highSupport: "Hohe Unterstützung",
+    lowSupport: "Niedrige Unterstützung",
+    highExamples: ["📖 Worked Examples", "🧭 Direkte Instruktion"],
+    lowExamples: ["🧩 Problembasiertes Lernen", "🔍 Eigene Lösungswege"]
+  }
+})
+
+// =============================================================================
+// Derived values: Computed from config (no magic numbers)
+// =============================================================================
+
+// Crossover point: solve for x where both lines intersect
+crossoverPoint = {
+  const { high, low } = config.lines;
+  return (high.intercept - low.intercept) / (low.slope - high.slope);
+}
+
+// Helper function to calculate y-value on a line
+calcY = (line, x) => line.intercept + line.slope * x
+
+// =============================================================================
+// State: Single source of truth for user input (hidden, controlled by buttons)
+// =============================================================================
+viewof vorwissen = {
+  const input = Inputs.radio(config.steps, {
+    value: config.defaultValue,
+    label: "",
+    format: x => x + "%"
+  });
+  input.style.display = "none";
+  return input;
+}
+
+// =============================================================================
+// Reactive calculations based on current state
+// =============================================================================
+currentState = {
+  const x = vorwissen ?? config.defaultValue;
+  const highY = calcY(config.lines.high, x);
+  const lowY = calcY(config.lines.low, x);
+  const isHighBetter = x <= crossoverPoint;
+
+  return {
+    x,
+    highY,
+    lowY,
+    isHighBetter,
+    optimalY: isHighBetter ? highY : lowY,
+    suboptimalY: isHighBetter ? lowY : highY,
+    optimalLabel: isHighBetter ? config.labels.highSupport : config.labels.lowSupport,
+    optimalColor: isHighBetter ? config.colors.highSupport : config.colors.lowSupport,
+    suboptimalColor: isHighBetter ? config.colors.lowSupport : config.colors.highSupport
+  };
+}
+
+// =============================================================================
+// Plot: Visualization with all marks
+// =============================================================================
+expertisePlot = {
+  const { colors, lines, plot, labels } = config;
+  const { x, highY, lowY, isHighBetter, optimalY, suboptimalY, optimalColor, suboptimalColor } = currentState;
+
+  // Generate line data points
+  const highLineData = [{x: 0, y: calcY(lines.high, 0)}, {x: 100, y: calcY(lines.high, 100)}];
+  const lowLineData = [{x: 0, y: calcY(lines.low, 0)}, {x: 100, y: calcY(lines.low, 100)}];
+
+  // Label positions (relative to line endpoints)
+  const labelOffsetY = 7;
+  const exampleBaseY = calcY(lines.high, 0) + labelOffsetY;
+
+  return Plot.plot({
+    width: plot.width,
+    height: plot.height,
+    marginLeft: plot.margins.left,
+    marginBottom: plot.margins.bottom,
+    marginTop: plot.margins.top,
+    marginRight: plot.margins.right,
+    style: { fontSize: "16px" },
+    x: {
+      domain: [0, 100],
+      label: "Vorwissen →",
+      labelOffset: 45,
+      ticks: [0, 50, 100],
+      tickFormat: d => d === 0 ? "Niedrig" : d === 50 ? "Mittel" : "Hoch"
+    },
+    y: {
+      domain: [0, 100],
+      label: "↑ Lerneffekt",
+      labelOffset: 50,
+      grid: true
+    },
+    marks: [
+      // Support lines
+      Plot.line(highLineData, {x: "x", y: "y", stroke: colors.highSupport, strokeWidth: 3}),
+      Plot.line(lowLineData, {x: "x", y: "y", stroke: colors.lowSupport, strokeWidth: 3}),
+
+      // Vertical position indicator
+      Plot.ruleX([x], {stroke: colors.neutral, strokeWidth: 1.5, strokeDasharray: "8,5"}),
+
+      // Suboptimal dot (smaller, faded)
+      Plot.dot([{x, y: suboptimalY}], {
+        x: "x", y: "y",
+        fill: suboptimalColor,
+        r: 8,
+        opacity: 0.4
+      }),
+
+      // Optimal dot (larger, prominent with white stroke)
+      Plot.dot([{x, y: optimalY}], {
+        x: "x", y: "y",
+        fill: optimalColor,
+        r: 14,
+        stroke: "white",
+        strokeWidth: 3
+      }),
+
+      // High support examples (left side, near line start)
+      Plot.text([{x: 15, y: exampleBaseY}], {
+        x: "x", y: "y", text: [labels.highExamples[0]], fill: colors.highSupport, fontSize: 13
+      }),
+      Plot.text([{x: 15, y: exampleBaseY - 6}], {
+        x: "x", y: "y", text: [labels.highExamples[1]], fill: colors.highSupport, fontSize: 13
+      }),
+
+      // Low support examples (right side)
+      Plot.text([{x: 85, y: exampleBaseY}], {
+        x: "x", y: "y", text: [labels.lowExamples[0]], fill: colors.lowSupport, fontSize: 13
+      }),
+      Plot.text([{x: 85, y: exampleBaseY - 6}], {
+        x: "x", y: "y", text: [labels.lowExamples[1]], fill: colors.lowSupport, fontSize: 13
+      }),
+
+      // Line labels (near line ends)
+      Plot.text([{x: 88, y: calcY(lines.high, 100) - 5}], {
+        x: "x", y: "y", text: [labels.highSupport], fill: colors.highSupport, fontSize: 15, fontWeight: "bold"
+      }),
+      Plot.text([{x: 12, y: calcY(lines.low, 0) - 5}], {
+        x: "x", y: "y", text: [labels.lowSupport], fill: colors.lowSupport, fontSize: 15, fontWeight: "bold"
+      })
+    ]
+  });
+}
+
+// =============================================================================
+// Button Group: Custom styled segmented control
+// =============================================================================
+buttonGroup = {
+  const { x, optimalColor } = currentState;
+  const { colors, steps } = config;
+
+  const buttonStyle = (isSelected, selectColor) => `
+    padding: 12px 18px;
+    border: none;
+    background: ${isSelected ? selectColor : colors.background};
+    color: ${isSelected ? 'white' : '#333'};
+    font-size: 1em;
+    font-weight: ${isSelected ? 'bold' : 'normal'};
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+    transition: background 0.15s ease;
+  `;
+
+  const container = html`<div style="display: flex; border-radius: 8px; overflow: hidden; border: 2px solid #ddd;"></div>`;
+
+  steps.forEach(v => {
+    const isSelected = x === v;
+    const selectColor = v <= crossoverPoint ? colors.highSupport : colors.lowSupport;
+    const btn = html`<button style="${buttonStyle(isSelected, selectColor)}">${v}%</button>`;
+    btn.onclick = () => {
+      viewof vorwissen.value = v;
+      viewof vorwissen.dispatchEvent(new Event('input', {bubbles: true}));
+    };
+    container.appendChild(btn);
+  });
+
+  return container;
+}
+
+// =============================================================================
+// Layout: Compose all elements
+// =============================================================================
+html`<div style="display: flex; align-items: center; gap: 40px;">
+  <div>${expertisePlot}</div>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; min-width: 280px;">
+    <div style="font-weight: bold; font-size: 1.1em;">Vorwissen des Lernenden</div>
+    <div>${buttonGroup}</div>
+    <div style="font-size: 1.3em; text-align: center; padding: 15px; background: ${currentState.optimalColor}22; border-radius: 8px; border-left: 4px solid ${currentState.optimalColor};">
+      <span style="color: ${currentState.optimalColor}; font-weight: bold;">${currentState.optimalLabel}</span><br>
+      <span style="font-size: 0.8em; color: #666;">ist effektiver</span>
+    </div>
+  </div>
+</div>`
+```
+
+<br>
+<br>
+
+Der Expertise-Umkehr-Effekt [@kalyugaExpertiseReversalEffect2009].
+
+::: {.notes}
+- Expertise-Umkehr-Effekt: wichtiger Befund der Instruktionsforschung
+- X-Achse: Vorwissen, Y-Achse: Lerneffekt
+- Magenta = hohe Unterstützung, Grau = niedrige Unterstützung
+- Niedriges Vorwissen → hohe Unterstützung besser (Novizen brauchen Struktur)
+- Hohes Vorwissen → niedrige Unterstützung besser (Anleitungen werden redundant)
+- Was für Novizen optimal ist, ist für Experten suboptimal
+:::
+
+## Warum Experten profitieren, Lernende nicht
+
+<br>
+
+::: {.columns}
+::: {.column width="50%"}
+
+**Experten:**
+
+<br>
+
+- {{< fa cogs >}} Können Routine auslagern
+- {{< fa magnifying-glass >}} Können KI-Output bewerten
+- {{< fa lightbulb >}} Mehr Kapazität für Komplexes
+
+:::
+
+::: {.column width="50%"}
+
+**Lernende:**
+
+<br>
+
+- {{< fa eye-slash >}} Können nicht bewerten
+- {{< fa forward-fast >}} Überspringen Grundlagen
+- {{< fa mask >}} Risiko: "Fliessende Inkompetenz"
+
+:::
+:::
+
+. . .
+
+<br>
+
+**Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen.**
+
+::: {.notes}
+- Experten: können Routine auslagern, Output bewerten, Kapazität für Komplexes
+- Lernende: können Output nicht bewerten, überspringen Grundlagen
+- Risiko: "fliessende Inkompetenz" (mit Hilfe alles, ohne Hilfe nichts)
+- Fazit: Dasselbe Werkzeug, fundamental unterschiedliche Auswirkungen
+:::
+
+## Kritisches Denken braucht Fachwissen
+
+<br>
+
+> "Critical thinking is not a skill. There is not a set of critical thinking skills that can be acquired and deployed regardless of context."
+>
+> Daniel Willingham [@willinghamCriticalThinkingWhy2008]
+
+. . .
+
+<br>
+
+::: {.columns}
+::: {.column width="50%"}
+
+**Biomedizin-Experte:**
+
+Erkennt, wenn ChatGPT bei Biochemie falsch liegt
+
+:::
+
+::: {.column width="50%"}
+
+**Novize:**
+
+Kann diese Bewertung nicht vornehmen
+
+:::
+:::
+
+. . .
+
+<br>
+
+**Du kannst nicht kritisch bewerten, was du nicht verstehst.**
+
+. . .
+
+<br>
+
+[Warum ist Fachwissen so entscheidend? Weil es bestimmt, ob KI deine Kognition erweitert oder ersetzt.]{style="color: #666; font-style: italic;"}
+
+::: {.notes}
+- Einwand: "Dann lehren wir kritisches Prüfen von KI-Output"
+- Willingham: Kritisches Denken ist keine kontextfreie Fähigkeit
+- Biomedizin-Experte erkennt Fehler in Biochemie, Novize nicht
+- Kernaussage: Du kannst nicht bewerten, was du nicht verstehst
+- Deshalb ist Fachwissen entscheidend
+:::
+
+## Kognition erweitern vs. ersetzen
+
+<br>
+
+::: {.columns}
+::: {.column width="50%"}
+
+**{{< fa expand >}} Kognition erweitern:**
+
+<br>
+
+- Mensch bleibt kognitiv engagiert
+- Werkzeug verstärkt, ersetzt nicht
+- Fähigkeiten bleiben erhalten
+
+:::
+
+::: {.column width="50%"}
+
+**{{< fa compress >}} Kognition ersetzen:**
+
+<br>
+
+- Mensch wird passiv
+- Werkzeug übernimmt das Denken
+- Abhängigkeit entsteht
+
+:::
+:::
+
+. . .
+
+<br>
+
+**Dasselbe Werkzeug kann beides sein, abhängig von der Nutzung** [@clarkExtendingMindsGenerative2025].
+
+::: {.notes}
+- Andy Clark: Unterscheidung erweitern vs. ersetzen
+- Erweitern: Mensch bleibt engagiert, Werkzeug verstärkt, Fähigkeiten bleiben
+- Ersetzen: Mensch passiv, Werkzeug übernimmt Denken, Abhängigkeit
+- Dasselbe Werkzeug kann beides sein (Nutzung entscheidet)
+- ChatGPT: Brainstorming-Partner oder Ghostwriter?
+:::
+
+## Die Sequenzierungsfrage
+
+<br>
+
+::: {style="text-align: center; font-size: 1.3em; margin-bottom: 40px;"}
+[Novize]{style="color: #A3195B; font-weight: bold;"}
+——— [**Schwelle?**]{style="background: #D4A03E; padding: 5px 15px; border-radius: 4px;"} ———
+[Experte]{style="color: #24526B; font-weight: bold;"}
+:::
+
+::: {.incremental}
+- Die Schwelle ist **unbekannt** und empirisch nicht bestimmt
+- Sie variiert nach **Domäne** und **Person**
+- Der Expertise-Umkehr-Effekt erfordert **dynamische** KI-Nutzungsempfehlungen
+:::
+
+. . .
+
+<br>
+
+::: {style="text-align: center; font-size: 1.2em;"}
+**Wer profitiert von KI-Werkzeugen? Wer nicht?**
+:::
+
+::: {.notes}
+- Praktische Frage: Wann ist der Übergang von Novize zu Experte?
+- Schwelle ist unbekannt, variiert nach Domäne und Person
+- Expertise-Umkehr-Effekt erfordert dynamische Empfehlungen
+- Frage "Wer profitiert?" nicht pauschal beantwortbar
+:::
+
+## Die Kernaussage
+
+. . .
+
+::: {style="font-size: 2em; text-align: center; margin-top: 1.5em; font-weight: 700; color: #24526B;"}
+KI-Werkzeuge sind für Experten gemacht.
+:::
+
+. . .
+
+::: {style="display: flex; justify-content: center; gap: 3em; margin-top: 2em; margin-bottom: 2em;"}
+::: {style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #D4A03E;"}
+[Sie machen Experten produktiver.]{style="font-size: 1.1em; color: #24526B;"}
+:::
+
+::: {style="text-align: center; padding: 1em 1.5em; border-left: 4px solid #A3195B;"}
+[Lernende profitieren oft nicht, weil Lernen die kognitive Anstrengung erfordert, die KI zu eliminieren droht.]{style="font-size: 1.1em; color: #A3195B;"}
+:::
+:::
+
+. . .
+
+::: {style="text-align: center; margin-top: 2em; padding: 1em 2em; border: 2px solid #A3195B; border-radius: 8px;"}
+[**Lernende brauchen erst das Fundament, das kritische KI-Nutzung ermöglicht.**]{style="font-size: 1.4em; color: #A3195B;"}
+:::
+
+::: {.notes}
+- KI-Werkzeuge sind für Experten gemacht (Feststellung, keine Wertung)
+- Werkzeuge von Experten entwickelt, funktionieren am besten für Experten
+- Lernende profitieren oft nicht: Lernen braucht kognitive Anstrengung
+- Nicht KI-feindlich: Art der Nutzung entscheidet (GPT-Tutor!)
+- Konsequenz: Fundament zuerst, dann KI
+:::
+
+## Was bedeutet das für die Lehre?
+
+<br>
+
+::: {.columns}
+::: {.column width="33%"}
+
+{{< fa dumbbell size=3x >}}
+
+<br>
+
+**Anstrengung ist das Signal**
+
+:::
+
+::: {.column width="33%"}
+
+{{< fa comments size=3x >}}
+
+<br>
+
+**KI als Tutor, nicht als Antwortgeber**
+
+:::
+
+::: {.column width="33%"}
+
+{{< fa stairs size=3x >}}
+
+<br>
+
+**Expertise bestimmt den Nutzen**
+
+:::
+:::
+
+. . .
+
+::: {.columns}
+::: {.column width="33%"}
+
+[Wenn Lernen sich zu leicht anfühlt, findet es wahrscheinlich nicht statt.]{style="color: #666;"}
+
+:::
+
+::: {.column width="33%"}
+
+[KI soll Denkprozesse anregen, nicht ersetzen.]{style="color: #666;"}
+
+:::
+
+::: {.column width="33%"}
+
+[Dasselbe Werkzeug wirkt unterschiedlich je nach Vorwissen.]{style="color: #666;"}
+
+:::
+:::
+
+. . .
+
+<br>
+
+**Grundlagen BEVOR Werkzeuge**
+
+::: {.notes}
+- Anstrengung ist das Signal: Zu leicht = kein Lernen
+- KI als Tutor, nicht Antwortgeber: Denkprozesse anregen, nicht ersetzen
+- Expertise bestimmt Nutzen: Vorwissen entscheidet über Wirkung
+- Grundlagen BEVOR Werkzeuge
+- Erst Fundament, dann Erweiterung; erst verstehen, dann automatisieren
+:::
+
+## Referenzen
+
+::: {#refs}
+:::
