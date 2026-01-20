@@ -1,0 +1,164 @@
+---
+title: "Frage 1: Was ist KI?"
+subtitle: "Wie funktionieren Sprachmodelle wirklich?"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    progress: true
+    controls: true
+    navigation-mode: linear
+footer: "KI in der Lehre: Grundlagen"
+---
+
+## Die erste Frage
+
+::: {.r-fit-text}
+**Was ist KI?**
+:::
+
+Heute: Fokus auf **Sprachmodelle** (LLMs) und **Chatbots**
+
+## Was sind Chatbots?
+
+:::: {.columns}
+::: {.column width="30%"}
+
+:::
+
+::: {.column width="70%"}
+![](../../assets/images/claude.png)
+:::
+::::
+
+## Was sind LLMs?
+
+:::: {.columns}
+::: {.column width="60%"}
+Ein LLM kann man sich wie einen ausgefeilten Autocomplete-Mechanismus vorstellen.
+:::
+::: {.column width="40%"}
+![](../../assets/images/predictive-text.png)
+:::
+::::
+
+## Die Kernidee
+
+Sprachmodelle sagen das **nächste Wort** vorher.
+
+::: {.hidden}
+$$
+\newcommand{\green}[1]{\color{green}{#1}}
+\newcommand{\purple}[1]{\color{purple}{#1}}
+\newcommand{\red}[1]{\color{red}{#1}}
+\newcommand{\blue}[1]{\color{blue}{#1}}
+$$
+:::
+
+$$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
+
+Jede Vorhersage basiert auf dem **Kontext** und dem internen **Modell**.
+
+## Vorhersage in Aktion
+
+Nicht alle Teile des Kontexts sind gleich wichtig:
+
+<br>
+
+:::{.r-fit-text}
+_"Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. Das Haus stand inmitten eines weitläufigen Gartens. Es war bekannt für seine prächtige Fassade und die grosszügigen ___"_
+:::
+
+<br>
+
+Welche Wörter sind besonders wichtig für die Vorhersage?
+
+## Wie generieren LLMs Text?
+
+<br>
+
+$$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
+
+![](../../assets/images/hf-is-a-startup.gif)
+
+## Wie werden LLMs trainiert?
+
+![](../../assets/images/llm-training.png)
+
+## Wichtige Einsicht
+
+::: {.key-point}
+## Statistik, nicht Verstehen
+
+Sprachmodelle **verstehen** nicht.
+
+Sie berechnen statistische Wahrscheinlichkeiten basierend auf Mustern in den Trainingsdaten.
+:::
+
+## Chain-of-Thought "Denken"
+
+Explizites Nachdenken verbessert die Ergebnisse:
+
+- "Denke Schritt für Schritt"
+- Der Chatbot zeigt seinen "Denkprozess"
+- Besonders hilfreich bei komplexen Aufgaben
+
+## Beispiel: 9.11 vs 9.8
+
+**Frage**: "Was ist grösser: 9.11 oder 9.8?"
+
+<br>
+
+**Ohne Anleitung**: Oft falsch (verwechselt mit Datumsformat)
+
+**Mit "Denke Schritt für Schritt"**: Meist richtig
+
+<br>
+
+::: {.fragment}
+Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
+:::
+
+## Mini-Experiment
+
+::: {.experiment}
+## Ausprobieren
+
+Stelle dieselbe Frage zweimal an einen Chatbot:
+
+1. Direkt: "Was ist die Antwort auf X?"
+2. Mit Anleitung: "Denke Schritt für Schritt. Was ist die Antwort auf X?"
+
+Vergleiche die Antworten.
+
+{{< timer 5 >}}
+:::
+
+## "Denken" ist auch Statistik
+
+::: {.key-point}
+## Keine echte Kognition
+
+"Denken" verbessert die Ergebnisse, aber es ist kein menschliches Denken.
+
+Es ist eine Technik, die bessere Token-Vorhersagen ermöglicht, weil mehr Kontext (die Zwischenschritte) zur Verfügung steht.
+:::
+
+## Zusammenfassung: Was ist KI?
+
+| Aspekt | Realität |
+|--------|----------|
+| Textgenerierung | Statistische Vorhersage des nächsten Worts |
+| "Verstehen" | Mustererkennung, kein echtes Verstehen |
+| "Denken" | Mehr Tokens = bessere Vorhersagen |
+| Wissen | Muster aus Trainingsdaten, keine Faktendatenbank |
+
+## Takeaway
+
+::: {.key-point}
+## Antwort auf Frage 1
+
+**Was ist KI?**
+
+Sprachmodelle sind statistische Textgeneratoren. Sie "verstehen" nicht, sie berechnen Wahrscheinlichkeiten basierend auf Mustern in Trainingsdaten.
+:::

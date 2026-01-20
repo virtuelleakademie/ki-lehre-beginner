@@ -1,0 +1,102 @@
+---
+title: "Frage 2: Wofür kann KI verwendet werden?"
+subtitle: "Möglichkeiten, Grenzen und was an der BFH gilt"
+sidebar: workshop
+---
+
+## Präsentation
+
+In dieser Einheit lernen wir die Fähigkeiten und Grenzen von Chatbots kennen, sowie die BFH-Richtlinien für den KI-Einsatz.
+
+[Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
+
+<iframe
+  src="slides.html"
+  width="100%"
+  height="500"
+  style="border: 1px solid #ccc; border-radius: 4px;"
+></iframe>
+
+## Inhaltsübersicht
+
+**Dauer:** 50 Minuten (inkl. Aktivität)
+
+| Thema | Zeit |
+|-------|------|
+| Tool-Fähigkeiten (Web, Dateien, Code) | 15 min |
+| BFH-Landschaft (Policy, Tools) | 10 min |
+| Fakten-Check Aktivität | 25 min |
+
+### Kernbotschaften
+
+1. Moderne Chatbots können mehr als Text generieren (Tools, Multimodal)
+2. BFH hat klare Richtlinien und freigegebene Tools
+3. Chatbots sind selbstbewusst, aber nicht zuverlässig (Halluzinationen)
+
+## Was Chatbots können
+
+| Fähigkeit | Beispiel |
+|-----------|----------|
+| Fragen beantworten | Erklärungen, Definitionen, Zusammenfassungen |
+| Bilder analysieren | Beschreibung, Textextraktion, Diagramme interpretieren |
+| Dokumente verarbeiten | PDFs zusammenfassen, Tabellen extrahieren |
+| Websuche | Aktuelle Informationen abrufen |
+| Code ausführen | Berechnungen, Datenanalyse |
+| Strukturierte Ausgabe | Tabellen, Listen, JSON, Markdown |
+
+## Was Chatbots nicht können
+
+| Grenze | Konsequenz |
+|--------|------------|
+| Kein echtes Wissen | Halluzinationen möglich |
+| Kein Faktenspeicher | Informationen veraltet oder falsch |
+| Kein Verständnis | Logikfehler bei komplexen Aufgaben |
+| Keine Quellenprüfung | Erfundene Referenzen |
+
+## BFH-Richtlinien
+
+::: {.key-point}
+## Die fünf Grundsätze der BFH KI-Policy
+
+1. **Transparenz**: KI-Nutzung offenlegen
+2. **Datenschutz**: Keine persönlichen Daten eingeben
+3. **Ethik**: Verantwortungsvoll einsetzen
+4. **Integrität**: Wissenschaftliche Standards einhalten
+5. **Didaktik**: Lernziele berücksichtigen
+:::
+
+## Freigegebene Tools
+
+| Tool | Zugang | Empfohlen für |
+|------|--------|---------------|
+| **Microsoft Copilot** | BFH-Lizenz | Office-Aufgaben, sensible Daten |
+| **ChatGPT** | Persönliches Konto | Vielseitige Aufgaben, Coding |
+| **Claude** | Persönliches Konto | Lange Dokumente, Analyse |
+
+::: {.pro-tip}
+## Wo finden?
+
+mybfh → IT-Applikationen → Abgeklärte KI-Tools
+:::
+
+## Aktivität: Fakten-Check
+
+Im Anschluss an die Präsentation folgt die **Fakten-Check Aktivität** (25 min):
+
+1. Du stellst 3 faktische Fragen aus deinem Fachgebiet
+2. Du überprüfst die Antworten
+3. Ihr tauscht euch in Kleingruppen aus
+
+[→ Zur Fakten-Check Aktivität](../../exercises/fakten-check/index.qmd)
+
+## Takeaway
+
+::: {.key-point}
+## Antwort auf Frage 2: Wofür kann KI verwendet werden?
+
+Chatbots sind **vielseitige Werkzeuge** mit echten Fähigkeiten: Text, Bilder, Code, Suche.
+
+Aber sie generieren **selbstbewusst auch Falsches**. Kritische Prüfung ist immer nötig.
+
+An der BFH: Klare Richtlinien und freigegebene Tools nutzen.
+:::

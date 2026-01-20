@@ -1,0 +1,122 @@
+---
+title: "Frage 3: Wofür sollte ich KI verwenden?"
+subtitle: "Offloading vs. Outsourcing: Wann ist KI-Nutzung sinnvoll?"
+sidebar: workshop
+---
+
+## Präsentation
+
+In dieser Einheit diskutieren wir, wann KI-Nutzung sinnvoll ist und wann sie das Lernen behindern kann. Der Fokus liegt auf der Unterscheidung zwischen kognitivem Offloading und Outsourcing.
+
+[Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
+
+<iframe
+  src="slides.html"
+  width="100%"
+  height="500"
+  style="border: 1px solid #ccc; border-radius: 4px;"
+></iframe>
+
+## Inhaltsübersicht
+
+**Dauer:** 40 Minuten
+
+| Thema | Zeit |
+|-------|------|
+| Szenario-Aktivität | 20 min |
+| Konzepte: Offloading vs. Outsourcing | 10 min |
+| Diskussion und Transfer | 10 min |
+
+### Kernbotschaften
+
+1. **Offloading**: Du externalisierst, aber denkst selbst weiter
+2. **Outsourcing**: Du überträgst die Denkarbeit
+3. **Die entscheidende Frage**: Ist das, was ausgelagert wird, etwas, das die Person lernen sollte?
+4. **Das Paradox**: Dieselbe KI-Nutzung kann für Experten produktiv und für Lernende schädlich sein
+
+## Die zwei Konzepte
+
+### Kognitives Offloading
+
+Du externalisierst Informationen, um dein Arbeitsgedächtnis zu entlasten, **während du selbst weiter denkst**.
+
+**Beispiele**:
+
+- Notizen machen
+- Mind-Maps erstellen
+- Taschenrechner für Berechnungen nutzen
+
+Das Werkzeug **speichert**, was du produzierst.
+
+### Kognitives Outsourcing
+
+Du überträgst die **eigentliche Denkarbeit** an ein externes System.
+
+**Beispiele**:
+
+- GPS statt eigene Navigation
+- KI-generierter Text statt eigenes Schreiben
+- KI-Analyse statt eigenes Durchdenken
+
+Das Werkzeug **entscheidet**, **produziert** und "denkt" für dich.
+
+## Die entscheidende Frage
+
+::: {.key-point}
+> Ist die ausgelagerte Arbeit das, was die Person **lernen oder üben** sollte?
+:::
+
+Diese Frage unterscheidet sinnvolle von problematischer KI-Nutzung.
+
+## Matrix: Wer macht was?
+
+| Situation | Lehrende | Studierende |
+|-----------|----------|-------------|
+| KI schreibt Feedback | ✓ OK (Effizienz) | — |
+| KI schreibt Essay | — | ✗ Problematisch |
+| KI erklärt Konzept | ✓ OK | ? Kommt drauf an |
+| KI generiert Übungen | ✓ OK | ? Könnte OK sein |
+| KI debuggt Code | ✓ OK | ✗ Wenn ohne Verständnis |
+
+## Das Produktivitäts-Lern-Paradox
+
+::: {.reflect}
+## Das zentrale Problem
+
+KI macht Aufgaben **einfacher**. Aber Lernen braucht **kognitive Anstrengung**.
+
+Wenn Studierende auslagern, was sie üben sollten, bekommen sie das **Produkt**, aber nicht den **Lerneffekt**.
+
+Für Lehrende ist Outsourcing oft produktiv (Arbeit, nicht Lernen).
+Für Studierende ist Outsourcing oft problematisch (sie brauchen die Übung).
+:::
+
+## Aktivität: Szenario-Karten
+
+Die vollständige Aktivität mit allen Szenarien findest du hier:
+
+[→ Zur Szenario-Karten Aktivität](../../exercises/offloading-outsourcing/index.qmd)
+
+## Leitfragen für deine Praxis
+
+Für **dich als Lehrperson**:
+
+- Wo kann ich KI produktiv für Routineaufgaben einsetzen?
+- Wo gewinne ich Zeit für wichtigere Aufgaben?
+
+Für **deine Studierenden**:
+
+- Welche kognitiven Prozesse sind zentral für das Lernziel?
+- Wo würde KI-Nutzung genau diese Prozesse umgehen?
+
+## Takeaway
+
+::: {.key-point}
+## Antwort auf Frage 3: Wofür sollte ich KI verwenden?
+
+KI-Tools sind für **Experten** gemacht. Sie steigern Produktivität.
+
+Für **Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
+
+**Die Frage ist nicht "Darf man KI nutzen?", sondern "Wer lernt dabei was?"**
+:::
