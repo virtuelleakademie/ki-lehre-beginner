@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/slides/ki-verstehen/index.html</loc>
-    <lastmod>2026-01-20T12:30:38.881Z</lastmod>
+    <lastmod>2026-01-20T20:58:38.843Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/resources/kompetenz-erwerben/index.html</loc>
@@ -63,5 +63,17 @@
   <url>
     <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/resources/prompting/index.html</loc>
     <lastmod>2025-08-16T19:16:25.374Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/interactives/token-predictor/index.html</loc>
+    <lastmod>2026-01-20T12:48:15.538Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/interactives/chat-interface/index.html</loc>
+    <lastmod>2026-01-20T12:49:17.936Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/ki-lehre-beginner/interactives/index.html</loc>
+    <lastmod>2026-01-20T12:49:31.889Z</lastmod>
   </url>
 </urlset>

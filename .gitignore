@@ -19,6 +19,7 @@ ipython_config.py
 *.code-workspace
 data/*
 # notes/*
+apps/*
 
 # Quarto
 /.quarto/

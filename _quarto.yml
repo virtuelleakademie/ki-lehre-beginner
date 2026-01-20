@@ -14,6 +14,7 @@ project:
     - exercises/**/*.qmd
     - slides/**/*.qmd
     - resources/**/*.qmd
+    - interactives/**/*.qmd
 
 website:
   title: "KI in der Lehre: Beginner"
@@ -44,6 +45,10 @@ website:
       - icon: pencil
         href: exercises/index.qmd
         text: Übungen
+
+      - icon: play-circle
+        href: interactives/index.qmd
+        text: Demos
 
     right:
       - icon: briefcase

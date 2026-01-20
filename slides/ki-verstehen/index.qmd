@@ -37,3 +37,122 @@ In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch 
 - Chain-of-Thought verbessert Ergebnisse
 - "Denke Schritt für Schritt"
 - Bessere Token-Vorhersagen, kein menschliches Denken
+
+## Interaktiv: Token-Vorhersage
+
+Wie sieht "Next-Word-Prediction" konkret aus? Wähle einen Satzanfang und sieh die Wahrscheinlichkeitsverteilung für das nächste Wort.
+
+```{ojs}
+//| echo: false
+
+tokenDatabase = ({
+  "Der Hund liegt auf dem": [
+    {token: "Boden", prob: 0.32},
+    {token: "Sofa", prob: 0.24},
+    {token: "Bett", prob: 0.18},
+    {token: "Teppich", prob: 0.14},
+    {token: "Rasen", prob: 0.12}
+  ],
+  "Die Katze sitzt auf dem": [
+    {token: "Dach", prob: 0.28},
+    {token: "Baum", prob: 0.24},
+    {token: "Sofa", prob: 0.20},
+    {token: "Tisch", prob: 0.16},
+    {token: "Fensterbrett", prob: 0.12}
+  ],
+  "Die Studierenden lernen für die": [
+    {token: "Prüfung", prob: 0.45},
+    {token: "Klausur", prob: 0.25},
+    {token: "Zukunft", prob: 0.12},
+    {token: "Vorlesung", prob: 0.10},
+    {token: "Karriere", prob: 0.08}
+  ],
+  "Der Professor erklärt das": [
+    {token: "Konzept", prob: 0.28},
+    {token: "Thema", prob: 0.24},
+    {token: "Problem", prob: 0.20},
+    {token: "Modell", prob: 0.16},
+    {token: "Prinzip", prob: 0.12}
+  ],
+  "KI wird in Zukunft": [
+    {token: "wichtiger", prob: 0.24},
+    {token: "viele", prob: 0.20},
+    {token: "eine", prob: 0.18},
+    {token: "immer", prob: 0.20},
+    {token: "unsere", prob: 0.18}
+  ]
+})
+
+viewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {
+  label: "Satzanfang:",
+  value: "Der Hund liegt auf dem"
+})
+
+currentProbs = tokenDatabase[selectedSentence]
+```
+
+**Kontext:** ${selectedSentence} ___
+
+```{ojs}
+//| echo: false
+
+Plot.plot({
+  marginLeft: 100,
+  width: Math.min(500, width),
+  height: 180,
+  x: {domain: [0, 0.5], label: "Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
+  y: {label: null},
+  marks: [
+    Plot.barX(currentProbs, {y: "token", x: "prob", fill: "#A3195B", sort: {y: "-x"}}),
+    Plot.text(currentProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
+  ]
+})
+```
+
+::: {.key-point}
+Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Es "weiss" nicht, welches richtig ist. Es wählt basierend auf statistischen Mustern aus den Trainingsdaten.
+:::
+
+## Interaktiv: Temperature
+
+Der Parameter "Temperature" beeinflusst, wie das Modell aus den Wahrscheinlichkeiten wählt.
+
+```{ojs}
+//| echo: false
+
+viewof temperature = Inputs.range([0.1, 2.0], {
+  value: 1.0,
+  step: 0.1,
+  label: "Temperature"
+})
+
+scaledProbs = {
+  const t = temperature;
+  const logits = currentProbs.map(p => Math.log(p.prob));
+  const scaled = logits.map(l => Math.exp(l / t));
+  const sum = scaled.reduce((a, b) => a + b, 0);
+  return currentProbs.map((p, i) => ({token: p.token, prob: scaled[i] / sum}));
+}
+
+tempDescription = temperature < 0.5 ? "Deterministisch: Fast immer das wahrscheinlichste Wort" :
+  temperature < 1.0 ? "Ausgeglichen: Gute Mischung" :
+  temperature < 1.5 ? "Kreativ: Mehr Variation" : "Chaotisch: Fast zufällig"
+```
+
+**Temperature = ${temperature.toFixed(1)}**: ${tempDescription}
+
+```{ojs}
+//| echo: false
+
+Plot.plot({
+  marginLeft: 100,
+  width: Math.min(500, width),
+  height: 180,
+  x: {domain: [0, 1], label: "Angepasste Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
+  y: {label: null},
+  marks: [
+    Plot.barX(scaledProbs, {y: "token", x: "prob", fill: "#D4A03E", sort: {y: "-x"}}),
+    Plot.text(scaledProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
+  ]
+})
+```
