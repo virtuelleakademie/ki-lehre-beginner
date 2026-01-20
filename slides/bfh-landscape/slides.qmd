@@ -42,14 +42,93 @@ Was von Studierenden erwartet wird:
 - Auseinandersetzung mit Potenzialen und Grenzen
 - Feedback an Lehrende geben
 
-## Support
+## Rechtliche Aspekte
 
-Bei Fragen:
+Zwei wichtige Aspekte bei der Benutzung von LLMs:
 
-- **CISO**: Informationssicherheit
-- **Fachstelle Datenschutz**: Datenschutzfragen
-- **Virtuelle Akademie**: Didaktische Beratung
-- **Bildung 6.0 Plattform**: Ressourcen und Austausch
+<br>
+
+:::: {.columns}
+::: {.column width="50%"}
+**Rechtliche Aspekte {{< bi c-circle >}}**
+
+- Wer besitzt die Rechte an den von LLMs generierten Inhalten?
+- Risiko von Plagiaten und Urheberrechtsverletzungen
+- Richtlinien für den Umgang mit generierten Inhalten
+
+:::
+::: {.column width="50%"}
+**Datenschutz {{< bi shield-lock >}}**
+
+- Schutz personenbezogener Daten
+- Einhaltung von Datenschutzbestimmungen
+:::
+::::
+
+## Rechtliche Aspekte
+
+- KI-Modelle können mit Inhalten trainiert sein, an denen Dritte Urheberrechte haben.
+
+- Der Input (Prompt) kann geschützte Inhalte Dritter enthalten.
+
+- Der von der KI generierte Output kann zufällig geschützte Inhalte Dritter enthalten.
+
+## Empfehlung: Deklaration
+
+KI-Policy: Geben Sie deutlich an, dass der Inhalt von einer KI erstellt wurde:
+
+:::{.callout-tip title="Deklaration"}
+Der/die Autor\*in hat diesen Text teilweise mit `[Modell]` erstellt. Nach der Erstellung des Entwurfs hat der/die Autor\*in den Text überprüft, bearbeitet und nach eigenem Ermessen angepasst und übernimmt die volle Verantwortung für den Inhalt dieser Veröffentlichung.
+:::
+
+Zitieren Sie das verwendete Modell in ähnlicher Weise, wie Sie Software zitieren würden.
+
+## Datenschutz {.smaller}
+
+Datenschutz allgemein bedeutet:
+
+- sicherzustellen, dass keine persönlichen Daten der Lehrenden oder Lernenden ohne deren Zustimmung gesammelt, gespeichert oder weiterverarbeitet werden
+- Transparenz darüber, welche Daten erhoben und wie sie verwendet werden
+- sicherzustellen, dass Daten nicht für andere Zwecke als die ursprünglich angegebenen verwendet werden
+- Einhaltung von Datenschutzgesetzen und -vorschriften
+
+:::{.callout-caution appearance="minimal"}
+Lehrpersonen müssen Datenschutz beim Einsatz von (digitalen) Tools immer beachten.
+:::
+
+## Schutzmassnahmen
+
+:::: {.columns}
+::: {.column width="50%"}
+- Keine persönlichen Daten in die Eingabe von ChatGPT einfliessen lassen (nur anonymisierte Informationen)
+
+- Keine Eingabe von sensiblen oder vertraulichen Informationen
+
+:::
+
+::: {.column width="50%"}
+Einstellungen im Konto für Datenkontrolle:
+
+![](../../assets/images/schutzmassnahmen.png){width=80%}
+:::
+::::
+
+## Copilot verwenden
+
+:::: {.columns}
+::: {.column width="50%"}
+[Microsoft Copilot](https://copilot.microsoft.com/) garantiert BFH-Mitarbeitenden, dass Benutzerdaten gesichert sind:
+
+{{< bi link >}} [Schutz von Unternehmensdaten](https://learn.microsoft.com/de-ch/copilot/microsoft-365/enterprise-data-protection)
+
+- Benutzerdaten sind durch Verschlüsselung, Sicherheitskontrollen und Datenisolation geschützt.
+- Microsoft verwendet Daten nicht ohne Anweisung des Benutzers.
+
+:::
+::: {.column width="50%"}
+![](../../assets/images/copilot.png)
+:::
+::::
 
 ## Freigegebene Tools
 
@@ -72,15 +151,14 @@ Wo findest du die Liste?
 - **Komplexe Aufgaben, Coding**: ChatGPT
 - **Lange Dokumente, Analyse**: Claude
 
-## Datenschutz-Reminder
+## Support
 
-::: {.warning}
-## Achtung
+Bei Fragen:
 
-- Keine personenbezogenen Daten in nicht-freigegebene Tools
-- Bei sensiblen Daten: Prüfen, ob Tool freigegeben ist
-- Im Zweifel: Fachstelle Datenschutz kontaktieren
-:::
+- **CISO**: Informationssicherheit
+- **Fachstelle Datenschutz**: Datenschutzfragen
+- **Virtuelle Akademie**: Didaktische Beratung
+- **Bildung 6.0 Plattform**: Ressourcen und Austausch
 
 ## Ressourcen
 

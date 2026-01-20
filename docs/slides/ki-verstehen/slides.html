@@ -136,28 +136,16 @@
     }
   </style>
   <style>
-  div.callout-demonstration.callout {
-    border-left-color: #333333;
+  div.callout-individual.callout {
+    border-left-color: #A3195B;
   }
-  div.callout-demonstration.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
+  div.callout-individual.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f51b';
-    background-image: none;
-  }
-  div.callout-reflect.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-reflect.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0eb';
+    content: '\f007';
     background-image: none;
   }
   div.callout-pro-tip.callout {
@@ -170,6 +158,42 @@
   div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\e2ca';
+    background-image: none;
+  }
+  div.callout-key-point.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-key-point.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f005';
+    background-image: none;
+  }
+  div.callout-scenario.callout {
+    border-left-color: #666666;
+  }
+  div.callout-scenario.callout-style-default > .callout-header {
+    background-color: rgba(102, 102, 102, 0.13);
+  }
+  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f075';
+    background-image: none;
+  }
+  div.callout-demonstration.callout {
+    border-left-color: #333333;
+  }
+  div.callout-demonstration.callout-style-default > .callout-header {
+    background-color: rgba(51, 51, 51, 0.13);
+  }
+  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f51b';
     background-image: none;
   }
   div.callout-source-check.callout {
@@ -196,6 +220,18 @@
     content: '\f328';
     background-image: none;
   }
+  div.callout-reflect.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-reflect.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0eb';
+    background-image: none;
+  }
   div.callout-warning.callout {
     border-left-color: #A3195B;
   }
@@ -208,16 +244,16 @@
     content: '\f06a';
     background-image: none;
   }
-  div.callout-scenario.callout {
-    border-left-color: #666666;
+  div.callout-group.callout {
+    border-left-color: #A3195B;
   }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(102, 102, 102, 0.13);
+  div.callout-group.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f075';
+    content: '\f0c0';
     background-image: none;
   }
   div.callout-experiment.callout {
@@ -230,42 +266,6 @@
   div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f0c3';
-    background-image: none;
-  }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f007';
-    background-image: none;
-  }
-  div.callout-key-point.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f005';
-    background-image: none;
-  }
-  div.callout-group.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-group.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c0';
     background-image: none;
   }
   </style>
@@ -285,140 +285,138 @@
 </div>
 
 </section>
-<section id="was-ist-ein-sprachmodell" class="slide level2">
-<h2>Was ist ein Sprachmodell?</h2>
-<p>Bevor wir Chatbots sinnvoll nutzen können, müssen wir verstehen, wie sie funktionieren.</p>
+<section id="was-sind-chatbots" class="slide level2">
+<h2>Was sind Chatbots?</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+
+</div><div class="column" style="width:70%;">
+<p><img data-src="../../assets/images/claude.png"></p>
+</div></div>
 </section>
-<section id="next-token-prediction" class="slide level2">
-<h2>Next-Token Prediction</h2>
-<p>Sprachmodelle sagen das <strong>nächste Wort</strong> vorher.</p>
-<p>Sie wurden auf riesigen Textmengen trainiert:</p>
+<section id="was-sind-llms" class="slide level2">
+<h2>Was sind LLMs?</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p>Ein LLM kann man sich wie einen ausgefeilten Autocomplete-Mechanismus vorstellen.</p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="../../assets/images/predictive-text.png"></p>
+</div></div>
+</section>
+<section id="was-sind-llms-1" class="slide level2">
+<h2>Was sind LLMs?</h2>
 <ul>
-<li>Internet</li>
-<li>Bücher</li>
-<li>Code</li>
-<li>Wissenschaftliche Artikel</li>
+<li>Statistische Modelle, die Text analysieren, um das nächste Wort vorherzusagen.</li>
+</ul>
+<div class="hidden">
+<p><span class="math display">\[
+\newcommand{\green}[1]{\color{green}{#1}}
+\newcommand{\purple}[1]{\color{purple}{#1}}
+\newcommand{\red}[1]{\color{red}{#1}}
+\newcommand{\blue}[1]{\color{blue}{#1}}
+\]</span></p>
+</div>
+<p><span class="math display">\[\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})\]</span></p>
+<ul>
+<li>Jede <span class="math inline">\(\purple{\text{Vorhersage}}\)</span> basiert auf dem <span class="math inline">\(\blue{\text{Kontext}}\)</span> und dem internen <span class="math inline">\(\red{\text{Modell}}\)</span>.</li>
 </ul>
 </section>
-<section id="wie-das-aussieht" class="slide level2">
-<h2>Wie das aussieht</h2>
-<p>“Der Hund liegt auf dem ___”</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Wort</th>
-<th>Wahrscheinlichkeit</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sofa</td>
-<td>35%</td>
-</tr>
-<tr class="even">
-<td>Boden</td>
-<td>25%</td>
-</tr>
-<tr class="odd">
-<td>Bett</td>
-<td>20%</td>
-</tr>
-<tr class="even">
-<td>Rasen</td>
-<td>15%</td>
-</tr>
-<tr class="odd">
-<td>…</td>
-<td>5%</td>
-</tr>
-</tbody>
-</table>
-<p>Das Modell wählt basierend auf Wahrscheinlichkeiten.</p>
-</section>
-<section id="wichtige-einsicht" class="slide level2">
-<h2>Wichtige Einsicht</h2>
-<div class="callout callout-key-point callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="vorhersage" class="slide level2">
+<h2>Vorhersage</h2>
+<p>Nicht alle Teile des Kontexts sind gleich wichtig:</p>
+<p><br></p>
+<div class="r-fit-text">
+<p><em>“Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. Das Haus stand inmitten eines weitläufigen Gartens. Es war bekannt für seine prächtige Fassade und die grosszügigen </em>_<em>“</em></p>
 </div>
-<p><strong>Kernaussage</strong></p>
-</div>
-<div class="callout-content">
-<p>Sprachmodelle verstehen nicht. Sie berechnen statistische Wahrscheinlichkeiten.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="ausprobieren" class="slide level2">
-<h2>Ausprobieren</h2>
-<div class="callout callout-experiment callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Mini-Aktivität</strong></p>
-</div>
-<div class="callout-content">
-<p>Öffne einen Chatbot und stelle eine einfache Frage.</p>
-<p>Beobachte: Wie “fliesst” der Text?</p>
-{{&lt; timer 3 &gt;}}
-</div>
-</div>
-</div>
-</section>
-<section id="mehr-als-text" class="slide level2">
-<h2>Mehr als Text</h2>
-<p>Moderne Chatbots können mehr als nur Text generieren:</p>
+<p><br></p>
+<p>Welche Wörter sind besonders wichtig, um</p>
 <ul>
-<li>Im Internet suchen</li>
-<li>Dateien analysieren (PDFs, Bilder)</li>
-<li>Code ausführen</li>
-<li>Mit externen Diensten interagieren</li>
+<li>die Bedeutung des Satzes zu erfassen?</li>
+<li>das nächste Wort vorherzusagen?</li>
 </ul>
 </section>
-<section id="beispiele-für-tool-nutzung" class="slide level2">
-<h2>Beispiele für Tool-Nutzung</h2>
-<p><strong>Web-Suche</strong>: Aktuelle Informationen abrufen</p>
-<p><strong>Datei-Analyse</strong>: “Fasse dieses PDF zusammen”</p>
-<p><strong>Code-Ausführung</strong>: Berechnungen, Datenanalyse, Visualisierungen</p>
+<section id="wie-generieren-llms-text" class="slide level2">
+<h2>Wie generieren LLMs Text?</h2>
+<p><br></p>
+<div class="hidden">
+<p><span class="math display">\[
+\newcommand{\green}[1]{\color{green}{#1}}
+\newcommand{\purple}[1]{\color{purple}{#1}}
+\newcommand{\red}[1]{\color{red}{#1}}
+\newcommand{\blue}[1]{\color{blue}{#1}}
+\]</span></p>
+</div>
+<p><span class="math display">\[\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})\]</span></p>
+
+<img data-src="../../assets/images/hf-is-a-startup.gif" class="r-stretch"></section>
+<section id="wie-werden-llms-trainiert" class="slide level2">
+<h2>Wie werden LLMs trainiert?</h2>
+
+<img data-src="../../assets/images/llm-training.png" class="r-stretch"></section>
+<section id="gefahren-und-herausforderungen" class="slide level2">
+<h2>Gefahren und Herausforderungen</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="r-fit-text">
+<p>Die verschiedenen Stufen des Trainings sind mit verschiedenen Arten von Bedenken verbunden:</p>
+<ul>
+<li><strong>Urheberrecht</strong>: Die trainierten Modelle werden mit Texten trainiert, die möglicherweise urheberrechtlich geschützt sind.</li>
+<li><strong>Bias</strong>: Die trainierten Modelle können bestehende Vorurteile aus den Trainingsdaten lernen.</li>
+<li><strong>Energieverbrauch</strong>: Das Training der Modelle verbraucht viel Energie.</li>
+<li><strong>Sycophancy</strong>: Die Modelle neigen dazu, die Meinungen ihrer Benutzer zu bestätigen.</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../../assets/images/Pothole.png"></p>
+</div></div>
 </section>
-<section id="ausprobieren-1" class="slide level2">
-<h2>Ausprobieren</h2>
-<div class="callout callout-experiment callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="gefahren-und-herausforderungen-1" class="slide level2">
+<h2>Gefahren und Herausforderungen</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="r-fit-text">
+<ul>
+<li>Obschon sich LLMs viel Wissen aneignen, werden sie nicht trainiert, faktisch korrekte Aussagen zu machen.</li>
+<li>Dies bedeutet, dass wir alle Aussagen, die LLMs uns präsentieren, immer kritisch hinterfragen müssen.</li>
+<li>LLMs sind <strong>keine Wissensdatenbanken</strong>. Informationen immer anhand externer Quellen überprüfen.</li>
+</ul>
 </div>
-<p><strong>Mini-Aktivität</strong></p>
-</div>
-<div class="callout-content">
-<p>Lade ein PDF hoch oder bitte den Chatbot, etwas im Internet zu suchen.</p>
-<p>Was kann er? Was nicht?</p>
-{{&lt; timer 5 &gt;}}
-</div>
-</div>
-</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../../assets/images/KnowledgeBase.png"></p>
+</div></div>
 </section>
-<section id="wichtige-einsicht-1" class="slide level2">
-<h2>Wichtige Einsicht</h2>
-<div class="callout callout-key-point callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Kernaussage</strong></p>
-</div>
-<div class="callout-content">
-<p>Chatbots sind keine reinen Textgeneratoren mehr. Sie sind Werkzeuge, die verschiedene Aufgaben ausführen können.</p>
-</div>
-</div>
-</div>
-</section>
+<section id="chatgpt" class="slide level2">
+<h2>ChatGPT</h2>
+
+<img data-src="../../assets/images/chatgpt.png" class="r-stretch"></section>
+<section id="fragen-beantworten" class="slide level2">
+<h2>Fragen beantworten</h2>
+
+<img data-src="../../assets/images/fragen-beantworten.png" class="r-stretch"></section>
+<section id="bilder-analysieren" class="slide level2">
+<h2>Bilder analysieren</h2>
+
+<img data-src="../../assets/images/bilder-analysieren.png" class="r-stretch"></section>
+<section id="dokumente-zusammenfassen" class="slide level2">
+<h2>Dokumente zusammenfassen</h2>
+
+<img data-src="../../assets/images/dokumente-zusammenfassen.png" class="r-stretch"></section>
+<section id="output-strukturieren" class="slide level2">
+<h2>Output strukturieren</h2>
+
+<img data-src="../../assets/images/output-strukturieren.png" class="r-stretch"></section>
+<section id="websuche" class="slide level2">
+<h2>Websuche</h2>
+
+<img data-src="../../assets/images/websuche.png" class="r-stretch"></section>
+<section id="datenanalyse" class="slide level2">
+<h2>Datenanalyse</h2>
+
+<img data-src="../../assets/images/datenanalyse.png" class="r-stretch"></section>
+<section id="custom-gpts" class="slide level2">
+<h2>Custom GPTs</h2>
+
+<img data-src="../../assets/images/gpts.png" class="r-stretch"></section>
 <section id="chain-of-thought-denken" class="slide level2">
 <h2>Chain-of-Thought “Denken”</h2>
 <p>Explizites Nachdenken verbessert die Ergebnisse:</p>
@@ -434,29 +432,7 @@
 <p><strong>Ohne Anleitung</strong>: Oft falsch (verwechselt mit Datumsformat)</p>
 <p><strong>Mit “Denke Schritt für Schritt”</strong>: Meist richtig (vergleicht Dezimalzahlen korrekt)</p>
 </section>
-<section id="ausprobieren-2" class="slide level2">
-<h2>Ausprobieren</h2>
-<div class="callout callout-experiment callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Vergleich</strong></p>
-</div>
-<div class="callout-content">
-<p>Stelle dieselbe Frage zweimal:</p>
-<ol type="1">
-<li>Direkt: “Was ist die Antwort auf X?”</li>
-<li>Mit Anleitung: “Denke Schritt für Schritt. Was ist die Antwort auf X?”</li>
-</ol>
-<p>Vergleiche die Antworten.</p>
-{{&lt; timer 5 &gt;}}
-</div>
-</div>
-</div>
-</section>
-<section id="wichtige-einsicht-2" class="slide level2">
+<section id="wichtige-einsicht" class="slide level2">
 <h2>Wichtige Einsicht</h2>
 <div class="callout callout-key-point callout-titled callout-style-default">
 <div class="callout-body">
@@ -467,7 +443,8 @@
 <p><strong>Kernaussage</strong></p>
 </div>
 <div class="callout-content">
-<p>“Denken” verbessert die Ergebnisse, aber es ist kein menschliches Denken. Es ist eine Technik, die bessere Token-Vorhersagen ermöglicht.</p>
+<p>Sprachmodelle <strong>verstehen</strong> nicht. Sie berechnen statistische Wahrscheinlichkeiten.</p>
+<p>Chatbots sind keine reinen Textgeneratoren mehr. Sie sind Werkzeuge, die verschiedene Aufgaben ausführen können.</p>
 </div>
 </div>
 </div>

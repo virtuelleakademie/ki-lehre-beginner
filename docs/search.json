@@ -63,67 +63,116 @@
     "text": "Die Umweltperspektive\nDas Ziel ist nicht, das Ringen zu beseitigen, sondern Lernumgebungen so zu gestalten, dass produktives Ringen der lohnendste und unterstützte Weg zum gewünschten Ergebnis ist: tiefes Verständnis, nachhaltige Fähigkeiten und authentische Expertise.\nWenn die Umgebung mit dem menschlichen Lernprozess durch anstrengende Verarbeitung übereinstimmt, wählen Studierende das tiefere Engagement, weil sie die Zufriedenheit echter Kompetenzentwicklung erleben."
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#was-ist-ein-sprachmodell",
-    "href": "slides/ki-verstehen/slides.html#was-ist-ein-sprachmodell",
+    "objectID": "slides/ki-verstehen/slides.html#was-sind-chatbots",
+    "href": "slides/ki-verstehen/slides.html#was-sind-chatbots",
     "title": "KI verstehen",
-    "section": "Was ist ein Sprachmodell?",
-    "text": "Was ist ein Sprachmodell?\nBevor wir Chatbots sinnvoll nutzen können, müssen wir verstehen, wie sie funktionieren."
+    "section": "Was sind Chatbots?",
+    "text": "Was sind Chatbots?"
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#next-token-prediction",
-    "href": "slides/ki-verstehen/slides.html#next-token-prediction",
+    "objectID": "slides/ki-verstehen/slides.html#was-sind-llms",
+    "href": "slides/ki-verstehen/slides.html#was-sind-llms",
     "title": "KI verstehen",
-    "section": "Next-Token Prediction",
-    "text": "Next-Token Prediction\nSprachmodelle sagen das nächste Wort vorher.\nSie wurden auf riesigen Textmengen trainiert:\n\nInternet\nBücher\nCode\nWissenschaftliche Artikel"
+    "section": "Was sind LLMs?",
+    "text": "Was sind LLMs?\n\n\nEin LLM kann man sich wie einen ausgefeilten Autocomplete-Mechanismus vorstellen."
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#wie-das-aussieht",
-    "href": "slides/ki-verstehen/slides.html#wie-das-aussieht",
+    "objectID": "slides/ki-verstehen/slides.html#was-sind-llms-1",
+    "href": "slides/ki-verstehen/slides.html#was-sind-llms-1",
     "title": "KI verstehen",
-    "section": "Wie das aussieht",
-    "text": "Wie das aussieht\n“Der Hund liegt auf dem ___”\n\n\n\nWort\nWahrscheinlichkeit\n\n\n\n\nSofa\n35%\n\n\nBoden\n25%\n\n\nBett\n20%\n\n\nRasen\n15%\n\n\n…\n5%\n\n\n\nDas Modell wählt basierend auf Wahrscheinlichkeiten."
+    "section": "Was sind LLMs?",
+    "text": "Was sind LLMs?\n\nStatistische Modelle, die Text analysieren, um das nächste Wort vorherzusagen.\n\n\n\\[\n\\newcommand{\\green}[1]{\\color{green}{#1}}\n\\newcommand{\\purple}[1]{\\color{purple}{#1}}\n\\newcommand{\\red}[1]{\\color{red}{#1}}\n\\newcommand{\\blue}[1]{\\color{blue}{#1}}\n\\]\n\n\\[\\green{P(\\text{Wort}_{i+1}} \\mid \\red{\\text{Kontext}}, \\blue{\\text{Modell}})\\]\n\nJede \\(\\purple{\\text{Vorhersage}}\\) basiert auf dem \\(\\blue{\\text{Kontext}}\\) und dem internen \\(\\red{\\text{Modell}}\\)."
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#wichtige-einsicht",
-    "href": "slides/ki-verstehen/slides.html#wichtige-einsicht",
+    "objectID": "slides/ki-verstehen/slides.html#vorhersage",
+    "href": "slides/ki-verstehen/slides.html#vorhersage",
     "title": "KI verstehen",
-    "section": "Wichtige Einsicht",
-    "text": "Wichtige Einsicht\n\n\n\n\n\n\nKernaussage\n\n\nSprachmodelle verstehen nicht. Sie berechnen statistische Wahrscheinlichkeiten."
+    "section": "Vorhersage",
+    "text": "Vorhersage\nNicht alle Teile des Kontexts sind gleich wichtig:\n\n\n“Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. Das Haus stand inmitten eines weitläufigen Gartens. Es war bekannt für seine prächtige Fassade und die grosszügigen _“\n\n\nWelche Wörter sind besonders wichtig, um\n\ndie Bedeutung des Satzes zu erfassen?\ndas nächste Wort vorherzusagen?"
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#ausprobieren",
-    "href": "slides/ki-verstehen/slides.html#ausprobieren",
+    "objectID": "slides/ki-verstehen/slides.html#wie-generieren-llms-text",
+    "href": "slides/ki-verstehen/slides.html#wie-generieren-llms-text",
     "title": "KI verstehen",
-    "section": "Ausprobieren",
-    "text": "Ausprobieren\n\n\n\n\n\n\nMini-Aktivität\n\n\nÖffne einen Chatbot und stelle eine einfache Frage.\nBeobachte: Wie “fliesst” der Text?\n{{&lt; timer 3 &gt;}}"
+    "section": "Wie generieren LLMs Text?",
+    "text": "Wie generieren LLMs Text?\n\n\n\\[\n\\newcommand{\\green}[1]{\\color{green}{#1}}\n\\newcommand{\\purple}[1]{\\color{purple}{#1}}\n\\newcommand{\\red}[1]{\\color{red}{#1}}\n\\newcommand{\\blue}[1]{\\color{blue}{#1}}\n\\]\n\n\\[\\green{P(\\text{Wort}_{i+1}} \\mid \\red{\\text{Kontext}}, \\blue{\\text{Modell}})\\]"
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#mehr-als-text",
-    "href": "slides/ki-verstehen/slides.html#mehr-als-text",
+    "objectID": "slides/ki-verstehen/slides.html#wie-werden-llms-trainiert",
+    "href": "slides/ki-verstehen/slides.html#wie-werden-llms-trainiert",
     "title": "KI verstehen",
-    "section": "Mehr als Text",
-    "text": "Mehr als Text\nModerne Chatbots können mehr als nur Text generieren:\n\nIm Internet suchen\nDateien analysieren (PDFs, Bilder)\nCode ausführen\nMit externen Diensten interagieren"
+    "section": "Wie werden LLMs trainiert?",
+    "text": "Wie werden LLMs trainiert?"
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#beispiele-für-tool-nutzung",
-    "href": "slides/ki-verstehen/slides.html#beispiele-für-tool-nutzung",
+    "objectID": "slides/ki-verstehen/slides.html#gefahren-und-herausforderungen",
+    "href": "slides/ki-verstehen/slides.html#gefahren-und-herausforderungen",
     "title": "KI verstehen",
-    "section": "Beispiele für Tool-Nutzung",
-    "text": "Beispiele für Tool-Nutzung\nWeb-Suche: Aktuelle Informationen abrufen\nDatei-Analyse: “Fasse dieses PDF zusammen”\nCode-Ausführung: Berechnungen, Datenanalyse, Visualisierungen"
+    "section": "Gefahren und Herausforderungen",
+    "text": "Gefahren und Herausforderungen\n\n\n\nDie verschiedenen Stufen des Trainings sind mit verschiedenen Arten von Bedenken verbunden:\n\nUrheberrecht: Die trainierten Modelle werden mit Texten trainiert, die möglicherweise urheberrechtlich geschützt sind.\nBias: Die trainierten Modelle können bestehende Vorurteile aus den Trainingsdaten lernen.\nEnergieverbrauch: Das Training der Modelle verbraucht viel Energie.\nSycophancy: Die Modelle neigen dazu, die Meinungen ihrer Benutzer zu bestätigen."
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#ausprobieren-1",
-    "href": "slides/ki-verstehen/slides.html#ausprobieren-1",
+    "objectID": "slides/ki-verstehen/slides.html#gefahren-und-herausforderungen-1",
+    "href": "slides/ki-verstehen/slides.html#gefahren-und-herausforderungen-1",
     "title": "KI verstehen",
-    "section": "Ausprobieren",
-    "text": "Ausprobieren\n\n\n\n\n\n\nMini-Aktivität\n\n\nLade ein PDF hoch oder bitte den Chatbot, etwas im Internet zu suchen.\nWas kann er? Was nicht?\n{{&lt; timer 5 &gt;}}"
+    "section": "Gefahren und Herausforderungen",
+    "text": "Gefahren und Herausforderungen\n\n\n\n\nObschon sich LLMs viel Wissen aneignen, werden sie nicht trainiert, faktisch korrekte Aussagen zu machen.\nDies bedeutet, dass wir alle Aussagen, die LLMs uns präsentieren, immer kritisch hinterfragen müssen.\nLLMs sind keine Wissensdatenbanken. Informationen immer anhand externer Quellen überprüfen."
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#wichtige-einsicht-1",
-    "href": "slides/ki-verstehen/slides.html#wichtige-einsicht-1",
+    "objectID": "slides/ki-verstehen/slides.html#chatgpt",
+    "href": "slides/ki-verstehen/slides.html#chatgpt",
     "title": "KI verstehen",
-    "section": "Wichtige Einsicht",
-    "text": "Wichtige Einsicht\n\n\n\n\n\n\nKernaussage\n\n\nChatbots sind keine reinen Textgeneratoren mehr. Sie sind Werkzeuge, die verschiedene Aufgaben ausführen können."
+    "section": "ChatGPT",
+    "text": "ChatGPT"
+  },
+  {
+    "objectID": "slides/ki-verstehen/slides.html#fragen-beantworten",
+    "href": "slides/ki-verstehen/slides.html#fragen-beantworten",
+    "title": "KI verstehen",
+    "section": "Fragen beantworten",
+    "text": "Fragen beantworten"
+  },
+  {
+    "objectID": "slides/ki-verstehen/slides.html#bilder-analysieren",
+    "href": "slides/ki-verstehen/slides.html#bilder-analysieren",
+    "title": "KI verstehen",
+    "section": "Bilder analysieren",
+    "text": "Bilder analysieren"
+  },
+  {
+    "objectID": "slides/ki-verstehen/slides.html#dokumente-zusammenfassen",
+    "href": "slides/ki-verstehen/slides.html#dokumente-zusammenfassen",
+    "title": "KI verstehen",
+    "section": "Dokumente zusammenfassen",
+    "text": "Dokumente zusammenfassen"
+  },
+  {
+    "objectID": "slides/ki-verstehen/slides.html#output-strukturieren",
+    "href": "slides/ki-verstehen/slides.html#output-strukturieren",
+    "title": "KI verstehen",
+    "section": "Output strukturieren",
+    "text": "Output strukturieren"
+  },
+  {
+    "objectID": "slides/ki-verstehen/slides.html#websuche",
+    "href": "slides/ki-verstehen/slides.html#websuche",
+    "title": "KI verstehen",
+    "section": "Websuche",
+    "text": "Websuche"
+  },
+  {
+    "objectID": "slides/ki-verstehen/slides.html#datenanalyse",
+    "href": "slides/ki-verstehen/slides.html#datenanalyse",
+    "title": "KI verstehen",
+    "section": "Datenanalyse",
+    "text": "Datenanalyse"
+  },
+  {
+    "objectID": "slides/ki-verstehen/slides.html#custom-gpts",
+    "href": "slides/ki-verstehen/slides.html#custom-gpts",
+    "title": "KI verstehen",
+    "section": "Custom GPTs",
+    "text": "Custom GPTs"
   },
   {
     "objectID": "slides/ki-verstehen/slides.html#chain-of-thought-denken",
@@ -140,18 +189,11 @@
     "text": "Vergleich\nBeispiel-Aufgabe: “Was ist grösser: 9.11 oder 9.8?”\nOhne Anleitung: Oft falsch (verwechselt mit Datumsformat)\nMit “Denke Schritt für Schritt”: Meist richtig (vergleicht Dezimalzahlen korrekt)"
   },
   {
-    "objectID": "slides/ki-verstehen/slides.html#ausprobieren-2",
-    "href": "slides/ki-verstehen/slides.html#ausprobieren-2",
-    "title": "KI verstehen",
-    "section": "Ausprobieren",
-    "text": "Ausprobieren\n\n\n\n\n\n\nVergleich\n\n\nStelle dieselbe Frage zweimal:\n\nDirekt: “Was ist die Antwort auf X?”\nMit Anleitung: “Denke Schritt für Schritt. Was ist die Antwort auf X?”\n\nVergleiche die Antworten.\n{{&lt; timer 5 &gt;}}"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#wichtige-einsicht-2",
-    "href": "slides/ki-verstehen/slides.html#wichtige-einsicht-2",
+    "objectID": "slides/ki-verstehen/slides.html#wichtige-einsicht",
+    "href": "slides/ki-verstehen/slides.html#wichtige-einsicht",
     "title": "KI verstehen",
     "section": "Wichtige Einsicht",
-    "text": "Wichtige Einsicht\n\n\n\n\n\n\nKernaussage\n\n\n“Denken” verbessert die Ergebnisse, aber es ist kein menschliches Denken. Es ist eine Technik, die bessere Token-Vorhersagen ermöglicht."
+    "text": "Wichtige Einsicht\n\n\n\n\n\n\nKernaussage\n\n\nSprachmodelle verstehen nicht. Sie berechnen statistische Wahrscheinlichkeiten.\nChatbots sind keine reinen Textgeneratoren mehr. Sie sind Werkzeuge, die verschiedene Aufgaben ausführen können."
   },
   {
     "objectID": "slides/ki-verstehen/slides.html#zusammenfassung",
@@ -461,11 +503,46 @@
     "text": "Studierende\nWas von Studierenden erwartet wird:\n\nReflektierter Einsatz im vorgegebenen Rahmen\nAuseinandersetzung mit Potenzialen und Grenzen\nFeedback an Lehrende geben"
   },
   {
-    "objectID": "slides/bfh-landscape/slides.html#support",
-    "href": "slides/bfh-landscape/slides.html#support",
+    "objectID": "slides/bfh-landscape/slides.html#rechtliche-aspekte",
+    "href": "slides/bfh-landscape/slides.html#rechtliche-aspekte",
     "title": "KI an der BFH",
-    "section": "Support",
-    "text": "Support\nBei Fragen:\n\nCISO: Informationssicherheit\nFachstelle Datenschutz: Datenschutzfragen\nVirtuelle Akademie: Didaktische Beratung\nBildung 6.0 Plattform: Ressourcen und Austausch"
+    "section": "Rechtliche Aspekte",
+    "text": "Rechtliche Aspekte\nZwei wichtige Aspekte bei der Benutzung von LLMs:\n\n\n\nRechtliche Aspekte \n\nWer besitzt die Rechte an den von LLMs generierten Inhalten?\nRisiko von Plagiaten und Urheberrechtsverletzungen\nRichtlinien für den Umgang mit generierten Inhalten\n\n\nDatenschutz \n\nSchutz personenbezogener Daten\nEinhaltung von Datenschutzbestimmungen"
+  },
+  {
+    "objectID": "slides/bfh-landscape/slides.html#rechtliche-aspekte-1",
+    "href": "slides/bfh-landscape/slides.html#rechtliche-aspekte-1",
+    "title": "KI an der BFH",
+    "section": "Rechtliche Aspekte",
+    "text": "Rechtliche Aspekte\n\nKI-Modelle können mit Inhalten trainiert sein, an denen Dritte Urheberrechte haben.\nDer Input (Prompt) kann geschützte Inhalte Dritter enthalten.\nDer von der KI generierte Output kann zufällig geschützte Inhalte Dritter enthalten."
+  },
+  {
+    "objectID": "slides/bfh-landscape/slides.html#empfehlung-deklaration",
+    "href": "slides/bfh-landscape/slides.html#empfehlung-deklaration",
+    "title": "KI an der BFH",
+    "section": "Empfehlung: Deklaration",
+    "text": "Empfehlung: Deklaration\nKI-Policy: Geben Sie deutlich an, dass der Inhalt von einer KI erstellt wurde:\n\n\n\n\n\n\n\nDeklaration\n\n\nDer/die Autor*in hat diesen Text teilweise mit [Modell] erstellt. Nach der Erstellung des Entwurfs hat der/die Autor*in den Text überprüft, bearbeitet und nach eigenem Ermessen angepasst und übernimmt die volle Verantwortung für den Inhalt dieser Veröffentlichung.\n\n\n\n\nZitieren Sie das verwendete Modell in ähnlicher Weise, wie Sie Software zitieren würden."
+  },
+  {
+    "objectID": "slides/bfh-landscape/slides.html#datenschutz",
+    "href": "slides/bfh-landscape/slides.html#datenschutz",
+    "title": "KI an der BFH",
+    "section": "Datenschutz",
+    "text": "Datenschutz\nDatenschutz allgemein bedeutet:\n\nsicherzustellen, dass keine persönlichen Daten der Lehrenden oder Lernenden ohne deren Zustimmung gesammelt, gespeichert oder weiterverarbeitet werden\nTransparenz darüber, welche Daten erhoben und wie sie verwendet werden\nsicherzustellen, dass Daten nicht für andere Zwecke als die ursprünglich angegebenen verwendet werden\nEinhaltung von Datenschutzgesetzen und -vorschriften\n\n\n\n\nLehrpersonen müssen Datenschutz beim Einsatz von (digitalen) Tools immer beachten."
+  },
+  {
+    "objectID": "slides/bfh-landscape/slides.html#schutzmassnahmen",
+    "href": "slides/bfh-landscape/slides.html#schutzmassnahmen",
+    "title": "KI an der BFH",
+    "section": "Schutzmassnahmen",
+    "text": "Schutzmassnahmen\n\n\n\nKeine persönlichen Daten in die Eingabe von ChatGPT einfliessen lassen (nur anonymisierte Informationen)\nKeine Eingabe von sensiblen oder vertraulichen Informationen\n\n\nEinstellungen im Konto für Datenkontrolle:"
+  },
+  {
+    "objectID": "slides/bfh-landscape/slides.html#copilot-verwenden",
+    "href": "slides/bfh-landscape/slides.html#copilot-verwenden",
+    "title": "KI an der BFH",
+    "section": "Copilot verwenden",
+    "text": "Copilot verwenden\n\n\nMicrosoft Copilot garantiert BFH-Mitarbeitenden, dass Benutzerdaten gesichert sind:\n Schutz von Unternehmensdaten\n\nBenutzerdaten sind durch Verschlüsselung, Sicherheitskontrollen und Datenisolation geschützt.\nMicrosoft verwendet Daten nicht ohne Anweisung des Benutzers."
   },
   {
     "objectID": "slides/bfh-landscape/slides.html#freigegebene-tools",
@@ -489,11 +566,11 @@
     "text": "Welches Tool wofür?\n\nKurze Fragen, Office-Integration: Copilot\nKomplexe Aufgaben, Coding: ChatGPT\nLange Dokumente, Analyse: Claude"
   },
   {
-    "objectID": "slides/bfh-landscape/slides.html#datenschutz-reminder",
-    "href": "slides/bfh-landscape/slides.html#datenschutz-reminder",
+    "objectID": "slides/bfh-landscape/slides.html#support",
+    "href": "slides/bfh-landscape/slides.html#support",
     "title": "KI an der BFH",
-    "section": "Datenschutz-Reminder",
-    "text": "Datenschutz-Reminder\n\n\n\n\n\n\nAchtung\n\n\n\nKeine personenbezogenen Daten in nicht-freigegebene Tools\nBei sensiblen Daten: Prüfen, ob Tool freigegeben ist\nIm Zweifel: Fachstelle Datenschutz kontaktieren"
+    "section": "Support",
+    "text": "Support\nBei Fragen:\n\nCISO: Informationssicherheit\nFachstelle Datenschutz: Datenschutzfragen\nVirtuelle Akademie: Didaktische Beratung\nBildung 6.0 Plattform: Ressourcen und Austausch"
   },
   {
     "objectID": "slides/bfh-landscape/slides.html#ressourcen",

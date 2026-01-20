@@ -11,87 +11,149 @@ format:
 footer: "KI in der Lehre: Grundlagen"
 ---
 
-## Was ist ein Sprachmodell?
+## Was sind Chatbots?
 
-Bevor wir Chatbots sinnvoll nutzen können, müssen wir verstehen, wie sie funktionieren.
+:::: {.columns}
+::: {.column width="30%"}
 
-## Next-Token Prediction
-
-Sprachmodelle sagen das **nächste Wort** vorher.
-
-Sie wurden auf riesigen Textmengen trainiert:
-
-- Internet
-- Bücher
-- Code
-- Wissenschaftliche Artikel
-
-## Wie das aussieht
-
-"Der Hund liegt auf dem ___"
-
-| Wort | Wahrscheinlichkeit |
-|------|-------------------|
-| Sofa | 35% |
-| Boden | 25% |
-| Bett | 20% |
-| Rasen | 15% |
-| ... | 5% |
-
-Das Modell wählt basierend auf Wahrscheinlichkeiten.
-
-## Wichtige Einsicht
-
-::: {.key-point}
-Sprachmodelle verstehen nicht. Sie berechnen statistische Wahrscheinlichkeiten.
 :::
 
-## Ausprobieren
+::: {.column width="70%"}
+![](../../assets/images/claude.png)
+:::
+::::
 
-::: {.experiment}
-## Mini-Aktivität
+## Was sind LLMs?
 
-Öffne einen Chatbot und stelle eine einfache Frage.
+:::: {.columns}
+::: {.column width="60%"}
+Ein LLM kann man sich wie einen ausgefeilten Autocomplete-Mechanismus vorstellen.
+:::
+::: {.column width="40%"}
+![](../../assets/images/predictive-text.png)
+:::
+::::
 
-Beobachte: Wie "fliesst" der Text?
+## Was sind LLMs?
 
-{{< timer 3 >}}
+- Statistische Modelle, die Text analysieren, um das nächste Wort vorherzusagen.
+
+::: {.hidden}
+$$
+\newcommand{\green}[1]{\color{green}{#1}}
+\newcommand{\purple}[1]{\color{purple}{#1}}
+\newcommand{\red}[1]{\color{red}{#1}}
+\newcommand{\blue}[1]{\color{blue}{#1}}
+$$
 :::
 
-## Mehr als Text
+$$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 
-Moderne Chatbots können mehr als nur Text generieren:
+- Jede $\purple{\text{Vorhersage}}$ basiert auf dem $\blue{\text{Kontext}}$ und dem internen $\red{\text{Modell}}$.
 
-- Im Internet suchen
-- Dateien analysieren (PDFs, Bilder)
-- Code ausführen
-- Mit externen Diensten interagieren
+## Vorhersage
 
-## Beispiele für Tool-Nutzung
+Nicht alle Teile des Kontexts sind gleich wichtig:
 
-**Web-Suche**: Aktuelle Informationen abrufen
+<br>
 
-**Datei-Analyse**: "Fasse dieses PDF zusammen"
-
-**Code-Ausführung**: Berechnungen, Datenanalyse, Visualisierungen
-
-## Ausprobieren
-
-::: {.experiment}
-## Mini-Aktivität
-
-Lade ein PDF hoch oder bitte den Chatbot, etwas im Internet zu suchen.
-
-Was kann er? Was nicht?
-
-{{< timer 5 >}}
+:::{.r-fit-text}
+_"Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. Das Haus stand inmitten eines weitläufigen Gartens. Es war bekannt für seine prächtige Fassade und die grosszügigen ___"_
 :::
 
-## Wichtige Einsicht
+<br>
 
-::: {.key-point}
-Chatbots sind keine reinen Textgeneratoren mehr. Sie sind Werkzeuge, die verschiedene Aufgaben ausführen können.
+Welche Wörter sind besonders wichtig, um
+
+- die Bedeutung des Satzes zu erfassen?
+- das nächste Wort vorherzusagen?
+
+## Wie generieren LLMs Text?
+
+<br>
+
+::: {.hidden}
+$$
+\newcommand{\green}[1]{\color{green}{#1}}
+\newcommand{\purple}[1]{\color{purple}{#1}}
+\newcommand{\red}[1]{\color{red}{#1}}
+\newcommand{\blue}[1]{\color{blue}{#1}}
+$$
 :::
+
+$$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
+
+![](../../assets/images/hf-is-a-startup.gif)
+
+## Wie werden LLMs trainiert?
+
+![](../../assets/images/llm-training.png)
+
+## Gefahren und Herausforderungen
+
+:::: {.columns}
+::: {.column width="50%"}
+:::{.r-fit-text}
+Die verschiedenen Stufen des Trainings sind mit verschiedenen Arten von Bedenken verbunden:
+
+- **Urheberrecht**: Die trainierten Modelle werden mit Texten trainiert, die möglicherweise urheberrechtlich geschützt sind.
+- **Bias**: Die trainierten Modelle können bestehende Vorurteile aus den Trainingsdaten lernen.
+- **Energieverbrauch**: Das Training der Modelle verbraucht viel Energie.
+- **Sycophancy**: Die Modelle neigen dazu, die Meinungen ihrer Benutzer zu bestätigen.
+:::
+
+:::
+::: {.column width="50%"}
+![](../../assets/images/Pothole.png)
+:::
+::::
+
+## Gefahren und Herausforderungen
+
+:::: {.columns}
+::: {.column width="50%"}
+:::{.r-fit-text}
+- Obschon sich LLMs viel Wissen aneignen, werden sie nicht trainiert, faktisch korrekte Aussagen zu machen.
+- Dies bedeutet, dass wir alle Aussagen, die LLMs uns präsentieren, immer kritisch hinterfragen müssen.
+- LLMs sind **keine Wissensdatenbanken**. Informationen immer anhand externer Quellen überprüfen.
+:::
+:::
+::: {.column width="50%"}
+![](../../assets/images/KnowledgeBase.png)
+:::
+::::
+
+## ChatGPT
+
+![](../../assets/images/chatgpt.png)
+
+## Fragen beantworten
+
+![](../../assets/images/fragen-beantworten.png)
+
+## Bilder analysieren
+
+![](../../assets/images/bilder-analysieren.png)
+
+## Dokumente zusammenfassen
+
+![](../../assets/images/dokumente-zusammenfassen.png)
+
+## Output strukturieren
+
+![](../../assets/images/output-strukturieren.png)
+
+## Websuche
+
+![](../../assets/images/websuche.png)
+
+## Datenanalyse
+
+![](../../assets/images/datenanalyse.png)
+
+## Custom GPTs
+
+![](../../assets/images/gpts.png)
 
 ## Chain-of-Thought "Denken"
 
@@ -109,25 +171,14 @@ Beispiel-Aufgabe: "Was ist grösser: 9.11 oder 9.8?"
 
 **Mit "Denke Schritt für Schritt"**: Meist richtig (vergleicht Dezimalzahlen korrekt)
 
-## Ausprobieren
-
-::: {.experiment}
-## Vergleich
-
-Stelle dieselbe Frage zweimal:
-
-1. Direkt: "Was ist die Antwort auf X?"
-2. Mit Anleitung: "Denke Schritt für Schritt. Was ist die Antwort auf X?"
-
-Vergleiche die Antworten.
-
-{{< timer 5 >}}
-:::
-
 ## Wichtige Einsicht
 
 ::: {.key-point}
-"Denken" verbessert die Ergebnisse, aber es ist kein menschliches Denken. Es ist eine Technik, die bessere Token-Vorhersagen ermöglicht.
+## Kernaussage
+
+Sprachmodelle **verstehen** nicht. Sie berechnen statistische Wahrscheinlichkeiten.
+
+Chatbots sind keine reinen Textgeneratoren mehr. Sie sind Werkzeuge, die verschiedene Aufgaben ausführen können.
 :::
 
 ## Zusammenfassung

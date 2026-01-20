@@ -9,7 +9,8 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
-<link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.27">
 
   <title>KI in der Lehre: Beginner – KI an der BFH</title>
@@ -136,6 +137,54 @@
     }
   </style>
   <style>
+  div.callout-scenario.callout {
+    border-left-color: #666666;
+  }
+  div.callout-scenario.callout-style-default > .callout-header {
+    background-color: rgba(102, 102, 102, 0.13);
+  }
+  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f075';
+    background-image: none;
+  }
+  div.callout-key-point.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-key-point.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f005';
+    background-image: none;
+  }
+  div.callout-individual.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-individual.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f007';
+    background-image: none;
+  }
+  div.callout-group.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-group.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0c0';
+    background-image: none;
+  }
   div.callout-demonstration.callout {
     border-left-color: #333333;
   }
@@ -146,6 +195,30 @@
   div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f51b';
+    background-image: none;
+  }
+  div.callout-reflect.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-reflect.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0eb';
+    background-image: none;
+  }
+  div.callout-pro-tip.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-pro-tip.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\e2ca';
     background-image: none;
   }
   div.callout-source-check.callout {
@@ -172,54 +245,6 @@
     content: '\f0c3';
     background-image: none;
   }
-  div.callout-reflect.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-reflect.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0eb';
-    background-image: none;
-  }
-  div.callout-key-point.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f005';
-    background-image: none;
-  }
-  div.callout-pro-tip.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-pro-tip.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\e2ca';
-    background-image: none;
-  }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f007';
-    background-image: none;
-  }
   div.callout-warning.callout {
     border-left-color: #A3195B;
   }
@@ -242,30 +267,6 @@
   div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f328';
-    background-image: none;
-  }
-  div.callout-group.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-group.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c0';
-    background-image: none;
-  }
-  div.callout-scenario.callout {
-    border-left-color: #666666;
-  }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(102, 102, 102, 0.13);
-  }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f075';
     background-image: none;
   }
   </style>
@@ -322,15 +323,97 @@
 <li>Feedback an Lehrende geben</li>
 </ul>
 </section>
-<section id="support" class="slide level2">
-<h2>Support</h2>
-<p>Bei Fragen:</p>
+<section id="rechtliche-aspekte" class="slide level2">
+<h2>Rechtliche Aspekte</h2>
+<p>Zwei wichtige Aspekte bei der Benutzung von LLMs:</p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Rechtliche Aspekte <i class="bi-c-circle " style="" role="img" aria-hidden="true"></i></strong></p>
 <ul>
-<li><strong>CISO</strong>: Informationssicherheit</li>
-<li><strong>Fachstelle Datenschutz</strong>: Datenschutzfragen</li>
-<li><strong>Virtuelle Akademie</strong>: Didaktische Beratung</li>
-<li><strong>Bildung 6.0 Plattform</strong>: Ressourcen und Austausch</li>
+<li>Wer besitzt die Rechte an den von LLMs generierten Inhalten?</li>
+<li>Risiko von Plagiaten und Urheberrechtsverletzungen</li>
+<li>Richtlinien für den Umgang mit generierten Inhalten</li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Datenschutz <i class="bi-shield-lock " style="" role="img" aria-hidden="true"></i></strong></p>
+<ul>
+<li>Schutz personenbezogener Daten</li>
+<li>Einhaltung von Datenschutzbestimmungen</li>
+</ul>
+</div></div>
+</section>
+<section id="rechtliche-aspekte-1" class="slide level2">
+<h2>Rechtliche Aspekte</h2>
+<ul>
+<li><p>KI-Modelle können mit Inhalten trainiert sein, an denen Dritte Urheberrechte haben.</p></li>
+<li><p>Der Input (Prompt) kann geschützte Inhalte Dritter enthalten.</p></li>
+<li><p>Der von der KI generierte Output kann zufällig geschützte Inhalte Dritter enthalten.</p></li>
+</ul>
+</section>
+<section id="empfehlung-deklaration" class="slide level2">
+<h2>Empfehlung: Deklaration</h2>
+<p>KI-Policy: Geben Sie deutlich an, dass der Inhalt von einer KI erstellt wurde:</p>
+<div title="Deklaration">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Deklaration</strong></p>
+</div>
+<div class="callout-content">
+<p>Der/die Autor*in hat diesen Text teilweise mit <code>[Modell]</code> erstellt. Nach der Erstellung des Entwurfs hat der/die Autor*in den Text überprüft, bearbeitet und nach eigenem Ermessen angepasst und übernimmt die volle Verantwortung für den Inhalt dieser Veröffentlichung.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Zitieren Sie das verwendete Modell in ähnlicher Weise, wie Sie Software zitieren würden.</p>
+</section>
+<section id="datenschutz" class="slide level2 smaller">
+<h2>Datenschutz</h2>
+<p>Datenschutz allgemein bedeutet:</p>
+<ul>
+<li>sicherzustellen, dass keine persönlichen Daten der Lehrenden oder Lernenden ohne deren Zustimmung gesammelt, gespeichert oder weiterverarbeitet werden</li>
+<li>Transparenz darüber, welche Daten erhoben und wie sie verwendet werden</li>
+<li>sicherzustellen, dass Daten nicht für andere Zwecke als die ursprünglich angegebenen verwendet werden</li>
+<li>Einhaltung von Datenschutzgesetzen und -vorschriften</li>
+</ul>
+<div class="callout callout-caution no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>Lehrpersonen müssen Datenschutz beim Einsatz von (digitalen) Tools immer beachten.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="schutzmassnahmen" class="slide level2">
+<h2>Schutzmassnahmen</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Keine persönlichen Daten in die Eingabe von ChatGPT einfliessen lassen (nur anonymisierte Informationen)</p></li>
+<li><p>Keine Eingabe von sensiblen oder vertraulichen Informationen</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Einstellungen im Konto für Datenkontrolle:</p>
+<p><img data-src="../../assets/images/schutzmassnahmen.png" style="width:80.0%"></p>
+</div></div>
+</section>
+<section id="copilot-verwenden" class="slide level2">
+<h2>Copilot verwenden</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><a href="https://copilot.microsoft.com/">Microsoft Copilot</a> garantiert BFH-Mitarbeitenden, dass Benutzerdaten gesichert sind:</p>
+<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learn.microsoft.com/de-ch/copilot/microsoft-365/enterprise-data-protection">Schutz von Unternehmensdaten</a></p>
+<ul>
+<li>Benutzerdaten sind durch Verschlüsselung, Sicherheitskontrollen und Datenisolation geschützt.</li>
+<li>Microsoft verwendet Daten nicht ohne Anweisung des Benutzers.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../../assets/images/copilot.png"></p>
+</div></div>
 </section>
 <section id="freigegebene-tools" class="slide level2">
 <h2>Freigegebene Tools</h2>
@@ -377,25 +460,15 @@
 <li><strong>Lange Dokumente, Analyse</strong>: Claude</li>
 </ul>
 </section>
-<section id="datenschutz-reminder" class="slide level2">
-<h2>Datenschutz-Reminder</h2>
-<div class="callout callout-warning callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Achtung</strong></p>
-</div>
-<div class="callout-content">
+<section id="support" class="slide level2">
+<h2>Support</h2>
+<p>Bei Fragen:</p>
 <ul>
-<li>Keine personenbezogenen Daten in nicht-freigegebene Tools</li>
-<li>Bei sensiblen Daten: Prüfen, ob Tool freigegeben ist</li>
-<li>Im Zweifel: Fachstelle Datenschutz kontaktieren</li>
+<li><strong>CISO</strong>: Informationssicherheit</li>
+<li><strong>Fachstelle Datenschutz</strong>: Datenschutzfragen</li>
+<li><strong>Virtuelle Akademie</strong>: Didaktische Beratung</li>
+<li><strong>Bildung 6.0 Plattform</strong>: Ressourcen und Austausch</li>
 </ul>
-</div>
-</div>
-</div>
 </section>
 <section id="ressourcen" class="slide level2">
 <h2>Ressourcen</h2>
