@@ -176,7 +176,7 @@ Beispiel-Aufgabe: "Was ist grösser: 9.11 oder 9.8?"
 ::: {.key-point}
 ## Kernaussage
 
-Sprachmodelle **verstehen** nicht. Sie berechnen statistische Wahrscheinlichkeiten.
+Sprachmodelle generieren Text Wort für Wort, ohne eingebaute Faktenprüfung.
 
 Chatbots sind keine reinen Textgeneratoren mehr. Sie sind Werkzeuge, die verschiedene Aufgaben ausführen können.
 :::

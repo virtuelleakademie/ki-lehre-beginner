@@ -34,7 +34,7 @@ Teile deine Vorsätze mit einer Person neben dir.
 
 **Was wir heute gemacht haben**:
 
-1. Verstanden, wie Chatbots funktionieren (Vorhersage, nicht Verstehen)
+1. Verstanden, wie Chatbots funktionieren (Vorhersage ohne eingebaute Faktenprüfung)
 2. Die BFH-Richtlinien und Tools kennengelernt
 3. Erfahren, dass Chatbots selbstbewusst, aber nicht zuverlässig sind
 4. Den Unterschied zwischen Offloading und Outsourcing verstanden

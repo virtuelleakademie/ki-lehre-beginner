@@ -25,7 +25,7 @@ In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch 
 
 - Sprachmodelle sagen das nächste Wort vorher
 - Trainiert auf riesigen Textmengen
-- Wichtige Einsicht: Statistik, nicht Verstehen
+- Wichtige Einsicht: Keine eingebaute Faktenprüfung
 
 ### Abschnitt B: Tool-Nutzung
 
@@ -36,7 +36,7 @@ In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch 
 
 - Chain-of-Thought verbessert Ergebnisse
 - "Denke Schritt für Schritt"
-- Bessere Token-Vorhersagen, kein menschliches Denken
+- Mehr Zwischenschritte = mehr Kontext = bessere Vorhersagen
 
 ## Interaktiv: Token-Vorhersage
 
@@ -110,7 +110,7 @@ Plot.plot({
 ```
 
 ::: {.key-point}
-Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Es "weiss" nicht, welches richtig ist. Es wählt basierend auf statistischen Mustern aus den Trainingsdaten.
+Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern aus den Trainingsdaten, ohne eingebaute Prüfung der faktischen Korrektheit.
 :::
 
 ## Interaktiv: Temperature

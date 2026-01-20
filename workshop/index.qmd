@@ -10,7 +10,7 @@ Dieser Workshop beantwortet drei Fragen:
 
 | # | Frage | Was du lernst |
 |---|-------|---------------|
-| 1 | **Was ist KI?** | Wie Sprachmodelle funktionieren (Statistik, nicht Verstehen) |
+| 1 | **Was ist KI?** | Wie Sprachmodelle funktionieren (Textgenerierung ohne Faktenprüfung) |
 | 2 | **Wofür kann KI verwendet werden?** | Möglichkeiten, Grenzen und BFH-Richtlinien |
 | 3 | **Wofür sollte ich KI verwenden?** | Offloading vs. Outsourcing, Produktivität vs. Lernen |
 
@@ -53,7 +53,7 @@ Am Ende nimmst du drei Antworten mit:
 ::: {.key-point}
 ## Frage 1: Was ist KI?
 
-Sprachmodelle sind **statistische Textgeneratoren**. Sie "verstehen" nicht, sie berechnen Wahrscheinlichkeiten.
+Sprachmodelle generieren Text Wort für Wort. Sie können überzeugend klingen, haben aber keine eingebaute Faktenprüfung.
 :::
 
 ::: {.key-point}

@@ -123,7 +123,7 @@ Plot.plot({
 ::: {.key-point}
 ## Was du siehst
 
-Das Modell berechnet für **jedes mögliche Wort** eine Wahrscheinlichkeit. Es "weiss" nicht, welches Wort "richtig" ist. Es wählt statistisch, basierend auf Mustern in den Trainingsdaten.
+Das Modell berechnet für **jedes mögliche Wort** eine Wahrscheinlichkeit. Die Auswahl basiert auf Mustern in den Trainingsdaten, ohne eingebaute Prüfung der faktischen Korrektheit.
 :::
 
 ## Temperature: Wie viel Zufall?
@@ -241,7 +241,7 @@ Plot.plot({
 ::: {.key-point}
 ## Kernaussagen
 
-1. **Kein Verständnis**: LLMs "verstehen" nicht. Sie berechnen statistische Muster.
+1. **Keine eingebaute Faktenprüfung**: LLMs generieren Text basierend auf Mustern, ohne externe Verifikation.
 
 2. **Kontext ist entscheidend**: Die Wahrscheinlichkeiten ändern sich komplett, je nachdem was vorher steht.
 

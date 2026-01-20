@@ -88,11 +88,11 @@ $$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 ## Wichtige Einsicht
 
 ::: {.key-point}
-## Statistik, nicht Verstehen
+## Vorhersage ohne Verifikation
 
-Sprachmodelle **verstehen** nicht.
+Sprachmodelle **generieren** Text, Wort für Wort.
 
-Sie berechnen statistische Wahrscheinlichkeiten basierend auf Mustern in den Trainingsdaten.
+Sie haben keinen eingebauten Mechanismus, um zu prüfen, ob ihre Aussagen faktisch korrekt sind.
 :::
 
 ## Chain-of-Thought "Denken"
@@ -134,24 +134,24 @@ Vergleiche die Antworten.
 {{< timer 5 >}}
 :::
 
-## "Denken" ist auch Statistik
+## Wie "Denken" funktioniert
 
 ::: {.key-point}
-## Keine echte Kognition
+## Kontext erweitert die Vorhersage
 
-"Denken" verbessert die Ergebnisse, aber es ist kein menschliches Denken.
+"Denken" verbessert die Ergebnisse durch mehr Zwischenschritte.
 
-Es ist eine Technik, die bessere Token-Vorhersagen ermöglicht, weil mehr Kontext (die Zwischenschritte) zur Verfügung steht.
+Jeder Zwischenschritt liefert zusätzlichen Kontext, der die nachfolgenden Token-Vorhersagen beeinflusst.
 :::
 
 ## Zusammenfassung: Was ist KI?
 
-| Aspekt | Realität |
+| Aspekt | Was wir beobachten |
 |--------|----------|
-| Textgenerierung | Statistische Vorhersage des nächsten Worts |
-| "Verstehen" | Mustererkennung, kein echtes Verstehen |
-| "Denken" | Mehr Tokens = bessere Vorhersagen |
-| Wissen | Muster aus Trainingsdaten, keine Faktendatenbank |
+| Textgenerierung | Vorhersage des nächsten Worts, basierend auf Kontext |
+| Wissen | Muster aus Trainingsdaten, keine externe Verifikation |
+| "Denken" | Mehr Zwischenschritte = mehr Kontext = bessere Ergebnisse |
+| Grenzen | Keine eingebaute Faktenprüfung, kann überzeugend Falsches produzieren |
 
 ## Takeaway
 
@@ -160,5 +160,5 @@ Es ist eine Technik, die bessere Token-Vorhersagen ermöglicht, weil mehr Kontex
 
 **Was ist KI?**
 
-Sprachmodelle sind statistische Textgeneratoren. Sie "verstehen" nicht, sie berechnen Wahrscheinlichkeiten basierend auf Mustern in Trainingsdaten.
+Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Sie können überzeugend klingen, aber haben keine eingebaute Faktenprüfung.
 :::
