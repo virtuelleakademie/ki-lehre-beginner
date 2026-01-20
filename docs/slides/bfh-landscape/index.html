@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Andrew Ellis">
-<meta name="author" content="Stefan Hackstein">
-<meta name="description" content="Basic prompting techniques.">
 
-<title>Effective Prompting Strategies in Education – KI in der Lehre: Beginner</title>
+<title>KI an der BFH – KI in der Lehre: Beginner</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -68,6 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../exercises/fakten-check/index.html" rel="next">
+<link href="../../slides/ki-verstehen/index.html" rel="prev">
 <link href="../..//assets/robot.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -125,28 +89,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
 </script>
 <style>
-div.callout-warning.callout {
+div.callout-group.callout {
   border-left-color: #A3195B;
 }
-div.callout-warning.callout-style-default > .callout-header {
+div.callout-group.callout-style-default > .callout-header {
   background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
-  background-image: none;
-}
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
-}
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c3';
+  content: '\f0c0';
   background-image: none;
 }
 div.callout-reflect.callout {
@@ -161,16 +113,16 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
   content: '\f0eb';
   background-image: none;
 }
-div.callout-scenario.callout {
-  border-left-color: #666666;
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
 }
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f075';
+  content: '\f0c3';
   background-image: none;
 }
 div.callout-pro-tip.callout {
@@ -185,6 +137,18 @@ div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro
   content: '\e2ca';
   background-image: none;
 }
+div.callout-individual.callout {
+  border-left-color: #A3195B;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f007';
+  background-image: none;
+}
 div.callout-prompt.callout {
   border-left-color: #333333;
 }
@@ -195,18 +159,6 @@ div.callout-prompt .callout-toggle::before {  background-image: url('data:image/
 div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f328';
-  background-image: none;
-}
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f002';
   background-image: none;
 }
 div.callout-demonstration.callout {
@@ -221,28 +173,28 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
   content: '\f51b';
   background-image: none;
 }
-div.callout-individual.callout {
-  border-left-color: #A3195B;
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f007';
+  content: '\f002';
   background-image: none;
 }
-div.callout-group.callout {
+div.callout-warning.callout {
   border-left-color: #A3195B;
 }
-div.callout-group.callout-style-default > .callout-header {
+div.callout-warning.callout-style-default > .callout-header {
   background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
+  content: '\f06a';
   background-image: none;
 }
 div.callout-key-point.callout {
@@ -257,18 +209,29 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
   content: '\f005';
   background-image: none;
 }
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
+  background-image: none;
+}
 </style>
 
 
 <link rel="stylesheet" href="../../styles/styles.css">
 <link rel="stylesheet" href="../../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
-<meta property="og:title" content="Effective Prompting Strategies in Education – KI in der Lehre: Beginner">
-<meta property="og:description" content="Basic prompting techniques.">
-<meta property="og:image" content="https://virtuelleakademie.github.io/ki-lehre-beginner/resources/prompting/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta property="og:title" content="KI an der BFH – KI in der Lehre: Beginner">
+<meta property="og:description" content="Policy und Tools">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -286,7 +249,7 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../workshop/index.html"> <i class="bi bi-card-list" role="img">
+    <a class="nav-link active" href="../../workshop/index.html" aria-current="page"> <i class="bi bi-card-list" role="img">
 </i> 
 <span class="menu-text">Workshop</span></a>
   </li>  
@@ -334,47 +297,88 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../slides/bfh-landscape/index.html">KI an der BFH</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Suchen"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../workshop/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workshop: KI in der Lehre</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../workshop/einstieg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ankommen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../slides/ki-verstehen/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KI verstehen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../slides/bfh-landscape/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">KI an der BFH</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/fakten-check/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fakten-Check</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/offloading-outsourcing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Offloading vs.&nbsp;Outsourcing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../workshop/abschluss/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transfer und Abschluss</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#key-principles-for-educational-prompting" id="toc-key-principles-for-educational-prompting" class="nav-link" data-scroll-target="#key-principles-for-educational-prompting">Key Principles for Educational Prompting</a>
+  <li><a href="#präsentation" id="toc-präsentation" class="nav-link active" data-scroll-target="#präsentation">Präsentation</a></li>
+  <li><a href="#inhaltsübersicht" id="toc-inhaltsübersicht" class="nav-link" data-scroll-target="#inhaltsübersicht">Inhaltsübersicht</a>
   <ul class="collapse">
-  <li><a href="#retrieval-practice" id="toc-retrieval-practice" class="nav-link" data-scroll-target="#retrieval-practice">1. Retrieval Practice</a></li>
-  <li><a href="#scaffolding" id="toc-scaffolding" class="nav-link" data-scroll-target="#scaffolding">2. Scaffolding</a></li>
-  <li><a href="#metacognition" id="toc-metacognition" class="nav-link" data-scroll-target="#metacognition">3. Metacognition</a></li>
-  <li><a href="#cognitive-load-management" id="toc-cognitive-load-management" class="nav-link" data-scroll-target="#cognitive-load-management">4. Cognitive Load Management</a></li>
-  </ul></li>
-  <li><a href="#effective-prompting-techniques" id="toc-effective-prompting-techniques" class="nav-link" data-scroll-target="#effective-prompting-techniques">Effective Prompting Techniques</a>
-  <ul class="collapse">
-  <li><a href="#set-clear-roles-and-contexts" id="toc-set-clear-roles-and-contexts" class="nav-link" data-scroll-target="#set-clear-roles-and-contexts">Set Clear Roles and Contexts</a></li>
-  <li><a href="#specify-tasks-and-formats-clearly" id="toc-specify-tasks-and-formats-clearly" class="nav-link" data-scroll-target="#specify-tasks-and-formats-clearly">Specify Tasks and Formats Clearly</a></li>
-  <li><a href="#use-examples-or-templates" id="toc-use-examples-or-templates" class="nav-link" data-scroll-target="#use-examples-or-templates">Use Examples or Templates</a></li>
-  <li><a href="#chain-of-thought-and-reasoning" id="toc-chain-of-thought-and-reasoning" class="nav-link" data-scroll-target="#chain-of-thought-and-reasoning">Chain-of-Thought and Reasoning</a></li>
-  <li><a href="#iterative-refinement" id="toc-iterative-refinement" class="nav-link" data-scroll-target="#iterative-refinement">Iterative Refinement</a></li>
-  <li><a href="#use-markdown-formatting" id="toc-use-markdown-formatting" class="nav-link" data-scroll-target="#use-markdown-formatting">Use Markdown Formatting</a></li>
-  </ul></li>
-  <li><a href="#example-teaching-activities" id="toc-example-teaching-activities" class="nav-link" data-scroll-target="#example-teaching-activities">Example Teaching Activities</a>
-  <ul class="collapse">
-  <li><a href="#illustrative-analogies" id="toc-illustrative-analogies" class="nav-link" data-scroll-target="#illustrative-analogies">Illustrative Analogies</a></li>
-  <li><a href="#practice-questions-generation" id="toc-practice-questions-generation" class="nav-link" data-scroll-target="#practice-questions-generation">Practice Questions Generation</a></li>
-  <li><a href="#lesson-planning" id="toc-lesson-planning" class="nav-link" data-scroll-target="#lesson-planning">Lesson Planning</a></li>
-  <li><a href="#interactive-problem-solving" id="toc-interactive-problem-solving" class="nav-link" data-scroll-target="#interactive-problem-solving">Interactive Problem Solving</a></li>
-  </ul></li>
-  <li><a href="#example-student-activities" id="toc-example-student-activities" class="nav-link" data-scroll-target="#example-student-activities">Example Student Activities</a>
-  <ul class="collapse">
-  <li><a href="#clarifying-concepts" id="toc-clarifying-concepts" class="nav-link" data-scroll-target="#clarifying-concepts">Clarifying Concepts</a></li>
-  <li><a href="#creating-study-guides" id="toc-creating-study-guides" class="nav-link" data-scroll-target="#creating-study-guides">Creating Study Guides</a></li>
-  <li><a href="#self-explanation-and-reflection" id="toc-self-explanation-and-reflection" class="nav-link" data-scroll-target="#self-explanation-and-reflection">Self-Explanation and Reflection</a></li>
-  <li><a href="#error-checking-practice" id="toc-error-checking-practice" class="nav-link" data-scroll-target="#error-checking-practice">Error-Checking Practice</a></li>
-  <li><a href="#brainstorming-project-ideas" id="toc-brainstorming-project-ideas" class="nav-link" data-scroll-target="#brainstorming-project-ideas">Brainstorming Project Ideas</a></li>
+  <li><a href="#abschnitt-a-bfh-policy" id="toc-abschnitt-a-bfh-policy" class="nav-link" data-scroll-target="#abschnitt-a-bfh-policy">Abschnitt A: BFH Policy</a></li>
+  <li><a href="#abschnitt-b-tool-empfehlungen" id="toc-abschnitt-b-tool-empfehlungen" class="nav-link" data-scroll-target="#abschnitt-b-tool-empfehlungen">Abschnitt B: Tool-Empfehlungen</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -384,45 +388,15 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Effective Prompting Strategies in Education</h1>
+<h1 class="title">KI an der BFH</h1>
+<p class="subtitle lead">Policy und Tools</p>
 </div>
 
-<div>
-  <div class="description">
-    <p>Basic prompting techniques.</p>
-  </div>
-</div>
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Autor:innen</div>
-  <div class="quarto-title-meta-heading">Zugehörigkeit</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author"><a href="https://github.com/awellis">Andrew Ellis</a> <a href="https://orcid.org/0000-0002-2788-936X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://virtuelleakademie.ch">
-            Virtuelle Akademie, Berner Fachhochschule
-            </a>
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Stefan Hackstein <a href="https://orcid.org/0000-0003-2927-549X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-  </div>
-  <div class="quarto-title-meta-contents">
-      </div>
-  </div>
 
 <div class="quarto-title-meta">
 
-      
-    <div>
-    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">27 März, 2024</p>
-    </div>
-  </div>
+    
   
     
   </div>
@@ -432,220 +406,39 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Large Language Models (LLMs) can greatly enhance education by providing explanations, examples, and instant feedback. However, employing effective prompting techniques is critical. This affects whether LLMs support meaningful learning or potentially allow students to bypass learning altogether. Thoughtfully constructed prompts use principles from cognitive science, promoting active student engagement and deeper understanding.</p>
+<section id="präsentation" class="level2">
+<h2 class="anchored" data-anchor-id="präsentation">Präsentation</h2>
+<p>In dieser Einheit lernen wir die KI-Richtlinien der BFH kennen und welche Tools zur Verfügung stehen.</p>
+<p><a href="slides.html" class="btn btn-primary" target="_blank">Slides in neuem Fenster öffnen</a></p>
+<iframe src="slides.html" width="100%" height="500" style="border: 1px solid #ccc; border-radius: 4px;">
+</iframe>
 </section>
-<section id="key-principles-for-educational-prompting" class="level2">
-<h2 class="anchored" data-anchor-id="key-principles-for-educational-prompting">Key Principles for Educational Prompting</h2>
-<section id="retrieval-practice" class="level3">
-<h3 class="anchored" data-anchor-id="retrieval-practice">1. Retrieval Practice</h3>
-<p>Encourage recall of learned information to strengthen memory.</p>
-<div class="tutor-example">
-<p>Quiz me on three key points from the organic chemistry lecture on reaction kinetics [provided as PDF].</p>
-</div>
+<section id="inhaltsübersicht" class="level2">
+<h2 class="anchored" data-anchor-id="inhaltsübersicht">Inhaltsübersicht</h2>
+<p><strong>Dauer:</strong> 20 Minuten (2 Abschnitte à 10 Minuten)</p>
+<section id="abschnitt-a-bfh-policy" class="level3">
+<h3 class="anchored" data-anchor-id="abschnitt-a-bfh-policy">Abschnitt A: BFH Policy</h3>
+<ul>
+<li>Die fünf Grundsätze der KI-Policy</li>
+<li>Verantwortung als Lehrperson</li>
+<li>Erwartungen an Studierende</li>
+<li>Support-Anlaufstellen</li>
+</ul>
 </section>
-<section id="scaffolding" class="level3">
-<h3 class="anchored" data-anchor-id="scaffolding">2. Scaffolding</h3>
-<p>Break complex tasks into smaller steps to guide students gradually.</p>
-<div class="tutor-example">
-<p>First, give the balanced equation for this [chemical] reaction. Now, what are the initial concentrations?</p>
-</div>
-</section>
-<section id="metacognition" class="level3">
-<h3 class="anchored" data-anchor-id="metacognition">3. Metacognition</h3>
-<p>Promote self-reflection and justification of reasoning.</p>
-<div class="tutor-example">
-<p>Explain why you chose this method for determining equilibrium. Are there assumptions you’ve made?</p>
-</div>
-</section>
-<section id="cognitive-load-management" class="level3">
-<h3 class="anchored" data-anchor-id="cognitive-load-management">4. Cognitive Load Management</h3>
-<p>Chunk information clearly to prevent overload.</p>
-<div class="tutor-example">
-<p>Define entropy briefly. Next, explain how entropy differs from enthalpy.</p>
-</div>
-</section>
-</section>
-<section id="effective-prompting-techniques" class="level2">
-<h2 class="anchored" data-anchor-id="effective-prompting-techniques">Effective Prompting Techniques</h2>
-<section id="set-clear-roles-and-contexts" class="level3">
-<h3 class="anchored" data-anchor-id="set-clear-roles-and-contexts">Set Clear Roles and Contexts</h3>
-<p>Provide explicit roles to guide the LLM’s responses.</p>
-<div class="prompt-example">
-<p>You are an organic chemistry tutor helping a first-year student.</p>
-</div>
-</section>
-<section id="specify-tasks-and-formats-clearly" class="level3">
-<h3 class="anchored" data-anchor-id="specify-tasks-and-formats-clearly">Specify Tasks and Formats Clearly</h3>
-<p>Be specific to ensure precise responses.</p>
-<div class="prompt-example">
-<p>Explain ionic bonding using a real-world analogy suitable for freshmen.</p>
-</div>
-</section>
-<section id="use-examples-or-templates" class="level3">
-<h3 class="anchored" data-anchor-id="use-examples-or-templates">Use Examples or Templates</h3>
-<p>Demonstrate the desired output.</p>
-<div class="prompt-example">
-<p>Provide a solution formatted as follows: First state the concept, then illustrate with a concrete chemistry example.</p>
-</div>
-</section>
-<section id="chain-of-thought-and-reasoning" class="level3">
-<h3 class="anchored" data-anchor-id="chain-of-thought-and-reasoning">Chain-of-Thought and Reasoning</h3>
-<p>Ask the LLM to detail its reasoning or provide multiple approaches.</p>
-<div class="prompt-example">
-<p>Step-by-step, explain how to identify the limiting reagent in this reaction.</p>
-</div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>✅
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Instruct the LLM to think first: “Explain your reasoning first, then state the answer.”</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warnung</span>❌
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Instruct the LLM to give the answer first: “State the answer first, then explain your reasoning.”</p>
-</div>
-</div>
-</section>
-<section id="iterative-refinement" class="level3">
-<h3 class="anchored" data-anchor-id="iterative-refinement">Iterative Refinement</h3>
-<p>Treat prompting as an interactive process, refining outputs through conversation.</p>
-<div class="prompt-example">
-<p>Simplify the previous explanation and provide a metaphor.</p>
-</div>
-</section>
-<section id="use-markdown-formatting" class="level3">
-<h3 class="anchored" data-anchor-id="use-markdown-formatting">Use Markdown Formatting</h3>
-<p>Use <a href="https://www.markdownguide.org/basic-syntax/">Markdown</a> formatting to make the prompt more readable (e.g.&nbsp;lists, bold, italics, etc.).</p>
-<div class="callout callout-style-simple callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>Basic Markdown Formatting
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Heading level 1</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Heading level 2</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Heading level 3</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>**Bold text**</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>*Italic text*</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>List item 1</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>List item 2</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>List item 3</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Use delimiters (e.g.&nbsp;<code>---</code>, <code>"""</code>) to indicate different roles or parts of a prompt.</p>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="example-teaching-activities" class="level2">
-<h2 class="anchored" data-anchor-id="example-teaching-activities">Example Teaching Activities</h2>
-<section id="illustrative-analogies" class="level3">
-<h3 class="anchored" data-anchor-id="illustrative-analogies">Illustrative Analogies</h3>
-<div class="prompt-example">
-<p>Create an everyday analogy to illustrate Le Châtelier’s principle.</p>
-</div>
-</section>
-<section id="practice-questions-generation" class="level3">
-<h3 class="anchored" data-anchor-id="practice-questions-generation">Practice Questions Generation</h3>
-<div class="prompt-example">
-<p>Create three practice questions on acid-base titrations at varying difficulty levels.</p>
-</div>
-<div class="callout callout-style-simple callout-warning no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Note that the task of generating practice questions is a complex task that requires a good understanding of the topic. It will be necessary to provide the LLM with a template for the questions, and to provide examples of how to format the questions. Additionally, you will need to consider how to define task difficulty very carefully.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="lesson-planning" class="level3">
-<h3 class="anchored" data-anchor-id="lesson-planning">Lesson Planning</h3>
-<div class="prompt-example">
-<p>Outline a 50-minute lesson plan on the ideal gas law with an interactive demonstration.</p>
-</div>
-</section>
-<section id="interactive-problem-solving" class="level3">
-<h3 class="anchored" data-anchor-id="interactive-problem-solving">Interactive Problem Solving</h3>
-<div class="prompt-example">
-<p>Guide me through solving a galvanic cell problem, providing hints without revealing the solution immediately.</p>
-</div>
-</section>
-</section>
-<section id="example-student-activities" class="level2">
-<h2 class="anchored" data-anchor-id="example-student-activities">Example Student Activities</h2>
-<section id="clarifying-concepts" class="level3">
-<h3 class="anchored" data-anchor-id="clarifying-concepts">Clarifying Concepts</h3>
-<div class="prompt-example">
-<p>Simplify and explain the concept of electrons behaving as waves.</p>
-</div>
-</section>
-<section id="creating-study-guides" class="level3">
-<h3 class="anchored" data-anchor-id="creating-study-guides">Creating Study Guides</h3>
-<div class="prompt-example">
-<p>Summarize thermodynamics laws and generate two review questions for each.</p>
-</div>
-</section>
-<section id="self-explanation-and-reflection" class="level3">
-<h3 class="anchored" data-anchor-id="self-explanation-and-reflection">Self-Explanation and Reflection</h3>
-<div class="prompt-example">
-<p>Evaluate my explanation of buffer solutions and ask a clarifying follow-up question.</p>
-</div>
-</section>
-<section id="error-checking-practice" class="level3">
-<h3 class="anchored" data-anchor-id="error-checking-practice">Error-Checking Practice</h3>
-<div class="prompt-example">
-<p>Review my solution to this equilibrium problem, identify mistakes, and guide me in correcting them.</p>
-</div>
-</section>
-<section id="brainstorming-project-ideas" class="level3">
-<h3 class="anchored" data-anchor-id="brainstorming-project-ideas">Brainstorming Project Ideas</h3>
-<div class="prompt-example">
-<p>Suggest three practical applications of electrochemistry suitable for a student project.</p>
-</div>
+<section id="abschnitt-b-tool-empfehlungen" class="level3">
+<h3 class="anchored" data-anchor-id="abschnitt-b-tool-empfehlungen">Abschnitt B: Tool-Empfehlungen</h3>
+<ul>
+<li>Freigegebene Tools finden (mybfh)</li>
+<li>Microsoft Copilot, ChatGPT, Claude im Vergleich</li>
+<li>Welches Tool wofür?</li>
+<li>Datenschutz-Hinweise</li>
+</ul>
 
 
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Wiederverwendung</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Zitat</h2><div><div class="quarto-appendix-secondary-label">Mit BibTeX zitieren:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2024,
-  author = {Ellis, Andrew and Hackstein, Stefan},
-  title = {Effective Prompting Strategies in Education},
-  date = {2024-03-27},
-  url = {https://virtuelleakademie.github.io/ki-lehre-beginner/resources/prompting/},
-  langid = {de}
-}
-</code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Bitte zitieren Sie diese Arbeit als:</div><div id="ref-ellis2024" class="csl-entry quarto-appendix-citeas" role="listitem">
-Ellis, Andrew, and Stefan Hackstein. 2024. <span>“Effective Prompting
-Strategies in Education.”</span> March 27, 2024. <a href="https://virtuelleakademie.github.io/ki-lehre-beginner/resources/prompting/">https://virtuelleakademie.github.io/ki-lehre-beginner/resources/prompting/</a>.
-</div></div></section></div></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Find all prompt callouts
@@ -1111,6 +904,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../slides/ki-verstehen/index.html" class="pagination-link" aria-label="KI verstehen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">KI verstehen</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../exercises/fakten-check/index.html" class="pagination-link" aria-label="Fakten-Check">
+        <span class="nav-page-text">Fakten-Check</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

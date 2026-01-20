@@ -1,10 +1,11 @@
 ---
-title: "Übersicht"
+title: "Slides"
+sidebar: slides
 ---
 
-| {{< bi collection >}} Thema | {{< bi clock >}} Dauer |
-|-------|--------|
-| [Slides 1: KI-Grundlagen](grundlagen/index.qmd) | 20 min |
-| [Slides 2: Möglichkeiten & Grenzen von Chatbots](chatbots-grenzen/index.qmd) | 5 min |
-| [Slides 3: Einfluss von Chatbots aufs Lernen](chatbots-einfluss-lernen/index.qmd) | 5 min |
-| [Slides 4: KI - Tool für die Lehre](ki-tool-lehre/index.qmd) | 10 min |
+## Präsentationen
+
+| Präsentation | Dauer | Thema |
+|--------------|-------|-------|
+| [KI verstehen](ki-verstehen/index.qmd) | 45 min | Textgenerierung, Tools, Reasoning |
+| [BFH Landscape](bfh-landscape/index.qmd) | 20 min | Policy und Tool-Empfehlungen |

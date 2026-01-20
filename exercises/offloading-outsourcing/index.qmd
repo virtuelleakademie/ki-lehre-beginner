@@ -1,0 +1,112 @@
+---
+title: "Offloading vs. Outsourcing"
+subtitle: "Wer denkt hier eigentlich?"
+sidebar: exercises
+---
+
+## Lernziele
+
+- Den Unterschied zwischen kognitivem Offloading und Outsourcing verstehen
+- Einschätzen, wann KI-Nutzung das Lernen unterstützt oder behindert
+- Erkennen, dass dieselbe KI-Nutzung für Experten und Lernende unterschiedlich wirkt
+
+::: {.experiment}
+## Teil 1: Szenario-Karten (20 min)
+
+Arbeitet in Kleingruppen (3-4 Personen).
+
+Ihr erhaltet Karten mit Szenarien. Für jedes Szenario:
+
+1. Diskutiert: Ist das **Offloading** oder **Outsourcing**?
+2. Diskutiert: Ist das in diesem Kontext **problematisch**?
+
+### Die Szenarien
+
+**Szenario 1**: Ein Student nutzt ChatGPT, um eine Gliederung für seine Seminararbeit zu erstellen.
+
+**Szenario 2**: Eine Dozentin nutzt Claude, um Feedback-Entwürfe auf Studierendenarbeiten zu formulieren.
+
+**Szenario 3**: Ein Student bittet Copilot, ihm ein komplexes Konzept zu erklären, das er nicht verstanden hat.
+
+**Szenario 4**: Eine Dozentin nutzt KI, um Multiple-Choice-Fragen für eine Prüfung zu generieren.
+
+**Szenario 5**: Ein Student lässt ChatGPT seinen Essay schreiben und reicht ihn ein.
+
+**Szenario 6**: Eine Dozentin nutzt KI, um eine Vorlesung zu einem neuen Thema vorzubereiten.
+
+**Szenario 7**: Ein Student nutzt KI als Sparringspartner, um seine Argumente zu testen.
+
+**Szenario 8**: Ein Student nutzt KI, um Code zu debuggen, ohne zu verstehen, was der Fehler war.
+
+{{< timer 15 >}}
+
+Sammelt eure Einschätzungen auf einem Flipchart oder digital.
+:::
+
+::: {.key-point}
+## Teil 2: Die Konzepte (10 min)
+
+### Kognitives Offloading
+
+Du externalisierst Informationen, um dein Arbeitsgedächtnis zu entlasten, **während du selbst weiter denkst**.
+
+Beispiele:
+
+- Notizen machen
+- Mind-Maps erstellen
+- Taschenrechner für Berechnungen nutzen
+
+Das Werkzeug speichert, was du produzierst.
+
+### Kognitives Outsourcing
+
+Du überträgst die **eigentliche Denkarbeit** an ein externes System.
+
+Beispiele:
+
+- GPS statt eigene Navigation
+- KI-generierter Text statt eigenes Schreiben
+- KI-Analyse statt eigenes Durchdenken
+
+Das Werkzeug entscheidet, produziert und "denkt" für dich.
+
+### Die entscheidende Frage
+
+> Ist die ausgelagerte Arbeit das, was die Person lernen/üben sollte?
+
+### Der Kontext macht den Unterschied
+
+Dieselbe KI-Nutzung kann sein:
+
+| Situation | Für Experten | Für Lernende |
+|-----------|--------------|--------------|
+| KI schreibt Feedback | OK (Effizienz) | N/A |
+| KI schreibt Essay | N/A | Problematisch (kein Übungseffekt) |
+| KI erklärt Konzept | OK (schon verstanden) | Kommt drauf an (aktiv hinterfragen?) |
+| KI generiert Übungen | OK (Zeitersparnis) | Könnte OK sein (wenn kritisch geprüft) |
+
+**Für Lehrende**: Outsourcing ist oft produktiv, weil ihr nicht lernt, sondern arbeitet.
+
+**Für Studierende**: Outsourcing ist oft problematisch, weil sie die kognitive Arbeit brauchen, um Kompetenzen aufzubauen.
+:::
+
+::: {.group}
+## Teil 3: Diskussion (5 min)
+
+Zwei Fragen:
+
+1. **Wo kannst DU als Lehrperson produktiv outsourcen?**
+2. **Wo sollten deine STUDIERENDEN NICHT outsourcen?**
+
+{{< timer 5 >}}
+:::
+
+::: {.reflect}
+## Reflexion
+
+Das Produktivitäts-Lern-Paradox:
+
+> KI macht Aufgaben einfacher. Aber Lernen braucht kognitive Anstrengung.
+
+Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
+:::

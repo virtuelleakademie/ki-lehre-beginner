@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ablauf – KI in der Lehre: Beginner</title>
+<title>Workshop: KI in der Lehre – KI in der Lehre: Beginner</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,7 +49,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/bootstrap-icons-1.13.1/bootstrap-icons.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,40 +88,28 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-individual.callout {
-  border-left-color: #A3195B;
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f007';
+  content: '\f0eb';
   background-image: none;
 }
-div.callout-prompt.callout {
-  border-left-color: #333333;
+div.callout-scenario.callout {
+  border-left-color: #666666;
 }
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
 }
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
-div.callout-warning.callout {
-  border-left-color: #A3195B;
-}
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
+  content: '\f075';
   background-image: none;
 }
 div.callout-demonstration.callout {
@@ -135,30 +122,6 @@ div.callout-demonstration .callout-toggle::before {  background-image: url('data
 div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f51b';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
-  background-image: none;
-}
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f002';
   background-image: none;
 }
 div.callout-key-point.callout {
@@ -185,16 +148,28 @@ div.callout-experiment.callout-style-default .callout-icon::before, div.callout-
   content: '\f0c3';
   background-image: none;
 }
-div.callout-reflect.callout {
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-source-check.callout {
   border-left-color: #D4A03E;
 }
-div.callout-reflect.callout-style-default > .callout-header {
+div.callout-source-check.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0eb';
+  content: '\f002';
   background-image: none;
 }
 div.callout-group.callout {
@@ -209,16 +184,40 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
   content: '\f0c0';
   background-image: none;
 }
-div.callout-scenario.callout {
-  border-left-color: #666666;
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f075';
+  content: '\e2ca';
+  background-image: none;
+}
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: #A3195B;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f007';
   background-image: none;
 }
 </style>
@@ -226,8 +225,8 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 
 <link rel="stylesheet" href="../styles/styles.css">
 <link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
-<meta property="og:title" content="Ablauf – KI in der Lehre: Beginner">
-<meta property="og:description" content="">
+<meta property="og:title" content="Workshop: KI in der Lehre – KI in der Lehre: Beginner">
+<meta property="og:description" content="Grundlagen für Lehrende">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
 
@@ -302,7 +301,7 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/index.html">Ablauf</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/index.html">Workshop: KI in der Lehre</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -325,55 +324,43 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Ablauf</span></a>
+ <span class="menu-text">Workshop: KI in der Lehre</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop/einstieg/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Begrüßungsaufgabe</span></a>
+ <span class="menu-text">Ankommen</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../slides/grundlagen/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Grundlagen</span></a>
+  <a href="../slides/ki-verstehen/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KI verstehen</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/prompten-lernen/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Aufgabe: Prompten Lernen</span></a>
+  <a href="../slides/bfh-landscape/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">KI an der BFH</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../slides/chatbots-grenzen/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chatbots - Möglichkeiten &amp; Grenzen</span></a>
+  <a href="../exercises/fakten-check/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fakten-Check</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/denken-delegieren/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Aufgabe: Denken statt delegieren</span></a>
+  <a href="../exercises/offloading-outsourcing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Offloading vs.&nbsp;Outsourcing</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../slides/chatbots-einfluss-lernen/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">KI - Einfluss auf Lernen</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../exercises/ki-tools-lehre/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Aufgabe: KI Tools für die Lehre</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../slides/ki-tool-lehre/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">KI-Tools für Lehre</span></a>
+  <a href="../workshop/abschluss/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transfer und Abschluss</span></a>
   </div>
 </li>
     </ul>
@@ -386,10 +373,9 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#workshop-ablauf-ki-in-der-lehre-beginner-3.5-stunden" id="toc-workshop-ablauf-ki-in-der-lehre-beginner-3.5-stunden" class="nav-link active" data-scroll-target="#workshop-ablauf-ki-in-der-lehre-beginner-3.5-stunden">Workshop-Ablauf: KI in der Lehre: Beginner (3.5 Stunden)</a></li>
-  <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
-  <li><a href="#selbststudium" id="toc-selbststudium" class="nav-link" data-scroll-target="#selbststudium">Selbststudium</a></li>
-  <li><a href="#weiterbildungsangebot" id="toc-weiterbildungsangebot" class="nav-link" data-scroll-target="#weiterbildungsangebot">Weiterbildungsangebot</a></li>
+  <li><a href="#lernziele" id="toc-lernziele" class="nav-link active" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#ablauf" id="toc-ablauf" class="nav-link" data-scroll-target="#ablauf">Ablauf</a></li>
+  <li><a href="#workshop-reihe" id="toc-workshop-reihe" class="nav-link" data-scroll-target="#workshop-reihe">Workshop-Reihe</a></li>
   </ul>
 </nav>
     </div>
@@ -398,7 +384,8 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ablauf</h1>
+<h1 class="title">Workshop: KI in der Lehre</h1>
+<p class="subtitle lead">Grundlagen für Lehrende</p>
 </div>
 
 
@@ -415,155 +402,82 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 </header>
 
 
-<section id="workshop-ablauf-ki-in-der-lehre-beginner-3.5-stunden" class="level2">
-<h2 class="anchored" data-anchor-id="workshop-ablauf-ki-in-der-lehre-beginner-3.5-stunden">Workshop-Ablauf: KI in der Lehre: Beginner (3.5 Stunden)</h2>
+<section id="lernziele" class="level2">
+<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
+<p>Am Ende dieses Workshops kannst du:</p>
+<ul>
+<li>Verstehen, wie Sprachmodelle Text generieren</li>
+<li>Die Fähigkeiten moderner Chatbots kennen (Tools, “Denken”)</li>
+<li>Die BFH-Richtlinien und verfügbaren Tools kennen</li>
+<li>Zwischen kognitivem Offloading und Outsourcing unterscheiden</li>
+<li>Einschätzen, wann KI-Nutzung das Lernen unterstützt oder behindert</li>
+</ul>
+</section>
+<section id="ablauf" class="level2">
+<h2 class="anchored" data-anchor-id="ablauf">Ablauf</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 33%">
+<col style="width: 38%">
+</colgroup>
 <thead>
 <tr class="header">
-<th><i class="bi-clock-fill " style="" role="img" aria-hidden="true"></i> Zeit</th>
-<th><i class="bi-collection-fill " style="" role="img" aria-hidden="true"></i> Thema</th>
-<th><i class="bi-hourglass-split " style="" role="img" aria-hidden="true"></i> Dauer</th>
+<th>Zeit</th>
+<th>Phase</th>
+<th>Inhalt</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>09:00 - 09:10</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Einstieg</strong></td>
-<td></td>
+<td>00:00-00:15</td>
+<td>Ankommen</td>
+<td>Begrüssung und Spektrum-Aktivität</td>
 </tr>
 <tr class="even">
-<td></td>
-<td><a href="../workshop/einstieg/index.html">Aktivierende Begrüssung</a></td>
-<td>10 min</td>
+<td>00:15-01:00</td>
+<td>KI verstehen</td>
+<td>Textgenerierung, Tools, “Denken”</td>
 </tr>
 <tr class="odd">
-<td><strong>09:10 - 09:30</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 1: Grundlagen</strong></td>
+<td>01:00-01:15</td>
+<td>Pause</td>
 <td></td>
 </tr>
 <tr class="even">
-<td></td>
-<td><a href="../slides/grundlagen/index.html">Input: Grundlagen</a></td>
-<td>20 min</td>
+<td>01:15-01:35</td>
+<td>BFH Landscape</td>
+<td>Policy und Tool-Empfehlungen</td>
 </tr>
 <tr class="odd">
-<td><strong>09:30 - 09:50</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 2: Chatbot nutzen lernen</strong></td>
-<td></td>
+<td>01:35-02:00</td>
+<td>Kritische Evaluation</td>
+<td>Fakten-Check Aktivität</td>
 </tr>
 <tr class="even">
+<td>02:00-02:10</td>
+<td>Pause</td>
 <td></td>
-<td><a href="../exercises/prompten-lernen/index.html">Übung: Chatbot nutzen lernen</a></td>
-<td>20 min</td>
 </tr>
 <tr class="odd">
-<td><strong>09:50 - 10:05</strong></td>
-<td><i class="bi-cup-hot-fill " style="" role="img" aria-hidden="true"></i> <strong>Pause</strong></td>
-<td></td>
+<td>02:10-02:45</td>
+<td>Offloading vs.&nbsp;Outsourcing</td>
+<td>Szenario-Karten und Konzepte</td>
 </tr>
 <tr class="even">
-<td></td>
-<td>Kaffee</td>
-<td>15 min</td>
-</tr>
-<tr class="odd">
-<td><strong>10:05 - 10:10</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 3: Möglichkeiten und Grenzen</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../slides/chatbots-grenzen/index.html">Input: Möglichkeiten und Grenzen</a></td>
-<td>5 min</td>
-</tr>
-<tr class="odd">
-<td><strong>10:10 - 10:50</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 4: Denken, nicht Delegieren</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../exercises/denken-delegieren/index.html">Übung: Denken, nicht Delegieren</a></td>
-<td>40 min</td>
-</tr>
-<tr class="odd">
-<td><strong>10:50 - 11:05</strong></td>
-<td><i class="bi-cup-hot-fill " style="" role="img" aria-hidden="true"></i> <strong>Pause</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Kaffee</td>
-<td>15 min</td>
-</tr>
-<tr class="odd">
-<td><strong>11:05 - 11:10</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 5: Einfluss aufs Lernen</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../slides/chatbots-einfluss-lernen/index.html">Input: Einfluss von Chatbots</a></td>
-<td>5 min</td>
-</tr>
-<tr class="odd">
-<td><strong>11:10 - 11:30</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 6: KI Tools für die Lehre</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../exercises/ki-tools-lehre/index.html">Übung: KI Tools für die Lehre</a></td>
-<td>20 min</td>
-</tr>
-<tr class="odd">
-<td><strong>11:30 - 11:40</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Teil 7: KI als Tool</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../slides/ki-tool-lehre/index.html">Input: KI als Tool für die Lehre</a></td>
-<td>10 min</td>
-</tr>
-<tr class="odd">
-<td><strong>11:40 - 12:00</strong></td>
-<td><i class="bi-collection-play " style="" role="img" aria-hidden="true"></i> <strong>Abschluss</strong></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><a href="../workshop/diskussion/index.html">Offene Diskussion</a></td>
-<td>20 min</td>
+<td>02:45-03:00</td>
+<td>Transfer</td>
+<td>Reflexion und Abschluss</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="lernziele" class="level2">
-<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
-<p>Am Ende des Workshops können die Teilnehmer:</p>
-<ol type="1">
-<li><strong>Grundlagen verstehen</strong>: Wie Sprachmodelle und Chatbots funktionieren</li>
-<li><strong>Chatbots effektiv nutzen</strong>: Praktische Prompting-Strategien anwenden</li>
-<li><strong>Grenzen erkennen</strong>: Möglichkeiten und Limitationen von KI-Tools einschätzen</li>
-<li><strong>Transfer leisten</strong>: KI-Tools sinnvoll in der eigenen Lehre einsetzen</li>
-</ol>
-</section>
-<section id="selbststudium" class="level2">
-<h2 class="anchored" data-anchor-id="selbststudium">Selbststudium</h2>
-<p>Für eine vertiefte Auseinandersetzung mit den Themen:</p>
-<ul>
-<li><a href="../resources/prompting/index.html">Effektive Prompting Strategien</a></li>
-<li><a href="../resources/kompetenz-erwerben/index.html">Wie man Kompetenzen erwirbt</a></li>
-<li><a href="../resources/produktive-anstrengung/index.html">Produktive Anstrengung durch Design</a></li>
-</ul>
-</section>
-<section id="weiterbildungsangebot" class="level2">
-<h2 class="anchored" data-anchor-id="weiterbildungsangebot">Weiterbildungsangebot</h2>
-<p>Dieser Workshop ist Teil einer dreiteiligen Kursreihe der BFH:</p>
-<p><a href="https://virtuelleakademie.github.io/ki-lehre-beginner/">KI in der Lehre: Beginner</a>: Grundlagen zu Sprachmodellen und Chatbots.</p>
-<p><a href="https://virtuelleakademie.github.io/ki-lehre-intermediate/">KI in der Lehre: Intermediate</a>: Lernpsychologie und KI-gestütztes Lerndesign.</p>
-<p><a href="https://virtuelleakademie.github.io/ki-lehre-advanced/">KI in der Lehre: Advanced</a>: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools.</p>
+<section id="workshop-reihe" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-reihe">Workshop-Reihe</h2>
+<p>Dieser Workshop ist Teil einer dreiteiligen Kursreihe:</p>
+<p><strong>Beginner</strong> (dieser Workshop): Grundlagen zu Sprachmodellen und Chatbots. <em>Was ist generative KI, und was bedeutet sie für das Lernen?</em></p>
+<p><strong>Intermediate</strong>: Lernpsychologie und KI-gestütztes Lerndesign. <em>Warum ist Outsourcing problematisch fürs Lernen?</em></p>
+<p><strong>Advanced</strong>: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools. <em>Wie baue ich KI-gestützte Lernwerkzeuge?</em></p>
 
 
 </section>
@@ -1038,8 +952,8 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../workshop/einstieg/index.html" class="pagination-link" aria-label="Begrüßungsaufgabe">
-        <span class="nav-page-text">Begrüßungsaufgabe</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../workshop/einstieg/index.html" class="pagination-link" aria-label="Ankommen">
+        <span class="nav-page-text">Ankommen</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

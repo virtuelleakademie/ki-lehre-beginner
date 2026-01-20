@@ -1,60 +1,38 @@
 ---
-title: "Ablauf"
+title: "Workshop: KI in der Lehre"
+subtitle: "Grundlagen für Lehrende"
+sidebar: workshop
 ---
-
-## Workshop-Ablauf: KI in der Lehre: Beginner (3.5 Stunden)
-
-| {{< bi clock-fill >}} Zeit | {{< bi collection-fill >}} Thema                                       | {{< bi hourglass-split >}} Dauer |
-|----------------------------|------------------------------------------------------------------------|----------------------------------|
-| **09:00 - 09:10**          | {{< bi collection-play >}} **Einstieg**                                |                                  |
-|                            | [Aktivierende Begrüssung](einstieg/index.qmd)                          | 10 min                           |
-| **09:10 - 09:30**          | {{< bi collection-play >}} **Teil 1: Grundlagen**                      |                                  |
-|                            | [Input: Grundlagen](/slides/grundlagen/index.qmd)                      | 20 min                           |
-| **09:30 - 09:50**          | {{< bi collection-play >}} **Teil 2: Chatbot nutzen lernen**           |                                  |
-|                            | [Übung: Chatbot nutzen lernen](/exercises/prompten-lernen/index.qmd)   | 20 min                           |
-| **09:50 - 10:05**          | {{< bi cup-hot-fill >}} **Pause**                                      |                                  |
-|                            | Kaffee                                                                 | 15 min                           |
-| **10:05 - 10:10**          | {{< bi collection-play >}} **Teil 3: Möglichkeiten und Grenzen**       |                                  |
-|                            | [Input: Möglichkeiten und Grenzen](/slides/chatbots-grenzen/index.qmd) | 5 min                            |
-| **10:10 - 10:50**          | {{< bi collection-play >}} **Teil 4: Denken, nicht Delegieren**        |                                  |
-|                            | [Übung: Denken, nicht Delegieren](/exercises/denken-delegieren/index.qmd) | 40 min                        |
-| **10:50 - 11:05**          | {{< bi cup-hot-fill >}} **Pause**                                      |                                  |
-|                            | Kaffee                                                                 | 15 min                           |
-| **11:05 - 11:10**          | {{< bi collection-play >}} **Teil 5: Einfluss aufs Lernen**            |                                  |
-|                            | [Input: Einfluss von Chatbots](/slides/chatbots-einfluss-lernen/index.qmd) | 5 min                        |
-| **11:10 - 11:30**          | {{< bi collection-play >}} **Teil 6: KI Tools für die Lehre**          |                                  |
-|                            | [Übung: KI Tools für die Lehre](/exercises/ki-tools-lehre/index.qmd)   | 20 min                           |
-| **11:30 - 11:40**          | {{< bi collection-play >}} **Teil 7: KI als Tool**                     |                                  |
-|                            | [Input: KI als Tool für die Lehre](/slides/ki-tool-lehre/index.qmd)    | 10 min                           |
-| **11:40 - 12:00**          | {{< bi collection-play >}} **Abschluss**                               |                                  |
-|                            | [Offene Diskussion](diskussion/index.qmd)                              | 20 min                           |
-
 
 ## Lernziele
 
-Am Ende des Workshops können die Teilnehmer:
+Am Ende dieses Workshops kannst du:
 
-1. **Grundlagen verstehen**: Wie Sprachmodelle und Chatbots funktionieren
-2. **Chatbots effektiv nutzen**: Praktische Prompting-Strategien anwenden
-3. **Grenzen erkennen**: Möglichkeiten und Limitationen von KI-Tools einschätzen
-4. **Transfer leisten**: KI-Tools sinnvoll in der eigenen Lehre einsetzen
+- Verstehen, wie Sprachmodelle Text generieren
+- Die Fähigkeiten moderner Chatbots kennen (Tools, "Denken")
+- Die BFH-Richtlinien und verfügbaren Tools kennen
+- Zwischen kognitivem Offloading und Outsourcing unterscheiden
+- Einschätzen, wann KI-Nutzung das Lernen unterstützt oder behindert
 
+## Ablauf
 
-## Selbststudium
+| Zeit | Phase | Inhalt |
+|------|-------|--------|
+| 00:00-00:15 | Ankommen | Begrüssung und Spektrum-Aktivität |
+| 00:15-01:00 | KI verstehen | Textgenerierung, Tools, "Denken" |
+| 01:00-01:15 | Pause | |
+| 01:15-01:35 | BFH Landscape | Policy und Tool-Empfehlungen |
+| 01:35-02:00 | Kritische Evaluation | Fakten-Check Aktivität |
+| 02:00-02:10 | Pause | |
+| 02:10-02:45 | Offloading vs. Outsourcing | Szenario-Karten und Konzepte |
+| 02:45-03:00 | Transfer | Reflexion und Abschluss |
 
-Für eine vertiefte Auseinandersetzung mit den Themen:
+## Workshop-Reihe
 
-- [Effektive Prompting Strategien](/resources/prompting/index.qmd)
-- [Wie man Kompetenzen erwirbt](/resources/kompetenz-erwerben/index.qmd)
-- [Produktive Anstrengung durch Design](/resources/produktive-anstrengung/index.qmd)
+Dieser Workshop ist Teil einer dreiteiligen Kursreihe:
 
+**Beginner** (dieser Workshop): Grundlagen zu Sprachmodellen und Chatbots. *Was ist generative KI, und was bedeutet sie für das Lernen?*
 
-## Weiterbildungsangebot
+**Intermediate**: Lernpsychologie und KI-gestütztes Lerndesign. *Warum ist Outsourcing problematisch fürs Lernen?*
 
-Dieser Workshop ist Teil einer dreiteiligen Kursreihe der BFH:
-
-[KI in der Lehre: Beginner](https://virtuelleakademie.github.io/ki-lehre-beginner/): Grundlagen zu Sprachmodellen und Chatbots.
-
-[KI in der Lehre: Intermediate](https://virtuelleakademie.github.io/ki-lehre-intermediate/): Lernpsychologie und KI-gestütztes Lerndesign.
-
-[KI in der Lehre: Advanced](https://virtuelleakademie.github.io/ki-lehre-advanced/): Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools.
+**Advanced**: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools. *Wie baue ich KI-gestützte Lernwerkzeuge?*

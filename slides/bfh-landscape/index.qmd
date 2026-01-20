@@ -1,0 +1,36 @@
+---
+title: "KI an der BFH"
+subtitle: "Policy und Tools"
+sidebar: workshop
+---
+
+## Präsentation
+
+In dieser Einheit lernen wir die KI-Richtlinien der BFH kennen und welche Tools zur Verfügung stehen.
+
+[Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
+
+<iframe
+  src="slides.html"
+  width="100%"
+  height="500"
+  style="border: 1px solid #ccc; border-radius: 4px;"
+></iframe>
+
+## Inhaltsübersicht
+
+**Dauer:** 20 Minuten (2 Abschnitte à 10 Minuten)
+
+### Abschnitt A: BFH Policy
+
+- Die fünf Grundsätze der KI-Policy
+- Verantwortung als Lehrperson
+- Erwartungen an Studierende
+- Support-Anlaufstellen
+
+### Abschnitt B: Tool-Empfehlungen
+
+- Freigegebene Tools finden (mybfh)
+- Microsoft Copilot, ChatGPT, Claude im Vergleich
+- Welches Tool wofür?
+- Datenschutz-Hinweise

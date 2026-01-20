@@ -1,9 +1,11 @@
 ---
-title: "Übersicht"
+title: "Übungen"
+sidebar: exercises
 ---
 
-| {{< bi collection >}} Thema | {{< bi clock >}} Dauer |
-|-------|--------|
-| [Übung 1: Chatbot nutzen lernen](prompten-lernen/index.qmd) | 20 min |
-| [Übung 2: Denken statt Delegieren](denken-delegieren/index.qmd) | 40 min |
-| [Übung 3: KI-Tools für die Lehre](ki-tools-lehre/index.qmd) | 20 min |
+## Aktivitäten
+
+| Übung | Dauer | Beschreibung |
+|-------|-------|--------------|
+| [Fakten-Check](fakten-check/index.qmd) | 25 min | Kritische Evaluation von KI-Outputs |
+| [Offloading vs. Outsourcing](offloading-outsourcing/index.qmd) | 35 min | Wann unterstützt KI das Lernen? |

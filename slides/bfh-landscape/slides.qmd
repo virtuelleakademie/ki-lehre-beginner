@@ -1,0 +1,89 @@
+---
+title: "KI an der BFH"
+subtitle: "Policy und Tools"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    progress: true
+    controls: true
+    navigation-mode: linear
+footer: "KI in der Lehre: Grundlagen"
+---
+
+## KI-Policy BFH
+
+Die BFH hat eine KI-Policy verabschiedet:
+
+- Verabschiedet am 7. Mai 2025
+- Gilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb
+
+## Die fünf Grundsätze
+
+1. Transparenz und Nachvollziehbarkeit
+2. Informationssicherheit und Datenschutz
+3. Ethische Reflexion und Verantwortlichkeit
+4. Wissenschaftliche Integrität
+5. Didaktische Angemessenheit und Chancengleichheit
+
+## Deine Verantwortung als Lehrperson
+
+- Auswahl und Einsatz von KI-Tools verantworten
+- Eignung für Lernziele prüfen
+- Studierende transparent informieren
+- Festlegen, wie KI-Inhalte zu kennzeichnen sind
+- Vorgaben auf Departements-/Studiengangsebene beachten
+
+## Studierende
+
+Was von Studierenden erwartet wird:
+
+- Reflektierter Einsatz im vorgegebenen Rahmen
+- Auseinandersetzung mit Potenzialen und Grenzen
+- Feedback an Lehrende geben
+
+## Support
+
+Bei Fragen:
+
+- **CISO**: Informationssicherheit
+- **Fachstelle Datenschutz**: Datenschutzfragen
+- **Virtuelle Akademie**: Didaktische Beratung
+- **Bildung 6.0 Plattform**: Ressourcen und Austausch
+
+## Freigegebene Tools
+
+Wo findest du die Liste?
+
+- mybfh > IT-Applikationen > Abgeklärte KI-Tools
+- mybfh > IT-Applikationen > Neue KI-Tools
+
+## Die wichtigsten Tools
+
+| Tool | Zugang | Stärken |
+|------|--------|---------|
+| Microsoft Copilot | BFH-Lizenz | Integration in Office, Datenschutz |
+| ChatGPT | Persönlich/Abo | Vielseitig, viele Funktionen |
+| Claude | Persönlich/Abo | Lange Texte, Reasoning |
+
+## Welches Tool wofür?
+
+- **Kurze Fragen, Office-Integration**: Copilot
+- **Komplexe Aufgaben, Coding**: ChatGPT
+- **Lange Dokumente, Analyse**: Claude
+
+## Datenschutz-Reminder
+
+::: {.warning}
+## Achtung
+
+- Keine personenbezogenen Daten in nicht-freigegebene Tools
+- Bei sensiblen Daten: Prüfen, ob Tool freigegeben ist
+- Im Zweifel: Fachstelle Datenschutz kontaktieren
+:::
+
+## Ressourcen
+
+- [KI-Policy BFH (PDF)](../../assets/pdfs/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf)
+- [Bildung 6.0](https://bildung6.bfh.ch)
+- mybfh > IT-Applikationen > KI-Tools

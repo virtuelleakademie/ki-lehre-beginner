@@ -79,13 +79,11 @@ website:
       contents:
         - workshop/index.qmd
         - workshop/einstieg/index.qmd
-        - slides/grundlagen/index.qmd
-        - exercises/prompten-lernen/index.qmd
-        - slides/chatbots-grenzen/index.qmd
-        - exercises/denken-delegieren/index.qmd
-        - slides/chatbots-einfluss-lernen/index.qmd
-        - exercises/ki-tools-lehre/index.qmd
-        - slides/ki-tool-lehre/index.qmd
+        - slides/ki-verstehen/index.qmd
+        - slides/bfh-landscape/index.qmd
+        - exercises/fakten-check/index.qmd
+        - exercises/offloading-outsourcing/index.qmd
+        - workshop/abschluss/index.qmd
 
     - title: "Slides"
       style: "docked"
@@ -93,11 +91,8 @@ website:
       background: light
       contents:
         - slides/index.qmd
-        - slides/grundlagen/index.qmd
-        - slides/chatbots-grenzen/index.qmd
-        - slides/chatbots-einfluss-lernen/index.qmd
-        - slides/ki-tool-lehre/index.qmd
-
+        - slides/ki-verstehen/index.qmd
+        - slides/bfh-landscape/index.qmd
 
     - title: "Übungen"
       style: "docked"
@@ -105,9 +100,8 @@ website:
       background: light
       contents:
         - exercises/index.qmd
-        - exercises/prompten-lernen/index.qmd
-        - exercises/denken-delegieren/index.qmd
-        - exercises/ki-tools-lehre/index.qmd
+        - exercises/fakten-check/index.qmd
+        - exercises/offloading-outsourcing/index.qmd
 
 page-footer:
   right:

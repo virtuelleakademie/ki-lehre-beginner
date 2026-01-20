@@ -1,10 +1,45 @@
 ---
-title:  Begrüßungsaufgabe
+title: "Ankommen"
+subtitle: "Spektrum-Aktivität"
+sidebar: workshop
 ---
 
-Stellen Sie sich kurz vor:
+## Begrüssung
 
-1. **Name**
-2. **Institut & Lehrfächer**
-3. **Subjektives Erfahrungslevel mit KI (Skala von 0-10)**
-4. **Erwartung vom Kurs** (ein Satz)
+Willkommen zum Workshop "KI in der Lehre: Grundlagen".
+
+Bevor wir beginnen, lernen wir uns gegenseitig kennen: Wo steht ihr in Bezug auf KI?
+
+::: {.experiment}
+## Positioniere dich
+
+**Dimension 1: Erfahrung**
+
+Stelle dich auf einer imaginären Linie auf:
+
+- Links: "Ich habe noch nie einen Chatbot benutzt"
+- Rechts: "Ich nutze KI-Tools täglich"
+
+**Dimension 2: Haltung**
+
+- Links: "Ich bin skeptisch gegenüber KI in der Lehre"
+- Rechts: "Ich bin optimistisch über KI in der Lehre"
+
+{{< timer 5 >}}
+:::
+
+## Ziel des Workshops
+
+Was wir heute **nicht** tun:
+
+- Behaupten, dass KI gut oder schlecht ist
+
+Was wir heute **stattdessen** tun:
+
+- Gemeinsam herausfinden: Wann unterstützt KI das Lernen, wann behindert sie es?
+
+## Spielregeln
+
+- Experimentieren ist erwünscht
+- Es gibt keine dummen Fragen
+- Wir lernen voneinander

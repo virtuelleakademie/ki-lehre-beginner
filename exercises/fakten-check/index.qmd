@@ -1,0 +1,75 @@
+---
+title: "Fakten-Check"
+subtitle: "Kritische Evaluation von KI-Outputs"
+sidebar: exercises
+---
+
+## Lernziele
+
+- Erfahren, dass Chatbots selbstbewusst falsche Informationen liefern können
+- Strategien entwickeln, um KI-Outputs zu überprüfen
+
+::: {.experiment}
+## Deine Aufgabe
+
+### Teil 1: Fragen stellen (10 min)
+
+Stelle einem Chatbot **3 faktische Fragen aus deinem Fachgebiet**.
+
+Wähle Fragen, die:
+
+- Nicht trivial sind (nicht "Was ist die Hauptstadt der Schweiz?")
+- Überprüfbar sind (du kennst die richtige Antwort oder kannst sie nachschlagen)
+- Fachspezifisch sind (aus deinem Lehrgebiet)
+
+Beispiele:
+
+- "Wann wurde [Gesetz X] in der Schweiz eingeführt?"
+- "Welche Dosierung empfiehlt [Richtlinie Y] für [Medikament Z]?"
+- "Wie lautet die Formel für [Konzept X]?"
+
+Notiere die Fragen und Antworten.
+
+{{< timer 10 >}}
+:::
+
+::: {.experiment}
+## Teil 2: Überprüfen (10 min)
+
+Überprüfe die Antworten des Chatbots:
+
+- Stimmen sie mit deinem Fachwissen überein?
+- Kannst du die Informationen in einer zuverlässigen Quelle bestätigen?
+
+Kategorisiere jede Antwort:
+
+- ✓ Korrekt
+- ~ Teilweise korrekt
+- ✗ Falsch (Halluzination)
+
+{{< timer 10 >}}
+:::
+
+::: {.group}
+## Teil 3: Austausch (5 min)
+
+Tauscht euch in Kleingruppen aus:
+
+- Was habt ihr gefunden?
+- Bei welchen Themen waren die Chatbots zuverlässig?
+- Wo gab es Fehler?
+
+{{< timer 5 >}}
+:::
+
+::: {.key-point}
+## Kernaussage
+
+Chatbots sind **selbstbewusst, aber nicht zuverlässig**. Sie können plausibel klingende Falschaussagen generieren.
+
+Für Lehrende bedeutet das:
+
+- Eigene Outputs immer prüfen
+- Studierende für dieses Problem sensibilisieren
+- Kritische Evaluation als Kompetenz vermitteln
+:::

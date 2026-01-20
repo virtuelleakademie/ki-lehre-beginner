@@ -1,0 +1,39 @@
+---
+title: "KI verstehen"
+subtitle: "Wie funktionieren Chatbots wirklich?"
+sidebar: workshop
+---
+
+## Präsentation
+
+In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch statistische Vorhersage, Tool-Nutzung und "Denken" durch Chain-of-Thought.
+
+[Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
+
+<iframe
+  src="slides.html"
+  width="100%"
+  height="500"
+  style="border: 1px solid #ccc; border-radius: 4px;"
+></iframe>
+
+## Inhaltsübersicht
+
+**Dauer:** 45 Minuten (3 Abschnitte à 15 Minuten)
+
+### Abschnitt A: Textgenerierung
+
+- Sprachmodelle sagen das nächste Wort vorher
+- Trainiert auf riesigen Textmengen
+- Wichtige Einsicht: Statistik, nicht Verstehen
+
+### Abschnitt B: Tool-Nutzung
+
+- Web-Suche, Datei-Analyse, Code-Ausführung
+- Moderne Chatbots sind mehr als Textgeneratoren
+
+### Abschnitt C: "Denken" / Reasoning
+
+- Chain-of-Thought verbessert Ergebnisse
+- "Denke Schritt für Schritt"
+- Bessere Token-Vorhersagen, kein menschliches Denken

@@ -1,0 +1,60 @@
+---
+title: "Transfer und Abschluss"
+sidebar: workshop
+---
+
+::: {.individual}
+## Individuelle Reflexion (3 min)
+
+Nimm dir einen Moment:
+
+1. **Eine Sache, die ich ausprobieren werde**:
+
+   _________________________________
+
+2. **Eine Sache, bei der ich vorsichtig sein werde**:
+
+   _________________________________
+
+{{< timer 3 >}}
+:::
+
+::: {.group}
+## Austausch (5 min)
+
+Teile deine Vorsätze mit einer Person neben dir.
+
+- Was willst du ausprobieren?
+- Worauf wirst du achten?
+
+{{< timer 5 >}}
+:::
+
+## Zusammenfassung
+
+**Was wir heute gemacht haben**:
+
+1. Verstanden, wie Chatbots funktionieren (Vorhersage, nicht Verstehen)
+2. Die BFH-Richtlinien und Tools kennengelernt
+3. Erfahren, dass Chatbots selbstbewusst, aber nicht zuverlässig sind
+4. Den Unterschied zwischen Offloading und Outsourcing verstanden
+
+**Die zentrale Einsicht**:
+
+> KI-Tools sind primär für Experten gemacht. Sie machen Experten produktiver. Für Lernende ist die Situation komplizierter, weil Lernen die kognitive Anstrengung braucht, die KI wegzunehmen droht.
+
+## Wie weiter?
+
+**Intermediate Workshop**: Warum ist Outsourcing problematisch fürs Lernen? (Kognitive Lerntheorie, Agent-Design)
+
+**Advanced Workshop**: Wie baue ich KI-gestützte Lernwerkzeuge? (Hands-on mit Code)
+
+**Ressourcen**:
+
+- [KI-Policy BFH](../assets/pdfs/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf)
+- [Bildung 6.0](https://bildung6.bfh.ch)
+- [Virtuelle Akademie Knowledge Base](https://virtuelleakademie.ch/knowledge-base/)
+
+## Feedback
+
+[Link zu Feedback-Formular einfügen]
