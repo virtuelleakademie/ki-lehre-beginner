@@ -4,44 +4,82 @@ This file provides guidance to Claude Code when working with this repository.
 
 ## Project Overview
 
-A Quarto website presenting the current state of AI in higher education. Content is in German, targeting staff at Swiss universities.
+A Quarto website for the **Beginner Workshop** in the "KI in der Lehre" series. This is the first of three workshops (Beginner → Intermediate → Advanced), plus a Refresher course. Content is in German, targeting staff at Swiss universities (BFH).
+
+**Workshop Focus**: "Was ist generative KI, und was bedeutet sie für das Lernen?"
+
+**Duration**: 3 hours
+
+## Related Workshops
+
+All workshops live in the parent directory `../`:
+
+- `ki-lehre-beginner/` (this workshop)
+- `ki-lehre-intermediate/` (builds on beginner: learning science + agent design)
+- `ki-lehre-advanced/` (builds on intermediate: building educational AI tools)
+- `ki-lehre-refresher/` (standalone overview with research foundations)
 
 ## Build Commands
 
 ```bash
-quarto preview          # Live preview on port 8800
+quarto preview          # Live preview on port 8808
 quarto render           # Build site to /docs/
 ```
 
 ## Project Structure
 
 ```text
-ki-lehre-refresher/
+ki-lehre-beginner/
 ├── _quarto.yml                     # Main configuration
 ├── index.qmd                       # Welcome/landing page
-├── presentation/
-│   └── index.qmd                   # Embeds the RevealJS slides
+├── workshop/
+│   ├── index.qmd                   # Schedule & learning objectives
+│   ├── einstieg/                   # Opening activity
+│   └── diskussion/                 # Closing discussion
 ├── slides/
-│   └── ai-higher-ed/
-│       └── index.qmd               # RevealJS presentation source
-├── qa/
-│   └── index.qmd                   # Q&A and further research
-├── docs/                           # Rendered output (GitHub Pages)
+│   ├── index.qmd                   # Slides overview
+│   ├── grundlagen/                 # How LLMs and chatbots work
+│   ├── chatbots-grenzen/           # Possibilities and limitations
+│   ├── chatbots-einfluss-lernen/   # Impact on learning
+│   ├── ki-tool-lehre/              # AI as teaching tool
+│   ├── chatbot-agenten/            # Chatbots as agents
+│   ├── ki-datenschutz/             # Data protection
+│   └── ai-higher-ed/               # AI in higher education
+├── exercises/
+│   ├── index.qmd                   # Exercises overview
+│   ├── prompten-lernen/            # Learning effective prompting
+│   ├── denken-delegieren/          # Thinking vs. delegating
+│   ├── ki-tools-lehre/             # AI tools for teaching
+│   └── miro-board/                 # Collaborative workspace
+├── resources/
+│   ├── resources.qmd               # Guidance documents
+│   ├── prompting/                  # Advanced prompting strategies
+│   ├── kompetenz-erwerben/         # How competence is acquired
+│   └── produktive-anstrengung/     # Productive struggle
+├── notes/                          # Internal planning (not rendered)
+│   ├── 00-beginner-workshop-structure.qmd
+│   ├── 01-*.qmd                    # Activity designs, facilitator guides
+│   ├── 02-intermediate-connection.qmd
+│   └── 03-revised-workshop-proposal.qmd
+├── assets/
+│   ├── images/
+│   └── pdfs/
 ├── styles/
-│   ├── custom.scss                 # Custom theme styles
-│   └── styles.css                  # Additional CSS
-├── assets/                         # Images, PDFs, other assets
-├── scripts/                        # JavaScript (e.g., copy-prompt.js)
-└── _extensions/                    # Quarto extensions
-    ├── timer/                      # Countdown timer shortcode
-    └── custom-callout/             # Custom callout styling
+│   ├── custom.scss
+│   └── styles.css
+├── scripts/                        # JavaScript (copy-prompt.js)
+├── _extensions/                    # Quarto extensions
+│   ├── timer/                      # Countdown timer shortcode
+│   └── custom-callout/             # Custom callout styling
+└── docs/                           # Rendered output (GitHub Pages)
 ```
 
 ### Content Organization
 
 - Every content page is named `index.qmd` inside its own subdirectory
 - No content files at root level (except `index.qmd` landing page)
-- Slides are in `slides/<presentation-name>/index.qmd` and embedded via iframe in `presentation/index.qmd`
+- The `notes/` directory contains internal planning documents (not rendered)
+- Slides use RevealJS format
 
 ## Writing Conventions
 
@@ -62,7 +100,7 @@ German with Swiss spelling conventions:
 
 ### Links
 
-- Internal links: use relative paths to `.qmd` files (e.g., `[text](presentation/index.qmd)`)
+- Internal links: use relative paths to `.qmd` files (e.g., `[text](workshop/index.qmd)`)
 - External links: Quarto adds external link icons automatically
 
 ## Custom Callouts
@@ -113,7 +151,7 @@ format:
     slide-number: true
     preview-links: auto
     footer: "Footer text"
-    navigation-mode: vertical    # or linear
+    navigation-mode: vertical
     controls: true
     progress: true
 ```
@@ -128,60 +166,65 @@ Content for this slide.
 ## Next Slide
 
 More content.
-
----
-
-Horizontal rule creates a new slide without a title.
 ```
 
-### Embedding Slides
+## Workshop Content Themes
 
-In `presentation/index.qmd`, embed slides via iframe:
+### Core Topics (from revised proposal)
 
-```html
-<iframe
-  src="../slides/ai-higher-ed/index.html"
-  width="100%"
-  height="600px"
-  style="border: 1px solid #ccc; border-radius: 4px;">
-</iframe>
-```
+1. **KI verstehen** (experiential focus)
+   - Text generation: how LLMs predict "next word"
+   - Tool usage: web search, file analysis, code execution
+   - "Thinking": chain-of-thought reasoning
 
-Note: Link to `.html` (rendered output), not `.qmd`.
+2. **BFH Chatbot Landscape**
+   - Policy: what's permitted (BFH KI-Policy)
+   - Tools: Copilot, ChatGPT, Claude recommendations
+
+3. **Extended Cognition**
+   - Offloading vs. outsourcing distinction
+   - Key insight: same AI use can be productive for experts, problematic for learners
+
+### Key Concepts
+
+- **Cognitive Offloading**: Externalizing to reduce working memory while you continue thinking
+- **Cognitive Outsourcing**: Transferring the actual cognitive work to an external system
+- **The Learning Paradox**: AI makes tasks easier but can impair learning if students outsource what they should practice
 
 ## Navigation Structure
 
 ### Navbar
 
-- Präsentation: links to `presentation/index.qmd`
-- Q & A: links to `qa/index.qmd`
+- Workshop: links to `workshop/index.qmd`
+- Slides: links to `slides/index.qmd`
+- Übungen: links to `exercises/index.qmd`
+- Dokumente: dropdown with BFH policy and guidance PDFs
 - Knowledge Base: external link to virtuelleakademie.ch
 
 ### Sidebars
 
-Each section has its own sidebar (configured in `_quarto.yml` under `sidebar:`):
+Three sidebars configured in `_quarto.yml`:
 
-- `id: presentation` for the presentation section
-- `id: qa` for the Q&A section
-
-To assign a page to a sidebar, add to its YAML header:
-
-```yaml
-sidebar: presentation
-```
+- Workshop sidebar: follows workshop flow (slides and exercises interleaved)
+- Slides sidebar: all slide decks
+- Übungen sidebar: all exercises
 
 ## Adding New Content
 
-### New Page in Existing Section
+### New Slide Deck
 
-1. Create subdirectory: `qa/new-topic/`
-2. Create `qa/new-topic/index.qmd` with appropriate `sidebar:` in YAML
-3. Add to sidebar contents in `_quarto.yml`
+1. Create `slides/new-topic/index.qmd` with `format: revealjs`
+2. Add to appropriate sidebar in `_quarto.yml`
 
-### New Presentation
+### New Exercise
 
-1. Create `slides/new-presentation/index.qmd` with `format: revealjs`
-2. Embed in a page using iframe pointing to `.html` output
+1. Create `exercises/new-exercise/index.qmd`
+2. Add to sidebar contents in `_quarto.yml`
+
+### New Resource
+
+1. Create `resources/new-resource/index.qmd`
+2. Add to render list in `_quarto.yml` if needed
 
 ## Deployment
 
