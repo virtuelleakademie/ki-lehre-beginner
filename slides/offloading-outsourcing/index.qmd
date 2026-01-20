@@ -1,0 +1,116 @@
+---
+title: "Offloading vs. Outsourcing"
+subtitle: "Wann unterstützt KI das Denken, wann ersetzt sie es?"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    progress: true
+    navigation-mode: vertical
+    controls: true
+---
+
+## Die zentrale Frage
+
+Dieselbe KI-Nutzung kann **produktiv** oder **problematisch** sein.
+
+Wovon hängt das ab?
+
+## Zwei Arten der KI-Nutzung
+
+::: {.columns}
+::: {.column width="50%"}
+### Offloading
+
+Du **denkst weiter**, aber lagerst Zwischenschritte aus.
+
+*Das Werkzeug unterstützt dich.*
+:::
+
+::: {.column width="50%"}
+### Outsourcing
+
+Du **übergibst das Denken** an das System.
+
+*Das Werkzeug ersetzt dich.*
+:::
+:::
+
+## Ein Beispiel: Rechnen
+
+::: {.columns}
+::: {.column width="50%"}
+### Offloading
+
+Du rechnest eine Gleichung und notierst Zwischenergebnisse auf Papier.
+
+→ Dein Kopf ist frei für den nächsten Schritt
+:::
+
+::: {.column width="50%"}
+### Outsourcing
+
+Du tippst die Gleichung in Wolfram Alpha und kopierst das Ergebnis.
+
+→ Du hast nicht gerechnet
+:::
+:::
+
+## Ein Beispiel: Schreiben
+
+::: {.columns}
+::: {.column width="50%"}
+### Offloading
+
+Du nutzt einen Chatbot, um deine Gliederung zu **überprüfen**.
+
+→ Du entscheidest, was du änderst
+:::
+
+::: {.column width="50%"}
+### Outsourcing
+
+Du lässt den Chatbot die Einleitung **schreiben**.
+
+→ Der Chatbot entscheidet, was wichtig ist
+:::
+:::
+
+## Die entscheidende Frage
+
+> Wer denkt?
+
+- **Offloading**: Du denkst, das Tool unterstützt
+- **Outsourcing**: Das Tool denkt, du konsumierst
+
+## Warum ist das wichtig?
+
+Für **Experten** ist Outsourcing oft unproblematisch:
+
+- Sie können das Ergebnis beurteilen
+- Sie haben die Fähigkeit bereits
+
+Für **Lernende** ist es komplizierter:
+
+- Lernen braucht kognitive Anstrengung
+- Outsourcing umgeht genau diese Anstrengung
+
+## Die Expertise-Frage
+
+::: {.key-point}
+Dieselbe KI-Nutzung kann für Experten **Offloading** sein und für Lernende **Outsourcing**.
+:::
+
+Es kommt darauf an, ob man die Fähigkeit **hat** oder **entwickeln** will.
+
+## Aktivität: Szenario-Karten
+
+Ihr bekommt Szenarien, in denen jemand KI nutzt.
+
+Diskutiert in Gruppen:
+
+1. Ist das eher Offloading oder Outsourcing?
+2. Was würde es zum anderen machen?
+3. Für wen wäre dieselbe Nutzung anders zu bewerten?
+
+{{< timer 20 >}}

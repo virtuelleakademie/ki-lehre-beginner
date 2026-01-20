@@ -1,0 +1,109 @@
+---
+title: "Klassifikation: Denkprozesse"
+subtitle: "Erweitert, ausgelagert, oder ausgesourct?"
+sidebar: uebungen
+---
+
+## Drei Kategorien
+
+Bevor wir über KI sprechen, schauen wir uns an, wie wir schon immer externe Hilfsmittel beim Denken nutzen.
+
+| Kategorie | Beschreibung | Wer denkt? |
+|-----------|--------------|------------|
+| **Erweiterte Kognition** | Das Hilfsmittel ist Teil deines Denksystems geworden | Du + Tool als Einheit |
+| **Offloading** | Du nutzt das Hilfsmittel, um Zwischenschritte auszulagern | Du denkst weiter |
+| **Outsourcing** | Du übergibst die Denkarbeit an das Hilfsmittel | Das Tool denkt |
+
+::: {.key-point}
+## Kernfrage
+
+Bei jedem Beispiel: **Wer macht die kognitive Arbeit?**
+:::
+
+## Aktivität
+
+::: {.group}
+## Gruppenarbeit
+
+Klassifiziert die folgenden Beispiele. Diskutiert Grenzfälle.
+
+{{< timer 15 >}}
+:::
+
+### Die Beispiele
+
+Ordne jedes Beispiel einer Kategorie zu: **E** (Erweitert), **O** (Offloading), oder **S** (Outsourcing).
+
+| # | Beispiel | E / O / S? |
+|---|----------|------------|
+| 1 | Den Kopf neigen, um ein gedrehtes Bild besser zu sehen | |
+| 2 | Zwischenergebnisse beim Rechnen auf Papier notieren | |
+| 3 | Eine Erinnerung auf dem Handy setzen | |
+| 4 | Mit den Fingern zählen | |
+| 5 | Beim Lesen wichtige Stellen markieren | |
+| 6 | Ein Diagramm zeichnen, um ein Problem zu verstehen | |
+| 7 | Eine Gleichung in Wolfram Alpha eingeben und das Ergebnis kopieren | |
+| 8 | GPS-Navigation folgen, ohne auf die Umgebung zu achten | |
+| 9 | Die Rechtschreibprüfung alle Fehler automatisch korrigieren lassen | |
+| 10 | Ein Notizbuch als externes Gedächtnis nutzen (wie Otto mit Alzheimer) | |
+| 11 | Google Translate für einen ganzen Text nutzen | |
+| 12 | Einen Chatbot bitten, eine E-Mail zu schreiben | |
+| 13 | Einen Chatbot bitten, deine E-Mail zu überprüfen | |
+| 14 | Den Blindenstock einer sehbehinderten Person | |
+| 15 | Die mathematische Notation, die du seit Jahren nutzt | |
+
+## Diskussionsfragen
+
+Nach der Klassifikation:
+
+1. **Welche Beispiele waren schwer einzuordnen?** Warum?
+
+2. **Kann dasselbe Verhalten in verschiedene Kategorien fallen?** Wovon hängt es ab?
+
+3. **Was unterscheidet Beispiel 12 von Beispiel 13?** (Chatbot schreibt vs. prüft)
+
+4. **Verändert sich die Kategorie mit der Expertise?** Ist GPS für einen Taxifahrer anders zu bewerten als für einen Touristen?
+
+## Auflösung
+
+::: {.pro-tip collapse="true"}
+## Unsere Einschätzung (aufklappen)
+
+| # | Beispiel | Kategorie | Begründung |
+|---|----------|-----------|------------|
+| 1 | Kopf neigen | **O** | Physische Aktion, die Wahrnehmung erleichtert |
+| 2 | Zwischenergebnisse notieren | **O** | Arbeitsgedächtnis entlasten, du rechnest weiter |
+| 3 | Handy-Erinnerung | **O** | Du entscheidest was wichtig ist, Handy erinnert nur |
+| 4 | Fingerzählen | **O** | Körper unterstützt Zählen |
+| 5 | Text markieren | **O** | Du entscheidest was wichtig ist |
+| 6 | Diagramm zeichnen | **O** | Externalisierung hilft beim Denken |
+| 7 | Wolfram Alpha | **S** | Das System rechnet, du kopierst |
+| 8 | GPS blind folgen | **S** | Das System navigiert, du folgst nur |
+| 9 | Auto-Korrektur | **S** | Das System entscheidet, du akzeptierst |
+| 10 | Ottos Notizbuch | **E** | Das Notizbuch funktioniert wie sein Gedächtnis |
+| 11 | Google Translate | **S** | Das System übersetzt, du prüfst (hoffentlich) |
+| 12 | Chatbot schreibt E-Mail | **S** | Das System formuliert, strukturiert, entscheidet |
+| 13 | Chatbot prüft E-Mail | **O** | Du hast geschrieben, Feedback hilft dir |
+| 14 | Blindenstock | **E** | Ist Teil des Wahrnehmungssystems geworden |
+| 15 | Mathematische Notation | **E** | Internalisiertes Denksystem |
+
+**Wichtig**: Einige Einordnungen sind debattierbar. Das ist der Punkt. Die Grenzen sind fliessend.
+:::
+
+## Übergang zu KI
+
+::: {.reflect}
+## Reflexion
+
+Mit diesem Rahmen im Kopf:
+
+- Welche deiner eigenen KI-Nutzungen sind eher **Offloading**?
+- Welche sind eher **Outsourcing**?
+- Wann ist dir der Unterschied wichtig?
+:::
+
+## Weiter
+
+Diese Unterscheidung wird in der nächsten Aktivität konkreter, wenn wir Szenarien aus dem Hochschulkontext betrachten.
+
+[Szenario-Karten: Offloading vs. Outsourcing](../szenario-karten/index.qmd)

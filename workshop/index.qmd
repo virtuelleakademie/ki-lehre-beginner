@@ -4,28 +4,69 @@ subtitle: "Grundlagen für Lehrende"
 sidebar: workshop
 ---
 
+## Drei Leitfragen
+
+Dieser Workshop beantwortet drei Fragen:
+
+| # | Frage | Was du lernst |
+|---|-------|---------------|
+| 1 | **Was ist KI?** | Wie Sprachmodelle funktionieren (Statistik, nicht Verstehen) |
+| 2 | **Wofür kann KI verwendet werden?** | Möglichkeiten, Grenzen und BFH-Richtlinien |
+| 3 | **Wofür sollte ich KI verwenden?** | Offloading vs. Outsourcing, Produktivität vs. Lernen |
+
 ## Lernziele
 
 Am Ende dieses Workshops kannst du:
 
-- Verstehen, wie Sprachmodelle Text generieren
-- Die Fähigkeiten moderner Chatbots kennen (Tools, "Denken")
+- Erklären, wie Sprachmodelle Text generieren (statistische Vorhersage)
+- Die Fähigkeiten und Grenzen moderner Chatbots einschätzen
 - Die BFH-Richtlinien und verfügbaren Tools kennen
 - Zwischen kognitivem Offloading und Outsourcing unterscheiden
-- Einschätzen, wann KI-Nutzung das Lernen unterstützt oder behindert
+- Beurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert
 
 ## Ablauf
 
 | Zeit | Phase | Inhalt |
 |------|-------|--------|
-| 00:00-00:15 | Ankommen | Begrüssung und Spektrum-Aktivität |
-| 00:15-01:00 | KI verstehen | Textgenerierung, Tools, "Denken" |
-| 01:00-01:15 | Pause | |
-| 01:15-01:35 | BFH Landscape | Policy und Tool-Empfehlungen |
-| 01:35-02:00 | Kritische Evaluation | Fakten-Check Aktivität |
-| 02:00-02:10 | Pause | |
-| 02:10-02:45 | Offloading vs. Outsourcing | Szenario-Karten und Konzepte |
-| 02:45-03:00 | Transfer | Reflexion und Abschluss |
+| 00:00–00:15 | Einstieg | Begrüssung und Spektrum-Aktivität |
+| 00:15–01:00 | **Frage 1: Was ist KI?** | Textgenerierung, Chain-of-Thought, Mini-Experiment |
+| 01:00–01:10 | Pause | |
+| 01:10–02:00 | **Frage 2: Wofür kann KI verwendet werden?** | Fähigkeiten, BFH-Policy, Fakten-Check Aktivität |
+| 02:00–02:10 | Pause | |
+| 02:10–02:50 | **Frage 3: Wofür sollte ich KI verwenden?** | Szenario-Karten, Offloading vs. Outsourcing |
+| 02:50–03:00 | Abschluss | Reflexion und Transfer |
+
+## Aktivitäten
+
+Jede Frage enthält eine praktische Aktivität:
+
+| Frage | Aktivität | Dauer |
+|-------|-----------|-------|
+| 1 | Mini-Experiment: Chain-of-Thought testen | 10 min |
+| 2 | Fakten-Check: Chatbot-Antworten überprüfen | 25 min |
+| 3 | Szenario-Karten: Offloading vs. Outsourcing | 20 min |
+
+## Takeaways
+
+Am Ende nimmst du drei Antworten mit:
+
+::: {.key-point}
+## Frage 1: Was ist KI?
+
+Sprachmodelle sind **statistische Textgeneratoren**. Sie "verstehen" nicht, sie berechnen Wahrscheinlichkeiten.
+:::
+
+::: {.key-point}
+## Frage 2: Wofür kann KI verwendet werden?
+
+Chatbots sind **vielseitige Werkzeuge**, aber sie generieren **selbstbewusst auch Falsches**. Kritische Prüfung ist immer nötig.
+:::
+
+::: {.key-point}
+## Frage 3: Wofür sollte ich KI verwenden?
+
+KI-Tools sind für **Experten** gemacht. Für **Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung, die KI wegzunehmen droht.
+:::
 
 ## Workshop-Reihe
 
