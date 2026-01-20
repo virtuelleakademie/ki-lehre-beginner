@@ -5,7 +5,7 @@ project:
     - assets/images/*
     - assets/pdfs/*
   preview:
-    port: 8800
+    port: 8808
     browser: false
   output-dir: docs
   render:
@@ -114,17 +114,23 @@ page-footer:
     - icon: github
       href: https://github.com/virtuelleakademie/ki-lehre-intermediate/
 
+lang: de
+
 format:
   html:
-    code-copy: true
     theme:
-      light: [simplex]
+      - simplex
+      - styles/custom.scss
+    css:
+      - styles/styles.css
+      - _extensions/quarto-ext/fontawesome/assets/css/all.css
+    include-after-body: scripts/copy-prompt.js
+    code-copy: true
     toc: true
     link-external-icon: true
     link-external-newwindow: true
     anchor-sections: true
     smooth-scroll: true
-    linkcolor: rebeccapurple
 
 comments:
   hypothesis:
@@ -147,137 +153,85 @@ filters:
   - custom-callout
 
 custom-callout:
-  # todo:
-  #   icon-symbol: "📝"
-  #   collapse: true
-  #   color: "pink"
-
-  # thumbs-up:
-  #   title: "Great job!"
-  #   icon-symbol: "👍🏼"
-  #   color: "steelblue"
-
-  # Activity Types
-  individual:
-    title: "Individual Work"
-    icon-symbol: "💻"
-    color: "steelblue"
+  # Activity types - what participants DO (Magenta)
+  experiment:
+    title: "Deine Aufgabe"
+    icon-symbol: "fa-flask"
+    appearance: default
     collapse: false
+    color: "#A3195B"  # Deep Magenta (action)
 
-  pair:
-    title: "Pair Work"
-    icon-symbol: "👥"
-    color: "forestgreen"
+  individual:
+    title: "Einzelarbeit"
+    icon-symbol: "fa-user"
+    appearance: default
+    color: "#A3195B"  # Deep Magenta (action)
     collapse: false
 
   group:
-    title: "Group Work"
-    icon-symbol: "👥"
-    color: "purple"
+    title: "Gruppenarbeit"
+    icon-symbol: "fa-users"
+    appearance: default
+    color: "#A3195B"  # Deep Magenta (action)
     collapse: false
 
-  screens-down:
-    title: "Screens Down"
-    icon-symbol: "🔽"
-    color: "orange"
+  demonstration:
+    title: "Demonstration"
+    icon-symbol: "fa-chalkboard"
+    appearance: default
     collapse: false
+    color: "#333333"  # Dark grey (instructor-led, neutral)
 
-  screens-up:
-    title: "Screens Up"
-    icon-symbol: "🔼"
-    color: "green"
-    collapse: false
-
-  # Learning Process
-  try:
-    title: "Try It"
-    icon-symbol: "🔄"
-    color: "blue"
+  # Thinking types - reflection and insights (Gold)
+  scenario:
+    title: "Szenario"
+    icon-symbol: "fa-comment"
+    appearance: default
+    color: "#666666"  # Medium grey (neutral context)
     collapse: false
 
   reflect:
-    title: "Reflection"
-    icon-symbol: "💭"
-    color: "purple"
+    title: "Reflexion"
+    icon-symbol: "fa-lightbulb"
+    appearance: default
+    color: "#D4A03E"  # Warm Gold (insight)
     collapse: false
 
-  feedback:
-    title: "Feedback"
-    icon-symbol: "📝"
-    color: "teal"
-    collapse: true
+  key-point:
+    title: "Kernaussage"
+    icon-symbol: "fa-star"
+    appearance: default
+    collapse: false
+    color: "#D4A03E"  # Warm Gold (importance)
 
-  caution:
-    title: "Watch Out"
-    icon-symbol: "⚠️"
-    color: "orange"
-    collapse: true
+  # Alert type
+  warning:
+    title: "Achtung"
+    icon-symbol: "fa-exclamation-circle"
+    appearance: default
+    color: "#A3195B"  # Deep Magenta (attention)
+    collapse: false
 
+  # Guidance types (Gold)
   pro-tip:
-    title: "Pro Tip"
-    icon-symbol: "💡"
-    color: "gold"
+    title: "Tipp"
+    icon-symbol: "fa-wand-magic-sparkles"
+    appearance: default
+    color: "#D4A03E"  # Warm Gold (helpful)
     collapse: true
 
-  # Technical Elements
-  prompt-example:
-    title: "Example Prompt:"
-    icon-symbol: "👩🏼‍🔧"
-    color: "steelblue"
+  source-check:
+    title: "Quellen-Check"
+    icon-symbol: "fa-search"
+    appearance: default
+    color: "#D4A03E"  # Warm Gold (verification)
     collapse: false
 
-  tutor-example:
-    title: "Tutor:"
-    icon-symbol: "📄"
-    color: "purple"
-    collapse: false
-
-  prompt-template:
-    title: "Prompt Template"
-    icon-symbol: "📋"
-    color: "indigo"
-    collapse: true
-
-  testing:
-    title: "Test Your Prompt"
-    icon-symbol: "🧪"
-    color: "green"
-    collapse: false
-
-  export:
-    title: "Export"
-    icon-symbol: "📤"
-    color: "brown"
-    collapse: true
-
-  # Workshop Flow
-  setup:
-    title: "Setup"
-    icon-symbol: "⚙️"
-    color: "gray"
-    collapse: true
-
-  timing:
-    title: "Time Check"
-    icon-symbol: "⏱️"
-    color: "red"
-    collapse: false
-
-  break:
-    title: "Break Time"
-    icon-symbol: "☕"
-    color: "yellow"
-    collapse: false
-
-  checkpoint:
-    title: "Checkpoint"
-    icon-symbol: "🎯"
-    color: "purple"
-    collapse: false
-
-  schedule:
-    title: "Schedule"
-    icon-symbol: "⏰︎"
-    color: "steelblue"
+  # Technical - copyable prompt for chatbot input
+  prompt:
+    title: "Prompt"
+    icon-symbol: "fa-clipboard"
+    appearance: default
+    color: "#333333"  # Dark grey (code-like)
     collapse: false
 

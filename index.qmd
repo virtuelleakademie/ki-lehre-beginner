@@ -1,5 +1,5 @@
 ---
-# title: "KI in der Lehre"
+title: "KI in der Lehre"
 format:
   html:
     toc: false

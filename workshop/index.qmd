@@ -2,26 +2,59 @@
 title: "Ablauf"
 ---
 
-| {{< bi collection >}} Thema | {{< bi clock >}} Dauer | 
-|-------|--------|
-| [Einstieg](einstieg/index.qmd) | 10 min |
-| [Input: Grundlagen](/slides/grundlagen/index.qmd) | 20 min |
-| [Exercise: Chatbot nutzen lernen](/exercises/prompten-lernen/index.qmd) | 20 min |
-|
-| Pause | 15 min |
-|
-| [Input: Möglichkeiten & Grenzen von Chatbots](/slides/chatbots-grenzen/index.qmd) | 5 min |
-| [Exercise: Denken, nicht Delegieren](/exercises/denken-delegieren/index.qmd) | 40 min |
-|
-| Pause | 15 min |
-|
-| [Input: Einfluss von Chatbots aufs Lernen](/slides/chatbots-einfluss-lernen/index.qmd) | 5 min |
-| [Exercise: KI Tools für die Lehre](/exercises/ki-tools-lehre/index.qmd) | 20 min |
-| [Input: KI - Tool für die Lehre](/slides/ki-tool-lehre/index.qmd) | 10 min |
-| [Offene Diskussion](diskussion/index.qmd) | 20 min |
+## Workshop-Ablauf: KI in der Lehre: Beginner (3.5 Stunden)
+
+| {{< bi clock-fill >}} Zeit | {{< bi collection-fill >}} Thema                                       | {{< bi hourglass-split >}} Dauer |
+|----------------------------|------------------------------------------------------------------------|----------------------------------|
+| **09:00 - 09:10**          | {{< bi collection-play >}} **Einstieg**                                |                                  |
+|                            | [Aktivierende Begrüssung](einstieg/index.qmd)                          | 10 min                           |
+| **09:10 - 09:30**          | {{< bi collection-play >}} **Teil 1: Grundlagen**                      |                                  |
+|                            | [Input: Grundlagen](/slides/grundlagen/index.qmd)                      | 20 min                           |
+| **09:30 - 09:50**          | {{< bi collection-play >}} **Teil 2: Chatbot nutzen lernen**           |                                  |
+|                            | [Übung: Chatbot nutzen lernen](/exercises/prompten-lernen/index.qmd)   | 20 min                           |
+| **09:50 - 10:05**          | {{< bi cup-hot-fill >}} **Pause**                                      |                                  |
+|                            | Kaffee                                                                 | 15 min                           |
+| **10:05 - 10:10**          | {{< bi collection-play >}} **Teil 3: Möglichkeiten und Grenzen**       |                                  |
+|                            | [Input: Möglichkeiten und Grenzen](/slides/chatbots-grenzen/index.qmd) | 5 min                            |
+| **10:10 - 10:50**          | {{< bi collection-play >}} **Teil 4: Denken, nicht Delegieren**        |                                  |
+|                            | [Übung: Denken, nicht Delegieren](/exercises/denken-delegieren/index.qmd) | 40 min                        |
+| **10:50 - 11:05**          | {{< bi cup-hot-fill >}} **Pause**                                      |                                  |
+|                            | Kaffee                                                                 | 15 min                           |
+| **11:05 - 11:10**          | {{< bi collection-play >}} **Teil 5: Einfluss aufs Lernen**            |                                  |
+|                            | [Input: Einfluss von Chatbots](/slides/chatbots-einfluss-lernen/index.qmd) | 5 min                        |
+| **11:10 - 11:30**          | {{< bi collection-play >}} **Teil 6: KI Tools für die Lehre**          |                                  |
+|                            | [Übung: KI Tools für die Lehre](/exercises/ki-tools-lehre/index.qmd)   | 20 min                           |
+| **11:30 - 11:40**          | {{< bi collection-play >}} **Teil 7: KI als Tool**                     |                                  |
+|                            | [Input: KI als Tool für die Lehre](/slides/ki-tool-lehre/index.qmd)    | 10 min                           |
+| **11:40 - 12:00**          | {{< bi collection-play >}} **Abschluss**                               |                                  |
+|                            | [Offene Diskussion](diskussion/index.qmd)                              | 20 min                           |
+
+
+## Lernziele
+
+Am Ende des Workshops können die Teilnehmer:
+
+1. **Grundlagen verstehen**: Wie Sprachmodelle und Chatbots funktionieren
+2. **Chatbots effektiv nutzen**: Praktische Prompting-Strategien anwenden
+3. **Grenzen erkennen**: Möglichkeiten und Limitationen von KI-Tools einschätzen
+4. **Transfer leisten**: KI-Tools sinnvoll in der eigenen Lehre einsetzen
+
 
 ## Selbststudium
+
+Für eine vertiefte Auseinandersetzung mit den Themen:
 
 - [Effektive Prompting Strategien](/resources/prompting/index.qmd)
 - [Wie man Kompetenzen erwirbt](/resources/kompetenz-erwerben/index.qmd)
 - [Produktive Anstrengung durch Design](/resources/produktive-anstrengung/index.qmd)
+
+
+## Weiterbildungsangebot
+
+Dieser Workshop ist Teil einer dreiteiligen Kursreihe der BFH:
+
+[KI in der Lehre: Beginner](https://virtuelleakademie.github.io/ki-lehre-beginner/): Grundlagen zu Sprachmodellen und Chatbots.
+
+[KI in der Lehre: Intermediate](https://virtuelleakademie.github.io/ki-lehre-intermediate/): Lernpsychologie und KI-gestütztes Lerndesign.
+
+[KI in der Lehre: Advanced](https://virtuelleakademie.github.io/ki-lehre-advanced/): Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools.
