@@ -116,7 +116,7 @@
     "href": "resources/prompting-basics/index.html#weiterführend",
     "title": "Prompting für Einsteiger",
     "section": "Weiterführend",
-    "text": "Weiterführend\nNach dem Workshop kannst du vertiefte Prompting-Strategien hier nachlesen:\n\nEffektive Prompting-Strategien in der Lehre"
+    "text": "Weiterführend\n\nInteraktiver Prompting-Tutor\nFür personalisiertes Training steht dir ein spezieller Copilot-Agent zur Verfügung:\n\nDemonstriert Techniken mit durchgearbeiteten Beispielen\nPasst sich deinem Niveau an\nGibt konstruktives Feedback zu deinen Prompts\n\nPrompting-Tutor starten (BFH-Login erforderlich)\n\n\nVertiefte Lektüre\n\nEffektive Prompting-Strategien in der Lehre"
   },
   {
     "objectID": "resources/kompetenz-erwerben/index.html",
@@ -543,7 +543,7 @@
     "href": "exercises/index.html",
     "title": "Übungen",
     "section": "",
-    "text": "Übung\nDauer\nBeschreibung\n\n\n\n\nCopilot Onboarding\n20 min\nErste Schritte mit dem BFH-Chatbot (I do → We do → You do)\n\n\nFakten-Check\n30 min\nKritische Evaluation von KI-Outputs (I do → We do → You do)\n\n\nOffloading vs. Outsourcing\n35 min\nSzenario-Karten: Wann unterstützt KI das Lernen?\n\n\nDual Planning Task\n30 min\nErfahrungsbasiert: Wo steckt das Denken?",
+    "text": "Übung\nDauer\nBeschreibung\n\n\n\n\nFakten-Check\n30 min\nKritische Evaluation von KI-Outputs\n\n\nOffloading vs. Outsourcing\n35 min\nSzenario-Karten: Wann unterstützt KI das Lernen?\n\n\nDual Planning Task\n30 min\nErfahrungsbasiert: Wo steckt das Denken?",
     "crumbs": [
       "Übungen"
     ]
@@ -553,7 +553,7 @@
     "href": "exercises/index.html#aktivitäten",
     "title": "Übungen",
     "section": "",
-    "text": "Übung\nDauer\nBeschreibung\n\n\n\n\nCopilot Onboarding\n20 min\nErste Schritte mit dem BFH-Chatbot (I do → We do → You do)\n\n\nFakten-Check\n30 min\nKritische Evaluation von KI-Outputs (I do → We do → You do)\n\n\nOffloading vs. Outsourcing\n35 min\nSzenario-Karten: Wann unterstützt KI das Lernen?\n\n\nDual Planning Task\n30 min\nErfahrungsbasiert: Wo steckt das Denken?",
+    "text": "Übung\nDauer\nBeschreibung\n\n\n\n\nFakten-Check\n30 min\nKritische Evaluation von KI-Outputs\n\n\nOffloading vs. Outsourcing\n35 min\nSzenario-Karten: Wann unterstützt KI das Lernen?\n\n\nDual Planning Task\n30 min\nErfahrungsbasiert: Wo steckt das Denken?",
     "crumbs": [
       "Übungen"
     ]
@@ -878,7 +878,7 @@
     "href": "exercises/copilot-einstieg/index.html#prompting-grundlagen",
     "title": "Copilot Onboarding",
     "section": "Prompting-Grundlagen",
-    "text": "Prompting-Grundlagen\nFür diese Übung reichen drei einfache Regeln:\n\n\n\nRegel\nBeispiel\n\n\n\n\nKontext geben\n“Ich bin Dozent*in für Chemie…”\n\n\nAufgabe klar formulieren\n“…erkläre mir in 3 Sätzen…”\n\n\nBei Bedarf nachfragen\n“Erkläre das genauer”\n\n\n\n\n\n\n\n\n\nPro-tipMehr zu Prompting\n\n\n\n\n\nDetaillierte Prompting-Strategien findest du in den Weiterführenden Ressourcen.\nFür diesen Workshop brauchst du nur die drei Grundregeln oben.",
+    "text": "Prompting-Grundlagen\nFür diese Übung reichen drei einfache Regeln:\n\n\n\nRegel\nBeispiel\n\n\n\n\nKontext geben\n“Ich bin Dozent*in für Chemie…”\n\n\nAufgabe klar formulieren\n“…erkläre mir in 3 Sätzen…”\n\n\nBei Bedarf nachfragen\n“Erkläre das genauer”\n\n\n\n\n\n\n\n\n\nPro-tipMehr zu Prompting\n\n\n\n\n\nDetaillierte Prompting-Strategien findest du in den Weiterführenden Ressourcen.\nFür diesen Workshop brauchst du nur die drei Grundregeln oben.\n\n\n\n\n\n\n\n\n\nPro-tipInteraktiver Prompting-Tutor\n\n\n\n\n\nFür strukturiertes Prompting-Training steht dir ein spezieller Copilot-Agent zur Verfügung:\n\nZeigt dir Beispiele und erklärt sein Denken\nGibt dir Übungen mit steigender Schwierigkeit\nAnalysiert deine Prompts und gibt Feedback\n\nPrompting-Tutor öffnen\nNutze den Tutor nach dem Workshop für vertieftes Lernen.",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -1651,5 +1651,16 @@
     "title": "Interaktive Demos",
     "section": "Technische Hinweise",
     "text": "Technische Hinweise\n\n\n\n\n\n\nPro-tipFür Facilitators\n\n\n\n\n\nToken-Vorhersage: Läuft komplett im Browser (OJS). Keine Internetverbindung für die Demo selbst nötig.\nChat-Interface: Benötigt Internetverbindung. Läuft auf HuggingFace Spaces. API-Kosten fallen an (~$0.50-2.00 pro Workshop-Durchlauf).\nBei technischen Problemen: Teilnehmende können auf chat.openai.com oder claude.ai ausweichen.\n\n\n\n← Zurück zum Workshop"
+  },
+  {
+    "objectID": "workshop/index.html#weiterlernen",
+    "href": "workshop/index.html#weiterlernen",
+    "title": "Workshop: KI in der Lehre",
+    "section": "Weiterlernen",
+    "text": "Weiterlernen\nNach dem Workshop kannst du deine Prompting-Fähigkeiten vertiefen:\n\n\n\n\n\n\nPro-tipPrompting-Tutor\n\n\n\n\n\nEin interaktiver Copilot-Agent, der dir strukturierte Übungen mit Feedback gibt:\nPrompting-Tutor öffnen",
+    "crumbs": [
+      "Workshop",
+      "Übersicht"
+    ]
   }
 ]

@@ -48,14 +48,12 @@ website:
         href: exercises/index.qmd
         text: Übungen
 
-      - icon: play-circle
-        href: interactives/index.qmd
-        text: Demos
-
     right:
       - icon: briefcase
         text: "Dokumente" # {{< fa person-chalkboard >}}
         menu:
+          - text: "Prompting für Einsteiger"
+            file: resources/prompting-basics/index.qmd
           - text: "Weiterführende Ressourcen"
             file: resources/weiterfuehrende-ressourcen/index.qmd
           - text: "---"

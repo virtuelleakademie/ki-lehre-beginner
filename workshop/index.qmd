@@ -86,3 +86,15 @@ Dieser Workshop ist Teil einer dreiteiligen Kursreihe:
 **Intermediate**: Lernpsychologie und KI-gestütztes Lerndesign. *Warum ist Outsourcing problematisch fürs Lernen?*
 
 **Advanced**: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools. *Wie baue ich KI-gestützte Lernwerkzeuge?*
+
+## Weiterlernen
+
+Nach dem Workshop kannst du deine Prompting-Fähigkeiten vertiefen:
+
+::: {.pro-tip}
+## Prompting-Tutor
+
+Ein interaktiver Copilot-Agent, der dir strukturierte Übungen mit Feedback gibt:
+
+[Prompting-Tutor öffnen](https://m365.cloud.microsoft/chat/?titleId=T_7974f581-f4b9-7537-f20b-121abdc50196)
+:::

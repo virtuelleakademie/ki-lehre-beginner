@@ -191,3 +191,17 @@ Detaillierte Prompting-Strategien findest du in den [Weiterführenden Ressourcen
 
 Für diesen Workshop brauchst du nur die drei Grundregeln oben.
 :::
+
+::: {.pro-tip}
+## Interaktiver Prompting-Tutor
+
+Für strukturiertes Prompting-Training steht dir ein spezieller Copilot-Agent zur Verfügung:
+
+- Zeigt dir Beispiele und erklärt sein Denken
+- Gibt dir Übungen mit steigender Schwierigkeit
+- Analysiert deine Prompts und gibt Feedback
+
+[Prompting-Tutor öffnen](https://m365.cloud.microsoft/chat/?titleId=T_7974f581-f4b9-7537-f20b-121abdc50196)
+
+*Nutze den Tutor nach dem Workshop für vertieftes Lernen.*
+:::

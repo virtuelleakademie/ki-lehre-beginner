@@ -81,6 +81,16 @@ Du musst jede Antwort mit deinem Fachwissen prüfen. Was du nicht prüfen kannst
 
 ## Weiterführend
 
-Nach dem Workshop kannst du vertiefte Prompting-Strategien hier nachlesen:
+### Interaktiver Prompting-Tutor
+
+Für **personalisiertes Training** steht dir ein spezieller Copilot-Agent zur Verfügung:
+
+- Demonstriert Techniken mit durchgearbeiteten Beispielen
+- Passt sich deinem Niveau an
+- Gibt konstruktives Feedback zu deinen Prompts
+
+[Prompting-Tutor starten](https://m365.cloud.microsoft/chat/?titleId=T_7974f581-f4b9-7537-f20b-121abdc50196) *(BFH-Login erforderlich)*
+
+### Vertiefte Lektüre
 
 - [Effektive Prompting-Strategien in der Lehre](../prompting/index.qmd)
