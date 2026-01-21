@@ -30,48 +30,157 @@ Sie können:
 - Code ausführen
 - Mit externen Diensten interagieren
 
-## Fragen beantworten
-
-![](../../assets/images/fragen-beantworten.png)
-
-## Bilder analysieren
-
-![](../../assets/images/bilder-analysieren.png)
-
-## Dokumente zusammenfassen
-
-![](../../assets/images/dokumente-zusammenfassen.png)
-
-## Output strukturieren
-
-![](../../assets/images/output-strukturieren.png)
-
-## Websuche
-
-![](../../assets/images/websuche.png)
-
-## Datenanalyse
-
-![](../../assets/images/datenanalyse.png)
-
-## Custom GPTs
-
-![](../../assets/images/gpts.png)
-
-## Aber: Grenzen und Gefahren
+## Fähigkeiten im Überblick
 
 :::: {.columns}
 ::: {.column width="50%"}
-:::{.r-fit-text}
-- **Urheberrecht**: Trainiert mit möglicherweise geschützten Texten
-- **Bias**: Vorurteile aus Trainingsdaten
-- **Energieverbrauch**: Hoher Ressourcenverbrauch
-- **Sycophancy**: Neigung, Nutzende zu bestätigen
-:::
+**Text**
 
+- Fragen beantworten
+- Dokumente zusammenfassen
+- Output strukturieren
 :::
 ::: {.column width="50%"}
-![](../../assets/images/Pothole.png)
+**Multimodal + Tools**
+
+- Bilder analysieren
+- Websuche
+- Datenanalyse / Code
+:::
+::::
+
+## Fragen beantworten
+
+:::: {.columns}
+::: {.column width="35%"}
+Chatbots können Erklärungen geben, Definitionen liefern und Konzepte vereinfachen.
+
+**Aber:** Antworten immer kritisch prüfen.
+:::
+::: {.column width="65%"}
+![](../../assets/images/fragen-beantworten.png)
+:::
+::::
+
+## Bilder analysieren
+
+:::: {.columns}
+::: {.column width="35%"}
+Moderne Modelle können Bilder "sehen" und beschreiben, was sie enthalten.
+
+**Nützlich für:** Diagramme, Handschrift, Screenshots.
+:::
+::: {.column width="65%"}
+![](../../assets/images/bilder-analysieren.png)
+:::
+::::
+
+## Dokumente zusammenfassen
+
+:::: {.columns}
+::: {.column width="35%"}
+PDFs und lange Texte können hochgeladen und zusammengefasst werden.
+
+**Vorsicht:** Bei langen Dokumenten können Details verloren gehen.
+:::
+::: {.column width="65%"}
+![](../../assets/images/dokumente-zusammenfassen.png)
+:::
+::::
+
+## Output strukturieren
+
+:::: {.columns}
+::: {.column width="35%"}
+Chatbots können Informationen in Tabellen, Listen oder andere Formate bringen.
+
+**Gut für:** Rohdaten organisieren, Übersichten erstellen.
+:::
+::: {.column width="65%"}
+![](../../assets/images/output-strukturieren.png)
+:::
+::::
+
+## Websuche
+
+:::: {.columns}
+::: {.column width="35%"}
+Einige Chatbots können das Internet durchsuchen und aktuelle Informationen finden.
+
+**Wichtig:** Quellen immer selbst überprüfen.
+:::
+::: {.column width="65%"}
+![](../../assets/images/websuche.png)
+:::
+::::
+
+## Datenanalyse
+
+:::: {.columns}
+::: {.column width="35%"}
+Chatbots können Code schreiben und ausführen, um Daten zu analysieren.
+
+**Stärke:** Schnelle explorative Analysen.
+:::
+::: {.column width="65%"}
+![](../../assets/images/datenanalyse.png)
+:::
+::::
+
+## Custom GPTs
+
+:::: {.columns}
+::: {.column width="35%"}
+Spezialisierte Chatbots für bestimmte Aufgaben können erstellt werden.
+
+**Beispiele:** Schreibassistenten, Tutoren, Feedback-Bots.
+:::
+::: {.column width="65%"}
+![](../../assets/images/gpts.png)
+:::
+::::
+
+## {.center data-background="#A3195B"}
+
+::: {.r-fit-text}
+Aber: Grenzen und Gefahren
+:::
+
+## Urheberrecht und Bias
+
+:::: {.columns}
+::: {.column width="50%"}
+**Urheberrecht**
+
+LLMs wurden mit möglicherweise geschützten Texten trainiert.
+
+Wer besitzt die Rechte an KI-generierten Inhalten?
+:::
+::: {.column width="50%"}
+**Bias**
+
+Vorurteile aus den Trainingsdaten werden reproduziert.
+
+KI-Outputs kritisch auf Verzerrungen prüfen.
+:::
+::::
+
+## Energieverbrauch und Sycophancy
+
+:::: {.columns}
+::: {.column width="50%"}
+**Energieverbrauch**
+
+KI-Modelle verbrauchen erhebliche Ressourcen.
+
+Nicht für jede Aufgabe ist KI die beste Lösung.
+:::
+::: {.column width="50%"}
+**Bestätigungstendenz**
+
+Chatbots neigen dazu, Nutzende zu bestätigen statt zu korrigieren.
+
+Kritisch nachfragen, besonders wenn die Antwort "zu gut" klingt.
 :::
 ::::
 
@@ -79,19 +188,23 @@ Sie können:
 
 :::: {.columns}
 ::: {.column width="50%"}
-:::{.r-fit-text}
 - LLMs werden **nicht trainiert, faktisch korrekt** zu sein
 - Wir müssen alle Aussagen **kritisch hinterfragen**
 - LLMs sind **keine Wissensdatenbanken**
 - Informationen immer anhand externer Quellen überprüfen
-:::
 :::
 ::: {.column width="50%"}
 ![](../../assets/images/KnowledgeBase.png)
 :::
 ::::
 
-## KI an der BFH
+## {.center data-background="#333333"}
+
+::: {.r-fit-text}
+KI an der BFH
+:::
+
+## KI-Policy der BFH
 
 Die BFH hat eine KI-Policy verabschiedet (Mai 2025):
 
@@ -119,7 +232,6 @@ Die BFH hat eine KI-Policy verabschiedet (Mai 2025):
 - Wer besitzt die Rechte an KI-generierten Inhalten?
 - Risiko von Plagiaten
 - Deklarationspflicht
-
 :::
 ::: {.column width="50%"}
 **Datenschutz**

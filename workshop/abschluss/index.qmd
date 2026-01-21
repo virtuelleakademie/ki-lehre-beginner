@@ -3,18 +3,18 @@ title: "Transfer und Abschluss"
 sidebar: workshop
 ---
 
+## Eine Sache, die du morgen anders machst
+
 ::: {.individual}
-## Individuelle Reflexion (3 min)
+## Konkreter Vorsatz (3 min)
 
-Nimm dir einen Moment:
+Schreibe einen konkreten Vorsatz auf:
 
-1. **Eine Sache, die ich ausprobieren werde**:
+**"In meiner nächsten Lehrveranstaltung werde ich..."**
 
-   _________________________________
+_________________________________________________________________
 
-2. **Eine Sache, bei der ich vorsichtig sein werde**:
-
-   _________________________________
+Nimm diesen Vorsatz mit. Er ist dein erster Schritt.
 
 {{< timer 3 >}}
 :::
@@ -22,39 +22,49 @@ Nimm dir einen Moment:
 ::: {.group}
 ## Austausch (5 min)
 
-Teile deine Vorsätze mit einer Person neben dir.
+Teile deinen Vorsatz mit einer Person neben dir.
 
-- Was willst du ausprobieren?
+- Was wirst du konkret ausprobieren?
 - Worauf wirst du achten?
+- Was könnte dich daran hindern?
 
 {{< timer 5 >}}
 :::
 
-## Zusammenfassung
+## Was wir heute gemacht haben
 
-**Was wir heute gemacht haben**:
+| Frage | Einsicht |
+|-------|----------|
+| Was ist KI? | Sprachmodelle sagen das nächste Wort vorher, ohne eingebaute Faktenprüfung |
+| Wofür kann KI verwendet werden? | Vielseitige Werkzeuge mit echten Grenzen |
+| Wofür sollte ich KI verwenden? | Der Unterschied zwischen Offloading und Outsourcing |
 
-1. Verstanden, wie Chatbots funktionieren (Vorhersage ohne eingebaute Faktenprüfung)
-2. Die BFH-Richtlinien und Tools kennengelernt
-3. Erfahren, dass Chatbots selbstbewusst, aber nicht zuverlässig sind
-4. Den Unterschied zwischen Offloading und Outsourcing verstanden
+::: {.key-point}
+## Die zentrale Einsicht
 
-**Die zentrale Einsicht**:
+KI-Tools sind primär für Expert*innen gemacht. Sie machen Expert*innen produktiver.
 
-> KI-Tools sind primär für Expert*innen gemacht. Sie machen Expert*innen produktiver. Für Lernende ist die Situation komplizierter, weil Lernen die kognitive Anstrengung braucht, die KI wegzunehmen droht.
+Für Lernende ist die Situation komplizierter: Lernen braucht die kognitive Anstrengung, die KI wegzunehmen droht.
+:::
 
-## Wie weiter?
+## Die nächste Frage
 
-**Intermediate Workshop**: Warum ist Outsourcing problematisch fürs Lernen? (Kognitive Lerntheorie, Agent-Design)
+::: {.callout-note}
+## Im Intermediate Workshop
 
-**Advanced Workshop**: Wie baue ich KI-gestützte Lernwerkzeuge? (Hands-on mit Code)
+Wir haben heute gelernt, **was** Offloading vs. Outsourcing ist.
 
-**Ressourcen**:
+Im nächsten Workshop lernen wir **warum** Outsourcing problematisch fürs Lernen ist: die kognitive Architektur hinter produktiver Anstrengung.
 
-- [KI-Policy BFH](../assets/pdfs/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf)
+**Themen:**
+
+- Wie Lernen im Gehirn funktioniert (Cognitive Load Theory)
+- Warum Anstrengung notwendig ist (Desirable Difficulties)
+- Wie man KI-Agenten für Lernen designt
+:::
+
+## Ressourcen
+
+- [KI-Policy BFH](https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf)
 - [Bildung 6.0](https://bildung6.bfh.ch)
 - [Virtuelle Akademie Knowledge Base](https://virtuelleakademie.ch/knowledge-base/)
-
-## Feedback
-
-[Link zu Feedback-Formular einfügen]

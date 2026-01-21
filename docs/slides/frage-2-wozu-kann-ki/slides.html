@@ -136,16 +136,16 @@
     }
   </style>
   <style>
-  div.callout-demonstration.callout {
-    border-left-color: #333333;
+  div.callout-warning.callout {
+    border-left-color: #A3195B;
   }
-  div.callout-demonstration.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
+  div.callout-warning.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\f51b';
+    content: '\f06a';
     background-image: none;
   }
   div.callout-source-check.callout {
@@ -160,16 +160,16 @@
     content: '\f002';
     background-image: none;
   }
-  div.callout-pro-tip.callout {
-    border-left-color: #D4A03E;
+  div.callout-individual.callout {
+    border-left-color: #A3195B;
   }
-  div.callout-pro-tip.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
+  div.callout-individual.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
-    content: '\e2ca';
+    content: '\f007';
     background-image: none;
   }
   div.callout-prompt.callout {
@@ -182,6 +182,54 @@
   div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f328';
+    background-image: none;
+  }
+  div.callout-experiment.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-experiment.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0c3';
+    background-image: none;
+  }
+  div.callout-demonstration.callout {
+    border-left-color: #333333;
+  }
+  div.callout-demonstration.callout-style-default > .callout-header {
+    background-color: rgba(51, 51, 51, 0.13);
+  }
+  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f51b';
+    background-image: none;
+  }
+  div.callout-key-point.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-key-point.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f005';
+    background-image: none;
+  }
+  div.callout-pro-tip.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-pro-tip.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\e2ca';
     background-image: none;
   }
   div.callout-group.callout {
@@ -220,54 +268,6 @@
     content: '\f075';
     background-image: none;
   }
-  div.callout-experiment.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-experiment.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c3';
-    background-image: none;
-  }
-  div.callout-key-point.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f005';
-    background-image: none;
-  }
-  div.callout-warning.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-warning.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f06a';
-    background-image: none;
-  }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f007';
-    background-image: none;
-  }
   </style>
 <meta property="og:title" content="Frage 2: Wofür kann KI verwendet werden? – KI in der Lehre: Beginner">
 <meta property="og:description" content="Möglichkeiten, Grenzen und was an der BFH gilt">
@@ -303,68 +303,149 @@
 <li>Mit externen Diensten interagieren</li>
 </ul>
 </section>
-<section id="fragen-beantworten" class="slide level2">
-<h2>Fragen beantworten</h2>
-
-<img data-src="../../assets/images/fragen-beantworten.png" class="r-stretch"></section>
-<section id="bilder-analysieren" class="slide level2">
-<h2>Bilder analysieren</h2>
-
-<img data-src="../../assets/images/bilder-analysieren.png" class="r-stretch"></section>
-<section id="dokumente-zusammenfassen" class="slide level2">
-<h2>Dokumente zusammenfassen</h2>
-
-<img data-src="../../assets/images/dokumente-zusammenfassen.png" class="r-stretch"></section>
-<section id="output-strukturieren" class="slide level2">
-<h2>Output strukturieren</h2>
-
-<img data-src="../../assets/images/output-strukturieren.png" class="r-stretch"></section>
-<section id="websuche" class="slide level2">
-<h2>Websuche</h2>
-
-<img data-src="../../assets/images/websuche.png" class="r-stretch"></section>
-<section id="datenanalyse" class="slide level2">
-<h2>Datenanalyse</h2>
-
-<img data-src="../../assets/images/datenanalyse.png" class="r-stretch"></section>
-<section id="custom-gpts" class="slide level2">
-<h2>Custom GPTs</h2>
-
-<img data-src="../../assets/images/gpts.png" class="r-stretch"></section>
-<section id="aber-grenzen-und-gefahren" class="slide level2">
-<h2>Aber: Grenzen und Gefahren</h2>
+<section id="fähigkeiten-im-überblick" class="slide level2">
+<h2>Fähigkeiten im Überblick</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="r-fit-text">
+<p><strong>Text</strong></p>
 <ul>
-<li><strong>Urheberrecht</strong>: Trainiert mit möglicherweise geschützten Texten</li>
-<li><strong>Bias</strong>: Vorurteile aus Trainingsdaten</li>
-<li><strong>Energieverbrauch</strong>: Hoher Ressourcenverbrauch</li>
-<li><strong>Sycophancy</strong>: Neigung, Nutzende zu bestätigen</li>
+<li>Fragen beantworten</li>
+<li>Dokumente zusammenfassen</li>
+<li>Output strukturieren</li>
 </ul>
-</div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="../../assets/images/Pothole.png"></p>
+<p><strong>Multimodal + Tools</strong></p>
+<ul>
+<li>Bilder analysieren</li>
+<li>Websuche</li>
+<li>Datenanalyse / Code</li>
+</ul>
+</div></div>
+</section>
+<section id="fragen-beantworten" class="slide level2">
+<h2>Fragen beantworten</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p>Chatbots können Erklärungen geben, Definitionen liefern und Konzepte vereinfachen.</p>
+<p><strong>Aber:</strong> Antworten immer kritisch prüfen.</p>
+</div><div class="column" style="width:65%;">
+<p><img data-src="../../assets/images/fragen-beantworten.png"></p>
+</div></div>
+</section>
+<section id="bilder-analysieren" class="slide level2">
+<h2>Bilder analysieren</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p>Moderne Modelle können Bilder “sehen” und beschreiben, was sie enthalten.</p>
+<p><strong>Nützlich für:</strong> Diagramme, Handschrift, Screenshots.</p>
+</div><div class="column" style="width:65%;">
+<p><img data-src="../../assets/images/bilder-analysieren.png"></p>
+</div></div>
+</section>
+<section id="dokumente-zusammenfassen" class="slide level2">
+<h2>Dokumente zusammenfassen</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p>PDFs und lange Texte können hochgeladen und zusammengefasst werden.</p>
+<p><strong>Vorsicht:</strong> Bei langen Dokumenten können Details verloren gehen.</p>
+</div><div class="column" style="width:65%;">
+<p><img data-src="../../assets/images/dokumente-zusammenfassen.png"></p>
+</div></div>
+</section>
+<section id="output-strukturieren" class="slide level2">
+<h2>Output strukturieren</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p>Chatbots können Informationen in Tabellen, Listen oder andere Formate bringen.</p>
+<p><strong>Gut für:</strong> Rohdaten organisieren, Übersichten erstellen.</p>
+</div><div class="column" style="width:65%;">
+<p><img data-src="../../assets/images/output-strukturieren.png"></p>
+</div></div>
+</section>
+<section id="websuche" class="slide level2">
+<h2>Websuche</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p>Einige Chatbots können das Internet durchsuchen und aktuelle Informationen finden.</p>
+<p><strong>Wichtig:</strong> Quellen immer selbst überprüfen.</p>
+</div><div class="column" style="width:65%;">
+<p><img data-src="../../assets/images/websuche.png"></p>
+</div></div>
+</section>
+<section id="datenanalyse" class="slide level2">
+<h2>Datenanalyse</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p>Chatbots können Code schreiben und ausführen, um Daten zu analysieren.</p>
+<p><strong>Stärke:</strong> Schnelle explorative Analysen.</p>
+</div><div class="column" style="width:65%;">
+<p><img data-src="../../assets/images/datenanalyse.png"></p>
+</div></div>
+</section>
+<section id="custom-gpts" class="slide level2">
+<h2>Custom GPTs</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
+<p>Spezialisierte Chatbots für bestimmte Aufgaben können erstellt werden.</p>
+<p><strong>Beispiele:</strong> Schreibassistenten, Tutoren, Feedback-Bots.</p>
+</div><div class="column" style="width:65%;">
+<p><img data-src="../../assets/images/gpts.png"></p>
+</div></div>
+</section>
+<section id="section" class="slide level2 center" data-background="#A3195B">
+<h2></h2>
+<div class="r-fit-text">
+<p>Aber: Grenzen und Gefahren</p>
+</div>
+</section>
+<section id="urheberrecht-und-bias" class="slide level2">
+<h2>Urheberrecht und Bias</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Urheberrecht</strong></p>
+<p>LLMs wurden mit möglicherweise geschützten Texten trainiert.</p>
+<p>Wer besitzt die Rechte an KI-generierten Inhalten?</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Bias</strong></p>
+<p>Vorurteile aus den Trainingsdaten werden reproduziert.</p>
+<p>KI-Outputs kritisch auf Verzerrungen prüfen.</p>
+</div></div>
+</section>
+<section id="energieverbrauch-und-sycophancy" class="slide level2">
+<h2>Energieverbrauch und Sycophancy</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Energieverbrauch</strong></p>
+<p>KI-Modelle verbrauchen erhebliche Ressourcen.</p>
+<p>Nicht für jede Aufgabe ist KI die beste Lösung.</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Bestätigungstendenz</strong></p>
+<p>Chatbots neigen dazu, Nutzende zu bestätigen statt zu korrigieren.</p>
+<p>Kritisch nachfragen, besonders wenn die Antwort “zu gut” klingt.</p>
 </div></div>
 </section>
 <section id="keine-wissensdatenbank" class="slide level2">
 <h2>Keine Wissensdatenbank</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="r-fit-text">
 <ul>
 <li>LLMs werden <strong>nicht trainiert, faktisch korrekt</strong> zu sein</li>
 <li>Wir müssen alle Aussagen <strong>kritisch hinterfragen</strong></li>
 <li>LLMs sind <strong>keine Wissensdatenbanken</strong></li>
 <li>Informationen immer anhand externer Quellen überprüfen</li>
 </ul>
-</div>
 </div><div class="column" style="width:50%;">
 <p><img data-src="../../assets/images/KnowledgeBase.png"></p>
 </div></div>
 </section>
-<section id="ki-an-der-bfh" class="slide level2">
-<h2>KI an der BFH</h2>
+<section id="section-1" class="slide level2 center" data-background="#333333">
+<h2></h2>
+<div class="r-fit-text">
+<p>KI an der BFH</p>
+</div>
+</section>
+<section id="ki-policy-der-bfh" class="slide level2">
+<h2>KI-Policy der BFH</h2>
 <p>Die BFH hat eine KI-Policy verabschiedet (Mai 2025):</p>
 <p><strong>Die fünf Grundsätze</strong>:</p>
 <ol type="1">

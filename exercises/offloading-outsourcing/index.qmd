@@ -58,10 +58,10 @@ Dieselbe KI-Nutzung kann sein:
 **Für Studierende**: Outsourcing ist oft problematisch, weil sie die kognitive Arbeit brauchen, um Kompetenzen aufzubauen, und weil ihnen die Expertise zur Evaluation fehlt.
 :::
 
-::: {.callout-note}
-## Teil 2: Durchgearbeitete Beispiele (10 min)
+::: {.callout-tip collapse="true"}
+## Teil 2: Durchgearbeitete Beispiele (aufklappen)
 
-Bevor wir mit den Szenarien arbeiten, gehen wir gemeinsam vier Beispiele durch. Bei jedem Beispiel wenden wir systematisch die zwei diagnostischen Fragen an.
+Bevor wir mit den Szenarien arbeiten, hier zwei Beispiele, bei denen wir die diagnostischen Fragen systematisch anwenden.
 
 ### Beispiel A: Erfahrene Lehrperson
 
@@ -86,34 +86,6 @@ Bevor wir mit den Szenarien arbeiten, gehen wir gemeinsam vier Beispiele durch. 
 2. **Was sollte geübt werden?** Genau das: Fehler finden, verstehen und beheben. Debugging ist eine Kernkompetenz beim Programmieren. Jeder selbst gefundene Fehler stärkt das Verständnis für Code-Logik.
 
 **Einordnung**: **Outsourcing**. Die kognitive Arbeit (Fehleranalyse, Problemlösung) wurde vollständig an die KI übertragen. Die Person hat das Produkt (funktionierender Code), aber nicht den Lerneffekt.
-
-### Beispiel C: Die Grauzone
-
-**Szenario**: Eine studierende Person im dritten Semester schreibt eine Seminararbeit. Sie hat einen Entwurf geschrieben und bittet ChatGPT um Feedback zur Argumentationsstruktur. Sie liest das Feedback, ist bei zwei Punkten anderer Meinung (und behält ihre Version), übernimmt einen Vorschlag zur Umstrukturierung des dritten Absatzes, und fragt dann nach: "Warum ist diese Reihenfolge besser?"
-
-**Analyse mit den diagnostischen Fragen:**
-
-1. **Wer evaluiert?** Die Person evaluiert aktiv. Sie akzeptiert nicht blind, sondern prüft gegen ihr eigenes Verständnis. Sie lehnt Teile ab und hinterfragt die Begründung.
-
-2. **Was sollte geübt werden?** Akademisches Schreiben und Argumentation. Sie übt beides: Sie hat den Entwurf selbst geschrieben und engagiert sich kritisch mit dem Feedback.
-
-**Einordnung**: **Tendenz zu Offloading**. Die Person nutzt die KI als Sparringspartner, nicht als Ersatz für eigenes Denken. Entscheidend ist ihr aktives Engagement.
-
-**Aber Vorsicht**: Wenn sie aufhört zu hinterfragen und nur noch Vorschläge übernimmt, kippt die Situation Richtung Outsourcing.
-
-### Beispiel D: Der versteckte Fall
-
-**Szenario**: Eine dozierende Person nutzt KI, um Multiple-Choice-Fragen für eine Prüfung zu generieren. Sie überfliegt die Fragen, findet sie "gut genug", und verwendet sie ohne Änderungen.
-
-**Analyse mit den diagnostischen Fragen:**
-
-1. **Wer evaluiert?** Die dozierende Person evaluiert nur oberflächlich. "Gut genug" ist keine kritische Prüfung. Sie prüft nicht, ob die Fragen das richtige Niveau haben, ob die Distraktoren plausibel sind, oder ob die Fragen das messen, was sie lehrt.
-
-2. **Was sollte geübt werden?** Für Dozierende: nichts. Sie müssen Fragen nicht "üben". Aber: Die Qualitätsprüfung ist Teil ihrer Verantwortung, nicht eine Lernaufgabe.
-
-**Einordnung**: **Problematisches Outsourcing**, auch wenn es eine fachkundige Person ist. Nicht weil sie lernen sollte, sondern weil die Qualitätssicherung zu ihrer professionellen Verantwortung gehört. Die Frage "Wer evaluiert?" gilt auch für Qualitätskontrolle, nicht nur für Lernen.
-
-**Wichtige Einsicht**: Outsourcing kann auch für Expert*innen problematisch sein, wenn es um Qualitätsverantwortung geht.
 :::
 
 ::: {.experiment}
@@ -144,16 +116,6 @@ Wenn du bei einem Szenario unsicher bist, nutze diese Leitfragen:
 2. **Jetzt stell dir vor, du könntest in ihren Kopf schauen**: Denkt sie aktiv nach, oder wartet sie auf das Ergebnis?
 3. **Die Testfrage**: Könnte diese Person das Gleiche ohne KI, nur langsamer? Wenn ja, tendiert es zu Offloading. Wenn nein, tendiert es zu Outsourcing.
 4. **Die Lernfrage**: Ist das, was die KI macht, etwas, das die Person üben sollte?
-:::
-
-::: {.callout-warning collapse="true"}
-## Vertiefung (für Erfahrene)
-
-Analysiere zusätzlich bei jedem Szenario:
-
-1. **Kontextabhängigkeit**: Wie würde sich die Einschätzung ändern, wenn die Person Anfänger*in vs. Expert*in in diesem Bereich wäre?
-2. **Kipppunkte**: Welche minimale Verhaltensänderung würde Outsourcing zu Offloading machen (oder umgekehrt)?
-3. **Versteckte Fälle**: Gibt es Szenarien, die auf den ersten Blick OK aussehen, aber bei genauerem Hinsehen problematisch sind?
 :::
 
 ### Die Szenarien
@@ -192,20 +154,6 @@ Zwei Fragen:
 
 ::: {.reflect}
 ## Teil 5: Strukturierte Reflexion
-
-### Der Produktivitäts-Lern-Zielkonflikt
-
-::: {.callout-note}
-## Kein Paradox, sondern vorhersagbar
-
-Der Konflikt zwischen Produktivität und Lernen ist kein Paradox. Er ist eine vorhersagbare Konsequenz aus dem, was wir über kognitive Architektur wissen:
-
-- **KI-Tools sind für Expert*innen gemacht**: Sie steigern Produktivität, indem sie kognitive Arbeit übernehmen.
-- **Lernen erfordert kognitive Anstrengung**: Das Gehirn lernt durch Vorhersagefehler, die nur entstehen, wenn man selbst denkt.
-- **Wenn Studierende auslagern, was sie üben sollten**: Sie bekommen das Produkt, aber nicht den Lerneffekt.
-
-Dieser Zielkonflikt ist nicht überraschend. Er folgt direkt aus den Grundprinzipien des Lernens.
-:::
 
 ### Reflexionsfragen
 
