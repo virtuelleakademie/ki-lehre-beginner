@@ -11,4 +11,4 @@ Die drei Leitfragen des Workshops:
 |---|--------------|-------|-------|
 | 1 | [Was ist KI?](frage-1-was-ist-ki/index.qmd) | 45 min | Textgenerierung, Chain-of-Thought |
 | 2 | [Wofür kann KI verwendet werden?](frage-2-wozu-kann-ki/index.qmd) | 50 min | Fähigkeiten, Grenzen, BFH-Policy |
-| 3 | [Wofür sollte ich KI verwenden?](frage-3-wozu-soll-ich/index.qmd) | 40 min | Offloading vs. Outsourcing |
+| 3 | [Wann hilft KI, wann schadet sie?](frage-3-wozu-soll-ich/index.qmd) | 40 min | Offloading vs. Outsourcing |

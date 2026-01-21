@@ -96,7 +96,7 @@ website:
               file: slides/frage-2-wozu-kann-ki/index.qmd
             - text: "Übung: Fakten-Check"
               file: exercises/fakten-check/index.qmd
-        - section: "Frage 3: Wofür sollte ich KI verwenden?"
+        - section: "Frage 3: Wann hilft KI, wann schadet sie?"
           contents:
             - text: "Slides: Offloading vs. Outsourcing"
               file: slides/frage-3-wozu-soll-ich/index.qmd

@@ -1,5 +1,5 @@
 ---
-title: "Frage 3: Wofür sollte ich KI verwenden?"
+title: "Frage 3: Wann hilft KI, wann schadet sie?"
 subtitle: "Offloading vs. Outsourcing: Wann ist KI-Nutzung sinnvoll?"
 sidebar: workshop
 ---
@@ -114,11 +114,11 @@ Für **deine Studierenden**:
 ## Takeaway
 
 ::: {.key-point}
-## Antwort auf Frage 3: Wofür sollte ich KI verwenden?
+## Antwort auf Frage 3: Wann hilft KI, wann schadet sie?
 
 KI-Tools sind für **Expert*innen** gemacht. Sie steigern Produktivität.
 
-Für **Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
+Für **Lernende** ist die Situation komplizierter: Lernen braucht **kognitive Anstrengung**. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
 
 **Die Frage ist nicht "Darf man KI nutzen?", sondern "Wer lernt dabei was?"**
 :::

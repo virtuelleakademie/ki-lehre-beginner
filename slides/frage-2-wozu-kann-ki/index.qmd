@@ -109,6 +109,14 @@ Im Anschluss an die Präsentation folgt die **Fakten-Check Aktivität** (25 min)
 
 [→ Zur Fakten-Check Aktivität](../../exercises/fakten-check/index.qmd)
 
+## Kurze Reflexion (2 min)
+
+::: {.reflect}
+Nach der Fakten-Check Aktivität: Wie hat sich dein Vertrauen in Chatbot-Antworten verändert?
+
+{{< timer 2 >}}
+:::
+
 ## Takeaway
 
 ::: {.key-point}

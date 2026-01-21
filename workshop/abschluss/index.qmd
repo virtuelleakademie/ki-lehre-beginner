@@ -3,6 +3,12 @@ title: "Transfer und Abschluss"
 sidebar: workshop
 ---
 
+::: {.callout-note}
+## Hinweis zur Reflexion
+
+Kurze Reflexionsmomente sind nach jeder Frage eingebaut. Dieser Abschluss fokussiert auf **Transfer**: konkrete Vorsätze für die eigene Praxis.
+:::
+
 ## Eine Sache, die du morgen anders machst
 
 ::: {.individual}
@@ -37,14 +43,14 @@ Teile deinen Vorsatz mit einer Person neben dir.
 |-------|----------|
 | Was ist KI? | Sprachmodelle sagen das nächste Wort vorher, ohne eingebaute Faktenprüfung |
 | Wofür kann KI verwendet werden? | Vielseitige Werkzeuge mit echten Grenzen |
-| Wofür sollte ich KI verwenden? | Der Unterschied zwischen Offloading und Outsourcing |
+| Wann hilft KI, wann schadet sie? | Der Unterschied zwischen Offloading und Outsourcing |
 
 ::: {.key-point}
 ## Die zentrale Einsicht
 
 KI-Tools sind primär für Expert*innen gemacht. Sie machen Expert*innen produktiver.
 
-Für Lernende ist die Situation komplizierter: Lernen braucht die kognitive Anstrengung, die KI wegzunehmen droht.
+Für Lernende ist die Situation komplizierter: Lernen braucht die **kognitive Anstrengung**, die KI wegzunehmen droht.
 :::
 
 ## Die nächste Frage

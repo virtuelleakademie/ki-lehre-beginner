@@ -99,7 +99,11 @@ Jetzt wendet ihr die Konzepte selbst an. Arbeitet in Kleingruppen (3-4 Personen)
 Bildet gemischte Gruppen: Idealerweise hat jede Gruppe mindestens eine Person mit viel und eine mit weniger KI-Erfahrung. Die unterschiedlichen Perspektiven bereichern die Diskussion.
 :::
 
-Für jedes Szenario wendet ihr die zwei diagnostischen Fragen an und diskutiert: Was würde diese Situation zu Offloading machen? Was zu Outsourcing? Und was müsstet ihr zusätzlich wissen, um das sicher zu entscheiden?
+Für jedes Szenario beantwortet ihr drei Fragen:
+
+1. **Einschätzung**: Tendiert diese Situation eher zu Offloading oder Outsourcing?
+2. **Begründung**: *Warum* kommt ihr zu dieser Einschätzung? Bezieht euch auf die diagnostischen Fragen.
+3. **Unsicherheit**: Was müsstet ihr zusätzlich wissen, um das sicher zu entscheiden?
 
 ::: {.callout-note}
 ## Wichtig
@@ -120,7 +124,7 @@ Wenn du bei einem Szenario unsicher bist, nutze diese Leitfragen:
 
 ### Die Szenarien
 
-Diskutiert mindestens 3-4 dieser Szenarien. Wendet die diagnostischen Fragen an.
+Diskutiert mindestens 3-4 dieser Szenarien. Für jedes Szenario: Beantwortet die drei Fragen oben und schliesst mit einer Beurteilung ab: **Unterstützt oder behindert diese KI-Nutzung das Lernen der Person?**
 
 **Szenario 1**: Eine studierende Person nutzt ChatGPT, um eine Gliederung für ihre Seminararbeit zu erstellen.
 

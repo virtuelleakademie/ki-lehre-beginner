@@ -160,6 +160,14 @@ Plot.plot({
 - **Hoch (1.2-1.5)**: Für Brainstorming und kreative Texte
 :::
 
+## Kurze Reflexion (2 min)
+
+::: {.reflect}
+Bevor wir zur Pause gehen: Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.
+
+{{< timer 2 >}}
+:::
+
 ## Takeaway
 
 ::: {.key-point}
