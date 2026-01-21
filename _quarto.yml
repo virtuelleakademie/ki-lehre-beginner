@@ -16,7 +16,6 @@ project:
     - exercises/**/*.qmd
     - slides/**/*.qmd
     - resources/**/*.qmd
-    - interactives/**/*.qmd
 
 website:
   title: "KI in der Lehre: Beginner"
@@ -50,7 +49,7 @@ website:
 
     right:
       - icon: briefcase
-        text: "Dokumente" # {{< fa person-chalkboard >}}
+        text: "Dokumente"
         menu:
           - text: "Prompting für Einsteiger"
             file: resources/prompting-basics/index.qmd
@@ -61,9 +60,7 @@ website:
             file: https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf
           - text: "Begleitdokument: KI Weiterbildung"
             file: assets/pdfs/Begleitdokument.pdf
-          - text: "Begleitdokument: Orientierungshilfe"
-            file: resources/resources.qmd
-          - text: "Begleitdokument: Orientierungshilfe (PDF)"
+          - text: "Orientierungshilfe"
             file: assets/pdfs/Orientierungshilfe.pdf
 
 

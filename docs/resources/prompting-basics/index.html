@@ -87,16 +87,28 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-key-point.callout {
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
+  background-image: none;
+}
+div.callout-pro-tip.callout {
   border-left-color: #D4A03E;
 }
-div.callout-key-point.callout-style-default > .callout-header {
+div.callout-pro-tip.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f005';
+  content: '\e2ca';
   background-image: none;
 }
 div.callout-reflect.callout {
@@ -111,16 +123,52 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
   content: '\f0eb';
   background-image: none;
 }
-div.callout-individual.callout {
-  border-left-color: #A3195B;
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f007';
+  content: '\f002';
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f51b';
+  background-image: none;
+}
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f005';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
   background-image: none;
 }
 div.callout-group.callout {
@@ -147,16 +195,16 @@ div.callout-experiment.callout-style-default .callout-icon::before, div.callout-
   content: '\f0c3';
   background-image: none;
 }
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
+div.callout-individual.callout {
+  border-left-color: #A3195B;
 }
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
+  content: '\f007';
   background-image: none;
 }
 div.callout-warning.callout {
@@ -171,65 +219,17 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
   content: '\f06a';
   background-image: none;
 }
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f075';
-  background-image: none;
-}
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f51b';
-  background-image: none;
-}
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f002';
-  background-image: none;
-}
 </style>
 
 
 <link rel="stylesheet" href="../../styles/styles.css">
 <link rel="stylesheet" href="../../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
 <meta property="og:title" content="Prompting für Einsteiger – KI in der Lehre: Beginner">
-<meta property="og:description" content="Kurzanleitung für den Workshop">
+<meta property="og:description" content="Wie du KI-Chatbots effektiv nutzt">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -288,12 +288,8 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
  <span class="dropdown-text">Begleitdokument: KI Weiterbildung</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../resources/resources.html">
- <span class="dropdown-text">Begleitdokument: Orientierungshilfe</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../assets/pdfs/Orientierungshilfe.pdf">
- <span class="dropdown-text">Begleitdokument: Orientierungshilfe (PDF)</span></a>
+ <span class="dropdown-text">Orientierungshilfe</span></a>
   </li>  
     </ul>
   </li>
@@ -310,14 +306,36 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#was-ist-ein-prompt" id="toc-was-ist-ein-prompt" class="nav-link active" data-scroll-target="#was-ist-ein-prompt">Was ist ein Prompt?</a></li>
+  <li><a href="#die-drei-grundregeln" id="toc-die-drei-grundregeln" class="nav-link" data-scroll-target="#die-drei-grundregeln">Die drei Grundregeln</a>
+  <ul class="collapse">
+  <li><a href="#klare-anweisungen-geben" id="toc-klare-anweisungen-geben" class="nav-link" data-scroll-target="#klare-anweisungen-geben">1. Klare Anweisungen geben</a></li>
+  <li><a href="#perspektive-und-kontext-definieren" id="toc-perspektive-und-kontext-definieren" class="nav-link" data-scroll-target="#perspektive-und-kontext-definieren">2. Perspektive und Kontext definieren</a></li>
+  <li><a href="#beispiele-zeigen" id="toc-beispiele-zeigen" class="nav-link" data-scroll-target="#beispiele-zeigen">3. Beispiele zeigen</a></li>
+  </ul></li>
+  <li><a href="#im-dialog-verfeinern" id="toc-im-dialog-verfeinern" class="nav-link" data-scroll-target="#im-dialog-verfeinern">Im Dialog verfeinern</a></li>
+  <li><a href="#häufige-fehler" id="toc-häufige-fehler" class="nav-link" data-scroll-target="#häufige-fehler">Häufige Fehler</a></li>
+  <li><a href="#die-wichtigste-regel" id="toc-die-wichtigste-regel" class="nav-link" data-scroll-target="#die-wichtigste-regel">Die wichtigste Regel</a></li>
+  <li><a href="#weiterführend" id="toc-weiterführend" class="nav-link" data-scroll-target="#weiterführend">Weiterführend</a>
+  <ul class="collapse">
+  <li><a href="#interaktiver-prompting-tutor" id="toc-interaktiver-prompting-tutor" class="nav-link" data-scroll-target="#interaktiver-prompting-tutor">Interaktiver Prompting-Tutor</a></li>
+  <li><a href="#externe-ressourcen" id="toc-externe-ressourcen" class="nav-link" data-scroll-target="#externe-ressourcen">Externe Ressourcen</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Prompting für Einsteiger</h1>
-<p class="subtitle lead">Kurzanleitung für den Workshop</p>
+<p class="subtitle lead">Wie du KI-Chatbots effektiv nutzt</p>
 </div>
 
 
@@ -334,132 +352,178 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </header>
 
 
+<section id="was-ist-ein-prompt" class="level2">
+<h2 class="anchored" data-anchor-id="was-ist-ein-prompt">Was ist ein Prompt?</h2>
+<p>Ein <strong>Prompt</strong> ist die Anweisung oder Frage, die du einem KI-Chatbot gibst.</p>
+<p>Die Qualität der Antwort hängt von zwei Faktoren ab:</p>
+<ol type="1">
+<li><p><strong>Das trainierte Modell</strong>: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat. Darauf hast du keinen Einfluss.</p></li>
+<li><p><strong>Der Kontext, den du gibst</strong>: Dein Prompt. Das ist der Teil, den du kontrollierst.</p></li>
+</ol>
+<p>Prompting ist keine Magie und keine Spezialtechnik. Es sind die gleichen Grundregeln, die für jede gute Kommunikation gelten: Sag klar, was du willst. Gib relevanten Kontext. Sei präzise.</p>
+<p>Wenn du einer Kollegin eine vage Frage stellst, bekommst du eine vage Antwort. Das gilt für Chatbots genauso.</p>
+</section>
 <section id="die-drei-grundregeln" class="level2">
 <h2 class="anchored" data-anchor-id="die-drei-grundregeln">Die drei Grundregeln</h2>
+<section id="klare-anweisungen-geben" class="level3">
+<h3 class="anchored" data-anchor-id="klare-anweisungen-geben">1. Klare Anweisungen geben</h3>
+<p>Wie bei jeder Kommunikation: Sag klar, was du willst. Verwende konkrete Verben und gib Kontext.</p>
+<div class="callout callout-style-default callout-scenario callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Scenario</span>Schwach vs.&nbsp;stark
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Schwach:</strong> “Photosynthese”</p>
+<p><strong>Stark:</strong> “Erkläre Photosynthese in 3 Sätzen für Studierende im ersten Semester Biologie.”</p>
+</div>
+</div>
+<p>Der starke Prompt funktioniert besser, weil er:</p>
+<ul>
+<li>Eine klare Handlung nennt (“Erkläre”)</li>
+<li>Das Format vorgibt (“in 3 Sätzen”)</li>
+<li>Die Zielgruppe definiert (“Studierende im ersten Semester”)</li>
+</ul>
+<div class="callout callout-style-default callout-pro-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Pro-tip</span>Nützliche Verben für Instruktionen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Erkläre</strong> / <strong>Beschreibe</strong>: Für Verständnis</li>
+<li><strong>Liste</strong> / <strong>Nenne</strong>: Für Aufzählungen</li>
+<li><strong>Vergleiche</strong>: Für Gegenüberstellungen</li>
+<li><strong>Analysiere</strong>: Für tiefere Betrachtung</li>
+<li><strong>Fasse zusammen</strong>: Für Verdichtung</li>
+<li><strong>Übersetze</strong>: Für Sprachkonversion</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="perspektive-und-kontext-definieren" class="level3">
+<h3 class="anchored" data-anchor-id="perspektive-und-kontext-definieren">2. Perspektive und Kontext definieren</h3>
+<p>Wenn du jemanden um Rat fragst, macht es einen Unterschied, ob du mit einem Fachexperten oder einem Laien sprichst. Das gilt auch für Chatbots: Du kannst dem Chatbot eine Rolle zuweisen, die er simulieren soll. Das beeinflusst Ton, Tiefe und Perspektive der Antwort.</p>
+<div class="callout callout-style-default callout-scenario callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Scenario</span>Die Rolle des Chatbots definieren
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Ohne Rolle:</strong> “Erkläre das Konzept der Nachhaltigkeit.”</p>
+<p><strong>Mit Rolle:</strong> “Du bist ein erfahrener Umweltwissenschaftler, der komplexe Themen verständlich erklären kann. Erkläre das Konzept der Nachhaltigkeit.”</p>
+</div>
+</div>
+<p>Wichtig: Die Rolle beschreibt, <em>wer der Chatbot sein soll</em>, nicht wer du bist. Deine eigene Situation (Kontext) und die Zielgruppe gibst du separat an:</p>
+<div class="callout callout-style-default callout-scenario callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Scenario</span>Rolle + Kontext + Zielgruppe
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>“Du bist ein erfahrener Hochschuldidaktiker mit Expertise in aktivem Lernen.</p>
+<p>Ich bin Dozentin für Pflegewissenschaft und plane ein Seminar zum Thema Patientenkommunikation.</p>
+<p>Erstelle drei Diskussionsfragen für Studierende im 3. Semester, die kritisches Denken fördern.”</p>
+</div>
+</div>
+<p>Hier sind drei Elemente kombiniert:</p>
+<ul>
+<li><strong>Rolle des Chatbots:</strong> Hochschuldidaktiker (bestimmt die Expertise)</li>
+<li><strong>Dein Kontext:</strong> Dozentin für Pflegewissenschaft (bestimmt das Fachgebiet)</li>
+<li><strong>Zielgruppe:</strong> Studierende im 3. Semester (bestimmt das Niveau)</li>
+</ul>
+<p>Typische Rollen für den Lehrkontext:</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 9%">
-<col style="width: 21%">
-<col style="width: 39%">
-<col style="width: 30%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>#</th>
-<th>Regel</th>
-<th>Was du tust</th>
-<th>Beispiel</th>
+<th>Rolle</th>
+<th>Wann nützlich</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>1</td>
-<td><strong>Kontext geben</strong></td>
-<td>Sag, wer du bist und in welcher Situation</td>
-<td>“Ich bin Dozent*in für Pflege an einer Fachhochschule.”</td>
+<td>Fachdidaktiker für [Gebiet]</td>
+<td>Methodische Fragen</td>
 </tr>
 <tr class="even">
-<td>2</td>
-<td><strong>Aufgabe klar formulieren</strong></td>
-<td>Sag genau, was du brauchst</td>
-<td>“Erkläre mir in 3 Sätzen, wie…”</td>
+<td>Fachexperte für [Thema]</td>
+<td>Inhaltliche Tiefe</td>
 </tr>
 <tr class="odd">
-<td>3</td>
-<td><strong>Bei Bedarf nachfragen</strong></td>
-<td>Verfeinere die Antwort im Dialog</td>
-<td>“Erkläre das genauer.” / “Gib mir ein Beispiel.”</td>
+<td>Kritischer Reviewer</td>
+<td>Schwächen in Texten finden</td>
+</tr>
+<tr class="even">
+<td>Lektor</td>
+<td>Sprachliche Verbesserungen</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="prompt-vorlagen-zum-kopieren" class="level2">
-<h2 class="anchored" data-anchor-id="prompt-vorlagen-zum-kopieren">Prompt-Vorlagen zum Kopieren</h2>
-<section id="etwas-erklärt-bekommen" class="level3">
-<h3 class="anchored" data-anchor-id="etwas-erklärt-bekommen">Etwas erklärt bekommen</h3>
-<div class="callout callout-style-default callout-prompt callout-titled">
+<section id="beispiele-zeigen" class="level3">
+<h3 class="anchored" data-anchor-id="beispiele-zeigen">3. Beispiele zeigen</h3>
+<p>Ein Beispiel sagt mehr als tausend Worte. Wenn du jemandem erklärst, wie ein Bericht aussehen soll, zeigst du einen Musterbericht. Das Gleiche funktioniert mit Chatbots: Wenn du Beispiele gibst, versteht der Chatbot das gewünschte Format und den Stil besser.</p>
+<div class="callout callout-style-default callout-scenario callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Prompt</span>Prompt
+<span class="screen-reader-only">Scenario</span>Ohne Beispiel
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Ich bin Dozent*in für [FACH]. Erkläre mir [KONZEPT] in einfachen Worten.</p>
+<p>“Formuliere Multiple-Choice-Fragen zum Thema Statistik.”</p>
+<p><em>Ergebnis: Der Chatbot wählt selbst ein Format.</em></p>
 </div>
 </div>
-</section>
-<section id="eine-analogie-bekommen" class="level3">
-<h3 class="anchored" data-anchor-id="eine-analogie-bekommen">Eine Analogie bekommen</h3>
-<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout callout-style-default callout-scenario callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Prompt</span>Prompt
+<span class="screen-reader-only">Scenario</span>Mit Beispiel
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Gib mir eine Alltagsanalogie für [KONZEPT], die ich Studierenden zeigen kann.</p>
+<p>“Formuliere Multiple-Choice-Fragen zum Thema Statistik. Verwende dieses Format:</p>
+<p><strong>Frage:</strong> Was beschreibt der Mittelwert? - A) Die Streuung der Daten - B) Den Durchschnitt aller Werte - C) Den häufigsten Wert - D) Die Differenz zwischen Maximum und Minimum</p>
+<p><strong>Antwort:</strong> B</p>
+<p>Erstelle 3 weitere Fragen in diesem Format.”</p>
+<p><em>Ergebnis: Der Chatbot folgt exakt deinem Format.</em></p>
 </div>
 </div>
-</section>
-<section id="übungsaufgaben-generieren" class="level3">
-<h3 class="anchored" data-anchor-id="übungsaufgaben-generieren">Übungsaufgaben generieren</h3>
-<div class="callout callout-style-default callout-prompt callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Prompt</span>Prompt
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Erstelle 3 Übungsaufgaben zum Thema [THEMA] für Studierende im [SEMESTER]. Gib auch die Lösungen an.</p>
-</div>
-</div>
-</section>
-<section id="feedback-auf-einen-text" class="level3">
-<h3 class="anchored" data-anchor-id="feedback-auf-einen-text">Feedback auf einen Text</h3>
-<div class="callout callout-style-default callout-prompt callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Prompt</span>Prompt
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Hier ist ein Text, den ich geschrieben habe. Gib mir konstruktives Feedback zur Klarheit und Struktur:</p>
-<p>[DEIN TEXT HIER]</p>
-</div>
-</div>
-</section>
-<section id="ideen-sammeln" class="level3">
-<h3 class="anchored" data-anchor-id="ideen-sammeln">Ideen sammeln</h3>
-<div class="callout callout-style-default callout-prompt callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Prompt</span>Prompt
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Ich plane eine Lehrveranstaltung zu [THEMA]. Welche interaktiven Elemente könnte ich einbauen? Gib mir 5 konkrete Ideen.</p>
-</div>
-</div>
+<p>Beispiele sind besonders nützlich für:</p>
+<ul>
+<li>Konsistente Formatierung</li>
+<li>Spezifischen Schreibstil</li>
+<li>Komplexe Strukturen (z.B. Bewertungsraster)</li>
+</ul>
 </section>
 </section>
-<section id="nützliche-nachfragen" class="level2">
-<h2 class="anchored" data-anchor-id="nützliche-nachfragen">Nützliche Nachfragen</h2>
-<p>Wenn die erste Antwort nicht passt, kannst du nachfragen:</p>
+<section id="im-dialog-verfeinern" class="level2">
+<h2 class="anchored" data-anchor-id="im-dialog-verfeinern">Im Dialog verfeinern</h2>
+<p>Ein Prompt ist selten perfekt beim ersten Mal. Nutze Nachfragen, um die Antwort zu verbessern:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -470,33 +534,33 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 <tbody>
 <tr class="odd">
 <td>Zu kompliziert</td>
-<td>“Vereinfache das.”</td>
+<td>“Vereinfache das für Einsteiger.”</td>
 </tr>
 <tr class="even">
 <td>Zu oberflächlich</td>
-<td>“Erkläre das genauer.”</td>
+<td>“Geh tiefer ins Detail bei [Aspekt].”</td>
 </tr>
 <tr class="odd">
 <td>Zu abstrakt</td>
-<td>“Gib mir ein konkretes Beispiel.”</td>
+<td>“Gib mir ein konkretes Beispiel aus dem Alltag.”</td>
 </tr>
 <tr class="even">
 <td>Falscher Fokus</td>
-<td>“Fokussiere auf [ASPEKT].”</td>
+<td>“Fokussiere stattdessen auf [Aspekt].”</td>
 </tr>
 <tr class="odd">
 <td>Zu lang</td>
 <td>“Fasse das in 3 Sätzen zusammen.”</td>
 </tr>
 <tr class="even">
-<td>Format ändern</td>
-<td>“Formatiere das als Tabelle / Liste / Stichpunkte.”</td>
+<td>Format passt nicht</td>
+<td>“Formatiere das als Tabelle.”</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="häufige-anfängerfehler" class="level2">
-<h2 class="anchored" data-anchor-id="häufige-anfängerfehler">Häufige Anfängerfehler</h2>
+<section id="häufige-fehler" class="level2">
+<h2 class="anchored" data-anchor-id="häufige-fehler">Häufige Fehler</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 32%">
@@ -507,29 +571,29 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 <tr class="header">
 <th>Fehler</th>
 <th>Problem</th>
-<th>Besser</th>
+<th>Lösung</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>“Erkläre Photosynthese”</td>
-<td>Zu wenig Kontext</td>
-<td>“Erkläre Photosynthese für Studierende im 1. Semester Biologie”</td>
+<td>Zu vage</td>
+<td>“Hilf mir mit meinem Kurs”</td>
+<td>Konkreter: “Erstelle 3 Diskussionsfragen für mein Seminar zu [Thema]”</td>
 </tr>
 <tr class="even">
-<td>Sehr lange Prompts</td>
-<td>Überladen, unklar</td>
-<td>Kurz und präzise, eine Aufgabe pro Prompt</td>
+<td>Zu viel auf einmal</td>
+<td>Mehrere Aufgaben in einem Prompt</td>
+<td>Eine Aufgabe pro Prompt, dann iterieren</td>
 </tr>
 <tr class="odd">
-<td>Keine Nachfragen</td>
-<td>Erste Antwort akzeptieren</td>
-<td>Im Dialog verfeinern</td>
+<td>Kontext vergessen</td>
+<td>Der Chatbot kennt deine Situation nicht</td>
+<td>Immer relevanten Hintergrund geben</td>
 </tr>
 <tr class="even">
-<td>Blind vertrauen</td>
-<td>Antwort nicht prüfen</td>
-<td>Immer kritisch evaluieren</td>
+<td>Erste Antwort akzeptieren</td>
+<td>Suboptimales Ergebnis</td>
+<td>Im Dialog verfeinern</td>
 </tr>
 </tbody>
 </table>
@@ -542,12 +606,18 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warnung</span>Nie vergessen
+<span class="screen-reader-only">Warnung</span>Kritisch bleiben
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Der Chatbot klingt immer selbstbewusst, auch wenn er falsch liegt.</strong></p>
-<p>Du musst jede Antwort mit deinem Fachwissen prüfen. Was du nicht prüfen kannst, solltest du nicht verwenden.</p>
+<p><strong>Der Chatbot klingt immer überzeugend, auch wenn er falsch liegt.</strong></p>
+<p>Chatbots können:</p>
+<ul>
+<li>Fakten erfinden (“halluzinieren”)</li>
+<li>Veraltete Informationen geben</li>
+<li>Plausibel klingende aber falsche Zusammenhänge herstellen</li>
+</ul>
+<p><strong>Du musst jede Antwort mit deinem Fachwissen prüfen.</strong> Was du nicht prüfen kannst, solltest du nicht ungeprüft verwenden.</p>
 </div>
 </div>
 </section>
@@ -563,10 +633,10 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </ul>
 <p><a href="https://m365.cloud.microsoft/chat/?titleId=T_7974f581-f4b9-7537-f20b-121abdc50196">Prompting-Tutor starten</a> <em>(BFH-Login erforderlich)</em></p>
 </section>
-<section id="vertiefte-lektüre" class="level3">
-<h3 class="anchored" data-anchor-id="vertiefte-lektüre">Vertiefte Lektüre</h3>
+<section id="externe-ressourcen" class="level3">
+<h3 class="anchored" data-anchor-id="externe-ressourcen">Externe Ressourcen</h3>
 <ul>
-<li><a href="../../resources/prompting/index.html">Effektive Prompting-Strategien in der Lehre</a></li>
+<li><a href="https://learnprompting.org/docs/basics/introduction">Learn Prompting</a>: Umfassender englischsprachiger Kurs</li>
 </ul>
 
 

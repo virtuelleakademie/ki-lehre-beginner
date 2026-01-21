@@ -187,7 +187,7 @@ Für diese Übung reichen drei einfache Regeln:
 ::: {.pro-tip}
 ## Mehr zu Prompting
 
-Detaillierte Prompting-Strategien findest du in den [Weiterführenden Ressourcen](../../resources/prompting-basics/index.qmd).
+Detaillierte Prompting-Strategien findest du im [Prompting-Guide](../../resources/prompting-basics/index.qmd).
 
 Für diesen Workshop brauchst du nur die drei Grundregeln oben.
 :::

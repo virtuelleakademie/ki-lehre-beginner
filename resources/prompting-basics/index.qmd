@@ -1,82 +1,167 @@
 ---
 title: "Prompting für Einsteiger"
-subtitle: "Kurzanleitung für den Workshop"
+subtitle: "Wie du KI-Chatbots effektiv nutzt"
 sidebar: false
-toc: false
 ---
+
+## Was ist ein Prompt?
+
+Ein **Prompt** ist die Anweisung oder Frage, die du einem KI-Chatbot gibst.
+
+Die Qualität der Antwort hängt von zwei Faktoren ab:
+
+1. **Das trainierte Modell**: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat. Darauf hast du keinen Einfluss.
+
+2. **Der Kontext, den du gibst**: Dein Prompt. Das ist der Teil, den du kontrollierst.
+
+Prompting ist keine Magie und keine Spezialtechnik. Es sind die gleichen Grundregeln, die für jede gute Kommunikation gelten: Sag klar, was du willst. Gib relevanten Kontext. Sei präzise.
+
+Wenn du einer Kollegin eine vage Frage stellst, bekommst du eine vage Antwort. Das gilt für Chatbots genauso.
 
 ## Die drei Grundregeln
 
-| # | Regel | Was du tust | Beispiel |
-|---|-------|-------------|----------|
-| 1 | **Kontext geben** | Sag, wer du bist und in welcher Situation | "Ich bin Dozent*in für Pflege an einer Fachhochschule." |
-| 2 | **Aufgabe klar formulieren** | Sag genau, was du brauchst | "Erkläre mir in 3 Sätzen, wie..." |
-| 3 | **Bei Bedarf nachfragen** | Verfeinere die Antwort im Dialog | "Erkläre das genauer." / "Gib mir ein Beispiel." |
+### 1. Klare Anweisungen geben
 
-## Prompt-Vorlagen zum Kopieren
+Wie bei jeder Kommunikation: Sag klar, was du willst. Verwende konkrete Verben und gib Kontext.
 
-### Etwas erklärt bekommen
+::: {.scenario}
+## Schwach vs. stark
 
-::: {.prompt}
-Ich bin Dozent*in für [FACH]. Erkläre mir [KONZEPT] in einfachen Worten.
+**Schwach:** "Photosynthese"
+
+**Stark:** "Erkläre Photosynthese in 3 Sätzen für Studierende im ersten Semester Biologie."
 :::
 
-### Eine Analogie bekommen
+Der starke Prompt funktioniert besser, weil er:
 
-::: {.prompt}
-Gib mir eine Alltagsanalogie für [KONZEPT], die ich Studierenden zeigen kann.
+- Eine klare Handlung nennt ("Erkläre")
+- Das Format vorgibt ("in 3 Sätzen")
+- Die Zielgruppe definiert ("Studierende im ersten Semester")
+
+::: {.pro-tip}
+## Nützliche Verben für Instruktionen
+
+- **Erkläre** / **Beschreibe**: Für Verständnis
+- **Liste** / **Nenne**: Für Aufzählungen
+- **Vergleiche**: Für Gegenüberstellungen
+- **Analysiere**: Für tiefere Betrachtung
+- **Fasse zusammen**: Für Verdichtung
+- **Übersetze**: Für Sprachkonversion
 :::
 
-### Übungsaufgaben generieren
+### 2. Perspektive und Kontext definieren
 
-::: {.prompt}
-Erstelle 3 Übungsaufgaben zum Thema [THEMA] für Studierende im [SEMESTER]. Gib auch die Lösungen an.
+Wenn du jemanden um Rat fragst, macht es einen Unterschied, ob du mit einem Fachexperten oder einem Laien sprichst. Das gilt auch für Chatbots: Du kannst dem Chatbot eine Rolle zuweisen, die er simulieren soll. Das beeinflusst Ton, Tiefe und Perspektive der Antwort.
+
+::: {.scenario}
+## Die Rolle des Chatbots definieren
+
+**Ohne Rolle:**
+"Erkläre das Konzept der Nachhaltigkeit."
+
+**Mit Rolle:**
+"Du bist ein erfahrener Umweltwissenschaftler, der komplexe Themen verständlich erklären kann. Erkläre das Konzept der Nachhaltigkeit."
 :::
 
-### Feedback auf einen Text
+Wichtig: Die Rolle beschreibt, *wer der Chatbot sein soll*, nicht wer du bist. Deine eigene Situation (Kontext) und die Zielgruppe gibst du separat an:
 
-::: {.prompt}
-Hier ist ein Text, den ich geschrieben habe. Gib mir konstruktives Feedback zur Klarheit und Struktur:
+::: {.scenario}
+## Rolle + Kontext + Zielgruppe
 
-[DEIN TEXT HIER]
+"Du bist ein erfahrener Hochschuldidaktiker mit Expertise in aktivem Lernen.
+
+Ich bin Dozentin für Pflegewissenschaft und plane ein Seminar zum Thema Patientenkommunikation.
+
+Erstelle drei Diskussionsfragen für Studierende im 3. Semester, die kritisches Denken fördern."
 :::
 
-### Ideen sammeln
+Hier sind drei Elemente kombiniert:
 
-::: {.prompt}
-Ich plane eine Lehrveranstaltung zu [THEMA]. Welche interaktiven Elemente könnte ich einbauen? Gib mir 5 konkrete Ideen.
+- **Rolle des Chatbots:** Hochschuldidaktiker (bestimmt die Expertise)
+- **Dein Kontext:** Dozentin für Pflegewissenschaft (bestimmt das Fachgebiet)
+- **Zielgruppe:** Studierende im 3. Semester (bestimmt das Niveau)
+
+Typische Rollen für den Lehrkontext:
+
+| Rolle | Wann nützlich |
+|-------|---------------|
+| Fachdidaktiker für [Gebiet] | Methodische Fragen |
+| Fachexperte für [Thema] | Inhaltliche Tiefe |
+| Kritischer Reviewer | Schwächen in Texten finden |
+| Lektor | Sprachliche Verbesserungen |
+
+### 3. Beispiele zeigen
+
+Ein Beispiel sagt mehr als tausend Worte. Wenn du jemandem erklärst, wie ein Bericht aussehen soll, zeigst du einen Musterbericht. Das Gleiche funktioniert mit Chatbots: Wenn du Beispiele gibst, versteht der Chatbot das gewünschte Format und den Stil besser.
+
+::: {.scenario}
+## Ohne Beispiel
+
+"Formuliere Multiple-Choice-Fragen zum Thema Statistik."
+
+*Ergebnis: Der Chatbot wählt selbst ein Format.*
 :::
 
-## Nützliche Nachfragen
+::: {.scenario}
+## Mit Beispiel
 
-Wenn die erste Antwort nicht passt, kannst du nachfragen:
+"Formuliere Multiple-Choice-Fragen zum Thema Statistik. Verwende dieses Format:
+
+**Frage:** Was beschreibt der Mittelwert?
+- A) Die Streuung der Daten
+- B) Den Durchschnitt aller Werte
+- C) Den häufigsten Wert
+- D) Die Differenz zwischen Maximum und Minimum
+
+**Antwort:** B
+
+Erstelle 3 weitere Fragen in diesem Format."
+
+*Ergebnis: Der Chatbot folgt exakt deinem Format.*
+:::
+
+Beispiele sind besonders nützlich für:
+
+- Konsistente Formatierung
+- Spezifischen Schreibstil
+- Komplexe Strukturen (z.B. Bewertungsraster)
+
+## Im Dialog verfeinern
+
+Ein Prompt ist selten perfekt beim ersten Mal. Nutze Nachfragen, um die Antwort zu verbessern:
 
 | Situation | Nachfrage |
 |-----------|-----------|
-| Zu kompliziert | "Vereinfache das." |
-| Zu oberflächlich | "Erkläre das genauer." |
-| Zu abstrakt | "Gib mir ein konkretes Beispiel." |
-| Falscher Fokus | "Fokussiere auf [ASPEKT]." |
+| Zu kompliziert | "Vereinfache das für Einsteiger." |
+| Zu oberflächlich | "Geh tiefer ins Detail bei [Aspekt]." |
+| Zu abstrakt | "Gib mir ein konkretes Beispiel aus dem Alltag." |
+| Falscher Fokus | "Fokussiere stattdessen auf [Aspekt]." |
 | Zu lang | "Fasse das in 3 Sätzen zusammen." |
-| Format ändern | "Formatiere das als Tabelle / Liste / Stichpunkte." |
+| Format passt nicht | "Formatiere das als Tabelle." |
 
-## Häufige Anfängerfehler
+## Häufige Fehler
 
-| Fehler | Problem | Besser |
+| Fehler | Problem | Lösung |
 |--------|---------|--------|
-| "Erkläre Photosynthese" | Zu wenig Kontext | "Erkläre Photosynthese für Studierende im 1. Semester Biologie" |
-| Sehr lange Prompts | Überladen, unklar | Kurz und präzise, eine Aufgabe pro Prompt |
-| Keine Nachfragen | Erste Antwort akzeptieren | Im Dialog verfeinern |
-| Blind vertrauen | Antwort nicht prüfen | Immer kritisch evaluieren |
+| Zu vage | "Hilf mir mit meinem Kurs" | Konkreter: "Erstelle 3 Diskussionsfragen für mein Seminar zu [Thema]" |
+| Zu viel auf einmal | Mehrere Aufgaben in einem Prompt | Eine Aufgabe pro Prompt, dann iterieren |
+| Kontext vergessen | Der Chatbot kennt deine Situation nicht | Immer relevanten Hintergrund geben |
+| Erste Antwort akzeptieren | Suboptimales Ergebnis | Im Dialog verfeinern |
 
 ## Die wichtigste Regel
 
 ::: {.warning}
-## Nie vergessen
+## Kritisch bleiben
 
-**Der Chatbot klingt immer selbstbewusst, auch wenn er falsch liegt.**
+**Der Chatbot klingt immer überzeugend, auch wenn er falsch liegt.**
 
-Du musst jede Antwort mit deinem Fachwissen prüfen. Was du nicht prüfen kannst, solltest du nicht verwenden.
+Chatbots können:
+
+- Fakten erfinden ("halluzinieren")
+- Veraltete Informationen geben
+- Plausibel klingende aber falsche Zusammenhänge herstellen
+
+**Du musst jede Antwort mit deinem Fachwissen prüfen.** Was du nicht prüfen kannst, solltest du nicht ungeprüft verwenden.
 :::
 
 ## Weiterführend
@@ -91,6 +176,6 @@ Für **personalisiertes Training** steht dir ein spezieller Copilot-Agent zur Ve
 
 [Prompting-Tutor starten](https://m365.cloud.microsoft/chat/?titleId=T_7974f581-f4b9-7537-f20b-121abdc50196) *(BFH-Login erforderlich)*
 
-### Vertiefte Lektüre
+### Externe Ressourcen
 
-- [Effektive Prompting-Strategien in der Lehre](../prompting/index.qmd)
+- [Learn Prompting](https://learnprompting.org/docs/basics/introduction): Umfassender englischsprachiger Kurs

@@ -74,14 +74,14 @@
     "href": "resources/prompting-basics/index.html",
     "title": "Prompting für Einsteiger",
     "section": "",
-    "text": "#\nRegel\nWas du tust\nBeispiel\n\n\n\n\n1\nKontext geben\nSag, wer du bist und in welcher Situation\n“Ich bin Dozent*in für Pflege an einer Fachhochschule.”\n\n\n2\nAufgabe klar formulieren\nSag genau, was du brauchst\n“Erkläre mir in 3 Sätzen, wie…”\n\n\n3\nBei Bedarf nachfragen\nVerfeinere die Antwort im Dialog\n“Erkläre das genauer.” / “Gib mir ein Beispiel.”"
+    "text": "Ein Prompt ist die Anweisung oder Frage, die du einem KI-Chatbot gibst.\nDie Qualität der Antwort hängt von zwei Faktoren ab:\n\nDas trainierte Modell: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat. Darauf hast du keinen Einfluss.\nDer Kontext, den du gibst: Dein Prompt. Das ist der Teil, den du kontrollierst.\n\nPrompting ist keine Magie und keine Spezialtechnik. Es sind die gleichen Grundregeln, die für jede gute Kommunikation gelten: Sag klar, was du willst. Gib relevanten Kontext. Sei präzise.\nWenn du einer Kollegin eine vage Frage stellst, bekommst du eine vage Antwort. Das gilt für Chatbots genauso."
   },
   {
     "objectID": "resources/prompting-basics/index.html#die-drei-grundregeln",
     "href": "resources/prompting-basics/index.html#die-drei-grundregeln",
     "title": "Prompting für Einsteiger",
-    "section": "",
-    "text": "#\nRegel\nWas du tust\nBeispiel\n\n\n\n\n1\nKontext geben\nSag, wer du bist und in welcher Situation\n“Ich bin Dozent*in für Pflege an einer Fachhochschule.”\n\n\n2\nAufgabe klar formulieren\nSag genau, was du brauchst\n“Erkläre mir in 3 Sätzen, wie…”\n\n\n3\nBei Bedarf nachfragen\nVerfeinere die Antwort im Dialog\n“Erkläre das genauer.” / “Gib mir ein Beispiel.”"
+    "section": "Die drei Grundregeln",
+    "text": "Die drei Grundregeln\n\n1. Klare Anweisungen geben\nWie bei jeder Kommunikation: Sag klar, was du willst. Verwende konkrete Verben und gib Kontext.\n\n\n\n\n\n\nScenarioSchwach vs. stark\n\n\n\nSchwach: “Photosynthese”\nStark: “Erkläre Photosynthese in 3 Sätzen für Studierende im ersten Semester Biologie.”\n\n\nDer starke Prompt funktioniert besser, weil er:\n\nEine klare Handlung nennt (“Erkläre”)\nDas Format vorgibt (“in 3 Sätzen”)\nDie Zielgruppe definiert (“Studierende im ersten Semester”)\n\n\n\n\n\n\n\nPro-tipNützliche Verben für Instruktionen\n\n\n\n\n\n\nErkläre / Beschreibe: Für Verständnis\nListe / Nenne: Für Aufzählungen\nVergleiche: Für Gegenüberstellungen\nAnalysiere: Für tiefere Betrachtung\nFasse zusammen: Für Verdichtung\nÜbersetze: Für Sprachkonversion\n\n\n\n\n\n\n2. Perspektive und Kontext definieren\nWenn du jemanden um Rat fragst, macht es einen Unterschied, ob du mit einem Fachexperten oder einem Laien sprichst. Das gilt auch für Chatbots: Du kannst dem Chatbot eine Rolle zuweisen, die er simulieren soll. Das beeinflusst Ton, Tiefe und Perspektive der Antwort.\n\n\n\n\n\n\nScenarioDie Rolle des Chatbots definieren\n\n\n\nOhne Rolle: “Erkläre das Konzept der Nachhaltigkeit.”\nMit Rolle: “Du bist ein erfahrener Umweltwissenschaftler, der komplexe Themen verständlich erklären kann. Erkläre das Konzept der Nachhaltigkeit.”\n\n\nWichtig: Die Rolle beschreibt, wer der Chatbot sein soll, nicht wer du bist. Deine eigene Situation (Kontext) und die Zielgruppe gibst du separat an:\n\n\n\n\n\n\nScenarioRolle + Kontext + Zielgruppe\n\n\n\n“Du bist ein erfahrener Hochschuldidaktiker mit Expertise in aktivem Lernen.\nIch bin Dozentin für Pflegewissenschaft und plane ein Seminar zum Thema Patientenkommunikation.\nErstelle drei Diskussionsfragen für Studierende im 3. Semester, die kritisches Denken fördern.”\n\n\nHier sind drei Elemente kombiniert:\n\nRolle des Chatbots: Hochschuldidaktiker (bestimmt die Expertise)\nDein Kontext: Dozentin für Pflegewissenschaft (bestimmt das Fachgebiet)\nZielgruppe: Studierende im 3. Semester (bestimmt das Niveau)\n\nTypische Rollen für den Lehrkontext:\n\n\n\nRolle\nWann nützlich\n\n\n\n\nFachdidaktiker für [Gebiet]\nMethodische Fragen\n\n\nFachexperte für [Thema]\nInhaltliche Tiefe\n\n\nKritischer Reviewer\nSchwächen in Texten finden\n\n\nLektor\nSprachliche Verbesserungen\n\n\n\n\n\n3. Beispiele zeigen\nEin Beispiel sagt mehr als tausend Worte. Wenn du jemandem erklärst, wie ein Bericht aussehen soll, zeigst du einen Musterbericht. Das Gleiche funktioniert mit Chatbots: Wenn du Beispiele gibst, versteht der Chatbot das gewünschte Format und den Stil besser.\n\n\n\n\n\n\nScenarioOhne Beispiel\n\n\n\n“Formuliere Multiple-Choice-Fragen zum Thema Statistik.”\nErgebnis: Der Chatbot wählt selbst ein Format.\n\n\n\n\n\n\n\n\nScenarioMit Beispiel\n\n\n\n“Formuliere Multiple-Choice-Fragen zum Thema Statistik. Verwende dieses Format:\nFrage: Was beschreibt der Mittelwert? - A) Die Streuung der Daten - B) Den Durchschnitt aller Werte - C) Den häufigsten Wert - D) Die Differenz zwischen Maximum und Minimum\nAntwort: B\nErstelle 3 weitere Fragen in diesem Format.”\nErgebnis: Der Chatbot folgt exakt deinem Format.\n\n\nBeispiele sind besonders nützlich für:\n\nKonsistente Formatierung\nSpezifischen Schreibstil\nKomplexe Strukturen (z.B. Bewertungsraster)"
   },
   {
     "objectID": "resources/prompting-basics/index.html#prompt-vorlagen-zum-kopieren",
@@ -109,14 +109,14 @@
     "href": "resources/prompting-basics/index.html#die-wichtigste-regel",
     "title": "Prompting für Einsteiger",
     "section": "Die wichtigste Regel",
-    "text": "Die wichtigste Regel\n\n\n\n\n\n\nWarnungNie vergessen\n\n\n\nDer Chatbot klingt immer selbstbewusst, auch wenn er falsch liegt.\nDu musst jede Antwort mit deinem Fachwissen prüfen. Was du nicht prüfen kannst, solltest du nicht verwenden."
+    "text": "Die wichtigste Regel\n\n\n\n\n\n\nWarnungKritisch bleiben\n\n\n\nDer Chatbot klingt immer überzeugend, auch wenn er falsch liegt.\nChatbots können:\n\nFakten erfinden (“halluzinieren”)\nVeraltete Informationen geben\nPlausibel klingende aber falsche Zusammenhänge herstellen\n\nDu musst jede Antwort mit deinem Fachwissen prüfen. Was du nicht prüfen kannst, solltest du nicht ungeprüft verwenden."
   },
   {
     "objectID": "resources/prompting-basics/index.html#weiterführend",
     "href": "resources/prompting-basics/index.html#weiterführend",
     "title": "Prompting für Einsteiger",
     "section": "Weiterführend",
-    "text": "Weiterführend\n\nInteraktiver Prompting-Tutor\nFür personalisiertes Training steht dir ein spezieller Copilot-Agent zur Verfügung:\n\nDemonstriert Techniken mit durchgearbeiteten Beispielen\nPasst sich deinem Niveau an\nGibt konstruktives Feedback zu deinen Prompts\n\nPrompting-Tutor starten (BFH-Login erforderlich)\n\n\nVertiefte Lektüre\n\nEffektive Prompting-Strategien in der Lehre"
+    "text": "Weiterführend\n\nInteraktiver Prompting-Tutor\nFür personalisiertes Training steht dir ein spezieller Copilot-Agent zur Verfügung:\n\nDemonstriert Techniken mit durchgearbeiteten Beispielen\nPasst sich deinem Niveau an\nGibt konstruktives Feedback zu deinen Prompts\n\nPrompting-Tutor starten (BFH-Login erforderlich)\n\n\nExterne Ressourcen\n\nLearn Prompting: Umfassender englischsprachiger Kurs"
   },
   {
     "objectID": "resources/kompetenz-erwerben/index.html",
@@ -878,7 +878,7 @@
     "href": "exercises/copilot-einstieg/index.html#prompting-grundlagen",
     "title": "Copilot Onboarding",
     "section": "Prompting-Grundlagen",
-    "text": "Prompting-Grundlagen\nFür diese Übung reichen drei einfache Regeln:\n\n\n\nRegel\nBeispiel\n\n\n\n\nKontext geben\n“Ich bin Dozent*in für Chemie…”\n\n\nAufgabe klar formulieren\n“…erkläre mir in 3 Sätzen…”\n\n\nBei Bedarf nachfragen\n“Erkläre das genauer”\n\n\n\n\n\n\n\n\n\nPro-tipMehr zu Prompting\n\n\n\n\n\nDetaillierte Prompting-Strategien findest du in den Weiterführenden Ressourcen.\nFür diesen Workshop brauchst du nur die drei Grundregeln oben.\n\n\n\n\n\n\n\n\n\nPro-tipInteraktiver Prompting-Tutor\n\n\n\n\n\nFür strukturiertes Prompting-Training steht dir ein spezieller Copilot-Agent zur Verfügung:\n\nZeigt dir Beispiele und erklärt sein Denken\nGibt dir Übungen mit steigender Schwierigkeit\nAnalysiert deine Prompts und gibt Feedback\n\nPrompting-Tutor öffnen\nNutze den Tutor nach dem Workshop für vertieftes Lernen.",
+    "text": "Prompting-Grundlagen\nFür diese Übung reichen drei einfache Regeln:\n\n\n\nRegel\nBeispiel\n\n\n\n\nKontext geben\n“Ich bin Dozent*in für Chemie…”\n\n\nAufgabe klar formulieren\n“…erkläre mir in 3 Sätzen…”\n\n\nBei Bedarf nachfragen\n“Erkläre das genauer”\n\n\n\n\n\n\n\n\n\nPro-tipMehr zu Prompting\n\n\n\n\n\nDetaillierte Prompting-Strategien findest du im Prompting-Guide.\nFür diesen Workshop brauchst du nur die drei Grundregeln oben.\n\n\n\n\n\n\n\n\n\nPro-tipInteraktiver Prompting-Tutor\n\n\n\n\n\nFür strukturiertes Prompting-Training steht dir ein spezieller Copilot-Agent zur Verfügung:\n\nZeigt dir Beispiele und erklärt sein Denken\nGibt dir Übungen mit steigender Schwierigkeit\nAnalysiert deine Prompts und gibt Feedback\n\nPrompting-Tutor öffnen\nNutze den Tutor nach dem Workshop für vertieftes Lernen.",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -1662,5 +1662,33 @@
       "Workshop",
       "Übersicht"
     ]
+  },
+  {
+    "objectID": "resources/prompting-basics/index.html#was-ist-ein-prompt",
+    "href": "resources/prompting-basics/index.html#was-ist-ein-prompt",
+    "title": "Prompting für Einsteiger",
+    "section": "",
+    "text": "Ein Prompt ist die Anweisung oder Frage, die du einem KI-Chatbot gibst.\nDie Qualität der Antwort hängt von zwei Faktoren ab:\n\nDas trainierte Modell: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat. Darauf hast du keinen Einfluss.\nDer Kontext, den du gibst: Dein Prompt. Das ist der Teil, den du kontrollierst.\n\nPrompting ist keine Magie und keine Spezialtechnik. Es sind die gleichen Grundregeln, die für jede gute Kommunikation gelten: Sag klar, was du willst. Gib relevanten Kontext. Sei präzise.\nWenn du einer Kollegin eine vage Frage stellst, bekommst du eine vage Antwort. Das gilt für Chatbots genauso."
+  },
+  {
+    "objectID": "resources/prompting-basics/index.html#die-drei-grundtechniken",
+    "href": "resources/prompting-basics/index.html#die-drei-grundtechniken",
+    "title": "Prompting für Einsteiger",
+    "section": "Die drei Grundtechniken",
+    "text": "Die drei Grundtechniken\n\n1. Instruktionen geben\nDie einfachste Technik: Sag klar, was du willst. Verwende konkrete Verben und gib Kontext.\n\n\n\n\n\n\nScenarioSchwach vs. stark\n\n\n\nSchwach: “Photosynthese”\nStark: “Erkläre Photosynthese in 3 Sätzen für Studierende im ersten Semester Biologie.”\n\n\nDer starke Prompt funktioniert besser, weil er:\n\nEine klare Handlung nennt (“Erkläre”)\nDas Format vorgibt (“in 3 Sätzen”)\nDie Zielgruppe definiert (“Studierende im ersten Semester”)\n\n\n\n\n\n\n\nPro-tipNützliche Verben für Instruktionen\n\n\n\n\n\n\nErkläre / Beschreibe: Für Verständnis\nListe / Nenne: Für Aufzählungen\nVergleiche: Für Gegenüberstellungen\nAnalysiere: Für tiefere Betrachtung\nFasse zusammen: Für Verdichtung\nÜbersetze: Für Sprachkonversion\n\n\n\n\n\n\n2. Rollen zuweisen\nDu kannst dem Chatbot eine Rolle zuweisen, die er simulieren soll. Das beeinflusst Ton, Tiefe und Perspektive der Antwort.\n\n\n\n\n\n\nScenarioDie Rolle des Chatbots definieren\n\n\n\nOhne Rolle: “Erkläre das Konzept der Nachhaltigkeit.”\nMit Rolle: “Du bist ein erfahrener Umweltwissenschaftler, der komplexe Themen verständlich erklären kann. Erkläre das Konzept der Nachhaltigkeit.”\n\n\nWichtig: Die Rolle beschreibt, wer der Chatbot sein soll, nicht wer du bist. Deine eigene Situation (Kontext) und die Zielgruppe gibst du separat an:\n\n\n\n\n\n\nScenarioRolle + Kontext + Zielgruppe\n\n\n\n“Du bist ein erfahrener Hochschuldidaktiker mit Expertise in aktivem Lernen.\nIch bin Dozentin für Pflegewissenschaft und plane ein Seminar zum Thema Patientenkommunikation.\nErstelle drei Diskussionsfragen für Studierende im 3. Semester, die kritisches Denken fördern.”\n\n\nHier sind drei Elemente kombiniert:\n\nRolle des Chatbots: Hochschuldidaktiker (bestimmt die Expertise)\nDein Kontext: Dozentin für Pflegewissenschaft (bestimmt das Fachgebiet)\nZielgruppe: Studierende im 3. Semester (bestimmt das Niveau)\n\nTypische Rollen für den Lehrkontext:\n\n\n\nRolle\nWann nützlich\n\n\n\n\nFachdidaktiker für [Gebiet]\nMethodische Fragen\n\n\nFachexperte für [Thema]\nInhaltliche Tiefe\n\n\nKritischer Reviewer\nSchwächen in Texten finden\n\n\nLektor\nSprachliche Verbesserungen\n\n\n\n\n\n3. Beispiele geben (Few-Shot)\nWenn du dem Chatbot Beispiele gibst, versteht er das gewünschte Format und den Stil besser.\n\n\n\n\n\n\nScenarioOhne Beispiel (Zero-Shot)\n\n\n\n“Formuliere Multiple-Choice-Fragen zum Thema Statistik.”\nErgebnis: Der Chatbot wählt selbst ein Format.\n\n\n\n\n\n\n\n\nScenarioMit Beispielen (Few-Shot)\n\n\n\n“Formuliere Multiple-Choice-Fragen zum Thema Statistik. Verwende dieses Format:\nFrage: Was beschreibt der Mittelwert? - A) Die Streuung der Daten - B) Den Durchschnitt aller Werte - C) Den häufigsten Wert - D) Die Differenz zwischen Maximum und Minimum\nAntwort: B\nErstelle 3 weitere Fragen in diesem Format.”\nErgebnis: Der Chatbot folgt exakt deinem Format.\n\n\nFew-Shot ist besonders nützlich für:\n\nKonsistente Formatierung\nSpezifischen Schreibstil\nKomplexe Strukturen (z.B. Bewertungsraster)"
+  },
+  {
+    "objectID": "resources/prompting-basics/index.html#im-dialog-verfeinern",
+    "href": "resources/prompting-basics/index.html#im-dialog-verfeinern",
+    "title": "Prompting für Einsteiger",
+    "section": "Im Dialog verfeinern",
+    "text": "Im Dialog verfeinern\nEin Prompt ist selten perfekt beim ersten Mal. Nutze Nachfragen, um die Antwort zu verbessern:\n\n\n\nSituation\nNachfrage\n\n\n\n\nZu kompliziert\n“Vereinfache das für Einsteiger.”\n\n\nZu oberflächlich\n“Geh tiefer ins Detail bei [Aspekt].”\n\n\nZu abstrakt\n“Gib mir ein konkretes Beispiel aus dem Alltag.”\n\n\nFalscher Fokus\n“Fokussiere stattdessen auf [Aspekt].”\n\n\nZu lang\n“Fasse das in 3 Sätzen zusammen.”\n\n\nFormat passt nicht\n“Formatiere das als Tabelle.”"
+  },
+  {
+    "objectID": "resources/prompting-basics/index.html#häufige-fehler",
+    "href": "resources/prompting-basics/index.html#häufige-fehler",
+    "title": "Prompting für Einsteiger",
+    "section": "Häufige Fehler",
+    "text": "Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nProblem\nLösung\n\n\n\n\nZu vage\n“Hilf mir mit meinem Kurs”\nKonkreter: “Erstelle 3 Diskussionsfragen für mein Seminar zu [Thema]”\n\n\nZu viel auf einmal\nMehrere Aufgaben in einem Prompt\nEine Aufgabe pro Prompt, dann iterieren\n\n\nKontext vergessen\nDer Chatbot kennt deine Situation nicht\nImmer relevanten Hintergrund geben\n\n\nErste Antwort akzeptieren\nSuboptimales Ergebnis\nIm Dialog verfeinern"
   }
 ]
