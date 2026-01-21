@@ -160,6 +160,31 @@ Plot.plot({
 - **Hoch (1.2-1.5)**: Für Brainstorming und kreative Texte
 :::
 
+## Die Parallele zum Schreiben
+
+Du kennst das Gefühl: Du sitzt vor einem leeren Dokument, und viele mögliche Anfänge schwirren im Kopf. Dann schreibst du den ersten Satz. Plötzlich sind manche Fortsetzungen naheliegend, andere ausgeschlossen. Der Text, den du geschrieben hast, wird zum Kontext für das, was als Nächstes kommt.
+
+Das ist überraschend ähnlich zu dem, was Sprachmodelle tun:
+
+| Du beim Schreiben | Das Sprachmodell |
+|-------------------|------------------|
+| Viele Formulierungen möglich | Wahrscheinlichkeitsverteilung |
+| Du wählst bestimmte Worte | Modell sampelt ein Token |
+| Geschriebenes wird zum Kontext | Token wird zum Kontext |
+| Nächster Satz baut darauf auf | Nächste Vorhersage konditioniert |
+
+Der leere Bildschirm ist schwer, weil wenig Kontext da ist. Sobald du anfängst, baut sich Momentum auf. Das gilt für Menschen wie für Modelle.
+
+::: {.pro-tip}
+## Warum das für Lernen wichtig ist
+
+Wenn du selbst schreibst, machst du die Auswahl-Arbeit: Du entscheidest, welche Formulierung, welcher Gedankengang. Diese Arbeit *ist* ein Teil des Denkens.
+
+Wenn KI für dich schreibt, übernimmt sie diese Auswahl. Du bekommst das Produkt, aber du hast den Prozess nicht durchlaufen.
+
+Mehr dazu: [Schreiben als Sampling](../../resources/schreiben-als-sampling/index.qmd)
+:::
+
 ## Kurze Reflexion (2 min)
 
 ::: {.reflect}

@@ -1,5 +1,6 @@
 ---
 title: "KI in der Lehre: Beginner"
+date: 2026-01-23
 format:
   html:
     toc: false

@@ -53,6 +53,8 @@ website:
         menu:
           - text: "Reflexionsfragen"
             file: resources/reflexion/index.qmd
+          - text: "Schreiben als Sampling"
+            file: resources/schreiben-als-sampling/index.qmd
           - text: "Prompting für Einsteiger"
             file: resources/prompting-basics/index.qmd
           - text: "Weiterführende Ressourcen"
@@ -62,11 +64,20 @@ website:
         text: "Dokumente"
         menu:
           - text: "KI Policy der BFH"
-            file: https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf
+            href: https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf
+            target: _blank
+          - text: "Abgeklärte KI-Tools (Intranet)"
+            href: https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx
+            target: _blank
+          - text: "Datenklassifikation (Intranet)"
+            href: https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Datenklassifikation.aspx
+            target: _blank
           - text: "Begleitdokument: KI Weiterbildung"
-            file: assets/pdfs/Begleitdokument.pdf
+            href: assets/pdfs/Begleitdokument.pdf
+            target: _blank
           - text: "Orientierungshilfe"
-            file: assets/pdfs/Orientierungshilfe.pdf
+            href: assets/pdfs/Orientierungshilfe.pdf
+            target: _blank
 
 
     tools:
