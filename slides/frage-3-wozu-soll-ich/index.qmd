@@ -32,7 +32,7 @@ In dieser Einheit diskutieren wir, wann KI-Nutzung sinnvoll ist und wann sie das
 1. **Offloading**: Du externalisierst, aber denkst selbst weiter
 2. **Outsourcing**: Du überträgst die Denkarbeit
 3. **Die entscheidende Frage**: Ist das, was ausgelagert wird, etwas, das die Person lernen sollte?
-4. **Der Zielkonflikt**: Dieselbe KI-Nutzung kann für Experten produktiv und für Lernende schädlich sein
+4. **Der Zielkonflikt**: Dieselbe KI-Nutzung kann für Expert*innen produktiv und für Lernende schädlich sein
 
 ## Die zwei Konzepte
 
@@ -85,7 +85,7 @@ Diese Frage unterscheidet sinnvolle von problematischer KI-Nutzung.
 
 Der Konflikt zwischen Produktivität und Lernen ist kein Paradox. Er folgt direkt aus dem, was wir über kognitive Architektur wissen:
 
-- **KI-Tools sind für Experten gemacht**: Sie steigern Produktivität, indem sie kognitive Arbeit übernehmen.
+- **KI-Tools sind für Expert*innen gemacht**: Sie steigern Produktivität, indem sie kognitive Arbeit übernehmen.
 - **Lernen erfordert kognitive Anstrengung**: Das Gehirn lernt durch Vorhersagefehler, die nur entstehen, wenn man selbst denkt.
 - **Wenn Studierende auslagern, was sie üben sollten**: Sie bekommen das **Produkt**, aber nicht den **Lerneffekt**.
 
@@ -116,7 +116,7 @@ Für **deine Studierenden**:
 ::: {.key-point}
 ## Antwort auf Frage 3: Wofür sollte ich KI verwenden?
 
-KI-Tools sind für **Experten** gemacht. Sie steigern Produktivität.
+KI-Tools sind für **Expert*innen** gemacht. Sie steigern Produktivität.
 
 Für **Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
 

@@ -8,7 +8,7 @@ sidebar: exercises
 
 - Den Unterschied zwischen kognitivem Offloading und Outsourcing verstehen
 - Einschätzen, wann KI-Nutzung das Lernen unterstützt oder behindert
-- Erkennen, dass dieselbe KI-Nutzung für Experten und Lernende unterschiedlich wirkt
+- Erkennen, dass dieselbe KI-Nutzung für Expert*innen und Lernende unterschiedlich wirkt
 
 ::: {.key-point}
 ## Teil 1: Die Konzepte (10 min)
@@ -46,7 +46,7 @@ Beispiele:
 
 Dieselbe KI-Nutzung kann sein:
 
-| Situation | Für Experten | Für Lernende |
+| Situation | Für Expert*innen | Für Lernende |
 |-----------|--------------|--------------|
 | KI schreibt Feedback | OK (kann Qualität beurteilen) | N/A |
 | KI schreibt Essay | N/A | Problematisch (brauchen Schreibübung) |
@@ -63,63 +63,57 @@ Dieselbe KI-Nutzung kann sein:
 
 Bevor wir mit den Szenarien arbeiten, gehen wir gemeinsam vier Beispiele durch. Bei jedem Beispiel wenden wir systematisch die zwei diagnostischen Fragen an.
 
-### Beispiel A: Die erfahrene Dozentin
+### Beispiel A: Erfahrene Lehrperson
 
-**Szenario**: Eine Dozentin mit 15 Jahren Lehrerfahrung nutzt Claude, um einen ersten Entwurf für Feedback auf eine Studierendenarbeit zu generieren. Sie liest den Entwurf, streicht zwei Punkte, ergänzt einen spezifischen Hinweis auf ein Konzept aus ihrer Vorlesung, und formuliert den Schluss um.
+**Szenario**: Eine dozierende Person mit 15 Jahren Lehrerfahrung nutzt Claude, um einen ersten Entwurf für Feedback auf eine Studierendenarbeit zu generieren. Sie liest den Entwurf, streicht zwei Punkte, ergänzt einen spezifischen Hinweis auf ein Konzept aus ihrer Vorlesung, und formuliert den Schluss um.
 
 **Analyse mit den diagnostischen Fragen:**
 
-1. **Wer evaluiert?** Die Dozentin evaluiert aktiv. Sie nutzt ihre Expertise, um den KI-Output kritisch zu prüfen, Teile zu verwerfen und eigene Inhalte hinzuzufügen. Sie kann beurteilen, ob das Feedback fachlich korrekt und pädagogisch sinnvoll ist.
+1. **Wer evaluiert?** Die Person evaluiert aktiv. Sie nutzt ihre Expertise, um den KI-Output kritisch zu prüfen, Teile zu verwerfen und eigene Inhalte hinzuzufügen. Sie kann beurteilen, ob das Feedback fachlich korrekt und pädagogisch sinnvoll ist.
 
 2. **Was sollte geübt werden?** Als erfahrene Lehrperson muss sie das Feedback-Schreiben nicht mehr üben. Ihre Kompetenz ist bereits aufgebaut. Ihre Zeit ist besser investiert in die individuelle Anpassung als in die Grundformulierung.
 
 **Einordnung**: **Offloading**. Das Werkzeug entlastet ihr Arbeitsgedächtnis (erste Formulierung), aber sie bleibt die denkende Instanz.
 
----
+### Beispiel B: Programmieren lernen
 
-### Beispiel B: Der Programmieranfänger
-
-**Szenario**: Ein Student im ersten Semester Informatik hat einen Fehler in seinem Python-Code. Er kopiert den Code in ChatGPT, bekommt eine korrigierte Version zurück, und ersetzt seinen Code damit. Der Code funktioniert jetzt, aber er hat nicht verstanden, was der Fehler war.
+**Szenario**: Eine studierende Person im ersten Semester Informatik hat einen Fehler im Python-Code. Sie kopiert den Code in ChatGPT, bekommt eine korrigierte Version zurück, und ersetzt ihren Code damit. Der Code funktioniert jetzt, aber sie hat nicht verstanden, was der Fehler war.
 
 **Analyse mit den diagnostischen Fragen:**
 
-1. **Wer evaluiert?** Der Student evaluiert nicht. Er kann nicht beurteilen, ob die Korrektur korrekt ist oder ob es bessere Lösungen gäbe. Er akzeptiert das Ergebnis, weil es funktioniert.
+1. **Wer evaluiert?** Die Person evaluiert nicht. Sie kann nicht beurteilen, ob die Korrektur korrekt ist oder ob es bessere Lösungen gäbe. Sie akzeptiert das Ergebnis, weil es funktioniert.
 
-2. **Was sollte geübt werden?** Genau das: Fehler finden, verstehen und beheben. Debugging ist eine Kernkompetenz für Programmierer. Jeder selbst gefundene Fehler stärkt das Verständnis für Code-Logik.
+2. **Was sollte geübt werden?** Genau das: Fehler finden, verstehen und beheben. Debugging ist eine Kernkompetenz beim Programmieren. Jeder selbst gefundene Fehler stärkt das Verständnis für Code-Logik.
 
-**Einordnung**: **Outsourcing**. Die kognitive Arbeit (Fehleranalyse, Problemlösung) wurde vollständig an die KI übertragen. Der Student hat das Produkt (funktionierender Code), aber nicht den Lerneffekt.
-
----
+**Einordnung**: **Outsourcing**. Die kognitive Arbeit (Fehleranalyse, Problemlösung) wurde vollständig an die KI übertragen. Die Person hat das Produkt (funktionierender Code), aber nicht den Lerneffekt.
 
 ### Beispiel C: Die Grauzone
 
-**Szenario**: Eine Studentin im dritten Semester schreibt eine Seminararbeit. Sie hat einen Entwurf geschrieben und bittet ChatGPT um Feedback zur Argumentationsstruktur. Sie liest das Feedback, ist bei zwei Punkten anderer Meinung (und behält ihre Version), übernimmt einen Vorschlag zur Umstrukturierung des dritten Absatzes, und fragt dann nach: "Warum ist diese Reihenfolge besser?"
+**Szenario**: Eine studierende Person im dritten Semester schreibt eine Seminararbeit. Sie hat einen Entwurf geschrieben und bittet ChatGPT um Feedback zur Argumentationsstruktur. Sie liest das Feedback, ist bei zwei Punkten anderer Meinung (und behält ihre Version), übernimmt einen Vorschlag zur Umstrukturierung des dritten Absatzes, und fragt dann nach: "Warum ist diese Reihenfolge besser?"
 
 **Analyse mit den diagnostischen Fragen:**
 
-1. **Wer evaluiert?** Die Studentin evaluiert aktiv. Sie akzeptiert nicht blind, sondern prüft gegen ihr eigenes Verständnis. Sie lehnt Teile ab und hinterfragt die Begründung.
+1. **Wer evaluiert?** Die Person evaluiert aktiv. Sie akzeptiert nicht blind, sondern prüft gegen ihr eigenes Verständnis. Sie lehnt Teile ab und hinterfragt die Begründung.
 
 2. **Was sollte geübt werden?** Akademisches Schreiben und Argumentation. Sie übt beides: Sie hat den Entwurf selbst geschrieben und engagiert sich kritisch mit dem Feedback.
 
-**Einordnung**: **Tendenz zu Offloading**. Die Studentin nutzt die KI als Sparringspartner, nicht als Ersatz für eigenes Denken. Entscheidend ist ihr aktives Engagement.
+**Einordnung**: **Tendenz zu Offloading**. Die Person nutzt die KI als Sparringspartner, nicht als Ersatz für eigenes Denken. Entscheidend ist ihr aktives Engagement.
 
 **Aber Vorsicht**: Wenn sie aufhört zu hinterfragen und nur noch Vorschläge übernimmt, kippt die Situation Richtung Outsourcing.
 
----
-
 ### Beispiel D: Der versteckte Fall
 
-**Szenario**: Ein Dozent nutzt KI, um Multiple-Choice-Fragen für eine Prüfung zu generieren. Er überfliegt die Fragen, findet sie "gut genug", und verwendet sie ohne Änderungen.
+**Szenario**: Eine dozierende Person nutzt KI, um Multiple-Choice-Fragen für eine Prüfung zu generieren. Sie überfliegt die Fragen, findet sie "gut genug", und verwendet sie ohne Änderungen.
 
 **Analyse mit den diagnostischen Fragen:**
 
-1. **Wer evaluiert?** Der Dozent evaluiert nur oberflächlich. "Gut genug" ist keine kritische Prüfung. Er prüft nicht, ob die Fragen das richtige Niveau haben, ob die Distraktoren plausibel sind, oder ob die Fragen das messen, was er lehrt.
+1. **Wer evaluiert?** Die dozierende Person evaluiert nur oberflächlich. "Gut genug" ist keine kritische Prüfung. Sie prüft nicht, ob die Fragen das richtige Niveau haben, ob die Distraktoren plausibel sind, oder ob die Fragen das messen, was sie lehrt.
 
-2. **Was sollte geübt werden?** Für einen Dozenten: nichts. Er muss Fragen nicht "üben". Aber: Die Qualitätsprüfung ist Teil seiner Verantwortung, nicht eine Lernaufgabe.
+2. **Was sollte geübt werden?** Für Dozierende: nichts. Sie müssen Fragen nicht "üben". Aber: Die Qualitätsprüfung ist Teil ihrer Verantwortung, nicht eine Lernaufgabe.
 
-**Einordnung**: **Problematisches Outsourcing**, auch wenn es ein Experte ist. Nicht weil er lernen sollte, sondern weil die Qualitätssicherung zu seiner professionellen Verantwortung gehört. Die Frage "Wer evaluiert?" gilt auch für Qualitätskontrolle, nicht nur für Lernen.
+**Einordnung**: **Problematisches Outsourcing**, auch wenn es eine fachkundige Person ist. Nicht weil sie lernen sollte, sondern weil die Qualitätssicherung zu ihrer professionellen Verantwortung gehört. Die Frage "Wer evaluiert?" gilt auch für Qualitätskontrolle, nicht nur für Lernen.
 
-**Wichtige Einsicht**: Outsourcing kann auch für Experten problematisch sein, wenn es um Qualitätsverantwortung geht.
+**Wichtige Einsicht**: Outsourcing kann auch für Expert*innen problematisch sein, wenn es um Qualitätsverantwortung geht.
 :::
 
 ::: {.experiment}
@@ -133,11 +127,7 @@ Jetzt wendet ihr die Konzepte selbst an. Arbeitet in Kleingruppen (3-4 Personen)
 Bildet gemischte Gruppen: Idealerweise hat jede Gruppe mindestens eine Person mit viel und eine mit weniger KI-Erfahrung. Die unterschiedlichen Perspektiven bereichern die Diskussion.
 :::
 
-Für jedes Szenario:
-
-1. **Wendet die zwei diagnostischen Fragen an**
-2. **Diskutiert**: Was würde es zu Offloading machen? Was zu Outsourcing?
-3. **Identifiziert**: Was müsstet ihr zusätzlich wissen, um sicher zu entscheiden?
+Für jedes Szenario wendet ihr die zwei diagnostischen Fragen an und diskutiert: Was würde diese Situation zu Offloading machen? Was zu Outsourcing? Und was müsstet ihr zusätzlich wissen, um das sicher zu entscheiden?
 
 ::: {.callout-note}
 ## Wichtig
@@ -161,28 +151,28 @@ Wenn du bei einem Szenario unsicher bist, nutze diese Leitfragen:
 
 Analysiere zusätzlich bei jedem Szenario:
 
-1. **Kontextabhängigkeit**: Wie würde sich die Einschätzung ändern, wenn die Person ein Anfänger vs. Experte in diesem Bereich wäre?
+1. **Kontextabhängigkeit**: Wie würde sich die Einschätzung ändern, wenn die Person Anfänger*in vs. Expert*in in diesem Bereich wäre?
 2. **Kipppunkte**: Welche minimale Verhaltensänderung würde Outsourcing zu Offloading machen (oder umgekehrt)?
 3. **Versteckte Fälle**: Gibt es Szenarien, die auf den ersten Blick OK aussehen, aber bei genauerem Hinsehen problematisch sind?
 :::
 
 ### Die Szenarien
 
-**Szenario 1**: Ein Student nutzt ChatGPT, um eine Gliederung für seine Seminararbeit zu erstellen.
+**Szenario 1**: Eine studierende Person nutzt ChatGPT, um eine Gliederung für ihre Seminararbeit zu erstellen.
 
-**Szenario 2**: Eine Dozentin nutzt Claude, um Feedback-Entwürfe auf Studierendenarbeiten zu formulieren.
+**Szenario 2**: Eine dozierende Person nutzt Claude, um Feedback-Entwürfe auf Studierendenarbeiten zu formulieren.
 
-**Szenario 3**: Ein Student bittet Copilot, ihm ein komplexes Konzept zu erklären, das er nicht verstanden hat.
+**Szenario 3**: Eine studierende Person bittet Copilot, ein komplexes Konzept zu erklären, das sie nicht verstanden hat.
 
-**Szenario 4**: Eine Dozentin nutzt KI, um Multiple-Choice-Fragen für eine Prüfung zu generieren.
+**Szenario 4**: Eine dozierende Person nutzt KI, um Multiple-Choice-Fragen für eine Prüfung zu generieren.
 
-**Szenario 5**: Ein Student lässt ChatGPT seinen Essay schreiben und reicht ihn ein.
+**Szenario 5**: Eine studierende Person lässt ChatGPT ihren Essay schreiben und reicht ihn ein.
 
-**Szenario 6**: Eine Dozentin nutzt KI, um eine Vorlesung zu einem neuen Thema vorzubereiten.
+**Szenario 6**: Eine dozierende Person nutzt KI, um eine Vorlesung zu einem neuen Thema vorzubereiten.
 
-**Szenario 7**: Ein Student nutzt KI als Sparringspartner, um seine Argumente zu testen.
+**Szenario 7**: Eine studierende Person nutzt KI als Sparringspartner, um ihre Argumente zu testen.
 
-**Szenario 8**: Ein Student nutzt KI, um Code zu debuggen, ohne zu verstehen, was der Fehler war.
+**Szenario 8**: Eine studierende Person nutzt KI, um Code zu debuggen, ohne zu verstehen, was der Fehler war.
 
 {{< timer 15 >}}
 
@@ -210,7 +200,7 @@ Zwei Fragen:
 
 Der Konflikt zwischen Produktivität und Lernen ist kein Paradox. Er ist eine vorhersagbare Konsequenz aus dem, was wir über kognitive Architektur wissen:
 
-- **KI-Tools sind für Experten gemacht**: Sie steigern Produktivität, indem sie kognitive Arbeit übernehmen.
+- **KI-Tools sind für Expert*innen gemacht**: Sie steigern Produktivität, indem sie kognitive Arbeit übernehmen.
 - **Lernen erfordert kognitive Anstrengung**: Das Gehirn lernt durch Vorhersagefehler, die nur entstehen, wenn man selbst denkt.
 - **Wenn Studierende auslagern, was sie üben sollten**: Sie bekommen das Produkt, aber nicht den Lerneffekt.
 
@@ -245,6 +235,6 @@ Der Unterschied zwischen produktiver KI-Nutzung und problematischem Outsourcing 
 1. **Evaluationsfähigkeit**: Kann die Person beurteilen, ob das Ergebnis gut ist?
 2. **Lernbedarf**: Braucht die Person die kognitive Arbeit, um etwas zu lernen?
 
-Experten haben Evaluationsfähigkeit und arbeiten (statt zu lernen). Studierenden fehlt oft beides.
+Expert*innen haben Evaluationsfähigkeit und arbeiten (statt zu lernen). Studierenden fehlt oft beides.
 :::
 :::

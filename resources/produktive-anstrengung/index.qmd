@@ -103,7 +103,7 @@ Interleaving verbessert die Unterscheidung ähnlicher Konzepte und das Langzeitb
 
 Gestalte Instruktion so, dass sie die Arbeitsgedächtniskapazität optimiert und produktives Ringen erhält:
 
-**Für Anfänger:**
+**Für Anfänger*innen:**
 
 - Durchgearbeitete Beispiele vor eigenständiger Übung bereitstellen
 - Überflüssige Belastung reduzieren, aber die eigentliche Herausforderung erhalten
@@ -284,7 +284,7 @@ Hilf Lernenden zu verstehen, dass kognitive Anstrengung kein Designfehler ist, s
 1. **Eigenständiger Versuch** (mindestens 5–10 Minuten)
 2. **Austausch mit Peers** (Schwierigkeiten teilen, keine Lösungen)
 3. **Zugang zu Ressourcen** (strategische Hinweise, keine Komplettlösungen)
-4. **Lehrer-Coaching** (Denken leiten, nicht lösen)
+4. **Lehrpersonen-Coaching** (Denken leiten, nicht lösen)
 5. **Kollaboratives Problemlösen** (gemeinsam letzte Hürden nehmen)
 
 **Strategisches Hinweis-System:**

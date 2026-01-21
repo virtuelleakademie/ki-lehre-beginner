@@ -100,7 +100,7 @@ Sammelt eure Erkenntnisse:
 2. **Wann hat KI euer Denken ersetzt?** (z.B. fertige Lösung akzeptiert)
 
 3. **Was bedeutet das für Studierende?**
-   - Studierende sind keine Experten in eurem Fach
+   - Studierende sind keine Expert*innen in eurem Fach
    - Sie wissen oft nicht, was "gut" ist
    - Können sie evaluieren, was der Chatbot produziert?
 

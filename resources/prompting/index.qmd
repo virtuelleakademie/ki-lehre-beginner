@@ -32,7 +32,7 @@ Sprachmodelle (LLMs) können die Lehre unterstützen, indem sie Erklärungen, Be
 
 ### 1. Abrufpraxis fördern
 
-Ermutigen Sie zum aktiven Abrufen gelernter Inhalte aus dem Gedächtnis.
+Fördere das aktive Abrufen gelernter Inhalte aus dem Gedächtnis.
 
 ::: {.prompt}
 Stelle mir drei Fragen zu den Kernpunkten der Vorlesung über Reaktionskinetik [als PDF bereitgestellt].
@@ -40,7 +40,7 @@ Stelle mir drei Fragen zu den Kernpunkten der Vorlesung über Reaktionskinetik [
 
 ### 2. Scaffolding verwenden
 
-Komplexe Aufgaben in kleinere Schritte unterteilen, um Lernende schrittweise anzuleiten.
+Unterteile komplexe Aufgaben in kleinere Schritte, um Lernende schrittweise anzuleiten.
 
 ::: {.prompt}
 Zuerst: Gib die ausgeglichene Gleichung für diese chemische Reaktion an. Dann: Was sind die Ausgangskonzentrationen?
@@ -48,7 +48,7 @@ Zuerst: Gib die ausgeglichene Gleichung für diese chemische Reaktion an. Dann: 
 
 ### 3. Metakognition anregen
 
-Selbstreflexion und Begründung des eigenen Denkens fördern.
+Fördere Selbstreflexion und die Begründung des eigenen Denkens.
 
 ::: {.prompt}
 Erkläre, warum du diese Methode zur Bestimmung des Gleichgewichts gewählt hast. Welche Annahmen hast du gemacht?
@@ -56,7 +56,7 @@ Erkläre, warum du diese Methode zur Bestimmung des Gleichgewichts gewählt hast
 
 ### 4. Kognitive Belastung steuern
 
-Informationen klar strukturieren, um Überlastung zu vermeiden.
+Strukturiere Informationen klar, um Überlastung zu vermeiden.
 
 ::: {.prompt}
 Definiere Entropie kurz. Erkläre dann, wie sich Entropie von Enthalpie unterscheidet.

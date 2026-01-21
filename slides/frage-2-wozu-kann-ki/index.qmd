@@ -35,6 +35,8 @@ In dieser Einheit lernen wir die Fähigkeiten und Grenzen von Chatbots kennen, s
 
 ## Was Chatbots können
 
+Moderne Chatbots haben erstaunlich vielseitige Fähigkeiten:
+
 | Fähigkeit | Beispiel |
 |-----------|----------|
 | Fragen beantworten | Erklärungen, Definitionen, Zusammenfassungen |
@@ -45,6 +47,8 @@ In dieser Einheit lernen wir die Fähigkeiten und Grenzen von Chatbots kennen, s
 | Strukturierte Ausgabe | Tabellen, Listen, JSON, Markdown |
 
 ## Was Chatbots nicht können
+
+Trotz dieser Fähigkeiten haben Chatbots klare Grenzen:
 
 | Grenze | Konsequenz |
 |--------|------------|
@@ -66,6 +70,8 @@ In dieser Einheit lernen wir die Fähigkeiten und Grenzen von Chatbots kennen, s
 :::
 
 ## Freigegebene Tools
+
+Die BFH hat mehrere KI-Tools abgeklärt und freigegeben:
 
 | Tool | Zugang | Empfohlen für |
 |------|--------|---------------|

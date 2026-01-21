@@ -34,14 +34,14 @@ Ihr erhaltet Szenarien. Für jedes Szenario diskutiert:
 
 ## Die Szenarien
 
-1. Student nutzt KI für Gliederung einer Seminararbeit
-2. Dozentin nutzt KI für Feedback-Entwürfe
-3. Student bittet KI um Erklärung eines Konzepts
-4. Dozentin generiert Prüfungsfragen mit KI
-5. Student lässt KI seinen Essay schreiben
-6. Dozentin bereitet Vorlesung mit KI vor
-7. Student nutzt KI als Sparringspartner für Argumente
-8. Student debuggt Code mit KI, ohne den Fehler zu verstehen
+1. Studierende Person nutzt KI für Gliederung einer Seminararbeit
+2. Dozierende Person nutzt KI für Feedback-Entwürfe
+3. Studierende Person bittet KI um Erklärung eines Konzepts
+4. Dozierende Person generiert Prüfungsfragen mit KI
+5. Studierende Person lässt KI den Essay schreiben
+6. Dozierende Person bereitet Vorlesung mit KI vor
+7. Studierende Person nutzt KI als Sparringspartner für Argumente
+8. Studierende Person debuggt Code mit KI, ohne den Fehler zu verstehen
 
 ## Die Konzepte
 
@@ -79,7 +79,7 @@ Das **Werkzeug** denkt, du akzeptierst.
 
 ## Der Kontext macht den Unterschied
 
-| Situation | Für Experten | Für Lernende |
+| Situation | Für Expert*innen | Für Lernende |
 |-----------|--------------|--------------|
 | KI schreibt Feedback | OK (Effizienz) | N/A |
 | KI schreibt Essay | N/A | Problematisch |
@@ -173,7 +173,7 @@ Beantworte für dich:
 
 **Wofür sollte ich KI verwenden?**
 
-KI-Tools sind für **Experten** gemacht. Sie steigern Produktivität.
+KI-Tools sind für **Expert*innen** gemacht. Sie steigern Produktivität.
 
 Für **Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
 :::

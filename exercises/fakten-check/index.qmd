@@ -59,13 +59,13 @@ Die Jahreszahl könnte stimmen oder nicht. Der Kontext (Fachhochschule, Schweiz,
 >
 > Antwort: "Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich."
 
-Das klingt medizinisch korrekt (Titration, typische Dosierungsbereiche). Aber: Ist das die aktuelle Empfehlung? Hat die SGK überhaupt eigene Empfehlungen oder übernimmt sie ESC-Leitlinien? Ein Experte würde sofort skeptisch sein.
+Das klingt medizinisch korrekt (Titration, typische Dosierungsbereiche). Aber: Ist das die aktuelle Empfehlung? Hat die SGK überhaupt eigene Empfehlungen oder übernimmt sie ESC-Leitlinien? Eine fachkundige Person würde sofort skeptisch sein.
 :::
 
 ::: {.callout-important}
 ## Die entscheidende Einsicht
 
-Als Experte in deinem Fach kannst du Halluzinationen erkennen.
+Mit deiner Fachkompetenz kannst du Halluzinationen erkennen.
 
 **Deine Studierenden können das nicht.**
 
@@ -186,7 +186,7 @@ Beantworte für dich diese Fragen:
 
 2. **Konntet ihr die Fehler erkennen?**
 
-   Als Experten in eurem Fach konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.
+   Mit eurer Fachkompetenz konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.
 
 3. **Was bedeutet das für den Lernprozess?**
 

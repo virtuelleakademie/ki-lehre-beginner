@@ -72,7 +72,7 @@ Chatbots sind **vielseitige Werkzeuge**, aber sie generieren **selbstbewusst auc
 ::: {.key-point}
 ## Frage 3: Wofür sollte ich KI verwenden?
 
-KI-Tools sind für **Experten** gemacht. Für **Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung, die KI wegzunehmen droht.
+KI-Tools sind für **Expert*innen** gemacht. Für **Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung, die KI wegzunehmen droht.
 :::
 
 ## Workshop-Reihe

@@ -12,7 +12,7 @@
 <link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.27">
 
-  <title>KI in der Lehre: Beginner – Frage 2: Wofür kann KI verwendet werden?</title>
+  <title>KI in der Lehre: Beginner – Offloading vs.&nbsp;Outsourcing</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -136,66 +136,6 @@
     }
   </style>
   <style>
-  div.callout-demonstration.callout {
-    border-left-color: #333333;
-  }
-  div.callout-demonstration.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
-  }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f51b';
-    background-image: none;
-  }
-  div.callout-source-check.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-source-check.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f002';
-    background-image: none;
-  }
-  div.callout-pro-tip.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-pro-tip.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\e2ca';
-    background-image: none;
-  }
-  div.callout-prompt.callout {
-    border-left-color: #333333;
-  }
-  div.callout-prompt.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
-  }
-  div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f328';
-    background-image: none;
-  }
-  div.callout-group.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-group.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f0c0';
-    background-image: none;
-  }
   div.callout-reflect.callout {
     border-left-color: #D4A03E;
   }
@@ -206,18 +146,6 @@
   div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free';
     content: '\f0eb';
-    background-image: none;
-  }
-  div.callout-scenario.callout {
-    border-left-color: #666666;
-  }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(102, 102, 102, 0.13);
-  }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free';
-    content: '\f075';
     background-image: none;
   }
   div.callout-experiment.callout {
@@ -244,6 +172,66 @@
     content: '\f005';
     background-image: none;
   }
+  div.callout-scenario.callout {
+    border-left-color: #666666;
+  }
+  div.callout-scenario.callout-style-default > .callout-header {
+    background-color: rgba(102, 102, 102, 0.13);
+  }
+  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f075';
+    background-image: none;
+  }
+  div.callout-pro-tip.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-pro-tip.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\e2ca';
+    background-image: none;
+  }
+  div.callout-prompt.callout {
+    border-left-color: #333333;
+  }
+  div.callout-prompt.callout-style-default > .callout-header {
+    background-color: rgba(51, 51, 51, 0.13);
+  }
+  div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f328';
+    background-image: none;
+  }
+  div.callout-demonstration.callout {
+    border-left-color: #333333;
+  }
+  div.callout-demonstration.callout-style-default > .callout-header {
+    background-color: rgba(51, 51, 51, 0.13);
+  }
+  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f51b';
+    background-image: none;
+  }
+  div.callout-group.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-group.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0c0';
+    background-image: none;
+  }
   div.callout-warning.callout {
     border-left-color: #A3195B;
   }
@@ -268,9 +256,21 @@
     content: '\f007';
     background-image: none;
   }
+  div.callout-source-check.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-source-check.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f002';
+    background-image: none;
+  }
   </style>
-<meta property="og:title" content="Frage 2: Wofür kann KI verwendet werden? – KI in der Lehre: Beginner">
-<meta property="og:description" content="Möglichkeiten, Grenzen und was an der BFH gilt">
+<meta property="og:title" content="Offloading vs.&nbsp;Outsourcing – KI in der Lehre: Beginner">
+<meta property="og:description" content="Wann unterstützt KI das Denken, wann ersetzt sie es?">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
 <body class="quarto-light">
@@ -278,211 +278,114 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Frage 2: Wofür kann KI verwendet werden?</h1>
-  <p class="subtitle">Möglichkeiten, Grenzen und was an der BFH gilt</p>
+  <h1 class="title">Offloading vs.&nbsp;Outsourcing</h1>
+  <p class="subtitle">Wann unterstützt KI das Denken, wann ersetzt sie es?</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="die-zweite-frage" class="slide level2">
-<h2>Die zweite Frage</h2>
-<div class="r-fit-text">
-<p><strong>Wofür kann KI verwendet werden?</strong></p>
-</div>
-<p>Möglichkeiten, Grenzen, und was an der BFH gilt</p>
+<section id="die-zentrale-frage" class="slide level2">
+<h2>Die zentrale Frage</h2>
+<p>Dieselbe KI-Nutzung kann <strong>produktiv</strong> oder <strong>problematisch</strong> sein.</p>
+<p>Wovon hängt das ab?</p>
 </section>
-<section id="mehr-als-textgenerierung" class="slide level2">
-<h2>Mehr als Textgenerierung</h2>
-<p>Moderne Chatbots sind <strong>keine reinen Textgeneratoren</strong> mehr.</p>
-<p>Sie können:</p>
-<ul>
-<li>Im Internet suchen</li>
-<li>Dateien analysieren (PDFs, Bilder)</li>
-<li>Code ausführen</li>
-<li>Mit externen Diensten interagieren</li>
-</ul>
-</section>
-<section id="fragen-beantworten" class="slide level2">
-<h2>Fragen beantworten</h2>
-
-<img data-src="../../assets/images/fragen-beantworten.png" class="r-stretch"></section>
-<section id="bilder-analysieren" class="slide level2">
-<h2>Bilder analysieren</h2>
-
-<img data-src="../../assets/images/bilder-analysieren.png" class="r-stretch"></section>
-<section id="dokumente-zusammenfassen" class="slide level2">
-<h2>Dokumente zusammenfassen</h2>
-
-<img data-src="../../assets/images/dokumente-zusammenfassen.png" class="r-stretch"></section>
-<section id="output-strukturieren" class="slide level2">
-<h2>Output strukturieren</h2>
-
-<img data-src="../../assets/images/output-strukturieren.png" class="r-stretch"></section>
-<section id="websuche" class="slide level2">
-<h2>Websuche</h2>
-
-<img data-src="../../assets/images/websuche.png" class="r-stretch"></section>
-<section id="datenanalyse" class="slide level2">
-<h2>Datenanalyse</h2>
-
-<img data-src="../../assets/images/datenanalyse.png" class="r-stretch"></section>
-<section id="custom-gpts" class="slide level2">
-<h2>Custom GPTs</h2>
-
-<img data-src="../../assets/images/gpts.png" class="r-stretch"></section>
-<section id="aber-grenzen-und-gefahren" class="slide level2">
-<h2>Aber: Grenzen und Gefahren</h2>
+<section id="zwei-arten-der-ki-nutzung" class="slide level2">
+<h2>Zwei Arten der KI-Nutzung</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="r-fit-text">
-<ul>
-<li><strong>Urheberrecht</strong>: Trainiert mit möglicherweise geschützten Texten</li>
-<li><strong>Bias</strong>: Vorurteile aus Trainingsdaten</li>
-<li><strong>Energieverbrauch</strong>: Hoher Ressourcenverbrauch</li>
-<li><strong>Sycophancy</strong>: Neigung, Nutzende zu bestätigen</li>
-</ul>
-</div>
+<h3 id="offloading">Offloading</h3>
+<p>Du <strong>denkst weiter</strong>, aber lagerst Zwischenschritte aus.</p>
+<p><em>Das Werkzeug unterstützt dich.</em></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="../../assets/images/Pothole.png"></p>
+<h3 id="outsourcing">Outsourcing</h3>
+<p>Du <strong>übergibst das Denken</strong> an das System.</p>
+<p><em>Das Werkzeug ersetzt dich.</em></p>
 </div></div>
 </section>
-<section id="keine-wissensdatenbank" class="slide level2">
-<h2>Keine Wissensdatenbank</h2>
+<section id="ein-beispiel-rechnen" class="slide level2">
+<h2>Ein Beispiel: Rechnen</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="r-fit-text">
-<ul>
-<li>LLMs werden <strong>nicht trainiert, faktisch korrekt</strong> zu sein</li>
-<li>Wir müssen alle Aussagen <strong>kritisch hinterfragen</strong></li>
-<li>LLMs sind <strong>keine Wissensdatenbanken</strong></li>
-<li>Informationen immer anhand externer Quellen überprüfen</li>
-</ul>
-</div>
+<h3 id="offloading-1">Offloading</h3>
+<p>Du rechnest eine Gleichung und notierst Zwischenergebnisse auf Papier.</p>
+<p>→ Dein Kopf ist frei für den nächsten Schritt</p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="../../assets/images/KnowledgeBase.png"></p>
+<h3 id="outsourcing-1">Outsourcing</h3>
+<p>Du tippst die Gleichung in Wolfram Alpha und kopierst das Ergebnis.</p>
+<p>→ Du hast nicht gerechnet</p>
 </div></div>
 </section>
-<section id="ki-an-der-bfh" class="slide level2">
-<h2>KI an der BFH</h2>
-<p>Die BFH hat eine KI-Policy verabschiedet (Mai 2025):</p>
-<p><strong>Die fünf Grundsätze</strong>:</p>
-<ol type="1">
-<li>Transparenz und Nachvollziehbarkeit</li>
-<li>Informationssicherheit und Datenschutz</li>
-<li>Ethische Reflexion und Verantwortlichkeit</li>
-<li>Wissenschaftliche Integrität</li>
-<li>Didaktische Angemessenheit und Chancengleichheit</li>
-</ol>
-</section>
-<section id="deine-verantwortung-als-lehrperson" class="slide level2">
-<h2>Deine Verantwortung als Lehrperson</h2>
-<ul>
-<li>Auswahl und Einsatz von KI-Tools verantworten</li>
-<li>Eignung für Lernziele prüfen</li>
-<li>Studierende transparent informieren</li>
-<li>Festlegen, wie KI-Inhalte zu kennzeichnen sind</li>
-</ul>
-</section>
-<section id="rechtliche-aspekte" class="slide level2">
-<h2>Rechtliche Aspekte</h2>
+<section id="ein-beispiel-schreiben" class="slide level2">
+<h2>Ein Beispiel: Schreiben</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Urheberrecht</strong></p>
-<ul>
-<li>Wer besitzt die Rechte an KI-generierten Inhalten?</li>
-<li>Risiko von Plagiaten</li>
-<li>Deklarationspflicht</li>
-</ul>
+<h3 id="offloading-2">Offloading</h3>
+<p>Du nutzt einen Chatbot, um deine Gliederung zu <strong>überprüfen</strong>.</p>
+<p>→ Du entscheidest, was du änderst</p>
 </div><div class="column" style="width:50%;">
-<p><strong>Datenschutz</strong></p>
-<ul>
-<li>Keine persönlichen Daten eingeben</li>
-<li>Keine sensiblen Informationen</li>
-<li>Kontoeinstellungen prüfen</li>
-</ul>
+<h3 id="outsourcing-2">Outsourcing</h3>
+<p>Du lässt den Chatbot die Einleitung <strong>schreiben</strong>.</p>
+<p>→ Der Chatbot entscheidet, was wichtig ist</p>
 </div></div>
 </section>
-<section id="freigegebene-tools" class="slide level2">
-<h2>Freigegebene Tools</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Tool</th>
-<th>Zugang</th>
-<th>Stärken</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Copilot</td>
-<td>BFH-Lizenz</td>
-<td>Office-Integration, Datenschutz</td>
-</tr>
-<tr class="even">
-<td>ChatGPT</td>
-<td>Persönlich/Abo</td>
-<td>Vielseitig, viele Funktionen</td>
-</tr>
-<tr class="odd">
-<td>Claude</td>
-<td>Persönlich/Abo</td>
-<td>Lange Texte, Reasoning</td>
-</tr>
-</tbody>
-</table>
-<div class="fragment">
-<p><strong>Wo finden?</strong> mybfh → IT-Applikationen → Abgeklärte KI-Tools</p>
-</div>
-</section>
-<section id="datenschutz-copilot" class="slide level2">
-<h2>Datenschutz: Copilot</h2>
-<p>Microsoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:</p>
+<section id="die-entscheidende-frage" class="slide level2">
+<h2>Die entscheidende Frage</h2>
+<blockquote>
+<p>Wer denkt?</p>
+</blockquote>
 <ul>
-<li>Benutzerdaten sind verschlüsselt</li>
-<li>Microsoft verwendet Daten nicht ohne Anweisung</li>
-<li>Für sensible Aufgaben: Copilot bevorzugen</li>
+<li><strong>Offloading</strong>: Du denkst, das Tool unterstützt</li>
+<li><strong>Outsourcing</strong>: Das Tool denkt, du konsumierst</li>
 </ul>
 </section>
-<section id="zusammenfassung-wofür-kann-ki-verwendet-werden" class="slide level2">
-<h2>Zusammenfassung: Wofür kann KI verwendet werden?</h2>
-<p><strong>Möglichkeiten</strong>:</p>
+<section id="warum-ist-das-wichtig" class="slide level2">
+<h2>Warum ist das wichtig?</h2>
+<p>Für **Expert*innen** ist Outsourcing oft unproblematisch:</p>
 <ul>
-<li>Vielseitige Werkzeuge (Text, Bild, Code, Suche)</li>
-<li>Zeitersparnis bei Routineaufgaben</li>
-<li>Unterstützung bei komplexen Aufgaben</li>
+<li>Sie können das Ergebnis beurteilen</li>
+<li>Sie haben die Fähigkeit bereits</li>
 </ul>
-<p><strong>Grenzen</strong>:</p>
+<p>Für <strong>Lernende</strong> ist es komplizierter:</p>
 <ul>
-<li>Keine Faktendatenbank</li>
-<li>Halluzinationen möglich</li>
-<li>Datenschutz beachten</li>
+<li>Lernen braucht kognitive Anstrengung</li>
+<li>Outsourcing umgeht genau diese Anstrengung</li>
 </ul>
 </section>
-<section id="takeaway" class="slide level2">
-<h2>Takeaway</h2>
+<section id="die-expertise-frage" class="slide level2">
+<h2>Die Expertise-Frage</h2>
 <div class="callout callout-key-point callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Antwort auf Frage 2</strong></p>
+<p><strong>Kernaussage</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Wofür kann KI verwendet werden?</strong></p>
-<p>Chatbots sind vielseitige Werkzeuge mit echten Fähigkeiten. Aber sie generieren selbstbewusst auch Falsches.</p>
-<p><strong>Kritische Prüfung ist immer nötig.</strong></p>
+<p>Dieselbe KI-Nutzung kann für Expert*innen <strong>Offloading</strong> sein und für Lernende <strong>Outsourcing</strong>.</p>
 </div>
 </div>
 </div>
+<p>Es kommt darauf an, ob man die Fähigkeit <strong>hat</strong> oder <strong>entwickeln</strong> will.</p>
+</section>
+<section id="aktivität-szenario-karten" class="slide level2">
+<h2>Aktivität: Szenario-Karten</h2>
+<p>Ihr bekommt Szenarien, in denen jemand KI nutzt.</p>
+<p>Diskutiert in Gruppen:</p>
+<ol type="1">
+<li>Ist das eher Offloading oder Outsourcing?</li>
+<li>Was würde es zum anderen machen?</li>
+<li>Für wen wäre dieselbe Nutzung anders zu bewerten?</li>
+</ol>
+{{&lt; timer 20 &gt;}}
 
 
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>KI in der Lehre: Grundlagen</p>
+
 </div>
 </div></div>
 
@@ -536,7 +439,7 @@
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'c/t',
+        slideNumber: 'h.v',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -577,7 +480,7 @@
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
+        navigationMode: 'default',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,

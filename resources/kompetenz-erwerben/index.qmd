@@ -1,6 +1,6 @@
 ---
 title: "Wie man Kompetenz erwirbt"
-subtitle: "Vom Novizen zum Exerten: Die Wissenschaft des Lernens"
+subtitle: "Vom Novizen zum Experten: Die Wissenschaft des Lernens"
 author: 
   - name: Andrew Ellis
     url: https://github.com/awellis
@@ -19,7 +19,7 @@ citation: true
 5. **Echtes Verständnis entsteht** durch tausende anstrengende Übungszyklen mit Vorhersagefehlern
 6. **Wähle deine Werkzeuge mit Bedacht**: Nutze KI, um irrelevante kognitive Belastung zu reduzieren, nicht um essentielles Lernen zu überspringen
 
-## Die Reise vom Anfänger zum Experten
+## Die Reise von Anfänger*innen zu Expert*innen
 
 Wenn wir neue Fähigkeiten erlernen, durchläuft unser Gehirn eine bemerkenswerte Transformation. Das Verständnis dieses Prozesses hilft uns zu erkennen, warum das Auslagern kognitiver Prozesse an KI die Entwicklung echter Expertise verhindern kann – und warum _Expertenwerkzeuge Anfängern aktiv schaden können_.
 
@@ -29,7 +29,7 @@ Nach John Andersons ACT-R-Theorie [@andersonAcquisitionCognitiveSkill1982; @ande
 
 ### 1. **Schwache Methoden** (Anfänger-Stadium)
 
-Schwache Methoden sind domänenübergreifende Problemlösungsstrategien, die Anfänger verwenden, wenn ihnen spezifisches Wissen fehlt:
+Schwache Methoden sind domänenübergreifende Problemlösungsstrategien, die Anfänger*innen verwenden, wenn ihnen spezifisches Wissen fehlt:
 
 - **Mittel-Ziel-Analyse**: `Was ist der Unterschied zwischen meinem aktuellen Stand und dem Ziel?`
 - **Rückwärtsarbeiten**: `Vom Ziel zurück zum Ausgangszustand gehen`
@@ -38,7 +38,7 @@ Schwache Methoden sind domänenübergreifende Problemlösungsstrategien, die Anf
 - **Bergsteigen**: `Immer in Richtung dessen bewegen, was besser erscheint`
 
 ::: {.callout-note}
-## Beispiel: Anfänger löst $3x + 5 = 20$
+## Beispiel: Anfänger*in löst $3x + 5 = 20$
 
 Mit schwachen Methoden:
 
@@ -80,9 +80,9 @@ In dieser Phase beginnen sich **Produktionsregeln** zu bilden. Das sind `WENN-DA
 **Produktionsstärke** bestimmt, welche Regeln ausgelöst werden: Häufig erfolgreiche Regeln werden stärker und schneller aktiviert. Deshalb verbessert Übung sowohl die Geschwindigkeit ALS AUCH die Genauigkeit – stärkere Produktionen setzen sich gegen schwächere Alternativen durch.
 
 ::: {.callout-note}
-## Beispiel: Experte löst $3x + 5 = 20$
+## Beispiel: Expert*in löst $3x + 5 = 20$
 
-Experte sieht die Gleichung und erkennt sofort → $x = 5$
+Expert*in sieht die Gleichung und erkennt sofort → $x = 5$
 
 Wenn nach Erklärung gefragt:
 
@@ -90,7 +90,7 @@ Wenn nach Erklärung gefragt:
 - "Du subtrahierst 5 und teilst durch 3"
 - "Wie wusste ich das? Ich bin mir nicht sicher..."
 
-**Das Wissen ist zu automatischen Prozeduren kompilert.**
+**Das Wissen ist zu automatischen Prozeduren kompiliert.**
 :::
 
 ## Warum kognitive Anstrengung zählt: Die Biologie des Lernens
@@ -155,7 +155,7 @@ Sobald Information durch einen der beiden Wege erworben wurde, muss sie verarbei
 
 Betrachte das Lösen: $(x + 3)(x - 2) = 0$
 
-**Für einen Anfänger** muss jedes Element im Arbeitsgedächtnis gehalten werden:
+**Für Anfänger*innen** muss jedes Element im Arbeitsgedächtnis gehalten werden:
 - Was $x$ bedeutet
 - Die Bedeutung der Klammern
 - Additions- und Subtraktionsoperationen
@@ -165,7 +165,7 @@ Betrachte das Lösen: $(x + 3)(x - 2) = 0$
 
 **Insgesamt: 7+ interagierende Elemente** = Überlastung des Arbeitsgedächtnisses
 
-**Für einen Experten** ist das ein Chunk aus dem Langzeitgedächtnis:
+**Für Expert*innen** ist das ein Chunk aus dem Langzeitgedächtnis:
 - "Faktorisierte Form, also $x = -3$ oder $x = 2$"
 
 **Insgesamt: 1 Chunk** = Minimale Belastung des Arbeitsgedächtnisses
@@ -178,23 +178,18 @@ Betrachte das Lösen: $(x + 3)(x - 2) = 0$
 
 ### Wie Expertise wirklich entsteht
 
-Wie De Groot 1965 erstmals zeigte [@grootThoughtChoiceChess1978; @swellerCognitiveLoadTheory2024], ist Expertise **fächerspezifisch** und resultiert aus **riesigen Mengen fachspezifischer Informationen im Langzeitgedächtnis**. Das ist nicht einfach „mehr Fakten wissen“ – sondern organisierte Wissensstrukturen (Schemata), die Experten ermöglichen:
+Wie De Groot 1965 erstmals zeigte [@grootThoughtChoiceChess1978; @swellerCognitiveLoadTheory2024], ist Expertise **fächerspezifisch** und resultiert aus **riesigen Mengen fachspezifischer Informationen im Langzeitgedächtnis**. Das ist nicht einfach „mehr Fakten wissen", sondern organisierte Wissensstrukturen (Schemata), die Expert*innen ermöglichen:
 
-- **Mehrere Elemente zu Chunks bündeln**
-- **Muster automatisch erkennen**
-- **Prozeduren ohne bewusste Anstrengung abrufen**
-- **Das Arbeitsgedächtnis für höheres Denken freimachen**
+- Mehrere Elemente zu Chunks bündeln
+- Muster automatisch erkennen
+- Prozeduren ohne bewusste Anstrengung abrufen
+- Das Arbeitsgedächtnis für höheres Denken freimachen
 
 ## Das KI-Bypass-Problem
 
 ### Wie KI die kognitive Architektur stört
 
-Das Auslagern kognitiver Prozesse an KI kann das gesamte Lernsystem kurzschließen:
-
-1. **Umgeht Verarbeitung im Arbeitsgedächtnis**: Keine kognitive Anstrengung bedeutet keine Kodierung
-2. **Verhindert Speicherung im Langzeitgedächtnis**: Unverarbeitete Informationen werden nicht gespeichert
-3. **Eliminiert Schemabildung**: Lernende erhalten Antworten, ohne Wissensstrukturen aufzubauen
-4. **Blockiert den Übergang vom Anfänger zum Experten**: Kein Weg von begrenztem zu unbegrenztem Wissen
+Das Auslagern kognitiver Prozesse an KI kann das gesamte Lernsystem kurzschliessen. Ohne die Verarbeitung im Arbeitsgedächtnis findet keine Kodierung statt. Informationen, die nicht verarbeitet werden, werden auch nicht im Langzeitgedächtnis gespeichert. Lernende erhalten Antworten, ohne Wissensstrukturen aufzubauen, und der Weg von Anfänger*innen zu Expert*innen wird blockiert.
 
 ::: {.callout-warning}
 **Das Grundproblem**: KI bietet die Vorteile von Expertise (sofortiger Zugriff auf organisiertes Wissen), ohne den Prozess, der Expertise schafft (Arbeitsgedächtnisanstrengung → Speicherung im Langzeitgedächtnis).
@@ -204,9 +199,9 @@ Das Auslagern kognitiver Prozesse an KI kann das gesamte Lernsystem kurzschließ
 
 ### Die Experten-Anfänger-Unterrichtsfalle
 
-Der gefährlichste Fehler in der Bildung ist anzunehmen, dass Anfänger so lernen sollten, wie Experten arbeiten. Das führt zu dem, was Kirschner [@kirschnerHowTeachingHappens2022] als Verwechslung der **„Epistemologie des Experten mit der Pädagogik für Lernende“** bezeichnet.
+Der gefährlichste Fehler in der Bildung ist anzunehmen, dass Anfänger*innen so lernen sollten, wie Expert*innen arbeiten. Das führt zu dem, was Kirschner [@kirschnerHowTeachingHappens2022] als Verwechslung der **„Epistemologie der Expert*innen mit der Pädagogik für Lernende"** bezeichnet.
 
-**Was Experten tun (Wissen produzieren):**
+**Was Expert*innen tun (Wissen produzieren):**
 
 - Arbeiten von automatisierten Prinzipien aus vorwärts
 - Erkennen tiefe Muster sofort
@@ -214,7 +209,7 @@ Der gefährlichste Fehler in der Bildung ist anzunehmen, dass Anfänger so lerne
 - Erschaffen und entdecken neues Wissen
 - Verarbeiten mehrere Elemente gleichzeitig
 
-**Was Anfänger brauchen (Wissen lernen):**
+**Was Anfänger*innen brauchen (Wissen lernen):**
 
 - Rückwärtsarbeiten mit Mittel-Ziel-Analyse
 - Grundlegende Mustererkennung durch Übung aufbauen
@@ -222,50 +217,39 @@ Der gefährlichste Fehler in der Bildung ist anzunehmen, dass Anfänger so lerne
 - Vorhandenes Wissen rekonstruieren und verstehen
 - Elemente nacheinander verarbeiten, um Überlastung zu vermeiden
 
-### Warum Expertenmethoden Anfängern aktiv schaden
+### Warum Methoden für Expert*innen Anfänger*innen aktiv schaden
 
-Anfängern Expertenwerkzeuge zu geben, ist nicht nur ineffektiv – es ist **aktiv schädlich** für das Lernen:
+Anfänger*innen Werkzeuge für Expert*innen zu geben, ist nicht nur ineffektiv, sondern **aktiv schädlich** für das Lernen:
 
-#### 1. **Mismatch der kognitiven Belastung**
+#### 1. Mismatch der kognitiven Belastung
 
-- **Experten** können viele Elemente verarbeiten, weil sie diese zu Mustern gebündelt haben
-- **Anfänger** werden mit derselben Komplexität überfordert
-- **Ergebnis**: Kognitive Überlastung verhindert jegliches Lernen
+Expert*innen können viele Elemente verarbeiten, weil sie diese zu Mustern gebündelt haben. Anfänger*innen werden mit derselben Komplexität überfordert. Das Ergebnis: Kognitive Überlastung verhindert jegliches Lernen.
 
-#### 2. **Störung der Produktionsregeln**
+#### 2. Störung der Produktionsregeln
 
-- **Experten** haben starke, erfolgreiche Produktionsregeln, die automatisch feuern
-- **Anfänger** müssen diese Regeln durch wiederholte Anwendung schwacher Methoden aufbauen
-- **KI-Abkürzungen** verhindern die notwendige Wiederholung zur Stärkung der Regeln
-- **Ergebnis**: Schwache Regeln entwickeln sich nie, dauerhafte Abhängigkeit bleibt
+Expert*innen haben starke, erfolgreiche Produktionsregeln, die automatisch feuern. Anfänger*innen müssen diese Regeln durch wiederholte Anwendung schwacher Methoden aufbauen. KI-Abkürzungen verhindern die notwendige Wiederholung zur Stärkung der Regeln. Das Ergebnis: Schwache Regeln entwickeln sich nie, dauerhafte Abhängigkeit bleibt.
 
-#### 3. **Schemabildungs-Bypass**
+#### 3. Schemabildungs-Bypass
 
-- **Experten** haben reichhaltige Schemata, aufgebaut durch Erfahrung
-- **Anfänger** müssen diese Schemata Element für Element konstruieren
-- **KI-Antworten** liefern das Ergebnis ohne den Konstruktionsprozess
-- **Ergebnis**: Es entstehen keine Schemata, Transfer auf neue Situationen ist unmöglich
+Expert*innen haben reichhaltige Schemata, aufgebaut durch Erfahrung. Anfänger*innen müssen diese Schemata Element für Element konstruieren. KI-Antworten liefern das Ergebnis ohne den Konstruktionsprozess. Das Ergebnis: Es entstehen keine Schemata, Transfer auf neue Situationen ist unmöglich.
 
-#### 4. **Metakognitive Schädigung**
+#### 4. Metakognitive Schädigung
 
-- **Experten** wissen, wann und warum sie verschiedene Strategien anwenden
-- **Anfänger** entwickeln dieses Bewusstsein durch Überwachung des eigenen Denkens
-- **KI-Abhängigkeit** beseitigt die Notwendigkeit zur Selbstüberwachung
-- **Ergebnis**: Lernende können ihr eigenes Verständnis nicht mehr bewerten
+Expert*innen wissen, wann und warum sie verschiedene Strategien anwenden. Anfänger*innen entwickeln dieses Bewusstsein durch Überwachung des eigenen Denkens. KI-Abhängigkeit beseitigt die Notwendigkeit zur Selbstüberwachung. Das Ergebnis: Lernende können ihr eigenes Verständnis nicht mehr bewerten.
 
 ::: {.callout-warning}
 ## Die Abhängigkeitskaskade
 
-Wenn Anfänger zu früh Expertenwerkzeuge nutzen:
+Wenn Anfänger*innen zu früh Werkzeuge für Expert*innen nutzen:
 
-1. **Anfänglicher Erfolg** schafft falsches Selbstvertrauen
-2. **Schwache Methoden verkümmern** durch Nichtgebrauch
-3. **Problemlösefähigkeiten verschlechtern sich** ohne Übung
-4. **Abhängigkeit vertieft sich**, da interne Fähigkeiten schwinden
-5. **Transfer scheitert**, wenn KI nicht verfügbar ist
-6. **Erlernte Hilflosigkeit** entsteht bei neuen Herausforderungen
+1. Anfänglicher Erfolg schafft falsches Selbstvertrauen
+2. Schwache Methoden verkümmern durch Nichtgebrauch
+3. Problemlösefähigkeiten verschlechtern sich ohne Übung
+4. Abhängigkeit vertieft sich, da interne Fähigkeiten schwinden
+5. Transfer scheitert, wenn KI nicht verfügbar ist
+6. Erlernte Hilflosigkeit entsteht bei neuen Herausforderungen
 
-Das ist nicht nur „kein Lernen“, sondern **Verlernen** vorhandener Fähigkeiten.
+Das ist nicht nur „kein Lernen", sondern **Verlernen** vorhandener Fähigkeiten.
 :::
 
 ### Lehren im Einklang mit dem Gehirn
@@ -278,8 +262,8 @@ Das ist nicht nur „kein Lernen“, sondern **Verlernen** vorhandener Fähigkei
 
 #### Prinzip 2: Kognitive Belastung kalibrieren
 
-- Anfänger brauchen vereinfachte, sequenzielle Darstellung
-- Experten können komplexe, parallele Verarbeitung bewältigen
+- Anfänger*innen brauchen vereinfachte, sequenzielle Darstellung
+- Expert*innen können komplexe, parallele Verarbeitung bewältigen
 - Dasselbe Material muss je nach Expertenniveau unterschiedlich präsentiert werden
 
 #### Prinzip 3: Das „Struggle Window“ schützen
@@ -350,7 +334,7 @@ Das Gehirn nutzt diese Fehler zur Anpassung des Wissens:
 - Keine Vorhersagephase (Lernende generieren keine Erwartungen)
 - Keine Versuch-Phase (es werden keine Lösungen ausprobiert)
 - Keine Fehlerphase (kein Vergleich zwischen Erwartung und Realität)
-- **Ergebnis**: Null Vorhersagefehler = kein Lernsiganl
+- **Ergebnis**: Null Vorhersagefehler = kein Lernsignal
 
 **Das Gehirn hat buchstäblich nichts, woraus es lernen kann**, weil der Vorhersagefehler-Zyklus nie stattfindet.
 
@@ -385,28 +369,28 @@ Jeder Zyklus:
 - Entlastet das Arbeitsgedächtnis für höheres Denken
 - Ermöglicht kreatives Problemlösen durch starke Grundlagen
 
-**So funktioniert Expertise wirklich**: Bei einem Problem konkurrieren mehrere Produktionsregeln. Die Regel mit dem höchsten „Nutzen“ (basierend auf vergangenem Erfolg durch Vorhersagefehler) setzt sich durch. Jede erfolgreiche Anwendung stärkt diese Regel, wodurch sie künftig wahrscheinlicher gewinnt. Deshalb wirken Experten, als „wüssten sie es einfach“ – ihre stärksten Produktionen feuern automatisch.
+**So funktioniert Expertise wirklich**: Bei einem Problem konkurrieren mehrere Produktionsregeln. Die Regel mit dem höchsten „Nutzen“ (basierend auf vergangenem Erfolg durch Vorhersagefehler) setzt sich durch. Jede erfolgreiche Anwendung stärkt diese Regel, wodurch sie künftig wahrscheinlicher gewinnt. Deshalb wirken Expert*innen, als „wüssten sie es einfach": Ihre stärksten Produktionen feuern automatisch.
 
 ### Was wir verlieren, wenn wir die Anstrengung überspringen
 
 ::: {.callout-warning}
 ## Was wir verlieren
 
-1. **Keine Gedächtnisbildung**: Das Gehirn kodiert nicht, was es nicht verarbeitet
-2. **Keine Musterentwicklung**: Können nicht erkennen, was wir nicht geübt haben
-3. **Keine Transferfähigkeit**: Können ungeübte Prinzipien nicht auf neue Kontexte anwenden
-4. **Keine Metakognition**: Entwickeln kein Bewusstsein über das eigene Denken
-5. **Kein Lernen durch Vorhersagefehler**: Der fundamentale Lernmechanismus wird umgangen
+1. Keine Gedächtnisbildung: Das Gehirn kodiert nicht, was es nicht verarbeitet
+2. Keine Musterentwicklung: Wir können nicht erkennen, was wir nicht geübt haben
+3. Keine Transferfähigkeit: Wir können ungeübte Prinzipien nicht auf neue Kontexte anwenden
+4. Keine Metakognition: Wir entwickeln kein Bewusstsein über das eigene Denken
+5. Kein Lernen durch Vorhersagefehler: Der fundamentale Lernmechanismus wird umgangen
 :::
 
 ### Die Expertise-Illusion
 
 Das Auslagern kognitiver Prozesse an KI erzeugt eine gefährliche Illusion:
 
-- **Oberflächenflüssigkeit**: Perfekte Antworten ohne Verständnis
-- **Falsches Selbstvertrauen**: Glauben, es „verstanden zu haben" ohne Übung
-- **Fragiles Wissen**: Bricht ohne KI-Unterstützung zusammen
-- **Begrenzter Transfer**: Kann nicht auf neue Situationen angewandt werden
+- Oberflächenflüssigkeit: perfekte Antworten ohne Verständnis
+- Falsches Selbstvertrauen: der Glaube, es „verstanden zu haben" ohne Übung
+- Fragiles Wissen: bricht ohne KI-Unterstützung zusammen
+- Begrenzter Transfer: das Wissen kann nicht auf neue Situationen angewandt werden
 
 ### Metakognitive Grenzen: Warum wir unser eigenes Lernen schlecht einschätzen
 
@@ -486,7 +470,7 @@ Sogar maschinelle Lernmodelle zeigen dieses Muster:
 ::: {.callout-warning}
 ## Umkehrung des Flynn-Effekts
 
-Seit den 1970er/80er Jahren beobachten Forscher in einigen Ländern einen Rückgang der IQ-Werte. Die Ursachen sind umstritten und wahrscheinlich vielfältig.
+Seit den 1970er/80er Jahren beobachten Forschende in einigen Ländern einen Rückgang der IQ-Werte. Die Ursachen sind umstritten und wahrscheinlich vielfältig.
 
 Eine Hypothese [@oakleyMemoryParadoxWhy2025]: Der Wandel von Auswendiglernen zu "nachschlagen können" könnte eine Rolle spielen. Diese Interpretation ist kontrovers und nicht abschliessend belegt.
 
@@ -541,13 +525,11 @@ Merkst du, wie sich dein Verständnis je nach Modus unterschieden hat? Das ist d
 - Was würde sich ändern, wenn wir Anstrengung als Zeichen von Wachstum statt als Scheitern betrachten?
 - Wie kannst du den Vorhersagefehler-Zyklus in deinem eigenen Lernen schützen?
 
----
-
 ## Schnellreferenz: Wie Theorien zusammenwirken
 
 ::: {.panel-tabset}
 ## Schwach → Stark Methoden
-| Schwache Methoden (Anfänger) | Starke Methoden (Experten) |
+| Schwache Methoden (Anfänger*innen) | Starke Methoden (Expert*innen) |
 |------------------------------|----------------------------|
 | Mittel-Ziel-Analyse | Mustererkennung |
 | Rückwärtsarbeiten vom Ziel | Vorwärtsverkettung aus Prinzipien |

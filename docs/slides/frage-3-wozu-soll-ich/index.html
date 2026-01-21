@@ -89,16 +89,40 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-group.callout {
+div.callout-warning.callout {
   border-left-color: #A3195B;
 }
-div.callout-group.callout-style-default > .callout-header {
+div.callout-warning.callout-style-default > .callout-header {
   background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
+  content: '\f06a';
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
   background-image: none;
 }
 div.callout-source-check.callout {
@@ -125,42 +149,6 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
   content: '\f51b';
   background-image: none;
 }
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
-div.callout-key-point.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-key-point.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f005';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
-  background-image: none;
-}
 div.callout-reflect.callout {
   border-left-color: #D4A03E;
 }
@@ -185,16 +173,16 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
   content: '\f075';
   background-image: none;
 }
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0c3';
+  content: '\f005';
   background-image: none;
 }
 div.callout-individual.callout {
@@ -209,16 +197,28 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
   content: '\f007';
   background-image: none;
 }
-div.callout-warning.callout {
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\e2ca';
+  background-image: none;
+}
+div.callout-group.callout {
   border-left-color: #A3195B;
 }
-div.callout-warning.callout-style-default > .callout-header {
+div.callout-group.callout-style-default > .callout-header {
   background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
+  content: '\f0c0';
   background-image: none;
 }
 </style>
@@ -277,6 +277,11 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
  <span class="menu-text">Dokumente</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-dokumente">    
+        <li>
+    <a class="dropdown-item" href="../../resources/weiterfuehrende-ressourcen/index.html">
+ <span class="dropdown-text">Weiterführende Ressourcen</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
         <li>
     <a class="dropdown-item" href="https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf">
  <span class="dropdown-text">KI Policy der BFH</span></a>
@@ -430,7 +435,7 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
   </ul></li>
   <li><a href="#die-entscheidende-frage" id="toc-die-entscheidende-frage" class="nav-link" data-scroll-target="#die-entscheidende-frage">Die entscheidende Frage</a></li>
   <li><a href="#matrix-wer-macht-was" id="toc-matrix-wer-macht-was" class="nav-link" data-scroll-target="#matrix-wer-macht-was">Matrix: Wer macht was?</a></li>
-  <li><a href="#das-produktivitäts-lern-paradox" id="toc-das-produktivitäts-lern-paradox" class="nav-link" data-scroll-target="#das-produktivitäts-lern-paradox">Das Produktivitäts-Lern-Paradox</a></li>
+  <li><a href="#der-produktivitäts-lern-zielkonflikt" id="toc-der-produktivitäts-lern-zielkonflikt" class="nav-link" data-scroll-target="#der-produktivitäts-lern-zielkonflikt">Der Produktivitäts-Lern-Zielkonflikt</a></li>
   <li><a href="#aktivität-szenario-karten" id="toc-aktivität-szenario-karten" class="nav-link" data-scroll-target="#aktivität-szenario-karten">Aktivität: Szenario-Karten</a></li>
   <li><a href="#leitfragen-für-deine-praxis" id="toc-leitfragen-für-deine-praxis" class="nav-link" data-scroll-target="#leitfragen-für-deine-praxis">Leitfragen für deine Praxis</a></li>
   <li><a href="#takeaway" id="toc-takeaway" class="nav-link" data-scroll-target="#takeaway">Takeaway</a></li>
@@ -498,7 +503,7 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
 <li><strong>Offloading</strong>: Du externalisierst, aber denkst selbst weiter</li>
 <li><strong>Outsourcing</strong>: Du überträgst die Denkarbeit</li>
 <li><strong>Die entscheidende Frage</strong>: Ist das, was ausgelagert wird, etwas, das die Person lernen sollte?</li>
-<li><strong>Das Paradox</strong>: Dieselbe KI-Nutzung kann für Experten produktiv und für Lernende schädlich sein</li>
+<li><strong>Der Zielkonflikt</strong>: Dieselbe KI-Nutzung kann für Expert*innen produktiv und für Lernende schädlich sein</li>
 </ol>
 </section>
 </section>
@@ -585,20 +590,24 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
 </tbody>
 </table>
 </section>
-<section id="das-produktivitäts-lern-paradox" class="level2">
-<h2 class="anchored" data-anchor-id="das-produktivitäts-lern-paradox">Das Produktivitäts-Lern-Paradox</h2>
+<section id="der-produktivitäts-lern-zielkonflikt" class="level2">
+<h2 class="anchored" data-anchor-id="der-produktivitäts-lern-zielkonflikt">Der Produktivitäts-Lern-Zielkonflikt</h2>
 <div class="callout callout-style-default callout-reflect callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Reflect</span>Das zentrale Problem
+<span class="screen-reader-only">Reflect</span>Kein Paradox, sondern vorhersagbar
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>KI macht Aufgaben <strong>einfacher</strong>. Aber Lernen braucht <strong>kognitive Anstrengung</strong>.</p>
-<p>Wenn Studierende auslagern, was sie üben sollten, bekommen sie das <strong>Produkt</strong>, aber nicht den <strong>Lerneffekt</strong>.</p>
+<p>Der Konflikt zwischen Produktivität und Lernen ist kein Paradox. Er folgt direkt aus dem, was wir über kognitive Architektur wissen:</p>
+<ul>
+<li>**KI-Tools sind für Expert*innen gemacht**: Sie steigern Produktivität, indem sie kognitive Arbeit übernehmen.</li>
+<li><strong>Lernen erfordert kognitive Anstrengung</strong>: Das Gehirn lernt durch Vorhersagefehler, die nur entstehen, wenn man selbst denkt.</li>
+<li><strong>Wenn Studierende auslagern, was sie üben sollten</strong>: Sie bekommen das <strong>Produkt</strong>, aber nicht den <strong>Lerneffekt</strong>.</li>
+</ul>
 <p>Für Lehrende ist Outsourcing oft produktiv (Arbeit, nicht Lernen). Für Studierende ist Outsourcing oft problematisch (sie brauchen die Übung).</p>
 </div>
 </div>
@@ -633,7 +642,7 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>KI-Tools sind für <strong>Experten</strong> gemacht. Sie steigern Produktivität.</p>
+<p>KI-Tools sind für **Expert*innen** gemacht. Sie steigern Produktivität.</p>
 <p>Für <strong>Lernende</strong> ist die Situation komplizierter: Lernen braucht kognitive Anstrengung. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.</p>
 <p><strong>Die Frage ist nicht “Darf man KI nutzen?”, sondern “Wer lernt dabei was?”</strong></p>
 </div>

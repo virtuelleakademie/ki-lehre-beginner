@@ -20,13 +20,13 @@ sidebar: uebungen
 Du kannst am Verhalten nicht erkennen, ob jemand offloaded oder outsourced. Die Unterscheidung liegt im Kopf, nicht in der Handlung.
 :::
 
-**Beispiel**: "Ein Student nutzt ChatGPT für seine Hausarbeit."
+**Beispiel**: "Eine studierende Person nutzt ChatGPT für ihre Hausarbeit."
 
 Das sagt uns nichts. Wir wissen nicht:
 
-- Liest er die Ausgabe kritisch?
-- Vergleicht er sie mit seinem eigenen Verständnis?
-- Oder kopiert er einfach?
+- Liest sie die Ausgabe kritisch?
+- Vergleicht sie diese mit ihrem eigenen Verständnis?
+- Oder kopiert sie einfach?
 
 ## Aktivität
 
@@ -46,8 +46,6 @@ Beantwortet für jedes Szenario drei Fragen:
 2. **Was würde das zu Outsourcing machen?**
 3. **Was müsstet ihr wissen, um den Unterschied zu erkennen?**
 
----
-
 #### Szenario 1: Zwischenergebnisse notieren
 
 Eine Studentin notiert Zwischenschritte beim Lösen einer Gleichung auf Papier.
@@ -60,21 +58,17 @@ Eine Studentin notiert Zwischenschritte beim Lösen einer Gleichung auf Papier.
 - Macht es einen Unterschied, ob sie die notierten Schritte versteht?
 :::
 
----
-
 #### Szenario 2: GPS-Navigation
 
-Ein Taxifahrer nutzt GPS-Navigation in einer Stadt, die er gut kennt.
+Eine Person, die Taxi fährt, nutzt GPS-Navigation in einer Stadt, die sie gut kennt.
 
 ::: {.pro-tip collapse="true"}
 ## Diskussionsanstösse
 
-- Nutzt er GPS als Backup oder als Ersatz für sein Wissen?
-- Was wäre bei einem Touristen in derselben Stadt?
+- Nutzt sie GPS als Backup oder als Ersatz für ihr Wissen?
+- Was wäre bei Touristen in derselben Stadt?
 - Verändert die Expertise die Kategorie?
 :::
-
----
 
 #### Szenario 3: Chatbot für E-Mail
 
@@ -88,35 +82,29 @@ Eine Dozentin bittet einen Chatbot, eine E-Mail an Studierende zu formulieren.
 - Ist "Feedback geben" eine Fähigkeit, die sie pflegen sollte?
 :::
 
----
-
 #### Szenario 4: Code-Debugging
 
-Ein Informatik-Student lässt einen Chatbot seinen fehlerhaften Code analysieren.
+Eine Person im Informatik-Studium lässt einen Chatbot ihren fehlerhaften Code analysieren.
 
 ::: {.pro-tip collapse="true"}
 ## Diskussionsanstösse
 
-- Liest er die Erklärung oder nur die Lösung?
-- Könnte er den Fehler beim nächsten Mal selbst finden?
-- Ist Debugging eine Fähigkeit, die er entwickeln sollte?
+- Liest sie die Erklärung oder nur die Lösung?
+- Könnte sie den Fehler beim nächsten Mal selbst finden?
+- Ist Debugging eine Fähigkeit, die sie entwickeln sollte?
 :::
-
----
 
 #### Szenario 5: Zusammenfassung lesen
 
-Ein Student lässt sich einen Fachartikel von einem Chatbot zusammenfassen und liest nur die Zusammenfassung.
+Eine studierende Person lässt sich einen Fachartikel von einem Chatbot zusammenfassen und liest nur die Zusammenfassung.
 
 ::: {.pro-tip collapse="true"}
 ## Diskussionsanstösse
 
-- Was wäre, wenn er die Zusammenfassung nutzt, um zu entscheiden, ob er den Artikel ganz liest?
-- Was wäre, wenn er die Zusammenfassung als Ersatz für das Lesen nutzt?
-- Ist "wissenschaftliche Texte lesen" eine Fähigkeit, die er entwickeln sollte?
+- Was wäre, wenn sie die Zusammenfassung nutzt, um zu entscheiden, ob sie den Artikel ganz liest?
+- Was wäre, wenn sie die Zusammenfassung als Ersatz für das Lesen nutzt?
+- Ist "wissenschaftliche Texte lesen" eine Fähigkeit, die sie entwickeln sollte?
 :::
-
----
 
 #### Szenario 6: Rechtschreibprüfung
 

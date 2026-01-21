@@ -85,7 +85,7 @@ Du lässt den Chatbot die Einleitung **schreiben**.
 
 ## Warum ist das wichtig?
 
-Für **Experten** ist Outsourcing oft unproblematisch:
+Für **Expert*innen** ist Outsourcing oft unproblematisch:
 
 - Sie können das Ergebnis beurteilen
 - Sie haben die Fähigkeit bereits
@@ -98,7 +98,7 @@ Für **Lernende** ist es komplizierter:
 ## Die Expertise-Frage
 
 ::: {.key-point}
-Dieselbe KI-Nutzung kann für Experten **Offloading** sein und für Lernende **Outsourcing**.
+Dieselbe KI-Nutzung kann für Expert*innen **Offloading** sein und für Lernende **Outsourcing**.
 :::
 
 Es kommt darauf an, ob man die Fähigkeit **hat** oder **entwickeln** will.
