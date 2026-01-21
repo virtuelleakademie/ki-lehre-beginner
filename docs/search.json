@@ -508,7 +508,7 @@
     "href": "slides/frage-1-was-ist-ki/slides.html#mini-experiment",
     "title": "Frage 1: Was ist KI?",
     "section": "Mini-Experiment",
-    "text": "Mini-Experiment\n\n\n\n\n\n\nAusprobieren\n\n\nStelle dieselbe Frage zweimal an einen Chatbot:\n\nDirekt: “Was ist die Antwort auf X?”\nMit Anleitung: “Denke Schritt für Schritt. Was ist die Antwort auf X?”\n\nVergleiche die Antworten.\n{{&lt; timer 5 &gt;}}"
+    "text": "Mini-Experiment\n\n\n\n\n\n\nAusprobieren\n\n\nStelle dieselbe komplexe Frage zweimal an einen Chatbot:\n\nDirekt: “Was ist die Antwort?”\nMit Anleitung: “Denke Schritt für Schritt durch dieses Problem.”\n\nBeobachte den Unterschied in der Antwortqualität.\n{{&lt; timer 5 &gt;}}"
   },
   {
     "objectID": "slides/frage-1-was-ist-ki/slides.html#wie-denken-funktioniert",
@@ -522,21 +522,21 @@
     "href": "slides/frage-1-was-ist-ki/slides.html#kurzer-abruf",
     "title": "Frage 1: Was ist KI?",
     "section": "Kurzer Abruf",
-    "text": "Kurzer Abruf\n\n\n\n\n\n\nOhne auf deine Notizen zu schauen\n\n\nBeantworte in 1-2 Sätzen:\n\nWie generieren Sprachmodelle Text?\nWarum können sie faktisch falsche Aussagen machen?\nWie hilft “Denke Schritt für Schritt”?\n\n{{&lt; timer 2 &gt;}}"
+    "text": "Kurzer Abruf\n\n\n\n\n\n\nOhne auf deine Notizen zu schauen\n\n\nBeantworte in 1-2 Sätzen:\n\nWie generieren Sprachmodelle Text?\nWarum hilft “Schritt für Schritt denken” bei Menschen UND bei KI?\nWas ist der Unterschied zwischen den beiden?\n\n{{&lt; timer 2 &gt;}}"
   },
   {
     "objectID": "slides/frage-1-was-ist-ki/slides.html#zusammenfassung-was-ist-ki",
     "href": "slides/frage-1-was-ist-ki/slides.html#zusammenfassung-was-ist-ki",
     "title": "Frage 1: Was ist KI?",
     "section": "Zusammenfassung: Was ist KI?",
-    "text": "Zusammenfassung: Was ist KI?\n\n\n\n\n\n\n\nAspekt\nWas wir beobachten\n\n\n\n\nTextgenerierung\nVorhersage des nächsten Worts, basierend auf Kontext\n\n\nTraining\nOptimiert auf Plausibilität, nicht auf Wahrheit\n\n\n“Denken”\nMehr Zwischenschritte = mehr Kontext = bessere Ergebnisse\n\n\nGrenzen\nKann überzeugend Falsches produzieren"
+    "text": "Zusammenfassung: Was ist KI?\n\n\n\n\n\n\n\nAspekt\nWas wir beobachten\n\n\n\n\nTextgenerierung\nVorhersage des nächsten Worts, basierend auf Kontext\n\n\nTraining\nOptimiert auf Plausibilität, nicht auf Wahrheit\n\n\n“Denken”\nZwischenschritte erzeugen Kontext, der weitere Vorhersagen beeinflusst\n\n\nParallele zum Menschen\nExternalisierung erhöht Erfolgswahrscheinlichkeit bei beiden\n\n\nUnterschied\nMensch: Bedeutung verstehen. KI: Statistische Muster"
   },
   {
     "objectID": "slides/frage-1-was-ist-ki/slides.html#takeaway",
     "href": "slides/frage-1-was-ist-ki/slides.html#takeaway",
     "title": "Frage 1: Was ist KI?",
     "section": "Takeaway",
-    "text": "Takeaway\n\n\n\n\n\n\nAntwort auf Frage 1\n\n\nWas ist KI?\nSprachmodelle generieren Text durch Vorhersage des nächsten Worts. Sie sind auf Plausibilität trainiert, nicht auf Wahrheit. Deshalb können sie überzeugend klingen, aber faktisch falsch sein."
+    "text": "Takeaway\n\n\n\n\n\n\nAntwort auf Frage 1\n\n\nWas ist KI?\nSprachmodelle generieren Text durch Vorhersage des nächsten Worts. “Denken” funktioniert durch Zwischenschritte, die weiteren Kontext liefern.\nDas ist funktional ähnlich zu unserem lauten Denken: Externalisierung erhöht die Erfolgswahrscheinlichkeit. Aber der Mechanismus ist verschieden: Wir verstehen Bedeutung, KI verarbeitet statistische Muster."
   },
   {
     "objectID": "exercises/offloading-outsourcing/index.html",
@@ -1373,5 +1373,75 @@
     "title": "Interaktive Demos",
     "section": "Technische Hinweise",
     "text": "Technische Hinweise\n\n\n\n\n\n\nPro-tipFür Facilitators\n\n\n\n\n\nToken-Vorhersage: Läuft komplett im Browser (OJS). Keine Internetverbindung für die Demo selbst nötig.\nChat-Interface: Benötigt Internetverbindung. Läuft auf HuggingFace Spaces. API-Kosten fallen an (~$0.50-2.00 pro Workshop-Durchlauf).\nBei technischen Problemen: Teilnehmende können auf chat.openai.com oder claude.ai ausweichen.\n\n\n\n← Zurück zum Workshop"
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#denkpause-ein-puzzle",
+    "href": "slides/frage-1-was-ist-ki/slides.html#denkpause-ein-puzzle",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Denkpause: Ein Puzzle",
+    "text": "Denkpause: Ein Puzzle\n\n\n\n\n\n\nDer Stundenplan-Konflikt\n\n\nEine Studentin behauptet: “Ich kann das Data-Science-Minor nicht abschliessen, weil STAT201 nur im Herbst angeboten wird, aber die Voraussetzung MATH150 mit meinem Pflichtseminar PSYC300 im Frühling kollidiert.”\n\n\n\n\n\n\n\n\nKurs\nSemester\nVoraussetzung\n\n\n\n\nMATH150 (Analysis)\nNur Frühling\nKeine\n\n\nSTAT201 (Statistik)\nNur Herbst\nMATH150\n\n\nSTAT350 (Datenanalyse)\nNur Frühling\nSTAT201\n\n\nPSYC300 (Forschungsseminar)\nNur Frühling\nPflicht für Psychologie-Major\n\n\n\nDie Studentin ist im Psychologie-Major und beginnt dieses Frühling. Das Minor erfordert: MATH150 → STAT201 → STAT350.\nHat sie recht?"
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#laut-denken",
+    "href": "slides/frage-1-was-ist-ki/slides.html#laut-denken",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Laut denken",
+    "text": "Laut denken\n\n\n\n\n\n\nEinzelarbeit\n\n\nArbeite dieses Problem laut denkend durch. Sprich jeden Schritt aus:\n\n“Im ersten Frühling kann sie…”\n“Das bedeutet, im Herbst…”\n“Also im zweiten Frühling…”\n\nArbeite mit einer Nachbarperson: Eine Person denkt laut, die andere hört zu.\n{{&lt; timer 5 &gt;}}"
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#die-lösung",
+    "href": "slides/frage-1-was-ist-ki/slides.html#die-lösung",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Die Lösung",
+    "text": "Die Lösung\nHast du bemerkt, dass die Studentin einen Konflikt behauptet hat, der vielleicht nicht existiert?\n\n\n\n\nSemester\nKurse\nStand danach\n\n\n\n\nFrühling 1\nMATH150 + PSYC300 (kein Konflikt?)\nMATH150 ✓\n\n\nHerbst 1\nSTAT201 (Voraussetzung erfüllt)\nSTAT201 ✓\n\n\nFrühling 2\nSTAT350 (Voraussetzung erfüllt)\nMinor ✓\n\n\n\nDie Studentin hat unrecht. Das Minor ist in 4 Semestern machbar."
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#warum-hat-lautes-denken-geholfen",
+    "href": "slides/frage-1-was-ist-ki/slides.html#warum-hat-lautes-denken-geholfen",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Warum hat lautes Denken geholfen?",
+    "text": "Warum hat lautes Denken geholfen?\n\nDu musstest Schritt für Schritt vorgehen\nJeder Schritt produzierte ein Ergebnis, das du für den nächsten brauchtest\nDu konntest nicht alles “auf einmal” im Kopf lösen\n\n\nDas Aussprechen erzwingt Linearisierung: Du kannst nur eine Sache gleichzeitig sagen. Das strukturiert dein Denken."
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#was-passiert-beim-lauten-denken",
+    "href": "slides/frage-1-was-ist-ki/slides.html#was-passiert-beim-lauten-denken",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Was passiert beim lauten Denken?",
+    "text": "Was passiert beim lauten Denken?\n\nDu produzierst einen Zwischenschritt verbal\nDieser Schritt wird Input für dein weiteres Denken\nDu hörst dich selbst und kannst korrigieren, wenn etwas nicht stimmt\n\n\nDeine verbale Ausgabe beeinflusst die Wahrscheinlichkeit, dass du zum richtigen Ergebnis kommst."
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#und-bei-ki-denken",
+    "href": "slides/frage-1-was-ist-ki/slides.html#und-bei-ki-denken",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Und bei KI “Denken”?",
+    "text": "Und bei KI “Denken”?\nWenn ein Chatbot “Schritt für Schritt denkt”:\n\nEr generiert Tokens (Wörter, Satzteile)\nDiese Tokens werden Teil des Kontexts für die nächste Vorhersage\nMehr Kontext = andere Wahrscheinlichkeitsverteilung für das nächste Token\n\n\nDie generierten Zwischenschritte beeinflussen die Wahrscheinlichkeit, dass die finale Antwort korrekt ist."
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#die-parallele",
+    "href": "slides/frage-1-was-ist-ki/slides.html#die-parallele",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Die Parallele",
+    "text": "Die Parallele\n\n\n\n\n\n\nZwischenprodukte verändern das Ergebnis\n\n\nMensch: Verbale Ausgabe → wird Input → beeinflusst weiteres Denken\nKI: Generierte Tokens → werden Kontext → beeinflussen weitere Vorhersagen\nIn beiden Fällen erhöht das Externalisieren von Zwischenschritten die Wahrscheinlichkeit, das gewünschte Ergebnis zu erreichen."
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#der-unterschied",
+    "href": "slides/frage-1-was-ist-ki/slides.html#der-unterschied",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Der Unterschied",
+    "text": "Der Unterschied\nAber der Mechanismus ist verschieden:\n\n\n\n\n\n\n\nMensch\nKI\n\n\n\n\nVersteht die Bedeutung\nVerarbeitet statistische Muster\n\n\nBemerkt: “Das klingt falsch”\nGeneriert kohärentere Fortsetzungen\n\n\nKorrigiert bewusst\n“Korrigiert” durch bedingte Wahrscheinlichkeiten\n\n\n\n\nFunktional ähnlich, mechanistisch verschieden.\nWir sollten nicht behaupten, die KI “denkt wie wir”. Aber wir können verstehen, warum ähnliche Strategien bei beiden funktionieren."
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#von-externalisierung-zu-auslagerung",
+    "href": "slides/frage-1-was-ist-ki/slides.html#von-externalisierung-zu-auslagerung",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Von Externalisierung zu Auslagerung",
+    "text": "Von Externalisierung zu Auslagerung\nWir haben gesehen:\n\nLautes Denken = Externalisierung, die UNS hilft zu denken\nKI “Denken” = Externalisierung, die der KI hilft zu generieren\n\n\nAber was passiert, wenn wir die KI für uns denken lassen?\nDann externalisieren wir nicht mehr unser eigenes Denken. Wir delegieren das Denken."
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/slides.html#zwei-szenarien",
+    "href": "slides/frage-1-was-ist-ki/slides.html#zwei-szenarien",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Zwei Szenarien",
+    "text": "Zwei Szenarien\nStell dir vor, du gibst das Stundenplan-Problem einem Chatbot:\nSzenario A: “Kann diese Studentin das Minor abschliessen?”\nSzenario B: “Denke Semester für Semester durch, welche Kurse möglich sind.”\n\nIn beiden Fällen bekommst du eine Antwort.\nAber was ist mit deiner kognitiven Arbeit passiert?"
   }
 ]

@@ -114,28 +114,113 @@ Das Modell "glaubt", es weiss etwas, obwohl es das nicht tut.
 Quelle: [Anthropic Research: Tracing Thoughts](https://www.anthropic.com/research/tracing-thoughts-language-model)
 :::
 
-## Chain-of-Thought "Denken"
+## Denkpause: Ein Puzzle
 
-Explizites Nachdenken verbessert die Ergebnisse:
+::: {.scenario}
+## Der Stundenplan-Konflikt
 
-- "Denke Schritt für Schritt"
-- Der Chatbot zeigt seinen "Denkprozess"
-- Besonders hilfreich bei komplexen Aufgaben
+Eine Studentin behauptet: "Ich kann das Data-Science-Minor nicht abschliessen, weil STAT201 nur im Herbst angeboten wird, aber die Voraussetzung MATH150 mit meinem Pflichtseminar PSYC300 im Frühling kollidiert."
 
-## Beispiel: 9.11 vs 9.8
+| Kurs | Semester | Voraussetzung |
+|------|----------|---------------|
+| MATH150 (Analysis) | Nur Frühling | Keine |
+| STAT201 (Statistik) | Nur Herbst | MATH150 |
+| STAT350 (Datenanalyse) | Nur Frühling | STAT201 |
+| PSYC300 (Forschungsseminar) | Nur Frühling | Pflicht für Psychologie-Major |
 
-**Frage**: "Was ist grösser: 9.11 oder 9.8?"
+Die Studentin ist im Psychologie-Major und beginnt dieses Frühling. Das Minor erfordert: MATH150 → STAT201 → STAT350.
 
-<br>
+**Hat sie recht?**
+:::
 
-**Ohne Anleitung**: Manchmal falsche Antwort
+## Laut denken
 
-**Mit "Denke Schritt für Schritt"**: Meist richtig
+::: {.experiment}
+## Einzelarbeit
 
-<br>
+Arbeite dieses Problem **laut denkend** durch. Sprich jeden Schritt aus:
+
+- "Im ersten Frühling kann sie..."
+- "Das bedeutet, im Herbst..."
+- "Also im zweiten Frühling..."
+
+Arbeite mit einer Nachbarperson: Eine Person denkt laut, die andere hört zu.
+
+{{< timer 5 >}}
+:::
+
+## Die Lösung
+
+Hast du bemerkt, dass die Studentin einen Konflikt **behauptet** hat, der vielleicht nicht existiert?
 
 ::: {.fragment}
-Warum hilft das? Mehr generierte Tokens bedeuten mehr Kontext für die nachfolgenden Vorhersagen.
+| Semester | Kurse | Stand danach |
+|----------|-------|--------------|
+| Frühling 1 | MATH150 + PSYC300 (kein Konflikt?) | MATH150 ✓ |
+| Herbst 1 | STAT201 (Voraussetzung erfüllt) | STAT201 ✓ |
+| Frühling 2 | STAT350 (Voraussetzung erfüllt) | Minor ✓ |
+
+**Die Studentin hat unrecht.** Das Minor ist in 4 Semestern machbar.
+:::
+
+## Warum hat lautes Denken geholfen?
+
+- Du musstest **Schritt für Schritt** vorgehen
+- Jeder Schritt **produzierte ein Ergebnis**, das du für den nächsten brauchtest
+- Du konntest nicht alles "auf einmal" im Kopf lösen
+
+::: {.fragment}
+Das Aussprechen erzwingt **Linearisierung**: Du kannst nur eine Sache gleichzeitig sagen. Das strukturiert dein Denken.
+:::
+
+## Was passiert beim lauten Denken?
+
+1. Du **produzierst** einen Zwischenschritt verbal
+2. Dieser Schritt wird **Input** für dein weiteres Denken
+3. Du hörst dich selbst und kannst **korrigieren**, wenn etwas nicht stimmt
+
+::: {.fragment}
+Deine verbale Ausgabe **beeinflusst die Wahrscheinlichkeit**, dass du zum richtigen Ergebnis kommst.
+:::
+
+## Und bei KI "Denken"?
+
+Wenn ein Chatbot "Schritt für Schritt denkt":
+
+1. Er **generiert** Tokens (Wörter, Satzteile)
+2. Diese Tokens werden **Teil des Kontexts** für die nächste Vorhersage
+3. Mehr Kontext = **andere Wahrscheinlichkeitsverteilung** für das nächste Token
+
+::: {.fragment}
+Die generierten Zwischenschritte **beeinflussen die Wahrscheinlichkeit**, dass die finale Antwort korrekt ist.
+:::
+
+## Die Parallele
+
+::: {.key-point}
+## Zwischenprodukte verändern das Ergebnis
+
+**Mensch**: Verbale Ausgabe → wird Input → beeinflusst weiteres Denken
+
+**KI**: Generierte Tokens → werden Kontext → beeinflussen weitere Vorhersagen
+
+In beiden Fällen erhöht das Externalisieren von Zwischenschritten die Wahrscheinlichkeit, das gewünschte Ergebnis zu erreichen.
+:::
+
+## Der Unterschied
+
+Aber der **Mechanismus** ist verschieden:
+
+| Mensch | KI |
+|--------|-----|
+| Versteht die Bedeutung | Verarbeitet statistische Muster |
+| Bemerkt: "Das klingt falsch" | Generiert kohärentere Fortsetzungen |
+| Korrigiert bewusst | "Korrigiert" durch bedingte Wahrscheinlichkeiten |
+
+::: {.fragment}
+**Funktional ähnlich, mechanistisch verschieden.**
+
+Wir sollten nicht behaupten, die KI "denkt wie wir". Aber wir können verstehen, warum ähnliche Strategien bei beiden funktionieren.
 :::
 
 ## Mini-Experiment
@@ -143,24 +228,41 @@ Warum hilft das? Mehr generierte Tokens bedeuten mehr Kontext für die nachfolge
 ::: {.experiment}
 ## Ausprobieren
 
-Stelle dieselbe Frage zweimal an einen Chatbot:
+Stelle dieselbe komplexe Frage zweimal an einen Chatbot:
 
-1. Direkt: "Was ist die Antwort auf X?"
-2. Mit Anleitung: "Denke Schritt für Schritt. Was ist die Antwort auf X?"
+1. Direkt: "Was ist die Antwort?"
+2. Mit Anleitung: "Denke Schritt für Schritt durch dieses Problem."
 
-Vergleiche die Antworten.
+Beobachte den Unterschied in der Antwortqualität.
 
 {{< timer 5 >}}
 :::
 
-## Wie "Denken" funktioniert
+## Von Externalisierung zu Auslagerung
 
-::: {.key-point}
-## Kontext erweitert die Vorhersage
+Wir haben gesehen:
 
-"Denken" verbessert die Ergebnisse durch mehr Zwischenschritte.
+- **Lautes Denken** = Externalisierung, die UNS hilft zu denken
+- **KI "Denken"** = Externalisierung, die der KI hilft zu generieren
 
-Jeder Zwischenschritt liefert zusätzlichen Kontext, der die nachfolgenden Token-Vorhersagen beeinflusst.
+::: {.fragment}
+Aber was passiert, wenn wir **die KI für uns denken lassen**?
+
+Dann externalisieren wir nicht mehr unser eigenes Denken. Wir **delegieren** das Denken.
+:::
+
+## Zwei Szenarien
+
+Stell dir vor, du gibst das Stundenplan-Problem einem Chatbot:
+
+**Szenario A**: "Kann diese Studentin das Minor abschliessen?"
+
+**Szenario B**: "Denke Semester für Semester durch, welche Kurse möglich sind."
+
+::: {.fragment}
+In beiden Fällen bekommst du eine Antwort.
+
+Aber was ist mit **deiner** kognitiven Arbeit passiert?
 :::
 
 ## Kurzer Abruf
@@ -171,8 +273,8 @@ Jeder Zwischenschritt liefert zusätzlichen Kontext, der die nachfolgenden Token
 Beantworte in 1-2 Sätzen:
 
 1. Wie generieren Sprachmodelle Text?
-2. Warum können sie faktisch falsche Aussagen machen?
-3. Wie hilft "Denke Schritt für Schritt"?
+2. Warum hilft "Schritt für Schritt denken" bei Menschen UND bei KI?
+3. Was ist der Unterschied zwischen den beiden?
 
 {{< timer 2 >}}
 :::
@@ -183,8 +285,9 @@ Beantworte in 1-2 Sätzen:
 |--------|----------|
 | Textgenerierung | Vorhersage des nächsten Worts, basierend auf Kontext |
 | Training | Optimiert auf Plausibilität, nicht auf Wahrheit |
-| "Denken" | Mehr Zwischenschritte = mehr Kontext = bessere Ergebnisse |
-| Grenzen | Kann überzeugend Falsches produzieren |
+| "Denken" | Zwischenschritte erzeugen Kontext, der weitere Vorhersagen beeinflusst |
+| Parallele zum Menschen | Externalisierung erhöht Erfolgswahrscheinlichkeit bei beiden |
+| Unterschied | Mensch: Bedeutung verstehen. KI: Statistische Muster |
 
 ## Takeaway
 
@@ -193,5 +296,7 @@ Beantworte in 1-2 Sätzen:
 
 **Was ist KI?**
 
-Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Sie sind auf Plausibilität trainiert, nicht auf Wahrheit. Deshalb können sie überzeugend klingen, aber faktisch falsch sein.
+Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. "Denken" funktioniert durch Zwischenschritte, die weiteren Kontext liefern.
+
+Das ist **funktional ähnlich** zu unserem lauten Denken: Externalisierung erhöht die Erfolgswahrscheinlichkeit. Aber der Mechanismus ist verschieden: Wir verstehen Bedeutung, KI verarbeitet statistische Muster.
 :::
