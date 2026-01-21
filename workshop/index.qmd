@@ -31,10 +31,11 @@ Am Ende dieses Workshops kannst du:
 | 00:00–00:15 | Einstieg | Begrüssung und Spektrum-Aktivität |
 | 00:15–01:00 | **Frage 1: Was ist KI?** | Textgenerierung, Chain-of-Thought, Mini-Experiment |
 | 01:00–01:10 | Pause | |
-| 01:10–02:00 | **Frage 2: Wofür kann KI verwendet werden?** | Fähigkeiten, BFH-Policy, Fakten-Check Aktivität |
-| 02:00–02:10 | Pause | |
-| 02:10–02:50 | **Frage 3: Wofür sollte ich KI verwenden?** | Szenario-Karten, Offloading vs. Outsourcing |
-| 02:50–03:00 | Abschluss | Reflexion und Transfer |
+| 01:10–01:30 | **Copilot Onboarding** | Demonstration + Guided Practice |
+| 01:30–02:10 | **Frage 2: Wofür kann KI verwendet werden?** | Fähigkeiten, BFH-Policy, Fakten-Check Aktivität |
+| 02:10–02:20 | Pause | |
+| 02:20–03:00 | **Frage 3: Wofür sollte ich KI verwenden?** | Szenario-Karten, Offloading vs. Outsourcing |
+| 03:00–03:10 | Abschluss | Reflexion und Transfer |
 
 ## Aktivitäten
 
@@ -43,6 +44,7 @@ Jede Frage enthält eine praktische Aktivität:
 | Frage | Aktivität | Dauer |
 |-------|-----------|-------|
 | 1 | Mini-Experiment: Chain-of-Thought testen | 10 min |
+| Vor 2 | **Copilot Onboarding**: Erste Schritte mit dem BFH-Chatbot | 20 min |
 | 2 | Fakten-Check: Chatbot-Antworten überprüfen | 30 min |
 | 3 | Szenario-Karten ODER Dual Planning Task | 30-35 min |
 

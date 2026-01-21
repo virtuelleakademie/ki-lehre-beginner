@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chat-Interface – KI in der Lehre: Beginner</title>
+<title>Prompting für Einsteiger – KI in der Lehre: Beginner</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -87,18 +87,6 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f002';
-  background-image: none;
-}
 div.callout-key-point.callout {
   border-left-color: #D4A03E;
 }
@@ -109,30 +97,6 @@ div.callout-key-point .callout-toggle::before {  background-image: url('data:ima
 div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f005';
-  background-image: none;
-}
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f51b';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
   background-image: none;
 }
 div.callout-experiment.callout {
@@ -147,30 +111,6 @@ div.callout-experiment.callout-style-default .callout-icon::before, div.callout-
   content: '\f0c3';
   background-image: none;
 }
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f075';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
 div.callout-reflect.callout {
   border-left-color: #D4A03E;
 }
@@ -183,28 +123,16 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
   content: '\f0eb';
   background-image: none;
 }
-div.callout-group.callout {
-  border-left-color: #A3195B;
+div.callout-demonstration.callout {
+  border-left-color: #333333;
 }
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
 }
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
-  background-image: none;
-}
-div.callout-warning.callout {
-  border-left-color: #A3195B;
-}
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
+  content: '\f51b';
   background-image: none;
 }
 div.callout-individual.callout {
@@ -219,17 +147,89 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
   content: '\f007';
   background-image: none;
 }
+div.callout-group.callout {
+  border-left-color: #A3195B;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c0';
+  background-image: none;
+}
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f002';
+  background-image: none;
+}
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\e2ca';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
+  background-image: none;
+}
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
+  background-image: none;
+}
 </style>
 
 
 <link rel="stylesheet" href="../../styles/styles.css">
 <link rel="stylesheet" href="../../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
-<meta property="og:title" content="Chat-Interface – KI in der Lehre: Beginner">
-<meta property="og:description" content="Experimentiere mit verschiedenen Sprachmodellen">
+<meta property="og:title" content="Prompting für Einsteiger – KI in der Lehre: Beginner">
+<meta property="og:description" content="Kurzanleitung für den Workshop">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -311,29 +311,14 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Auf dieser Seite</h2>
-   
-  <ul>
-  <li><a href="#chat-starten" id="toc-chat-starten" class="nav-link active" data-scroll-target="#chat-starten">Chat starten</a></li>
-  <li><a href="#was-du-beobachten-kannst" id="toc-was-du-beobachten-kannst" class="nav-link" data-scroll-target="#was-du-beobachten-kannst">Was du beobachten kannst</a>
-  <ul class="collapse">
-  <li><a href="#metadaten-verstehen" id="toc-metadaten-verstehen" class="nav-link" data-scroll-target="#metadaten-verstehen">Metadaten verstehen</a></li>
-  <li><a href="#temperature-effekte" id="toc-temperature-effekte" class="nav-link" data-scroll-target="#temperature-effekte">Temperature-Effekte</a></li>
-  <li><a href="#modell-vergleich" id="toc-modell-vergleich" class="nav-link" data-scroll-target="#modell-vergleich">Modell-Vergleich</a></li>
-  </ul></li>
-  <li><a href="#alternativen" id="toc-alternativen" class="nav-link" data-scroll-target="#alternativen">Alternativen</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chat-Interface</h1>
-<p class="subtitle lead">Experimentiere mit verschiedenen Sprachmodellen</p>
+<h1 class="title">Prompting für Einsteiger</h1>
+<p class="subtitle lead">Kurzanleitung für den Workshop</p>
 </div>
 
 
@@ -350,162 +335,229 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </header>
 
 
-<p>Hier kannst du direkt mit verschiedenen Sprachmodellen chatten, ohne ein eigenes Konto zu benötigen.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="die-drei-grundregeln" class="level2">
+<h2 class="anchored" data-anchor-id="die-drei-grundregeln">Die drei Grundregeln</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 21%">
+<col style="width: 39%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Regel</th>
+<th>Was du tust</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Kontext geben</strong></td>
+<td>Sag, wer du bist und in welcher Situation</td>
+<td>“Ich bin Dozent*in für Pflege an einer Fachhochschule.”</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Aufgabe klar formulieren</strong></td>
+<td>Sag genau, was du brauchst</td>
+<td>“Erkläre mir in 3 Sätzen, wie…”</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Bei Bedarf nachfragen</strong></td>
+<td>Verfeinere die Antwort im Dialog</td>
+<td>“Erkläre das genauer.” / “Gib mir ein Beispiel.”</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="prompt-vorlagen-zum-kopieren" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-vorlagen-zum-kopieren">Prompt-Vorlagen zum Kopieren</h2>
+<section id="etwas-erklärt-bekommen" class="level3">
+<h3 class="anchored" data-anchor-id="etwas-erklärt-bekommen">Etwas erklärt bekommen</h3>
+<div class="callout callout-style-default callout-prompt callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Hinweis</span>Vor dem Start
+<span class="screen-reader-only">Prompt</span>Prompt
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li>Die Metadaten (Tokens, Zeit) helfen dir zu verstehen, wie das Modell arbeitet</li>
-<li>Probiere verschiedene Temperature-Einstellungen aus</li>
-<li>Vergleiche die Antworten verschiedener Modelle auf dieselbe Frage</li>
-</ul>
+<p>Ich bin Dozent*in für [FACH]. Erkläre mir [KONZEPT] in einfachen Worten.</p>
 </div>
 </div>
-<section id="chat-starten" class="level2">
-<h2 class="anchored" data-anchor-id="chat-starten">Chat starten</h2>
-<!--
-IMPORTANT: Replace the src URL with your actual HuggingFace Space URL after deployment.
-Format: https://YOUR-USERNAME-SPACE-NAME.hf.space
--->
-<div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; margin: 1rem 0;">
-  <iframe src="https://placeholder-url.hf.space" frameborder="0" width="100%" height="700px" style="display: block;" loading="lazy"></iframe>
+</section>
+<section id="eine-analogie-bekommen" class="level3">
+<h3 class="anchored" data-anchor-id="eine-analogie-bekommen">Eine Analogie bekommen</h3>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Gib mir eine Alltagsanalogie für [KONZEPT], die ich Studierenden zeigen kann.</p>
+</div>
+</div>
+</section>
+<section id="übungsaufgaben-generieren" class="level3">
+<h3 class="anchored" data-anchor-id="übungsaufgaben-generieren">Übungsaufgaben generieren</h3>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Erstelle 3 Übungsaufgaben zum Thema [THEMA] für Studierende im [SEMESTER]. Gib auch die Lösungen an.</p>
+</div>
+</div>
+</section>
+<section id="feedback-auf-einen-text" class="level3">
+<h3 class="anchored" data-anchor-id="feedback-auf-einen-text">Feedback auf einen Text</h3>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Hier ist ein Text, den ich geschrieben habe. Gib mir konstruktives Feedback zur Klarheit und Struktur:</p>
+<p>[DEIN TEXT HIER]</p>
+</div>
+</div>
+</section>
+<section id="ideen-sammeln" class="level3">
+<h3 class="anchored" data-anchor-id="ideen-sammeln">Ideen sammeln</h3>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ich plane eine Lehrveranstaltung zu [THEMA]. Welche interaktiven Elemente könnte ich einbauen? Gib mir 5 konkrete Ideen.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="nützliche-nachfragen" class="level2">
+<h2 class="anchored" data-anchor-id="nützliche-nachfragen">Nützliche Nachfragen</h2>
+<p>Wenn die erste Antwort nicht passt, kannst du nachfragen:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Nachfrage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Zu kompliziert</td>
+<td>“Vereinfache das.”</td>
+</tr>
+<tr class="even">
+<td>Zu oberflächlich</td>
+<td>“Erkläre das genauer.”</td>
+</tr>
+<tr class="odd">
+<td>Zu abstrakt</td>
+<td>“Gib mir ein konkretes Beispiel.”</td>
+</tr>
+<tr class="even">
+<td>Falscher Fokus</td>
+<td>“Fokussiere auf [ASPEKT].”</td>
+</tr>
+<tr class="odd">
+<td>Zu lang</td>
+<td>“Fasse das in 3 Sätzen zusammen.”</td>
+</tr>
+<tr class="even">
+<td>Format ändern</td>
+<td>“Formatiere das als Tabelle / Liste / Stichpunkte.”</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="häufige-anfängerfehler" class="level2">
+<h2 class="anchored" data-anchor-id="häufige-anfängerfehler">Häufige Anfängerfehler</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 36%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fehler</th>
+<th>Problem</th>
+<th>Besser</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Erkläre Photosynthese”</td>
+<td>Zu wenig Kontext</td>
+<td>“Erkläre Photosynthese für Studierende im 1. Semester Biologie”</td>
+</tr>
+<tr class="even">
+<td>Sehr lange Prompts</td>
+<td>Überladen, unklar</td>
+<td>Kurz und präzise, eine Aufgabe pro Prompt</td>
+</tr>
+<tr class="odd">
+<td>Keine Nachfragen</td>
+<td>Erste Antwort akzeptieren</td>
+<td>Im Dialog verfeinern</td>
+</tr>
+<tr class="even">
+<td>Blind vertrauen</td>
+<td>Antwort nicht prüfen</td>
+<td>Immer kritisch evaluieren</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="die-wichtigste-regel" class="level2">
+<h2 class="anchored" data-anchor-id="die-wichtigste-regel">Die wichtigste Regel</h2>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warnung</span>Datenschutz
+<span class="screen-reader-only">Warnung</span>Nie vergessen
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Dieser Chatbot läuft auf einem externen Server (HuggingFace Spaces). Die Daten werden über die APIs von OpenAI und Anthropic verarbeitet.</p>
-<p><strong>Gib keine sensiblen oder persönlichen Daten ein.</strong></p>
-<p>Für sensible Aufgaben: Nutze die BFH-freigegebenen Tools (Copilot) oder lokale Modelle.</p>
+<p><strong>Der Chatbot klingt immer selbstbewusst, auch wenn er falsch liegt.</strong></p>
+<p>Du musst jede Antwort mit deinem Fachwissen prüfen. Was du nicht prüfen kannst, solltest du nicht verwenden.</p>
 </div>
 </div>
 </section>
-<section id="was-du-beobachten-kannst" class="level2">
-<h2 class="anchored" data-anchor-id="was-du-beobachten-kannst">Was du beobachten kannst</h2>
-<section id="metadaten-verstehen" class="level3">
-<h3 class="anchored" data-anchor-id="metadaten-verstehen">Metadaten verstehen</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Anzeige</th>
-<th>Bedeutung</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>⏱️ Zeit</td>
-<td>Wie lange die Antwort gedauert hat</td>
-</tr>
-<tr class="even">
-<td>📥 Input</td>
-<td>Wie viele Tokens deine Nachricht + Kontext hatte</td>
-</tr>
-<tr class="odd">
-<td>📤 Output</td>
-<td>Wie viele Tokens die Antwort hat</td>
-</tr>
-<tr class="even">
-<td>🎫 Total</td>
-<td>Gesamtzahl der verarbeiteten Tokens</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="temperature-effekte" class="level3">
-<h3 class="anchored" data-anchor-id="temperature-effekte">Temperature-Effekte</h3>
-<p>Probiere dieselbe Frage mit verschiedenen Temperature-Einstellungen:</p>
-<div class="callout callout-style-default callout-experiment callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Experiment</span>Ausprobieren
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Stelle eine faktische Frage (z.B. “Wann wurde die BFH gegründet?”)</li>
-<li>Setze Temperature auf <strong>0.0</strong> und sende die Frage</li>
-<li>Setze Temperature auf <strong>1.5</strong> und sende dieselbe Frage</li>
-<li>Vergleiche: Wie unterscheiden sich die Antworten?</li>
-</ol>
-{{&lt; timer 5 &gt;}}
-</div>
-</div>
-</section>
-<section id="modell-vergleich" class="level3">
-<h3 class="anchored" data-anchor-id="modell-vergleich">Modell-Vergleich</h3>
-<div class="callout callout-style-default callout-experiment callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Experiment</span>Ausprobieren
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Wähle eine komplexe Frage aus deinem Fachgebiet</li>
-<li>Stelle sie an <strong>GPT-4o Mini</strong></li>
-<li>Stelle dieselbe Frage an <strong>Claude Haiku</strong></li>
-<li>Beobachte:
+<section id="weiterführend" class="level2">
+<h2 class="anchored" data-anchor-id="weiterführend">Weiterführend</h2>
+<p>Nach dem Workshop kannst du vertiefte Prompting-Strategien hier nachlesen:</p>
 <ul>
-<li>Unterscheiden sich die Antworten inhaltlich?</li>
-<li>Unterscheiden sich Stil und Struktur?</li>
-<li>Welches Modell war schneller?</li>
-</ul></li>
-</ol>
-{{&lt; timer 7 &gt;}}
-</div>
-</div>
-</section>
-</section>
-<section id="alternativen" class="level2">
-<h2 class="anchored" data-anchor-id="alternativen">Alternativen</h2>
-<p>Falls der eingebettete Chat nicht funktioniert, kannst du diese Tools direkt nutzen:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tool</th>
-<th>Zugang</th>
-<th>Link</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Copilot</td>
-<td>BFH-Login</td>
-<td><a href="https://copilot.microsoft.com">copilot.microsoft.com</a></td>
-</tr>
-<tr class="even">
-<td>ChatGPT</td>
-<td>Kostenloses Konto</td>
-<td><a href="https://chat.openai.com">chat.openai.com</a></td>
-</tr>
-<tr class="odd">
-<td>Claude</td>
-<td>Kostenloses Konto</td>
-<td><a href="https://claude.ai">claude.ai</a></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p><a href="../../workshop/index.html">← Zurück zum Workshop</a></p>
+<li><a href="../../resources/prompting/index.html">Effektive Prompting-Strategien in der Lehre</a></li>
+</ul>
 
 
 </section>

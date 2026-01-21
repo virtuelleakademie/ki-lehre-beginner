@@ -7,7 +7,8 @@ sidebar: exercises
 
 | Übung | Dauer | Beschreibung |
 |-------|-------|--------------|
-| [Fakten-Check](fakten-check/index.qmd) | 30 min | Kritische Evaluation von KI-Outputs |
+| [Copilot Onboarding](copilot-einstieg/index.qmd) | 20 min | Erste Schritte mit dem BFH-Chatbot (I do → We do → You do) |
+| [Fakten-Check](fakten-check/index.qmd) | 30 min | Kritische Evaluation von KI-Outputs (I do → We do → You do) |
 | [Offloading vs. Outsourcing](offloading-outsourcing/index.qmd) | 35 min | Szenario-Karten: Wann unterstützt KI das Lernen? |
 | [Dual Planning Task](dual-planning/index.qmd) | 30 min | Erfahrungsbasiert: Wo steckt das Denken? |
 

@@ -4,6 +4,8 @@ project:
     - assets/*
     - assets/images/*
     - assets/pdfs/*
+    - _extensions/quarto-ext/fontawesome/assets/css/all.css
+    - _extensions/quarto-ext/fontawesome/assets/webfonts/*
   preview:
     port: 8808
     browser: false
@@ -68,16 +70,14 @@ website:
 
 
     tools:
+      - icon: mortarboard-fill
+        text: "BFH Weiterbildung: KI in der Lehre"
+        href: https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/
+        target: _blank
       - icon: lightbulb-fill
         text: Knowledge Base
         href: https://virtuelleakademie.ch/knowledge-base/
-
-      # - icon: github
-      #   menu:
-      #     - text: Source code
-      #       url:  https://github.com/virtuelleakademie/cas-hochschuldidaktik/
-      #     - text: Report an issue
-      #       url:  https://github.com/virtuelleakademie/cas-hochschuldidaktik/issues
+        target: _blank
 
   sidebar:
     - title: "Workshop"
@@ -95,6 +95,8 @@ website:
               file: slides/frage-1-was-ist-ki/index.qmd
         - section: "Frage 2: Wofür kann KI verwendet werden?"
           contents:
+            - text: "Übung: Copilot Onboarding"
+              file: exercises/copilot-einstieg/index.qmd
             - text: "Slides: Möglichkeiten & Grenzen"
               file: slides/frage-2-wozu-kann-ki/index.qmd
             - text: "Übung: Fakten-Check"
@@ -124,13 +126,14 @@ website:
       background: light
       contents:
         - exercises/index.qmd
+        - exercises/copilot-einstieg/index.qmd
         - exercises/fakten-check/index.qmd
         - exercises/offloading-outsourcing/index.qmd
 
 page-footer:
-  right:
+    right:
     - icon: github
-      href: https://github.com/virtuelleakademie/ki-lehre-intermediate/
+      href: https://github.com/virtuelleakademie/ki-lehre-beginner/
 
 lang: de
 

@@ -89,6 +89,18 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
+  background-image: none;
+}
 div.callout-pro-tip.callout {
   border-left-color: #D4A03E;
 }
@@ -99,6 +111,42 @@ div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image
 div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\e2ca';
+  background-image: none;
+}
+div.callout-group.callout {
+  border-left-color: #A3195B;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c0';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0eb';
   background-image: none;
 }
 div.callout-scenario.callout {
@@ -125,64 +173,16 @@ div.callout-experiment.callout-style-default .callout-icon::before, div.callout-
   content: '\f0c3';
   background-image: none;
 }
-div.callout-key-point.callout {
+div.callout-source-check.callout {
   border-left-color: #D4A03E;
 }
-div.callout-key-point.callout-style-default > .callout-header {
+div.callout-source-check.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f005';
-  background-image: none;
-}
-div.callout-warning.callout {
-  border-left-color: #A3195B;
-}
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
-div.callout-group.callout {
-  border-left-color: #A3195B;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
-  background-image: none;
-}
-div.callout-reflect.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-reflect.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0eb';
+  content: '\f002';
   background-image: none;
 }
 div.callout-individual.callout {
@@ -209,16 +209,16 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
   content: '\f51b';
   background-image: none;
 }
-div.callout-source-check.callout {
+div.callout-key-point.callout {
   border-left-color: #D4A03E;
 }
-div.callout-source-check.callout-style-default > .callout-header {
+div.callout-key-point.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f002';
+  content: '\f005';
   background-image: none;
 }
 </style>
@@ -303,7 +303,8 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base"><i class="bi bi-lightbulb-fill"></i></a>
+    <a href="https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/" title="BFH Weiterbildung: KI in der Lehre" class="quarto-navigation-tool px-1" aria-label="BFH Weiterbildung: KI in der Lehre" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
+    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base" target="_blank"><i class="bi bi-lightbulb-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -312,7 +313,7 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../slides/frage-2-wozu-kann-ki/index.html">Frage 2: Wofür kann KI verwendet werden?</a></li><li class="breadcrumb-item"><a href="../../exercises/fakten-check/index.html">Übung: Fakten-Check</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../exercises/copilot-einstieg/index.html">Frage 2: Wofür kann KI verwendet werden?</a></li><li class="breadcrumb-item"><a href="../../exercises/fakten-check/index.html">Übung: Fakten-Check</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -372,6 +373,12 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../exercises/copilot-einstieg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung: Copilot Onboarding</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../slides/frage-2-wozu-kann-ki/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slides: Möglichkeiten &amp; Grenzen</span></a>
   </div>
@@ -424,13 +431,21 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
    
   <ul>
   <li><a href="#lernziele" id="toc-lernziele" class="nav-link active" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem">Teil 1: Das Problem verstehen (5 min)</a></li>
+  <li><a href="#i-do" id="toc-i-do" class="nav-link" data-scroll-target="#i-do">Teil 2: I do (5 min)</a></li>
+  <li><a href="#checkliste" id="toc-checkliste" class="nav-link" data-scroll-target="#checkliste">Evaluations-Checkliste</a></li>
+  <li><a href="#we-do" id="toc-we-do" class="nav-link" data-scroll-target="#we-do">Teil 3: We do (8 min)</a></li>
+  <li><a href="#you-do" id="toc-you-do" class="nav-link" data-scroll-target="#you-do">Teil 4: You do (10 min)</a></li>
+  <li><a href="#austausch" id="toc-austausch" class="nav-link" data-scroll-target="#austausch">Teil 5: Austausch (5 min)</a></li>
+  <li><a href="#debrief" id="toc-debrief" class="nav-link" data-scroll-target="#debrief">Debrief im Plenum</a></li>
+  <li><a href="#referenz" id="toc-referenz" class="nav-link" data-scroll-target="#referenz">Zum Mitnehmen: Evaluations-Kurzreferenz</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../slides/frage-2-wozu-kann-ki/index.html">Frage 2: Wofür kann KI verwendet werden?</a></li><li class="breadcrumb-item"><a href="../../exercises/fakten-check/index.html">Übung: Fakten-Check</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../exercises/copilot-einstieg/index.html">Frage 2: Wofür kann KI verwendet werden?</a></li><li class="breadcrumb-item"><a href="../../exercises/fakten-check/index.html">Übung: Fakten-Check</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Fakten-Check</h1>
 <p class="subtitle lead">Kritische Evaluation von KI-Outputs</p>
@@ -454,7 +469,7 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 <h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
 <ul>
 <li>Verstehen, warum Chatbots selbstbewusst falsche Informationen liefern können</li>
-<li>Strategien entwickeln, um KI-Outputs zu überprüfen</li>
+<li>Ein systematisches Verfahren zur Evaluation von KI-Outputs anwenden</li>
 <li>Die Grenzen der eigenen Evaluationsfähigkeit erkennen</li>
 </ul>
 <div class="callout callout-style-default callout-key-point callout-titled">
@@ -463,234 +478,401 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Key-point</span>Teil 1: Das Problem verstehen (10 min)
+<span class="screen-reader-only">Key-point</span>Die Struktur dieser Übung
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<section id="warum-chatbots-halluzinieren" class="level3">
-<h3 class="anchored" data-anchor-id="warum-chatbots-halluzinieren">Warum Chatbots “halluzinieren”</h3>
+<p>Diese Übung folgt dem Prinzip <strong>I do → We do → You do</strong>:</p>
+<ol type="1">
+<li><strong>I do</strong>: Die Workshopleitung zeigt, wie man eine Chatbot-Antwort evaluiert</li>
+<li><strong>We do</strong>: Wir evaluieren gemeinsam eine Antwort</li>
+<li><strong>You do</strong>: Du evaluierst selbstständig Antworten aus deinem Fachgebiet</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="problem" class="level2">
+<h2 class="anchored" data-anchor-id="problem">Teil 1: Das Problem verstehen (5 min)</h2>
+<div class="callout callout-style-default callout-key-point callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Key-point</span>Warum Chatbots “halluzinieren”
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Sie haben <strong>kein internes Faktenregister</strong> und <strong>keine Möglichkeit zu prüfen</strong>, ob ihre Aussagen wahr sind.</p>
 <p><strong>Die Mechanik der Halluzination:</strong></p>
 <ol type="1">
-<li><p><strong>Statistische Plausibilität statt Wahrheit</strong>: Ein Sprachmodell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel (grosse Stadt, wichtiges Land), auch wenn es falsch ist.</p></li>
+<li><p><strong>Statistische Plausibilität statt Wahrheit</strong>: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel, auch wenn es falsch ist.</p></li>
 <li><p><strong>Selbstsichere Formulierung ist trainiert</strong>: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. Das Modell hat gelernt, dass Aussagen typischerweise ohne Hedging formuliert werden.</p></li>
-<li><p><strong>Kein Zugang zu Quellen beim Generieren</strong>: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, “erinnert” es sich nicht an konkrete Quellen. Es rekonstruiert plausibel klingende Informationen.</p></li>
+<li><p><strong>Kein Zugang zu Quellen beim Generieren</strong>: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, “erinnert” es sich nicht an konkrete Quellen.</p></li>
 </ol>
-</section>
-<section id="forschungsbefunde" class="level3">
-<h3 class="anchored" data-anchor-id="forschungsbefunde">Forschungsbefunde</h3>
-<p>Studien zeigen konsistent:</p>
+<p><strong>Besonders anfällig für Fehler:</strong></p>
 <ul>
-<li><strong>Halluzinationsraten variieren stark</strong> je nach Thema, Modell und Fragetyp</li>
-<li><strong>Fachspezifische Fragen</strong> sind besonders anfällig, da die Trainingsdaten weniger davon enthalten</li>
-<li><strong>Aktuelle Informationen</strong> sind problematisch, da das Training einen Stichtag hat</li>
-<li><strong>Numerische Details</strong> (Daten, Zahlen, Statistiken) sind besonders unzuverlässig</li>
-<li><strong>Die Selbstsicherheit korreliert nicht mit Korrektheit</strong>: Falsche Antworten klingen genauso überzeugend wie richtige</li>
+<li>Fachspezifische Fragen (weniger Trainingsdaten)</li>
+<li>Aktuelle Informationen (Training hat einen Stichtag)</li>
+<li>Numerische Details (Daten, Zahlen, Statistiken)</li>
+<li>Zitate und Quellenangaben</li>
 </ul>
-</section>
-<section id="beispiele-aus-der-praxis" class="level3">
-<h3 class="anchored" data-anchor-id="beispiele-aus-der-praxis">Beispiele aus der Praxis</h3>
-<p><strong>Beispiel 1: Erfundene Zitate</strong></p>
-<blockquote class="blockquote">
-<p>Frage: “Was hat Einstein über das Internet gesagt?”</p>
-<p>Antwort: “Einstein sagte einmal: ‘Das Internet wird die Art verändern, wie wir kommunizieren und lernen.’”</p>
-</blockquote>
-<p>Das klingt plausibel. Einstein war ein Visionär. Aber er starb 1955, das Internet existierte noch nicht. Das Zitat ist erfunden.</p>
-<p><strong>Beispiel 2: Falsche Fakten mit korrektem Kontext</strong></p>
-<blockquote class="blockquote">
-<p>Frage: “Wann wurde die BFH gegründet?”</p>
-<p>Antwort: “Die Berner Fachhochschule wurde 1997 gegründet und ist eine der grössten Fachhochschulen der Schweiz.”</p>
-</blockquote>
-<p>Die Jahreszahl könnte stimmen oder nicht. Der Kontext (Fachhochschule, Schweiz, gross) ist korrekt und macht die Antwort überzeugend, auch wenn das Detail falsch wäre.</p>
-<p><strong>Beispiel 3: Plausible Erfindung</strong></p>
-<blockquote class="blockquote">
-<p>Frage: “Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?”</p>
-<p>Antwort: “Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich.”</p>
-</blockquote>
-<p>Das klingt medizinisch korrekt (Titration, typische Dosierungsbereiche). Aber: Ist das die aktuelle Empfehlung? Hat die SGK überhaupt eigene Empfehlungen oder übernimmt sie ESC-Leitlinien? Eine fachkundige Person würde sofort skeptisch sein.</p>
-</section>
 </div>
 </div>
-<div class="callout callout-style-default callout-important callout-titled">
+</section>
+<section id="i-do" class="level2">
+<h2 class="anchored" data-anchor-id="i-do">Teil 2: I do (5 min)</h2>
+<div class="callout callout-style-default callout-demonstration callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Wichtig</span>Die entscheidende Einsicht
+<span class="screen-reader-only">Demonstration</span>Die Workshopleitung demonstriert
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Mit deiner Fachkompetenz kannst du Halluzinationen erkennen.</p>
-<p><strong>Deine Studierenden können das nicht.</strong></p>
-<p>Sie haben nicht das Hintergrundwissen, um zu merken, wenn etwas subtil falsch ist. Für sie klingt die falsche Antwort genauso überzeugend wie die richtige.</p>
-<p>Das bedeutet:</p>
-<ul>
-<li>Wenn Studierende Chatbots als Informationsquelle nutzen, lernen sie möglicherweise Falsches</li>
-<li>Sie können nicht evaluieren, was sie nicht verstehen</li>
-<li>Die Selbstsicherheit der KI vermittelt falsches Vertrauen</li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-experiment callout-titled">
+<p>Die Workshopleitung zeigt den gesamten Evaluationsprozess an einem Beispiel.</p>
+<p><strong>Schritt 1: Eine fachliche Frage stellen</strong></p>
+<div class="callout callout-style-default callout-prompt callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Experiment</span>Teil 2: Selbst testen (10 min)
+<span class="screen-reader-only">Prompt</span>Prompt
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Jetzt testest du das Phänomen in deinem eigenen Fachgebiet.</p>
-<section id="wähle-deinen-pfad" class="level3">
-<h3 class="anchored" data-anchor-id="wähle-deinen-pfad">Wähle deinen Pfad</h3>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Pfad A: Grundlagen</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Pfad B: Fachspezifisch</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><strong>Für Teilnehmende, die Chatbots noch nicht regelmässig nutzen</strong></p>
-<p>Stelle 3 Fragen aus dem Bereich Allgemeinwissen, bei denen du die Antwort sicher kennst:</p>
+<p>Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?</p>
+</div>
+</div>
+<p><strong>Schritt 2: Die Antwort lesen</strong></p>
+<blockquote class="blockquote">
+<p>“Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich.”</p>
+</blockquote>
+<p><strong>Schritt 3: Systematisch evaluieren</strong></p>
+<p>Die Workshopleitung wendet die <strong>Evaluations-Checkliste</strong> an (siehe unten) und zeigt:</p>
 <ul>
-<li>Eine historische Frage (Datum, Person, Ereignis aus deinem Fachgebiet)</li>
-<li>Eine Frage zu einer bekannten Definition oder Formel</li>
-<li>Eine Frage zu einem Standardwerk oder einer wichtigen Person in deinem Fach</li>
+<li>Welche Warnsignale gibt es?</li>
+<li>Wie prüft man die Fakten?</li>
+<li>Zu welchem Urteil kommt man?</li>
 </ul>
-<p><strong>Beispiel</strong>: “In welchem Jahr wurde die Pflichtversicherung gegen Unfälle in der Schweiz eingeführt?”</p>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><strong>Für Teilnehmende mit regelmässiger KI-Erfahrung</strong></p>
-<p>Stelle 3 Fragen, die typisch für deine Studierenden wären:</p>
-<ul>
-<li>Eine Frage, die Studierende im 1. Semester stellen würden</li>
-<li>Eine Frage aus einer Prüfung oder Übung</li>
-<li>Eine Frage zu einem häufigen Missverständnis in deinem Fach</li>
-</ul>
-<p><strong>Beispiel</strong>: “Welche Dosierung empfiehlt die aktuelle Schweizer Leitlinie für [Medikament X] bei [Indikation Y]?”</p>
+<p><strong>Schritt 4: Fazit formulieren</strong></p>
+<p>Die Workshopleitung erklärt ihr Urteil und die Begründung.</p>
 </div>
 </div>
-</div>
-<p>Notiere die Fragen und Antworten.</p>
-{{&lt; timer 10 &gt;}}
 </section>
-</div>
-</div>
-<div class="callout callout-style-default callout-experiment callout-titled">
+<section id="checkliste" class="level2">
+<h2 class="anchored" data-anchor-id="checkliste">Evaluations-Checkliste</h2>
+<p>Nutze diese Checkliste für jede Chatbot-Antwort:</p>
+<div class="callout callout-style-default callout-key-point callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Experiment</span>Teil 3: Überprüfen (10 min)
+<span class="screen-reader-only">Key-point</span>Die 5 Prüffragen
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Überprüfe die Antworten des Chatbots mit deinem Fachwissen:</p>
-<ul>
-<li>Stimmen sie mit deinem Wissen überein?</li>
-<li>Kannst du die Informationen in einer zuverlässigen Quelle bestätigen?</li>
-</ul>
-<p>Kategorisiere jede Antwort:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 13%">
+<col style="width: 30%">
+<col style="width: 56%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Kategorie</th>
-<th>Bedeutung</th>
+<th>#</th>
+<th>Frage</th>
+<th>Warnsignale</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>✓ Korrekt</td>
-<td>Inhaltlich richtig, keine Fehler</td>
+<td>1</td>
+<td><strong>Enthält die Antwort spezifische Fakten?</strong> (Zahlen, Daten, Namen, Zitate)</td>
+<td>Spezifische Details sind oft erfunden</td>
 </tr>
 <tr class="even">
-<td>~ Teilweise korrekt</td>
-<td>Grundidee stimmt, aber Details falsch oder ungenau</td>
+<td>2</td>
+<td><strong>Nennt die Antwort Quellen?</strong></td>
+<td>Quellen können erfunden sein oder nicht existieren</td>
 </tr>
 <tr class="odd">
-<td>✗ Falsch (Halluzination)</td>
-<td>Inhaltlich falsch, erfunden, oder irreführend</td>
+<td>3</td>
+<td><strong>Klingt die Antwort “zu perfekt”?</strong></td>
+<td>Echte Fachinfos haben oft Nuancen und Einschränkungen</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Liegt das Thema ausserhalb gängiger Informationen?</strong></td>
+<td>Spezialisierte oder aktuelle Themen sind anfälliger</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Kann ich das mit meinem Fachwissen prüfen?</strong></td>
+<td>Was du nicht prüfen kannst, solltest du nicht verwenden</td>
 </tr>
 </tbody>
 </table>
-{{&lt; timer 10 &gt;}}
 </div>
 </div>
+<div class="callout callout-style-default callout-key-point callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Key-point</span>Die Bewertungskategorien
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Kategorie</th>
+<th>Bedeutung</th>
+<th>Konsequenz</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>✓</td>
+<td><strong>Korrekt</strong></td>
+<td>Inhaltlich richtig, verifizierbar</td>
+<td>Kann verwendet werden</td>
+</tr>
+<tr class="even">
+<td>~</td>
+<td><strong>Teilweise korrekt</strong></td>
+<td>Grundidee stimmt, aber Details falsch/ungenau</td>
+<td>Nur mit Korrekturen verwenden</td>
+</tr>
+<tr class="odd">
+<td>✗</td>
+<td><strong>Falsch (Halluzination)</strong></td>
+<td>Inhaltlich falsch, erfunden, oder irreführend</td>
+<td>Nicht verwenden</td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td><strong>Nicht prüfbar</strong></td>
+<td>Liegt ausserhalb meiner Expertise</td>
+<td>Nicht verwenden ohne externe Prüfung</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="we-do" class="level2">
+<h2 class="anchored" data-anchor-id="we-do">Teil 3: We do (8 min)</h2>
 <div class="callout callout-style-default callout-group callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Group</span>Teil 4: Austausch (5 min)
+<span class="screen-reader-only">Group</span>Wir evaluieren gemeinsam
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Tauscht euch in Kleingruppen aus (idealerweise gemischte Gruppen aus Pfad A und B):</p>
-<ul>
-<li>Was habt ihr gefunden?</li>
-<li>Bei welchen Themen waren die Chatbots zuverlässiger?</li>
-<li>Wo gab es Fehler?</li>
-<li>Hättet ihr die Fehler ohne euer Fachwissen erkannt?</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<p>Jetzt machen wir das zusammen. Alle stellen dieselbe Frage und evaluieren gemeinsam.</p>
+<p><strong>Schritt 1: Diesen Prompt kopieren und in Copilot eingeben</strong></p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>Vertiefung für erfahrene Nutzende
+<span class="screen-reader-only">Prompt</span>Prompt
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Falls ihr alle den fachspezifischen Pfad gewählt habt:</p>
+<p>Wann wurde die Berner Fachhochschule gegründet und wie viele Studierende hat sie aktuell?</p>
+</div>
+</div>
+<p><strong>Schritt 2: Antwort lesen</strong> (1 min)</p>
+<p>Lies die Antwort, die du bekommst.</p>
+<p><strong>Schritt 3: Checkliste anwenden</strong> (3 min)</p>
+<p>Gehe die 5 Prüffragen durch:</p>
+<ol type="1">
+<li>Enthält die Antwort spezifische Fakten? (Jahreszahl, Studierendenzahl)</li>
+<li>Nennt sie Quellen?</li>
+<li>Klingt sie “zu perfekt”?</li>
+<li>Ist das Thema spezialisiert oder aktuell?</li>
+<li>Kannst du das prüfen?</li>
+</ol>
+<p><strong>Schritt 4: Gemeinsame Diskussion</strong> (4 min)</p>
 <ul>
-<li>Vergleicht: Waren bestimmte Fachbereiche anfälliger für Halluzinationen?</li>
-<li>Diskutiert: Wie könntet ihr das Phänomen euren Studierenden demonstrieren, ohne sie zu überfordern?</li>
+<li>Was habt ihr gefunden?</li>
+<li>Stimmt das Gründungsjahr?</li>
+<li>Stimmt die Studierendenzahl?</li>
+<li>Zu welcher Bewertung kommt ihr?</li>
 </ul>
+{{&lt; timer 8 &gt;}}
 </div>
 </div>
+</section>
+<section id="you-do" class="level2">
+<h2 class="anchored" data-anchor-id="you-do">Teil 4: You do (10 min)</h2>
+<div class="callout callout-style-default callout-experiment callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-{{&lt; timer 5 &gt;}}
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Experiment</span>Selbstständig evaluieren
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Jetzt testest du das Verfahren in deinem eigenen Fachgebiet.</p>
+<section id="wähle-einen-prompt" class="level3">
+<h3 class="anchored" data-anchor-id="wähle-einen-prompt">Wähle einen Prompt</h3>
+<p>Kopiere einen dieser Prompts und passe ihn an dein Fach an:</p>
+<p><strong>Option A: Historische/faktische Frage</strong></p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wann wurde [WICHTIGE INSTITUTION/GESETZ/THEORIE IN DEINEM FACH] eingeführt und was war der Anlass?</p>
+</div>
+</div>
+<p><strong>Option B: Definitionsfrage</strong></p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Was ist die offizielle Definition von [FACHBEGRIFF] gemäss [RELEVANTE ORGANISATION/STANDARD]?</p>
+</div>
+</div>
+<p><strong>Option C: Zahlen/Statistik-Frage</strong></p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wie hoch ist [RELEVANTE KENNZAHL] in der Schweiz aktuell?</p>
+</div>
+</div>
+</section>
+<section id="vorgehen" class="level3">
+<h3 class="anchored" data-anchor-id="vorgehen">Vorgehen</h3>
+<ol type="1">
+<li>Passe den Prompt an dein Fachgebiet an</li>
+<li>Stelle die Frage an Copilot</li>
+<li>Wende die Evaluations-Checkliste an</li>
+<li>Notiere dein Urteil (✓ / ~ / ✗ / ?) mit Begründung</li>
+</ol>
+</section>
+<section id="dokumentation" class="level3">
+<h3 class="anchored" data-anchor-id="dokumentation">Dokumentation</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 44%">
+<col style="width: 18%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Meine Frage</th>
+<th>Chatbot-Antwort (Kurzfassung)</th>
+<th>Mein Urteil</th>
+<th>Begründung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+{{&lt; timer 10 &gt;}}
+</section>
+</div>
+</div>
+</section>
+<section id="austausch" class="level2">
+<h2 class="anchored" data-anchor-id="austausch">Teil 5: Austausch (5 min)</h2>
+<div class="callout callout-style-default callout-group callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Group</span>Erfahrungen teilen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Tauscht euch in Kleingruppen aus:</p>
+<ul>
+<li>Was habt ihr gefragt?</li>
+<li>Welche Urteile habt ihr gefällt?</li>
+<li>Bei welchen Fragen war der Chatbot zuverlässiger?</li>
+<li>Hättet ihr die Fehler ohne euer Fachwissen erkannt?</li>
+</ul>
 <div class="callout callout-style-default callout-reflect callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Reflect</span>Teil 5: Strukturierte Reflexion (5 min)
+<span class="screen-reader-only">Reflect</span>Die entscheidende Frage
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Beantworte für dich diese Fragen:</p>
-<ol type="1">
-<li><p><strong>Muster erkennen</strong>: Für welche Art von Fragen war der Chatbot zuverlässiger? Bei welchen Fragetypen traten mehr Fehler auf?</p></li>
-<li><p><strong>Verbindung zur Textgenerierung</strong>: Der Chatbot klang bei falschen Antworten genauso selbstbewusst wie bei richtigen. Wie erklärst du dir das, basierend auf dem, was du über Textgenerierung gelernt hast?</p></li>
-<li><p><strong>Implikationen für Studierende</strong>: Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen, ohne Fachexpertise zu haben?</p></li>
-<li><p><strong>Deine Rolle</strong>: Was könntest du tun, um deine Studierenden für dieses Problem zu sensibilisieren?</p></li>
-</ol>
+<blockquote class="blockquote">
+<p>Mit deiner Fachkompetenz kannst du Halluzinationen erkennen. <strong>Deine Studierenden können das nicht.</strong></p>
+</blockquote>
+<p>Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen?</p>
+</div>
+</div>
 {{&lt; timer 5 &gt;}}
 </div>
 </div>
+</section>
+<section id="debrief" class="level2">
+<h2 class="anchored" data-anchor-id="debrief">Debrief im Plenum</h2>
 <div class="callout callout-style-default callout-group callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Group</span>Debrief im Plenum
+<span class="screen-reader-only">Group</span>Diskussionsfragen
 </div>
 </div>
-<section id="diskussionsfragen" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="diskussionsfragen">Diskussionsfragen</h3>
+<div class="callout-body-container callout-body">
 <ol type="1">
 <li><p><strong>Warum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?</strong></p>
 <p>Erinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die “Selbstsicherheit” kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.</p></li>
@@ -699,7 +881,7 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 <li><p><strong>Was bedeutet das für den Lernprozess?</strong></p>
 <p>Wenn Studierende falsche Informationen unkritisch übernehmen, lernen sie nicht nur nicht, sondern lernen möglicherweise Falsches.</p></li>
 </ol>
-</section>
+</div>
 </div>
 <div class="callout callout-style-default callout-key-point callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -717,8 +899,41 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
 <li>Eigene Outputs immer prüfen</li>
 <li>Studierende für dieses Problem sensibilisieren</li>
 <li>Kritische Evaluation als Kompetenz vermitteln</li>
-<li>Bewusstsein schaffen: Expertise ist Voraussetzung für Evaluation</li>
+<li>Bewusstsein schaffen: <strong>Expertise ist Voraussetzung für Evaluation</strong></li>
 </ul>
+</div>
+</div>
+</section>
+<section id="referenz" class="level2">
+<h2 class="anchored" data-anchor-id="referenz">Zum Mitnehmen: Evaluations-Kurzreferenz</h2>
+<div class="callout callout-style-default callout-pro-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Pro-tip</span>Schnellcheck für KI-Outputs
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Vor der Nutzung fragen:</strong></p>
+<ol type="1">
+<li>Enthält spezifische Fakten? → Prüfen!</li>
+<li>Nennt Quellen? → Quellen verifizieren!</li>
+<li>Klingt “zu perfekt”? → Skeptisch sein!</li>
+<li>Spezialisiertes Thema? → Besonders vorsichtig!</li>
+<li>Kann ich das prüfen? → Wenn nein: nicht verwenden!</li>
+</ol>
+<p><strong>Bewerten:</strong></p>
+<ul>
+<li>✓ Korrekt → verwenden</li>
+<li>~ Teilweise → mit Korrekturen verwenden</li>
+<li>✗ Falsch → nicht verwenden</li>
+<li>? Nicht prüfbar → nicht verwenden ohne externe Prüfung</li>
+</ul>
+</div>
 </div>
 </div>
 

@@ -1,0 +1,86 @@
+---
+title: "Prompting für Einsteiger"
+subtitle: "Kurzanleitung für den Workshop"
+sidebar: false
+toc: false
+---
+
+## Die drei Grundregeln
+
+| # | Regel | Was du tust | Beispiel |
+|---|-------|-------------|----------|
+| 1 | **Kontext geben** | Sag, wer du bist und in welcher Situation | "Ich bin Dozent*in für Pflege an einer Fachhochschule." |
+| 2 | **Aufgabe klar formulieren** | Sag genau, was du brauchst | "Erkläre mir in 3 Sätzen, wie..." |
+| 3 | **Bei Bedarf nachfragen** | Verfeinere die Antwort im Dialog | "Erkläre das genauer." / "Gib mir ein Beispiel." |
+
+## Prompt-Vorlagen zum Kopieren
+
+### Etwas erklärt bekommen
+
+::: {.prompt}
+Ich bin Dozent*in für [FACH]. Erkläre mir [KONZEPT] in einfachen Worten.
+:::
+
+### Eine Analogie bekommen
+
+::: {.prompt}
+Gib mir eine Alltagsanalogie für [KONZEPT], die ich Studierenden zeigen kann.
+:::
+
+### Übungsaufgaben generieren
+
+::: {.prompt}
+Erstelle 3 Übungsaufgaben zum Thema [THEMA] für Studierende im [SEMESTER]. Gib auch die Lösungen an.
+:::
+
+### Feedback auf einen Text
+
+::: {.prompt}
+Hier ist ein Text, den ich geschrieben habe. Gib mir konstruktives Feedback zur Klarheit und Struktur:
+
+[DEIN TEXT HIER]
+:::
+
+### Ideen sammeln
+
+::: {.prompt}
+Ich plane eine Lehrveranstaltung zu [THEMA]. Welche interaktiven Elemente könnte ich einbauen? Gib mir 5 konkrete Ideen.
+:::
+
+## Nützliche Nachfragen
+
+Wenn die erste Antwort nicht passt, kannst du nachfragen:
+
+| Situation | Nachfrage |
+|-----------|-----------|
+| Zu kompliziert | "Vereinfache das." |
+| Zu oberflächlich | "Erkläre das genauer." |
+| Zu abstrakt | "Gib mir ein konkretes Beispiel." |
+| Falscher Fokus | "Fokussiere auf [ASPEKT]." |
+| Zu lang | "Fasse das in 3 Sätzen zusammen." |
+| Format ändern | "Formatiere das als Tabelle / Liste / Stichpunkte." |
+
+## Häufige Anfängerfehler
+
+| Fehler | Problem | Besser |
+|--------|---------|--------|
+| "Erkläre Photosynthese" | Zu wenig Kontext | "Erkläre Photosynthese für Studierende im 1. Semester Biologie" |
+| Sehr lange Prompts | Überladen, unklar | Kurz und präzise, eine Aufgabe pro Prompt |
+| Keine Nachfragen | Erste Antwort akzeptieren | Im Dialog verfeinern |
+| Blind vertrauen | Antwort nicht prüfen | Immer kritisch evaluieren |
+
+## Die wichtigste Regel
+
+::: {.warning}
+## Nie vergessen
+
+**Der Chatbot klingt immer selbstbewusst, auch wenn er falsch liegt.**
+
+Du musst jede Antwort mit deinem Fachwissen prüfen. Was du nicht prüfen kannst, solltest du nicht verwenden.
+:::
+
+## Weiterführend
+
+Nach dem Workshop kannst du vertiefte Prompting-Strategien hier nachlesen:
+
+- [Effektive Prompting-Strategien in der Lehre](../prompting/index.qmd)

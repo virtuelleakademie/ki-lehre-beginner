@@ -7,177 +7,208 @@ sidebar: exercises
 ## Lernziele
 
 - Verstehen, warum Chatbots selbstbewusst falsche Informationen liefern können
-- Strategien entwickeln, um KI-Outputs zu überprüfen
+- Ein systematisches Verfahren zur Evaluation von KI-Outputs anwenden
 - Die Grenzen der eigenen Evaluationsfähigkeit erkennen
 
 ::: {.key-point}
-## Teil 1: Das Problem verstehen (10 min)
+## Die Struktur dieser Übung
 
+Diese Übung folgt dem Prinzip **I do → We do → You do**:
+
+1. **I do**: Die Workshopleitung zeigt, wie man eine Chatbot-Antwort evaluiert
+2. **We do**: Wir evaluieren gemeinsam eine Antwort
+3. **You do**: Du evaluierst selbstständig Antworten aus deinem Fachgebiet
+:::
+
+## Teil 1: Das Problem verstehen (5 min) {#problem}
+
+::: {.key-point}
 ### Warum Chatbots "halluzinieren"
 
 Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Sie haben **kein internes Faktenregister** und **keine Möglichkeit zu prüfen**, ob ihre Aussagen wahr sind.
 
 **Die Mechanik der Halluzination:**
 
-1. **Statistische Plausibilität statt Wahrheit**: Ein Sprachmodell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. "Zürich ist die Hauptstadt der Schweiz" klingt statistisch plausibel (grosse Stadt, wichtiges Land), auch wenn es falsch ist.
+1. **Statistische Plausibilität statt Wahrheit**: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. "Zürich ist die Hauptstadt der Schweiz" klingt statistisch plausibel, auch wenn es falsch ist.
 
 2. **Selbstsichere Formulierung ist trainiert**: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. Das Modell hat gelernt, dass Aussagen typischerweise ohne Hedging formuliert werden.
 
-3. **Kein Zugang zu Quellen beim Generieren**: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, "erinnert" es sich nicht an konkrete Quellen. Es rekonstruiert plausibel klingende Informationen.
+3. **Kein Zugang zu Quellen beim Generieren**: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, "erinnert" es sich nicht an konkrete Quellen.
 
-### Forschungsbefunde
+**Besonders anfällig für Fehler:**
 
-Studien zeigen konsistent:
-
-- **Halluzinationsraten variieren stark** je nach Thema, Modell und Fragetyp
-- **Fachspezifische Fragen** sind besonders anfällig, da die Trainingsdaten weniger davon enthalten
-- **Aktuelle Informationen** sind problematisch, da das Training einen Stichtag hat
-- **Numerische Details** (Daten, Zahlen, Statistiken) sind besonders unzuverlässig
-- **Die Selbstsicherheit korreliert nicht mit Korrektheit**: Falsche Antworten klingen genauso überzeugend wie richtige
-
-### Beispiele aus der Praxis
-
-**Beispiel 1: Erfundene Zitate**
-
-> Frage: "Was hat Einstein über das Internet gesagt?"
->
-> Antwort: "Einstein sagte einmal: 'Das Internet wird die Art verändern, wie wir kommunizieren und lernen.'"
-
-Das klingt plausibel. Einstein war ein Visionär. Aber er starb 1955, das Internet existierte noch nicht. Das Zitat ist erfunden.
-
-**Beispiel 2: Falsche Fakten mit korrektem Kontext**
-
-> Frage: "Wann wurde die BFH gegründet?"
->
-> Antwort: "Die Berner Fachhochschule wurde 1997 gegründet und ist eine der grössten Fachhochschulen der Schweiz."
-
-Die Jahreszahl könnte stimmen oder nicht. Der Kontext (Fachhochschule, Schweiz, gross) ist korrekt und macht die Antwort überzeugend, auch wenn das Detail falsch wäre.
-
-**Beispiel 3: Plausible Erfindung**
-
-> Frage: "Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?"
->
-> Antwort: "Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich."
-
-Das klingt medizinisch korrekt (Titration, typische Dosierungsbereiche). Aber: Ist das die aktuelle Empfehlung? Hat die SGK überhaupt eigene Empfehlungen oder übernimmt sie ESC-Leitlinien? Eine fachkundige Person würde sofort skeptisch sein.
+- Fachspezifische Fragen (weniger Trainingsdaten)
+- Aktuelle Informationen (Training hat einen Stichtag)
+- Numerische Details (Daten, Zahlen, Statistiken)
+- Zitate und Quellenangaben
 :::
 
-::: {.callout-important}
-## Die entscheidende Einsicht
+## Teil 2: I do (5 min) {#i-do}
 
-Mit deiner Fachkompetenz kannst du Halluzinationen erkennen.
+::: {.demonstration}
+## Die Workshopleitung demonstriert
 
-**Deine Studierenden können das nicht.**
+Die Workshopleitung zeigt den gesamten Evaluationsprozess an einem Beispiel.
 
-Sie haben nicht das Hintergrundwissen, um zu merken, wenn etwas subtil falsch ist. Für sie klingt die falsche Antwort genauso überzeugend wie die richtige.
+**Schritt 1: Eine fachliche Frage stellen**
 
-Das bedeutet:
-
-- Wenn Studierende Chatbots als Informationsquelle nutzen, lernen sie möglicherweise Falsches
-- Sie können nicht evaluieren, was sie nicht verstehen
-- Die Selbstsicherheit der KI vermittelt falsches Vertrauen
+::: {.prompt}
+Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?
 :::
 
-::: {.experiment}
-## Teil 2: Selbst testen (10 min)
+**Schritt 2: Die Antwort lesen**
 
-Jetzt testest du das Phänomen in deinem eigenen Fachgebiet.
+> "Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich."
 
-### Wähle deinen Pfad
+**Schritt 3: Systematisch evaluieren**
 
-::: {.panel-tabset}
+Die Workshopleitung wendet die **Evaluations-Checkliste** an (siehe unten) und zeigt:
 
-## Pfad A: Grundlagen
+- Welche Warnsignale gibt es?
+- Wie prüft man die Fakten?
+- Zu welchem Urteil kommt man?
 
-**Für Teilnehmende, die Chatbots noch nicht regelmässig nutzen**
+**Schritt 4: Fazit formulieren**
 
-Stelle 3 Fragen aus dem Bereich Allgemeinwissen, bei denen du die Antwort sicher kennst:
-
-- Eine historische Frage (Datum, Person, Ereignis aus deinem Fachgebiet)
-- Eine Frage zu einer bekannten Definition oder Formel
-- Eine Frage zu einem Standardwerk oder einer wichtigen Person in deinem Fach
-
-**Beispiel**: "In welchem Jahr wurde die Pflichtversicherung gegen Unfälle in der Schweiz eingeführt?"
-
-## Pfad B: Fachspezifisch
-
-**Für Teilnehmende mit regelmässiger KI-Erfahrung**
-
-Stelle 3 Fragen, die typisch für deine Studierenden wären:
-
-- Eine Frage, die Studierende im 1. Semester stellen würden
-- Eine Frage aus einer Prüfung oder Übung
-- Eine Frage zu einem häufigen Missverständnis in deinem Fach
-
-**Beispiel**: "Welche Dosierung empfiehlt die aktuelle Schweizer Leitlinie für [Medikament X] bei [Indikation Y]?"
-
+Die Workshopleitung erklärt ihr Urteil und die Begründung.
 :::
 
-Notiere die Fragen und Antworten.
+## Evaluations-Checkliste {#checkliste}
 
-{{< timer 10 >}}
+Nutze diese Checkliste für jede Chatbot-Antwort:
+
+::: {.key-point}
+### Die 5 Prüffragen
+
+| # | Frage | Warnsignale |
+|---|-------|-------------|
+| 1 | **Enthält die Antwort spezifische Fakten?** (Zahlen, Daten, Namen, Zitate) | Spezifische Details sind oft erfunden |
+| 2 | **Nennt die Antwort Quellen?** | Quellen können erfunden sein oder nicht existieren |
+| 3 | **Klingt die Antwort "zu perfekt"?** | Echte Fachinfos haben oft Nuancen und Einschränkungen |
+| 4 | **Liegt das Thema ausserhalb gängiger Informationen?** | Spezialisierte oder aktuelle Themen sind anfälliger |
+| 5 | **Kann ich das mit meinem Fachwissen prüfen?** | Was du nicht prüfen kannst, solltest du nicht verwenden |
 :::
 
-::: {.experiment}
-## Teil 3: Überprüfen (10 min)
+::: {.key-point}
+### Die Bewertungskategorien
 
-Überprüfe die Antworten des Chatbots mit deinem Fachwissen:
-
-- Stimmen sie mit deinem Wissen überein?
-- Kannst du die Informationen in einer zuverlässigen Quelle bestätigen?
-
-Kategorisiere jede Antwort:
-
-| Kategorie | Bedeutung |
-|-----------|-----------|
-| ✓ Korrekt | Inhaltlich richtig, keine Fehler |
-| ~ Teilweise korrekt | Grundidee stimmt, aber Details falsch oder ungenau |
-| ✗ Falsch (Halluzination) | Inhaltlich falsch, erfunden, oder irreführend |
-
-{{< timer 10 >}}
+| Symbol | Kategorie | Bedeutung | Konsequenz |
+|--------|-----------|-----------|------------|
+| ✓ | **Korrekt** | Inhaltlich richtig, verifizierbar | Kann verwendet werden |
+| ~ | **Teilweise korrekt** | Grundidee stimmt, aber Details falsch/ungenau | Nur mit Korrekturen verwenden |
+| ✗ | **Falsch (Halluzination)** | Inhaltlich falsch, erfunden, oder irreführend | Nicht verwenden |
+| ? | **Nicht prüfbar** | Liegt ausserhalb meiner Expertise | Nicht verwenden ohne externe Prüfung |
 :::
+
+## Teil 3: We do (8 min) {#we-do}
 
 ::: {.group}
-## Teil 4: Austausch (5 min)
+## Wir evaluieren gemeinsam
 
-Tauscht euch in Kleingruppen aus (idealerweise gemischte Gruppen aus Pfad A und B):
+Jetzt machen wir das zusammen. Alle stellen dieselbe Frage und evaluieren gemeinsam.
+
+**Schritt 1: Diesen Prompt kopieren und in Copilot eingeben**
+
+::: {.prompt}
+Wann wurde die Berner Fachhochschule gegründet und wie viele Studierende hat sie aktuell?
+:::
+
+**Schritt 2: Antwort lesen** (1 min)
+
+Lies die Antwort, die du bekommst.
+
+**Schritt 3: Checkliste anwenden** (3 min)
+
+Gehe die 5 Prüffragen durch:
+
+1. Enthält die Antwort spezifische Fakten? (Jahreszahl, Studierendenzahl)
+2. Nennt sie Quellen?
+3. Klingt sie "zu perfekt"?
+4. Ist das Thema spezialisiert oder aktuell?
+5. Kannst du das prüfen?
+
+**Schritt 4: Gemeinsame Diskussion** (4 min)
 
 - Was habt ihr gefunden?
-- Bei welchen Themen waren die Chatbots zuverlässiger?
-- Wo gab es Fehler?
-- Hättet ihr die Fehler ohne euer Fachwissen erkannt?
+- Stimmt das Gründungsjahr?
+- Stimmt die Studierendenzahl?
+- Zu welcher Bewertung kommt ihr?
 
-::: {.callout-tip collapse="true"}
-## Vertiefung für erfahrene Nutzende
-
-Falls ihr alle den fachspezifischen Pfad gewählt habt:
-
-- Vergleicht: Waren bestimmte Fachbereiche anfälliger für Halluzinationen?
-- Diskutiert: Wie könntet ihr das Phänomen euren Studierenden demonstrieren, ohne sie zu überfordern?
+{{< timer 8 >}}
 :::
 
-{{< timer 5 >}}
+## Teil 4: You do (10 min) {#you-do}
+
+::: {.experiment}
+## Selbstständig evaluieren
+
+Jetzt testest du das Verfahren in deinem eigenen Fachgebiet.
+
+### Wähle einen Prompt
+
+Kopiere einen dieser Prompts und passe ihn an dein Fach an:
+
+**Option A: Historische/faktische Frage**
+
+::: {.prompt}
+Wann wurde [WICHTIGE INSTITUTION/GESETZ/THEORIE IN DEINEM FACH] eingeführt und was war der Anlass?
 :::
 
-::: {.reflect}
-## Teil 5: Strukturierte Reflexion (5 min)
+**Option B: Definitionsfrage**
 
-Beantworte für dich diese Fragen:
-
-1. **Muster erkennen**: Für welche Art von Fragen war der Chatbot zuverlässiger? Bei welchen Fragetypen traten mehr Fehler auf?
-
-2. **Verbindung zur Textgenerierung**: Der Chatbot klang bei falschen Antworten genauso selbstbewusst wie bei richtigen. Wie erklärst du dir das, basierend auf dem, was du über Textgenerierung gelernt hast?
-
-3. **Implikationen für Studierende**: Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen, ohne Fachexpertise zu haben?
-
-4. **Deine Rolle**: Was könntest du tun, um deine Studierenden für dieses Problem zu sensibilisieren?
-
-{{< timer 5 >}}
+::: {.prompt}
+Was ist die offizielle Definition von [FACHBEGRIFF] gemäss [RELEVANTE ORGANISATION/STANDARD]?
 :::
+
+**Option C: Zahlen/Statistik-Frage**
+
+::: {.prompt}
+Wie hoch ist [RELEVANTE KENNZAHL] in der Schweiz aktuell?
+:::
+
+### Vorgehen
+
+1. Passe den Prompt an dein Fachgebiet an
+2. Stelle die Frage an Copilot
+3. Wende die Evaluations-Checkliste an
+4. Notiere dein Urteil (✓ / ~ / ✗ / ?) mit Begründung
+
+### Dokumentation
+
+| Meine Frage | Chatbot-Antwort (Kurzfassung) | Mein Urteil | Begründung |
+|-------------|-------------------------------|-------------|------------|
+| | | | |
+
+{{< timer 10 >}}
+:::
+
+## Teil 5: Austausch (5 min) {#austausch}
 
 ::: {.group}
-## Debrief im Plenum
+## Erfahrungen teilen
 
+Tauscht euch in Kleingruppen aus:
+
+- Was habt ihr gefragt?
+- Welche Urteile habt ihr gefällt?
+- Bei welchen Fragen war der Chatbot zuverlässiger?
+- Hättet ihr die Fehler ohne euer Fachwissen erkannt?
+
+::: {.reflect}
+### Die entscheidende Frage
+
+> Mit deiner Fachkompetenz kannst du Halluzinationen erkennen.
+> **Deine Studierenden können das nicht.**
+
+Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen?
+:::
+
+{{< timer 5 >}}
+:::
+
+## Debrief im Plenum {#debrief}
+
+::: {.group}
 ### Diskussionsfragen
 
 1. **Warum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?**
@@ -203,5 +234,26 @@ Für Lehrende bedeutet das:
 - Eigene Outputs immer prüfen
 - Studierende für dieses Problem sensibilisieren
 - Kritische Evaluation als Kompetenz vermitteln
-- Bewusstsein schaffen: Expertise ist Voraussetzung für Evaluation
+- Bewusstsein schaffen: **Expertise ist Voraussetzung für Evaluation**
+:::
+
+## Zum Mitnehmen: Evaluations-Kurzreferenz {#referenz}
+
+::: {.pro-tip}
+## Schnellcheck für KI-Outputs
+
+**Vor der Nutzung fragen:**
+
+1. Enthält spezifische Fakten? → Prüfen!
+2. Nennt Quellen? → Quellen verifizieren!
+3. Klingt "zu perfekt"? → Skeptisch sein!
+4. Spezialisiertes Thema? → Besonders vorsichtig!
+5. Kann ich das prüfen? → Wenn nein: nicht verwenden!
+
+**Bewerten:**
+
+- ✓ Korrekt → verwenden
+- ~ Teilweise → mit Korrekturen verwenden
+- ✗ Falsch → nicht verwenden
+- ? Nicht prüfbar → nicht verwenden ohne externe Prüfung
 :::

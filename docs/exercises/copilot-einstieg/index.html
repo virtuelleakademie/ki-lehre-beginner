@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chat-Interface – KI in der Lehre: Beginner</title>
+<title>Copilot Onboarding – KI in der Lehre: Beginner</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../slides/frage-2-wozu-kann-ki/index.html" rel="next">
+<link href="../../slides/frage-1-was-ist-ki/index.html" rel="prev">
 <link href="../..//assets/robot.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -87,76 +89,16 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-source-check.callout {
+div.callout-reflect.callout {
   border-left-color: #D4A03E;
 }
-div.callout-source-check.callout-style-default > .callout-header {
+div.callout-reflect.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f002';
-  background-image: none;
-}
-div.callout-key-point.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-key-point.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f005';
-  background-image: none;
-}
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f51b';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
-  background-image: none;
-}
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
-}
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c3';
-  background-image: none;
-}
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f075';
+  content: '\f0eb';
   background-image: none;
 }
 div.callout-prompt.callout {
@@ -171,40 +113,16 @@ div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prom
   content: '\f328';
   background-image: none;
 }
-div.callout-reflect.callout {
+div.callout-pro-tip.callout {
   border-left-color: #D4A03E;
 }
-div.callout-reflect.callout-style-default > .callout-header {
+div.callout-pro-tip.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0eb';
-  background-image: none;
-}
-div.callout-group.callout {
-  border-left-color: #A3195B;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
-  background-image: none;
-}
-div.callout-warning.callout {
-  border-left-color: #A3195B;
-}
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
+  content: '\e2ca';
   background-image: none;
 }
 div.callout-individual.callout {
@@ -219,17 +137,101 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
   content: '\f007';
   background-image: none;
 }
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f002';
+  background-image: none;
+}
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
+  background-image: none;
+}
+div.callout-group.callout {
+  border-left-color: #A3195B;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c0';
+  background-image: none;
+}
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f005';
+  background-image: none;
+}
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f51b';
+  background-image: none;
+}
 </style>
 
 
 <link rel="stylesheet" href="../../styles/styles.css">
 <link rel="stylesheet" href="../../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
-<meta property="og:title" content="Chat-Interface – KI in der Lehre: Beginner">
-<meta property="og:description" content="Experimentiere mit verschiedenen Sprachmodellen">
+<meta property="og:title" content="Copilot Onboarding – KI in der Lehre: Beginner">
+<meta property="og:description" content="Erste Schritte mit dem BFH-Chatbot">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -247,7 +249,7 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../workshop/index.html"> <i class="bi bi-card-list" role="img">
+    <a class="nav-link active" href="../../workshop/index.html" aria-current="page"> <i class="bi bi-card-list" role="img">
 </i> 
 <span class="menu-text">Workshop</span></a>
   </li>  
@@ -306,34 +308,144 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../exercises/copilot-einstieg/index.html">Frage 2: Wofür kann KI verwendet werden?</a></li><li class="breadcrumb-item"><a href="../../exercises/copilot-einstieg/index.html">Übung: Copilot Onboarding</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Suchen"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../workshop/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übersicht</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../workshop/einstieg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einstieg</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frage 1: Was ist KI?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../slides/frage-1-was-ist-ki/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides: Grundlagen</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frage 2: Wofür kann KI verwendet werden?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/copilot-einstieg/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Übung: Copilot Onboarding</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../slides/frage-2-wozu-kann-ki/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides: Möglichkeiten &amp; Grenzen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/fakten-check/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung: Fakten-Check</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frage 3: Wofür sollte ich KI verwenden?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../slides/frage-3-wozu-soll-ich/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides: Offloading vs.&nbsp;Outsourcing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/offloading-outsourcing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung: Szenarien analysieren</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../workshop/abschluss/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abschluss</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#chat-starten" id="toc-chat-starten" class="nav-link active" data-scroll-target="#chat-starten">Chat starten</a></li>
-  <li><a href="#was-du-beobachten-kannst" id="toc-was-du-beobachten-kannst" class="nav-link" data-scroll-target="#was-du-beobachten-kannst">Was du beobachten kannst</a>
-  <ul class="collapse">
-  <li><a href="#metadaten-verstehen" id="toc-metadaten-verstehen" class="nav-link" data-scroll-target="#metadaten-verstehen">Metadaten verstehen</a></li>
-  <li><a href="#temperature-effekte" id="toc-temperature-effekte" class="nav-link" data-scroll-target="#temperature-effekte">Temperature-Effekte</a></li>
-  <li><a href="#modell-vergleich" id="toc-modell-vergleich" class="nav-link" data-scroll-target="#modell-vergleich">Modell-Vergleich</a></li>
-  </ul></li>
-  <li><a href="#alternativen" id="toc-alternativen" class="nav-link" data-scroll-target="#alternativen">Alternativen</a></li>
+  <li><a href="#lernziele" id="toc-lernziele" class="nav-link active" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#demonstration" id="toc-demonstration" class="nav-link" data-scroll-target="#demonstration">Teil 1: Demonstration (5 min)</a></li>
+  <li><a href="#gemeinsam" id="toc-gemeinsam" class="nav-link" data-scroll-target="#gemeinsam">Teil 2: Gemeinsam ausprobieren (5 min)</a></li>
+  <li><a href="#selbststaendig" id="toc-selbststaendig" class="nav-link" data-scroll-target="#selbststaendig">Teil 3: Selbstständig erkunden (5 min)</a></li>
+  <li><a href="#austausch" id="toc-austausch" class="nav-link" data-scroll-target="#austausch">Teil 4: Kurzer Austausch (3 min)</a></li>
+  <li><a href="#prompting-grundlagen" id="toc-prompting-grundlagen" class="nav-link" data-scroll-target="#prompting-grundlagen">Prompting-Grundlagen</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../exercises/copilot-einstieg/index.html">Frage 2: Wofür kann KI verwendet werden?</a></li><li class="breadcrumb-item"><a href="../../exercises/copilot-einstieg/index.html">Übung: Copilot Onboarding</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Chat-Interface</h1>
-<p class="subtitle lead">Experimentiere mit verschiedenen Sprachmodellen</p>
+<h1 class="title">Copilot Onboarding</h1>
+<p class="subtitle lead">Erste Schritte mit dem BFH-Chatbot</p>
 </div>
 
 
@@ -350,162 +462,295 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
 </header>
 
 
-<p>Hier kannst du direkt mit verschiedenen Sprachmodellen chatten, ohne ein eigenes Konto zu benötigen.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Hinweis</span>Vor dem Start
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="lernziele" class="level2">
+<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
 <ul>
-<li>Die Metadaten (Tokens, Zeit) helfen dir zu verstehen, wie das Modell arbeitet</li>
-<li>Probiere verschiedene Temperature-Einstellungen aus</li>
-<li>Vergleiche die Antworten verschiedener Modelle auf dieselbe Frage</li>
+<li>Copilot öffnen und eine erste Konversation starten</li>
+<li>Die grundlegende Interaktionsstruktur eines Chatbots verstehen</li>
+<li>Einen einfachen Prompt formulieren und die Antwort interpretieren</li>
 </ul>
-</div>
-</div>
-<section id="chat-starten" class="level2">
-<h2 class="anchored" data-anchor-id="chat-starten">Chat starten</h2>
-<!--
-IMPORTANT: Replace the src URL with your actual HuggingFace Space URL after deployment.
-Format: https://YOUR-USERNAME-SPACE-NAME.hf.space
--->
-<div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; margin: 1rem 0;">
-  <iframe src="https://placeholder-url.hf.space" frameborder="0" width="100%" height="700px" style="display: block;" loading="lazy"></iframe>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout callout-style-default callout-key-point callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warnung</span>Datenschutz
+<span class="screen-reader-only">Key-point</span>Warum diese Übung?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Dieser Chatbot läuft auf einem externen Server (HuggingFace Spaces). Die Daten werden über die APIs von OpenAI und Anthropic verarbeitet.</p>
-<p><strong>Gib keine sensiblen oder persönlichen Daten ein.</strong></p>
-<p>Für sensible Aufgaben: Nutze die BFH-freigegebenen Tools (Copilot) oder lokale Modelle.</p>
+<p>Dieser Workshop vermittelt, dass Lernende (im Gegensatz zu Expert*innen) nicht selbstständig entdecken können, was sie noch nicht wissen.</p>
+<p><strong>Das gilt auch für dich als Tool-Anfänger*in.</strong></p>
+<p>Deshalb zeigen wir dir zuerst, wie du Copilot nutzt, bevor du es selbst ausprobierst.</p>
 </div>
 </div>
 </section>
-<section id="was-du-beobachten-kannst" class="level2">
-<h2 class="anchored" data-anchor-id="was-du-beobachten-kannst">Was du beobachten kannst</h2>
-<section id="metadaten-verstehen" class="level3">
-<h3 class="anchored" data-anchor-id="metadaten-verstehen">Metadaten verstehen</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Anzeige</th>
-<th>Bedeutung</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>⏱️ Zeit</td>
-<td>Wie lange die Antwort gedauert hat</td>
-</tr>
-<tr class="even">
-<td>📥 Input</td>
-<td>Wie viele Tokens deine Nachricht + Kontext hatte</td>
-</tr>
-<tr class="odd">
-<td>📤 Output</td>
-<td>Wie viele Tokens die Antwort hat</td>
-</tr>
-<tr class="even">
-<td>🎫 Total</td>
-<td>Gesamtzahl der verarbeiteten Tokens</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="temperature-effekte" class="level3">
-<h3 class="anchored" data-anchor-id="temperature-effekte">Temperature-Effekte</h3>
-<p>Probiere dieselbe Frage mit verschiedenen Temperature-Einstellungen:</p>
-<div class="callout callout-style-default callout-experiment callout-titled">
+<section id="demonstration" class="level2">
+<h2 class="anchored" data-anchor-id="demonstration">Teil 1: Demonstration (5 min)</h2>
+<div class="callout callout-style-default callout-demonstration callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Experiment</span>Ausprobieren
+<span class="screen-reader-only">Demonstration</span>Die Workshopleitung zeigt
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ol type="1">
-<li>Stelle eine faktische Frage (z.B. “Wann wurde die BFH gegründet?”)</li>
-<li>Setze Temperature auf <strong>0.0</strong> und sende die Frage</li>
-<li>Setze Temperature auf <strong>1.5</strong> und sende dieselbe Frage</li>
-<li>Vergleiche: Wie unterscheiden sich die Antworten?</li>
-</ol>
+<p><strong>1. Copilot öffnen</strong></p>
+<ul>
+<li>Gehe zu <a href="https://copilot.microsoft.com">copilot.microsoft.com</a></li>
+<li>Melde dich mit deinem BFH-Konto an</li>
+<li>Du siehst das Chat-Fenster</li>
+</ul>
+<p><strong>2. Einen einfachen Prompt eingeben</strong></p>
+<p>Die Workshopleitung gibt diesen Prompt ein:</p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ich bin Dozent an einer Fachhochschule. Erkläre mir in 3 Sätzen, wie du als Sprachmodell Text generierst.</p>
+</div>
+</div>
+<p><strong>3. Die Antwort lesen und interpretieren</strong></p>
+<p>Beachte:</p>
+<ul>
+<li>Der Chatbot antwortet sofort und selbstbewusst</li>
+<li>Die Antwort klingt kompetent, unabhängig davon, ob sie korrekt ist</li>
+<li>Du kannst Nachfragen stellen (“Erkläre das genauer” oder “Gib mir ein Beispiel”)</li>
+</ul>
+<p><strong>4. Eine Nachfrage stellen</strong></p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Gib mir eine Analogie, die ich meinen Studierenden zeigen könnte.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="gemeinsam" class="level2">
+<h2 class="anchored" data-anchor-id="gemeinsam">Teil 2: Gemeinsam ausprobieren (5 min)</h2>
+<div class="callout callout-style-default callout-group callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Group</span>Wir machen das zusammen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Jetzt machst du es selbst, aber mit genauer Anleitung.</p>
+<p><strong>Schritt 1: Copilot öffnen</strong></p>
+<p>Öffne <a href="https://copilot.microsoft.com">copilot.microsoft.com</a> und melde dich an.</p>
+<p><strong>Schritt 2: Diesen Prompt kopieren und einfügen</strong></p>
+<p>Kopiere diesen Prompt (klicke auf das Kopier-Symbol):</p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ich bin Dozent*in für [DEIN FACHGEBIET] an der Berner Fachhochschule. Erkläre mir in einfachen Worten, wie du als Sprachmodell funktionierst.</p>
+</div>
+</div>
+<p>Ersetze <code>[DEIN FACHGEBIET]</code> durch dein tatsächliches Fach.</p>
+<p><strong>Schritt 3: Antwort lesen</strong></p>
+<p>Lies die Antwort. Frage dich:</p>
+<ul>
+<li>Klingt das plausibel?</li>
+<li>Verstehst du die Erklärung?</li>
+<li>Hast du Nachfragen?</li>
+</ul>
+<p><strong>Schritt 4: Eine Nachfrage stellen</strong></p>
+<p>Stelle eine Nachfrage, zum Beispiel:</p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Was bedeutet “nächstes Wort vorhersagen” genauer?</p>
+</div>
+</div>
 {{&lt; timer 5 &gt;}}
 </div>
 </div>
 </section>
-<section id="modell-vergleich" class="level3">
-<h3 class="anchored" data-anchor-id="modell-vergleich">Modell-Vergleich</h3>
+<section id="selbststaendig" class="level2">
+<h2 class="anchored" data-anchor-id="selbststaendig">Teil 3: Selbstständig erkunden (5 min)</h2>
 <div class="callout callout-style-default callout-experiment callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Experiment</span>Ausprobieren
+<span class="screen-reader-only">Experiment</span>Deine erste eigene Interaktion
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ol type="1">
-<li>Wähle eine komplexe Frage aus deinem Fachgebiet</li>
-<li>Stelle sie an <strong>GPT-4o Mini</strong></li>
-<li>Stelle dieselbe Frage an <strong>Claude Haiku</strong></li>
-<li>Beobachte:
+<p>Jetzt stellst du eine eigene Frage. Wähle eine der folgenden Optionen:</p>
+<p><strong>Option A: Fachliche Frage</strong></p>
+<p>Stelle eine einfache Frage aus deinem Fachgebiet, deren Antwort du kennst.</p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Was ist [GRUNDBEGRIFF AUS DEINEM FACH]?</p>
+</div>
+</div>
+<p><strong>Option B: Didaktische Frage</strong></p>
+<p>Frage nach einer Erklärung für Studierende.</p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wie könnte ich Studierenden im ersten Semester [KONZEPT] erklären?</p>
+</div>
+</div>
+<p><strong>Option C: Praktische Frage</strong></p>
+<p>Frage nach einer konkreten Aufgabe.</p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Erstelle drei Beispielaufgaben zum Thema [THEMA] für Erstsemester.</p>
+</div>
+</div>
+<p><strong>Notiere:</strong></p>
 <ul>
-<li>Unterscheiden sich die Antworten inhaltlich?</li>
-<li>Unterscheiden sich Stil und Struktur?</li>
-<li>Welches Modell war schneller?</li>
-</ul></li>
+<li>Was hast du gefragt?</li>
+<li>Wie war die Antwort?</li>
+<li>Hast du etwas Unerwartetes bemerkt?</li>
+</ul>
+{{&lt; timer 5 &gt;}}
+</div>
+</div>
+</section>
+<section id="austausch" class="level2">
+<h2 class="anchored" data-anchor-id="austausch">Teil 4: Kurzer Austausch (3 min)</h2>
+<div class="callout callout-style-default callout-group callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Group</span>Erfahrungen teilen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Tauscht euch kurz mit 1-2 Nachbarpersonen aus:</p>
+<ul>
+<li>Was hat funktioniert?</li>
+<li>Was war überraschend?</li>
+<li>Welche Fragen sind aufgetaucht?</li>
+</ul>
+{{&lt; timer 3 &gt;}}
+</div>
+</div>
+<div class="callout callout-style-default callout-key-point callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Key-point</span>Was du jetzt kannst
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Du hast gelernt:</p>
+<ol type="1">
+<li><strong>Copilot öffnen</strong> und eine Konversation starten</li>
+<li><strong>Einen Prompt formulieren</strong> mit Kontext (wer du bist, was du brauchst)</li>
+<li><strong>Nachfragen stellen</strong>, um die Antwort zu verfeinern</li>
+<li><strong>Kritisch lesen</strong>, ohne der Selbstsicherheit des Chatbots blind zu vertrauen</li>
 </ol>
-{{&lt; timer 7 &gt;}}
+<p>Diese Grundlagen brauchst du für die nächste Übung: den <strong>Fakten-Check</strong>.</p>
 </div>
 </div>
 </section>
-</section>
-<section id="alternativen" class="level2">
-<h2 class="anchored" data-anchor-id="alternativen">Alternativen</h2>
-<p>Falls der eingebettete Chat nicht funktioniert, kannst du diese Tools direkt nutzen:</p>
+<section id="prompting-grundlagen" class="level2">
+<h2 class="anchored" data-anchor-id="prompting-grundlagen">Prompting-Grundlagen</h2>
+<p>Für diese Übung reichen drei einfache Regeln:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Tool</th>
-<th>Zugang</th>
-<th>Link</th>
+<th>Regel</th>
+<th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Copilot</td>
-<td>BFH-Login</td>
-<td><a href="https://copilot.microsoft.com">copilot.microsoft.com</a></td>
+<td><strong>Kontext geben</strong></td>
+<td>“Ich bin Dozent*in für Chemie…”</td>
 </tr>
 <tr class="even">
-<td>ChatGPT</td>
-<td>Kostenloses Konto</td>
-<td><a href="https://chat.openai.com">chat.openai.com</a></td>
+<td><strong>Aufgabe klar formulieren</strong></td>
+<td>“…erkläre mir in 3 Sätzen…”</td>
 </tr>
 <tr class="odd">
-<td>Claude</td>
-<td>Kostenloses Konto</td>
-<td><a href="https://claude.ai">claude.ai</a></td>
+<td><strong>Bei Bedarf nachfragen</strong></td>
+<td>“Erkläre das genauer”</td>
 </tr>
 </tbody>
 </table>
-<hr>
-<p><a href="../../workshop/index.html">← Zurück zum Workshop</a></p>
+<div class="callout callout-style-default callout-pro-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Pro-tip</span>Mehr zu Prompting
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Detaillierte Prompting-Strategien findest du in den <a href="../../resources/prompting-basics/index.html">Weiterführenden Ressourcen</a>.</p>
+<p>Für diesen Workshop brauchst du nur die drei Grundregeln oben.</p>
+</div>
+</div>
+</div>
 
 
 </section>
@@ -976,6 +1221,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../slides/frage-1-was-ist-ki/index.html" class="pagination-link" aria-label="Slides: Grundlagen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Slides: Grundlagen</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../slides/frage-2-wozu-kann-ki/index.html" class="pagination-link" aria-label="Slides: Möglichkeiten &amp; Grenzen">
+        <span class="nav-page-text">Slides: Möglichkeiten &amp; Grenzen</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
