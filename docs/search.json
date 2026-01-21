@@ -454,7 +454,7 @@
     "href": "workshop/einstieg/index.html#wo-stehst-du",
     "title": "Ankommen",
     "section": "Wo stehst du?",
-    "text": "Wo stehst du?\n\n\n\n\n\n\nExperimentPositioniere dich\n\n\n\nDimension 1: Erfahrung\nStelle dich auf einer imaginären Linie auf:\n\nLinks: “Ich habe noch nie einen Chatbot benutzt”\nRechts: “Ich nutze KI-Tools täglich”\n\nDimension 2: Haltung\n\nLinks: “Ich bin skeptisch gegenüber KI in der Lehre”\nRechts: “Ich bin optimistisch über KI in der Lehre”\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nHinweisFür die Moderation\n\n\n\nMerke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:\n\nBei Gruppenaktivitäten: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)\nWarum: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen.",
+    "text": "Wo stehst du?\n\n\n\n\n\n\nExperimentPositioniere dich\n\n\n\nDimension 1: Erfahrung\nStelle dich auf einer imaginären Linie auf:\n\nLinks: “Ich habe noch nie einen Chatbot benutzt”\nRechts: “Ich nutze KI-Tools täglich”\n\nDimension 2: Haltung\n\nLinks: “Ich bin skeptisch gegenüber KI in der Lehre”\nRechts: “Ich bin optimistisch über KI in der Lehre”\n\n\n\n\n\n\n\n\n\n\n\n\nHinweisFür die Moderation\n\n\n\nMerke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:\n\nBei Gruppenaktivitäten: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)\nWarum: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen.",
     "crumbs": [
       "Workshop",
       "Einstieg"
@@ -596,7 +596,7 @@
     "href": "workshop/index.html#ablauf",
     "title": "Workshop: KI in der Lehre",
     "section": "Ablauf",
-    "text": "Ablauf\n\n\n\n\n\n\n\n\nZeit\nPhase\nInhalt\n\n\n\n\n00:00–00:15\nEinstieg\nBegrüssung und Spektrum-Aktivität\n\n\n00:15–01:00\nFrage 1: Was ist KI?\nTextgenerierung, Chain-of-Thought, Mini-Experiment\n\n\n01:00–01:10\nPause\n\n\n\n01:10–01:30\nCopilot Onboarding\nDemonstration + Guided Practice\n\n\n01:30–02:10\nFrage 2: Wofür kann KI verwendet werden?\nFähigkeiten, BFH-Policy, Fakten-Check Aktivität\n\n\n02:10–02:20\nPause\n\n\n\n02:20–03:00\nFrage 3: Wann hilft KI, wann schadet sie?\nSzenario-Karten, Offloading vs. Outsourcing\n\n\n03:00–03:10\nAbschluss\nTransfer und Vorsätze",
+    "text": "Ablauf\n\n\n\n\n\n\n\n\nZeit\nPhase\nInhalt\n\n\n\n\n09:00–09:15\nEinstieg\nBegrüssung und Spektrum-Aktivität\n\n\n09:15–10:00\nFrage 1: Was ist KI?\nTextgenerierung, Chain-of-Thought, Mini-Experiment\n\n\n10:00–10:10\nPause\n\n\n\n10:10–10:30\nCopilot Onboarding\nDemonstration + Guided Practice\n\n\n10:30–11:10\nFrage 2: Wofür kann KI verwendet werden?\nFähigkeiten, BFH-Policy, Fakten-Check Aktivität\n\n\n11:10–11:20\nPause\n\n\n\n11:20–11:50\nFrage 3: Wann hilft KI, wann schadet sie?\nSzenario-Karten, Offloading vs. Outsourcing\n\n\n11:50–12:00\nAbschluss\nTransfer und Vorsätze",
     "crumbs": [
       "Workshop",
       "Übersicht"
