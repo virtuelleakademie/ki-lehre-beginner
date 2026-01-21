@@ -6,7 +6,7 @@ sidebar: workshop
 
 ## Präsentation
 
-In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch statistische Vorhersage und "Denken" durch Chain-of-Thought.
+In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch statistische Vorhersage und Denken durch Chain-of-Thought.
 
 [Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
 
@@ -24,13 +24,13 @@ In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch 
 | Thema | Zeit |
 |-------|------|
 | Sprachmodelle als Textvorhersage | 20 min |
-| Chain-of-Thought "Denken" | 15 min |
+| Chain-of-Thought Denken | 15 min |
 | Mini-Experiment | 10 min |
 
 ### Kernbotschaften
 
 1. LLMs sagen das nächste Wort vorher, basierend auf Mustern in Trainingsdaten
-2. "Denken" (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext
+2. Denken (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext
 3. Moderne Modelle sind extrem leistungsfähig; der Kontext bestimmt das Ergebnis
 
 ## Interaktiv: Token-Vorhersage
@@ -105,7 +105,7 @@ Plot.plot({
 ```
 
 ::: {.key-point}
-Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern aus den Trainingsdaten, ohne eingebaute Prüfung der faktischen Korrektheit.
+Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern aus den Trainingsdaten. Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.
 :::
 
 ## Interaktiv: Temperature
@@ -165,7 +165,9 @@ Plot.plot({
 ::: {.key-point}
 ## Antwort auf Frage 1: Was ist KI?
 
-Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Zwei Faktoren bestimmen das Ergebnis:
+Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Das klingt simpel, aber es ist funktional ähnlich wie das, was unser Gehirn ständig tut: Muster vervollständigen auf Basis gelernter Assoziationen. Die Implementierung ist anders, aber die kognitive Operation hat echte Parallelen.
+
+Zwei Faktoren bestimmen das Ergebnis:
 
 1. **Das Modell**: Was es aus Trainingsdaten gelernt hat
 2. **Der Kontext**: Was du im Prompt mitgibst (inkl. Dokumente, Web-Suche, Chat-Verlauf)

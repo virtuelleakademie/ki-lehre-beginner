@@ -23,17 +23,19 @@ Diese Übung folgt dem Prinzip **I do → We do → You do**:
 ## Teil 1: Das Problem verstehen (5 min) {#problem}
 
 ::: {.key-point}
-### Warum Chatbots "halluzinieren"
+### Warum Chatbots halluzinieren
 
-Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Sie haben **kein internes Faktenregister** und **keine Möglichkeit zu prüfen**, ob ihre Aussagen wahr sind.
+Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Das klingt fremd, aber Menschen funktionieren ähnlich: Auch wir haben keinen direkten Zugang zur Wahrheit, sondern vervollständigen Muster auf Basis von Erfahrung.
 
-**Die Mechanik der Halluzination:**
+Der Unterschied? **Häufigkeit und Zuverlässigkeit.** LLMs halluzinieren öfter und in anderen Situationen als Menschen. Aber das Grundprinzip ist vergleichbar: Plausibilität wird mit Wahrheit verwechselt.
 
-1. **Statistische Plausibilität statt Wahrheit**: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. "Zürich ist die Hauptstadt der Schweiz" klingt statistisch plausibel, auch wenn es falsch ist.
+**Wie Halluzinationen entstehen:**
 
-2. **Selbstsichere Formulierung ist trainiert**: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. Das Modell hat gelernt, dass Aussagen typischerweise ohne Hedging formuliert werden.
+1. **Statistische Plausibilität statt Wahrheit**: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. "Zürich ist die Hauptstadt der Schweiz" klingt statistisch plausibel, auch wenn es falsch ist. (Menschen machen ähnliche Fehler: Wir erinnern uns an das, was "passt", nicht unbedingt an das, was stimmt.)
 
-3. **Kein Zugang zu Quellen beim Generieren**: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, "erinnert" es sich nicht an konkrete Quellen.
+2. **Selbstsichere Formulierung ist trainiert**: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. (Auch Menschen formulieren oft selbstbewusster, als ihr Wissen rechtfertigt.)
+
+3. **Kein Zugang zu Quellen beim Generieren**: Das Modell erinnert sich nicht an konkrete Quellen. (Menschen auch nicht immer: Wir wissen oft nicht mehr, woher wir etwas wissen.)
 
 **Besonders anfällig für Fehler:**
 

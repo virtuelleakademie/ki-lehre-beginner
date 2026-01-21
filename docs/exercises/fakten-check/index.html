@@ -89,6 +89,66 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: #A3195B;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f007';
+  background-image: none;
+}
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f005';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-group.callout {
+  border-left-color: #A3195B;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c0';
+  background-image: none;
+}
 div.callout-warning.callout {
   border-left-color: #A3195B;
 }
@@ -113,30 +173,6 @@ div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro
   content: '\e2ca';
   background-image: none;
 }
-div.callout-group.callout {
-  border-left-color: #A3195B;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c0';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f328';
-  background-image: none;
-}
 div.callout-reflect.callout {
   border-left-color: #D4A03E;
 }
@@ -147,54 +183,6 @@ div.callout-reflect .callout-toggle::before {  background-image: url('data:image
 div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f0eb';
-  background-image: none;
-}
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f075';
-  background-image: none;
-}
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
-}
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c3';
-  background-image: none;
-}
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f002';
-  background-image: none;
-}
-div.callout-individual.callout {
-  border-left-color: #A3195B;
-}
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f007';
   background-image: none;
 }
 div.callout-demonstration.callout {
@@ -209,16 +197,28 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
   content: '\f51b';
   background-image: none;
 }
-div.callout-key-point.callout {
+div.callout-source-check.callout {
   border-left-color: #D4A03E;
 }
-div.callout-key-point.callout-style-default > .callout-header {
+div.callout-source-check.callout-style-default > .callout-header {
   background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f005';
+  content: '\f002';
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
   background-image: none;
 }
 </style>
@@ -263,11 +263,6 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 </i> 
 <span class="menu-text">Übungen</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../interactives/index.html"> <i class="bi bi-play-circle" role="img">
-</i> 
-<span class="menu-text">Demos</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -277,6 +272,10 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
  <span class="menu-text">Dokumente</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-dokumente">    
+        <li>
+    <a class="dropdown-item" href="../../resources/prompting-basics/index.html">
+ <span class="dropdown-text">Prompting für Einsteiger</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="../../resources/weiterfuehrende-ressourcen/index.html">
  <span class="dropdown-text">Weiterführende Ressourcen</span></a>
@@ -291,12 +290,8 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
  <span class="dropdown-text">Begleitdokument: KI Weiterbildung</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../resources/resources.html">
- <span class="dropdown-text">Begleitdokument: Orientierungshilfe</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../../assets/pdfs/Orientierungshilfe.pdf">
- <span class="dropdown-text">Begleitdokument: Orientierungshilfe (PDF)</span></a>
+ <span class="dropdown-text">Orientierungshilfe</span></a>
   </li>  
     </ul>
   </li>
@@ -499,16 +494,17 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Key-point</span>Warum Chatbots “halluzinieren”
+<span class="screen-reader-only">Key-point</span>Warum Chatbots halluzinieren
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Sie haben <strong>kein internes Faktenregister</strong> und <strong>keine Möglichkeit zu prüfen</strong>, ob ihre Aussagen wahr sind.</p>
-<p><strong>Die Mechanik der Halluzination:</strong></p>
+<p>Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Das klingt fremd, aber Menschen funktionieren ähnlich: Auch wir haben keinen direkten Zugang zur Wahrheit, sondern vervollständigen Muster auf Basis von Erfahrung.</p>
+<p>Der Unterschied? <strong>Häufigkeit und Zuverlässigkeit.</strong> LLMs halluzinieren öfter und in anderen Situationen als Menschen. Aber das Grundprinzip ist vergleichbar: Plausibilität wird mit Wahrheit verwechselt.</p>
+<p><strong>Wie Halluzinationen entstehen:</strong></p>
 <ol type="1">
-<li><p><strong>Statistische Plausibilität statt Wahrheit</strong>: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel, auch wenn es falsch ist.</p></li>
-<li><p><strong>Selbstsichere Formulierung ist trainiert</strong>: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. Das Modell hat gelernt, dass Aussagen typischerweise ohne Hedging formuliert werden.</p></li>
-<li><p><strong>Kein Zugang zu Quellen beim Generieren</strong>: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, “erinnert” es sich nicht an konkrete Quellen.</p></li>
+<li><p><strong>Statistische Plausibilität statt Wahrheit</strong>: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel, auch wenn es falsch ist. (Menschen machen ähnliche Fehler: Wir erinnern uns an das, was “passt”, nicht unbedingt an das, was stimmt.)</p></li>
+<li><p><strong>Selbstsichere Formulierung ist trainiert</strong>: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. (Auch Menschen formulieren oft selbstbewusster, als ihr Wissen rechtfertigt.)</p></li>
+<li><p><strong>Kein Zugang zu Quellen beim Generieren</strong>: Das Modell erinnert sich nicht an konkrete Quellen. (Menschen auch nicht immer: Wir wissen oft nicht mehr, woher wir etwas wissen.)</p></li>
 </ol>
 <p><strong>Besonders anfällig für Fehler:</strong></p>
 <ul>

@@ -58,7 +58,7 @@ Du überträgst die **eigentliche Denkarbeit** an ein externes System.
 - KI-generierter Text statt eigenes Schreiben
 - KI-Analyse statt eigenes Durchdenken
 
-Das Werkzeug **entscheidet**, **produziert** und "denkt" für dich.
+Das Werkzeug **entscheidet**, **produziert** und denkt für dich.
 
 ## Die entscheidende Frage
 
