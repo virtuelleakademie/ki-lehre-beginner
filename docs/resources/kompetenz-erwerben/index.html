@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.27">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="../..//assets/robot.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-a94639a2a79a10208c3806ea22bc16b3.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f7ea35562251465ded65364387175922.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-a94639a2a79a10208c3806ea22bc16b3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-12ef578f176a4757e706afea5316e77b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -57,17 +62,17 @@ ul.task-list li input[type="checkbox"] {
     "s"
   ],
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -83,224 +88,136 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-timing.callout {
-  border-left-color: red;
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
 }
-div.callout-timing.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-timing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-timing.callout-style-default .callout-icon::before, div.callout-timing.callout-titled .callout-icon::before {
-  content: '⏱️';
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
   background-image: none;
 }
-div.callout-caution.callout {
-  border-left-color: orange;
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-caution.callout-style-default > .callout-header {
-  background-color: rgb(from orange r g b / 13%);
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-caution .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-caution.callout-style-default .callout-icon::before, div.callout-caution.callout-titled .callout-icon::before {
-  content: '⚠️';
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f005';
   background-image: none;
 }
-div.callout-try.callout {
-  border-left-color: blue;
+div.callout-scenario.callout {
+  border-left-color: #666666;
 }
-div.callout-try.callout-style-default > .callout-header {
-  background-color: rgb(from blue r g b / 13%);
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
 }
-div.callout-try .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-try.callout-style-default .callout-icon::before, div.callout-try.callout-titled .callout-icon::before {
-  content: '🔄';
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
   background-image: none;
 }
-div.callout-feedback.callout {
-  border-left-color: teal;
+div.callout-prompt.callout {
+  border-left-color: #333333;
 }
-div.callout-feedback.callout-style-default > .callout-header {
-  background-color: rgb(from teal r g b / 13%);
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
 }
-div.callout-feedback .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-feedback.callout-style-default .callout-icon::before, div.callout-feedback.callout-titled .callout-icon::before {
-  content: '📝';
-  background-image: none;
-}
-div.callout-prompt-example.callout {
-  border-left-color: steelblue;
-}
-div.callout-prompt-example.callout-style-default > .callout-header {
-  background-color: rgb(from steelblue r g b / 13%);
-}
-div.callout-prompt-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt-example.callout-style-default .callout-icon::before, div.callout-prompt-example.callout-titled .callout-icon::before {
-  content: '👩🏼‍🔧';
-  background-image: none;
-}
-div.callout-pair.callout {
-  border-left-color: forestgreen;
-}
-div.callout-pair.callout-style-default > .callout-header {
-  background-color: rgb(from forestgreen r g b / 13%);
-}
-div.callout-pair .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.callout-titled .callout-icon::before {
-  content: '👥';
-  background-image: none;
-}
-div.callout-break.callout {
-  border-left-color: yellow;
-}
-div.callout-break.callout-style-default > .callout-header {
-  background-color: rgb(from yellow r g b / 13%);
-}
-div.callout-break .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-break.callout-style-default .callout-icon::before, div.callout-break.callout-titled .callout-icon::before {
-  content: '☕';
-  background-image: none;
-}
-div.callout-checkpoint.callout {
-  border-left-color: purple;
-}
-div.callout-checkpoint.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-checkpoint .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-checkpoint.callout-style-default .callout-icon::before, div.callout-checkpoint.callout-titled .callout-icon::before {
-  content: '🎯';
-  background-image: none;
-}
-div.callout-schedule.callout {
-  border-left-color: steelblue;
-}
-div.callout-schedule.callout-style-default > .callout-header {
-  background-color: rgb(from steelblue r g b / 13%);
-}
-div.callout-schedule .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-schedule.callout-style-default .callout-icon::before, div.callout-schedule.callout-titled .callout-icon::before {
-  content: '⏰︎';
-  background-image: none;
-}
-div.callout-reflect.callout {
-  border-left-color: purple;
-}
-div.callout-reflect.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-  content: '💭';
-  background-image: none;
-}
-div.callout-setup.callout {
-  border-left-color: gray;
-}
-div.callout-setup.callout-style-default > .callout-header {
-  background-color: rgb(from gray r g b / 13%);
-}
-div.callout-setup .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-setup.callout-style-default .callout-icon::before, div.callout-setup.callout-titled .callout-icon::before {
-  content: '⚙️';
-  background-image: none;
-}
-div.callout-export.callout {
-  border-left-color: brown;
-}
-div.callout-export.callout-style-default > .callout-header {
-  background-color: rgb(from brown r g b / 13%);
-}
-div.callout-export .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-export.callout-style-default .callout-icon::before, div.callout-export.callout-titled .callout-icon::before {
-  content: '📤';
-  background-image: none;
-}
-div.callout-individual.callout {
-  border-left-color: steelblue;
-}
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgb(from steelblue r g b / 13%);
-}
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-  content: '💻';
-  background-image: none;
-}
-div.callout-prompt-template.callout {
-  border-left-color: indigo;
-}
-div.callout-prompt-template.callout-style-default > .callout-header {
-  background-color: rgb(from indigo r g b / 13%);
-}
-div.callout-prompt-template .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt-template.callout-style-default .callout-icon::before, div.callout-prompt-template.callout-titled .callout-icon::before {
-  content: '📋';
-  background-image: none;
-}
-div.callout-screens-up.callout {
-  border-left-color: green;
-}
-div.callout-screens-up.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-screens-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-screens-up.callout-style-default .callout-icon::before, div.callout-screens-up.callout-titled .callout-icon::before {
-  content: '🔼';
-  background-image: none;
-}
-div.callout-screens-down.callout {
-  border-left-color: orange;
-}
-div.callout-screens-down.callout-style-default > .callout-header {
-  background-color: rgb(from orange r g b / 13%);
-}
-div.callout-screens-down .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-screens-down.callout-style-default .callout-icon::before, div.callout-screens-down.callout-titled .callout-icon::before {
-  content: '🔽';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: gold;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgb(from gold r g b / 13%);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  content: '💡';
-  background-image: none;
-}
-div.callout-testing.callout {
-  border-left-color: green;
-}
-div.callout-testing.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-testing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-testing.callout-style-default .callout-icon::before, div.callout-testing.callout-titled .callout-icon::before {
-  content: '🧪';
-  background-image: none;
-}
-div.callout-tutor-example.callout {
-  border-left-color: purple;
-}
-div.callout-tutor-example.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-tutor-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-tutor-example.callout-style-default .callout-icon::before, div.callout-tutor-example.callout-titled .callout-icon::before {
-  content: '📄';
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
   background-image: none;
 }
 div.callout-group.callout {
-  border-left-color: purple;
+  border-left-color: #A3195B;
 }
 div.callout-group.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
+  background-color: rgba(163, 25, 91, 0.13);
 }
 div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  content: '👥';
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c0';
+  background-image: none;
+}
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
+  background-image: none;
+}
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\e2ca';
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: #A3195B;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f007';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0eb';
+  background-image: none;
+}
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f002';
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f51b';
   background-image: none;
 }
 </style>
@@ -319,7 +236,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -335,8 +252,10 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../styles/styles.css">
+<link rel="stylesheet" href="../../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
 <meta property="og:title" content="Wie man Kompetenz erwirbt – KI in der Lehre: Beginner">
-<meta property="og:description" content="Vom Novizen zum Exerten: Die Wissenschaft des Lernens">
+<meta property="og:description" content="Vom Novizen zum Experten: Die Wissenschaft des Lernens">
 <meta property="og:image" content="https://virtuelleakademie.github.io/ki-lehre-beginner/resources/kompetenz-erwerben/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
@@ -352,8 +271,8 @@ window.Quarto = {
     <span class="navbar-title">KI in der Lehre: Beginner</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -373,6 +292,11 @@ window.Quarto = {
 </i> 
 <span class="menu-text">Übungen</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../interactives/index.html"> <i class="bi bi-play-circle" role="img">
+</i> 
+<span class="menu-text">Demos</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -382,6 +306,11 @@ window.Quarto = {
  <span class="menu-text">Dokumente</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-dokumente">    
+        <li>
+    <a class="dropdown-item" href="../../resources/weiterfuehrende-ressourcen/index.html">
+ <span class="dropdown-text">Weiterführende Ressourcen</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
         <li>
     <a class="dropdown-item" href="https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf">
  <span class="dropdown-text">KI Policy der BFH</span></a>
@@ -403,7 +332,8 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base"><i class="bi bi-lightbulb-fill"></i></a>
+    <a href="https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/" title="BFH Weiterbildung: KI in der Lehre" class="quarto-navigation-tool px-1" aria-label="BFH Weiterbildung: KI in der Lehre" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
+    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base" target="_blank"><i class="bi bi-lightbulb-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -414,11 +344,11 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
   <li><a href="#zentrale-erkenntnisse" id="toc-zentrale-erkenntnisse" class="nav-link active" data-scroll-target="#zentrale-erkenntnisse">Zentrale Erkenntnisse</a></li>
-  <li><a href="#die-reise-vom-anfänger-zum-experten" id="toc-die-reise-vom-anfänger-zum-experten" class="nav-link" data-scroll-target="#die-reise-vom-anfänger-zum-experten">Die Reise vom Anfänger zum Experten</a></li>
+  <li><a href="#die-reise-von-anfängerinnen-zu-expertinnen" id="toc-die-reise-von-anfängerinnen-zu-expertinnen" class="nav-link" data-scroll-target="#die-reise-von-anfängerinnen-zu-expertinnen">Die Reise von Anfänger<em>innen zu Expert</em>innen</a></li>
   <li><a href="#die-progression-von-schwachen-zu-starken-methoden" id="toc-die-progression-von-schwachen-zu-starken-methoden" class="nav-link" data-scroll-target="#die-progression-von-schwachen-zu-starken-methoden">Die Progression von schwachen zu starken Methoden</a>
   <ul class="collapse">
   <li><a href="#schwache-methoden-anfänger-stadium" id="toc-schwache-methoden-anfänger-stadium" class="nav-link" data-scroll-target="#schwache-methoden-anfänger-stadium">1. <strong>Schwache Methoden</strong> (Anfänger-Stadium)</a></li>
@@ -442,13 +372,14 @@ window.Quarto = {
   <li><a href="#pädagogische-implikationen" id="toc-pädagogische-implikationen" class="nav-link" data-scroll-target="#pädagogische-implikationen">Pädagogische Implikationen</a>
   <ul class="collapse">
   <li><a href="#die-experten-anfänger-unterrichtsfalle" id="toc-die-experten-anfänger-unterrichtsfalle" class="nav-link" data-scroll-target="#die-experten-anfänger-unterrichtsfalle">Die Experten-Anfänger-Unterrichtsfalle</a></li>
-  <li><a href="#warum-expertenmethoden-anfängern-aktiv-schaden" id="toc-warum-expertenmethoden-anfängern-aktiv-schaden" class="nav-link" data-scroll-target="#warum-expertenmethoden-anfängern-aktiv-schaden">Warum Expertenmethoden Anfängern aktiv schaden</a></li>
+  <li><a href="#warum-methoden-für-expertinnen-anfängerinnen-aktiv-schaden" id="toc-warum-methoden-für-expertinnen-anfängerinnen-aktiv-schaden" class="nav-link" data-scroll-target="#warum-methoden-für-expertinnen-anfängerinnen-aktiv-schaden">Warum Methoden für Expert<em>innen Anfänger</em>innen aktiv schaden</a></li>
   <li><a href="#lehren-im-einklang-mit-dem-gehirn" id="toc-lehren-im-einklang-mit-dem-gehirn" class="nav-link" data-scroll-target="#lehren-im-einklang-mit-dem-gehirn">Lehren im Einklang mit dem Gehirn</a></li>
   <li><a href="#wie-vorhersagefehler-lernen-antreiben" id="toc-wie-vorhersagefehler-lernen-antreiben" class="nav-link" data-scroll-target="#wie-vorhersagefehler-lernen-antreiben">Wie Vorhersagefehler Lernen antreiben</a></li>
   <li><a href="#das-prinzip-der-wünschenswerten-schwierigkeiten" id="toc-das-prinzip-der-wünschenswerten-schwierigkeiten" class="nav-link" data-scroll-target="#das-prinzip-der-wünschenswerten-schwierigkeiten">Das Prinzip der wünschenswerten Schwierigkeiten</a></li>
   <li><a href="#der-kompilierungsprozess" id="toc-der-kompilierungsprozess" class="nav-link" data-scroll-target="#der-kompilierungsprozess">Der Kompilierungsprozess</a></li>
   <li><a href="#was-wir-verlieren-wenn-wir-die-anstrengung-überspringen" id="toc-was-wir-verlieren-wenn-wir-die-anstrengung-überspringen" class="nav-link" data-scroll-target="#was-wir-verlieren-wenn-wir-die-anstrengung-überspringen">Was wir verlieren, wenn wir die Anstrengung überspringen</a></li>
   <li><a href="#die-expertise-illusion" id="toc-die-expertise-illusion" class="nav-link" data-scroll-target="#die-expertise-illusion">Die Expertise-Illusion</a></li>
+  <li><a href="#metakognitive-grenzen-warum-wir-unser-eigenes-lernen-schlecht-einschätzen" id="toc-metakognitive-grenzen-warum-wir-unser-eigenes-lernen-schlecht-einschätzen" class="nav-link" data-scroll-target="#metakognitive-grenzen-warum-wir-unser-eigenes-lernen-schlecht-einschätzen">Metakognitive Grenzen: Warum wir unser eigenes Lernen schlecht einschätzen</a></li>
   <li><a href="#forschungsergebnisse-die-kosten-des-kognitiven-auslagerns" id="toc-forschungsergebnisse-die-kosten-des-kognitiven-auslagerns" class="nav-link" data-scroll-target="#forschungsergebnisse-die-kosten-des-kognitiven-auslagerns">Forschungsergebnisse: Die Kosten des kognitiven Auslagerns</a></li>
   </ul></li>
   <li><a href="#die-biologische-realität-des-lernens" id="toc-die-biologische-realität-des-lernens" class="nav-link" data-scroll-target="#die-biologische-realität-des-lernens">Die biologische Realität des Lernens</a>
@@ -470,13 +401,13 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Wie man Kompetenz erwirbt</h1>
-<p class="subtitle lead">Vom Novizen zum Exerten: Die Wissenschaft des Lernens</p>
+<p class="subtitle lead">Vom Novizen zum Experten: Die Wissenschaft des Lernens</p>
 </div>
 
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
+  <div class="quarto-title-meta-heading">Autor:in</div>
+  <div class="quarto-title-meta-heading">Zugehörigkeit</div>
   
     <div class="quarto-title-meta-contents">
     <p class="author"><a href="https://github.com/awellis">Andrew Ellis</a> <a href="https://orcid.org/0000-0002-2788-936X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
@@ -513,8 +444,8 @@ window.Quarto = {
 <li><strong>Wähle deine Werkzeuge mit Bedacht</strong>: Nutze KI, um irrelevante kognitive Belastung zu reduzieren, nicht um essentielles Lernen zu überspringen</li>
 </ol>
 </section>
-<section id="die-reise-vom-anfänger-zum-experten" class="level2">
-<h2 class="anchored" data-anchor-id="die-reise-vom-anfänger-zum-experten">Die Reise vom Anfänger zum Experten</h2>
+<section id="die-reise-von-anfängerinnen-zu-expertinnen" class="level2">
+<h2 class="anchored" data-anchor-id="die-reise-von-anfängerinnen-zu-expertinnen">Die Reise von Anfänger<em>innen zu Expert</em>innen</h2>
 <p>Wenn wir neue Fähigkeiten erlernen, durchläuft unser Gehirn eine bemerkenswerte Transformation. Das Verständnis dieses Prozesses hilft uns zu erkennen, warum das Auslagern kognitiver Prozesse an KI die Entwicklung echter Expertise verhindern kann – und warum <em>Expertenwerkzeuge Anfängern aktiv schaden können</em>.</p>
 </section>
 <section id="die-progression-von-schwachen-zu-starken-methoden" class="level2">
@@ -522,7 +453,7 @@ window.Quarto = {
 <p>Nach John Andersons ACT-R-Theorie <span class="citation" data-cites="andersonAcquisitionCognitiveSkill1982 andersonHowCanHuman2007">[@andersonAcquisitionCognitiveSkill1982; @andersonHowCanHuman2007]</span> entwickelt sich Expertise durch eine vorhersehbare Progression:</p>
 <section id="schwache-methoden-anfänger-stadium" class="level3">
 <h3 class="anchored" data-anchor-id="schwache-methoden-anfänger-stadium">1. <strong>Schwache Methoden</strong> (Anfänger-Stadium)</h3>
-<p>Schwache Methoden sind domänenübergreifende Problemlösungsstrategien, die Anfänger verwenden, wenn ihnen spezifisches Wissen fehlt:</p>
+<p>Schwache Methoden sind domänenübergreifende Problemlösungsstrategien, die Anfänger*innen verwenden, wenn ihnen spezifisches Wissen fehlt:</p>
 <ul>
 <li><strong>Mittel-Ziel-Analyse</strong>: <code>Was ist der Unterschied zwischen meinem aktuellen Stand und dem Ziel?</code></li>
 <li><strong>Rückwärtsarbeiten</strong>: <code>Vom Ziel zurück zum Ausgangszustand gehen</code></li>
@@ -536,7 +467,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel: Anfänger löst <span class="math inline">\(3x + 5 = 20\)</span>
+<span class="screen-reader-only">Hinweis</span>Beispiel: Anfänger*in löst <span class="math inline">\(3x + 5 = 20\)</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -588,18 +519,18 @@ Beispiel: Anfänger löst <span class="math inline">\(3x + 5 = 20\)</span>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel: Experte löst <span class="math inline">\(3x + 5 = 20\)</span>
+<span class="screen-reader-only">Hinweis</span>Beispiel: Expert*in löst <span class="math inline">\(3x + 5 = 20\)</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Experte sieht die Gleichung und erkennt sofort → <span class="math inline">\(x = 5\)</span></p>
+<p>Expert*in sieht die Gleichung und erkennt sofort → <span class="math inline">\(x = 5\)</span></p>
 <p>Wenn nach Erklärung gefragt:</p>
 <ul>
 <li>“Ich weiß es einfach…”</li>
 <li>“Du subtrahierst 5 und teilst durch 3”</li>
 <li>“Wie wusste ich das? Ich bin mir nicht sicher…”</li>
 </ul>
-<p><strong>Das Wissen ist zu automatischen Prozeduren kompilert.</strong></p>
+<p><strong>Das Wissen ist zu automatischen Prozeduren kompiliert.</strong></p>
 </div>
 </div>
 </section>
@@ -646,7 +577,7 @@ Beispiel: Experte löst <span class="math inline">\(3x + 5 = 20\)</span>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warum diese Unterscheidung wichtig ist
+<span class="screen-reader-only">Wichtig</span>Warum diese Unterscheidung wichtig ist
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -693,14 +624,14 @@ Warum diese Unterscheidung wichtig ist
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Elementinteraktivität in der Praxis
+<span class="screen-reader-only">Hinweis</span>Elementinteraktivität in der Praxis
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Betrachte das Lösen: <span class="math inline">\((x + 3)(x - 2) = 0\)</span></p>
-<p><strong>Für einen Anfänger</strong> muss jedes Element im Arbeitsgedächtnis gehalten werden: - Was <span class="math inline">\(x\)</span> bedeutet - Die Bedeutung der Klammern - Additions- und Subtraktionsoperationen - Implizite Multiplikation - Die Bedeutung von „gleich Null“ - Wie man Lösungen findet</p>
+<p>**Für Anfänger*innen** muss jedes Element im Arbeitsgedächtnis gehalten werden: - Was <span class="math inline">\(x\)</span> bedeutet - Die Bedeutung der Klammern - Additions- und Subtraktionsoperationen - Implizite Multiplikation - Die Bedeutung von „gleich Null“ - Wie man Lösungen findet</p>
 <p><strong>Insgesamt: 7+ interagierende Elemente</strong> = Überlastung des Arbeitsgedächtnisses</p>
-<p><strong>Für einen Experten</strong> ist das ein Chunk aus dem Langzeitgedächtnis: - “Faktorisierte Form, also <span class="math inline">\(x = -3\)</span> oder <span class="math inline">\(x = 2\)</span>”</p>
+<p>**Für Expert*innen** ist das ein Chunk aus dem Langzeitgedächtnis: - “Faktorisierte Form, also <span class="math inline">\(x = -3\)</span> oder <span class="math inline">\(x = 2\)</span>”</p>
 <p><strong>Insgesamt: 1 Chunk</strong> = Minimale Belastung des Arbeitsgedächtnisses</p>
 <p><strong>Beim Auslagern an KI</strong>: - Eingabe → Antwort</p>
 <p><strong>Insgesamt: 0 Arbeitsgedächtnisverarbeitung</strong> = Kein Lernen, keine Speicherung im Langzeitgedächtnis</p>
@@ -710,12 +641,12 @@ Elementinteraktivität in der Praxis
 </section>
 <section id="wie-expertise-wirklich-entsteht" class="level3">
 <h3 class="anchored" data-anchor-id="wie-expertise-wirklich-entsteht">Wie Expertise wirklich entsteht</h3>
-<p>Wie De Groot 1965 erstmals zeigte <span class="citation" data-cites="grootThoughtChoiceChess1978 swellerCognitiveLoadTheory2024">[@grootThoughtChoiceChess1978; @swellerCognitiveLoadTheory2024]</span>, ist Expertise <strong>fächerspezifisch</strong> und resultiert aus <strong>riesigen Mengen fachspezifischer Informationen im Langzeitgedächtnis</strong>. Das ist nicht einfach „mehr Fakten wissen“ – sondern organisierte Wissensstrukturen (Schemata), die Experten ermöglichen:</p>
+<p>Wie De Groot 1965 erstmals zeigte <span class="citation" data-cites="grootThoughtChoiceChess1978 swellerCognitiveLoadTheory2024">[@grootThoughtChoiceChess1978; @swellerCognitiveLoadTheory2024]</span>, ist Expertise <strong>fächerspezifisch</strong> und resultiert aus <strong>riesigen Mengen fachspezifischer Informationen im Langzeitgedächtnis</strong>. Das ist nicht einfach „mehr Fakten wissen”, sondern organisierte Wissensstrukturen (Schemata), die Expert*innen ermöglichen:</p>
 <ul>
-<li><strong>Mehrere Elemente zu Chunks bündeln</strong></li>
-<li><strong>Muster automatisch erkennen</strong></li>
-<li><strong>Prozeduren ohne bewusste Anstrengung abrufen</strong></li>
-<li><strong>Das Arbeitsgedächtnis für höheres Denken freimachen</strong></li>
+<li>Mehrere Elemente zu Chunks bündeln</li>
+<li>Muster automatisch erkennen</li>
+<li>Prozeduren ohne bewusste Anstrengung abrufen</li>
+<li>Das Arbeitsgedächtnis für höheres Denken freimachen</li>
 </ul>
 </section>
 </section>
@@ -723,20 +654,14 @@ Elementinteraktivität in der Praxis
 <h2 class="anchored" data-anchor-id="das-ki-bypass-problem">Das KI-Bypass-Problem</h2>
 <section id="wie-ki-die-kognitive-architektur-stört" class="level3">
 <h3 class="anchored" data-anchor-id="wie-ki-die-kognitive-architektur-stört">Wie KI die kognitive Architektur stört</h3>
-<p>Das Auslagern kognitiver Prozesse an KI kann das gesamte Lernsystem kurzschließen:</p>
-<ol type="1">
-<li><strong>Umgeht Verarbeitung im Arbeitsgedächtnis</strong>: Keine kognitive Anstrengung bedeutet keine Kodierung</li>
-<li><strong>Verhindert Speicherung im Langzeitgedächtnis</strong>: Unverarbeitete Informationen werden nicht gespeichert</li>
-<li><strong>Eliminiert Schemabildung</strong>: Lernende erhalten Antworten, ohne Wissensstrukturen aufzubauen</li>
-<li><strong>Blockiert den Übergang vom Anfänger zum Experten</strong>: Kein Weg von begrenztem zu unbegrenztem Wissen</li>
-</ol>
+<p>Das Auslagern kognitiver Prozesse an KI kann das gesamte Lernsystem kurzschliessen. Ohne die Verarbeitung im Arbeitsgedächtnis findet keine Kodierung statt. Informationen, die nicht verarbeitet werden, werden auch nicht im Langzeitgedächtnis gespeichert. Lernende erhalten Antworten, ohne Wissensstrukturen aufzubauen, und der Weg von Anfänger<em>innen zu Expert</em>innen wird blockiert.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Warnung
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -749,8 +674,8 @@ Warning
 <h2 class="anchored" data-anchor-id="pädagogische-implikationen">Pädagogische Implikationen</h2>
 <section id="die-experten-anfänger-unterrichtsfalle" class="level3">
 <h3 class="anchored" data-anchor-id="die-experten-anfänger-unterrichtsfalle">Die Experten-Anfänger-Unterrichtsfalle</h3>
-<p>Der gefährlichste Fehler in der Bildung ist anzunehmen, dass Anfänger so lernen sollten, wie Experten arbeiten. Das führt zu dem, was Kirschner <span class="citation" data-cites="kirschnerHowTeachingHappens2022">[@kirschnerHowTeachingHappens2022]</span> als Verwechslung der <strong>„Epistemologie des Experten mit der Pädagogik für Lernende“</strong> bezeichnet.</p>
-<p><strong>Was Experten tun (Wissen produzieren):</strong></p>
+<p>Der gefährlichste Fehler in der Bildung ist anzunehmen, dass Anfänger<em>innen so lernen sollten, wie Expert</em>innen arbeiten. Das führt zu dem, was Kirschner <span class="citation" data-cites="kirschnerHowTeachingHappens2022">[@kirschnerHowTeachingHappens2022]</span> als Verwechslung der **„Epistemologie der Expert*innen mit der Pädagogik für Lernende”** bezeichnet.</p>
+<p>**Was Expert*innen tun (Wissen produzieren):**</p>
 <ul>
 <li>Arbeiten von automatisierten Prinzipien aus vorwärts</li>
 <li>Erkennen tiefe Muster sofort</li>
@@ -758,7 +683,7 @@ Warning
 <li>Erschaffen und entdecken neues Wissen</li>
 <li>Verarbeiten mehrere Elemente gleichzeitig</li>
 </ul>
-<p><strong>Was Anfänger brauchen (Wissen lernen):</strong></p>
+<p>**Was Anfänger*innen brauchen (Wissen lernen):**</p>
 <ul>
 <li>Rückwärtsarbeiten mit Mittel-Ziel-Analyse</li>
 <li>Grundlegende Mustererkennung durch Übung aufbauen</li>
@@ -767,63 +692,44 @@ Warning
 <li>Elemente nacheinander verarbeiten, um Überlastung zu vermeiden</li>
 </ul>
 </section>
-<section id="warum-expertenmethoden-anfängern-aktiv-schaden" class="level3">
-<h3 class="anchored" data-anchor-id="warum-expertenmethoden-anfängern-aktiv-schaden">Warum Expertenmethoden Anfängern aktiv schaden</h3>
-<p>Anfängern Expertenwerkzeuge zu geben, ist nicht nur ineffektiv – es ist <strong>aktiv schädlich</strong> für das Lernen:</p>
+<section id="warum-methoden-für-expertinnen-anfängerinnen-aktiv-schaden" class="level3">
+<h3 class="anchored" data-anchor-id="warum-methoden-für-expertinnen-anfängerinnen-aktiv-schaden">Warum Methoden für Expert<em>innen Anfänger</em>innen aktiv schaden</h3>
+<p>Anfänger<em>innen Werkzeuge für Expert</em>innen zu geben, ist nicht nur ineffektiv, sondern <strong>aktiv schädlich</strong> für das Lernen:</p>
 <section id="mismatch-der-kognitiven-belastung" class="level4">
-<h4 class="anchored" data-anchor-id="mismatch-der-kognitiven-belastung">1. <strong>Mismatch der kognitiven Belastung</strong></h4>
-<ul>
-<li><strong>Experten</strong> können viele Elemente verarbeiten, weil sie diese zu Mustern gebündelt haben</li>
-<li><strong>Anfänger</strong> werden mit derselben Komplexität überfordert</li>
-<li><strong>Ergebnis</strong>: Kognitive Überlastung verhindert jegliches Lernen</li>
-</ul>
+<h4 class="anchored" data-anchor-id="mismatch-der-kognitiven-belastung">1. Mismatch der kognitiven Belastung</h4>
+<p>Expert<em>innen können viele Elemente verarbeiten, weil sie diese zu Mustern gebündelt haben. Anfänger</em>innen werden mit derselben Komplexität überfordert. Das Ergebnis: Kognitive Überlastung verhindert jegliches Lernen.</p>
 </section>
 <section id="störung-der-produktionsregeln" class="level4">
-<h4 class="anchored" data-anchor-id="störung-der-produktionsregeln">2. <strong>Störung der Produktionsregeln</strong></h4>
-<ul>
-<li><strong>Experten</strong> haben starke, erfolgreiche Produktionsregeln, die automatisch feuern</li>
-<li><strong>Anfänger</strong> müssen diese Regeln durch wiederholte Anwendung schwacher Methoden aufbauen</li>
-<li><strong>KI-Abkürzungen</strong> verhindern die notwendige Wiederholung zur Stärkung der Regeln</li>
-<li><strong>Ergebnis</strong>: Schwache Regeln entwickeln sich nie, dauerhafte Abhängigkeit bleibt</li>
-</ul>
+<h4 class="anchored" data-anchor-id="störung-der-produktionsregeln">2. Störung der Produktionsregeln</h4>
+<p>Expert<em>innen haben starke, erfolgreiche Produktionsregeln, die automatisch feuern. Anfänger</em>innen müssen diese Regeln durch wiederholte Anwendung schwacher Methoden aufbauen. KI-Abkürzungen verhindern die notwendige Wiederholung zur Stärkung der Regeln. Das Ergebnis: Schwache Regeln entwickeln sich nie, dauerhafte Abhängigkeit bleibt.</p>
 </section>
 <section id="schemabildungs-bypass" class="level4">
-<h4 class="anchored" data-anchor-id="schemabildungs-bypass">3. <strong>Schemabildungs-Bypass</strong></h4>
-<ul>
-<li><strong>Experten</strong> haben reichhaltige Schemata, aufgebaut durch Erfahrung</li>
-<li><strong>Anfänger</strong> müssen diese Schemata Element für Element konstruieren</li>
-<li><strong>KI-Antworten</strong> liefern das Ergebnis ohne den Konstruktionsprozess</li>
-<li><strong>Ergebnis</strong>: Es entstehen keine Schemata, Transfer auf neue Situationen ist unmöglich</li>
-</ul>
+<h4 class="anchored" data-anchor-id="schemabildungs-bypass">3. Schemabildungs-Bypass</h4>
+<p>Expert<em>innen haben reichhaltige Schemata, aufgebaut durch Erfahrung. Anfänger</em>innen müssen diese Schemata Element für Element konstruieren. KI-Antworten liefern das Ergebnis ohne den Konstruktionsprozess. Das Ergebnis: Es entstehen keine Schemata, Transfer auf neue Situationen ist unmöglich.</p>
 </section>
 <section id="metakognitive-schädigung" class="level4">
-<h4 class="anchored" data-anchor-id="metakognitive-schädigung">4. <strong>Metakognitive Schädigung</strong></h4>
-<ul>
-<li><strong>Experten</strong> wissen, wann und warum sie verschiedene Strategien anwenden</li>
-<li><strong>Anfänger</strong> entwickeln dieses Bewusstsein durch Überwachung des eigenen Denkens</li>
-<li><strong>KI-Abhängigkeit</strong> beseitigt die Notwendigkeit zur Selbstüberwachung</li>
-<li><strong>Ergebnis</strong>: Lernende können ihr eigenes Verständnis nicht mehr bewerten</li>
-</ul>
+<h4 class="anchored" data-anchor-id="metakognitive-schädigung">4. Metakognitive Schädigung</h4>
+<p>Expert<em>innen wissen, wann und warum sie verschiedene Strategien anwenden. Anfänger</em>innen entwickeln dieses Bewusstsein durch Überwachung des eigenen Denkens. KI-Abhängigkeit beseitigt die Notwendigkeit zur Selbstüberwachung. Das Ergebnis: Lernende können ihr eigenes Verständnis nicht mehr bewerten.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Die Abhängigkeitskaskade
+<span class="screen-reader-only">Warnung</span>Die Abhängigkeitskaskade
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Wenn Anfänger zu früh Expertenwerkzeuge nutzen:</p>
+<p>Wenn Anfänger<em>innen zu früh Werkzeuge für Expert</em>innen nutzen:</p>
 <ol type="1">
-<li><strong>Anfänglicher Erfolg</strong> schafft falsches Selbstvertrauen</li>
-<li><strong>Schwache Methoden verkümmern</strong> durch Nichtgebrauch</li>
-<li><strong>Problemlösefähigkeiten verschlechtern sich</strong> ohne Übung</li>
-<li><strong>Abhängigkeit vertieft sich</strong>, da interne Fähigkeiten schwinden</li>
-<li><strong>Transfer scheitert</strong>, wenn KI nicht verfügbar ist</li>
-<li><strong>Erlernte Hilflosigkeit</strong> entsteht bei neuen Herausforderungen</li>
+<li>Anfänglicher Erfolg schafft falsches Selbstvertrauen</li>
+<li>Schwache Methoden verkümmern durch Nichtgebrauch</li>
+<li>Problemlösefähigkeiten verschlechtern sich ohne Übung</li>
+<li>Abhängigkeit vertieft sich, da interne Fähigkeiten schwinden</li>
+<li>Transfer scheitert, wenn KI nicht verfügbar ist</li>
+<li>Erlernte Hilflosigkeit entsteht bei neuen Herausforderungen</li>
 </ol>
-<p>Das ist nicht nur „kein Lernen“, sondern <strong>Verlernen</strong> vorhandener Fähigkeiten.</p>
+<p>Das ist nicht nur „kein Lernen”, sondern <strong>Verlernen</strong> vorhandener Fähigkeiten.</p>
 </div>
 </div>
 </section>
@@ -841,8 +747,8 @@ Die Abhängigkeitskaskade
 <section id="prinzip-2-kognitive-belastung-kalibrieren" class="level4">
 <h4 class="anchored" data-anchor-id="prinzip-2-kognitive-belastung-kalibrieren">Prinzip 2: Kognitive Belastung kalibrieren</h4>
 <ul>
-<li>Anfänger brauchen vereinfachte, sequenzielle Darstellung</li>
-<li>Experten können komplexe, parallele Verarbeitung bewältigen</li>
+<li>Anfänger*innen brauchen vereinfachte, sequenzielle Darstellung</li>
+<li>Expert*innen können komplexe, parallele Verarbeitung bewältigen</li>
 <li>Dasselbe Material muss je nach Expertenniveau unterschiedlich präsentiert werden</li>
 </ul>
 </section>
@@ -890,12 +796,12 @@ Die Abhängigkeitskaskade
 <li><strong>Konsolidierung im Schlaf</strong> macht diese Änderungen dauerhaft</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel: Algebra durch Vorhersagefehler lernen
+<span class="screen-reader-only">Hinweis</span>Beispiel: Algebra durch Vorhersagefehler lernen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -927,7 +833,7 @@ Beispiel: Algebra durch Vorhersagefehler lernen
 <li>Keine Vorhersagephase (Lernende generieren keine Erwartungen)</li>
 <li>Keine Versuch-Phase (es werden keine Lösungen ausprobiert)</li>
 <li>Keine Fehlerphase (kein Vergleich zwischen Erwartung und Realität)</li>
-<li><strong>Ergebnis</strong>: Null Vorhersagefehler = kein Lernsiganl</li>
+<li><strong>Ergebnis</strong>: Null Vorhersagefehler = kein Lernsignal</li>
 </ul>
 <p><strong>Das Gehirn hat buchstäblich nichts, woraus es lernen kann</strong>, weil der Vorhersagefehler-Zyklus nie stattfindet.</p>
 <p>Das erklärt, warum Lernende hunderte Beispiele anschauen oder tausende korrekte KI-Antworten bekommen und trotzdem nicht lernen. <strong>Lernen braucht Fehler, nicht Perfektion.</strong></p>
@@ -958,7 +864,7 @@ Muster wird automatisch</code></pre>
 <li>Entlastet das Arbeitsgedächtnis für höheres Denken</li>
 <li>Ermöglicht kreatives Problemlösen durch starke Grundlagen</li>
 </ul>
-<p><strong>So funktioniert Expertise wirklich</strong>: Bei einem Problem konkurrieren mehrere Produktionsregeln. Die Regel mit dem höchsten „Nutzen“ (basierend auf vergangenem Erfolg durch Vorhersagefehler) setzt sich durch. Jede erfolgreiche Anwendung stärkt diese Regel, wodurch sie künftig wahrscheinlicher gewinnt. Deshalb wirken Experten, als „wüssten sie es einfach“ – ihre stärksten Produktionen feuern automatisch.</p>
+<p><strong>So funktioniert Expertise wirklich</strong>: Bei einem Problem konkurrieren mehrere Produktionsregeln. Die Regel mit dem höchsten „Nutzen“ (basierend auf vergangenem Erfolg durch Vorhersagefehler) setzt sich durch. Jede erfolgreiche Anwendung stärkt diese Regel, wodurch sie künftig wahrscheinlicher gewinnt. Deshalb wirken Expert*innen, als „wüssten sie es einfach”: Ihre stärksten Produktionen feuern automatisch.</p>
 </section>
 <section id="was-wir-verlieren-wenn-wir-die-anstrengung-überspringen" class="level3">
 <h3 class="anchored" data-anchor-id="was-wir-verlieren-wenn-wir-die-anstrengung-überspringen">Was wir verlieren, wenn wir die Anstrengung überspringen</h3>
@@ -968,16 +874,16 @@ Muster wird automatisch</code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Was wir verlieren
+<span class="screen-reader-only">Warnung</span>Was wir verlieren
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><strong>Keine Gedächtnisbildung</strong>: Das Gehirn kodiert nicht, was es nicht verarbeitet</li>
-<li><strong>Keine Musterentwicklung</strong>: Können nicht erkennen, was wir nicht geübt haben</li>
-<li><strong>Keine Transferfähigkeit</strong>: Können ungeübte Prinzipien nicht auf neue Kontexte anwenden</li>
-<li><strong>Keine Metakognition</strong>: Entwickeln kein Bewusstsein über das eigene Denken</li>
-<li><strong>Kein Lernen durch Vorhersagefehler</strong>: Der fundamentale Lernmechanismus wird umgangen</li>
+<li>Keine Gedächtnisbildung: Das Gehirn kodiert nicht, was es nicht verarbeitet</li>
+<li>Keine Musterentwicklung: Wir können nicht erkennen, was wir nicht geübt haben</li>
+<li>Keine Transferfähigkeit: Wir können ungeübte Prinzipien nicht auf neue Kontexte anwenden</li>
+<li>Keine Metakognition: Wir entwickeln kein Bewusstsein über das eigene Denken</li>
+<li>Kein Lernen durch Vorhersagefehler: Der fundamentale Lernmechanismus wird umgangen</li>
 </ol>
 </div>
 </div>
@@ -986,21 +892,80 @@ Was wir verlieren
 <h3 class="anchored" data-anchor-id="die-expertise-illusion">Die Expertise-Illusion</h3>
 <p>Das Auslagern kognitiver Prozesse an KI erzeugt eine gefährliche Illusion:</p>
 <ul>
-<li><strong>Oberflächenflüssigkeit</strong>: Perfekte Antworten ohne Verständnis</li>
-<li><strong>Falsches Selbstvertrauen</strong>: Glauben, es „verstanden zu haben“ ohne Übung</li>
-<li><strong>Fragiles Wissen</strong>: Bricht ohne KI-Unterstützung zusammen</li>
-<li><strong>Begrenzter Transfer</strong>: Kann nicht auf neue Situationen angewandt werden</li>
+<li>Oberflächenflüssigkeit: perfekte Antworten ohne Verständnis</li>
+<li>Falsches Selbstvertrauen: der Glaube, es „verstanden zu haben” ohne Übung</li>
+<li>Fragiles Wissen: bricht ohne KI-Unterstützung zusammen</li>
+<li>Begrenzter Transfer: das Wissen kann nicht auf neue Situationen angewandt werden</li>
 </ul>
+</section>
+<section id="metakognitive-grenzen-warum-wir-unser-eigenes-lernen-schlecht-einschätzen" class="level3">
+<h3 class="anchored" data-anchor-id="metakognitive-grenzen-warum-wir-unser-eigenes-lernen-schlecht-einschätzen">Metakognitive Grenzen: Warum wir unser eigenes Lernen schlecht einschätzen</h3>
+<p>Ein oft übersehenes Problem: Menschen sind notorisch schlechte Richter über ihr eigenes Lernen. Die Forschung von Bjork, Dunlosky und Kornell zeigt konsistent, dass <strong>subjektive Lerneinschätzungen oft schlecht mit tatsächlichem Lernen korrelieren</strong>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>Die Fluency-Falle
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Das Problem</strong>: Bedingungen, die sich leicht und flüssig anfühlen, führen oft zu schlechterem Langzeitlernen. Umgekehrt fühlt sich effektives Lernen oft schwierig und frustrierend an.</p>
+<p><strong>Beispiele:</strong></p>
+<ul>
+<li>Wiederholtes Lesen fühlt sich produktiv an, ist aber weniger effektiv als Selbsttests</li>
+<li>Geblockte Übung (alle Aufgaben eines Typs hintereinander) fühlt sich einfacher an, führt aber zu weniger Transfer als vermischte Übung</li>
+<li>KI-unterstütztes Arbeiten fühlt sich effizient an, kann aber die kognitive Anstrengung eliminieren, die Lernen produziert</li>
+</ul>
+</div>
+</div>
+<p><strong>Warum das für KI-Nutzung relevant ist:</strong></p>
+<p>Wenn du mit KI arbeitest und das Gefühl hast, produktiv zu sein, sagt das <strong>nichts darüber aus, ob du lernst</strong>. Das Gefühl der Produktivität kommt von der Leichtigkeit des Prozesses. Aber Lernen erfordert die Schwierigkeit, die KI gerade entfernt hat.</p>
+<p><strong>Praktische Implikation:</strong></p>
+<p>Du kannst nicht durch Introspektion entscheiden, ob eine KI-Nutzung zum Lernen beiträgt. Die Frage „Hat sich das produktiv angefühlt?” ist irrelevant. Die relevanten Fragen sind:</p>
+<ol type="1">
+<li>Habe ich eigene Vorhersagen gemacht, bevor ich die Antwort bekam?</li>
+<li>Habe ich mit meinen Fehlern gerungen?</li>
+<li>Könnte ich das Gleiche ohne KI-Unterstützung?</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Für Lehrende
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wenn du Studierende fragst, ob sie mit KI „besser gelernt” haben, bekommst du keine valide Antwort. Ihre subjektive Einschätzung korreliert wahrscheinlich mit der Leichtigkeit des Prozesses, nicht mit dem tatsächlichen Lernerfolg.</p>
+<p>Stattdessen: Prüfe Kompetenz ohne KI-Zugang. Nur das zeigt, was wirklich gelernt wurde.</p>
+</div>
+</div>
 </section>
 <section id="forschungsergebnisse-die-kosten-des-kognitiven-auslagerns" class="level3">
 <h3 class="anchored" data-anchor-id="forschungsergebnisse-die-kosten-des-kognitiven-auslagerns">Forschungsergebnisse: Die Kosten des kognitiven Auslagerns</h3>
-<p>Aktuelle Studien zeigen alarmierende Auswirkungen von KI-Nutzung auf das Lernen:</p>
+<p>Erste Studien deuten auf mögliche Auswirkungen von KI-Nutzung auf das Lernen hin:</p>
 <ul>
-<li><strong>68% weniger kritisches Denken</strong> bei Wissensarbeitenden mit hoher KI-Vertrauenswürdigkeit <span class="citation" data-cites="leeImpactGenerativeAI2025">[@leeImpactGenerativeAI2025]</span></li>
-<li><strong>Nur oberflächliches Lernen</strong> bei Programmierstudierenden mit ChatGPT <span class="citation" data-cites="yangEffectivenessChatGPTAssisting2025">[@yangEffectivenessChatGPTAssisting2025]</span></li>
+<li><strong>Reduziertes kritisches Denken</strong> bei Wissensarbeitenden mit hoher KI-Nutzung <span class="citation" data-cites="leeImpactGenerativeAI2025">[@leeImpactGenerativeAI2025]</span>. Diese Studie ist noch sehr neu und bedarf weiterer Replikation.</li>
+<li><strong>Oberflächliches Lernen</strong> bei Programmierstudierenden mit ChatGPT <span class="citation" data-cites="yangEffectivenessChatGPTAssisting2025">[@yangEffectivenessChatGPTAssisting2025]</span></li>
 <li><strong>Verminderte Problemlösefähigkeiten</strong> bei Mathematiklernenden mit KI-Tools <span class="citation" data-cites="bastaniGenerativeAICan2024">[@bastaniGenerativeAICan2024]</span></li>
-<li><strong>„Die Fluency-Illusion“</strong>: KI-Kompetenz wird mit eigenem Können verwechselt</li>
+<li><strong>„Die Fluency-Illusion”</strong>: KI-generierte Kompetenz wird mit eigenem Können verwechselt</li>
 </ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Methodische Einschränkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die Forschung zu KI und Lernen ist noch jung. Viele Studien haben kleine Stichproben oder untersuchen spezifische Kontexte. Die langfristigen Auswirkungen sind noch unbekannt. Die hier beschriebenen Muster sind plausibel und theoretisch fundiert, aber weitere Forschung ist nötig.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="die-biologische-realität-des-lernens" class="level2">
@@ -1024,11 +989,13 @@ Was wir verlieren
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Umkehrung des Flynn-Effekts
+<span class="screen-reader-only">Warnung</span>Umkehrung des Flynn-Effekts
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Seit den 1970er/80er Jahren, als Bildung das Auswendiglernen verließ: - IQ-Werte sanken erstmals in der Geschichte - „Warum auswendig lernen, wenn man nachschlagen kann?“ wurde zum Mantra - Genau zu dem Zeitpunkt, als Neurowissenschaften bewiesen, dass Auswendiglernen kritisches Denken fördert - Wir verwarfen bewährte Methoden, gerade als wir ihren Nutzen verstanden <span class="citation" data-cites="oakleyMemoryParadoxWhy2025">[@oakleyMemoryParadoxWhy2025]</span></p>
+<p>Seit den 1970er/80er Jahren beobachten Forschende in einigen Ländern einen Rückgang der IQ-Werte. Die Ursachen sind umstritten und wahrscheinlich vielfältig.</p>
+<p>Eine Hypothese <span class="citation" data-cites="oakleyMemoryParadoxWhy2025">[@oakleyMemoryParadoxWhy2025]</span>: Der Wandel von Auswendiglernen zu “nachschlagen können” könnte eine Rolle spielen. Diese Interpretation ist kontrovers und nicht abschliessend belegt.</p>
+<p>Was wir wissen: Wiederholtes Abrufen aus dem Gedächtnis stärkt Wissen nachhaltiger als passives Konsumieren oder Nachschlagen.</p>
 </div>
 </div>
 </section>
@@ -1040,7 +1007,7 @@ Umkehrung des Flynn-Effekts
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Evidenzbasierte Strategien
+<span class="screen-reader-only">Tipp</span>Evidenzbasierte Strategien
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1097,19 +1064,18 @@ Evidenzbasierte Strategien
 <li>Was würde sich ändern, wenn wir Anstrengung als Zeichen von Wachstum statt als Scheitern betrachten?</li>
 <li>Wie kannst du den Vorhersagefehler-Zyklus in deinem eigenen Lernen schützen?</li>
 </ul>
-<hr>
 </section>
 <section id="schnellreferenz-wie-theorien-zusammenwirken" class="level2">
 <h2 class="anchored" data-anchor-id="schnellreferenz-wie-theorien-zusammenwirken">Schnellreferenz: Wie Theorien zusammenwirken</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Schwach → Stark Methoden</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Wissenskompilierung</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Warnsignale</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Schwach → Stark Methoden</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Wissenskompilierung</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Warnsignale</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Schwache Methoden (Anfänger)</th>
-<th>Starke Methoden (Experten)</th>
+<th>Schwache Methoden (Anfänger*innen)</th>
+<th>Starke Methoden (Expert*innen)</th>
 </tr>
 </thead>
 <tbody>
@@ -1187,15 +1153,73 @@ Evidenzbasierte Strategien
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis,
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Zitat</h2><div><div class="quarto-appendix-secondary-label">Mit BibTeX zitieren:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis,
   author = {Ellis, Andrew},
-  title = {Wie Man {Kompetenz} Erwirbt},
+  title = {Wie man Kompetenz erwirbt},
   url = {https://virtuelleakademie.github.io/ki-lehre-beginner/resources/kompetenz-erwerben/},
-  langid = {en}
+  langid = {de}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ellis" class="csl-entry quarto-appendix-citeas" role="listitem">
-Ellis, Andrew. n.d. <span>“Wie Man Kompetenz Erwirbt.”</span> <a href="https://virtuelleakademie.github.io/ki-lehre-beginner/resources/kompetenz-erwerben/">https://virtuelleakademie.github.io/ki-lehre-beginner/resources/kompetenz-erwerben/</a>.
+</code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Bitte zitieren Sie diese Arbeit als:</div><div id="ref-ellis" class="csl-entry quarto-appendix-citeas" role="listitem">
+Ellis, Andrew. n.d. <span>“Wie man Kompetenz erwirbt.”</span> <a href="https://virtuelleakademie.github.io/ki-lehre-beginner/resources/kompetenz-erwerben/">https://virtuelleakademie.github.io/ki-lehre-beginner/resources/kompetenz-erwerben/</a>.
 </div></div></section></div></main> <!-- /main -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all prompt callouts
+  const promptCallouts = document.querySelectorAll('.callout-prompt');
+
+  promptCallouts.forEach(function(callout) {
+    // Find the callout body where the text is
+    const body = callout.querySelector('.callout-body-container');
+    if (!body) return;
+
+    // Get the text content (excluding the copy button itself)
+    const getPromptText = function() {
+      const bodyContent = body.querySelector('.callout-body');
+      if (bodyContent) {
+        return bodyContent.textContent.trim();
+      }
+      return body.textContent.trim();
+    };
+
+    // Create copy button
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'prompt-copy-btn';
+    copyBtn.innerHTML = '<i class="fa fa-copy"></i> Kopieren';
+    copyBtn.title = 'In die Zwischenablage kopieren';
+
+    // Add click handler
+    copyBtn.addEventListener('click', function() {
+      const text = getPromptText();
+      navigator.clipboard.writeText(text).then(function() {
+        // Show success feedback
+        copyBtn.innerHTML = '<i class="fa fa-check"></i> Kopiert!';
+        copyBtn.classList.add('copied');
+
+        // Reset after 2 seconds
+        setTimeout(function() {
+          copyBtn.innerHTML = '<i class="fa fa-copy"></i> Kopieren';
+          copyBtn.classList.remove('copied');
+        }, 2000);
+      }).catch(function(err) {
+        console.error('Failed to copy:', err);
+        copyBtn.innerHTML = '<i class="fa fa-times"></i> Fehler';
+        setTimeout(function() {
+          copyBtn.innerHTML = '<i class="fa fa-copy"></i> Kopieren';
+        }, 2000);
+      });
+    });
+
+    // Insert button into the callout header
+    const header = callout.querySelector('.callout-header');
+    if (header) {
+      header.style.display = 'flex';
+      header.style.justifyContent = 'space-between';
+      header.style.alignItems = 'center';
+      header.appendChild(copyBtn);
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1221,12 +1245,12 @@ Ellis, Andrew. n.d. <span>“Wie Man Kompetenz Erwirbt.”</span> <a href="https
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Kopiert");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Kopiert");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -1247,13 +1271,14 @@ Ellis, Andrew. n.d. <span>“Wie Man Kompetenz Erwirbt.”</span> <a href="https
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

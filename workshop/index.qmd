@@ -1,27 +1,88 @@
 ---
-title: "Ablauf"
+title: "Workshop: KI in der Lehre"
+subtitle: "Grundlagen für Lehrende"
+sidebar: workshop
 ---
 
-| {{< bi collection >}} Thema | {{< bi clock >}} Dauer | 
-|-------|--------|
-| [Einstieg](einstieg/index.qmd) | 10 min |
-| [Input: Grundlagen](/slides/grundlagen/index.qmd) | 20 min |
-| [Exercise: Chatbot nutzen lernen](/exercises/prompten-lernen/index.qmd) | 20 min |
-|
-| Pause | 15 min |
-|
-| [Input: Möglichkeiten & Grenzen von Chatbots](/slides/chatbots-grenzen/index.qmd) | 5 min |
-| [Exercise: Denken, nicht Delegieren](/exercises/denken-delegieren/index.qmd) | 40 min |
-|
-| Pause | 15 min |
-|
-| [Input: Einfluss von Chatbots aufs Lernen](/slides/chatbots-einfluss-lernen/index.qmd) | 5 min |
-| [Exercise: KI Tools für die Lehre](/exercises/ki-tools-lehre/index.qmd) | 20 min |
-| [Input: KI - Tool für die Lehre](/slides/ki-tool-lehre/index.qmd) | 10 min |
-| [Offene Diskussion](diskussion/index.qmd) | 20 min |
+## Drei Leitfragen
 
-## Selbststudium
+Dieser Workshop beantwortet drei Fragen:
 
-- [Effektive Prompting Strategien](/resources/prompting/index.qmd)
-- [Wie man Kompetenzen erwirbt](/resources/kompetenz-erwerben/index.qmd)
-- [Produktive Anstrengung durch Design](/resources/produktive-anstrengung/index.qmd)
+| # | Frage | Was du lernst |
+|---|-------|---------------|
+| 1 | **Was ist KI?** | Wie Sprachmodelle funktionieren (Mustervervollständigung, Stärken und Grenzen) |
+| 2 | **Wofür kann KI verwendet werden?** | Möglichkeiten, Grenzen und BFH-Richtlinien |
+| 3 | **Wann hilft KI, wann schadet sie?** | Offloading vs. Outsourcing, Produktivität vs. Lernen |
+
+## Lernziele
+
+Am Ende dieses Workshops kannst du:
+
+- Erklären, wie Sprachmodelle Text generieren (statistische Vorhersage)
+- Die Fähigkeiten und Grenzen moderner Chatbots einschätzen
+- Die BFH-Richtlinien kennen und den BFH-Copilot nutzen
+- Zwischen kognitivem Offloading und Outsourcing unterscheiden
+- Beurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert
+
+## Ablauf
+
+| Zeit | Phase | Inhalt |
+|------|-------|--------|
+| 00:00–00:15 | Einstieg | Begrüssung und Spektrum-Aktivität |
+| 00:15–01:00 | **Frage 1: Was ist KI?** | Textgenerierung, Chain-of-Thought, Mini-Experiment |
+| 01:00–01:10 | Pause | |
+| 01:10–01:30 | **Copilot Onboarding** | Demonstration + Guided Practice |
+| 01:30–02:10 | **Frage 2: Wofür kann KI verwendet werden?** | Fähigkeiten, BFH-Policy, Fakten-Check Aktivität |
+| 02:10–02:20 | Pause | |
+| 02:20–03:00 | **Frage 3: Wann hilft KI, wann schadet sie?** | Szenario-Karten, Offloading vs. Outsourcing |
+| 03:00–03:10 | Abschluss | Transfer und Vorsätze |
+
+## Aktivitäten
+
+Jede Frage enthält eine praktische Aktivität:
+
+| Frage | Aktivität | Dauer |
+|-------|-----------|-------|
+| 1 | Mini-Experiment: Chain-of-Thought testen | 10 min |
+| Vor 2 | **Copilot Onboarding**: Erste Schritte mit dem BFH-Chatbot | 20 min |
+| 2 | Fakten-Check: Chatbot-Antworten überprüfen | 30 min |
+| 3 | Szenario-Karten ODER Dual Planning Task | 30-35 min |
+
+::: {.pro-tip}
+## Aktivität für Frage 3 wählen
+
+- **Szenario-Karten** (35 min): Strukturierte Gruppenarbeit, gut für grössere Gruppen
+- **Dual Planning Task** (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen
+:::
+
+## Takeaways
+
+Am Ende nimmst du drei Antworten mit:
+
+| Frage | Kern-Einsicht |
+|-------|---------------|
+| Was ist KI? | **Kontext bestimmt das Ergebnis.** Moderne Modelle sind leistungsfähig; wenn Ergebnisse nicht passen, fehlt meist Information im Prompt. |
+| Wofür kann ich KI nutzen? | **Vielseitig, aber fehleranfällig.** Chatbots haben keine eingebaute Faktenprüfung; kritische Evaluation ist immer nötig. |
+| Wann hilft sie, wann schadet sie? | **Expert\*innen profitieren. Lernende riskieren Lernverlust.** Lernen braucht kognitive Anstrengung, die KI wegzunehmen droht. |
+
+## Workshop-Reihe
+
+Dieser Workshop ist Teil einer dreiteiligen Kursreihe:
+
+**Beginner** (dieser Workshop): Grundlagen zu Sprachmodellen und Chatbots. *Was ist generative KI, und was bedeutet sie für das Lernen?*
+
+**Intermediate**: Lernpsychologie und KI-gestütztes Lerndesign. *Warum ist Outsourcing problematisch fürs Lernen?*
+
+**Advanced**: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools. *Wie baue ich KI-gestützte Lernwerkzeuge?*
+
+## Weiterlernen
+
+Nach dem Workshop kannst du deine Prompting-Fähigkeiten vertiefen:
+
+::: {.pro-tip}
+## Prompting-Tutor
+
+Ein interaktiver Copilot-Agent, der dir strukturierte Übungen mit Feedback gibt:
+
+[Prompting-Tutor öffnen](https://m365.cloud.microsoft/chat/?titleId=T_7974f581-f4b9-7537-f20b-121abdc50196)
+:::

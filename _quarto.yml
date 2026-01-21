@@ -4,8 +4,10 @@ project:
     - assets/*
     - assets/images/*
     - assets/pdfs/*
+    - _extensions/quarto-ext/fontawesome/assets/css/all.css
+    - _extensions/quarto-ext/fontawesome/assets/webfonts/*
   preview:
-    port: 8800
+    port: 8808
     browser: false
   output-dir: docs
   render:
@@ -47,29 +49,30 @@ website:
 
     right:
       - icon: briefcase
-        text: "Dokumente" # {{< fa person-chalkboard >}}
+        text: "Dokumente"
         menu:
+          - text: "Prompting für Einsteiger"
+            file: resources/prompting-basics/index.qmd
+          - text: "Weiterführende Ressourcen"
+            file: resources/weiterfuehrende-ressourcen/index.qmd
+          - text: "---"
           - text: "KI Policy der BFH"
             file: https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf
           - text: "Begleitdokument: KI Weiterbildung"
             file: assets/pdfs/Begleitdokument.pdf
-          - text: "Begleitdokument: Orientierungshilfe"
-            file: resources/resources.qmd
-          - text: "Begleitdokument: Orientierungshilfe (PDF)"
+          - text: "Orientierungshilfe"
             file: assets/pdfs/Orientierungshilfe.pdf
 
 
     tools:
+      - icon: mortarboard-fill
+        text: "BFH Weiterbildung: KI in der Lehre"
+        href: https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/
+        target: _blank
       - icon: lightbulb-fill
         text: Knowledge Base
         href: https://virtuelleakademie.ch/knowledge-base/
-
-      # - icon: github
-      #   menu:
-      #     - text: Source code
-      #       url:  https://github.com/virtuelleakademie/cas-hochschuldidaktik/
-      #     - text: Report an issue
-      #       url:  https://github.com/virtuelleakademie/cas-hochschuldidaktik/issues
+        target: _blank
 
   sidebar:
     - title: "Workshop"
@@ -77,15 +80,30 @@ website:
       search: true
       background: light
       contents:
-        - workshop/index.qmd
-        - workshop/einstieg/index.qmd
-        - slides/grundlagen/index.qmd
-        - exercises/prompten-lernen/index.qmd
-        - slides/chatbots-grenzen/index.qmd
-        - exercises/denken-delegieren/index.qmd
-        - slides/chatbots-einfluss-lernen/index.qmd
-        - exercises/ki-tools-lehre/index.qmd
-        - slides/ki-tool-lehre/index.qmd
+        - text: "Übersicht"
+          file: workshop/index.qmd
+        - text: "Einstieg"
+          file: workshop/einstieg/index.qmd
+        - section: "Frage 1: Was ist KI?"
+          contents:
+            - text: "Slides: Grundlagen"
+              file: slides/frage-1-was-ist-ki/index.qmd
+        - section: "Frage 2: Wofür kann KI verwendet werden?"
+          contents:
+            - text: "Übung: Copilot Onboarding"
+              file: exercises/copilot-einstieg/index.qmd
+            - text: "Slides: Möglichkeiten & Grenzen"
+              file: slides/frage-2-wozu-kann-ki/index.qmd
+            - text: "Übung: Fakten-Check"
+              file: exercises/fakten-check/index.qmd
+        - section: "Frage 3: Wann hilft KI, wann schadet sie?"
+          contents:
+            - text: "Slides: Offloading vs. Outsourcing"
+              file: slides/frage-3-wozu-soll-ich/index.qmd
+            - text: "Übung: Szenarien analysieren"
+              file: exercises/offloading-outsourcing/index.qmd
+        - text: "Abschluss"
+          file: workshop/abschluss/index.qmd
 
     - title: "Slides"
       style: "docked"
@@ -93,11 +111,9 @@ website:
       background: light
       contents:
         - slides/index.qmd
-        - slides/grundlagen/index.qmd
-        - slides/chatbots-grenzen/index.qmd
-        - slides/chatbots-einfluss-lernen/index.qmd
-        - slides/ki-tool-lehre/index.qmd
-
+        - slides/frage-1-was-ist-ki/index.qmd
+        - slides/frage-2-wozu-kann-ki/index.qmd
+        - slides/frage-3-wozu-soll-ich/index.qmd
 
     - title: "Übungen"
       style: "docked"
@@ -105,26 +121,34 @@ website:
       background: light
       contents:
         - exercises/index.qmd
-        - exercises/prompten-lernen/index.qmd
-        - exercises/denken-delegieren/index.qmd
-        - exercises/ki-tools-lehre/index.qmd
+        - exercises/copilot-einstieg/index.qmd
+        - exercises/fakten-check/index.qmd
+        - exercises/offloading-outsourcing/index.qmd
 
 page-footer:
-  right:
+    right:
     - icon: github
-      href: https://github.com/virtuelleakademie/ki-lehre-intermediate/
+      href: https://github.com/virtuelleakademie/ki-lehre-beginner/
+
+lang: de
+
+bibliography: bibliography.bib
 
 format:
   html:
-    code-copy: true
     theme:
-      light: [simplex]
+      - simplex
+      - styles/custom.scss
+    css:
+      - styles/styles.css
+      - _extensions/quarto-ext/fontawesome/assets/css/all.css
+    include-after-body: scripts/copy-prompt.js
+    code-copy: true
     toc: true
     link-external-icon: true
     link-external-newwindow: true
     anchor-sections: true
     smooth-scroll: true
-    linkcolor: rebeccapurple
 
 comments:
   hypothesis:
@@ -147,137 +171,85 @@ filters:
   - custom-callout
 
 custom-callout:
-  # todo:
-  #   icon-symbol: "📝"
-  #   collapse: true
-  #   color: "pink"
-
-  # thumbs-up:
-  #   title: "Great job!"
-  #   icon-symbol: "👍🏼"
-  #   color: "steelblue"
-
-  # Activity Types
-  individual:
-    title: "Individual Work"
-    icon-symbol: "💻"
-    color: "steelblue"
+  # Activity types - what participants DO (Magenta)
+  experiment:
+    title: "Deine Aufgabe"
+    icon-symbol: "fa-flask"
+    appearance: default
     collapse: false
+    color: "#A3195B"  # Deep Magenta (action)
 
-  pair:
-    title: "Pair Work"
-    icon-symbol: "👥"
-    color: "forestgreen"
+  individual:
+    title: "Einzelarbeit"
+    icon-symbol: "fa-user"
+    appearance: default
+    color: "#A3195B"  # Deep Magenta (action)
     collapse: false
 
   group:
-    title: "Group Work"
-    icon-symbol: "👥"
-    color: "purple"
+    title: "Gruppenarbeit"
+    icon-symbol: "fa-users"
+    appearance: default
+    color: "#A3195B"  # Deep Magenta (action)
     collapse: false
 
-  screens-down:
-    title: "Screens Down"
-    icon-symbol: "🔽"
-    color: "orange"
+  demonstration:
+    title: "Demonstration"
+    icon-symbol: "fa-chalkboard"
+    appearance: default
     collapse: false
+    color: "#333333"  # Dark grey (instructor-led, neutral)
 
-  screens-up:
-    title: "Screens Up"
-    icon-symbol: "🔼"
-    color: "green"
-    collapse: false
-
-  # Learning Process
-  try:
-    title: "Try It"
-    icon-symbol: "🔄"
-    color: "blue"
+  # Thinking types - reflection and insights (Gold)
+  scenario:
+    title: "Szenario"
+    icon-symbol: "fa-comment"
+    appearance: default
+    color: "#666666"  # Medium grey (neutral context)
     collapse: false
 
   reflect:
-    title: "Reflection"
-    icon-symbol: "💭"
-    color: "purple"
+    title: "Reflexion"
+    icon-symbol: "fa-lightbulb"
+    appearance: default
+    color: "#D4A03E"  # Warm Gold (insight)
     collapse: false
 
-  feedback:
-    title: "Feedback"
-    icon-symbol: "📝"
-    color: "teal"
-    collapse: true
+  key-point:
+    title: "Kernaussage"
+    icon-symbol: "fa-star"
+    appearance: default
+    collapse: false
+    color: "#D4A03E"  # Warm Gold (importance)
 
-  caution:
-    title: "Watch Out"
-    icon-symbol: "⚠️"
-    color: "orange"
-    collapse: true
+  # Alert type
+  warning:
+    title: "Achtung"
+    icon-symbol: "fa-exclamation-circle"
+    appearance: default
+    color: "#A3195B"  # Deep Magenta (attention)
+    collapse: false
 
+  # Guidance types (Gold)
   pro-tip:
-    title: "Pro Tip"
-    icon-symbol: "💡"
-    color: "gold"
+    title: "Tipp"
+    icon-symbol: "fa-wand-magic-sparkles"
+    appearance: default
+    color: "#D4A03E"  # Warm Gold (helpful)
     collapse: true
 
-  # Technical Elements
-  prompt-example:
-    title: "Example Prompt:"
-    icon-symbol: "👩🏼‍🔧"
-    color: "steelblue"
+  source-check:
+    title: "Quellen-Check"
+    icon-symbol: "fa-search"
+    appearance: default
+    color: "#D4A03E"  # Warm Gold (verification)
     collapse: false
 
-  tutor-example:
-    title: "Tutor:"
-    icon-symbol: "📄"
-    color: "purple"
-    collapse: false
-
-  prompt-template:
-    title: "Prompt Template"
-    icon-symbol: "📋"
-    color: "indigo"
-    collapse: true
-
-  testing:
-    title: "Test Your Prompt"
-    icon-symbol: "🧪"
-    color: "green"
-    collapse: false
-
-  export:
-    title: "Export"
-    icon-symbol: "📤"
-    color: "brown"
-    collapse: true
-
-  # Workshop Flow
-  setup:
-    title: "Setup"
-    icon-symbol: "⚙️"
-    color: "gray"
-    collapse: true
-
-  timing:
-    title: "Time Check"
-    icon-symbol: "⏱️"
-    color: "red"
-    collapse: false
-
-  break:
-    title: "Break Time"
-    icon-symbol: "☕"
-    color: "yellow"
-    collapse: false
-
-  checkpoint:
-    title: "Checkpoint"
-    icon-symbol: "🎯"
-    color: "purple"
-    collapse: false
-
-  schedule:
-    title: "Schedule"
-    icon-symbol: "⏰︎"
-    color: "steelblue"
+  # Technical - copyable prompt for chatbot input
+  prompt:
+    title: "Prompt"
+    icon-symbol: "fa-clipboard"
+    appearance: default
+    color: "#333333"  # Dark grey (code-like)
     collapse: false
 

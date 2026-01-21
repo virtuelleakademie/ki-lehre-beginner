@@ -1,0 +1,53 @@
+---
+title: "Interaktive Demos"
+subtitle: "Sprachmodelle verstehen durch Ausprobieren"
+sidebar: false
+---
+
+Diese interaktiven Elemente ergänzen die Workshop-Präsentationen. Sie helfen dir, abstrakte Konzepte konkret zu erleben.
+
+## Verfügbare Demos
+
+### Token-Vorhersage
+
+Sieh, wie Sprachmodelle Wahrscheinlichkeiten für das nächste Wort berechnen.
+
+- Wähle verschiedene Satzanfänge
+- Beobachte die Wahrscheinlichkeitsverteilung
+- Experimentiere mit dem Temperature-Parameter
+
+[→ Token-Vorhersage öffnen](token-predictor/index.qmd)
+
+### Chat-Interface
+
+Experimentiere direkt mit verschiedenen Sprachmodellen.
+
+- Vergleiche GPT und Claude
+- Beobachte Token-Verbrauch und Antwortzeiten
+- Probiere verschiedene Temperature-Einstellungen
+
+[→ Chat-Interface öffnen](chat-interface/index.qmd)
+
+## Integration in den Workshop
+
+Diese Demos sind für folgende Workshop-Phasen gedacht:
+
+| Phase | Demo | Zweck |
+|-------|------|-------|
+| KI verstehen: Textgenerierung | Token-Vorhersage | Visualisierung der "Next-Word-Prediction" |
+| KI verstehen: Mini-Aktivität | Chat-Interface | Direkt ausprobieren ohne eigenes Konto |
+| Fakten-Check | Chat-Interface | Kontrollierte Umgebung für Experimente |
+
+## Technische Hinweise
+
+::: {.pro-tip}
+## Für Facilitators
+
+**Token-Vorhersage**: Läuft komplett im Browser (OJS). Keine Internetverbindung für die Demo selbst nötig.
+
+**Chat-Interface**: Benötigt Internetverbindung. Läuft auf HuggingFace Spaces. API-Kosten fallen an (~$0.50-2.00 pro Workshop-Durchlauf).
+
+Bei technischen Problemen: Teilnehmende können auf [chat.openai.com](https://chat.openai.com) oder [claude.ai](https://claude.ai) ausweichen.
+:::
+
+[← Zurück zum Workshop](../workshop/index.qmd)

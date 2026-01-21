@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.27">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ablauf – KI in der Lehre: Beginner</title>
+<title>Workshop: KI in der Lehre – KI in der Lehre: Beginner</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,17 +34,21 @@ ul.task-list li input[type="checkbox"] {
 <link href="..//assets/robot.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a94639a2a79a10208c3806ea22bc16b3.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f7ea35562251465ded65364387175922.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a94639a2a79a10208c3806ea22bc16b3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-12ef578f176a4757e706afea5316e77b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -58,17 +62,17 @@ ul.task-list li input[type="checkbox"] {
     "s"
   ],
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -85,229 +89,144 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <style>
 div.callout-individual.callout {
-  border-left-color: steelblue;
+  border-left-color: #A3195B;
 }
 div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgb(from steelblue r g b / 13%);
+  background-color: rgba(163, 25, 91, 0.13);
 }
 div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-  content: '💻';
-  background-image: none;
-}
-div.callout-setup.callout {
-  border-left-color: gray;
-}
-div.callout-setup.callout-style-default > .callout-header {
-  background-color: rgb(from gray r g b / 13%);
-}
-div.callout-setup .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-setup.callout-style-default .callout-icon::before, div.callout-setup.callout-titled .callout-icon::before {
-  content: '⚙️';
-  background-image: none;
-}
-div.callout-screens-up.callout {
-  border-left-color: green;
-}
-div.callout-screens-up.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-screens-up .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-screens-up.callout-style-default .callout-icon::before, div.callout-screens-up.callout-titled .callout-icon::before {
-  content: '🔼';
-  background-image: none;
-}
-div.callout-feedback.callout {
-  border-left-color: teal;
-}
-div.callout-feedback.callout-style-default > .callout-header {
-  background-color: rgb(from teal r g b / 13%);
-}
-div.callout-feedback .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-feedback.callout-style-default .callout-icon::before, div.callout-feedback.callout-titled .callout-icon::before {
-  content: '📝';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: gold;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgb(from gold r g b / 13%);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  content: '💡';
-  background-image: none;
-}
-div.callout-break.callout {
-  border-left-color: yellow;
-}
-div.callout-break.callout-style-default > .callout-header {
-  background-color: rgb(from yellow r g b / 13%);
-}
-div.callout-break .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-break.callout-style-default .callout-icon::before, div.callout-break.callout-titled .callout-icon::before {
-  content: '☕';
-  background-image: none;
-}
-div.callout-testing.callout {
-  border-left-color: green;
-}
-div.callout-testing.callout-style-default > .callout-header {
-  background-color: rgb(from green r g b / 13%);
-}
-div.callout-testing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-testing.callout-style-default .callout-icon::before, div.callout-testing.callout-titled .callout-icon::before {
-  content: '🧪';
-  background-image: none;
-}
-div.callout-schedule.callout {
-  border-left-color: steelblue;
-}
-div.callout-schedule.callout-style-default > .callout-header {
-  background-color: rgb(from steelblue r g b / 13%);
-}
-div.callout-schedule .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-schedule.callout-style-default .callout-icon::before, div.callout-schedule.callout-titled .callout-icon::before {
-  content: '⏰︎';
-  background-image: none;
-}
-div.callout-try.callout {
-  border-left-color: blue;
-}
-div.callout-try.callout-style-default > .callout-header {
-  background-color: rgb(from blue r g b / 13%);
-}
-div.callout-try .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-try.callout-style-default .callout-icon::before, div.callout-try.callout-titled .callout-icon::before {
-  content: '🔄';
-  background-image: none;
-}
-div.callout-reflect.callout {
-  border-left-color: purple;
-}
-div.callout-reflect.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-  content: '💭';
-  background-image: none;
-}
-div.callout-export.callout {
-  border-left-color: brown;
-}
-div.callout-export.callout-style-default > .callout-header {
-  background-color: rgb(from brown r g b / 13%);
-}
-div.callout-export .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-export.callout-style-default .callout-icon::before, div.callout-export.callout-titled .callout-icon::before {
-  content: '📤';
-  background-image: none;
-}
-div.callout-checkpoint.callout {
-  border-left-color: purple;
-}
-div.callout-checkpoint.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-checkpoint .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-checkpoint.callout-style-default .callout-icon::before, div.callout-checkpoint.callout-titled .callout-icon::before {
-  content: '🎯';
-  background-image: none;
-}
-div.callout-prompt-template.callout {
-  border-left-color: indigo;
-}
-div.callout-prompt-template.callout-style-default > .callout-header {
-  background-color: rgb(from indigo r g b / 13%);
-}
-div.callout-prompt-template .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt-template.callout-style-default .callout-icon::before, div.callout-prompt-template.callout-titled .callout-icon::before {
-  content: '📋';
-  background-image: none;
-}
-div.callout-pair.callout {
-  border-left-color: forestgreen;
-}
-div.callout-pair.callout-style-default > .callout-header {
-  background-color: rgb(from forestgreen r g b / 13%);
-}
-div.callout-pair .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pair.callout-style-default .callout-icon::before, div.callout-pair.callout-titled .callout-icon::before {
-  content: '👥';
-  background-image: none;
-}
-div.callout-timing.callout {
-  border-left-color: red;
-}
-div.callout-timing.callout-style-default > .callout-header {
-  background-color: rgb(from red r g b / 13%);
-}
-div.callout-timing .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-timing.callout-style-default .callout-icon::before, div.callout-timing.callout-titled .callout-icon::before {
-  content: '⏱️';
-  background-image: none;
-}
-div.callout-tutor-example.callout {
-  border-left-color: purple;
-}
-div.callout-tutor-example.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
-}
-div.callout-tutor-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-tutor-example.callout-style-default .callout-icon::before, div.callout-tutor-example.callout-titled .callout-icon::before {
-  content: '📄';
-  background-image: none;
-}
-div.callout-screens-down.callout {
-  border-left-color: orange;
-}
-div.callout-screens-down.callout-style-default > .callout-header {
-  background-color: rgb(from orange r g b / 13%);
-}
-div.callout-screens-down .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-screens-down.callout-style-default .callout-icon::before, div.callout-screens-down.callout-titled .callout-icon::before {
-  content: '🔽';
-  background-image: none;
-}
-div.callout-prompt-example.callout {
-  border-left-color: steelblue;
-}
-div.callout-prompt-example.callout-style-default > .callout-header {
-  background-color: rgb(from steelblue r g b / 13%);
-}
-div.callout-prompt-example .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt-example.callout-style-default .callout-icon::before, div.callout-prompt-example.callout-titled .callout-icon::before {
-  content: '👩🏼‍🔧';
-  background-image: none;
-}
-div.callout-caution.callout {
-  border-left-color: orange;
-}
-div.callout-caution.callout-style-default > .callout-header {
-  background-color: rgb(from orange r g b / 13%);
-}
-div.callout-caution .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-caution.callout-style-default .callout-icon::before, div.callout-caution.callout-titled .callout-icon::before {
-  content: '⚠️';
+  font-family: 'Font Awesome 6 Free';
+  content: '\f007';
   background-image: none;
 }
 div.callout-group.callout {
-  border-left-color: purple;
+  border-left-color: #A3195B;
 }
 div.callout-group.callout-style-default > .callout-header {
-  background-color: rgb(from purple r g b / 13%);
+  background-color: rgba(163, 25, 91, 0.13);
 }
 div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  content: '👥';
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c0';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0eb';
+  background-image: none;
+}
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f002';
+  background-image: none;
+}
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f005';
+  background-image: none;
+}
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\e2ca';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f328';
+  background-image: none;
+}
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f075';
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
+  background-image: none;
+}
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f06a';
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f51b';
   background-image: none;
 }
 </style>
 
 
-<meta property="og:title" content="Ablauf – KI in der Lehre: Beginner">
+<link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
+<meta property="og:title" content="Workshop: KI in der Lehre – KI in der Lehre: Beginner">
+<meta property="og:description" content="Grundlagen für Lehrende">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
 
@@ -322,8 +241,8 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
     <span class="navbar-title">KI in der Lehre: Beginner</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -353,6 +272,15 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-dokumente">    
         <li>
+    <a class="dropdown-item" href="../resources/prompting-basics/index.html">
+ <span class="dropdown-text">Prompting für Einsteiger</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../resources/weiterfuehrende-ressourcen/index.html">
+ <span class="dropdown-text">Weiterführende Ressourcen</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li>
     <a class="dropdown-item" href="https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf">
  <span class="dropdown-text">KI Policy der BFH</span></a>
   </li>  
@@ -361,31 +289,28 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
  <span class="dropdown-text">Begleitdokument: KI Weiterbildung</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../resources/resources.html">
- <span class="dropdown-text">Begleitdokument: Orientierungshilfe</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../assets/pdfs/Orientierungshilfe.pdf">
- <span class="dropdown-text">Begleitdokument: Orientierungshilfe (PDF)</span></a>
+ <span class="dropdown-text">Orientierungshilfe</span></a>
   </li>  
     </ul>
   </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base"><i class="bi bi-lightbulb-fill"></i></a>
+    <a href="https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/" title="BFH Weiterbildung: KI in der Lehre" class="quarto-navigation-tool px-1" aria-label="BFH Weiterbildung: KI in der Lehre" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
+    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base" target="_blank"><i class="bi bi-lightbulb-fill"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/index.html">Ablauf</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/index.html">Übersicht</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -397,7 +322,7 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Suchen"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -405,55 +330,88 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Ablauf</span></a>
+ <span class="menu-text">Übersicht</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop/einstieg/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Begrüßungsaufgabe</span></a>
+ <span class="menu-text">Einstieg</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frage 1: Was ist KI?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../slides/grundlagen/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Grundlagen</span></a>
+  <a href="../slides/frage-1-was-ist-ki/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides: Grundlagen</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frage 2: Wofür kann KI verwendet werden?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/prompten-lernen/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Aufgabe: Prompten Lernen</span></a>
+  <a href="../exercises/copilot-einstieg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung: Copilot Onboarding</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../slides/chatbots-grenzen/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Chatbots - Möglichkeiten &amp; Grenzen</span></a>
+  <a href="../slides/frage-2-wozu-kann-ki/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides: Möglichkeiten &amp; Grenzen</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/denken-delegieren/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Aufgabe: Denken statt delegieren</span></a>
+  <a href="../exercises/fakten-check/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung: Fakten-Check</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frage 3: Wann hilft KI, wann schadet sie?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../slides/chatbots-einfluss-lernen/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">KI - Einfluss auf Lernen</span></a>
+  <a href="../slides/frage-3-wozu-soll-ich/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides: Offloading vs.&nbsp;Outsourcing</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/ki-tools-lehre/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Aufgabe: KI Tools für die Lehre</span></a>
+  <a href="../exercises/offloading-outsourcing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung: Szenarien analysieren</span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../slides/ki-tool-lehre/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">KI-Tools für Lehre</span></a>
+  <a href="../workshop/abschluss/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abschluss</span></a>
   </div>
 </li>
     </ul>
@@ -463,10 +421,16 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#selbststudium" id="toc-selbststudium" class="nav-link active" data-scroll-target="#selbststudium">Selbststudium</a></li>
+  <li><a href="#drei-leitfragen" id="toc-drei-leitfragen" class="nav-link active" data-scroll-target="#drei-leitfragen">Drei Leitfragen</a></li>
+  <li><a href="#lernziele" id="toc-lernziele" class="nav-link" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#ablauf" id="toc-ablauf" class="nav-link" data-scroll-target="#ablauf">Ablauf</a></li>
+  <li><a href="#aktivitäten" id="toc-aktivitäten" class="nav-link" data-scroll-target="#aktivitäten">Aktivitäten</a></li>
+  <li><a href="#takeaways" id="toc-takeaways" class="nav-link" data-scroll-target="#takeaways">Takeaways</a></li>
+  <li><a href="#workshop-reihe" id="toc-workshop-reihe" class="nav-link" data-scroll-target="#workshop-reihe">Workshop-Reihe</a></li>
+  <li><a href="#weiterlernen" id="toc-weiterlernen" class="nav-link" data-scroll-target="#weiterlernen">Weiterlernen</a></li>
   </ul>
 </nav>
     </div>
@@ -475,7 +439,8 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ablauf</h1>
+<h1 class="title">Workshop: KI in der Lehre</h1>
+<p class="subtitle lead">Grundlagen für Lehrende</p>
 </div>
 
 
@@ -492,88 +457,290 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
 </header>
 
 
+<section id="drei-leitfragen" class="level2">
+<h2 class="anchored" data-anchor-id="drei-leitfragen">Drei Leitfragen</h2>
+<p>Dieser Workshop beantwortet drei Fragen:</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 28%">
+<col style="width: 60%">
+</colgroup>
 <thead>
 <tr class="header">
-<th><i class="bi-collection " style="" role="img" aria-hidden="true"></i> Thema</th>
-<th><i class="bi-clock " style="" role="img" aria-hidden="true"></i> Dauer</th>
+<th>#</th>
+<th>Frage</th>
+<th>Was du lernst</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="../workshop/einstieg/index.html">Einstieg</a></td>
-<td>10 min</td>
+<td>1</td>
+<td><strong>Was ist KI?</strong></td>
+<td>Wie Sprachmodelle funktionieren (Mustervervollständigung, Stärken und Grenzen)</td>
 </tr>
 <tr class="even">
-<td><a href="../slides/grundlagen/index.html">Input: Grundlagen</a></td>
-<td>20 min</td>
+<td>2</td>
+<td><strong>Wofür kann KI verwendet werden?</strong></td>
+<td>Möglichkeiten, Grenzen und BFH-Richtlinien</td>
 </tr>
 <tr class="odd">
-<td><a href="../exercises/prompten-lernen/index.html">Exercise: Chatbot nutzen lernen</a></td>
-<td>20 min</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Pause</td>
-<td>15 min</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="../slides/chatbots-grenzen/index.html">Input: Möglichkeiten &amp; Grenzen von Chatbots</a></td>
-<td>5 min</td>
-</tr>
-<tr class="even">
-<td><a href="../exercises/denken-delegieren/index.html">Exercise: Denken, nicht Delegieren</a></td>
-<td>40 min</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Pause</td>
-<td>15 min</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="../slides/chatbots-einfluss-lernen/index.html">Input: Einfluss von Chatbots aufs Lernen</a></td>
-<td>5 min</td>
-</tr>
-<tr class="odd">
-<td><a href="../exercises/ki-tools-lehre/index.html">Exercise: KI Tools für die Lehre</a></td>
-<td>20 min</td>
-</tr>
-<tr class="even">
-<td><a href="../slides/ki-tool-lehre/index.html">Input: KI - Tool für die Lehre</a></td>
-<td>10 min</td>
-</tr>
-<tr class="odd">
-<td><a href="../workshop/diskussion/index.html">Offene Diskussion</a></td>
-<td>20 min</td>
+<td>3</td>
+<td><strong>Wann hilft KI, wann schadet sie?</strong></td>
+<td>Offloading vs.&nbsp;Outsourcing, Produktivität vs.&nbsp;Lernen</td>
 </tr>
 </tbody>
 </table>
-<section id="selbststudium" class="level2">
-<h2 class="anchored" data-anchor-id="selbststudium">Selbststudium</h2>
+</section>
+<section id="lernziele" class="level2">
+<h2 class="anchored" data-anchor-id="lernziele">Lernziele</h2>
+<p>Am Ende dieses Workshops kannst du:</p>
 <ul>
-<li><a href="../resources/prompting/index.html">Effektive Prompting Strategien</a></li>
-<li><a href="../resources/kompetenz-erwerben/index.html">Wie man Kompetenzen erwirbt</a></li>
-<li><a href="../resources/produktive-anstrengung/index.html">Produktive Anstrengung durch Design</a></li>
+<li>Erklären, wie Sprachmodelle Text generieren (statistische Vorhersage)</li>
+<li>Die Fähigkeiten und Grenzen moderner Chatbots einschätzen</li>
+<li>Die BFH-Richtlinien kennen und den BFH-Copilot nutzen</li>
+<li>Zwischen kognitivem Offloading und Outsourcing unterscheiden</li>
+<li>Beurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert</li>
 </ul>
+</section>
+<section id="ablauf" class="level2">
+<h2 class="anchored" data-anchor-id="ablauf">Ablauf</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 33%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Zeit</th>
+<th>Phase</th>
+<th>Inhalt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>00:00–00:15</td>
+<td>Einstieg</td>
+<td>Begrüssung und Spektrum-Aktivität</td>
+</tr>
+<tr class="even">
+<td>00:15–01:00</td>
+<td><strong>Frage 1: Was ist KI?</strong></td>
+<td>Textgenerierung, Chain-of-Thought, Mini-Experiment</td>
+</tr>
+<tr class="odd">
+<td>01:00–01:10</td>
+<td>Pause</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>01:10–01:30</td>
+<td><strong>Copilot Onboarding</strong></td>
+<td>Demonstration + Guided Practice</td>
+</tr>
+<tr class="odd">
+<td>01:30–02:10</td>
+<td><strong>Frage 2: Wofür kann KI verwendet werden?</strong></td>
+<td>Fähigkeiten, BFH-Policy, Fakten-Check Aktivität</td>
+</tr>
+<tr class="even">
+<td>02:10–02:20</td>
+<td>Pause</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>02:20–03:00</td>
+<td><strong>Frage 3: Wann hilft KI, wann schadet sie?</strong></td>
+<td>Szenario-Karten, Offloading vs.&nbsp;Outsourcing</td>
+</tr>
+<tr class="even">
+<td>03:00–03:10</td>
+<td>Abschluss</td>
+<td>Transfer und Vorsätze</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aktivitäten" class="level2">
+<h2 class="anchored" data-anchor-id="aktivitäten">Aktivitäten</h2>
+<p>Jede Frage enthält eine praktische Aktivität:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 44%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Frage</th>
+<th>Aktivität</th>
+<th>Dauer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Mini-Experiment: Chain-of-Thought testen</td>
+<td>10 min</td>
+</tr>
+<tr class="even">
+<td>Vor 2</td>
+<td><strong>Copilot Onboarding</strong>: Erste Schritte mit dem BFH-Chatbot</td>
+<td>20 min</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Fakten-Check: Chatbot-Antworten überprüfen</td>
+<td>30 min</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Szenario-Karten ODER Dual Planning Task</td>
+<td>30-35 min</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-pro-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Pro-tip</span>Aktivität für Frage 3 wählen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Szenario-Karten</strong> (35 min): Strukturierte Gruppenarbeit, gut für grössere Gruppen</li>
+<li><strong>Dual Planning Task</strong> (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="takeaways" class="level2">
+<h2 class="anchored" data-anchor-id="takeaways">Takeaways</h2>
+<p>Am Ende nimmst du drei Antworten mit:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Frage</th>
+<th>Kern-Einsicht</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Was ist KI?</td>
+<td><strong>Kontext bestimmt das Ergebnis.</strong> Moderne Modelle sind leistungsfähig; wenn Ergebnisse nicht passen, fehlt meist Information im Prompt.</td>
+</tr>
+<tr class="even">
+<td>Wofür kann ich KI nutzen?</td>
+<td><strong>Vielseitig, aber fehleranfällig.</strong> Chatbots haben keine eingebaute Faktenprüfung; kritische Evaluation ist immer nötig.</td>
+</tr>
+<tr class="odd">
+<td>Wann hilft sie, wann schadet sie?</td>
+<td><strong>Expert*innen profitieren. Lernende riskieren Lernverlust.</strong> Lernen braucht kognitive Anstrengung, die KI wegzunehmen droht.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="workshop-reihe" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-reihe">Workshop-Reihe</h2>
+<p>Dieser Workshop ist Teil einer dreiteiligen Kursreihe:</p>
+<p><strong>Beginner</strong> (dieser Workshop): Grundlagen zu Sprachmodellen und Chatbots. <em>Was ist generative KI, und was bedeutet sie für das Lernen?</em></p>
+<p><strong>Intermediate</strong>: Lernpsychologie und KI-gestütztes Lerndesign. <em>Warum ist Outsourcing problematisch fürs Lernen?</em></p>
+<p><strong>Advanced</strong>: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools. <em>Wie baue ich KI-gestützte Lernwerkzeuge?</em></p>
+</section>
+<section id="weiterlernen" class="level2">
+<h2 class="anchored" data-anchor-id="weiterlernen">Weiterlernen</h2>
+<p>Nach dem Workshop kannst du deine Prompting-Fähigkeiten vertiefen:</p>
+<div class="callout callout-style-default callout-pro-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Pro-tip</span>Prompting-Tutor
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Ein interaktiver Copilot-Agent, der dir strukturierte Übungen mit Feedback gibt:</p>
+<p><a href="https://m365.cloud.microsoft/chat/?titleId=T_7974f581-f4b9-7537-f20b-121abdc50196">Prompting-Tutor öffnen</a></p>
+</div>
+</div>
+</div>
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Wiederverwendung</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all prompt callouts
+  const promptCallouts = document.querySelectorAll('.callout-prompt');
+
+  promptCallouts.forEach(function(callout) {
+    // Find the callout body where the text is
+    const body = callout.querySelector('.callout-body-container');
+    if (!body) return;
+
+    // Get the text content (excluding the copy button itself)
+    const getPromptText = function() {
+      const bodyContent = body.querySelector('.callout-body');
+      if (bodyContent) {
+        return bodyContent.textContent.trim();
+      }
+      return body.textContent.trim();
+    };
+
+    // Create copy button
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'prompt-copy-btn';
+    copyBtn.innerHTML = '<i class="fa fa-copy"></i> Kopieren';
+    copyBtn.title = 'In die Zwischenablage kopieren';
+
+    // Add click handler
+    copyBtn.addEventListener('click', function() {
+      const text = getPromptText();
+      navigator.clipboard.writeText(text).then(function() {
+        // Show success feedback
+        copyBtn.innerHTML = '<i class="fa fa-check"></i> Kopiert!';
+        copyBtn.classList.add('copied');
+
+        // Reset after 2 seconds
+        setTimeout(function() {
+          copyBtn.innerHTML = '<i class="fa fa-copy"></i> Kopieren';
+          copyBtn.classList.remove('copied');
+        }, 2000);
+      }).catch(function(err) {
+        console.error('Failed to copy:', err);
+        copyBtn.innerHTML = '<i class="fa fa-times"></i> Fehler';
+        setTimeout(function() {
+          copyBtn.innerHTML = '<i class="fa fa-copy"></i> Kopieren';
+        }, 2000);
+      });
+    });
+
+    // Insert button into the callout header
+    const header = callout.querySelector('.callout-header');
+    if (header) {
+      header.style.display = 'flex';
+      header.style.justifyContent = 'space-between';
+      header.style.alignItems = 'center';
+      header.appendChild(copyBtn);
+    }
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -599,12 +766,12 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Kopiert");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Kopiert");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -625,13 +792,14 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -984,8 +1152,8 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../workshop/einstieg/index.html" class="pagination-link" aria-label="Begrüßungsaufgabe">
-        <span class="nav-page-text">Begrüßungsaufgabe</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../workshop/einstieg/index.html" class="pagination-link" aria-label="Einstieg">
+        <span class="nav-page-text">Einstieg</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

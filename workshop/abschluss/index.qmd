@@ -1,0 +1,76 @@
+---
+title: "Transfer und Abschluss"
+sidebar: workshop
+---
+
+::: {.callout-note}
+## Hinweis zur Reflexion
+
+Kurze Reflexionsmomente sind nach jeder Frage eingebaut. Dieser Abschluss fokussiert auf **Transfer**: konkrete Vorsätze für die eigene Praxis.
+:::
+
+## Eine Sache, die du morgen anders machst
+
+::: {.individual}
+## Konkreter Vorsatz (3 min)
+
+Schreibe einen konkreten Vorsatz auf:
+
+**"In meiner nächsten Lehrveranstaltung werde ich..."**
+
+_________________________________________________________________
+
+Nimm diesen Vorsatz mit. Er ist dein erster Schritt.
+
+{{< timer 3 >}}
+:::
+
+::: {.group}
+## Austausch (5 min)
+
+Teile deinen Vorsatz mit einer Person neben dir.
+
+- Was wirst du konkret ausprobieren?
+- Worauf wirst du achten?
+- Was könnte dich daran hindern?
+
+{{< timer 5 >}}
+:::
+
+## Was wir heute gemacht haben
+
+| Frage | Einsicht |
+|-------|----------|
+| Was ist KI? | Sprachmodelle sagen das nächste Wort vorher, ohne eingebaute Faktenprüfung |
+| Wofür kann KI verwendet werden? | Vielseitige Werkzeuge mit echten Grenzen |
+| Wann hilft KI, wann schadet sie? | Der Unterschied zwischen Offloading und Outsourcing |
+
+::: {.key-point}
+## Die zentrale Einsicht
+
+KI-Tools sind primär für Expert*innen gemacht. Sie machen Expert*innen produktiver.
+
+Für Lernende ist die Situation komplizierter: Lernen braucht die **kognitive Anstrengung**, die KI wegzunehmen droht.
+:::
+
+## Die nächste Frage
+
+::: {.callout-note}
+## Im Intermediate Workshop
+
+Wir haben heute gelernt, **was** Offloading vs. Outsourcing ist.
+
+Im nächsten Workshop lernen wir **warum** Outsourcing problematisch fürs Lernen ist: die kognitive Architektur hinter produktiver Anstrengung.
+
+**Themen:**
+
+- Wie Lernen im Gehirn funktioniert (Cognitive Load Theory)
+- Warum Anstrengung notwendig ist (Desirable Difficulties)
+- Wie man KI-Agenten für Lernen designt
+:::
+
+## Ressourcen
+
+- [KI-Policy BFH](https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf)
+- [Bildung 6.0](https://bildung6.bfh.ch)
+- [Virtuelle Akademie Knowledge Base](https://virtuelleakademie.ch/knowledge-base/)

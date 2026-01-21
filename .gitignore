@@ -18,7 +18,8 @@ ipython_config.py
 /env/
 *.code-workspace
 data/*
-notes/*
+# notes/*
+apps/*
 
 # Quarto
 /.quarto/
@@ -45,3 +46,5 @@ pages/config.yaml
 /.luarc.json
 
 
+
+**/*.quarto_ipynb

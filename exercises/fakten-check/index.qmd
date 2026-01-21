@@ -1,0 +1,261 @@
+---
+title: "Fakten-Check"
+subtitle: "Kritische Evaluation von KI-Outputs"
+sidebar: exercises
+---
+
+## Lernziele
+
+- Verstehen, warum Chatbots selbstbewusst falsche Informationen liefern können
+- Ein systematisches Verfahren zur Evaluation von KI-Outputs anwenden
+- Die Grenzen der eigenen Evaluationsfähigkeit erkennen
+
+::: {.key-point}
+## Die Struktur dieser Übung
+
+Diese Übung folgt dem Prinzip **I do → We do → You do**:
+
+1. **I do**: Die Workshopleitung zeigt, wie man eine Chatbot-Antwort evaluiert
+2. **We do**: Wir evaluieren gemeinsam eine Antwort
+3. **You do**: Du evaluierst selbstständig Antworten aus deinem Fachgebiet
+:::
+
+## Teil 1: Das Problem verstehen (5 min) {#problem}
+
+::: {.key-point}
+### Warum Chatbots halluzinieren
+
+Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Das klingt fremd, aber Menschen funktionieren ähnlich: Auch wir haben keinen direkten Zugang zur Wahrheit, sondern vervollständigen Muster auf Basis von Erfahrung.
+
+Der Unterschied? **Häufigkeit und Zuverlässigkeit.** LLMs halluzinieren öfter und in anderen Situationen als Menschen. Aber das Grundprinzip ist vergleichbar: Plausibilität wird mit Wahrheit verwechselt.
+
+**Wie Halluzinationen entstehen:**
+
+1. **Statistische Plausibilität statt Wahrheit**: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. "Zürich ist die Hauptstadt der Schweiz" klingt statistisch plausibel, auch wenn es falsch ist. (Menschen machen ähnliche Fehler: Wir erinnern uns an das, was "passt", nicht unbedingt an das, was stimmt.)
+
+2. **Selbstsichere Formulierung ist trainiert**: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. (Auch Menschen formulieren oft selbstbewusster, als ihr Wissen rechtfertigt.)
+
+3. **Kein Zugang zu Quellen beim Generieren**: Das Modell erinnert sich nicht an konkrete Quellen. (Menschen auch nicht immer: Wir wissen oft nicht mehr, woher wir etwas wissen.)
+
+**Besonders anfällig für Fehler:**
+
+- Fachspezifische Fragen (weniger Trainingsdaten)
+- Aktuelle Informationen (Training hat einen Stichtag)
+- Numerische Details (Daten, Zahlen, Statistiken)
+- Zitate und Quellenangaben
+:::
+
+## Teil 2: I do (5 min) {#i-do}
+
+::: {.demonstration}
+## Die Workshopleitung demonstriert
+
+Die Workshopleitung zeigt den gesamten Evaluationsprozess an einem Beispiel.
+
+**Schritt 1: Eine fachliche Frage stellen**
+
+::: {.prompt}
+Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?
+:::
+
+**Schritt 2: Die Antwort lesen**
+
+> "Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich."
+
+**Schritt 3: Systematisch evaluieren**
+
+Die Workshopleitung wendet die **Evaluations-Checkliste** an (siehe unten) und zeigt:
+
+- Welche Warnsignale gibt es?
+- Wie prüft man die Fakten?
+- Zu welchem Urteil kommt man?
+
+**Schritt 4: Fazit formulieren**
+
+Die Workshopleitung erklärt ihr Urteil und die Begründung.
+:::
+
+## Evaluations-Checkliste {#checkliste}
+
+Nutze diese Checkliste für jede Chatbot-Antwort:
+
+::: {.key-point}
+### Die 5 Prüffragen
+
+| # | Frage | Warnsignale |
+|---|-------|-------------|
+| 1 | **Enthält die Antwort spezifische Fakten?** (Zahlen, Daten, Namen, Zitate) | Spezifische Details sind oft erfunden |
+| 2 | **Nennt die Antwort Quellen?** | Quellen können erfunden sein oder nicht existieren |
+| 3 | **Klingt die Antwort "zu perfekt"?** | Echte Fachinfos haben oft Nuancen und Einschränkungen |
+| 4 | **Liegt das Thema ausserhalb gängiger Informationen?** | Spezialisierte oder aktuelle Themen sind anfälliger |
+| 5 | **Kann ich das mit meinem Fachwissen prüfen?** | Was du nicht prüfen kannst, solltest du nicht verwenden |
+:::
+
+::: {.key-point}
+### Die Bewertungskategorien
+
+| Symbol | Kategorie | Bedeutung | Konsequenz |
+|--------|-----------|-----------|------------|
+| ✓ | **Korrekt** | Inhaltlich richtig, verifizierbar | Kann verwendet werden |
+| ~ | **Teilweise korrekt** | Grundidee stimmt, aber Details falsch/ungenau | Nur mit Korrekturen verwenden |
+| ✗ | **Falsch (Halluzination)** | Inhaltlich falsch, erfunden, oder irreführend | Nicht verwenden |
+| ? | **Nicht prüfbar** | Liegt ausserhalb meiner Expertise | Nicht verwenden ohne externe Prüfung |
+:::
+
+## Teil 3: We do (8 min) {#we-do}
+
+::: {.group}
+## Wir evaluieren gemeinsam
+
+Jetzt machen wir das zusammen. Alle stellen dieselbe Frage und evaluieren gemeinsam.
+
+**Schritt 1: Diesen Prompt kopieren und in Copilot eingeben**
+
+::: {.prompt}
+Wann wurde die Berner Fachhochschule gegründet und wie viele Studierende hat sie aktuell?
+:::
+
+**Schritt 2: Antwort lesen** (1 min)
+
+Lies die Antwort, die du bekommst.
+
+**Schritt 3: Checkliste anwenden** (3 min)
+
+Gehe die 5 Prüffragen durch:
+
+1. Enthält die Antwort spezifische Fakten? (Jahreszahl, Studierendenzahl)
+2. Nennt sie Quellen?
+3. Klingt sie "zu perfekt"?
+4. Ist das Thema spezialisiert oder aktuell?
+5. Kannst du das prüfen?
+
+**Schritt 4: Gemeinsame Diskussion** (4 min)
+
+- Was habt ihr gefunden?
+- Stimmt das Gründungsjahr?
+- Stimmt die Studierendenzahl?
+- Zu welcher Bewertung kommt ihr?
+
+{{< timer 8 >}}
+:::
+
+## Teil 4: You do (10 min) {#you-do}
+
+::: {.experiment}
+## Selbstständig evaluieren
+
+Jetzt testest du das Verfahren in deinem eigenen Fachgebiet.
+
+### Wähle einen Prompt
+
+Kopiere einen dieser Prompts und passe ihn an dein Fach an:
+
+**Option A: Historische/faktische Frage**
+
+::: {.prompt}
+Wann wurde [WICHTIGE INSTITUTION/GESETZ/THEORIE IN DEINEM FACH] eingeführt und was war der Anlass?
+:::
+
+**Option B: Definitionsfrage**
+
+::: {.prompt}
+Was ist die offizielle Definition von [FACHBEGRIFF] gemäss [RELEVANTE ORGANISATION/STANDARD]?
+:::
+
+**Option C: Zahlen/Statistik-Frage**
+
+::: {.prompt}
+Wie hoch ist [RELEVANTE KENNZAHL] in der Schweiz aktuell?
+:::
+
+### Vorgehen
+
+1. Passe den Prompt an dein Fachgebiet an
+2. Stelle die Frage an Copilot
+3. Wende die Evaluations-Checkliste an
+4. Notiere dein Urteil (✓ / ~ / ✗ / ?) mit Begründung
+
+### Dokumentation
+
+| Meine Frage | Chatbot-Antwort (Kurzfassung) | Mein Urteil | Begründung |
+|-------------|-------------------------------|-------------|------------|
+| | | | |
+
+{{< timer 10 >}}
+:::
+
+## Teil 5: Austausch (5 min) {#austausch}
+
+::: {.group}
+## Erfahrungen teilen
+
+Tauscht euch in Kleingruppen aus:
+
+- Was habt ihr gefragt?
+- Welche Urteile habt ihr gefällt?
+- Bei welchen Fragen war der Chatbot zuverlässiger?
+- Hättet ihr die Fehler ohne euer Fachwissen erkannt?
+
+::: {.reflect}
+### Die entscheidende Frage
+
+> Mit deiner Fachkompetenz kannst du Halluzinationen erkennen.
+> **Deine Studierenden können das nicht.**
+
+Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen?
+:::
+
+{{< timer 5 >}}
+:::
+
+## Debrief im Plenum {#debrief}
+
+::: {.group}
+### Diskussionsfragen
+
+1. **Warum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?**
+
+   Erinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die "Selbstsicherheit" kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.
+
+2. **Konntet ihr die Fehler erkennen?**
+
+   Mit eurer Fachkompetenz konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.
+
+3. **Was bedeutet das für den Lernprozess?**
+
+   Wenn Studierende falsche Informationen unkritisch übernehmen, lernen sie nicht nur nicht, sondern lernen möglicherweise Falsches.
+:::
+
+::: {.key-point}
+## Kernaussage
+
+Chatbots sind **selbstbewusst, aber nicht zuverlässig**. Sie können plausibel klingende Falschaussagen generieren.
+
+Für Lehrende bedeutet das:
+
+- Eigene Outputs immer prüfen
+- Studierende für dieses Problem sensibilisieren
+- Kritische Evaluation als Kompetenz vermitteln
+- Bewusstsein schaffen: **Expertise ist Voraussetzung für Evaluation**
+:::
+
+## Zum Mitnehmen: Evaluations-Kurzreferenz {#referenz}
+
+::: {.pro-tip}
+## Schnellcheck für KI-Outputs
+
+**Vor der Nutzung fragen:**
+
+1. Enthält spezifische Fakten? → Prüfen!
+2. Nennt Quellen? → Quellen verifizieren!
+3. Klingt "zu perfekt"? → Skeptisch sein!
+4. Spezialisiertes Thema? → Besonders vorsichtig!
+5. Kann ich das prüfen? → Wenn nein: nicht verwenden!
+
+**Bewerten:**
+
+- ✓ Korrekt → verwenden
+- ~ Teilweise → mit Korrekturen verwenden
+- ✗ Falsch → nicht verwenden
+- ? Nicht prüfbar → nicht verwenden ohne externe Prüfung
+:::

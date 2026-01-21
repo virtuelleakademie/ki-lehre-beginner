@@ -1,0 +1,207 @@
+---
+title: "Copilot Onboarding"
+subtitle: "Erste Schritte mit dem BFH-Chatbot"
+sidebar: exercises
+---
+
+## Lernziele
+
+- Copilot öffnen und eine erste Konversation starten
+- Die grundlegende Interaktionsstruktur eines Chatbots verstehen
+- Einen einfachen Prompt formulieren und die Antwort interpretieren
+
+::: {.key-point}
+## Warum diese Übung?
+
+Dieser Workshop vermittelt, dass Lernende (im Gegensatz zu Expert\*innen) nicht selbstständig entdecken können, was sie noch nicht wissen.
+
+**Das gilt auch für dich als Tool-Anfänger\*in.**
+
+Deshalb zeigen wir dir zuerst, wie du Copilot nutzt, bevor du es selbst ausprobierst.
+:::
+
+## Teil 1: Demonstration (5 min) {#demonstration}
+
+::: {.demonstration}
+## Die Workshopleitung zeigt
+
+**1. Copilot öffnen**
+
+- Gehe zu [copilot.microsoft.com](https://copilot.microsoft.com)
+- Melde dich mit deinem BFH-Konto an
+- Du siehst das Chat-Fenster
+
+**2. Einen einfachen Prompt eingeben**
+
+Die Workshopleitung gibt diesen Prompt ein:
+
+::: {.prompt}
+Ich bin Dozent an einer Fachhochschule. Erkläre mir in 3 Sätzen, wie du als Sprachmodell Text generierst.
+:::
+
+**3. Die Antwort lesen und interpretieren**
+
+Beachte:
+
+- Der Chatbot antwortet sofort und selbstbewusst
+- Die Antwort klingt kompetent, unabhängig davon, ob sie korrekt ist
+- Du kannst Nachfragen stellen ("Erkläre das genauer" oder "Gib mir ein Beispiel")
+
+**4. Eine Nachfrage stellen**
+
+::: {.prompt}
+Gib mir eine Analogie, die ich meinen Studierenden zeigen könnte.
+:::
+:::
+
+## Teil 2: Gemeinsam ausprobieren (5 min) {#gemeinsam}
+
+::: {.group}
+## Wir machen das zusammen
+
+Jetzt machst du es selbst, aber mit genauer Anleitung.
+
+**Schritt 1: Copilot öffnen**
+
+Öffne [copilot.microsoft.com](https://copilot.microsoft.com) und melde dich an.
+
+**Schritt 2: Diesen Prompt kopieren und einfügen**
+
+Kopiere diesen Prompt (klicke auf das Kopier-Symbol):
+
+::: {.prompt}
+Ich bin Dozent*in für [DEIN FACHGEBIET] an der Berner Fachhochschule. Erkläre mir in einfachen Worten, wie du als Sprachmodell funktionierst.
+:::
+
+Ersetze `[DEIN FACHGEBIET]` durch dein tatsächliches Fach.
+
+**Schritt 3: Antwort lesen**
+
+Lies die Antwort. Frage dich:
+
+- Klingt das plausibel?
+- Verstehst du die Erklärung?
+- Hast du Nachfragen?
+
+**Schritt 4: Eine Nachfrage stellen**
+
+Stelle eine Nachfrage, zum Beispiel:
+
+::: {.prompt}
+Was bedeutet "nächstes Wort vorhersagen" genauer?
+:::
+
+{{< timer 5 >}}
+:::
+
+## Teil 3: Selbstständig erkunden (8 min) {#selbststaendig}
+
+::: {.experiment}
+## Deine ersten eigenen Interaktionen
+
+Jetzt stellst du eigene Fragen. **Probiere mindestens zwei der folgenden Optionen aus**, um ein Gefühl für verschiedene Anwendungen zu bekommen.
+
+**Option A: Fachliche Frage**
+
+Stelle eine einfache Frage aus deinem Fachgebiet, deren Antwort du kennst.
+
+::: {.prompt}
+Was ist [GRUNDBEGRIFF AUS DEINEM FACH]?
+:::
+
+**Option B: Didaktische Frage**
+
+Frage nach einer Erklärung für Studierende.
+
+::: {.prompt}
+Wie könnte ich Studierenden im ersten Semester [KONZEPT] erklären?
+:::
+
+**Option C: Praktische Frage**
+
+Frage nach einer konkreten Aufgabe.
+
+::: {.prompt}
+Erstelle drei Beispielaufgaben zum Thema [THEMA] für Erstsemester.
+:::
+
+**Für jede Interaktion notiere:**
+
+- Was hast du gefragt?
+- Wie war die Antwort?
+- Hast du etwas Unerwartetes bemerkt?
+
+**Tipp**: Stelle bei mindestens einer Antwort eine Nachfrage, um die Verfeinerung zu üben.
+
+{{< timer 8 >}}
+:::
+
+## Teil 4: Kurzer Austausch (3 min) {#austausch}
+
+::: {.group}
+## Erfahrungen teilen
+
+Tauscht euch kurz mit 1-2 Nachbarpersonen aus:
+
+- Was hat funktioniert?
+- Was war überraschend?
+- Welche Fragen sind aufgetaucht?
+
+{{< timer 3 >}}
+:::
+
+::: {.reflect}
+## Kurzer Selbsttest (1 min)
+
+Beantworte ohne auf deine Notizen zu schauen:
+
+1. Was sind die drei Prompting-Grundregeln?
+2. Warum ist es wichtig, der Selbstsicherheit des Chatbots nicht blind zu vertrauen?
+
+{{< timer 1 >}}
+:::
+
+::: {.key-point}
+## Was du jetzt kannst
+
+Du hast gelernt:
+
+1. **Copilot öffnen** und eine Konversation starten
+2. **Einen Prompt formulieren** mit Kontext (wer du bist, was du brauchst)
+3. **Nachfragen stellen**, um die Antwort zu verfeinern
+4. **Kritisch lesen**, ohne der Selbstsicherheit des Chatbots blind zu vertrauen
+
+Diese Grundlagen brauchst du für die nächste Übung: den **Fakten-Check**.
+:::
+
+## Prompting-Grundlagen
+
+Für diese Übung reichen drei einfache Regeln:
+
+| Regel | Beispiel |
+|-------|----------|
+| **Kontext geben** | "Ich bin Dozent*in für Chemie..." |
+| **Aufgabe klar formulieren** | "...erkläre mir in 3 Sätzen..." |
+| **Bei Bedarf nachfragen** | "Erkläre das genauer" |
+
+::: {.pro-tip}
+## Mehr zu Prompting
+
+Detaillierte Prompting-Strategien findest du im [Prompting-Guide](../../resources/prompting-basics/index.qmd).
+
+Für diesen Workshop brauchst du nur die drei Grundregeln oben.
+:::
+
+::: {.pro-tip}
+## Interaktiver Prompting-Tutor
+
+Für strukturiertes Prompting-Training steht dir ein spezieller Copilot-Agent zur Verfügung:
+
+- Zeigt dir Beispiele und erklärt sein Denken
+- Gibt dir Übungen mit steigender Schwierigkeit
+- Analysiert deine Prompts und gibt Feedback
+
+[Prompting-Tutor öffnen](https://m365.cloud.microsoft/chat/?titleId=T_7974f581-f4b9-7537-f20b-121abdc50196)
+
+*Nutze den Tutor nach dem Workshop für vertieftes Lernen.*
+:::

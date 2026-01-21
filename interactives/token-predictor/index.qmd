@@ -1,0 +1,258 @@
+---
+title: "Token-Vorhersage"
+subtitle: "Wie LLMs das nächste Wort wählen"
+sidebar: false
+---
+
+Sprachmodelle sagen das nächste Wort vorher, basierend auf Wahrscheinlichkeiten. Diese Demo zeigt, wie das funktioniert.
+
+## Probiere es aus
+
+Wähle einen Satzanfang und sieh, welche Wörter das Modell als nächstes vorschlagen würde.
+
+```{ojs}
+//| echo: false
+
+// Simulated token probabilities for German sentences
+tokenDatabase = ({
+  "Der Hund liegt auf dem": [
+    {token: "Boden", prob: 0.32},
+    {token: "Sofa", prob: 0.24},
+    {token: "Bett", prob: 0.18},
+    {token: "Teppich", prob: 0.14},
+    {token: "Rasen", prob: 0.12}
+  ],
+  "Die Katze sitzt auf dem": [
+    {token: "Dach", prob: 0.28},
+    {token: "Baum", prob: 0.24},
+    {token: "Sofa", prob: 0.20},
+    {token: "Tisch", prob: 0.16},
+    {token: "Fensterbrett", prob: 0.12}
+  ],
+  "Ich gehe heute in die": [
+    {token: "Schule", prob: 0.30},
+    {token: "Stadt", prob: 0.25},
+    {token: "Bibliothek", prob: 0.18},
+    {token: "Arbeit", prob: 0.15},
+    {token: "Küche", prob: 0.12}
+  ],
+  "Die Studierenden lernen für die": [
+    {token: "Prüfung", prob: 0.45},
+    {token: "Klausur", prob: 0.25},
+    {token: "Zukunft", prob: 0.12},
+    {token: "Vorlesung", prob: 0.10},
+    {token: "Karriere", prob: 0.08}
+  ],
+  "Der Professor erklärt das": [
+    {token: "Konzept", prob: 0.28},
+    {token: "Thema", prob: 0.24},
+    {token: "Problem", prob: 0.20},
+    {token: "Modell", prob: 0.16},
+    {token: "Prinzip", prob: 0.12}
+  ],
+  "KI wird in Zukunft": [
+    {token: "wichtiger", prob: 0.22},
+    {token: "viele", prob: 0.20},
+    {token: "eine", prob: 0.18},
+    {token: "immer", prob: 0.22},
+    {token: "unsere", prob: 0.18}
+  ]
+})
+
+sentenceOptions = Object.keys(tokenDatabase)
+
+viewof selectedSentence = Inputs.select(sentenceOptions, {
+  label: "Satzanfang wählen:",
+  value: "Der Hund liegt auf dem"
+})
+```
+
+```{ojs}
+//| echo: false
+
+currentProbs = tokenDatabase[selectedSentence]
+
+html`<div style="
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+">
+  <strong>${selectedSentence}</strong> <span style="color: #A3195B; font-weight: bold;">___</span>
+</div>`
+```
+
+### Wahrscheinlichkeiten für das nächste Wort
+
+```{ojs}
+//| echo: false
+
+Plot.plot({
+  marginLeft: 100,
+  marginRight: 60,
+  width: Math.min(600, width),
+  height: 200,
+  x: {
+    domain: [0, 0.5],
+    label: "Wahrscheinlichkeit →",
+    tickFormat: d => (d * 100) + "%"
+  },
+  y: {
+    label: null
+  },
+  marks: [
+    Plot.barX(currentProbs, {
+      y: "token",
+      x: "prob",
+      fill: "#A3195B",
+      sort: {y: "-x"}
+    }),
+    Plot.text(currentProbs, {
+      y: "token",
+      x: "prob",
+      text: d => (d.prob * 100).toFixed(0) + "%",
+      dx: 8,
+      textAnchor: "start",
+      fill: "#333"
+    })
+  ]
+})
+```
+
+::: {.key-point}
+## Was du siehst
+
+Das Modell berechnet für **jedes mögliche Wort** eine Wahrscheinlichkeit. Die Auswahl basiert auf Mustern in den Trainingsdaten, ohne eingebaute Prüfung der faktischen Korrektheit.
+:::
+
+## Temperature: Wie viel Zufall?
+
+Der Parameter "Temperature" steuert, wie das Modell aus den Wahrscheinlichkeiten wählt.
+
+```{ojs}
+//| echo: false
+
+viewof temperature = Inputs.range([0.1, 2.0], {
+  value: 1.0,
+  step: 0.1,
+  label: "Temperature",
+  width: 400
+})
+```
+
+```{ojs}
+//| echo: false
+
+// Apply temperature scaling to probabilities
+scaledProbs = {
+  const t = temperature;
+  const logits = currentProbs.map(p => Math.log(p.prob));
+  const scaled = logits.map(l => Math.exp(l / t));
+  const sum = scaled.reduce((a, b) => a + b, 0);
+  return currentProbs.map((p, i) => ({
+    token: p.token,
+    prob: scaled[i] / sum,
+    original: p.prob
+  }));
+}
+
+temperatureDescription = {
+  if (temperature < 0.5) return {
+    emoji: "🎯",
+    text: "Sehr deterministisch",
+    detail: "Fast immer das wahrscheinlichste Wort. Vorhersehbar, aber manchmal langweilig."
+  };
+  if (temperature < 1.0) return {
+    emoji: "⚖️",
+    text: "Ausgeglichen",
+    detail: "Gute Mischung aus häufigen und weniger häufigen Wörtern."
+  };
+  if (temperature < 1.5) return {
+    emoji: "🎲",
+    text: "Kreativ",
+    detail: "Mehr Variation und überraschendere Ausgaben. Kann interessanter sein."
+  };
+  return {
+    emoji: "🌀",
+    text: "Chaotisch",
+    detail: "Fast zufällige Auswahl. Oft unsinnige oder zusammenhanglose Texte."
+  };
+}
+
+html`<div style="
+  background: linear-gradient(90deg, #A3195B22, #D4A03E22);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+">
+  <strong style="font-size: 1.1rem;">${temperatureDescription.emoji} Temperature = ${temperature.toFixed(1)}: ${temperatureDescription.text}</strong>
+  <p style="margin: 0.5rem 0 0 0; color: #555;">${temperatureDescription.detail}</p>
+</div>`
+```
+
+### Angepasste Wahrscheinlichkeiten (nach Temperature)
+
+```{ojs}
+//| echo: false
+
+Plot.plot({
+  marginLeft: 100,
+  marginRight: 60,
+  width: Math.min(600, width),
+  height: 200,
+  x: {
+    domain: [0, 1],
+    label: "Wahrscheinlichkeit nach Temperature →",
+    tickFormat: d => (d * 100) + "%"
+  },
+  y: {
+    label: null
+  },
+  marks: [
+    Plot.barX(scaledProbs, {
+      y: "token",
+      x: "prob",
+      fill: "#D4A03E",
+      sort: {y: "-x"}
+    }),
+    Plot.text(scaledProbs, {
+      y: "token",
+      x: "prob",
+      text: d => (d.prob * 100).toFixed(0) + "%",
+      dx: 8,
+      textAnchor: "start",
+      fill: "#333"
+    })
+  ]
+})
+```
+
+::: {.reflect}
+## Reflexion
+
+- Bei **niedriger Temperature** (0.1-0.5): Das Modell wählt fast immer das wahrscheinlichste Wort. Gut für Fakten, schlecht für kreative Texte.
+- Bei **hoher Temperature** (1.5+): Das Modell wählt öfter unwahrscheinliche Wörter. Kann kreativ sein, aber oft unsinnig.
+- **Standardwert 0.7-1.0**: Balanciert zwischen Kohärenz und Variation.
+:::
+
+## Was das für die Lehre bedeutet
+
+::: {.key-point}
+## Kernaussagen
+
+1. **Keine eingebaute Faktenprüfung**: LLMs generieren Text basierend auf Mustern, ohne externe Verifikation.
+
+2. **Kontext ist entscheidend**: Die Wahrscheinlichkeiten ändern sich komplett, je nachdem was vorher steht.
+
+3. **Halluzinationen erklären**: Wenn ein falsches Wort hohe Wahrscheinlichkeit hat (weil es in den Trainingsdaten oft vorkam), wird es gewählt, auch wenn es faktisch falsch ist.
+
+4. **Temperature für Aufgaben anpassen**:
+   - Zusammenfassungen: Niedrig (0.3-0.5)
+   - Kreatives Schreiben: Höher (0.8-1.2)
+   - Brainstorming: Noch höher (1.0-1.5)
+:::
+
+---
+
+[← Zurück zum Workshop](../../workshop/index.qmd)

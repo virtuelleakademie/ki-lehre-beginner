@@ -1,0 +1,138 @@
+---
+title: "Dual Planning Task"
+subtitle: "Wo steckt das Denken?"
+sidebar: exercises
+---
+
+## Lernziele
+
+- Den Unterschied zwischen Offloading und Outsourcing am eigenen Erleben erfahren
+- Reflektieren, wo die kognitive Arbeit bei verschiedenen Arbeitsmodi stattfindet
+- Einschätzen, wie sich KI-Nutzung auf den eigenen Denkprozess auswirkt
+
+::: {.experiment}
+## Teil 1: Planung ohne KI (10 min)
+
+Entwirf eine kurze Lernaktivität (5-10 min) für dein Fachgebiet.
+
+**Deine Aufgabe**: Plane eine Aktivität, die ein konkretes Lernziel erreicht.
+
+Beispiele für Lernziele:
+
+- Studierende können X von Y unterscheiden
+- Studierende können den Prozess Z erklären
+- Studierende können Konzept A auf Situation B anwenden
+
+**Wichtig**: Arbeite komplett ohne KI. Nutze nur Papier oder ein leeres Dokument.
+
+Notiere:
+
+1. Das Lernziel
+2. Die Aktivität (was machen die Studierenden?)
+3. Wie du weisst, ob das Ziel erreicht wurde
+
+{{< timer 10 >}}
+:::
+
+::: {.key-point}
+## Die drei Modi der KI-Nutzung
+
+Bevor du mit KI planst, hier die drei typischen Nutzungsweisen:
+
+| Modus | Was du tust | Was die KI tut | Wo ist das Denken? |
+|-------|-------------|----------------|-------------------|
+| **Ideengeber** | Du fragst nach Ideen, wählst aus, entwickelst weiter | Liefert Optionen | Bei dir |
+| **Strukturierungshilfe** | Du hast eine Idee, KI hilft bei der Ausarbeitung | Strukturiert deine Idee | Geteilt |
+| **Vollständiger Planer** | Du beschreibst das Ziel, KI erstellt den Plan | Übernimmt die Planung | Bei der KI |
+
+**Beispiel-Prompts für jeden Modus:**
+
+- *Ideengeber*: "Gib mir 5 verschiedene Aktivitätsideen für das Lernziel X"
+- *Strukturierungshilfe*: "Ich möchte ein Quiz machen. Hilf mir, es zu strukturieren."
+- *Vollständiger Planer*: "Erstelle eine komplette Lernaktivität für das Lernziel X"
+:::
+
+::: {.experiment}
+## Teil 2: Planung mit KI (10 min)
+
+Entwirf nun eine ähnliche Lernaktivität für ein anderes Lernziel, diesmal mit Chatbot-Unterstützung.
+
+**Wähle bewusst einen der drei Modi:**
+
+- **Ideengeber**: Du fragst nach Ideen, wählst aus und entwickelst selbst weiter
+- **Strukturierungshilfe**: Du hast eine Idee, die KI hilft dir bei der Ausarbeitung
+- **Vollständiger Planer**: Du beschreibst das Ziel, die KI erstellt den Plan
+
+Notiere:
+
+1. Welchen Modus du gewählt hast
+2. Das Lernziel
+3. Die Aktivität
+4. Die Erfolgskriterien
+
+{{< timer 10 >}}
+:::
+
+::: {.reflect}
+## Teil 3: Reflexion (10 min)
+
+Vergleiche deine beiden Planungsprozesse:
+
+### Individuelle Reflexion (3 min)
+
+Beantworte für dich:
+
+1. **Welchen Modus hast du gewählt?** War das eine bewusste Entscheidung?
+
+2. **Wo war das Denken?** Bei welcher Planung hast du mehr nachgedacht?
+
+3. **Was war anders?** Wie unterschied sich dein mentaler Prozess?
+
+4. **Qualität vs. Prozess**: Welche Planung ist besser? Welcher Prozess hat dir mehr gebracht?
+
+{{< timer 3 >}}
+
+### Austausch in Paaren (7 min)
+
+Diskutiert:
+
+- Welchen Modus habt ihr gewählt? Warum?
+- Hat der Modus beeinflusst, wo das Denken lag?
+- Was bedeutet das für eure Studierenden?
+
+{{< timer 7 >}}
+:::
+
+::: {.key-point}
+## Kernfrage
+
+> Bei welcher Planung hast du mehr gelernt, mehr entschieden, mehr nachgedacht?
+
+Das ist der Unterschied zwischen **Offloading** (du denkst, das Tool unterstützt) und **Outsourcing** (das Tool denkt, du akzeptierst).
+:::
+
+::: {.group}
+## Debrief im Plenum
+
+Sammelt eure Erkenntnisse:
+
+1. **Wann war KI hilfreich?** (z.B. Ideen generieren, Struktur vorschlagen)
+
+2. **Wann hat KI euer Denken ersetzt?** (z.B. fertige Lösung akzeptiert)
+
+3. **Was bedeutet das für Studierende?**
+   - Studierende sind keine Expert*innen in eurem Fach
+   - Sie wissen oft nicht, was "gut" ist
+   - Können sie evaluieren, was der Chatbot produziert?
+
+### Die zentrale Einsicht
+
+::: {.key-point}
+Dieselbe KI-Nutzung kann sein:
+
+- **Offloading für euch** (ihr wisst, was gut ist, und nutzt KI zur Effizienz)
+- **Outsourcing für Studierende** (sie wissen nicht, was gut ist, und übernehmen unkritisch)
+
+Der Unterschied liegt nicht in der Handlung, sondern im Kopf.
+:::
+:::

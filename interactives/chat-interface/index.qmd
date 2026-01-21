@@ -1,0 +1,101 @@
+---
+title: "Chat-Interface"
+subtitle: "Experimentiere mit verschiedenen Sprachmodellen"
+sidebar: false
+---
+
+Hier kannst du direkt mit verschiedenen Sprachmodellen chatten, ohne ein eigenes Konto zu benötigen.
+
+::: {.callout-note}
+## Vor dem Start
+
+- Die Metadaten (Tokens, Zeit) helfen dir zu verstehen, wie das Modell arbeitet
+- Probiere verschiedene Temperature-Einstellungen aus
+- Vergleiche die Antworten verschiedener Modelle auf dieselbe Frage
+:::
+
+## Chat starten
+
+<!--
+IMPORTANT: Replace the src URL with your actual HuggingFace Space URL after deployment.
+Format: https://YOUR-USERNAME-SPACE-NAME.hf.space
+-->
+
+```{=html}
+<div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; margin: 1rem 0;">
+  <iframe
+    src="https://placeholder-url.hf.space"
+    frameborder="0"
+    width="100%"
+    height="700px"
+    style="display: block;"
+    loading="lazy"
+  ></iframe>
+</div>
+```
+
+::: {.warning}
+## Datenschutz
+
+Dieser Chatbot läuft auf einem externen Server (HuggingFace Spaces). Die Daten werden über die APIs von OpenAI und Anthropic verarbeitet.
+
+**Gib keine sensiblen oder persönlichen Daten ein.**
+
+Für sensible Aufgaben: Nutze die BFH-freigegebenen Tools (Copilot) oder lokale Modelle.
+:::
+
+## Was du beobachten kannst
+
+### Metadaten verstehen
+
+| Anzeige | Bedeutung |
+|---------|-----------|
+| ⏱️ Zeit | Wie lange die Antwort gedauert hat |
+| 📥 Input | Wie viele Tokens deine Nachricht + Kontext hatte |
+| 📤 Output | Wie viele Tokens die Antwort hat |
+| 🎫 Total | Gesamtzahl der verarbeiteten Tokens |
+
+### Temperature-Effekte
+
+Probiere dieselbe Frage mit verschiedenen Temperature-Einstellungen:
+
+::: {.experiment}
+## Ausprobieren
+
+1. Stelle eine faktische Frage (z.B. "Wann wurde die BFH gegründet?")
+2. Setze Temperature auf **0.0** und sende die Frage
+3. Setze Temperature auf **1.5** und sende dieselbe Frage
+4. Vergleiche: Wie unterscheiden sich die Antworten?
+
+{{< timer 5 >}}
+:::
+
+### Modell-Vergleich
+
+::: {.experiment}
+## Ausprobieren
+
+1. Wähle eine komplexe Frage aus deinem Fachgebiet
+2. Stelle sie an **GPT-4o Mini**
+3. Stelle dieselbe Frage an **Claude Haiku**
+4. Beobachte:
+   - Unterscheiden sich die Antworten inhaltlich?
+   - Unterscheiden sich Stil und Struktur?
+   - Welches Modell war schneller?
+
+{{< timer 7 >}}
+:::
+
+## Alternativen
+
+Falls der eingebettete Chat nicht funktioniert, kannst du diese Tools direkt nutzen:
+
+| Tool | Zugang | Link |
+|------|--------|------|
+| Microsoft Copilot | BFH-Login | [copilot.microsoft.com](https://copilot.microsoft.com) |
+| ChatGPT | Kostenloses Konto | [chat.openai.com](https://chat.openai.com) |
+| Claude | Kostenloses Konto | [claude.ai](https://claude.ai) |
+
+---
+
+[← Zurück zum Workshop](../../workshop/index.qmd)

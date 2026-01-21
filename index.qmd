@@ -1,11 +1,10 @@
 ---
-# title: "KI in der Lehre"
+title: "KI in der Lehre: Beginner"
 format:
   html:
     toc: false
 about:
-  template: marquee #trestles
-#   image: "assets/logo.png"
+  template: marquee
   links:
     - icon: inbox-fill
       text: Email
@@ -16,34 +15,18 @@ about:
     - icon: lightbulb-fill
       text: Knowledge Base
       href: https://virtuelleakademie.ch/knowledge-base/
-    - icon: mortarboard-fill
-      text: Weiterbildungsangebote
-      href: https://www.bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/
 ---
 
+## Willkommen
 
+Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.
 
-{{< bi clock >}} 3:00 
+### Inhalt
 
+- [Workshop](workshop/index.qmd): Ablauf und Lernziele
+- [Slides](slides/index.qmd): Präsentationen zum Workshop
+- [Übungen](exercises/index.qmd): Praktische Aufgaben und Reflexionen
 
-<br>
+## Kontakt
 
-## Dozenten
-
-<!-- [Dr. Andrew Ellis](mailto:andrew.ellis@bfh.ch) ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der Berner Fachhochschule. 
-
-[Dr. Stefan Hackstein](mailto:stefan.hackstein@bfh.ch), Physiker und Datenwissenschaftler, ist Wissenschaftlicher Mitarbeiter an der Virtuellen Akademie der Berner Fachhochschule. -->
-[Dr. Andrew Ellis](mailto:andrew.ellis@bfh.ch) und [Dr. Stefan Hackstein](mailto:stefan.hackstein@bfh.ch) sind als wissenschaftliche Mitarbeiter an der Virtuellen Akademie der Berner Fachhochschule tätig.
-Zusammen erforschen sie, wie künstliche Intelligenz in Bildungssystemen wirkungsvoll eingesetzt werden kann.
-
-## Website
-
-{{< bi link >}} [virtuelleakademie.github.io/ki-lehre-beginner/](https://virtuelleakademie.github.io/ki-lehre-beginner/)
-
-<br>
-<!-- ## QR Code -->
-{{< qrcode https://virtuelleakademie.github.io/ki-lehre-beginner/ width=200 height=200 colorDark='#000000' >}}
-
-
-
-
+[Dr. Andrew Ellis](mailto:andrew.ellis@bfh.ch) ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der Berner Fachhochschule. Er erforscht, wie künstliche Intelligenz in Bildungssystemen wirkungsvoll eingesetzt werden kann.

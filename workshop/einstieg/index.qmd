@@ -1,10 +1,68 @@
 ---
-title:  Begrüßungsaufgabe
+title: "Ankommen"
+subtitle: "Der Elefant im Raum"
+sidebar: workshop
 ---
 
-Stellen Sie sich kurz vor:
+## Der Elefant im Raum
 
-1. **Name**
-2. **Institut & Lehrfächer**
-3. **Subjektives Erfahrungslevel mit KI (Skala von 0-10)**
-4. **Erwartung vom Kurs** (ein Satz)
+::: {.scenario}
+Stelle dir vor: Deine beste studierende Person hat eine hervorragende Arbeit abgegeben.
+
+Kannst du sicher sein, dass sie selbst gedacht hat?
+
+Und wenn nicht: Was bedeutet das für deine Lehre?
+:::
+
+## Was wir heute klären
+
+Dieser Workshop beantwortet drei Fragen:
+
+| Frage | Fokus |
+|-------|-------|
+| **Was ist KI?** | Wie funktioniert das eigentlich? |
+| **Wofür kann KI verwendet werden?** | Möglichkeiten und Grenzen |
+| **Wofür sollte ich KI verwenden?** | Wann ist es sinnvoll, wann nicht? |
+
+Die dritte Frage ist die wichtigste.
+
+## Wo stehst du?
+
+::: {.experiment}
+## Positioniere dich
+
+**Dimension 1: Erfahrung**
+
+Stelle dich auf einer imaginären Linie auf:
+
+- Links: "Ich habe noch nie einen Chatbot benutzt"
+- Rechts: "Ich nutze KI-Tools täglich"
+
+**Dimension 2: Haltung**
+
+- Links: "Ich bin skeptisch gegenüber KI in der Lehre"
+- Rechts: "Ich bin optimistisch über KI in der Lehre"
+
+{{< timer 5 >}}
+:::
+
+::: {.callout-note}
+## Für die Moderation
+
+Merke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:
+
+- **Bei Gruppenaktivitäten**: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)
+- **Warum**: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen.
+:::
+
+## Was wir heute nicht tun
+
+Wir werden nicht behaupten, dass KI gut oder schlecht ist.
+
+**Stattdessen**: Gemeinsam herausfinden, wann KI das Lernen unterstützt und wann sie es behindert.
+
+## Spielregeln
+
+- Experimentieren ist erwünscht
+- Es gibt keine dummen Fragen
+- Wir lernen voneinander
