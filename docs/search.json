@@ -175,41 +175,6 @@
     "text": "Aktivität: Szenario-Karten\nIhr bekommt Szenarien, in denen jemand KI nutzt.\nDiskutiert in Gruppen:\n\nIst das eher Offloading oder Outsourcing?\nWas würde es zum anderen machen?\nFür wen wäre dieselbe Nutzung anders zu bewerten?\n\n{{&lt; timer 20 &gt;}}"
   },
   {
-    "objectID": "slides/ki-verstehen/index.html",
-    "href": "slides/ki-verstehen/index.html",
-    "title": "KI verstehen",
-    "section": "",
-    "text": "In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch statistische Vorhersage, Tool-Nutzung und “Denken” durch Chain-of-Thought.\nSlides in neuem Fenster öffnen"
-  },
-  {
-    "objectID": "slides/ki-verstehen/index.html#präsentation",
-    "href": "slides/ki-verstehen/index.html#präsentation",
-    "title": "KI verstehen",
-    "section": "",
-    "text": "In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch statistische Vorhersage, Tool-Nutzung und “Denken” durch Chain-of-Thought.\nSlides in neuem Fenster öffnen"
-  },
-  {
-    "objectID": "slides/ki-verstehen/index.html#inhaltsübersicht",
-    "href": "slides/ki-verstehen/index.html#inhaltsübersicht",
-    "title": "KI verstehen",
-    "section": "Inhaltsübersicht",
-    "text": "Inhaltsübersicht\nDauer: 45 Minuten (3 Abschnitte à 15 Minuten)\n\nAbschnitt A: Textgenerierung\n\nSprachmodelle sagen das nächste Wort vorher\nTrainiert auf riesigen Textmengen\nWichtige Einsicht: Keine eingebaute Faktenprüfung\n\n\n\nAbschnitt B: Tool-Nutzung\n\nWeb-Suche, Datei-Analyse, Code-Ausführung\nModerne Chatbots sind mehr als Textgeneratoren\n\n\n\nAbschnitt C: “Denken” / Reasoning\n\nChain-of-Thought verbessert Ergebnisse\n“Denke Schritt für Schritt”\nMehr Zwischenschritte = mehr Kontext = bessere Vorhersagen"
-  },
-  {
-    "objectID": "slides/ki-verstehen/index.html#interaktiv-token-vorhersage",
-    "href": "slides/ki-verstehen/index.html#interaktiv-token-vorhersage",
-    "title": "KI verstehen",
-    "section": "Interaktiv: Token-Vorhersage",
-    "text": "Interaktiv: Token-Vorhersage\nWie sieht “Next-Word-Prediction” konkret aus? Wähle einen Satzanfang und sieh die Wahrscheinlichkeitsverteilung für das nächste Wort.\n\ntokenDatabase = ({\n  \"Der Hund liegt auf dem\": [\n    {token: \"Boden\", prob: 0.32},\n    {token: \"Sofa\", prob: 0.24},\n    {token: \"Bett\", prob: 0.18},\n    {token: \"Teppich\", prob: 0.14},\n    {token: \"Rasen\", prob: 0.12}\n  ],\n  \"Die Katze sitzt auf dem\": [\n    {token: \"Dach\", prob: 0.28},\n    {token: \"Baum\", prob: 0.24},\n    {token: \"Sofa\", prob: 0.20},\n    {token: \"Tisch\", prob: 0.16},\n    {token: \"Fensterbrett\", prob: 0.12}\n  ],\n  \"Die Studierenden lernen für die\": [\n    {token: \"Prüfung\", prob: 0.45},\n    {token: \"Klausur\", prob: 0.25},\n    {token: \"Zukunft\", prob: 0.12},\n    {token: \"Vorlesung\", prob: 0.10},\n    {token: \"Karriere\", prob: 0.08}\n  ],\n  \"Der Professor erklärt das\": [\n    {token: \"Konzept\", prob: 0.28},\n    {token: \"Thema\", prob: 0.24},\n    {token: \"Problem\", prob: 0.20},\n    {token: \"Modell\", prob: 0.16},\n    {token: \"Prinzip\", prob: 0.12}\n  ],\n  \"KI wird in Zukunft\": [\n    {token: \"wichtiger\", prob: 0.24},\n    {token: \"viele\", prob: 0.20},\n    {token: \"eine\", prob: 0.18},\n    {token: \"immer\", prob: 0.20},\n    {token: \"unsere\", prob: 0.18}\n  ]\n})\n\nviewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {\n  label: \"Satzanfang:\",\n  value: \"Der Hund liegt auf dem\"\n})\n\ncurrentProbs = tokenDatabase[selectedSentence]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKontext:  ___\n\nPlot.plot({\n  marginLeft: 100,\n  width: Math.min(500, width),\n  height: 180,\n  x: {domain: [0, 0.5], label: \"Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(currentProbs, {y: \"token\", x: \"prob\", fill: \"#A3195B\", sort: {y: \"-x\"}}),\n    Plot.text(currentProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nDas Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern aus den Trainingsdaten, ohne eingebaute Prüfung der faktischen Korrektheit."
-  },
-  {
-    "objectID": "slides/ki-verstehen/index.html#interaktiv-temperature",
-    "href": "slides/ki-verstehen/index.html#interaktiv-temperature",
-    "title": "KI verstehen",
-    "section": "Interaktiv: Temperature",
-    "text": "Interaktiv: Temperature\nDer Parameter “Temperature” beeinflusst, wie das Modell aus den Wahrscheinlichkeiten wählt.\n\nviewof temperature = Inputs.range([0.1, 2.0], {\n  value: 1.0,\n  step: 0.1,\n  label: \"Temperature\"\n})\n\nscaledProbs = {\n  const t = temperature;\n  const logits = currentProbs.map(p =&gt; Math.log(p.prob));\n  const scaled = logits.map(l =&gt; Math.exp(l / t));\n  const sum = scaled.reduce((a, b) =&gt; a + b, 0);\n  return currentProbs.map((p, i) =&gt; ({token: p.token, prob: scaled[i] / sum}));\n}\n\ntempDescription = temperature &lt; 0.5 ? \"Deterministisch: Fast immer das wahrscheinlichste Wort\" :\n  temperature &lt; 1.0 ? \"Ausgeglichen: Gute Mischung\" :\n  temperature &lt; 1.5 ? \"Kreativ: Mehr Variation\" : \"Chaotisch: Fast zufällig\"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTemperature = : \n\nPlot.plot({\n  marginLeft: 100,\n  width: Math.min(500, width),\n  height: 180,\n  x: {domain: [0, 1], label: \"Angepasste Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(scaledProbs, {y: \"token\", x: \"prob\", fill: \"#D4A03E\", sort: {y: \"-x\"}}),\n    Plot.text(scaledProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})"
-  },
-  {
     "objectID": "slides/frage-3-wozu-soll-ich/slides.html#die-dritte-frage",
     "href": "slides/frage-3-wozu-soll-ich/slides.html#die-dritte-frage",
     "title": "Frage 3: Wofür sollte ich KI verwenden?",
@@ -322,6 +287,13 @@
     "text": "Mehr als Textgenerierung\nModerne Chatbots sind keine reinen Textgeneratoren mehr.\nSie können:\n\nIm Internet suchen\nDateien analysieren (PDFs, Bilder)\nCode ausführen\nMit externen Diensten interagieren"
   },
   {
+    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#fähigkeiten-im-überblick",
+    "href": "slides/frage-2-wozu-kann-ki/slides.html#fähigkeiten-im-überblick",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "Fähigkeiten im Überblick",
+    "text": "Fähigkeiten im Überblick\n\n\nText\n\nFragen beantworten\nDokumente zusammenfassen\nOutput strukturieren\n\n\nMultimodal + Tools\n\nBilder analysieren\nWebsuche\nDatenanalyse / Code"
+  },
+  {
     "objectID": "slides/frage-2-wozu-kann-ki/slides.html#fragen-beantworten",
     "href": "slides/frage-2-wozu-kann-ki/slides.html#fragen-beantworten",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
@@ -371,11 +343,25 @@
     "text": "Custom GPTs\n\n\nSpezialisierte Chatbots für bestimmte Aufgaben können erstellt werden.\nBeispiele: Schreibassistenten, Tutoren, Feedback-Bots."
   },
   {
-    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#aber-grenzen-und-gefahren",
-    "href": "slides/frage-2-wozu-kann-ki/slides.html#aber-grenzen-und-gefahren",
+    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#section",
+    "href": "slides/frage-2-wozu-kann-ki/slides.html#section",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
-    "section": "Aber: Grenzen und Gefahren",
-    "text": "Aber: Grenzen und Gefahren\n\n\n\n\nUrheberrecht: Trainiert mit möglicherweise geschützten Texten\nBias: Vorurteile aus Trainingsdaten\nEnergieverbrauch: Hoher Ressourcenverbrauch\nSycophancy: Neigung, Nutzende zu bestätigen"
+    "section": "",
+    "text": "Aber: Grenzen und Gefahren"
+  },
+  {
+    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#urheberrecht-und-bias",
+    "href": "slides/frage-2-wozu-kann-ki/slides.html#urheberrecht-und-bias",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "Urheberrecht und Bias",
+    "text": "Urheberrecht und Bias\n\n\nUrheberrecht\nLLMs wurden mit möglicherweise geschützten Texten trainiert.\nWer besitzt die Rechte an KI-generierten Inhalten?\n\nBias\nVorurteile aus den Trainingsdaten werden reproduziert.\nKI-Outputs kritisch auf Verzerrungen prüfen."
+  },
+  {
+    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#energieverbrauch-und-sycophancy",
+    "href": "slides/frage-2-wozu-kann-ki/slides.html#energieverbrauch-und-sycophancy",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "Energieverbrauch und Sycophancy",
+    "text": "Energieverbrauch und Sycophancy\n\n\nEnergieverbrauch\nKI-Modelle verbrauchen erhebliche Ressourcen.\nNicht für jede Aufgabe ist KI die beste Lösung.\n\nBestätigungstendenz\nChatbots neigen dazu, Nutzende zu bestätigen statt zu korrigieren.\nKritisch nachfragen, besonders wenn die Antwort “zu gut” klingt."
   },
   {
     "objectID": "slides/frage-2-wozu-kann-ki/slides.html#keine-wissensdatenbank",
@@ -385,11 +371,18 @@
     "text": "Keine Wissensdatenbank\n\n\n\nLLMs werden nicht trainiert, faktisch korrekt zu sein\nWir müssen alle Aussagen kritisch hinterfragen\nLLMs sind keine Wissensdatenbanken\nInformationen immer anhand externer Quellen überprüfen"
   },
   {
-    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#ki-an-der-bfh",
-    "href": "slides/frage-2-wozu-kann-ki/slides.html#ki-an-der-bfh",
+    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#section-1",
+    "href": "slides/frage-2-wozu-kann-ki/slides.html#section-1",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
-    "section": "KI an der BFH",
-    "text": "KI an der BFH\nDie BFH hat eine KI-Policy verabschiedet (Mai 2025):\nDie fünf Grundsätze:\n\nTransparenz und Nachvollziehbarkeit\nInformationssicherheit und Datenschutz\nEthische Reflexion und Verantwortlichkeit\nWissenschaftliche Integrität\nDidaktische Angemessenheit und Chancengleichheit"
+    "section": "",
+    "text": "KI an der BFH"
+  },
+  {
+    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#ki-policy-der-bfh",
+    "href": "slides/frage-2-wozu-kann-ki/slides.html#ki-policy-der-bfh",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "KI-Policy der BFH",
+    "text": "KI-Policy der BFH\nDie BFH hat eine KI-Policy verabschiedet (Mai 2025):\nDie fünf Grundsätze:\n\nTransparenz und Nachvollziehbarkeit\nInformationssicherheit und Datenschutz\nEthische Reflexion und Verantwortlichkeit\nWissenschaftliche Integrität\nDidaktische Angemessenheit und Chancengleichheit"
   },
   {
     "objectID": "slides/frage-2-wozu-kann-ki/slides.html#deine-verantwortung-als-lehrperson",
@@ -445,7 +438,7 @@
     "href": "slides/frage-1-was-ist-ki/slides.html#was-sind-chatbots",
     "title": "Frage 1: Was ist KI?",
     "section": "Was sind Chatbots?",
-    "text": "Was sind Chatbots?"
+    "text": "Was sind Chatbots?\n\n\nChatbots sind Schnittstellen, die auf Sprachmodellen basieren.\nDu schreibst eine Nachricht, das Modell generiert eine Antwort."
   },
   {
     "objectID": "slides/frage-1-was-ist-ki/slides.html#was-sind-llms",
@@ -546,111 +539,6 @@
     "text": "Takeaway\n\n\n\n\n\n\nAntwort auf Frage 1\n\n\nWas ist KI?\nSprachmodelle generieren Text durch Vorhersage des nächsten Worts. Sie sind auf Plausibilität trainiert, nicht auf Wahrheit. Deshalb können sie überzeugend klingen, aber faktisch falsch sein."
   },
   {
-    "objectID": "slides/bfh-landscape/slides.html#ki-policy-bfh",
-    "href": "slides/bfh-landscape/slides.html#ki-policy-bfh",
-    "title": "KI an der BFH",
-    "section": "KI-Policy BFH",
-    "text": "KI-Policy BFH\nDie BFH hat eine KI-Policy verabschiedet:\n\nVerabschiedet am 7. Mai 2025\nGilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#die-fünf-grundsätze",
-    "href": "slides/bfh-landscape/slides.html#die-fünf-grundsätze",
-    "title": "KI an der BFH",
-    "section": "Die fünf Grundsätze",
-    "text": "Die fünf Grundsätze\n\nTransparenz und Nachvollziehbarkeit\nInformationssicherheit und Datenschutz\nEthische Reflexion und Verantwortlichkeit\nWissenschaftliche Integrität\nDidaktische Angemessenheit und Chancengleichheit"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#deine-verantwortung-als-lehrperson",
-    "href": "slides/bfh-landscape/slides.html#deine-verantwortung-als-lehrperson",
-    "title": "KI an der BFH",
-    "section": "Deine Verantwortung als Lehrperson",
-    "text": "Deine Verantwortung als Lehrperson\n\nAuswahl und Einsatz von KI-Tools verantworten\nEignung für Lernziele prüfen\nStudierende transparent informieren\nFestlegen, wie KI-Inhalte zu kennzeichnen sind\nVorgaben auf Departements-/Studiengangsebene beachten"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#studierende",
-    "href": "slides/bfh-landscape/slides.html#studierende",
-    "title": "KI an der BFH",
-    "section": "Studierende",
-    "text": "Studierende\nWas von Studierenden erwartet wird:\n\nReflektierter Einsatz im vorgegebenen Rahmen\nAuseinandersetzung mit Potenzialen und Grenzen\nFeedback an Lehrende geben"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#rechtliche-aspekte",
-    "href": "slides/bfh-landscape/slides.html#rechtliche-aspekte",
-    "title": "KI an der BFH",
-    "section": "Rechtliche Aspekte",
-    "text": "Rechtliche Aspekte\nZwei wichtige Aspekte bei der Benutzung von LLMs:\n\n\n\nRechtliche Aspekte \n\nWer besitzt die Rechte an den von LLMs generierten Inhalten?\nRisiko von Plagiaten und Urheberrechtsverletzungen\nRichtlinien für den Umgang mit generierten Inhalten\n\n\nDatenschutz \n\nSchutz personenbezogener Daten\nEinhaltung von Datenschutzbestimmungen"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#rechtliche-aspekte-1",
-    "href": "slides/bfh-landscape/slides.html#rechtliche-aspekte-1",
-    "title": "KI an der BFH",
-    "section": "Rechtliche Aspekte",
-    "text": "Rechtliche Aspekte\n\nKI-Modelle können mit Inhalten trainiert sein, an denen Dritte Urheberrechte haben.\nDer Input (Prompt) kann geschützte Inhalte Dritter enthalten.\nDer von der KI generierte Output kann zufällig geschützte Inhalte Dritter enthalten."
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#empfehlung-deklaration",
-    "href": "slides/bfh-landscape/slides.html#empfehlung-deklaration",
-    "title": "KI an der BFH",
-    "section": "Empfehlung: Deklaration",
-    "text": "Empfehlung: Deklaration\nKI-Policy: Geben Sie deutlich an, dass der Inhalt von einer KI erstellt wurde:\n\n\n\n\n\n\n\nDeklaration\n\n\nDer/die Autor*in hat diesen Text teilweise mit [Modell] erstellt. Nach der Erstellung des Entwurfs hat der/die Autor*in den Text überprüft, bearbeitet und nach eigenem Ermessen angepasst und übernimmt die volle Verantwortung für den Inhalt dieser Veröffentlichung.\n\n\n\n\nZitieren Sie das verwendete Modell in ähnlicher Weise, wie Sie Software zitieren würden."
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#datenschutz",
-    "href": "slides/bfh-landscape/slides.html#datenschutz",
-    "title": "KI an der BFH",
-    "section": "Datenschutz",
-    "text": "Datenschutz\nDatenschutz allgemein bedeutet:\n\nsicherzustellen, dass keine persönlichen Daten der Lehrenden oder Lernenden ohne deren Zustimmung gesammelt, gespeichert oder weiterverarbeitet werden\nTransparenz darüber, welche Daten erhoben und wie sie verwendet werden\nsicherzustellen, dass Daten nicht für andere Zwecke als die ursprünglich angegebenen verwendet werden\nEinhaltung von Datenschutzgesetzen und -vorschriften\n\n\n\n\nLehrpersonen müssen Datenschutz beim Einsatz von (digitalen) Tools immer beachten."
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#schutzmassnahmen",
-    "href": "slides/bfh-landscape/slides.html#schutzmassnahmen",
-    "title": "KI an der BFH",
-    "section": "Schutzmassnahmen",
-    "text": "Schutzmassnahmen\n\n\n\nKeine persönlichen Daten in die Eingabe von ChatGPT einfliessen lassen (nur anonymisierte Informationen)\nKeine Eingabe von sensiblen oder vertraulichen Informationen\n\n\nEinstellungen im Konto für Datenkontrolle:"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#copilot-verwenden",
-    "href": "slides/bfh-landscape/slides.html#copilot-verwenden",
-    "title": "KI an der BFH",
-    "section": "Copilot verwenden",
-    "text": "Copilot verwenden\n\n\nMicrosoft Copilot garantiert BFH-Mitarbeitenden, dass Benutzerdaten gesichert sind:\n Schutz von Unternehmensdaten\n\nBenutzerdaten sind durch Verschlüsselung, Sicherheitskontrollen und Datenisolation geschützt.\nMicrosoft verwendet Daten nicht ohne Anweisung des Benutzers."
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#freigegebene-tools",
-    "href": "slides/bfh-landscape/slides.html#freigegebene-tools",
-    "title": "KI an der BFH",
-    "section": "Freigegebene Tools",
-    "text": "Freigegebene Tools\nWo findest du die Liste?\n\nmybfh &gt; IT-Applikationen &gt; Abgeklärte KI-Tools\nmybfh &gt; IT-Applikationen &gt; Neue KI-Tools"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#die-wichtigsten-tools",
-    "href": "slides/bfh-landscape/slides.html#die-wichtigsten-tools",
-    "title": "KI an der BFH",
-    "section": "Die wichtigsten Tools",
-    "text": "Die wichtigsten Tools\n\n\n\nTool\nZugang\nStärken\n\n\n\n\nMicrosoft Copilot\nBFH-Lizenz\nIntegration in Office, Datenschutz\n\n\nChatGPT\nPersönlich/Abo\nVielseitig, viele Funktionen\n\n\nClaude\nPersönlich/Abo\nLange Texte, Reasoning"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#welches-tool-wofür",
-    "href": "slides/bfh-landscape/slides.html#welches-tool-wofür",
-    "title": "KI an der BFH",
-    "section": "Welches Tool wofür?",
-    "text": "Welches Tool wofür?\n\nKurze Fragen, Office-Integration: Copilot\nKomplexe Aufgaben, Coding: ChatGPT\nLange Dokumente, Analyse: Claude"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#support",
-    "href": "slides/bfh-landscape/slides.html#support",
-    "title": "KI an der BFH",
-    "section": "Support",
-    "text": "Support\nBei Fragen:\n\nCISO: Informationssicherheit\nFachstelle Datenschutz: Datenschutzfragen\nVirtuelle Akademie: Didaktische Beratung\nBildung 6.0 Plattform: Ressourcen und Austausch"
-  },
-  {
-    "objectID": "slides/bfh-landscape/slides.html#ressourcen",
-    "href": "slides/bfh-landscape/slides.html#ressourcen",
-    "title": "KI an der BFH",
-    "section": "Ressourcen",
-    "text": "Ressourcen\n\nKI-Policy BFH (PDF)\nBildung 6.0\nmybfh &gt; IT-Applikationen &gt; KI-Tools"
-  },
-  {
     "objectID": "exercises/offloading-outsourcing/index.html",
     "href": "exercises/offloading-outsourcing/index.html",
     "title": "Offloading vs. Outsourcing",
@@ -659,7 +547,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Offloading vs. Outsourcing"
+      "Übung: Szenarien analysieren"
     ]
   },
   {
@@ -671,8 +559,265 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Offloading vs. Outsourcing"
+      "Übung: Szenarien analysieren"
     ]
+  },
+  {
+    "objectID": "exercises/fakten-check/index.html",
+    "href": "exercises/fakten-check/index.html",
+    "title": "Fakten-Check",
+    "section": "",
+    "text": "Verstehen, warum Chatbots selbstbewusst falsche Informationen liefern können\nStrategien entwickeln, um KI-Outputs zu überprüfen\nDie Grenzen der eigenen Evaluationsfähigkeit erkennen\n\n\n\n\n\n\n\nKey-pointTeil 1: Das Problem verstehen (10 min)\n\n\n\n\n\nSprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Sie haben kein internes Faktenregister und keine Möglichkeit zu prüfen, ob ihre Aussagen wahr sind.\nDie Mechanik der Halluzination:\n\nStatistische Plausibilität statt Wahrheit: Ein Sprachmodell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel (grosse Stadt, wichtiges Land), auch wenn es falsch ist.\nSelbstsichere Formulierung ist trainiert: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. Das Modell hat gelernt, dass Aussagen typischerweise ohne Hedging formuliert werden.\nKein Zugang zu Quellen beim Generieren: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, “erinnert” es sich nicht an konkrete Quellen. Es rekonstruiert plausibel klingende Informationen.\n\n\n\n\nStudien zeigen konsistent:\n\nHalluzinationsraten variieren stark je nach Thema, Modell und Fragetyp\nFachspezifische Fragen sind besonders anfällig, da die Trainingsdaten weniger davon enthalten\nAktuelle Informationen sind problematisch, da das Training einen Stichtag hat\nNumerische Details (Daten, Zahlen, Statistiken) sind besonders unzuverlässig\nDie Selbstsicherheit korreliert nicht mit Korrektheit: Falsche Antworten klingen genauso überzeugend wie richtige\n\n\n\n\nBeispiel 1: Erfundene Zitate\n\nFrage: “Was hat Einstein über das Internet gesagt?”\nAntwort: “Einstein sagte einmal: ‘Das Internet wird die Art verändern, wie wir kommunizieren und lernen.’”\n\nDas klingt plausibel. Einstein war ein Visionär. Aber er starb 1955, das Internet existierte noch nicht. Das Zitat ist erfunden.\nBeispiel 2: Falsche Fakten mit korrektem Kontext\n\nFrage: “Wann wurde die BFH gegründet?”\nAntwort: “Die Berner Fachhochschule wurde 1997 gegründet und ist eine der grössten Fachhochschulen der Schweiz.”\n\nDie Jahreszahl könnte stimmen oder nicht. Der Kontext (Fachhochschule, Schweiz, gross) ist korrekt und macht die Antwort überzeugend, auch wenn das Detail falsch wäre.\nBeispiel 3: Plausible Erfindung\n\nFrage: “Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?”\nAntwort: “Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich.”\n\nDas klingt medizinisch korrekt (Titration, typische Dosierungsbereiche). Aber: Ist das die aktuelle Empfehlung? Hat die SGK überhaupt eigene Empfehlungen oder übernimmt sie ESC-Leitlinien? Eine fachkundige Person würde sofort skeptisch sein.\n\n\n\n\n\n\n\n\n\nWichtigDie entscheidende Einsicht\n\n\n\nMit deiner Fachkompetenz kannst du Halluzinationen erkennen.\nDeine Studierenden können das nicht.\nSie haben nicht das Hintergrundwissen, um zu merken, wenn etwas subtil falsch ist. Für sie klingt die falsche Antwort genauso überzeugend wie die richtige.\nDas bedeutet:\n\nWenn Studierende Chatbots als Informationsquelle nutzen, lernen sie möglicherweise Falsches\nSie können nicht evaluieren, was sie nicht verstehen\nDie Selbstsicherheit der KI vermittelt falsches Vertrauen\n\n\n\n\n\n\n\n\n\nExperimentTeil 2: Selbst testen (10 min)\n\n\n\nJetzt testest du das Phänomen in deinem eigenen Fachgebiet.\n\n\n\nPfad A: GrundlagenPfad B: Fachspezifisch\n\n\nFür Teilnehmende, die Chatbots noch nicht regelmässig nutzen\nStelle 3 Fragen aus dem Bereich Allgemeinwissen, bei denen du die Antwort sicher kennst:\n\nEine historische Frage (Datum, Person, Ereignis aus deinem Fachgebiet)\nEine Frage zu einer bekannten Definition oder Formel\nEine Frage zu einem Standardwerk oder einer wichtigen Person in deinem Fach\n\nBeispiel: “In welchem Jahr wurde die Pflichtversicherung gegen Unfälle in der Schweiz eingeführt?”\n\n\nFür Teilnehmende mit regelmässiger KI-Erfahrung\nStelle 3 Fragen, die typisch für deine Studierenden wären:\n\nEine Frage, die Studierende im 1. Semester stellen würden\nEine Frage aus einer Prüfung oder Übung\nEine Frage zu einem häufigen Missverständnis in deinem Fach\n\nBeispiel: “Welche Dosierung empfiehlt die aktuelle Schweizer Leitlinie für [Medikament X] bei [Indikation Y]?”\n\n\n\nNotiere die Fragen und Antworten.\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\n\nExperimentTeil 3: Überprüfen (10 min)\n\n\n\nÜberprüfe die Antworten des Chatbots mit deinem Fachwissen:\n\nStimmen sie mit deinem Wissen überein?\nKannst du die Informationen in einer zuverlässigen Quelle bestätigen?\n\nKategorisiere jede Antwort:\n\n\n\n\n\n\n\nKategorie\nBedeutung\n\n\n\n\n✓ Korrekt\nInhaltlich richtig, keine Fehler\n\n\n~ Teilweise korrekt\nGrundidee stimmt, aber Details falsch oder ungenau\n\n\n✗ Falsch (Halluzination)\nInhaltlich falsch, erfunden, oder irreführend\n\n\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nGroupTeil 4: Austausch (5 min)\n\n\n\nTauscht euch in Kleingruppen aus (idealerweise gemischte Gruppen aus Pfad A und B):\n\nWas habt ihr gefunden?\nBei welchen Themen waren die Chatbots zuverlässiger?\nWo gab es Fehler?\nHättet ihr die Fehler ohne euer Fachwissen erkannt?\n\n\n\n\n\n\n\nTippVertiefung für erfahrene Nutzende\n\n\n\n\n\nFalls ihr alle den fachspezifischen Pfad gewählt habt:\n\nVergleicht: Waren bestimmte Fachbereiche anfälliger für Halluzinationen?\nDiskutiert: Wie könntet ihr das Phänomen euren Studierenden demonstrieren, ohne sie zu überfordern?\n\n\n\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nReflectTeil 5: Strukturierte Reflexion (5 min)\n\n\n\nBeantworte für dich diese Fragen:\n\nMuster erkennen: Für welche Art von Fragen war der Chatbot zuverlässiger? Bei welchen Fragetypen traten mehr Fehler auf?\nVerbindung zur Textgenerierung: Der Chatbot klang bei falschen Antworten genauso selbstbewusst wie bei richtigen. Wie erklärst du dir das, basierend auf dem, was du über Textgenerierung gelernt hast?\nImplikationen für Studierende: Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen, ohne Fachexpertise zu haben?\nDeine Rolle: Was könntest du tun, um deine Studierenden für dieses Problem zu sensibilisieren?\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nGroupDebrief im Plenum\n\n\n\n\n\nWarum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?\nErinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die “Selbstsicherheit” kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.\nKonntet ihr die Fehler erkennen?\nMit eurer Fachkompetenz konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.\nWas bedeutet das für den Lernprozess?\nWenn Studierende falsche Informationen unkritisch übernehmen, lernen sie nicht nur nicht, sondern lernen möglicherweise Falsches.\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nChatbots sind selbstbewusst, aber nicht zuverlässig. Sie können plausibel klingende Falschaussagen generieren.\nFür Lehrende bedeutet das:\n\nEigene Outputs immer prüfen\nStudierende für dieses Problem sensibilisieren\nKritische Evaluation als Kompetenz vermitteln\nBewusstsein schaffen: Expertise ist Voraussetzung für Evaluation",
+    "crumbs": [
+      "Workshop",
+      "Frage 2: Wofür kann KI verwendet werden?",
+      "Übung: Fakten-Check"
+    ]
+  },
+  {
+    "objectID": "exercises/fakten-check/index.html#lernziele",
+    "href": "exercises/fakten-check/index.html#lernziele",
+    "title": "Fakten-Check",
+    "section": "",
+    "text": "Verstehen, warum Chatbots selbstbewusst falsche Informationen liefern können\nStrategien entwickeln, um KI-Outputs zu überprüfen\nDie Grenzen der eigenen Evaluationsfähigkeit erkennen\n\n\n\n\n\n\n\nKey-pointTeil 1: Das Problem verstehen (10 min)\n\n\n\n\n\nSprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Sie haben kein internes Faktenregister und keine Möglichkeit zu prüfen, ob ihre Aussagen wahr sind.\nDie Mechanik der Halluzination:\n\nStatistische Plausibilität statt Wahrheit: Ein Sprachmodell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel (grosse Stadt, wichtiges Land), auch wenn es falsch ist.\nSelbstsichere Formulierung ist trainiert: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. Das Modell hat gelernt, dass Aussagen typischerweise ohne Hedging formuliert werden.\nKein Zugang zu Quellen beim Generieren: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, “erinnert” es sich nicht an konkrete Quellen. Es rekonstruiert plausibel klingende Informationen.\n\n\n\n\nStudien zeigen konsistent:\n\nHalluzinationsraten variieren stark je nach Thema, Modell und Fragetyp\nFachspezifische Fragen sind besonders anfällig, da die Trainingsdaten weniger davon enthalten\nAktuelle Informationen sind problematisch, da das Training einen Stichtag hat\nNumerische Details (Daten, Zahlen, Statistiken) sind besonders unzuverlässig\nDie Selbstsicherheit korreliert nicht mit Korrektheit: Falsche Antworten klingen genauso überzeugend wie richtige\n\n\n\n\nBeispiel 1: Erfundene Zitate\n\nFrage: “Was hat Einstein über das Internet gesagt?”\nAntwort: “Einstein sagte einmal: ‘Das Internet wird die Art verändern, wie wir kommunizieren und lernen.’”\n\nDas klingt plausibel. Einstein war ein Visionär. Aber er starb 1955, das Internet existierte noch nicht. Das Zitat ist erfunden.\nBeispiel 2: Falsche Fakten mit korrektem Kontext\n\nFrage: “Wann wurde die BFH gegründet?”\nAntwort: “Die Berner Fachhochschule wurde 1997 gegründet und ist eine der grössten Fachhochschulen der Schweiz.”\n\nDie Jahreszahl könnte stimmen oder nicht. Der Kontext (Fachhochschule, Schweiz, gross) ist korrekt und macht die Antwort überzeugend, auch wenn das Detail falsch wäre.\nBeispiel 3: Plausible Erfindung\n\nFrage: “Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?”\nAntwort: “Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich.”\n\nDas klingt medizinisch korrekt (Titration, typische Dosierungsbereiche). Aber: Ist das die aktuelle Empfehlung? Hat die SGK überhaupt eigene Empfehlungen oder übernimmt sie ESC-Leitlinien? Eine fachkundige Person würde sofort skeptisch sein.\n\n\n\n\n\n\n\n\n\nWichtigDie entscheidende Einsicht\n\n\n\nMit deiner Fachkompetenz kannst du Halluzinationen erkennen.\nDeine Studierenden können das nicht.\nSie haben nicht das Hintergrundwissen, um zu merken, wenn etwas subtil falsch ist. Für sie klingt die falsche Antwort genauso überzeugend wie die richtige.\nDas bedeutet:\n\nWenn Studierende Chatbots als Informationsquelle nutzen, lernen sie möglicherweise Falsches\nSie können nicht evaluieren, was sie nicht verstehen\nDie Selbstsicherheit der KI vermittelt falsches Vertrauen\n\n\n\n\n\n\n\n\n\nExperimentTeil 2: Selbst testen (10 min)\n\n\n\nJetzt testest du das Phänomen in deinem eigenen Fachgebiet.\n\n\n\nPfad A: GrundlagenPfad B: Fachspezifisch\n\n\nFür Teilnehmende, die Chatbots noch nicht regelmässig nutzen\nStelle 3 Fragen aus dem Bereich Allgemeinwissen, bei denen du die Antwort sicher kennst:\n\nEine historische Frage (Datum, Person, Ereignis aus deinem Fachgebiet)\nEine Frage zu einer bekannten Definition oder Formel\nEine Frage zu einem Standardwerk oder einer wichtigen Person in deinem Fach\n\nBeispiel: “In welchem Jahr wurde die Pflichtversicherung gegen Unfälle in der Schweiz eingeführt?”\n\n\nFür Teilnehmende mit regelmässiger KI-Erfahrung\nStelle 3 Fragen, die typisch für deine Studierenden wären:\n\nEine Frage, die Studierende im 1. Semester stellen würden\nEine Frage aus einer Prüfung oder Übung\nEine Frage zu einem häufigen Missverständnis in deinem Fach\n\nBeispiel: “Welche Dosierung empfiehlt die aktuelle Schweizer Leitlinie für [Medikament X] bei [Indikation Y]?”\n\n\n\nNotiere die Fragen und Antworten.\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\n\nExperimentTeil 3: Überprüfen (10 min)\n\n\n\nÜberprüfe die Antworten des Chatbots mit deinem Fachwissen:\n\nStimmen sie mit deinem Wissen überein?\nKannst du die Informationen in einer zuverlässigen Quelle bestätigen?\n\nKategorisiere jede Antwort:\n\n\n\n\n\n\n\nKategorie\nBedeutung\n\n\n\n\n✓ Korrekt\nInhaltlich richtig, keine Fehler\n\n\n~ Teilweise korrekt\nGrundidee stimmt, aber Details falsch oder ungenau\n\n\n✗ Falsch (Halluzination)\nInhaltlich falsch, erfunden, oder irreführend\n\n\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nGroupTeil 4: Austausch (5 min)\n\n\n\nTauscht euch in Kleingruppen aus (idealerweise gemischte Gruppen aus Pfad A und B):\n\nWas habt ihr gefunden?\nBei welchen Themen waren die Chatbots zuverlässiger?\nWo gab es Fehler?\nHättet ihr die Fehler ohne euer Fachwissen erkannt?\n\n\n\n\n\n\n\nTippVertiefung für erfahrene Nutzende\n\n\n\n\n\nFalls ihr alle den fachspezifischen Pfad gewählt habt:\n\nVergleicht: Waren bestimmte Fachbereiche anfälliger für Halluzinationen?\nDiskutiert: Wie könntet ihr das Phänomen euren Studierenden demonstrieren, ohne sie zu überfordern?\n\n\n\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nReflectTeil 5: Strukturierte Reflexion (5 min)\n\n\n\nBeantworte für dich diese Fragen:\n\nMuster erkennen: Für welche Art von Fragen war der Chatbot zuverlässiger? Bei welchen Fragetypen traten mehr Fehler auf?\nVerbindung zur Textgenerierung: Der Chatbot klang bei falschen Antworten genauso selbstbewusst wie bei richtigen. Wie erklärst du dir das, basierend auf dem, was du über Textgenerierung gelernt hast?\nImplikationen für Studierende: Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen, ohne Fachexpertise zu haben?\nDeine Rolle: Was könntest du tun, um deine Studierenden für dieses Problem zu sensibilisieren?\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nGroupDebrief im Plenum\n\n\n\n\n\nWarum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?\nErinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die “Selbstsicherheit” kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.\nKonntet ihr die Fehler erkennen?\nMit eurer Fachkompetenz konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.\nWas bedeutet das für den Lernprozess?\nWenn Studierende falsche Informationen unkritisch übernehmen, lernen sie nicht nur nicht, sondern lernen möglicherweise Falsches.\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nChatbots sind selbstbewusst, aber nicht zuverlässig. Sie können plausibel klingende Falschaussagen generieren.\nFür Lehrende bedeutet das:\n\nEigene Outputs immer prüfen\nStudierende für dieses Problem sensibilisieren\nKritische Evaluation als Kompetenz vermitteln\nBewusstsein schaffen: Expertise ist Voraussetzung für Evaluation",
+    "crumbs": [
+      "Workshop",
+      "Frage 2: Wofür kann KI verwendet werden?",
+      "Übung: Fakten-Check"
+    ]
+  },
+  {
+    "objectID": "workshop/index.html",
+    "href": "workshop/index.html",
+    "title": "Workshop: KI in der Lehre",
+    "section": "",
+    "text": "Dieser Workshop beantwortet drei Fragen:\n\n\n\n\n\n\n\n\n#\nFrage\nWas du lernst\n\n\n\n\n1\nWas ist KI?\nWie Sprachmodelle funktionieren (Textgenerierung ohne Faktenprüfung)\n\n\n2\nWofür kann KI verwendet werden?\nMöglichkeiten, Grenzen und BFH-Richtlinien\n\n\n3\nWofür sollte ich KI verwenden?\nOffloading vs. Outsourcing, Produktivität vs. Lernen",
+    "crumbs": [
+      "Workshop",
+      "Übersicht"
+    ]
+  },
+  {
+    "objectID": "workshop/index.html#drei-leitfragen",
+    "href": "workshop/index.html#drei-leitfragen",
+    "title": "Workshop: KI in der Lehre",
+    "section": "",
+    "text": "Dieser Workshop beantwortet drei Fragen:\n\n\n\n\n\n\n\n\n#\nFrage\nWas du lernst\n\n\n\n\n1\nWas ist KI?\nWie Sprachmodelle funktionieren (Textgenerierung ohne Faktenprüfung)\n\n\n2\nWofür kann KI verwendet werden?\nMöglichkeiten, Grenzen und BFH-Richtlinien\n\n\n3\nWofür sollte ich KI verwenden?\nOffloading vs. Outsourcing, Produktivität vs. Lernen",
+    "crumbs": [
+      "Workshop",
+      "Übersicht"
+    ]
+  },
+  {
+    "objectID": "workshop/index.html#lernziele",
+    "href": "workshop/index.html#lernziele",
+    "title": "Workshop: KI in der Lehre",
+    "section": "Lernziele",
+    "text": "Lernziele\nAm Ende dieses Workshops kannst du:\n\nErklären, wie Sprachmodelle Text generieren (statistische Vorhersage)\nDie Fähigkeiten und Grenzen moderner Chatbots einschätzen\nDie BFH-Richtlinien und verfügbaren Tools kennen\nZwischen kognitivem Offloading und Outsourcing unterscheiden\nBeurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert",
+    "crumbs": [
+      "Workshop",
+      "Übersicht"
+    ]
+  },
+  {
+    "objectID": "workshop/index.html#ablauf",
+    "href": "workshop/index.html#ablauf",
+    "title": "Workshop: KI in der Lehre",
+    "section": "Ablauf",
+    "text": "Ablauf\n\n\n\n\n\n\n\n\nZeit\nPhase\nInhalt\n\n\n\n\n00:00–00:15\nEinstieg\nBegrüssung und Spektrum-Aktivität\n\n\n00:15–01:00\nFrage 1: Was ist KI?\nTextgenerierung, Chain-of-Thought, Mini-Experiment\n\n\n01:00–01:10\nPause\n\n\n\n01:10–02:00\nFrage 2: Wofür kann KI verwendet werden?\nFähigkeiten, BFH-Policy, Fakten-Check Aktivität\n\n\n02:00–02:10\nPause\n\n\n\n02:10–02:50\nFrage 3: Wofür sollte ich KI verwenden?\nSzenario-Karten, Offloading vs. Outsourcing\n\n\n02:50–03:00\nAbschluss\nReflexion und Transfer",
+    "crumbs": [
+      "Workshop",
+      "Übersicht"
+    ]
+  },
+  {
+    "objectID": "workshop/index.html#aktivitäten",
+    "href": "workshop/index.html#aktivitäten",
+    "title": "Workshop: KI in der Lehre",
+    "section": "Aktivitäten",
+    "text": "Aktivitäten\nJede Frage enthält eine praktische Aktivität:\n\n\n\nFrage\nAktivität\nDauer\n\n\n\n\n1\nMini-Experiment: Chain-of-Thought testen\n10 min\n\n\n2\nFakten-Check: Chatbot-Antworten überprüfen\n30 min\n\n\n3\nSzenario-Karten ODER Dual Planning Task\n30-35 min\n\n\n\n\n\n\n\n\n\nPro-tipAktivität für Frage 3 wählen\n\n\n\n\n\n\nSzenario-Karten (35 min): Strukturierte Gruppenarbeit, gut für grössere Gruppen\nDual Planning Task (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen",
+    "crumbs": [
+      "Workshop",
+      "Übersicht"
+    ]
+  },
+  {
+    "objectID": "workshop/index.html#takeaways",
+    "href": "workshop/index.html#takeaways",
+    "title": "Workshop: KI in der Lehre",
+    "section": "Takeaways",
+    "text": "Takeaways\nAm Ende nimmst du drei Antworten mit:\n\n\n\n\n\n\nKey-pointFrage 1: Was ist KI?\n\n\n\nSprachmodelle generieren Text Wort für Wort. Sie sind auf Plausibilität trainiert, nicht auf Wahrheit. Deshalb können sie überzeugend klingen, aber faktisch falsch sein.\n\n\n\n\n\n\n\n\nKey-pointFrage 2: Wofür kann KI verwendet werden?\n\n\n\nChatbots sind vielseitige Werkzeuge, aber sie generieren selbstbewusst auch Falsches. Kritische Prüfung ist immer nötig.\n\n\n\n\n\n\n\n\nKey-pointFrage 3: Wofür sollte ich KI verwenden?\n\n\n\nKI-Tools sind für **Expert*innen gemacht. Für Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung, die KI wegzunehmen droht.",
+    "crumbs": [
+      "Workshop",
+      "Übersicht"
+    ]
+  },
+  {
+    "objectID": "workshop/index.html#workshop-reihe",
+    "href": "workshop/index.html#workshop-reihe",
+    "title": "Workshop: KI in der Lehre",
+    "section": "Workshop-Reihe",
+    "text": "Workshop-Reihe\nDieser Workshop ist Teil einer dreiteiligen Kursreihe:\nBeginner (dieser Workshop): Grundlagen zu Sprachmodellen und Chatbots. Was ist generative KI, und was bedeutet sie für das Lernen?\nIntermediate: Lernpsychologie und KI-gestütztes Lerndesign. Warum ist Outsourcing problematisch fürs Lernen?\nAdvanced: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools. Wie baue ich KI-gestützte Lernwerkzeuge?",
+    "crumbs": [
+      "Workshop",
+      "Übersicht"
+    ]
+  },
+  {
+    "objectID": "workshop/abschluss/index.html",
+    "href": "workshop/abschluss/index.html",
+    "title": "Transfer und Abschluss",
+    "section": "",
+    "text": "IndividualKonkreter Vorsatz (3 min)\n\n\n\nSchreibe einen konkreten Vorsatz auf:\n“In meiner nächsten Lehrveranstaltung werde ich…”\n\nNimm diesen Vorsatz mit. Er ist dein erster Schritt.\n{{&lt; timer 3 &gt;}}\n\n\n\n\n\n\n\n\nGroupAustausch (5 min)\n\n\n\nTeile deinen Vorsatz mit einer Person neben dir.\n\nWas wirst du konkret ausprobieren?\nWorauf wirst du achten?\nWas könnte dich daran hindern?\n\n{{&lt; timer 5 &gt;}}",
+    "crumbs": [
+      "Workshop",
+      "Abschluss"
+    ]
+  },
+  {
+    "objectID": "workshop/abschluss/index.html#eine-sache-die-du-morgen-anders-machst",
+    "href": "workshop/abschluss/index.html#eine-sache-die-du-morgen-anders-machst",
+    "title": "Transfer und Abschluss",
+    "section": "",
+    "text": "IndividualKonkreter Vorsatz (3 min)\n\n\n\nSchreibe einen konkreten Vorsatz auf:\n“In meiner nächsten Lehrveranstaltung werde ich…”\n\nNimm diesen Vorsatz mit. Er ist dein erster Schritt.\n{{&lt; timer 3 &gt;}}\n\n\n\n\n\n\n\n\nGroupAustausch (5 min)\n\n\n\nTeile deinen Vorsatz mit einer Person neben dir.\n\nWas wirst du konkret ausprobieren?\nWorauf wirst du achten?\nWas könnte dich daran hindern?\n\n{{&lt; timer 5 &gt;}}",
+    "crumbs": [
+      "Workshop",
+      "Abschluss"
+    ]
+  },
+  {
+    "objectID": "workshop/abschluss/index.html#was-wir-heute-gemacht-haben",
+    "href": "workshop/abschluss/index.html#was-wir-heute-gemacht-haben",
+    "title": "Transfer und Abschluss",
+    "section": "Was wir heute gemacht haben",
+    "text": "Was wir heute gemacht haben\n\n\n\n\n\n\n\nFrage\nEinsicht\n\n\n\n\nWas ist KI?\nSprachmodelle sagen das nächste Wort vorher, ohne eingebaute Faktenprüfung\n\n\nWofür kann KI verwendet werden?\nVielseitige Werkzeuge mit echten Grenzen\n\n\nWofür sollte ich KI verwenden?\nDer Unterschied zwischen Offloading und Outsourcing\n\n\n\n\n\n\n\n\n\nKey-pointDie zentrale Einsicht\n\n\n\nKI-Tools sind primär für Expertinnen gemacht. Sie machen Expertinnen produktiver.\nFür Lernende ist die Situation komplizierter: Lernen braucht die kognitive Anstrengung, die KI wegzunehmen droht.",
+    "crumbs": [
+      "Workshop",
+      "Abschluss"
+    ]
+  },
+  {
+    "objectID": "workshop/abschluss/index.html#die-nächste-frage",
+    "href": "workshop/abschluss/index.html#die-nächste-frage",
+    "title": "Transfer und Abschluss",
+    "section": "Die nächste Frage",
+    "text": "Die nächste Frage\n\n\n\n\n\n\nHinweisIm Intermediate Workshop\n\n\n\nWir haben heute gelernt, was Offloading vs. Outsourcing ist.\nIm nächsten Workshop lernen wir warum Outsourcing problematisch fürs Lernen ist: die kognitive Architektur hinter produktiver Anstrengung.\nThemen:\n\nWie Lernen im Gehirn funktioniert (Cognitive Load Theory)\nWarum Anstrengung notwendig ist (Desirable Difficulties)\nWie man KI-Agenten für Lernen designt",
+    "crumbs": [
+      "Workshop",
+      "Abschluss"
+    ]
+  },
+  {
+    "objectID": "workshop/abschluss/index.html#ressourcen",
+    "href": "workshop/abschluss/index.html#ressourcen",
+    "title": "Transfer und Abschluss",
+    "section": "Ressourcen",
+    "text": "Ressourcen\n\nKI-Policy BFH\nBildung 6.0\nVirtuelle Akademie Knowledge Base",
+    "crumbs": [
+      "Workshop",
+      "Abschluss"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "KI in der Lehre",
+    "section": "",
+    "text": "3:00"
+  },
+  {
+    "objectID": "index.html#dozenten",
+    "href": "index.html#dozenten",
+    "title": "KI in der Lehre",
+    "section": "Dozenten",
+    "text": "Dozenten\n\nDr. Andrew Ellis und Dr. Stefan Hackstein sind als wissenschaftliche Mitarbeiter an der Virtuellen Akademie der Berner Fachhochschule tätig. Zusammen erforschen sie, wie künstliche Intelligenz in Bildungssystemen wirkungsvoll eingesetzt werden kann."
+  },
+  {
+    "objectID": "index.html#website",
+    "href": "index.html#website",
+    "title": "KI in der Lehre",
+    "section": "Website",
+    "text": "Website\n virtuelleakademie.github.io/ki-lehre-beginner/"
+  },
+  {
+    "objectID": "workshop/einstieg/index.html",
+    "href": "workshop/einstieg/index.html",
+    "title": "Ankommen",
+    "section": "",
+    "text": "ScenarioSzenario\n\n\n\nStelle dir vor: Deine beste studierende Person hat eine hervorragende Arbeit abgegeben.\nKannst du sicher sein, dass sie selbst gedacht hat?\nUnd wenn nicht: Was bedeutet das für deine Lehre?",
+    "crumbs": [
+      "Workshop",
+      "Einstieg"
+    ]
+  },
+  {
+    "objectID": "workshop/einstieg/index.html#der-elefant-im-raum",
+    "href": "workshop/einstieg/index.html#der-elefant-im-raum",
+    "title": "Ankommen",
+    "section": "",
+    "text": "ScenarioSzenario\n\n\n\nStelle dir vor: Deine beste studierende Person hat eine hervorragende Arbeit abgegeben.\nKannst du sicher sein, dass sie selbst gedacht hat?\nUnd wenn nicht: Was bedeutet das für deine Lehre?",
+    "crumbs": [
+      "Workshop",
+      "Einstieg"
+    ]
+  },
+  {
+    "objectID": "workshop/einstieg/index.html#was-wir-heute-klären",
+    "href": "workshop/einstieg/index.html#was-wir-heute-klären",
+    "title": "Ankommen",
+    "section": "Was wir heute klären",
+    "text": "Was wir heute klären\nDieser Workshop beantwortet drei Fragen:\n\n\n\n\n\n\n\nFrage\nFokus\n\n\n\n\nWas ist KI?\nWie funktioniert das eigentlich?\n\n\nWofür kann KI verwendet werden?\nMöglichkeiten und Grenzen\n\n\nWofür sollte ich KI verwenden?\nWann ist es sinnvoll, wann nicht?\n\n\n\nDie dritte Frage ist die wichtigste.",
+    "crumbs": [
+      "Workshop",
+      "Einstieg"
+    ]
+  },
+  {
+    "objectID": "workshop/einstieg/index.html#wo-stehst-du",
+    "href": "workshop/einstieg/index.html#wo-stehst-du",
+    "title": "Ankommen",
+    "section": "Wo stehst du?",
+    "text": "Wo stehst du?\n\n\n\n\n\n\nExperimentPositioniere dich\n\n\n\nDimension 1: Erfahrung\nStelle dich auf einer imaginären Linie auf:\n\nLinks: “Ich habe noch nie einen Chatbot benutzt”\nRechts: “Ich nutze KI-Tools täglich”\n\nDimension 2: Haltung\n\nLinks: “Ich bin skeptisch gegenüber KI in der Lehre”\nRechts: “Ich bin optimistisch über KI in der Lehre”\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nHinweisFür die Moderation\n\n\n\nMerke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:\n\nBei Gruppenaktivitäten: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)\nWarum: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen.",
+    "crumbs": [
+      "Workshop",
+      "Einstieg"
+    ]
+  },
+  {
+    "objectID": "workshop/einstieg/index.html#was-wir-heute-nicht-tun",
+    "href": "workshop/einstieg/index.html#was-wir-heute-nicht-tun",
+    "title": "Ankommen",
+    "section": "Was wir heute nicht tun",
+    "text": "Was wir heute nicht tun\nWir werden nicht behaupten, dass KI gut oder schlecht ist.\nStattdessen: Gemeinsam herausfinden, wann KI das Lernen unterstützt und wann sie es behindert.",
+    "crumbs": [
+      "Workshop",
+      "Einstieg"
+    ]
+  },
+  {
+    "objectID": "workshop/einstieg/index.html#spielregeln",
+    "href": "workshop/einstieg/index.html#spielregeln",
+    "title": "Ankommen",
+    "section": "Spielregeln",
+    "text": "Spielregeln\n\nExperimentieren ist erwünscht\nEs gibt keine dummen Fragen\nWir lernen voneinander",
+    "crumbs": [
+      "Workshop",
+      "Einstieg"
+    ]
+  },
+  {
+    "objectID": "exercises/dual-planning/index.html",
+    "href": "exercises/dual-planning/index.html",
+    "title": "Dual Planning Task",
+    "section": "",
+    "text": "Den Unterschied zwischen Offloading und Outsourcing am eigenen Erleben erfahren\nReflektieren, wo die kognitive Arbeit bei verschiedenen Arbeitsmodi stattfindet\nEinschätzen, wie sich KI-Nutzung auf den eigenen Denkprozess auswirkt\n\n\n\n\n\n\n\nExperimentTeil 1: Planung ohne KI (10 min)\n\n\n\nEntwirf eine kurze Lernaktivität (5-10 min) für dein Fachgebiet.\nDeine Aufgabe: Plane eine Aktivität, die ein konkretes Lernziel erreicht.\nBeispiele für Lernziele:\n\nStudierende können X von Y unterscheiden\nStudierende können den Prozess Z erklären\nStudierende können Konzept A auf Situation B anwenden\n\nWichtig: Arbeite komplett ohne KI. Nutze nur Papier oder ein leeres Dokument.\nNotiere:\n\nDas Lernziel\nDie Aktivität (was machen die Studierenden?)\nWie du weisst, ob das Ziel erreicht wurde\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nExperimentTeil 2: Planung mit KI (10 min)\n\n\n\nEntwirf nun eine ähnliche Lernaktivität für ein anderes Lernziel, diesmal mit Chatbot-Unterstützung.\nDu entscheidest, wie du den Chatbot nutzt:\n\nAls Ideengeber?\nAls Strukturierungshilfe?\nAls vollständiger Planer?\n\nNotiere auch hier:\n\nDas Lernziel\nDie Aktivität\nDie Erfolgskriterien\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nReflectTeil 3: Reflexion (10 min)\n\n\n\nVergleiche deine beiden Planungsprozesse:\n\n\nBeantworte für dich:\n\nWo war das Denken? Bei welcher Planung hast du mehr nachgedacht?\nWas war anders? Wie unterschied sich dein mentaler Prozess?\nQualität vs. Prozess: Welche Planung ist besser? Welcher Prozess hat dir mehr gebracht?\n\n{{&lt; timer 3 &gt;}}\n\n\n\nDiskutiert:\n\nWie habt ihr den Chatbot genutzt?\nWo lag bei euch “das Denken”?\nWas bedeutet das für eure Studierenden?\n\n{{&lt; timer 7 &gt;}}\n\n\n\n\n\n\n\n\n\nKey-pointKernfrage\n\n\n\n\nBei welcher Planung hast du mehr gelernt, mehr entschieden, mehr nachgedacht?\n\nDas ist der Unterschied zwischen Offloading (du denkst, das Tool unterstützt) und Outsourcing (das Tool denkt, du akzeptierst).\n\n\n\n\n\n\n\n\nGroupDebrief im Plenum\n\n\n\nSammelt eure Erkenntnisse:\n\nWann war KI hilfreich? (z.B. Ideen generieren, Struktur vorschlagen)\nWann hat KI euer Denken ersetzt? (z.B. fertige Lösung akzeptiert)\nWas bedeutet das für Studierende?\n\nStudierende sind keine Expert*innen in eurem Fach\nSie wissen oft nicht, was “gut” ist\nKönnen sie evaluieren, was der Chatbot produziert?\n\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nDieselbe KI-Nutzung kann sein:\n\nOffloading für euch (ihr wisst, was gut ist, und nutzt KI zur Effizienz)\nOutsourcing für Studierende (sie wissen nicht, was gut ist, und übernehmen unkritisch)\n\nDer Unterschied liegt nicht in der Handlung, sondern im Kopf."
+  },
+  {
+    "objectID": "exercises/dual-planning/index.html#lernziele",
+    "href": "exercises/dual-planning/index.html#lernziele",
+    "title": "Dual Planning Task",
+    "section": "",
+    "text": "Den Unterschied zwischen Offloading und Outsourcing am eigenen Erleben erfahren\nReflektieren, wo die kognitive Arbeit bei verschiedenen Arbeitsmodi stattfindet\nEinschätzen, wie sich KI-Nutzung auf den eigenen Denkprozess auswirkt\n\n\n\n\n\n\n\nExperimentTeil 1: Planung ohne KI (10 min)\n\n\n\nEntwirf eine kurze Lernaktivität (5-10 min) für dein Fachgebiet.\nDeine Aufgabe: Plane eine Aktivität, die ein konkretes Lernziel erreicht.\nBeispiele für Lernziele:\n\nStudierende können X von Y unterscheiden\nStudierende können den Prozess Z erklären\nStudierende können Konzept A auf Situation B anwenden\n\nWichtig: Arbeite komplett ohne KI. Nutze nur Papier oder ein leeres Dokument.\nNotiere:\n\nDas Lernziel\nDie Aktivität (was machen die Studierenden?)\nWie du weisst, ob das Ziel erreicht wurde\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nExperimentTeil 2: Planung mit KI (10 min)\n\n\n\nEntwirf nun eine ähnliche Lernaktivität für ein anderes Lernziel, diesmal mit Chatbot-Unterstützung.\nDu entscheidest, wie du den Chatbot nutzt:\n\nAls Ideengeber?\nAls Strukturierungshilfe?\nAls vollständiger Planer?\n\nNotiere auch hier:\n\nDas Lernziel\nDie Aktivität\nDie Erfolgskriterien\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nReflectTeil 3: Reflexion (10 min)\n\n\n\nVergleiche deine beiden Planungsprozesse:\n\n\nBeantworte für dich:\n\nWo war das Denken? Bei welcher Planung hast du mehr nachgedacht?\nWas war anders? Wie unterschied sich dein mentaler Prozess?\nQualität vs. Prozess: Welche Planung ist besser? Welcher Prozess hat dir mehr gebracht?\n\n{{&lt; timer 3 &gt;}}\n\n\n\nDiskutiert:\n\nWie habt ihr den Chatbot genutzt?\nWo lag bei euch “das Denken”?\nWas bedeutet das für eure Studierenden?\n\n{{&lt; timer 7 &gt;}}\n\n\n\n\n\n\n\n\n\nKey-pointKernfrage\n\n\n\n\nBei welcher Planung hast du mehr gelernt, mehr entschieden, mehr nachgedacht?\n\nDas ist der Unterschied zwischen Offloading (du denkst, das Tool unterstützt) und Outsourcing (das Tool denkt, du akzeptierst).\n\n\n\n\n\n\n\n\nGroupDebrief im Plenum\n\n\n\nSammelt eure Erkenntnisse:\n\nWann war KI hilfreich? (z.B. Ideen generieren, Struktur vorschlagen)\nWann hat KI euer Denken ersetzt? (z.B. fertige Lösung akzeptiert)\nWas bedeutet das für Studierende?\n\nStudierende sind keine Expert*innen in eurem Fach\nSie wissen oft nicht, was “gut” ist\nKönnen sie evaluieren, was der Chatbot produziert?\n\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nDieselbe KI-Nutzung kann sein:\n\nOffloading für euch (ihr wisst, was gut ist, und nutzt KI zur Effizienz)\nOutsourcing für Studierende (sie wissen nicht, was gut ist, und übernehmen unkritisch)\n\nDer Unterschied liegt nicht in der Handlung, sondern im Kopf."
   },
   {
     "objectID": "exercises/index.html",
@@ -705,293 +850,6 @@
     ]
   },
   {
-    "objectID": "exercises/dual-planning/index.html",
-    "href": "exercises/dual-planning/index.html",
-    "title": "Dual Planning Task",
-    "section": "",
-    "text": "Den Unterschied zwischen Offloading und Outsourcing am eigenen Erleben erfahren\nReflektieren, wo die kognitive Arbeit bei verschiedenen Arbeitsmodi stattfindet\nEinschätzen, wie sich KI-Nutzung auf den eigenen Denkprozess auswirkt\n\n\n\n\n\n\n\nExperimentTeil 1: Planung ohne KI (10 min)\n\n\n\nEntwirf eine kurze Lernaktivität (5-10 min) für dein Fachgebiet.\nDeine Aufgabe: Plane eine Aktivität, die ein konkretes Lernziel erreicht.\nBeispiele für Lernziele:\n\nStudierende können X von Y unterscheiden\nStudierende können den Prozess Z erklären\nStudierende können Konzept A auf Situation B anwenden\n\nWichtig: Arbeite komplett ohne KI. Nutze nur Papier oder ein leeres Dokument.\nNotiere:\n\nDas Lernziel\nDie Aktivität (was machen die Studierenden?)\nWie du weisst, ob das Ziel erreicht wurde\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nExperimentTeil 2: Planung mit KI (10 min)\n\n\n\nEntwirf nun eine ähnliche Lernaktivität für ein anderes Lernziel, diesmal mit Chatbot-Unterstützung.\nDu entscheidest, wie du den Chatbot nutzt:\n\nAls Ideengeber?\nAls Strukturierungshilfe?\nAls vollständiger Planer?\n\nNotiere auch hier:\n\nDas Lernziel\nDie Aktivität\nDie Erfolgskriterien\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nReflectTeil 3: Reflexion (10 min)\n\n\n\nVergleiche deine beiden Planungsprozesse:\n\n\nBeantworte für dich:\n\nWo war das Denken? Bei welcher Planung hast du mehr nachgedacht?\nWas war anders? Wie unterschied sich dein mentaler Prozess?\nQualität vs. Prozess: Welche Planung ist besser? Welcher Prozess hat dir mehr gebracht?\n\n{{&lt; timer 3 &gt;}}\n\n\n\nDiskutiert:\n\nWie habt ihr den Chatbot genutzt?\nWo lag bei euch “das Denken”?\nWas bedeutet das für eure Studierenden?\n\n{{&lt; timer 7 &gt;}}\n\n\n\n\n\n\n\n\n\nKey-pointKernfrage\n\n\n\n\nBei welcher Planung hast du mehr gelernt, mehr entschieden, mehr nachgedacht?\n\nDas ist der Unterschied zwischen Offloading (du denkst, das Tool unterstützt) und Outsourcing (das Tool denkt, du akzeptierst).\n\n\n\n\n\n\n\n\nGroupDebrief im Plenum\n\n\n\nSammelt eure Erkenntnisse:\n\nWann war KI hilfreich? (z.B. Ideen generieren, Struktur vorschlagen)\nWann hat KI euer Denken ersetzt? (z.B. fertige Lösung akzeptiert)\nWas bedeutet das für Studierende?\n\nStudierende sind keine Expert*innen in eurem Fach\nSie wissen oft nicht, was “gut” ist\nKönnen sie evaluieren, was der Chatbot produziert?\n\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nDieselbe KI-Nutzung kann sein:\n\nOffloading für euch (ihr wisst, was gut ist, und nutzt KI zur Effizienz)\nOutsourcing für Studierende (sie wissen nicht, was gut ist, und übernehmen unkritisch)\n\nDer Unterschied liegt nicht in der Handlung, sondern im Kopf."
-  },
-  {
-    "objectID": "exercises/dual-planning/index.html#lernziele",
-    "href": "exercises/dual-planning/index.html#lernziele",
-    "title": "Dual Planning Task",
-    "section": "",
-    "text": "Den Unterschied zwischen Offloading und Outsourcing am eigenen Erleben erfahren\nReflektieren, wo die kognitive Arbeit bei verschiedenen Arbeitsmodi stattfindet\nEinschätzen, wie sich KI-Nutzung auf den eigenen Denkprozess auswirkt\n\n\n\n\n\n\n\nExperimentTeil 1: Planung ohne KI (10 min)\n\n\n\nEntwirf eine kurze Lernaktivität (5-10 min) für dein Fachgebiet.\nDeine Aufgabe: Plane eine Aktivität, die ein konkretes Lernziel erreicht.\nBeispiele für Lernziele:\n\nStudierende können X von Y unterscheiden\nStudierende können den Prozess Z erklären\nStudierende können Konzept A auf Situation B anwenden\n\nWichtig: Arbeite komplett ohne KI. Nutze nur Papier oder ein leeres Dokument.\nNotiere:\n\nDas Lernziel\nDie Aktivität (was machen die Studierenden?)\nWie du weisst, ob das Ziel erreicht wurde\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nExperimentTeil 2: Planung mit KI (10 min)\n\n\n\nEntwirf nun eine ähnliche Lernaktivität für ein anderes Lernziel, diesmal mit Chatbot-Unterstützung.\nDu entscheidest, wie du den Chatbot nutzt:\n\nAls Ideengeber?\nAls Strukturierungshilfe?\nAls vollständiger Planer?\n\nNotiere auch hier:\n\nDas Lernziel\nDie Aktivität\nDie Erfolgskriterien\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nReflectTeil 3: Reflexion (10 min)\n\n\n\nVergleiche deine beiden Planungsprozesse:\n\n\nBeantworte für dich:\n\nWo war das Denken? Bei welcher Planung hast du mehr nachgedacht?\nWas war anders? Wie unterschied sich dein mentaler Prozess?\nQualität vs. Prozess: Welche Planung ist besser? Welcher Prozess hat dir mehr gebracht?\n\n{{&lt; timer 3 &gt;}}\n\n\n\nDiskutiert:\n\nWie habt ihr den Chatbot genutzt?\nWo lag bei euch “das Denken”?\nWas bedeutet das für eure Studierenden?\n\n{{&lt; timer 7 &gt;}}\n\n\n\n\n\n\n\n\n\nKey-pointKernfrage\n\n\n\n\nBei welcher Planung hast du mehr gelernt, mehr entschieden, mehr nachgedacht?\n\nDas ist der Unterschied zwischen Offloading (du denkst, das Tool unterstützt) und Outsourcing (das Tool denkt, du akzeptierst).\n\n\n\n\n\n\n\n\nGroupDebrief im Plenum\n\n\n\nSammelt eure Erkenntnisse:\n\nWann war KI hilfreich? (z.B. Ideen generieren, Struktur vorschlagen)\nWann hat KI euer Denken ersetzt? (z.B. fertige Lösung akzeptiert)\nWas bedeutet das für Studierende?\n\nStudierende sind keine Expert*innen in eurem Fach\nSie wissen oft nicht, was “gut” ist\nKönnen sie evaluieren, was der Chatbot produziert?\n\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nDieselbe KI-Nutzung kann sein:\n\nOffloading für euch (ihr wisst, was gut ist, und nutzt KI zur Effizienz)\nOutsourcing für Studierende (sie wissen nicht, was gut ist, und übernehmen unkritisch)\n\nDer Unterschied liegt nicht in der Handlung, sondern im Kopf."
-  },
-  {
-    "objectID": "workshop/einstieg/index.html",
-    "href": "workshop/einstieg/index.html",
-    "title": "Ankommen",
-    "section": "",
-    "text": "Willkommen zum Workshop “KI in der Lehre: Grundlagen”.\nBevor wir beginnen, lernen wir uns gegenseitig kennen: Wo steht ihr in Bezug auf KI?\n\n\n\n\n\n\nExperimentPositioniere dich\n\n\n\nDimension 1: Erfahrung\nStelle dich auf einer imaginären Linie auf:\n\nLinks: “Ich habe noch nie einen Chatbot benutzt”\nRechts: “Ich nutze KI-Tools täglich”\n\nDimension 2: Haltung\n\nLinks: “Ich bin skeptisch gegenüber KI in der Lehre”\nRechts: “Ich bin optimistisch über KI in der Lehre”\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nHinweisFür die Moderation\n\n\n\nMerke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:\n\nBei Gruppenaktivitäten: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)\nWarum: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen, die Annahmen hinterfragen.",
-    "crumbs": [
-      "Workshop",
-      "Ankommen"
-    ]
-  },
-  {
-    "objectID": "workshop/einstieg/index.html#begrüssung",
-    "href": "workshop/einstieg/index.html#begrüssung",
-    "title": "Ankommen",
-    "section": "",
-    "text": "Willkommen zum Workshop “KI in der Lehre: Grundlagen”.\nBevor wir beginnen, lernen wir uns gegenseitig kennen: Wo steht ihr in Bezug auf KI?\n\n\n\n\n\n\nExperimentPositioniere dich\n\n\n\nDimension 1: Erfahrung\nStelle dich auf einer imaginären Linie auf:\n\nLinks: “Ich habe noch nie einen Chatbot benutzt”\nRechts: “Ich nutze KI-Tools täglich”\n\nDimension 2: Haltung\n\nLinks: “Ich bin skeptisch gegenüber KI in der Lehre”\nRechts: “Ich bin optimistisch über KI in der Lehre”\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nHinweisFür die Moderation\n\n\n\nMerke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:\n\nBei Gruppenaktivitäten: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)\nWarum: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen, die Annahmen hinterfragen.",
-    "crumbs": [
-      "Workshop",
-      "Ankommen"
-    ]
-  },
-  {
-    "objectID": "workshop/einstieg/index.html#ziel-des-workshops",
-    "href": "workshop/einstieg/index.html#ziel-des-workshops",
-    "title": "Ankommen",
-    "section": "Ziel des Workshops",
-    "text": "Ziel des Workshops\nWas wir heute nicht tun:\n\nBehaupten, dass KI gut oder schlecht ist\n\nWas wir heute stattdessen tun:\n\nGemeinsam herausfinden: Wann unterstützt KI das Lernen, wann behindert sie es?",
-    "crumbs": [
-      "Workshop",
-      "Ankommen"
-    ]
-  },
-  {
-    "objectID": "workshop/einstieg/index.html#spielregeln",
-    "href": "workshop/einstieg/index.html#spielregeln",
-    "title": "Ankommen",
-    "section": "Spielregeln",
-    "text": "Spielregeln\n\nExperimentieren ist erwünscht\nEs gibt keine dummen Fragen\nWir lernen voneinander",
-    "crumbs": [
-      "Workshop",
-      "Ankommen"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "KI in der Lehre",
-    "section": "",
-    "text": "3:00"
-  },
-  {
-    "objectID": "index.html#dozenten",
-    "href": "index.html#dozenten",
-    "title": "KI in der Lehre",
-    "section": "Dozenten",
-    "text": "Dozenten\n\nDr. Andrew Ellis und Dr. Stefan Hackstein sind als wissenschaftliche Mitarbeiter an der Virtuellen Akademie der Berner Fachhochschule tätig. Zusammen erforschen sie, wie künstliche Intelligenz in Bildungssystemen wirkungsvoll eingesetzt werden kann."
-  },
-  {
-    "objectID": "index.html#website",
-    "href": "index.html#website",
-    "title": "KI in der Lehre",
-    "section": "Website",
-    "text": "Website\n virtuelleakademie.github.io/ki-lehre-beginner/"
-  },
-  {
-    "objectID": "workshop/abschluss/index.html",
-    "href": "workshop/abschluss/index.html",
-    "title": "Transfer und Abschluss",
-    "section": "",
-    "text": "IndividualKonkreter Vorsatz (3 min)\n\n\n\nSchreibe einen konkreten Vorsatz auf:\n“In meiner nächsten Lehrveranstaltung werde ich…”\n\nNimm diesen Vorsatz mit. Er ist dein erster Schritt.\n{{&lt; timer 3 &gt;}}\n\n\n\n\n\n\n\n\nGroupAustausch (5 min)\n\n\n\nTeile deinen Vorsatz mit einer Person neben dir.\n\nWas wirst du konkret ausprobieren?\nWorauf wirst du achten?\nWas könnte dich daran hindern?\n\n{{&lt; timer 5 &gt;}}",
-    "crumbs": [
-      "Workshop",
-      "Transfer und Abschluss"
-    ]
-  },
-  {
-    "objectID": "workshop/abschluss/index.html#zusammenfassung",
-    "href": "workshop/abschluss/index.html#zusammenfassung",
-    "title": "Transfer und Abschluss",
-    "section": "Zusammenfassung",
-    "text": "Zusammenfassung\nWas wir heute gemacht haben:\n\nVerstanden, wie Chatbots funktionieren (Vorhersage ohne eingebaute Faktenprüfung)\nDie BFH-Richtlinien und Tools kennengelernt\nErfahren, dass Chatbots selbstbewusst, aber nicht zuverlässig sind\nDen Unterschied zwischen Offloading und Outsourcing verstanden\n\nDie zentrale Einsicht:\n\nKI-Tools sind primär für Expertinnen gemacht. Sie machen Expertinnen produktiver. Für Lernende ist die Situation komplizierter, weil Lernen die kognitive Anstrengung braucht, die KI wegzunehmen droht.",
-    "crumbs": [
-      "Workshop",
-      "Transfer und Abschluss"
-    ]
-  },
-  {
-    "objectID": "workshop/abschluss/index.html#wie-weiter",
-    "href": "workshop/abschluss/index.html#wie-weiter",
-    "title": "Transfer und Abschluss",
-    "section": "Wie weiter?",
-    "text": "Wie weiter?\nIntermediate Workshop: Warum ist Outsourcing problematisch fürs Lernen? (Kognitive Lerntheorie, Agent-Design)\nAdvanced Workshop: Wie baue ich KI-gestützte Lernwerkzeuge? (Hands-on mit Code)\nRessourcen:\n\nKI-Policy BFH\nBildung 6.0\nVirtuelle Akademie Knowledge Base",
-    "crumbs": [
-      "Workshop",
-      "Transfer und Abschluss"
-    ]
-  },
-  {
-    "objectID": "workshop/abschluss/index.html#feedback",
-    "href": "workshop/abschluss/index.html#feedback",
-    "title": "Transfer und Abschluss",
-    "section": "Feedback",
-    "text": "Feedback\n[Link zu Feedback-Formular einfügen]",
-    "crumbs": [
-      "Workshop",
-      "Transfer und Abschluss"
-    ]
-  },
-  {
-    "objectID": "workshop/index.html",
-    "href": "workshop/index.html",
-    "title": "Workshop: KI in der Lehre",
-    "section": "",
-    "text": "Dieser Workshop beantwortet drei Fragen:\n\n\n\n\n\n\n\n\n#\nFrage\nWas du lernst\n\n\n\n\n1\nWas ist KI?\nWie Sprachmodelle funktionieren (Textgenerierung ohne Faktenprüfung)\n\n\n2\nWofür kann KI verwendet werden?\nMöglichkeiten, Grenzen und BFH-Richtlinien\n\n\n3\nWofür sollte ich KI verwenden?\nOffloading vs. Outsourcing, Produktivität vs. Lernen",
-    "crumbs": [
-      "Workshop",
-      "Workshop: KI in der Lehre"
-    ]
-  },
-  {
-    "objectID": "workshop/index.html#drei-leitfragen",
-    "href": "workshop/index.html#drei-leitfragen",
-    "title": "Workshop: KI in der Lehre",
-    "section": "",
-    "text": "Dieser Workshop beantwortet drei Fragen:\n\n\n\n\n\n\n\n\n#\nFrage\nWas du lernst\n\n\n\n\n1\nWas ist KI?\nWie Sprachmodelle funktionieren (Textgenerierung ohne Faktenprüfung)\n\n\n2\nWofür kann KI verwendet werden?\nMöglichkeiten, Grenzen und BFH-Richtlinien\n\n\n3\nWofür sollte ich KI verwenden?\nOffloading vs. Outsourcing, Produktivität vs. Lernen",
-    "crumbs": [
-      "Workshop",
-      "Workshop: KI in der Lehre"
-    ]
-  },
-  {
-    "objectID": "workshop/index.html#lernziele",
-    "href": "workshop/index.html#lernziele",
-    "title": "Workshop: KI in der Lehre",
-    "section": "Lernziele",
-    "text": "Lernziele\nAm Ende dieses Workshops kannst du:\n\nErklären, wie Sprachmodelle Text generieren (statistische Vorhersage)\nDie Fähigkeiten und Grenzen moderner Chatbots einschätzen\nDie BFH-Richtlinien und verfügbaren Tools kennen\nZwischen kognitivem Offloading und Outsourcing unterscheiden\nBeurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert",
-    "crumbs": [
-      "Workshop",
-      "Workshop: KI in der Lehre"
-    ]
-  },
-  {
-    "objectID": "workshop/index.html#ablauf",
-    "href": "workshop/index.html#ablauf",
-    "title": "Workshop: KI in der Lehre",
-    "section": "Ablauf",
-    "text": "Ablauf\n\n\n\n\n\n\n\n\nZeit\nPhase\nInhalt\n\n\n\n\n00:00–00:15\nEinstieg\nBegrüssung und Spektrum-Aktivität\n\n\n00:15–01:00\nFrage 1: Was ist KI?\nTextgenerierung, Chain-of-Thought, Mini-Experiment\n\n\n01:00–01:10\nPause\n\n\n\n01:10–02:00\nFrage 2: Wofür kann KI verwendet werden?\nFähigkeiten, BFH-Policy, Fakten-Check Aktivität\n\n\n02:00–02:10\nPause\n\n\n\n02:10–02:50\nFrage 3: Wofür sollte ich KI verwenden?\nSzenario-Karten, Offloading vs. Outsourcing\n\n\n02:50–03:00\nAbschluss\nReflexion und Transfer",
-    "crumbs": [
-      "Workshop",
-      "Workshop: KI in der Lehre"
-    ]
-  },
-  {
-    "objectID": "workshop/index.html#aktivitäten",
-    "href": "workshop/index.html#aktivitäten",
-    "title": "Workshop: KI in der Lehre",
-    "section": "Aktivitäten",
-    "text": "Aktivitäten\nJede Frage enthält eine praktische Aktivität:\n\n\n\nFrage\nAktivität\nDauer\n\n\n\n\n1\nMini-Experiment: Chain-of-Thought testen\n10 min\n\n\n2\nFakten-Check: Chatbot-Antworten überprüfen\n30 min\n\n\n3\nSzenario-Karten ODER Dual Planning Task\n30-35 min\n\n\n\n\n\n\n\n\n\nPro-tipAktivität für Frage 3 wählen\n\n\n\n\n\n\nSzenario-Karten (35 min): Strukturierte Gruppenarbeit, gut für grössere Gruppen\nDual Planning Task (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen",
-    "crumbs": [
-      "Workshop",
-      "Workshop: KI in der Lehre"
-    ]
-  },
-  {
-    "objectID": "workshop/index.html#takeaways",
-    "href": "workshop/index.html#takeaways",
-    "title": "Workshop: KI in der Lehre",
-    "section": "Takeaways",
-    "text": "Takeaways\nAm Ende nimmst du drei Antworten mit:\n\n\n\n\n\n\nKey-pointFrage 1: Was ist KI?\n\n\n\nSprachmodelle generieren Text Wort für Wort. Sie sind auf Plausibilität trainiert, nicht auf Wahrheit. Deshalb können sie überzeugend klingen, aber faktisch falsch sein.\n\n\n\n\n\n\n\n\nKey-pointFrage 2: Wofür kann KI verwendet werden?\n\n\n\nChatbots sind vielseitige Werkzeuge, aber sie generieren selbstbewusst auch Falsches. Kritische Prüfung ist immer nötig.\n\n\n\n\n\n\n\n\nKey-pointFrage 3: Wofür sollte ich KI verwenden?\n\n\n\nKI-Tools sind für **Expert*innen gemacht. Für Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung, die KI wegzunehmen droht.",
-    "crumbs": [
-      "Workshop",
-      "Workshop: KI in der Lehre"
-    ]
-  },
-  {
-    "objectID": "workshop/index.html#workshop-reihe",
-    "href": "workshop/index.html#workshop-reihe",
-    "title": "Workshop: KI in der Lehre",
-    "section": "Workshop-Reihe",
-    "text": "Workshop-Reihe\nDieser Workshop ist Teil einer dreiteiligen Kursreihe:\nBeginner (dieser Workshop): Grundlagen zu Sprachmodellen und Chatbots. Was ist generative KI, und was bedeutet sie für das Lernen?\nIntermediate: Lernpsychologie und KI-gestütztes Lerndesign. Warum ist Outsourcing problematisch fürs Lernen?\nAdvanced: Workshop zur Entwicklung eines eigenen KI-gestützten Lerntools. Wie baue ich KI-gestützte Lernwerkzeuge?",
-    "crumbs": [
-      "Workshop",
-      "Workshop: KI in der Lehre"
-    ]
-  },
-  {
-    "objectID": "exercises/fakten-check/index.html",
-    "href": "exercises/fakten-check/index.html",
-    "title": "Fakten-Check",
-    "section": "",
-    "text": "Verstehen, warum Chatbots selbstbewusst falsche Informationen liefern können\nStrategien entwickeln, um KI-Outputs zu überprüfen\nDie Grenzen der eigenen Evaluationsfähigkeit erkennen\n\n\n\n\n\n\n\nKey-pointTeil 1: Das Problem verstehen (10 min)\n\n\n\n\n\nSprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Sie haben kein internes Faktenregister und keine Möglichkeit zu prüfen, ob ihre Aussagen wahr sind.\nDie Mechanik der Halluzination:\n\nStatistische Plausibilität statt Wahrheit: Ein Sprachmodell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel (grosse Stadt, wichtiges Land), auch wenn es falsch ist.\nSelbstsichere Formulierung ist trainiert: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. Das Modell hat gelernt, dass Aussagen typischerweise ohne Hedging formuliert werden.\nKein Zugang zu Quellen beim Generieren: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, “erinnert” es sich nicht an konkrete Quellen. Es rekonstruiert plausibel klingende Informationen.\n\n\n\n\nStudien zeigen konsistent:\n\nHalluzinationsraten variieren stark je nach Thema, Modell und Fragetyp\nFachspezifische Fragen sind besonders anfällig, da die Trainingsdaten weniger davon enthalten\nAktuelle Informationen sind problematisch, da das Training einen Stichtag hat\nNumerische Details (Daten, Zahlen, Statistiken) sind besonders unzuverlässig\nDie Selbstsicherheit korreliert nicht mit Korrektheit: Falsche Antworten klingen genauso überzeugend wie richtige\n\n\n\n\nBeispiel 1: Erfundene Zitate\n\nFrage: “Was hat Einstein über das Internet gesagt?”\nAntwort: “Einstein sagte einmal: ‘Das Internet wird die Art verändern, wie wir kommunizieren und lernen.’”\n\nDas klingt plausibel. Einstein war ein Visionär. Aber er starb 1955, das Internet existierte noch nicht. Das Zitat ist erfunden.\nBeispiel 2: Falsche Fakten mit korrektem Kontext\n\nFrage: “Wann wurde die BFH gegründet?”\nAntwort: “Die Berner Fachhochschule wurde 1997 gegründet und ist eine der grössten Fachhochschulen der Schweiz.”\n\nDie Jahreszahl könnte stimmen oder nicht. Der Kontext (Fachhochschule, Schweiz, gross) ist korrekt und macht die Antwort überzeugend, auch wenn das Detail falsch wäre.\nBeispiel 3: Plausible Erfindung\n\nFrage: “Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?”\nAntwort: “Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich.”\n\nDas klingt medizinisch korrekt (Titration, typische Dosierungsbereiche). Aber: Ist das die aktuelle Empfehlung? Hat die SGK überhaupt eigene Empfehlungen oder übernimmt sie ESC-Leitlinien? Eine fachkundige Person würde sofort skeptisch sein.\n\n\n\n\n\n\n\n\n\nWichtigDie entscheidende Einsicht\n\n\n\nMit deiner Fachkompetenz kannst du Halluzinationen erkennen.\nDeine Studierenden können das nicht.\nSie haben nicht das Hintergrundwissen, um zu merken, wenn etwas subtil falsch ist. Für sie klingt die falsche Antwort genauso überzeugend wie die richtige.\nDas bedeutet:\n\nWenn Studierende Chatbots als Informationsquelle nutzen, lernen sie möglicherweise Falsches\nSie können nicht evaluieren, was sie nicht verstehen\nDie Selbstsicherheit der KI vermittelt falsches Vertrauen\n\n\n\n\n\n\n\n\n\nExperimentTeil 2: Selbst testen (10 min)\n\n\n\nJetzt testest du das Phänomen in deinem eigenen Fachgebiet.\n\n\n\nPfad A: GrundlagenPfad B: Fachspezifisch\n\n\nFür Teilnehmende, die Chatbots noch nicht regelmässig nutzen\nStelle 3 Fragen aus dem Bereich Allgemeinwissen, bei denen du die Antwort sicher kennst:\n\nEine historische Frage (Datum, Person, Ereignis aus deinem Fachgebiet)\nEine Frage zu einer bekannten Definition oder Formel\nEine Frage zu einem Standardwerk oder einer wichtigen Person in deinem Fach\n\nBeispiel: “In welchem Jahr wurde die Pflichtversicherung gegen Unfälle in der Schweiz eingeführt?”\n\n\nFür Teilnehmende mit regelmässiger KI-Erfahrung\nStelle 3 Fragen, die typisch für deine Studierenden wären:\n\nEine Frage, die Studierende im 1. Semester stellen würden\nEine Frage aus einer Prüfung oder Übung\nEine Frage zu einem häufigen Missverständnis in deinem Fach\n\nBeispiel: “Welche Dosierung empfiehlt die aktuelle Schweizer Leitlinie für [Medikament X] bei [Indikation Y]?”\n\n\n\nNotiere die Fragen und Antworten.\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\n\nExperimentTeil 3: Überprüfen (10 min)\n\n\n\nÜberprüfe die Antworten des Chatbots mit deinem Fachwissen:\n\nStimmen sie mit deinem Wissen überein?\nKannst du die Informationen in einer zuverlässigen Quelle bestätigen?\n\nKategorisiere jede Antwort:\n\n\n\n\n\n\n\nKategorie\nBedeutung\n\n\n\n\n✓ Korrekt\nInhaltlich richtig, keine Fehler\n\n\n~ Teilweise korrekt\nGrundidee stimmt, aber Details falsch oder ungenau\n\n\n✗ Falsch (Halluzination)\nInhaltlich falsch, erfunden, oder irreführend\n\n\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nGroupTeil 4: Austausch (5 min)\n\n\n\nTauscht euch in Kleingruppen aus (idealerweise gemischte Gruppen aus Pfad A und B):\n\nWas habt ihr gefunden?\nBei welchen Themen waren die Chatbots zuverlässiger?\nWo gab es Fehler?\nHättet ihr die Fehler ohne euer Fachwissen erkannt?\n\n\n\n\n\n\n\nTippVertiefung für erfahrene Nutzende\n\n\n\n\n\nFalls ihr alle den fachspezifischen Pfad gewählt habt:\n\nVergleicht: Waren bestimmte Fachbereiche anfälliger für Halluzinationen?\nDiskutiert: Wie könntet ihr das Phänomen euren Studierenden demonstrieren, ohne sie zu überfordern?\n\n\n\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nReflectTeil 5: Strukturierte Reflexion (5 min)\n\n\n\nBeantworte für dich diese Fragen:\n\nMuster erkennen: Für welche Art von Fragen war der Chatbot zuverlässiger? Bei welchen Fragetypen traten mehr Fehler auf?\nVerbindung zur Textgenerierung: Der Chatbot klang bei falschen Antworten genauso selbstbewusst wie bei richtigen. Wie erklärst du dir das, basierend auf dem, was du über Textgenerierung gelernt hast?\nImplikationen für Studierende: Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen, ohne Fachexpertise zu haben?\nDeine Rolle: Was könntest du tun, um deine Studierenden für dieses Problem zu sensibilisieren?\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nGroupDebrief im Plenum\n\n\n\n\n\nWarum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?\nErinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die “Selbstsicherheit” kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.\nKonntet ihr die Fehler erkennen?\nMit eurer Fachkompetenz konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.\nWas bedeutet das für den Lernprozess?\nWenn Studierende falsche Informationen unkritisch übernehmen, lernen sie nicht nur nicht, sondern lernen möglicherweise Falsches.\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nChatbots sind selbstbewusst, aber nicht zuverlässig. Sie können plausibel klingende Falschaussagen generieren.\nFür Lehrende bedeutet das:\n\nEigene Outputs immer prüfen\nStudierende für dieses Problem sensibilisieren\nKritische Evaluation als Kompetenz vermitteln\nBewusstsein schaffen: Expertise ist Voraussetzung für Evaluation",
-    "crumbs": [
-      "Workshop",
-      "Frage 2: Wofür kann KI verwendet werden?",
-      "Fakten-Check"
-    ]
-  },
-  {
-    "objectID": "exercises/fakten-check/index.html#lernziele",
-    "href": "exercises/fakten-check/index.html#lernziele",
-    "title": "Fakten-Check",
-    "section": "",
-    "text": "Verstehen, warum Chatbots selbstbewusst falsche Informationen liefern können\nStrategien entwickeln, um KI-Outputs zu überprüfen\nDie Grenzen der eigenen Evaluationsfähigkeit erkennen\n\n\n\n\n\n\n\nKey-pointTeil 1: Das Problem verstehen (10 min)\n\n\n\n\n\nSprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Sie haben kein internes Faktenregister und keine Möglichkeit zu prüfen, ob ihre Aussagen wahr sind.\nDie Mechanik der Halluzination:\n\nStatistische Plausibilität statt Wahrheit: Ein Sprachmodell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel (grosse Stadt, wichtiges Land), auch wenn es falsch ist.\nSelbstsichere Formulierung ist trainiert: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. Das Modell hat gelernt, dass Aussagen typischerweise ohne Hedging formuliert werden.\nKein Zugang zu Quellen beim Generieren: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, “erinnert” es sich nicht an konkrete Quellen. Es rekonstruiert plausibel klingende Informationen.\n\n\n\n\nStudien zeigen konsistent:\n\nHalluzinationsraten variieren stark je nach Thema, Modell und Fragetyp\nFachspezifische Fragen sind besonders anfällig, da die Trainingsdaten weniger davon enthalten\nAktuelle Informationen sind problematisch, da das Training einen Stichtag hat\nNumerische Details (Daten, Zahlen, Statistiken) sind besonders unzuverlässig\nDie Selbstsicherheit korreliert nicht mit Korrektheit: Falsche Antworten klingen genauso überzeugend wie richtige\n\n\n\n\nBeispiel 1: Erfundene Zitate\n\nFrage: “Was hat Einstein über das Internet gesagt?”\nAntwort: “Einstein sagte einmal: ‘Das Internet wird die Art verändern, wie wir kommunizieren und lernen.’”\n\nDas klingt plausibel. Einstein war ein Visionär. Aber er starb 1955, das Internet existierte noch nicht. Das Zitat ist erfunden.\nBeispiel 2: Falsche Fakten mit korrektem Kontext\n\nFrage: “Wann wurde die BFH gegründet?”\nAntwort: “Die Berner Fachhochschule wurde 1997 gegründet und ist eine der grössten Fachhochschulen der Schweiz.”\n\nDie Jahreszahl könnte stimmen oder nicht. Der Kontext (Fachhochschule, Schweiz, gross) ist korrekt und macht die Antwort überzeugend, auch wenn das Detail falsch wäre.\nBeispiel 3: Plausible Erfindung\n\nFrage: “Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?”\nAntwort: “Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich.”\n\nDas klingt medizinisch korrekt (Titration, typische Dosierungsbereiche). Aber: Ist das die aktuelle Empfehlung? Hat die SGK überhaupt eigene Empfehlungen oder übernimmt sie ESC-Leitlinien? Eine fachkundige Person würde sofort skeptisch sein.\n\n\n\n\n\n\n\n\n\nWichtigDie entscheidende Einsicht\n\n\n\nMit deiner Fachkompetenz kannst du Halluzinationen erkennen.\nDeine Studierenden können das nicht.\nSie haben nicht das Hintergrundwissen, um zu merken, wenn etwas subtil falsch ist. Für sie klingt die falsche Antwort genauso überzeugend wie die richtige.\nDas bedeutet:\n\nWenn Studierende Chatbots als Informationsquelle nutzen, lernen sie möglicherweise Falsches\nSie können nicht evaluieren, was sie nicht verstehen\nDie Selbstsicherheit der KI vermittelt falsches Vertrauen\n\n\n\n\n\n\n\n\n\nExperimentTeil 2: Selbst testen (10 min)\n\n\n\nJetzt testest du das Phänomen in deinem eigenen Fachgebiet.\n\n\n\nPfad A: GrundlagenPfad B: Fachspezifisch\n\n\nFür Teilnehmende, die Chatbots noch nicht regelmässig nutzen\nStelle 3 Fragen aus dem Bereich Allgemeinwissen, bei denen du die Antwort sicher kennst:\n\nEine historische Frage (Datum, Person, Ereignis aus deinem Fachgebiet)\nEine Frage zu einer bekannten Definition oder Formel\nEine Frage zu einem Standardwerk oder einer wichtigen Person in deinem Fach\n\nBeispiel: “In welchem Jahr wurde die Pflichtversicherung gegen Unfälle in der Schweiz eingeführt?”\n\n\nFür Teilnehmende mit regelmässiger KI-Erfahrung\nStelle 3 Fragen, die typisch für deine Studierenden wären:\n\nEine Frage, die Studierende im 1. Semester stellen würden\nEine Frage aus einer Prüfung oder Übung\nEine Frage zu einem häufigen Missverständnis in deinem Fach\n\nBeispiel: “Welche Dosierung empfiehlt die aktuelle Schweizer Leitlinie für [Medikament X] bei [Indikation Y]?”\n\n\n\nNotiere die Fragen und Antworten.\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\n\nExperimentTeil 3: Überprüfen (10 min)\n\n\n\nÜberprüfe die Antworten des Chatbots mit deinem Fachwissen:\n\nStimmen sie mit deinem Wissen überein?\nKannst du die Informationen in einer zuverlässigen Quelle bestätigen?\n\nKategorisiere jede Antwort:\n\n\n\n\n\n\n\nKategorie\nBedeutung\n\n\n\n\n✓ Korrekt\nInhaltlich richtig, keine Fehler\n\n\n~ Teilweise korrekt\nGrundidee stimmt, aber Details falsch oder ungenau\n\n\n✗ Falsch (Halluzination)\nInhaltlich falsch, erfunden, oder irreführend\n\n\n\n{{&lt; timer 10 &gt;}}\n\n\n\n\n\n\n\n\nGroupTeil 4: Austausch (5 min)\n\n\n\nTauscht euch in Kleingruppen aus (idealerweise gemischte Gruppen aus Pfad A und B):\n\nWas habt ihr gefunden?\nBei welchen Themen waren die Chatbots zuverlässiger?\nWo gab es Fehler?\nHättet ihr die Fehler ohne euer Fachwissen erkannt?\n\n\n\n\n\n\n\nTippVertiefung für erfahrene Nutzende\n\n\n\n\n\nFalls ihr alle den fachspezifischen Pfad gewählt habt:\n\nVergleicht: Waren bestimmte Fachbereiche anfälliger für Halluzinationen?\nDiskutiert: Wie könntet ihr das Phänomen euren Studierenden demonstrieren, ohne sie zu überfordern?\n\n\n\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nReflectTeil 5: Strukturierte Reflexion (5 min)\n\n\n\nBeantworte für dich diese Fragen:\n\nMuster erkennen: Für welche Art von Fragen war der Chatbot zuverlässiger? Bei welchen Fragetypen traten mehr Fehler auf?\nVerbindung zur Textgenerierung: Der Chatbot klang bei falschen Antworten genauso selbstbewusst wie bei richtigen. Wie erklärst du dir das, basierend auf dem, was du über Textgenerierung gelernt hast?\nImplikationen für Studierende: Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen, ohne Fachexpertise zu haben?\nDeine Rolle: Was könntest du tun, um deine Studierenden für dieses Problem zu sensibilisieren?\n\n{{&lt; timer 5 &gt;}}\n\n\n\n\n\n\n\n\nGroupDebrief im Plenum\n\n\n\n\n\nWarum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?\nErinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die “Selbstsicherheit” kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.\nKonntet ihr die Fehler erkennen?\nMit eurer Fachkompetenz konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.\nWas bedeutet das für den Lernprozess?\nWenn Studierende falsche Informationen unkritisch übernehmen, lernen sie nicht nur nicht, sondern lernen möglicherweise Falsches.\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nChatbots sind selbstbewusst, aber nicht zuverlässig. Sie können plausibel klingende Falschaussagen generieren.\nFür Lehrende bedeutet das:\n\nEigene Outputs immer prüfen\nStudierende für dieses Problem sensibilisieren\nKritische Evaluation als Kompetenz vermitteln\nBewusstsein schaffen: Expertise ist Voraussetzung für Evaluation",
-    "crumbs": [
-      "Workshop",
-      "Frage 2: Wofür kann KI verwendet werden?",
-      "Fakten-Check"
-    ]
-  },
-  {
-    "objectID": "exercises/klassifikation-denkprozesse/index.html",
-    "href": "exercises/klassifikation-denkprozesse/index.html",
-    "title": "Offloading oder Outsourcing?",
-    "section": "",
-    "text": "Offloading\nOutsourcing\n\n\n\n\nWer denkt?\nDu denkst weiter\nDas Tool denkt\n\n\nFunktion\nUnterstützt dein Denken\nErsetzt dein Denken\n\n\nArbeitsgedächtnis\nEntlastet für nächsten Schritt\nKomplett umgangen"
-  },
-  {
-    "objectID": "exercises/klassifikation-denkprozesse/index.html#die-unterscheidung",
-    "href": "exercises/klassifikation-denkprozesse/index.html#die-unterscheidung",
-    "title": "Offloading oder Outsourcing?",
-    "section": "",
-    "text": "Offloading\nOutsourcing\n\n\n\n\nWer denkt?\nDu denkst weiter\nDas Tool denkt\n\n\nFunktion\nUnterstützt dein Denken\nErsetzt dein Denken\n\n\nArbeitsgedächtnis\nEntlastet für nächsten Schritt\nKomplett umgangen"
-  },
-  {
-    "objectID": "exercises/klassifikation-denkprozesse/index.html#das-problem",
-    "href": "exercises/klassifikation-denkprozesse/index.html#das-problem",
-    "title": "Offloading oder Outsourcing?",
-    "section": "Das Problem",
-    "text": "Das Problem\n\n\n\n\n\n\nKey-pointKognitive Prozesse sind nicht beobachtbar\n\n\n\nDu kannst am Verhalten nicht erkennen, ob jemand offloaded oder outsourced. Die Unterscheidung liegt im Kopf, nicht in der Handlung.\n\n\nBeispiel: “Eine studierende Person nutzt ChatGPT für ihre Hausarbeit.”\nDas sagt uns nichts. Wir wissen nicht:\n\nLiest sie die Ausgabe kritisch?\nVergleicht sie diese mit ihrem eigenen Verständnis?\nOder kopiert sie einfach?"
-  },
-  {
-    "objectID": "exercises/klassifikation-denkprozesse/index.html#aktivität",
-    "href": "exercises/klassifikation-denkprozesse/index.html#aktivität",
-    "title": "Offloading oder Outsourcing?",
-    "section": "Aktivität",
-    "text": "Aktivität\n\n\n\n\n\n\nGroupGruppenarbeit\n\n\n\nFür jedes Szenario: Diskutiert nicht, was es ist, sondern was es zum einen oder anderen machen würde.\n{{&lt; timer 20 &gt;}}\n\n\n\nDie Szenarien\nBeantwortet für jedes Szenario drei Fragen:\n\nWas würde das zu Offloading machen?\nWas würde das zu Outsourcing machen?\nWas müsstet ihr wissen, um den Unterschied zu erkennen?\n\n\nSzenario 1: Zwischenergebnisse notieren\nEine Studentin notiert Zwischenschritte beim Lösen einer Gleichung auf Papier.\n\n\n\n\n\n\nPro-tipDiskussionsanstösse\n\n\n\n\n\n\nIst das automatisch Offloading, weil es “analog” ist?\nWas wäre, wenn sie die Schritte aus einem Lösungsbuch abschreibt?\nMacht es einen Unterschied, ob sie die notierten Schritte versteht?\n\n\n\n\n\n\nSzenario 2: GPS-Navigation\nEine Person, die Taxi fährt, nutzt GPS-Navigation in einer Stadt, die sie gut kennt.\n\n\n\n\n\n\nPro-tipDiskussionsanstösse\n\n\n\n\n\n\nNutzt sie GPS als Backup oder als Ersatz für ihr Wissen?\nWas wäre bei Touristen in derselben Stadt?\nVerändert die Expertise die Kategorie?\n\n\n\n\n\n\nSzenario 3: Chatbot für E-Mail\nEine Dozentin bittet einen Chatbot, eine E-Mail an Studierende zu formulieren.\n\n\n\n\n\n\nPro-tipDiskussionsanstösse\n\n\n\n\n\n\nWas wäre, wenn sie die E-Mail vor dem Senden überarbeitet?\nWas wäre, wenn sie sie ungelesen abschickt?\nIst “Feedback geben” eine Fähigkeit, die sie pflegen sollte?\n\n\n\n\n\n\nSzenario 4: Code-Debugging\nEine Person im Informatik-Studium lässt einen Chatbot ihren fehlerhaften Code analysieren.\n\n\n\n\n\n\nPro-tipDiskussionsanstösse\n\n\n\n\n\n\nLiest sie die Erklärung oder nur die Lösung?\nKönnte sie den Fehler beim nächsten Mal selbst finden?\nIst Debugging eine Fähigkeit, die sie entwickeln sollte?\n\n\n\n\n\n\nSzenario 5: Zusammenfassung lesen\nEine studierende Person lässt sich einen Fachartikel von einem Chatbot zusammenfassen und liest nur die Zusammenfassung.\n\n\n\n\n\n\nPro-tipDiskussionsanstösse\n\n\n\n\n\n\nWas wäre, wenn sie die Zusammenfassung nutzt, um zu entscheiden, ob sie den Artikel ganz liest?\nWas wäre, wenn sie die Zusammenfassung als Ersatz für das Lesen nutzt?\nIst “wissenschaftliche Texte lesen” eine Fähigkeit, die sie entwickeln sollte?\n\n\n\n\n\n\nSzenario 6: Rechtschreibprüfung\nEine Autorin lässt die Rechtschreibprüfung alle Fehler automatisch korrigieren.\n\n\n\n\n\n\nPro-tipDiskussionsanstösse\n\n\n\n\n\n\nLernt sie dabei etwas über ihre wiederkehrenden Fehler?\nIst Rechtschreibung eine Fähigkeit, die sie (noch) entwickeln sollte?\nMacht es einen Unterschied, ob sie Muttersprachlerin ist oder nicht?"
-  },
-  {
-    "objectID": "exercises/klassifikation-denkprozesse/index.html#die-zentrale-einsicht",
-    "href": "exercises/klassifikation-denkprozesse/index.html#die-zentrale-einsicht",
-    "title": "Offloading oder Outsourcing?",
-    "section": "Die zentrale Einsicht",
-    "text": "Die zentrale Einsicht\n\n\n\n\n\n\nKey-pointEs kommt nicht auf das Tool an\n\n\n\nDieselbe Handlung kann Offloading oder Outsourcing sein. Der Unterschied liegt in:\n\nDer kognitiven Beteiligung während der Nutzung\nDer Fähigkeit, das Ergebnis zu beurteilen\nDem Lernziel: Will ich diese Fähigkeit entwickeln oder habe ich sie schon?"
-  },
-  {
-    "objectID": "exercises/klassifikation-denkprozesse/index.html#konsequenz-für-lehrende",
-    "href": "exercises/klassifikation-denkprozesse/index.html#konsequenz-für-lehrende",
-    "title": "Offloading oder Outsourcing?",
-    "section": "Konsequenz für Lehrende",
-    "text": "Konsequenz für Lehrende\nWenn man Offloading und Outsourcing nicht am Verhalten unterscheiden kann:\n\n\n\n\n\n\nReflectReflexionsfragen\n\n\n\n\nKönnen wir KI-Nutzung überhaupt sinnvoll “erlauben” oder “verbieten”?\nWie können wir Lernumgebungen gestalten, die Offloading fördern und Outsourcing erschweren?\nWoran erkennen Studierende selbst, ob sie gerade lernen oder das Lernen umgehen?\n\n\n\nDiese Fragen vertiefen wir im Intermediate Workshop: Warum ist Outsourcing problematisch fürs Lernen?"
-  },
-  {
-    "objectID": "slides/bfh-landscape/index.html",
-    "href": "slides/bfh-landscape/index.html",
-    "title": "KI an der BFH",
-    "section": "",
-    "text": "In dieser Einheit lernen wir die KI-Richtlinien der BFH kennen und welche Tools zur Verfügung stehen.\nSlides in neuem Fenster öffnen"
-  },
-  {
-    "objectID": "slides/bfh-landscape/index.html#präsentation",
-    "href": "slides/bfh-landscape/index.html#präsentation",
-    "title": "KI an der BFH",
-    "section": "",
-    "text": "In dieser Einheit lernen wir die KI-Richtlinien der BFH kennen und welche Tools zur Verfügung stehen.\nSlides in neuem Fenster öffnen"
-  },
-  {
-    "objectID": "slides/bfh-landscape/index.html#inhaltsübersicht",
-    "href": "slides/bfh-landscape/index.html#inhaltsübersicht",
-    "title": "KI an der BFH",
-    "section": "Inhaltsübersicht",
-    "text": "Inhaltsübersicht\nDauer: 20 Minuten (2 Abschnitte à 10 Minuten)\n\nAbschnitt A: BFH Policy\n\nDie fünf Grundsätze der KI-Policy\nVerantwortung als Lehrperson\nErwartungen an Studierende\nSupport-Anlaufstellen\n\n\n\nAbschnitt B: Tool-Empfehlungen\n\nFreigegebene Tools finden (mybfh)\nMicrosoft Copilot, ChatGPT, Claude im Vergleich\nWelches Tool wofür?\nDatenschutz-Hinweise"
-  },
-  {
     "objectID": "slides/frage-1-was-ist-ki/index.html",
     "href": "slides/frage-1-was-ist-ki/index.html",
     "title": "Frage 1: Was ist KI?",
@@ -1000,7 +858,7 @@
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
-      "Frage 1: Was ist KI?"
+      "Slides: Grundlagen"
     ]
   },
   {
@@ -1012,7 +870,7 @@
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
-      "Frage 1: Was ist KI?"
+      "Slides: Grundlagen"
     ]
   },
   {
@@ -1024,7 +882,7 @@
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
-      "Frage 1: Was ist KI?"
+      "Slides: Grundlagen"
     ]
   },
   {
@@ -1036,7 +894,7 @@
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
-      "Frage 1: Was ist KI?"
+      "Slides: Grundlagen"
     ]
   },
   {
@@ -1048,7 +906,7 @@
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
-      "Frage 1: Was ist KI?"
+      "Slides: Grundlagen"
     ]
   },
   {
@@ -1060,7 +918,7 @@
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
-      "Frage 1: Was ist KI?"
+      "Slides: Grundlagen"
     ]
   },
   {
@@ -1072,7 +930,7 @@
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
-      "Frage 2: Wofür kann KI verwendet werden?"
+      "Slides: Möglichkeiten & Grenzen"
     ]
   },
   {
@@ -1084,7 +942,7 @@
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
-      "Frage 2: Wofür kann KI verwendet werden?"
+      "Slides: Möglichkeiten & Grenzen"
     ]
   },
   {
@@ -1096,7 +954,7 @@
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
-      "Frage 2: Wofür kann KI verwendet werden?"
+      "Slides: Möglichkeiten & Grenzen"
     ]
   },
   {
@@ -1108,7 +966,7 @@
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
-      "Frage 2: Wofür kann KI verwendet werden?"
+      "Slides: Möglichkeiten & Grenzen"
     ]
   },
   {
@@ -1120,7 +978,7 @@
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
-      "Frage 2: Wofür kann KI verwendet werden?"
+      "Slides: Möglichkeiten & Grenzen"
     ]
   },
   {
@@ -1132,7 +990,7 @@
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
-      "Frage 2: Wofür kann KI verwendet werden?"
+      "Slides: Möglichkeiten & Grenzen"
     ]
   },
   {
@@ -1144,7 +1002,7 @@
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
-      "Frage 2: Wofür kann KI verwendet werden?"
+      "Slides: Möglichkeiten & Grenzen"
     ]
   },
   {
@@ -1156,7 +1014,7 @@
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
-      "Frage 2: Wofür kann KI verwendet werden?"
+      "Slides: Möglichkeiten & Grenzen"
     ]
   },
   {
@@ -1168,7 +1026,7 @@
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
-      "Frage 2: Wofür kann KI verwendet werden?"
+      "Slides: Möglichkeiten & Grenzen"
     ]
   },
   {
@@ -1180,7 +1038,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1192,7 +1050,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1204,7 +1062,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1216,7 +1074,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1228,7 +1086,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1240,7 +1098,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1252,7 +1110,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1264,7 +1122,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1276,7 +1134,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1288,7 +1146,7 @@
     "crumbs": [
       "Workshop",
       "Frage 3: Wofür sollte ich KI verwenden?",
-      "Frage 3: Wofür sollte ich KI verwenden?"
+      "Slides: Offloading vs. Outsourcing"
     ]
   },
   {
@@ -1312,157 +1170,6 @@
       "Workshop",
       "Slides"
     ]
-  },
-  {
-    "objectID": "slides/index.html#frühere-versionen",
-    "href": "slides/index.html#frühere-versionen",
-    "title": "Slides",
-    "section": "Frühere Versionen",
-    "text": "Frühere Versionen\nDie ursprünglichen Slides sind noch verfügbar:\n\nKI verstehen (alt)\nBFH Landscape (alt)",
-    "crumbs": [
-      "Workshop",
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#was-sind-chatbots",
-    "href": "slides/ki-verstehen/slides.html#was-sind-chatbots",
-    "title": "KI verstehen",
-    "section": "Was sind Chatbots?",
-    "text": "Was sind Chatbots?"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#was-sind-llms",
-    "href": "slides/ki-verstehen/slides.html#was-sind-llms",
-    "title": "KI verstehen",
-    "section": "Was sind LLMs?",
-    "text": "Was sind LLMs?\n\n\nEin LLM kann man sich wie einen ausgefeilten Autocomplete-Mechanismus vorstellen."
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#was-sind-llms-1",
-    "href": "slides/ki-verstehen/slides.html#was-sind-llms-1",
-    "title": "KI verstehen",
-    "section": "Was sind LLMs?",
-    "text": "Was sind LLMs?\n\nStatistische Modelle, die Text analysieren, um das nächste Wort vorherzusagen.\n\n\n\\[\n\\newcommand{\\green}[1]{\\color{green}{#1}}\n\\newcommand{\\purple}[1]{\\color{purple}{#1}}\n\\newcommand{\\red}[1]{\\color{red}{#1}}\n\\newcommand{\\blue}[1]{\\color{blue}{#1}}\n\\]\n\n\\[\\green{P(\\text{Wort}_{i+1}} \\mid \\red{\\text{Kontext}}, \\blue{\\text{Modell}})\\]\n\nJede \\(\\purple{\\text{Vorhersage}}\\) basiert auf dem \\(\\blue{\\text{Kontext}}\\) und dem internen \\(\\red{\\text{Modell}}\\)."
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#vorhersage",
-    "href": "slides/ki-verstehen/slides.html#vorhersage",
-    "title": "KI verstehen",
-    "section": "Vorhersage",
-    "text": "Vorhersage\nNicht alle Teile des Kontexts sind gleich wichtig:\n\n\n“Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. Das Haus stand inmitten eines weitläufigen Gartens. Es war bekannt für seine prächtige Fassade und die grosszügigen _“\n\n\nWelche Wörter sind besonders wichtig, um\n\ndie Bedeutung des Satzes zu erfassen?\ndas nächste Wort vorherzusagen?"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#wie-generieren-llms-text",
-    "href": "slides/ki-verstehen/slides.html#wie-generieren-llms-text",
-    "title": "KI verstehen",
-    "section": "Wie generieren LLMs Text?",
-    "text": "Wie generieren LLMs Text?\n\n\n\\[\n\\newcommand{\\green}[1]{\\color{green}{#1}}\n\\newcommand{\\purple}[1]{\\color{purple}{#1}}\n\\newcommand{\\red}[1]{\\color{red}{#1}}\n\\newcommand{\\blue}[1]{\\color{blue}{#1}}\n\\]\n\n\\[\\green{P(\\text{Wort}_{i+1}} \\mid \\red{\\text{Kontext}}, \\blue{\\text{Modell}})\\]"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#wie-werden-llms-trainiert",
-    "href": "slides/ki-verstehen/slides.html#wie-werden-llms-trainiert",
-    "title": "KI verstehen",
-    "section": "Wie werden LLMs trainiert?",
-    "text": "Wie werden LLMs trainiert?"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#gefahren-und-herausforderungen",
-    "href": "slides/ki-verstehen/slides.html#gefahren-und-herausforderungen",
-    "title": "KI verstehen",
-    "section": "Gefahren und Herausforderungen",
-    "text": "Gefahren und Herausforderungen\n\n\n\nDie verschiedenen Stufen des Trainings sind mit verschiedenen Arten von Bedenken verbunden:\n\nUrheberrecht: Die trainierten Modelle werden mit Texten trainiert, die möglicherweise urheberrechtlich geschützt sind.\nBias: Die trainierten Modelle können bestehende Vorurteile aus den Trainingsdaten lernen.\nEnergieverbrauch: Das Training der Modelle verbraucht viel Energie.\nSycophancy: Die Modelle neigen dazu, die Meinungen ihrer Benutzer zu bestätigen."
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#gefahren-und-herausforderungen-1",
-    "href": "slides/ki-verstehen/slides.html#gefahren-und-herausforderungen-1",
-    "title": "KI verstehen",
-    "section": "Gefahren und Herausforderungen",
-    "text": "Gefahren und Herausforderungen\n\n\n\n\nLLMs werden trainiert, plausibel klingende Texte zu generieren, nicht faktisch korrekte.\nDas bedeutet: Alle Aussagen kritisch hinterfragen.\nLLMs sind keine Wissensdatenbanken. Informationen immer anhand externer Quellen überprüfen."
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#chatgpt",
-    "href": "slides/ki-verstehen/slides.html#chatgpt",
-    "title": "KI verstehen",
-    "section": "ChatGPT",
-    "text": "ChatGPT"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#fragen-beantworten",
-    "href": "slides/ki-verstehen/slides.html#fragen-beantworten",
-    "title": "KI verstehen",
-    "section": "Fragen beantworten",
-    "text": "Fragen beantworten"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#bilder-analysieren",
-    "href": "slides/ki-verstehen/slides.html#bilder-analysieren",
-    "title": "KI verstehen",
-    "section": "Bilder analysieren",
-    "text": "Bilder analysieren"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#dokumente-zusammenfassen",
-    "href": "slides/ki-verstehen/slides.html#dokumente-zusammenfassen",
-    "title": "KI verstehen",
-    "section": "Dokumente zusammenfassen",
-    "text": "Dokumente zusammenfassen"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#output-strukturieren",
-    "href": "slides/ki-verstehen/slides.html#output-strukturieren",
-    "title": "KI verstehen",
-    "section": "Output strukturieren",
-    "text": "Output strukturieren"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#websuche",
-    "href": "slides/ki-verstehen/slides.html#websuche",
-    "title": "KI verstehen",
-    "section": "Websuche",
-    "text": "Websuche"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#datenanalyse",
-    "href": "slides/ki-verstehen/slides.html#datenanalyse",
-    "title": "KI verstehen",
-    "section": "Datenanalyse",
-    "text": "Datenanalyse"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#custom-gpts",
-    "href": "slides/ki-verstehen/slides.html#custom-gpts",
-    "title": "KI verstehen",
-    "section": "Custom GPTs",
-    "text": "Custom GPTs"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#chain-of-thought-denken",
-    "href": "slides/ki-verstehen/slides.html#chain-of-thought-denken",
-    "title": "KI verstehen",
-    "section": "Chain-of-Thought “Denken”",
-    "text": "Chain-of-Thought “Denken”\nExplizites Nachdenken verbessert die Ergebnisse:\n\n“Denke Schritt für Schritt”\nDer Chatbot zeigt seinen “Denkprozess”\nBesonders hilfreich bei komplexen Aufgaben"
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#vergleich",
-    "href": "slides/ki-verstehen/slides.html#vergleich",
-    "title": "KI verstehen",
-    "section": "Vergleich",
-    "text": "Vergleich\nBeispiel-Aufgabe: “Was ist grösser: 9.11 oder 9.8?”\nOhne Anleitung: Manchmal falsche Antwort\nMit “Denke Schritt für Schritt”: Meist richtig\nWarum hilft das? Mehr generierte Tokens bedeuten mehr Kontext für die nachfolgenden Vorhersagen."
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#wichtige-einsicht",
-    "href": "slides/ki-verstehen/slides.html#wichtige-einsicht",
-    "title": "KI verstehen",
-    "section": "Wichtige Einsicht",
-    "text": "Wichtige Einsicht\n\n\n\n\n\n\nKernaussage\n\n\nSprachmodelle generieren Text Wort für Wort, ohne eingebaute Faktenprüfung.\nChatbots sind keine reinen Textgeneratoren mehr. Sie sind Werkzeuge, die verschiedene Aufgaben ausführen können."
-  },
-  {
-    "objectID": "slides/ki-verstehen/slides.html#zusammenfassung",
-    "href": "slides/ki-verstehen/slides.html#zusammenfassung",
-    "title": "KI verstehen",
-    "section": "Zusammenfassung",
-    "text": "Zusammenfassung\nWas wir gelernt haben:\n\nTextgenerierung = statistische Vorhersage\nTool-Nutzung = erweiterte Fähigkeiten\n“Denken” = verbesserte Ergebnisse durch explizite Schritte"
   },
   {
     "objectID": "resources/kompetenz-erwerben/index.html",
@@ -1665,92 +1372,6 @@
     "href": "interactives/index.html#technische-hinweise",
     "title": "Interaktive Demos",
     "section": "Technische Hinweise",
-    "text": "Technische Hinweise\n\n\n\n\n\n\nPro-tipFür Facilitators\n\n\n\n\n\nToken-Vorhersage: Läuft komplett im Browser (OJS). Keine Internetverbindung für die Demo selbst nötig.\nChat-Interface: Benötigt Internetverbindung. Läuft auf HuggingFace Spaces. API-Kosten fallen an (~$0.50-2.00 pro Workshop-Durchlauf).\nBei technischen Problemen: Teilnehmende können auf chat.openai.com oder claude.ai ausweichen.\n\n\n\n\n← Zurück zum Workshop"
-  },
-  {
-    "objectID": "workshop/abschluss/index.html#eine-sache-die-du-morgen-anders-machst",
-    "href": "workshop/abschluss/index.html#eine-sache-die-du-morgen-anders-machst",
-    "title": "Transfer und Abschluss",
-    "section": "",
-    "text": "IndividualKonkreter Vorsatz (3 min)\n\n\n\nSchreibe einen konkreten Vorsatz auf:\n“In meiner nächsten Lehrveranstaltung werde ich…”\n\nNimm diesen Vorsatz mit. Er ist dein erster Schritt.\n{{&lt; timer 3 &gt;}}\n\n\n\n\n\n\n\n\nGroupAustausch (5 min)\n\n\n\nTeile deinen Vorsatz mit einer Person neben dir.\n\nWas wirst du konkret ausprobieren?\nWorauf wirst du achten?\nWas könnte dich daran hindern?\n\n{{&lt; timer 5 &gt;}}",
-    "crumbs": [
-      "Workshop",
-      "Transfer und Abschluss"
-    ]
-  },
-  {
-    "objectID": "workshop/abschluss/index.html#was-wir-heute-gemacht-haben",
-    "href": "workshop/abschluss/index.html#was-wir-heute-gemacht-haben",
-    "title": "Transfer und Abschluss",
-    "section": "Was wir heute gemacht haben",
-    "text": "Was wir heute gemacht haben\n\n\n\n\n\n\n\nFrage\nEinsicht\n\n\n\n\nWas ist KI?\nSprachmodelle sagen das nächste Wort vorher, ohne eingebaute Faktenprüfung\n\n\nWofür kann KI verwendet werden?\nVielseitige Werkzeuge mit echten Grenzen\n\n\nWofür sollte ich KI verwenden?\nDer Unterschied zwischen Offloading und Outsourcing\n\n\n\n\n\n\n\n\n\nKey-pointDie zentrale Einsicht\n\n\n\nKI-Tools sind primär für Expertinnen gemacht. Sie machen Expertinnen produktiver.\nFür Lernende ist die Situation komplizierter: Lernen braucht die kognitive Anstrengung, die KI wegzunehmen droht.",
-    "crumbs": [
-      "Workshop",
-      "Transfer und Abschluss"
-    ]
-  },
-  {
-    "objectID": "workshop/abschluss/index.html#die-nächste-frage",
-    "href": "workshop/abschluss/index.html#die-nächste-frage",
-    "title": "Transfer und Abschluss",
-    "section": "Die nächste Frage",
-    "text": "Die nächste Frage\n\n\n\n\n\n\nHinweisIm Intermediate Workshop\n\n\n\nWir haben heute gelernt, was Offloading vs. Outsourcing ist.\nIm nächsten Workshop lernen wir warum Outsourcing problematisch fürs Lernen ist: die kognitive Architektur hinter produktiver Anstrengung.\nThemen:\n\nWie Lernen im Gehirn funktioniert (Cognitive Load Theory)\nWarum Anstrengung notwendig ist (Desirable Difficulties)\nWie man KI-Agenten für Lernen designt",
-    "crumbs": [
-      "Workshop",
-      "Transfer und Abschluss"
-    ]
-  },
-  {
-    "objectID": "workshop/abschluss/index.html#ressourcen",
-    "href": "workshop/abschluss/index.html#ressourcen",
-    "title": "Transfer und Abschluss",
-    "section": "Ressourcen",
-    "text": "Ressourcen\n\nKI-Policy BFH\nBildung 6.0\nVirtuelle Akademie Knowledge Base",
-    "crumbs": [
-      "Workshop",
-      "Transfer und Abschluss"
-    ]
-  },
-  {
-    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#fähigkeiten-im-überblick",
-    "href": "slides/frage-2-wozu-kann-ki/slides.html#fähigkeiten-im-überblick",
-    "title": "Frage 2: Wofür kann KI verwendet werden?",
-    "section": "Fähigkeiten im Überblick",
-    "text": "Fähigkeiten im Überblick\n\n\nText\n\nFragen beantworten\nDokumente zusammenfassen\nOutput strukturieren\n\n\nMultimodal + Tools\n\nBilder analysieren\nWebsuche\nDatenanalyse / Code"
-  },
-  {
-    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#section",
-    "href": "slides/frage-2-wozu-kann-ki/slides.html#section",
-    "title": "Frage 2: Wofür kann KI verwendet werden?",
-    "section": "",
-    "text": "Aber: Grenzen und Gefahren"
-  },
-  {
-    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#urheberrecht-und-bias",
-    "href": "slides/frage-2-wozu-kann-ki/slides.html#urheberrecht-und-bias",
-    "title": "Frage 2: Wofür kann KI verwendet werden?",
-    "section": "Urheberrecht und Bias",
-    "text": "Urheberrecht und Bias\n\n\nUrheberrecht\nLLMs wurden mit möglicherweise geschützten Texten trainiert.\nWer besitzt die Rechte an KI-generierten Inhalten?\n\nBias\nVorurteile aus den Trainingsdaten werden reproduziert.\nKI-Outputs kritisch auf Verzerrungen prüfen."
-  },
-  {
-    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#energieverbrauch-und-sycophancy",
-    "href": "slides/frage-2-wozu-kann-ki/slides.html#energieverbrauch-und-sycophancy",
-    "title": "Frage 2: Wofür kann KI verwendet werden?",
-    "section": "Energieverbrauch und Sycophancy",
-    "text": "Energieverbrauch und Sycophancy\n\n\nEnergieverbrauch\nKI-Modelle verbrauchen erhebliche Ressourcen.\nNicht für jede Aufgabe ist KI die beste Lösung.\n\nBestätigungstendenz\nChatbots neigen dazu, Nutzende zu bestätigen statt zu korrigieren.\nKritisch nachfragen, besonders wenn die Antwort “zu gut” klingt."
-  },
-  {
-    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#section-1",
-    "href": "slides/frage-2-wozu-kann-ki/slides.html#section-1",
-    "title": "Frage 2: Wofür kann KI verwendet werden?",
-    "section": "",
-    "text": "KI an der BFH"
-  },
-  {
-    "objectID": "slides/frage-2-wozu-kann-ki/slides.html#ki-policy-der-bfh",
-    "href": "slides/frage-2-wozu-kann-ki/slides.html#ki-policy-der-bfh",
-    "title": "Frage 2: Wofür kann KI verwendet werden?",
-    "section": "KI-Policy der BFH",
-    "text": "KI-Policy der BFH\nDie BFH hat eine KI-Policy verabschiedet (Mai 2025):\nDie fünf Grundsätze:\n\nTransparenz und Nachvollziehbarkeit\nInformationssicherheit und Datenschutz\nEthische Reflexion und Verantwortlichkeit\nWissenschaftliche Integrität\nDidaktische Angemessenheit und Chancengleichheit"
+    "text": "Technische Hinweise\n\n\n\n\n\n\nPro-tipFür Facilitators\n\n\n\n\n\nToken-Vorhersage: Läuft komplett im Browser (OJS). Keine Internetverbindung für die Demo selbst nötig.\nChat-Interface: Benötigt Internetverbindung. Läuft auf HuggingFace Spaces. API-Kosten fallen an (~$0.50-2.00 pro Workshop-Durchlauf).\nBei technischen Problemen: Teilnehmende können auf chat.openai.com oder claude.ai ausweichen.\n\n\n\n← Zurück zum Workshop"
   }
 ]

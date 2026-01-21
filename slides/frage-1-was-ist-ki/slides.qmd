@@ -22,11 +22,13 @@ Heute: Fokus auf **Sprachmodelle** (LLMs) und **Chatbots**
 ## Was sind Chatbots?
 
 :::: {.columns}
-::: {.column width="30%"}
+::: {.column width="35%"}
+**Chatbots** sind Schnittstellen, die auf Sprachmodellen basieren.
 
+Du schreibst eine Nachricht, das Modell generiert eine Antwort.
 :::
 
-::: {.column width="70%"}
+::: {.column width="65%"}
 ![](../../assets/images/claude.png)
 :::
 ::::

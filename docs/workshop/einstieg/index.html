@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../slides/frage-1-was-ist-ki/index.html" rel="next">
 <link href="../../workshop/index.html" rel="prev">
 <link href="../..//assets/robot.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -89,16 +88,28 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-individual.callout {
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\e2ca';
+  background-image: none;
+}
+div.callout-warning.callout {
   border-left-color: #A3195B;
 }
-div.callout-individual.callout-style-default > .callout-header {
+div.callout-warning.callout-style-default > .callout-header {
   background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f007';
+  content: '\f06a';
   background-image: none;
 }
 div.callout-reflect.callout {
@@ -111,6 +122,18 @@ div.callout-reflect .callout-toggle::before {  background-image: url('data:image
 div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f0eb';
+  background-image: none;
+}
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f002';
   background-image: none;
 }
 div.callout-scenario.callout {
@@ -137,18 +160,6 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
   content: '\f005';
   background-image: none;
 }
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
-}
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f0c3';
-  background-image: none;
-}
 div.callout-prompt.callout {
   border-left-color: #333333;
 }
@@ -159,18 +170,6 @@ div.callout-prompt .callout-toggle::before {  background-image: url('data:image/
 div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
   content: '\f328';
-  background-image: none;
-}
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\f002';
   background-image: none;
 }
 div.callout-group.callout {
@@ -185,28 +184,28 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
   content: '\f0c0';
   background-image: none;
 }
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free';
-  content: '\e2ca';
-  background-image: none;
-}
-div.callout-warning.callout {
+div.callout-individual.callout {
   border-left-color: #A3195B;
 }
-div.callout-warning.callout-style-default > .callout-header {
+div.callout-individual.callout-style-default > .callout-header {
   background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f06a';
+  content: '\f007';
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c3';
   background-image: none;
 }
 div.callout-demonstration.callout {
@@ -227,7 +226,7 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
 <link rel="stylesheet" href="../../styles/styles.css">
 <link rel="stylesheet" href="../../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
 <meta property="og:title" content="Ankommen – KI in der Lehre: Beginner">
-<meta property="og:description" content="Spektrum-Aktivität">
+<meta property="og:description" content="Der Elefant im Raum">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
 
@@ -312,7 +311,7 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../workshop/einstieg/index.html">Ankommen</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../workshop/einstieg/index.html">Einstieg</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
@@ -335,15 +334,16 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../workshop/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Workshop: KI in der Lehre</span></a>
+ <span class="menu-text">Übersicht</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../workshop/einstieg/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Ankommen</span></a>
+ <span class="menu-text">Einstieg</span></a>
   </div>
 </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -356,11 +356,12 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../slides/frage-1-was-ist-ki/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Frage 1: Was ist KI?</span></a>
+ <span class="menu-text">Slides: Grundlagen</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
@@ -373,17 +374,18 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../slides/frage-2-wozu-kann-ki/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Frage 2: Wofür kann KI verwendet werden?</span></a>
+ <span class="menu-text">Slides: Möglichkeiten &amp; Grenzen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/fakten-check/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Fakten-Check</span></a>
+ <span class="menu-text">Übung: Fakten-Check</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
@@ -396,21 +398,22 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../slides/frage-3-wozu-soll-ich/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Frage 3: Wofür sollte ich KI verwenden?</span></a>
+ <span class="menu-text">Slides: Offloading vs.&nbsp;Outsourcing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../exercises/offloading-outsourcing/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Offloading vs.&nbsp;Outsourcing</span></a>
+ <span class="menu-text">Übung: Szenarien analysieren</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../workshop/abschluss/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Transfer und Abschluss</span></a>
+ <span class="menu-text">Abschluss</span></a>
   </div>
 </li>
     </ul>
@@ -423,8 +426,10 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#begrüssung" id="toc-begrüssung" class="nav-link active" data-scroll-target="#begrüssung">Begrüssung</a></li>
-  <li><a href="#ziel-des-workshops" id="toc-ziel-des-workshops" class="nav-link" data-scroll-target="#ziel-des-workshops">Ziel des Workshops</a></li>
+  <li><a href="#der-elefant-im-raum" id="toc-der-elefant-im-raum" class="nav-link active" data-scroll-target="#der-elefant-im-raum">Der Elefant im Raum</a></li>
+  <li><a href="#was-wir-heute-klären" id="toc-was-wir-heute-klären" class="nav-link" data-scroll-target="#was-wir-heute-klären">Was wir heute klären</a></li>
+  <li><a href="#wo-stehst-du" id="toc-wo-stehst-du" class="nav-link" data-scroll-target="#wo-stehst-du">Wo stehst du?</a></li>
+  <li><a href="#was-wir-heute-nicht-tun" id="toc-was-wir-heute-nicht-tun" class="nav-link" data-scroll-target="#was-wir-heute-nicht-tun">Was wir heute nicht tun</a></li>
   <li><a href="#spielregeln" id="toc-spielregeln" class="nav-link" data-scroll-target="#spielregeln">Spielregeln</a></li>
   </ul>
 </nav>
@@ -435,7 +440,7 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Ankommen</h1>
-<p class="subtitle lead">Spektrum-Aktivität</p>
+<p class="subtitle lead">Der Elefant im Raum</p>
 </div>
 
 
@@ -452,10 +457,57 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
 </header>
 
 
-<section id="begrüssung" class="level2">
-<h2 class="anchored" data-anchor-id="begrüssung">Begrüssung</h2>
-<p>Willkommen zum Workshop “KI in der Lehre: Grundlagen”.</p>
-<p>Bevor wir beginnen, lernen wir uns gegenseitig kennen: Wo steht ihr in Bezug auf KI?</p>
+<section id="der-elefant-im-raum" class="level2">
+<h2 class="anchored" data-anchor-id="der-elefant-im-raum">Der Elefant im Raum</h2>
+<div class="callout callout-style-default callout-scenario callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Scenario</span>Szenario
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Stelle dir vor: Deine beste studierende Person hat eine hervorragende Arbeit abgegeben.</p>
+<p>Kannst du sicher sein, dass sie selbst gedacht hat?</p>
+<p>Und wenn nicht: Was bedeutet das für deine Lehre?</p>
+</div>
+</div>
+</section>
+<section id="was-wir-heute-klären" class="level2">
+<h2 class="anchored" data-anchor-id="was-wir-heute-klären">Was wir heute klären</h2>
+<p>Dieser Workshop beantwortet drei Fragen:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Frage</th>
+<th>Fokus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Was ist KI?</strong></td>
+<td>Wie funktioniert das eigentlich?</td>
+</tr>
+<tr class="even">
+<td><strong>Wofür kann KI verwendet werden?</strong></td>
+<td>Möglichkeiten und Grenzen</td>
+</tr>
+<tr class="odd">
+<td><strong>Wofür sollte ich KI verwenden?</strong></td>
+<td>Wann ist es sinnvoll, wann nicht?</td>
+</tr>
+</tbody>
+</table>
+<p>Die dritte Frage ist die wichtigste.</p>
+</section>
+<section id="wo-stehst-du" class="level2">
+<h2 class="anchored" data-anchor-id="wo-stehst-du">Wo stehst du?</h2>
 <div class="callout callout-style-default callout-experiment callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -493,21 +545,15 @@ div.callout-demonstration.callout-style-default .callout-icon::before, div.callo
 <p>Merke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:</p>
 <ul>
 <li><strong>Bei Gruppenaktivitäten</strong>: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)</li>
-<li><strong>Warum</strong>: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen, die Annahmen hinterfragen.</li>
+<li><strong>Warum</strong>: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen.</li>
 </ul>
 </div>
 </div>
 </section>
-<section id="ziel-des-workshops" class="level2">
-<h2 class="anchored" data-anchor-id="ziel-des-workshops">Ziel des Workshops</h2>
-<p>Was wir heute <strong>nicht</strong> tun:</p>
-<ul>
-<li>Behaupten, dass KI gut oder schlecht ist</li>
-</ul>
-<p>Was wir heute <strong>stattdessen</strong> tun:</p>
-<ul>
-<li>Gemeinsam herausfinden: Wann unterstützt KI das Lernen, wann behindert sie es?</li>
-</ul>
+<section id="was-wir-heute-nicht-tun" class="level2">
+<h2 class="anchored" data-anchor-id="was-wir-heute-nicht-tun">Was wir heute nicht tun</h2>
+<p>Wir werden nicht behaupten, dass KI gut oder schlecht ist.</p>
+<p><strong>Stattdessen</strong>: Gemeinsam herausfinden, wann KI das Lernen unterstützt und wann sie es behindert.</p>
 </section>
 <section id="spielregeln" class="level2">
 <h2 class="anchored" data-anchor-id="spielregeln">Spielregeln</h2>
@@ -988,14 +1034,11 @@ document.addEventListener('DOMContentLoaded', function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../workshop/index.html" class="pagination-link" aria-label="Workshop: KI in der Lehre">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Workshop: KI in der Lehre</span>
+      <a href="../../workshop/index.html" class="pagination-link" aria-label="Übersicht">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Übersicht</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../slides/frage-1-was-ist-ki/index.html" class="pagination-link" aria-label="Frage 1: Was ist KI?">
-        <span class="nav-page-text">Frage 1: Was ist KI?</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

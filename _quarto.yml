@@ -85,20 +85,28 @@ website:
       search: true
       background: light
       contents:
-        - workshop/index.qmd
-        - workshop/einstieg/index.qmd
+        - text: "Übersicht"
+          file: workshop/index.qmd
+        - text: "Einstieg"
+          file: workshop/einstieg/index.qmd
         - section: "Frage 1: Was ist KI?"
           contents:
-            - slides/frage-1-was-ist-ki/index.qmd
+            - text: "Slides: Grundlagen"
+              file: slides/frage-1-was-ist-ki/index.qmd
         - section: "Frage 2: Wofür kann KI verwendet werden?"
           contents:
-            - slides/frage-2-wozu-kann-ki/index.qmd
-            - exercises/fakten-check/index.qmd
+            - text: "Slides: Möglichkeiten & Grenzen"
+              file: slides/frage-2-wozu-kann-ki/index.qmd
+            - text: "Übung: Fakten-Check"
+              file: exercises/fakten-check/index.qmd
         - section: "Frage 3: Wofür sollte ich KI verwenden?"
           contents:
-            - slides/frage-3-wozu-soll-ich/index.qmd
-            - exercises/offloading-outsourcing/index.qmd
-        - workshop/abschluss/index.qmd
+            - text: "Slides: Offloading vs. Outsourcing"
+              file: slides/frage-3-wozu-soll-ich/index.qmd
+            - text: "Übung: Szenarien analysieren"
+              file: exercises/offloading-outsourcing/index.qmd
+        - text: "Abschluss"
+          file: workshop/abschluss/index.qmd
 
     - title: "Slides"
       style: "docked"

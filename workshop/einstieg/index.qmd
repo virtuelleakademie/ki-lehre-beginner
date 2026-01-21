@@ -1,14 +1,32 @@
 ---
 title: "Ankommen"
-subtitle: "Spektrum-Aktivität"
+subtitle: "Der Elefant im Raum"
 sidebar: workshop
 ---
 
-## Begrüssung
+## Der Elefant im Raum
 
-Willkommen zum Workshop "KI in der Lehre: Grundlagen".
+::: {.scenario}
+Stelle dir vor: Deine beste studierende Person hat eine hervorragende Arbeit abgegeben.
 
-Bevor wir beginnen, lernen wir uns gegenseitig kennen: Wo steht ihr in Bezug auf KI?
+Kannst du sicher sein, dass sie selbst gedacht hat?
+
+Und wenn nicht: Was bedeutet das für deine Lehre?
+:::
+
+## Was wir heute klären
+
+Dieser Workshop beantwortet drei Fragen:
+
+| Frage | Fokus |
+|-------|-------|
+| **Was ist KI?** | Wie funktioniert das eigentlich? |
+| **Wofür kann KI verwendet werden?** | Möglichkeiten und Grenzen |
+| **Wofür sollte ich KI verwenden?** | Wann ist es sinnvoll, wann nicht? |
+
+Die dritte Frage ist die wichtigste.
+
+## Wo stehst du?
 
 ::: {.experiment}
 ## Positioniere dich
@@ -34,18 +52,14 @@ Stelle dich auf einer imaginären Linie auf:
 Merke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:
 
 - **Bei Gruppenaktivitäten**: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)
-- **Warum**: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen, die Annahmen hinterfragen.
+- **Warum**: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen.
 :::
 
-## Ziel des Workshops
+## Was wir heute nicht tun
 
-Was wir heute **nicht** tun:
+Wir werden nicht behaupten, dass KI gut oder schlecht ist.
 
-- Behaupten, dass KI gut oder schlecht ist
-
-Was wir heute **stattdessen** tun:
-
-- Gemeinsam herausfinden: Wann unterstützt KI das Lernen, wann behindert sie es?
+**Stattdessen**: Gemeinsam herausfinden, wann KI das Lernen unterstützt und wann sie es behindert.
 
 ## Spielregeln
 

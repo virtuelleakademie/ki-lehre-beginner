@@ -50,6 +50,4 @@ Diese Demos sind für folgende Workshop-Phasen gedacht:
 Bei technischen Problemen: Teilnehmende können auf [chat.openai.com](https://chat.openai.com) oder [claude.ai](https://claude.ai) ausweichen.
 :::
 
----
-
 [← Zurück zum Workshop](../workshop/index.qmd)
