@@ -62,6 +62,38 @@ Tauscht euch in Kleingruppen aus:
 {{< timer 5 >}}
 :::
 
+::: {.reflect}
+## Teil 4: Strukturierte Reflexion (5 min)
+
+Beantworte für dich diese Fragen:
+
+1. **Muster erkennen**: Für welche Art von Fragen war der Chatbot zuverlässiger? Wann war er weniger zuverlässig?
+
+2. **Verbindung zur Textgenerierung**: Der Chatbot klang bei falschen Antworten genauso selbstbewusst wie bei richtigen. Wie erklärst du dir das, basierend auf dem, was du über Textgenerierung gelernt hast?
+
+3. **Implikationen für Studierende**: Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen, ohne Fachexpertise zu haben?
+
+{{< timer 5 >}}
+:::
+
+::: {.group}
+## Debrief im Plenum
+
+### Diskussionsfragen
+
+1. **Warum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?**
+
+   Erinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die "Selbstsicherheit" kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.
+
+2. **Konntet ihr die Fehler erkennen?**
+
+   Als Experten in eurem Fach konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.
+
+3. **Was bedeutet das für den Lernprozess?**
+
+   Wenn Studierende falsche Informationen unkritisch übernehmen, lernen sie nicht nur nicht, sondern lernen möglicherweise Falsches.
+:::
+
 ::: {.key-point}
 ## Kernaussage
 

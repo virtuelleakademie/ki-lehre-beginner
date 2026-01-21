@@ -170,6 +170,6 @@ Sprachmodelle generieren Text durch Vorhersage des nächsten Worts, basierend au
 Das bedeutet:
 
 - Beeindruckende Mustererkennung und Textproduktion
-- Keine eingebaute Faktenprüfung oder externe Verifikation
+- Training auf Plausibilität, nicht auf Wahrheit
 - Können überzeugend klingen, auch wenn der Inhalt falsch ist
 :::

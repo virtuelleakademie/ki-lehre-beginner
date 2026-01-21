@@ -43,8 +43,15 @@ Jede Frage enthält eine praktische Aktivität:
 | Frage | Aktivität | Dauer |
 |-------|-----------|-------|
 | 1 | Mini-Experiment: Chain-of-Thought testen | 10 min |
-| 2 | Fakten-Check: Chatbot-Antworten überprüfen | 25 min |
-| 3 | Szenario-Karten: Offloading vs. Outsourcing | 20 min |
+| 2 | Fakten-Check: Chatbot-Antworten überprüfen | 30 min |
+| 3 | Szenario-Karten ODER Dual Planning Task | 30-35 min |
+
+::: {.pro-tip}
+## Aktivität für Frage 3 wählen
+
+- **Szenario-Karten** (35 min): Strukturierte Gruppenarbeit, gut für grössere Gruppen
+- **Dual Planning Task** (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen
+:::
 
 ## Takeaways
 
@@ -53,7 +60,7 @@ Am Ende nimmst du drei Antworten mit:
 ::: {.key-point}
 ## Frage 1: Was ist KI?
 
-Sprachmodelle generieren Text Wort für Wort. Sie können überzeugend klingen, haben aber keine eingebaute Faktenprüfung.
+Sprachmodelle generieren Text Wort für Wort. Sie sind auf Plausibilität trainiert, nicht auf Wahrheit. Deshalb können sie überzeugend klingen, aber faktisch falsch sein.
 :::
 
 ::: {.key-point}

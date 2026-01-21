@@ -51,31 +51,30 @@ Zwei verschiedene Arten, kognitive Arbeit auszulagern:
 ::: {.column width="50%"}
 ### Kognitives Offloading
 
-Du externalisierst, aber **denkst selbst weiter**
+Du nutzt ein Werkzeug, aber **denkst und evaluierst selbst**
 
 - Notizen machen
-- Mind-Maps erstellen
-- Taschenrechner nutzen
+- KI für erste Ideen, die du prüfst
 
-Das Werkzeug **speichert**, was du produzierst.
+**Du** denkst und entscheidest.
 :::
 ::: {.column width="50%"}
 ### Kognitives Outsourcing
 
-Du überträgst die **eigentliche Denkarbeit**
+Du überträgst die **eigentliche Denkarbeit** und akzeptierst das Ergebnis
 
-- GPS statt eigene Navigation
-- KI-generierter Text
-- KI-Analyse
+- GPS-Route folgen
+- KI-Text übernehmen
 
-Das Werkzeug **entscheidet** für dich.
+Das **Werkzeug** denkt, du akzeptierst.
 :::
 ::::
 
-## Die entscheidende Frage
+## Die entscheidenden Fragen
 
 ::: {.r-fit-text}
-> Ist die ausgelagerte Arbeit das, was die Person **lernen oder üben** sollte?
+> 1. **Wer evaluiert?** Prüfst du, was das Werkzeug produziert?
+> 2. **Was wird geübt?** Ist das die Arbeit, die gelernt werden soll?
 :::
 
 ## Der Kontext macht den Unterschied
@@ -97,6 +96,18 @@ KI macht Aufgaben **einfacher**.
 Aber Lernen braucht **kognitive Anstrengung**.
 
 Wenn Studierende auslagern, was sie üben sollten, bekommen sie das **Produkt**, aber nicht den **Lerneffekt**.
+:::
+
+## Warum Anstrengung beim Lernen zählt
+
+::: {.callout-note}
+## Ein kurzer Einblick
+
+Das Gehirn lernt durch **Vorhersagefehler**: Es macht eine Vorhersage, vergleicht sie mit dem Ergebnis, und passt sich bei Abweichungen an.
+
+Wenn KI die Antwort liefert, entsteht **kein Vorhersagefehler**, weil keine eigene Vorhersage stattfand.
+
+Mehr dazu im **Intermediate Workshop** zu Lernpsychologie.
 :::
 
 ## Für Lehrende vs. Studierende
@@ -134,6 +145,19 @@ Outsourcing ist oft **problematisch**:
 {{< timer 5 >}}
 :::
 
+## Kurzer Abruf
+
+::: {.reflect}
+## Ohne auf deine Notizen zu schauen
+
+Beantworte für dich:
+
+1. Was ist der Unterschied zwischen Offloading und Outsourcing?
+2. Warum ist Outsourcing für Lehrende oft OK, für Studierende aber problematisch?
+
+{{< timer 2 >}}
+:::
+
 ## Zusammenfassung: Wofür sollte ich KI verwenden?
 
 **Für Lehrende**: Dort, wo Effizienz zählt und das Lernen bereits abgeschlossen ist.
@@ -151,3 +175,16 @@ KI-Tools sind für **Experten** gemacht. Sie steigern Produktivität.
 
 Für **Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
 :::
+
+## Quellen und Weiterlesen
+
+**Grundlegende Theorien:**
+
+- Sweller, J. (2023). Cognitive Load Theory
+- Anderson, J. R. (1982). Acquisition of Cognitive Skill (ACT-R)
+- Bjork, R. A. (2011). Desirable Difficulties
+
+**KI und Lernen:**
+
+- Vertiefung im [Intermediate Workshop](../../workshop/index.qmd)
+- Ressource: [Wie man Kompetenz erwirbt](../../resources/kompetenz-erwerben/index.qmd)

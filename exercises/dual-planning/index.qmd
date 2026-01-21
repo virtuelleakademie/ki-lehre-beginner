@@ -1,0 +1,117 @@
+---
+title: "Dual Planning Task"
+subtitle: "Wo steckt das Denken?"
+sidebar: exercises
+---
+
+## Lernziele
+
+- Den Unterschied zwischen Offloading und Outsourcing am eigenen Erleben erfahren
+- Reflektieren, wo die kognitive Arbeit bei verschiedenen Arbeitsmodi stattfindet
+- Einschätzen, wie sich KI-Nutzung auf den eigenen Denkprozess auswirkt
+
+::: {.experiment}
+## Teil 1: Planung ohne KI (10 min)
+
+Entwirf eine kurze Lernaktivität (5-10 min) für dein Fachgebiet.
+
+**Deine Aufgabe**: Plane eine Aktivität, die ein konkretes Lernziel erreicht.
+
+Beispiele für Lernziele:
+
+- Studierende können X von Y unterscheiden
+- Studierende können den Prozess Z erklären
+- Studierende können Konzept A auf Situation B anwenden
+
+**Wichtig**: Arbeite komplett ohne KI. Nutze nur Papier oder ein leeres Dokument.
+
+Notiere:
+
+1. Das Lernziel
+2. Die Aktivität (was machen die Studierenden?)
+3. Wie du weisst, ob das Ziel erreicht wurde
+
+{{< timer 10 >}}
+:::
+
+::: {.experiment}
+## Teil 2: Planung mit KI (10 min)
+
+Entwirf nun eine ähnliche Lernaktivität für ein anderes Lernziel, diesmal mit Chatbot-Unterstützung.
+
+**Du entscheidest**, wie du den Chatbot nutzt:
+
+- Als Ideengeber?
+- Als Strukturierungshilfe?
+- Als vollständiger Planer?
+
+Notiere auch hier:
+
+1. Das Lernziel
+2. Die Aktivität
+3. Die Erfolgskriterien
+
+{{< timer 10 >}}
+:::
+
+::: {.reflect}
+## Teil 3: Reflexion (10 min)
+
+Vergleiche deine beiden Planungsprozesse:
+
+### Individuelle Reflexion (3 min)
+
+Beantworte für dich:
+
+1. **Wo war das Denken?** Bei welcher Planung hast du mehr nachgedacht?
+
+2. **Was war anders?** Wie unterschied sich dein mentaler Prozess?
+
+3. **Qualität vs. Prozess**: Welche Planung ist besser? Welcher Prozess hat dir mehr gebracht?
+
+{{< timer 3 >}}
+
+### Austausch in Paaren (7 min)
+
+Diskutiert:
+
+- Wie habt ihr den Chatbot genutzt?
+- Wo lag bei euch "das Denken"?
+- Was bedeutet das für eure Studierenden?
+
+{{< timer 7 >}}
+:::
+
+::: {.key-point}
+## Kernfrage
+
+> Bei welcher Planung hast du mehr gelernt, mehr entschieden, mehr nachgedacht?
+
+Das ist der Unterschied zwischen **Offloading** (du denkst, das Tool unterstützt) und **Outsourcing** (das Tool denkt, du akzeptierst).
+:::
+
+::: {.group}
+## Debrief im Plenum
+
+Sammelt eure Erkenntnisse:
+
+1. **Wann war KI hilfreich?** (z.B. Ideen generieren, Struktur vorschlagen)
+
+2. **Wann hat KI euer Denken ersetzt?** (z.B. fertige Lösung akzeptiert)
+
+3. **Was bedeutet das für Studierende?**
+   - Studierende sind keine Experten in eurem Fach
+   - Sie wissen oft nicht, was "gut" ist
+   - Können sie evaluieren, was der Chatbot produziert?
+
+### Die zentrale Einsicht
+
+::: {.key-point}
+Dieselbe KI-Nutzung kann sein:
+
+- **Offloading für euch** (ihr wisst, was gut ist, und nutzt KI zur Effizienz)
+- **Outsourcing für Studierende** (sie wissen nicht, was gut ist, und übernehmen unkritisch)
+
+Der Unterschied liegt nicht in der Handlung, sondern im Kopf.
+:::
+:::

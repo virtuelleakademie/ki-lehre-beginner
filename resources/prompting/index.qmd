@@ -1,8 +1,7 @@
 ---
-title: "Effective Prompting Strategies in Education"
+title: "Effektive Prompting-Strategien in der Lehre"
 description: |
-  Basic prompting techniques.
-# date: last-modified
+  Grundlegende Prompting-Techniken für Lehrende.
 date: 27 March, 2024
 date-format: "DD MMM, YYYY"
 author:
@@ -12,12 +11,9 @@ author:
     affiliation-url: https://virtuelleakademie.ch
     orcid: 0000-0002-2788-936X
   - name: Stefan Hackstein
-    # affiliation: Virtuelle Akademie, Berner Fachhochschule
-    # affiliation-url: https://virtuelleakademie.ch
     orcid: 0000-0003-2927-549X
 license: CC BY
 citation: true
-# bibliography: ../bibliography.bib
 format:
     html:
         toc: true
@@ -28,175 +24,189 @@ format:
 ---
 
 
-## Overview
-Large Language Models (LLMs) can greatly enhance education by providing explanations, examples, and instant feedback. However, employing effective prompting techniques is critical. This affects whether LLMs support meaningful learning or potentially allow students to bypass learning altogether. Thoughtfully constructed prompts use principles from cognitive science, promoting active student engagement and deeper understanding.
+## Überblick
 
-## Key Principles for Educational Prompting
+Sprachmodelle (LLMs) können die Lehre unterstützen, indem sie Erklärungen, Beispiele und Feedback liefern. Entscheidend ist jedoch, wie wir sie einsetzen. Gut formulierte Prompts nutzen Prinzipien aus der Kognitionswissenschaft und fördern aktives Engagement und tieferes Verständnis.
 
-### 1. Retrieval Practice
-Encourage recall of learned information to strengthen memory.
+## Zentrale Prinzipien für Prompting in der Lehre
 
-::: {.tutor-example}
-Quiz me on three key points from the organic chemistry lecture on reaction kinetics [provided as PDF].
+### 1. Abrufpraxis fördern
+
+Ermutigen Sie zum aktiven Abrufen gelernter Inhalte aus dem Gedächtnis.
+
+::: {.prompt}
+Stelle mir drei Fragen zu den Kernpunkten der Vorlesung über Reaktionskinetik [als PDF bereitgestellt].
 :::
 
-### 2. Scaffolding
-Break complex tasks into smaller steps to guide students gradually.
+### 2. Scaffolding verwenden
 
-::: {.tutor-example}
-First, give the balanced equation for this [chemical] reaction. Now, what are the initial concentrations?
+Komplexe Aufgaben in kleinere Schritte unterteilen, um Lernende schrittweise anzuleiten.
+
+::: {.prompt}
+Zuerst: Gib die ausgeglichene Gleichung für diese chemische Reaktion an. Dann: Was sind die Ausgangskonzentrationen?
 :::
 
-### 3. Metacognition
-Promote self-reflection and justification of reasoning.
+### 3. Metakognition anregen
 
-::: {.tutor-example}
-Explain why you chose this method for determining equilibrium. Are there assumptions you've made?
+Selbstreflexion und Begründung des eigenen Denkens fördern.
+
+::: {.prompt}
+Erkläre, warum du diese Methode zur Bestimmung des Gleichgewichts gewählt hast. Welche Annahmen hast du gemacht?
 :::
 
-### 4. Cognitive Load Management
-Chunk information clearly to prevent overload.
+### 4. Kognitive Belastung steuern
 
-::: {.tutor-example}
-Define entropy briefly. Next, explain how entropy differs from enthalpy.
-:::
+Informationen klar strukturieren, um Überlastung zu vermeiden.
 
-
-## Effective Prompting Techniques
-
-### Set Clear Roles and Contexts
-Provide explicit roles to guide the LLM's responses.
-
-::: {.prompt-example}
-You are an organic chemistry tutor helping a first-year student.
-:::
-
-### Specify Tasks and Formats Clearly
-Be specific to ensure precise responses.
-
-::: {.prompt-example}
-Explain ionic bonding using a real-world analogy suitable for freshmen.
-:::
-
-### Use Examples or Templates
-Demonstrate the desired output.
-
-::: {.prompt-example}
-Provide a solution formatted as follows: First state the concept, then illustrate with a concrete chemistry example.
+::: {.prompt}
+Definiere Entropie kurz. Erkläre dann, wie sich Entropie von Enthalpie unterscheidet.
 :::
 
 
-### Chain-of-Thought and Reasoning
-Ask the LLM to detail its reasoning or provide multiple approaches.
+## Effektive Prompting-Techniken
 
-::: {.prompt-example}
-Step-by-step, explain how to identify the limiting reagent in this reaction.
+### Klare Rollen und Kontexte setzen
+
+Explizite Rollen vorgeben, um die Antworten des LLMs zu lenken.
+
+::: {.prompt}
+Du bist ein Tutor für organische Chemie und hilfst einer Studentin im ersten Semester.
+:::
+
+### Aufgaben und Formate präzise beschreiben
+
+Spezifisch sein, um präzise Antworten zu erhalten.
+
+::: {.prompt}
+Erkläre Ionenbindung mit einer Alltagsanalogie, die für Erstsemester geeignet ist.
+:::
+
+### Beispiele oder Vorlagen nutzen
+
+Das gewünschte Ausgabeformat demonstrieren.
+
+::: {.prompt}
+Gib eine Lösung in folgendem Format: Zuerst das Konzept nennen, dann mit einem konkreten Chemie-Beispiel veranschaulichen.
+:::
+
+
+### Chain-of-Thought und schrittweises Denken
+
+Das LLM bitten, seinen Denkweg darzulegen oder mehrere Ansätze zu zeigen.
+
+::: {.prompt}
+Erkläre Schritt für Schritt, wie man den limitierenden Reaktanten in dieser Reaktion identifiziert.
 :::
 
 :::{.callout-tip appearance="default"}
-## ✅
-Instruct the LLM to think first: "Explain your reasoning first, then state the answer."
+## Empfehlung
+
+Instruiere das LLM, zuerst zu denken: "Erkläre zuerst dein Vorgehen, dann nenne die Antwort."
 :::
 
 :::{.callout-warning appearance="default"}
-## ❌
-Instruct the LLM to give the answer first: "State the answer first, then explain your reasoning."
+## Nicht empfohlen
+
+Instruiere das LLM, zuerst die Antwort zu geben: "Nenne zuerst die Antwort, dann erkläre dein Vorgehen."
 :::
 
 
 
-### Iterative Refinement
-Treat prompting as an interactive process, refining outputs through conversation.
+### Iterative Verfeinerung
 
-::: {.prompt-example}
-Simplify the previous explanation and provide a metaphor.
+Prompting als interaktiven Prozess behandeln, Outputs im Gespräch verfeinern.
+
+::: {.prompt}
+Vereinfache die vorherige Erklärung und gib eine Metapher dazu.
 :::
 
 
-### Use Markdown Formatting
-Use [Markdown](https://www.markdownguide.org/basic-syntax/) formatting to make the prompt more readable (e.g. lists, bold, italics, etc.).
+### Markdown-Formatierung nutzen
+
+[Markdown](https://www.markdownguide.org/basic-syntax/)-Formatierung verwenden, um Prompts lesbarer zu machen (z.B. Listen, Fettdruck, Kursiv).
 
 ::: {.callout-tip collapse="true"}
-## Basic Markdown Formatting
+## Grundlegende Markdown-Formatierung
+
 ```markdown
-# Heading level 1
-## Heading level 2
-### Heading level 3
+# Überschrift Ebene 1
+## Überschrift Ebene 2
+### Überschrift Ebene 3
 
-**Bold text**
+**Fetter Text**
 
-*Italic text*
+*Kursiver Text*
 
-1. List item 1
-2. List item 2
-3. List item 3
+1. Listenpunkt 1
+2. Listenpunkt 2
+3. Listenpunkt 3
 ```
 
-Use delimiters (e.g. `---`, `"""`) to indicate different roles or parts of a prompt.
+Trennzeichen (z.B. `---`, `"""`) verwenden, um verschiedene Rollen oder Teile eines Prompts zu kennzeichnen.
 
 :::
 
-## Example Teaching Activities
+## Beispiel-Aktivitäten für Lehrende
 
-### Illustrative Analogies
+### Anschauliche Analogien
 
-::: {.prompt-example}
-Create an everyday analogy to illustrate Le Châtelier’s principle.
+::: {.prompt}
+Erstelle eine Alltagsanalogie, um das Prinzip von Le Châtelier zu veranschaulichen.
 :::
 
-### Practice Questions Generation
+### Übungsfragen generieren
 
-::: {.prompt-example}
-Create three practice questions on acid-base titrations at varying difficulty levels.
+::: {.prompt}
+Erstelle drei Übungsfragen zu Säure-Base-Titrationen auf verschiedenen Schwierigkeitsstufen.
 :::
 
 :::{.callout-warning}
-Note that the task of generating practice questions is a complex task that requires a good understanding of the topic. It will be necessary to provide the LLM with a template for the questions, and to provide examples of how to format the questions. Additionally, you will need to consider how to define task difficulty very carefully.
+Das Generieren von Übungsfragen ist eine komplexe Aufgabe, die gutes Fachwissen voraussetzt. Du musst dem LLM eine Vorlage geben und definieren, was "Schwierigkeit" bedeutet. Immer kritisch prüfen!
 :::
 
 
-### Lesson Planning
+### Unterrichtsplanung
 
-::: {.prompt-example}
-Outline a 50-minute lesson plan on the ideal gas law with an interactive demonstration.
+::: {.prompt}
+Skizziere einen 50-minütigen Unterrichtsplan zum idealen Gasgesetz mit einer interaktiven Demonstration.
 :::
 
 
-### Interactive Problem Solving
+### Interaktives Problemlösen
 
-::: {.prompt-example}
-Guide me through solving a galvanic cell problem, providing hints without revealing the solution immediately.
+::: {.prompt}
+Führe mich durch das Lösen einer Aufgabe zur galvanischen Zelle. Gib Hinweise, ohne die Lösung sofort zu verraten.
 :::
 
 
-## Example Student Activities
+## Beispiel-Aktivitäten für Studierende
 
-### Clarifying Concepts
+### Konzepte klären
 
-::: {.prompt-example}
-Simplify and explain the concept of electrons behaving as waves.
+::: {.prompt}
+Vereinfache und erkläre das Konzept, dass Elektronen sich wie Wellen verhalten.
 :::
 
-### Creating Study Guides
+### Lernzusammenfassungen erstellen
 
-::: {.prompt-example}
-Summarize thermodynamics laws and generate two review questions for each.
+::: {.prompt}
+Fasse die Gesetze der Thermodynamik zusammen und erstelle zwei Wiederholungsfragen für jedes Gesetz.
 :::
 
-### Self-Explanation and Reflection
+### Selbsterklärung und Reflexion
 
-::: {.prompt-example}
-Evaluate my explanation of buffer solutions and ask a clarifying follow-up question.
+::: {.prompt}
+Bewerte meine Erklärung zu Pufferlösungen und stelle eine klärende Nachfrage.
 :::
 
-### Error-Checking Practice
+### Fehlersuche üben
 
-::: {.prompt-example}
-Review my solution to this equilibrium problem, identify mistakes, and guide me in correcting them.
+::: {.prompt}
+Überprüfe meine Lösung zu dieser Gleichgewichtsaufgabe, identifiziere Fehler und leite mich bei der Korrektur an.
 :::
 
-### Brainstorming Project Ideas
+### Projektideen entwickeln
 
-::: {.prompt-example}
-Suggest three practical applications of electrochemistry suitable for a student project.
+::: {.prompt}
+Schlage drei praktische Anwendungen der Elektrochemie vor, die sich für ein Studierendenprojekt eignen.
 :::

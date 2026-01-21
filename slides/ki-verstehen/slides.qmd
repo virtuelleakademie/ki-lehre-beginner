@@ -113,8 +113,8 @@ Die verschiedenen Stufen des Trainings sind mit verschiedenen Arten von Bedenken
 :::: {.columns}
 ::: {.column width="50%"}
 :::{.r-fit-text}
-- Obschon sich LLMs viel Wissen aneignen, werden sie nicht trainiert, faktisch korrekte Aussagen zu machen.
-- Dies bedeutet, dass wir alle Aussagen, die LLMs uns präsentieren, immer kritisch hinterfragen müssen.
+- LLMs werden trainiert, **plausibel klingende** Texte zu generieren, nicht faktisch korrekte.
+- Das bedeutet: Alle Aussagen kritisch hinterfragen.
 - LLMs sind **keine Wissensdatenbanken**. Informationen immer anhand externer Quellen überprüfen.
 :::
 :::
@@ -167,9 +167,11 @@ Explizites Nachdenken verbessert die Ergebnisse:
 
 Beispiel-Aufgabe: "Was ist grösser: 9.11 oder 9.8?"
 
-**Ohne Anleitung**: Oft falsch (verwechselt mit Datumsformat)
+**Ohne Anleitung**: Manchmal falsche Antwort
 
-**Mit "Denke Schritt für Schritt"**: Meist richtig (vergleicht Dezimalzahlen korrekt)
+**Mit "Denke Schritt für Schritt"**: Meist richtig
+
+Warum hilft das? Mehr generierte Tokens bedeuten mehr Kontext für die nachfolgenden Vorhersagen.
 
 ## Wichtige Einsicht
 

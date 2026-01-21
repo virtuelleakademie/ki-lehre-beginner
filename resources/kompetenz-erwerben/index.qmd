@@ -410,12 +410,18 @@ Das Auslagern kognitiver Prozesse an KI erzeugt eine gefährliche Illusion:
 
 ### Forschungsergebnisse: Die Kosten des kognitiven Auslagerns
 
-Aktuelle Studien zeigen alarmierende Auswirkungen von KI-Nutzung auf das Lernen:
+Erste Studien deuten auf mögliche Auswirkungen von KI-Nutzung auf das Lernen hin:
 
-- **68% weniger kritisches Denken** bei Wissensarbeitenden mit hoher KI-Vertrauenswürdigkeit [@leeImpactGenerativeAI2025]
-- **Nur oberflächliches Lernen** bei Programmierstudierenden mit ChatGPT [@yangEffectivenessChatGPTAssisting2025]
+- **Reduziertes kritisches Denken** bei Wissensarbeitenden mit hoher KI-Nutzung [@leeImpactGenerativeAI2025]. Diese Studie ist noch sehr neu und bedarf weiterer Replikation.
+- **Oberflächliches Lernen** bei Programmierstudierenden mit ChatGPT [@yangEffectivenessChatGPTAssisting2025]
 - **Verminderte Problemlösefähigkeiten** bei Mathematiklernenden mit KI-Tools [@bastaniGenerativeAICan2024]
-- **„Die Fluency-Illusion“**: KI-Kompetenz wird mit eigenem Können verwechselt
+- **„Die Fluency-Illusion"**: KI-generierte Kompetenz wird mit eigenem Können verwechselt
+
+::: {.callout-note}
+## Methodische Einschränkung
+
+Die Forschung zu KI und Lernen ist noch jung. Viele Studien haben kleine Stichproben oder untersuchen spezifische Kontexte. Die langfristigen Auswirkungen sind noch unbekannt. Die hier beschriebenen Muster sind plausibel und theoretisch fundiert, aber weitere Forschung ist nötig.
+:::
 
 ## Die biologische Realität des Lernens
 
@@ -444,11 +450,11 @@ Sogar maschinelle Lernmodelle zeigen dieses Muster:
 ::: {.callout-warning}
 ## Umkehrung des Flynn-Effekts
 
-Seit den 1970er/80er Jahren, als Bildung das Auswendiglernen verließ:
-- IQ-Werte sanken erstmals in der Geschichte
-- „Warum auswendig lernen, wenn man nachschlagen kann?“ wurde zum Mantra
-- Genau zu dem Zeitpunkt, als Neurowissenschaften bewiesen, dass Auswendiglernen kritisches Denken fördert
-- Wir verwarfen bewährte Methoden, gerade als wir ihren Nutzen verstanden [@oakleyMemoryParadoxWhy2025]
+Seit den 1970er/80er Jahren beobachten Forscher in einigen Ländern einen Rückgang der IQ-Werte. Die Ursachen sind umstritten und wahrscheinlich vielfältig.
+
+Eine Hypothese [@oakleyMemoryParadoxWhy2025]: Der Wandel von Auswendiglernen zu "nachschlagen können" könnte eine Rolle spielen. Diese Interpretation ist kontrovers und nicht abschliessend belegt.
+
+Was wir wissen: Wiederholtes Abrufen aus dem Gedächtnis stärkt Wissen nachhaltiger als passives Konsumieren oder Nachschlagen.
 :::
 
 ## Echte Expertise aufbauen

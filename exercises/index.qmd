@@ -7,5 +7,13 @@ sidebar: exercises
 
 | Übung | Dauer | Beschreibung |
 |-------|-------|--------------|
-| [Fakten-Check](fakten-check/index.qmd) | 25 min | Kritische Evaluation von KI-Outputs |
-| [Offloading vs. Outsourcing](offloading-outsourcing/index.qmd) | 35 min | Wann unterstützt KI das Lernen? |
+| [Fakten-Check](fakten-check/index.qmd) | 30 min | Kritische Evaluation von KI-Outputs |
+| [Offloading vs. Outsourcing](offloading-outsourcing/index.qmd) | 35 min | Szenario-Karten: Wann unterstützt KI das Lernen? |
+| [Dual Planning Task](dual-planning/index.qmd) | 30 min | Erfahrungsbasiert: Wo steckt das Denken? |
+
+## Welche Aktivität wählen?
+
+Für die Frage "Wofür sollte ich KI verwenden?" stehen zwei Aktivitäten zur Auswahl:
+
+- **Szenario-Karten** (35 min): Gut für grössere Gruppen, strukturierte Diskussion
+- **Dual Planning Task** (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen

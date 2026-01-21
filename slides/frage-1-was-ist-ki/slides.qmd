@@ -88,11 +88,11 @@ $$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 ## Wichtige Einsicht
 
 ::: {.key-point}
-## Vorhersage ohne Verifikation
+## Plausibilität statt Wahrheit
 
-Sprachmodelle **generieren** Text, Wort für Wort.
+Sprachmodelle werden trainiert, **plausibel klingende** Fortsetzungen zu generieren, nicht faktisch korrekte Aussagen.
 
-Sie haben keinen eingebauten Mechanismus, um zu prüfen, ob ihre Aussagen faktisch korrekt sind.
+Das Ergebnis: Sie können überzeugend klingende Texte produzieren, die inhaltlich falsch sind.
 :::
 
 ## Chain-of-Thought "Denken"
@@ -109,14 +109,14 @@ Explizites Nachdenken verbessert die Ergebnisse:
 
 <br>
 
-**Ohne Anleitung**: Oft falsch (verwechselt mit Datumsformat)
+**Ohne Anleitung**: Manchmal falsche Antwort
 
 **Mit "Denke Schritt für Schritt"**: Meist richtig
 
 <br>
 
 ::: {.fragment}
-Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
+Warum hilft das? Mehr generierte Tokens bedeuten mehr Kontext für die nachfolgenden Vorhersagen.
 :::
 
 ## Mini-Experiment
@@ -144,14 +144,28 @@ Vergleiche die Antworten.
 Jeder Zwischenschritt liefert zusätzlichen Kontext, der die nachfolgenden Token-Vorhersagen beeinflusst.
 :::
 
+## Kurzer Abruf
+
+::: {.reflect}
+## Ohne auf deine Notizen zu schauen
+
+Beantworte in 1-2 Sätzen:
+
+1. Wie generieren Sprachmodelle Text?
+2. Warum können sie faktisch falsche Aussagen machen?
+3. Wie hilft "Denke Schritt für Schritt"?
+
+{{< timer 2 >}}
+:::
+
 ## Zusammenfassung: Was ist KI?
 
 | Aspekt | Was wir beobachten |
 |--------|----------|
 | Textgenerierung | Vorhersage des nächsten Worts, basierend auf Kontext |
-| Wissen | Muster aus Trainingsdaten, keine externe Verifikation |
+| Training | Optimiert auf Plausibilität, nicht auf Wahrheit |
 | "Denken" | Mehr Zwischenschritte = mehr Kontext = bessere Ergebnisse |
-| Grenzen | Keine eingebaute Faktenprüfung, kann überzeugend Falsches produzieren |
+| Grenzen | Kann überzeugend Falsches produzieren |
 
 ## Takeaway
 
@@ -160,5 +174,5 @@ Jeder Zwischenschritt liefert zusätzlichen Kontext, der die nachfolgenden Token
 
 **Was ist KI?**
 
-Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Sie können überzeugend klingen, aber haben keine eingebaute Faktenprüfung.
+Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Sie sind auf Plausibilität trainiert, nicht auf Wahrheit. Deshalb können sie überzeugend klingen, aber faktisch falsch sein.
 :::
