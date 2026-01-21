@@ -29,9 +29,9 @@ In dieser Einheit lernen wir die Fähigkeiten und Grenzen von Chatbots kennen, s
 
 ### Kernbotschaften
 
-1. Moderne Chatbots können mehr als Text generieren (Tools, Multimodal)
-2. BFH hat klare Richtlinien und freigegebene Tools
-3. Chatbots sind selbstbewusst, aber nicht zuverlässig (Halluzinationen)
+1. Moderne Chatbots sind extrem vielseitig (Text, Bilder, Code, Web-Suche)
+2. Wenn Ergebnisse nicht passen: Kontext verbessern (mehr Info, präziser sein, Dokumente hochladen)
+3. Chatbots haben keine eingebaute Faktenprüfung: Kritisch bleiben
 
 ## Was Chatbots können
 
@@ -46,16 +46,30 @@ Moderne Chatbots haben erstaunlich vielseitige Fähigkeiten:
 | Code ausführen | Berechnungen, Datenanalyse |
 | Strukturierte Ausgabe | Tabellen, Listen, JSON, Markdown |
 
-## Was Chatbots nicht können
+## Wenn Ergebnisse nicht passen
 
-Trotz dieser Fähigkeiten haben Chatbots klare Grenzen:
+Die meisten "Probleme" sind Kontextprobleme:
 
-| Grenze | Konsequenz |
-|--------|------------|
-| Kein echtes Wissen | Halluzinationen möglich |
-| Kein Faktenspeicher | Informationen veraltet oder falsch |
-| Kein Verständnis | Logikfehler bei komplexen Aufgaben |
-| Keine Quellenprüfung | Erfundene Referenzen |
+| Symptom | Lösung |
+|---------|--------|
+| Antwort ist zu vage | Präziser fragen, mehr Details geben |
+| Modell weiss etwas nicht | Information im Prompt geben oder Dokument hochladen |
+| Reasoning geht schief | Modell Schritt für Schritt denken lassen |
+| Falsches Format | Beispiel zeigen |
+
+::: {.key-point}
+Moderne Modelle können fast alles. Die Frage ist: **Welche Information fehlt im Kontext?**
+:::
+
+## Was bleibt: Keine eingebaute Faktenprüfung
+
+Ein echtes Limit: Chatbots generieren plausiblen Text, nicht geprüfte Fakten.
+
+| Problem | Was du tun musst |
+|---------|------------------|
+| Halluzinationen | Fakten selbst prüfen |
+| Erfundene Quellen | Referenzen verifizieren |
+| Veraltete Infos | Web-Suche aktivieren oder selbst recherchieren |
 
 ## BFH-Richtlinien
 
@@ -100,9 +114,9 @@ Im Anschluss an die Präsentation folgt die **Fakten-Check Aktivität** (25 min)
 ::: {.key-point}
 ## Antwort auf Frage 2: Wofür kann KI verwendet werden?
 
-Chatbots sind **vielseitige Werkzeuge** mit echten Fähigkeiten: Text, Bilder, Code, Suche.
+Moderne Chatbots können fast alles: Text, Bilder, Code, Web-Suche. Wenn Ergebnisse nicht passen, verbessere den Kontext.
 
-Aber sie generieren **selbstbewusst auch Falsches**. Kritische Prüfung ist immer nötig.
+Was bleibt: Chatbots haben keine Faktenprüfung. **Du musst kritisch bleiben.**
 
 An der BFH: Klare Richtlinien und freigegebene Tools nutzen.
 :::

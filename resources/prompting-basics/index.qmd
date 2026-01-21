@@ -10,9 +10,21 @@ Ein **Prompt** ist die Anweisung oder Frage, die du einem KI-Chatbot gibst.
 
 Die Qualität der Antwort hängt von zwei Faktoren ab:
 
-1. **Das trainierte Modell**: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat. Darauf hast du keinen Einfluss.
+1. **Das trainierte Modell**: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat.
 
-2. **Der Kontext, den du gibst**: Dein Prompt. Das ist der Teil, den du kontrollierst.
+2. **Der Kontext, den du gibst**: Dein Prompt, plus alles was das Modell sonst "sieht" (hochgeladene Dokumente, Web-Suche, vorherige Nachrichten im Chat).
+
+Moderne Sprachmodelle sind extrem leistungsfähig. Wenn du nicht das gewünschte Ergebnis bekommst, liegt es fast immer am Kontext. Die Frage ist dann: **Welche Information fehlt dem Modell?**
+
+- Das Modell weiss etwas nicht? → Gib die Information im Prompt oder lade ein Dokument hoch.
+- Die Antwort ist vage? → Sei präziser in deiner Anfrage.
+- Das Reasoning stimmt nicht? → Lass das Modell Schritt für Schritt denken.
+
+::: {.key-point}
+## Die zentrale Erkenntnis
+
+Wenn ein modernes Sprachmodell nicht liefert, was du willst, frag dich: **Was fehlt im Kontext?** Die Antwort ist fast nie "das Modell kann das nicht".
+:::
 
 Prompting ist keine Magie und keine Spezialtechnik. Es sind die gleichen Grundregeln, die für jede gute Kommunikation gelten: Sag klar, was du willst. Gib relevanten Kontext. Sei präzise.
 

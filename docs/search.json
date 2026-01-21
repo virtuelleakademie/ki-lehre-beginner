@@ -74,7 +74,7 @@
     "href": "resources/prompting-basics/index.html",
     "title": "Prompting für Einsteiger",
     "section": "",
-    "text": "Ein Prompt ist die Anweisung oder Frage, die du einem KI-Chatbot gibst.\nDie Qualität der Antwort hängt von zwei Faktoren ab:\n\nDas trainierte Modell: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat. Darauf hast du keinen Einfluss.\nDer Kontext, den du gibst: Dein Prompt. Das ist der Teil, den du kontrollierst.\n\nPrompting ist keine Magie und keine Spezialtechnik. Es sind die gleichen Grundregeln, die für jede gute Kommunikation gelten: Sag klar, was du willst. Gib relevanten Kontext. Sei präzise.\nWenn du einer Kollegin eine vage Frage stellst, bekommst du eine vage Antwort. Das gilt für Chatbots genauso."
+    "text": "Ein Prompt ist die Anweisung oder Frage, die du einem KI-Chatbot gibst.\nDie Qualität der Antwort hängt von zwei Faktoren ab:\n\nDas trainierte Modell: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat.\nDer Kontext, den du gibst: Dein Prompt, plus alles was das Modell sonst “sieht” (hochgeladene Dokumente, Web-Suche, vorherige Nachrichten im Chat).\n\nModerne Sprachmodelle sind extrem leistungsfähig. Wenn du nicht das gewünschte Ergebnis bekommst, liegt es fast immer am Kontext. Die Frage ist dann: Welche Information fehlt dem Modell?\n\nDas Modell weiss etwas nicht? → Gib die Information im Prompt oder lade ein Dokument hoch.\nDie Antwort ist vage? → Sei präziser in deiner Anfrage.\nDas Reasoning stimmt nicht? → Lass das Modell Schritt für Schritt denken.\n\n\n\n\n\n\n\nKey-pointDie zentrale Erkenntnis\n\n\n\nWenn ein modernes Sprachmodell nicht liefert, was du willst, frag dich: Was fehlt im Kontext? Die Antwort ist fast nie “das Modell kann das nicht”.\n\n\nPrompting ist keine Magie und keine Spezialtechnik. Es sind die gleichen Grundregeln, die für jede gute Kommunikation gelten: Sag klar, was du willst. Gib relevanten Kontext. Sei präzise.\nWenn du einer Kollegin eine vage Frage stellst, bekommst du eine vage Antwort. Das gilt für Chatbots genauso."
   },
   {
     "objectID": "resources/prompting-basics/index.html#die-drei-grundregeln",
@@ -387,7 +387,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#inhaltsübersicht",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Inhaltsübersicht",
-    "text": "Inhaltsübersicht\nDauer: 50 Minuten (inkl. Aktivität)\n\n\n\nThema\nZeit\n\n\n\n\nTool-Fähigkeiten (Web, Dateien, Code)\n15 min\n\n\nBFH-Landschaft (Policy, Tools)\n10 min\n\n\nFakten-Check Aktivität\n25 min\n\n\n\n\nKernbotschaften\n\nModerne Chatbots können mehr als Text generieren (Tools, Multimodal)\nBFH hat klare Richtlinien und freigegebene Tools\nChatbots sind selbstbewusst, aber nicht zuverlässig (Halluzinationen)",
+    "text": "Inhaltsübersicht\nDauer: 50 Minuten (inkl. Aktivität)\n\n\n\nThema\nZeit\n\n\n\n\nTool-Fähigkeiten (Web, Dateien, Code)\n15 min\n\n\nBFH-Landschaft (Policy, Tools)\n10 min\n\n\nFakten-Check Aktivität\n25 min\n\n\n\n\nKernbotschaften\n\nModerne Chatbots sind extrem vielseitig (Text, Bilder, Code, Web-Suche)\nWenn Ergebnisse nicht passen: Kontext verbessern (mehr Info, präziser sein, Dokumente hochladen)\nChatbots haben keine eingebaute Faktenprüfung: Kritisch bleiben",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -459,7 +459,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#takeaway",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Takeaway",
-    "text": "Takeaway\n\n\n\n\n\n\nKey-pointAntwort auf Frage 2: Wofür kann KI verwendet werden?\n\n\n\nChatbots sind vielseitige Werkzeuge mit echten Fähigkeiten: Text, Bilder, Code, Suche.\nAber sie generieren selbstbewusst auch Falsches. Kritische Prüfung ist immer nötig.\nAn der BFH: Klare Richtlinien und freigegebene Tools nutzen.",
+    "text": "Takeaway\n\n\n\n\n\n\nKey-pointAntwort auf Frage 2: Wofür kann KI verwendet werden?\n\n\n\nModerne Chatbots können fast alles: Text, Bilder, Code, Web-Suche. Wenn Ergebnisse nicht passen, verbessere den Kontext.\nWas bleibt: Chatbots haben keine Faktenprüfung. Du musst kritisch bleiben.\nAn der BFH: Klare Richtlinien und freigegebene Tools nutzen.",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -495,7 +495,7 @@
     "href": "slides/frage-1-was-ist-ki/index.html#inhaltsübersicht",
     "title": "Frage 1: Was ist KI?",
     "section": "Inhaltsübersicht",
-    "text": "Inhaltsübersicht\nDauer: 45 Minuten\n\n\n\nThema\nZeit\n\n\n\n\nSprachmodelle als Textvorhersage\n20 min\n\n\nChain-of-Thought “Denken”\n15 min\n\n\nMini-Experiment\n10 min\n\n\n\n\nKernbotschaften\n\nLLMs sagen das nächste Wort vorher, basierend auf Mustern in Trainingsdaten\n“Denken” (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext\nTraining auf Textmengen gibt keine eingebaute Faktenprüfung",
+    "text": "Inhaltsübersicht\nDauer: 45 Minuten\n\n\n\nThema\nZeit\n\n\n\n\nSprachmodelle als Textvorhersage\n20 min\n\n\nChain-of-Thought “Denken”\n15 min\n\n\nMini-Experiment\n10 min\n\n\n\n\nKernbotschaften\n\nLLMs sagen das nächste Wort vorher, basierend auf Mustern in Trainingsdaten\n“Denken” (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext\nModerne Modelle sind extrem leistungsfähig; der Kontext bestimmt das Ergebnis",
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
@@ -1668,7 +1668,7 @@
     "href": "resources/prompting-basics/index.html#was-ist-ein-prompt",
     "title": "Prompting für Einsteiger",
     "section": "",
-    "text": "Ein Prompt ist die Anweisung oder Frage, die du einem KI-Chatbot gibst.\nDie Qualität der Antwort hängt von zwei Faktoren ab:\n\nDas trainierte Modell: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat. Darauf hast du keinen Einfluss.\nDer Kontext, den du gibst: Dein Prompt. Das ist der Teil, den du kontrollierst.\n\nPrompting ist keine Magie und keine Spezialtechnik. Es sind die gleichen Grundregeln, die für jede gute Kommunikation gelten: Sag klar, was du willst. Gib relevanten Kontext. Sei präzise.\nWenn du einer Kollegin eine vage Frage stellst, bekommst du eine vage Antwort. Das gilt für Chatbots genauso."
+    "text": "Ein Prompt ist die Anweisung oder Frage, die du einem KI-Chatbot gibst.\nDie Qualität der Antwort hängt von zwei Faktoren ab:\n\nDas trainierte Modell: Welches Wissen und welche Fähigkeiten das Sprachmodell durch sein Training erworben hat.\nDer Kontext, den du gibst: Dein Prompt, plus alles was das Modell sonst “sieht” (hochgeladene Dokumente, Web-Suche, vorherige Nachrichten im Chat).\n\nModerne Sprachmodelle sind extrem leistungsfähig. Wenn du nicht das gewünschte Ergebnis bekommst, liegt es fast immer am Kontext. Die Frage ist dann: Welche Information fehlt dem Modell?\n\nDas Modell weiss etwas nicht? → Gib die Information im Prompt oder lade ein Dokument hoch.\nDie Antwort ist vage? → Sei präziser in deiner Anfrage.\nDas Reasoning stimmt nicht? → Lass das Modell Schritt für Schritt denken.\n\n\n\n\n\n\n\nKey-pointDie zentrale Erkenntnis\n\n\n\nWenn ein modernes Sprachmodell nicht liefert, was du willst, frag dich: Was fehlt im Kontext? Die Antwort ist fast nie “das Modell kann das nicht”.\n\n\nPrompting ist keine Magie und keine Spezialtechnik. Es sind die gleichen Grundregeln, die für jede gute Kommunikation gelten: Sag klar, was du willst. Gib relevanten Kontext. Sei präzise.\nWenn du einer Kollegin eine vage Frage stellst, bekommst du eine vage Antwort. Das gilt für Chatbots genauso."
   },
   {
     "objectID": "resources/prompting-basics/index.html#die-drei-grundtechniken",
@@ -1690,5 +1690,29 @@
     "title": "Prompting für Einsteiger",
     "section": "Häufige Fehler",
     "text": "Häufige Fehler\n\n\n\n\n\n\n\n\nFehler\nProblem\nLösung\n\n\n\n\nZu vage\n“Hilf mir mit meinem Kurs”\nKonkreter: “Erstelle 3 Diskussionsfragen für mein Seminar zu [Thema]”\n\n\nZu viel auf einmal\nMehrere Aufgaben in einem Prompt\nEine Aufgabe pro Prompt, dann iterieren\n\n\nKontext vergessen\nDer Chatbot kennt deine Situation nicht\nImmer relevanten Hintergrund geben\n\n\nErste Antwort akzeptieren\nSuboptimales Ergebnis\nIm Dialog verfeinern"
+  },
+  {
+    "objectID": "slides/frage-2-wozu-kann-ki/index.html#wenn-ergebnisse-nicht-passen",
+    "href": "slides/frage-2-wozu-kann-ki/index.html#wenn-ergebnisse-nicht-passen",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "Wenn Ergebnisse nicht passen",
+    "text": "Wenn Ergebnisse nicht passen\nDie meisten “Probleme” sind Kontextprobleme:\n\n\n\n\n\n\n\nSymptom\nLösung\n\n\n\n\nAntwort ist zu vage\nPräziser fragen, mehr Details geben\n\n\nModell weiss etwas nicht\nInformation im Prompt geben oder Dokument hochladen\n\n\nReasoning geht schief\nModell Schritt für Schritt denken lassen\n\n\nFalsches Format\nBeispiel zeigen\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nModerne Modelle können fast alles. Die Frage ist: Welche Information fehlt im Kontext?",
+    "crumbs": [
+      "Workshop",
+      "Frage 2: Wofür kann KI verwendet werden?",
+      "Slides: Möglichkeiten & Grenzen"
+    ]
+  },
+  {
+    "objectID": "slides/frage-2-wozu-kann-ki/index.html#was-bleibt-keine-eingebaute-faktenprüfung",
+    "href": "slides/frage-2-wozu-kann-ki/index.html#was-bleibt-keine-eingebaute-faktenprüfung",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "Was bleibt: Keine eingebaute Faktenprüfung",
+    "text": "Was bleibt: Keine eingebaute Faktenprüfung\nEin echtes Limit: Chatbots generieren plausiblen Text, nicht geprüfte Fakten.\n\n\n\nProblem\nWas du tun musst\n\n\n\n\nHalluzinationen\nFakten selbst prüfen\n\n\nErfundene Quellen\nReferenzen verifizieren\n\n\nVeraltete Infos\nWeb-Suche aktivieren oder selbst recherchieren",
+    "crumbs": [
+      "Workshop",
+      "Frage 2: Wofür kann KI verwendet werden?",
+      "Slides: Möglichkeiten & Grenzen"
+    ]
   }
 ]

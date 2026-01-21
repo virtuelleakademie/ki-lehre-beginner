@@ -31,7 +31,7 @@ In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch 
 
 1. LLMs sagen das nächste Wort vorher, basierend auf Mustern in Trainingsdaten
 2. "Denken" (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext
-3. Training auf Textmengen gibt keine eingebaute Faktenprüfung
+3. Moderne Modelle sind extrem leistungsfähig; der Kontext bestimmt das Ergebnis
 
 ## Interaktiv: Token-Vorhersage
 
@@ -165,11 +165,10 @@ Plot.plot({
 ::: {.key-point}
 ## Antwort auf Frage 1: Was ist KI?
 
-Sprachmodelle generieren Text durch Vorhersage des nächsten Worts, basierend auf Mustern in Trainingsdaten.
+Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Zwei Faktoren bestimmen das Ergebnis:
 
-Das bedeutet:
+1. **Das Modell**: Was es aus Trainingsdaten gelernt hat
+2. **Der Kontext**: Was du im Prompt mitgibst (inkl. Dokumente, Web-Suche, Chat-Verlauf)
 
-- Beeindruckende Mustererkennung und Textproduktion
-- Training auf Plausibilität, nicht auf Wahrheit
-- Können überzeugend klingen, auch wenn der Inhalt falsch ist
+Moderne Modelle sind extrem leistungsfähig. Wenn das Ergebnis nicht passt, frag dich: **Was fehlt im Kontext?**
 :::
