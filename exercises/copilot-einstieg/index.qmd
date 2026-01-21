@@ -94,12 +94,12 @@ Was bedeutet "nächstes Wort vorhersagen" genauer?
 {{< timer 5 >}}
 :::
 
-## Teil 3: Selbstständig erkunden (5 min) {#selbststaendig}
+## Teil 3: Selbstständig erkunden (8 min) {#selbststaendig}
 
 ::: {.experiment}
-## Deine erste eigene Interaktion
+## Deine ersten eigenen Interaktionen
 
-Jetzt stellst du eine eigene Frage. Wähle eine der folgenden Optionen:
+Jetzt stellst du eigene Fragen. **Probiere mindestens zwei der folgenden Optionen aus**, um ein Gefühl für verschiedene Anwendungen zu bekommen.
 
 **Option A: Fachliche Frage**
 
@@ -125,13 +125,15 @@ Frage nach einer konkreten Aufgabe.
 Erstelle drei Beispielaufgaben zum Thema [THEMA] für Erstsemester.
 :::
 
-**Notiere:**
+**Für jede Interaktion notiere:**
 
 - Was hast du gefragt?
 - Wie war die Antwort?
 - Hast du etwas Unerwartetes bemerkt?
 
-{{< timer 5 >}}
+**Tipp**: Stelle bei mindestens einer Antwort eine Nachfrage, um die Verfeinerung zu üben.
+
+{{< timer 8 >}}
 :::
 
 ## Teil 4: Kurzer Austausch (3 min) {#austausch}
@@ -146,6 +148,17 @@ Tauscht euch kurz mit 1-2 Nachbarpersonen aus:
 - Welche Fragen sind aufgetaucht?
 
 {{< timer 3 >}}
+:::
+
+::: {.reflect}
+## Kurzer Selbsttest (1 min)
+
+Beantworte ohne auf deine Notizen zu schauen:
+
+1. Was sind die drei Prompting-Grundregeln?
+2. Warum ist es wichtig, der Selbstsicherheit des Chatbots nicht blind zu vertrauen?
+
+{{< timer 1 >}}
 :::
 
 ::: {.key-point}

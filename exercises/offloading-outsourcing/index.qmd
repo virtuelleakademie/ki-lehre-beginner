@@ -120,23 +120,19 @@ Wenn du bei einem Szenario unsicher bist, nutze diese Leitfragen:
 
 ### Die Szenarien
 
+Diskutiert mindestens 3-4 dieser Szenarien. Wendet die diagnostischen Fragen an.
+
 **Szenario 1**: Eine studierende Person nutzt ChatGPT, um eine Gliederung für ihre Seminararbeit zu erstellen.
 
 **Szenario 2**: Eine dozierende Person nutzt Claude, um Feedback-Entwürfe auf Studierendenarbeiten zu formulieren.
 
 **Szenario 3**: Eine studierende Person bittet Copilot, ein komplexes Konzept zu erklären, das sie nicht verstanden hat.
 
-**Szenario 4**: Eine dozierende Person nutzt KI, um Multiple-Choice-Fragen für eine Prüfung zu generieren.
+**Szenario 4**: Eine studierende Person lässt ChatGPT ihren Essay schreiben und reicht ihn ein.
 
-**Szenario 5**: Eine studierende Person lässt ChatGPT ihren Essay schreiben und reicht ihn ein.
+**Szenario 5**: Eine studierende Person nutzt KI als Sparringspartner, um ihre Argumente zu testen.
 
-**Szenario 6**: Eine dozierende Person nutzt KI, um eine Vorlesung zu einem neuen Thema vorzubereiten.
-
-**Szenario 7**: Eine studierende Person nutzt KI als Sparringspartner, um ihre Argumente zu testen.
-
-**Szenario 8**: Eine studierende Person nutzt KI, um Code zu debuggen, ohne zu verstehen, was der Fehler war.
-
-{{< timer 15 >}}
+{{< timer 12 >}}
 
 Sammelt eure Einschätzungen auf einem Flipchart oder digital.
 :::

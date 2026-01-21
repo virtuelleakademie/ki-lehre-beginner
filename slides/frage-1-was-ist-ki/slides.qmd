@@ -228,12 +228,25 @@ Wir sollten nicht behaupten, die KI "denkt wie wir". Aber wir können verstehen,
 ::: {.experiment}
 ## Ausprobieren
 
-Stelle dieselbe komplexe Frage zweimal an einen Chatbot:
+Stelle diese Frage zweimal an einen Chatbot:
 
-1. Direkt: "Was ist die Antwort?"
-2. Mit Anleitung: "Denke Schritt für Schritt durch dieses Problem."
+**Die Frage:**
 
-Beobachte den Unterschied in der Antwortqualität.
+> In einem Raum sind 3 Mörder. Jemand kommt herein und tötet einen von ihnen. Niemand verlässt den Raum. Wie viele Mörder sind jetzt im Raum?
+
+**Versuch 1** (direkt):
+
+::: {.prompt}
+In einem Raum sind 3 Mörder. Jemand kommt herein und tötet einen von ihnen. Niemand verlässt den Raum. Wie viele Mörder sind jetzt im Raum?
+:::
+
+**Versuch 2** (mit Anleitung):
+
+::: {.prompt}
+Denke Schritt für Schritt durch dieses Problem: In einem Raum sind 3 Mörder. Jemand kommt herein und tötet einen von ihnen. Niemand verlässt den Raum. Wie viele Mörder sind jetzt im Raum?
+:::
+
+Beobachte: Kommt der Chatbot beide Male zur richtigen Antwort (3 Mörder)?
 
 {{< timer 5 >}}
 :::
