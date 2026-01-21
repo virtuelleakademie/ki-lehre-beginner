@@ -140,3 +140,5 @@ Für **Lernende** ist die Situation komplizierter: Lernen braucht **kognitive An
 
 **Die Frage ist nicht "Darf man KI nutzen?", sondern "Wer lernt dabei was?"**
 :::
+
+## Referenzen

@@ -132,6 +132,8 @@ page-footer:
 
 lang: de
 
+bibliography: bibliography.bib
+
 format:
   html:
     theme:
