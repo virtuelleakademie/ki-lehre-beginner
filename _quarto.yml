@@ -48,14 +48,19 @@ website:
         text: Übungen
 
     right:
-      - icon: briefcase
-        text: "Dokumente"
+      - icon: book
+        text: "Ressourcen"
         menu:
+          - text: "Reflexionsfragen"
+            file: resources/reflexion/index.qmd
           - text: "Prompting für Einsteiger"
             file: resources/prompting-basics/index.qmd
           - text: "Weiterführende Ressourcen"
             file: resources/weiterfuehrende-ressourcen/index.qmd
-          - text: "---"
+
+      - icon: file-earmark-text
+        text: "Dokumente"
+        menu:
           - text: "KI Policy der BFH"
             file: https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf
           - text: "Begleitdokument: KI Weiterbildung"
@@ -104,6 +109,9 @@ website:
               file: exercises/offloading-outsourcing/index.qmd
         - text: "Abschluss"
           file: workshop/abschluss/index.qmd
+        - text: "---"
+        - text: "Reflexionsfragen"
+          file: resources/reflexion/index.qmd
 
     - title: "Slides"
       style: "docked"

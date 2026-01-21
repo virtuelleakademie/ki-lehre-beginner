@@ -954,5 +954,82 @@
     "title": "Prompting für Einsteiger",
     "section": "Weiterführend",
     "text": "Weiterführend\n\nInteraktiver Prompting-Tutor\nFür personalisiertes Training steht dir ein spezieller Copilot-Agent zur Verfügung:\n\nDemonstriert Techniken mit durchgearbeiteten Beispielen\nPasst sich deinem Niveau an\nGibt konstruktives Feedback zu deinen Prompts\n\nPrompting-Tutor starten (BFH-Login erforderlich)\n\n\nExterne Ressourcen\n\nLearn Prompting: Umfassender englischsprachiger Kurs"
+  },
+  {
+    "objectID": "resources/reflexion/index.html",
+    "href": "resources/reflexion/index.html",
+    "title": "Fragen für die eigene Reflexion",
+    "section": "",
+    "text": "Diese Reflexionsfragen helfen dir, die Workshop-Konzepte auf deine eigene Lehre anzuwenden. Sie sind für die Nachbereitung gedacht, nicht als Entdeckungsübung: Sie bauen auf dem auf, was im Workshop explizit vermittelt wurde.",
+    "crumbs": [
+      "Workshop",
+      "Reflexionsfragen"
+    ]
+  },
+  {
+    "objectID": "resources/reflexion/index.html#offloading-oder-outsourcing-in-deiner-lehre",
+    "href": "resources/reflexion/index.html#offloading-oder-outsourcing-in-deiner-lehre",
+    "title": "Fragen für die eigene Reflexion",
+    "section": "1. Offloading oder Outsourcing in deiner Lehre",
+    "text": "1. Offloading oder Outsourcing in deiner Lehre\nKonzept aus dem Workshop: Kognitives Offloading bedeutet, dass du externalisierst, aber selbst weiterdenkst. Kognitives Outsourcing bedeutet, dass du die Denkarbeit selbst überträgst. Die entscheidende Frage ist: Ist das, was ausgelagert wird, etwas, das die Person lernen sollte?\nDeine Aufgabe: Wähle eine schriftliche Aufgabe oder ein Projekt aus einem deiner Module, bei dem Studierende KI-Tools nutzen könnten.\nAnalysiere diese Aufgabe anhand folgender Fragen:\n\nWelche kognitiven Prozesse soll diese Aufgabe trainieren? (z.B. Argumentieren, Analysieren, Synthetisieren, Problemlösen)\nWelche dieser Prozesse würde ein Chatbot übernehmen, wenn Studierende ihn nutzen?\nSind die Prozesse, die der Chatbot übernehmen würde, zentral für dein Lernziel oder peripher?\n\nDein Ergebnis: Formuliere einen Satz: “Bei dieser Aufgabe wäre KI-Nutzung eher [Offloading/Outsourcing], weil…”",
+    "crumbs": [
+      "Workshop",
+      "Reflexionsfragen"
+    ]
+  },
+  {
+    "objectID": "resources/reflexion/index.html#wo-dein-fachwissen-entscheidend-ist",
+    "href": "resources/reflexion/index.html#wo-dein-fachwissen-entscheidend-ist",
+    "title": "Fragen für die eigene Reflexion",
+    "section": "2. Wo dein Fachwissen entscheidend ist",
+    "text": "2. Wo dein Fachwissen entscheidend ist\nKonzept aus dem Workshop: Chatbots generieren plausiblen Text, nicht geprüfte Fakten. Ohne Fachwissen kannst du nicht beurteilen, ob eine Antwort korrekt ist.\nDeine Aufgabe: Denke an ein Thema aus deinem Fachgebiet, bei dem Chatbot-Antworten besonders trügerisch sein könnten: plausibel klingend, aber fachlich falsch oder veraltet.\nÜberlege:\n\nWas macht dieses Thema anfällig für überzeugende Fehler?\nWelches Vorwissen bräuchten Studierende, um solche Fehler zu erkennen?\nHaben deine Studierenden dieses Vorwissen bereits, oder müssen sie es erst aufbauen?\n\nDein Ergebnis: Notiere ein konkretes Beispiel, das du im Unterricht als Warnung verwenden könntest.",
+    "crumbs": [
+      "Workshop",
+      "Reflexionsfragen"
+    ]
+  },
+  {
+    "objectID": "resources/reflexion/index.html#studierende-mit-unterschiedlichen-voraussetzungen",
+    "href": "resources/reflexion/index.html#studierende-mit-unterschiedlichen-voraussetzungen",
+    "title": "Fragen für die eigene Reflexion",
+    "section": "3. Studierende mit unterschiedlichen Voraussetzungen",
+    "text": "3. Studierende mit unterschiedlichen Voraussetzungen\nKonzept aus dem Workshop: Dieselbe KI-Nutzung kann für Expert*innen produktiv und für Lernende schädlich sein. Der Unterschied liegt im Vorwissen und in der Fähigkeit zur kritischen Einordnung.\nDeine Aufgabe: Denke an zwei Studierende in deinem Kurs: eine Person mit soliden Grundlagen und guter Selbstregulation, eine Person, die noch Mühe mit den Basics hat.\nÜberlege für dieselbe Aufgabe:\n\nWie würde die erste Person KI vermutlich nutzen?\nWie würde die zweite Person KI vermutlich nutzen?\nWelche Unterstützung bräuchte die zweite Person, um KI produktiv statt schädlich einzusetzen?\n\nDein Ergebnis: Formuliere eine konkrete Massnahme, die du für Studierende mit schwächeren Grundlagen einführen könntest.",
+    "crumbs": [
+      "Workshop",
+      "Reflexionsfragen"
+    ]
+  },
+  {
+    "objectID": "resources/reflexion/index.html#grenzfälle-und-unklarheiten",
+    "href": "resources/reflexion/index.html#grenzfälle-und-unklarheiten",
+    "title": "Fragen für die eigene Reflexion",
+    "section": "4. Grenzfälle und Unklarheiten",
+    "text": "4. Grenzfälle und Unklarheiten\nKonzept aus dem Workshop: Die Unterscheidung zwischen Offloading und Outsourcing ist nicht immer eindeutig. Manche Situationen liegen in einer Grauzone.\nDeine Aufgabe: Identifiziere eine Situation in deiner Lehre, bei der du dir nicht sicher bist, ob KI-Nutzung sinnvoll oder problematisch wäre.\nBeschreibe:\n\nWas genau macht diese Situation schwierig zu beurteilen?\nWelche zusätzlichen Informationen bräuchtest du, um eine Entscheidung zu treffen?\nKönnte es sein, dass die Antwort für verschiedene Studierende unterschiedlich ausfällt?\n\nDein Ergebnis: Formuliere die Frage, die du klären müsstest, um zu einer Entscheidung zu kommen.",
+    "crumbs": [
+      "Workshop",
+      "Reflexionsfragen"
+    ]
+  },
+  {
+    "objectID": "resources/reflexion/index.html#ein-konkreter-nächster-schritt",
+    "href": "resources/reflexion/index.html#ein-konkreter-nächster-schritt",
+    "title": "Fragen für die eigene Reflexion",
+    "section": "5. Ein konkreter nächster Schritt",
+    "text": "5. Ein konkreter nächster Schritt\nKonzept aus dem Workshop: “Die Frage ist nicht ‘Darf man KI nutzen?’, sondern ‘Wer lernt dabei was?’”\nDeine Aufgabe: Wähle eine konkrete Änderung, die du in den nächsten Wochen in einem deiner Module umsetzen willst.\nFormuliere deinen Vorsatz nach diesem Muster:\n\n“In [Modul/Kurs] werde ich [konkrete Massnahme], um [Ziel bezüglich KI und Lernen].”\n\nÜberlege:\n\nWoran wirst du erkennen, ob diese Änderung die gewünschte Wirkung hat?\nWas könnte schiefgehen, und wie würdest du darauf reagieren?\n\nDein Ergebnis: Dein formulierter Vorsatz mit einem Erfolgskriterium.",
+    "crumbs": [
+      "Workshop",
+      "Reflexionsfragen"
+    ]
+  },
+  {
+    "objectID": "resources/reflexion/index.html#weiterführend",
+    "href": "resources/reflexion/index.html#weiterführend",
+    "title": "Fragen für die eigene Reflexion",
+    "section": "Weiterführend",
+    "text": "Weiterführend\nDiese Reflexionsfragen sind ein Ausgangspunkt. Die eigentliche Arbeit beginnt, wenn du deine Überlegungen in die Praxis umsetzt, beobachtest, was passiert, und deine Ansätze anpasst.\nFür den Austausch mit Kolleg*innen und weitere Unterstützung:\n\nVirtuelle Akademie Knowledge Base\nWeiterbildung: KI in der Lehre (Intermediate)",
+    "crumbs": [
+      "Workshop",
+      "Reflexionsfragen"
+    ]
   }
 ]

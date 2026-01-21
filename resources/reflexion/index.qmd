@@ -1,0 +1,104 @@
+---
+title: "Fragen für die eigene Reflexion"
+sidebar: workshop
+---
+
+Diese Reflexionsfragen helfen dir, die Workshop-Konzepte auf deine eigene Lehre anzuwenden. Sie sind für die Nachbereitung gedacht, nicht als Entdeckungsübung: Sie bauen auf dem auf, was im Workshop explizit vermittelt wurde.
+
+::: {.callout-tip}
+## Empfehlung
+
+Nimm dir für jede Frage 5-10 Minuten Zeit. Notiere deine Antworten schriftlich. Die Fragen sind wirksamer, wenn du sie mit Kolleg*innen diskutierst, die den Workshop ebenfalls besucht haben.
+:::
+
+## 1. Offloading oder Outsourcing in deiner Lehre
+
+**Konzept aus dem Workshop:** Kognitives Offloading bedeutet, dass du externalisierst, aber selbst weiterdenkst. Kognitives Outsourcing bedeutet, dass du die Denkarbeit selbst überträgst. Die entscheidende Frage ist: *Ist das, was ausgelagert wird, etwas, das die Person lernen sollte?*
+
+**Deine Aufgabe:** Wähle eine schriftliche Aufgabe oder ein Projekt aus einem deiner Module, bei dem Studierende KI-Tools nutzen könnten.
+
+Analysiere diese Aufgabe anhand folgender Fragen:
+
+a) Welche kognitiven Prozesse soll diese Aufgabe trainieren? (z.B. Argumentieren, Analysieren, Synthetisieren, Problemlösen)
+b) Welche dieser Prozesse würde ein Chatbot übernehmen, wenn Studierende ihn nutzen?
+c) Sind die Prozesse, die der Chatbot übernehmen würde, zentral für dein Lernziel oder peripher?
+
+**Dein Ergebnis:** Formuliere einen Satz: "Bei dieser Aufgabe wäre KI-Nutzung eher [Offloading/Outsourcing], weil..."
+
+---
+
+## 2. Wo dein Fachwissen entscheidend ist
+
+**Konzept aus dem Workshop:** Chatbots generieren plausiblen Text, nicht geprüfte Fakten. Ohne Fachwissen kannst du nicht beurteilen, ob eine Antwort korrekt ist.
+
+**Deine Aufgabe:** Denke an ein Thema aus deinem Fachgebiet, bei dem Chatbot-Antworten besonders trügerisch sein könnten: plausibel klingend, aber fachlich falsch oder veraltet.
+
+Überlege:
+
+a) Was macht dieses Thema anfällig für überzeugende Fehler?
+b) Welches Vorwissen bräuchten Studierende, um solche Fehler zu erkennen?
+c) Haben deine Studierenden dieses Vorwissen bereits, oder müssen sie es erst aufbauen?
+
+**Dein Ergebnis:** Notiere ein konkretes Beispiel, das du im Unterricht als Warnung verwenden könntest.
+
+---
+
+## 3. Studierende mit unterschiedlichen Voraussetzungen
+
+**Konzept aus dem Workshop:** Dieselbe KI-Nutzung kann für Expert*innen produktiv und für Lernende schädlich sein. Der Unterschied liegt im Vorwissen und in der Fähigkeit zur kritischen Einordnung.
+
+**Deine Aufgabe:** Denke an zwei Studierende in deinem Kurs: eine Person mit soliden Grundlagen und guter Selbstregulation, eine Person, die noch Mühe mit den Basics hat.
+
+Überlege für dieselbe Aufgabe:
+
+a) Wie würde die erste Person KI vermutlich nutzen?
+b) Wie würde die zweite Person KI vermutlich nutzen?
+c) Welche Unterstützung bräuchte die zweite Person, um KI produktiv statt schädlich einzusetzen?
+
+**Dein Ergebnis:** Formuliere eine konkrete Massnahme, die du für Studierende mit schwächeren Grundlagen einführen könntest.
+
+---
+
+## 4. Grenzfälle und Unklarheiten
+
+**Konzept aus dem Workshop:** Die Unterscheidung zwischen Offloading und Outsourcing ist nicht immer eindeutig. Manche Situationen liegen in einer Grauzone.
+
+**Deine Aufgabe:** Identifiziere eine Situation in deiner Lehre, bei der du dir nicht sicher bist, ob KI-Nutzung sinnvoll oder problematisch wäre.
+
+Beschreibe:
+
+a) Was genau macht diese Situation schwierig zu beurteilen?
+b) Welche zusätzlichen Informationen bräuchtest du, um eine Entscheidung zu treffen?
+c) Könnte es sein, dass die Antwort für verschiedene Studierende unterschiedlich ausfällt?
+
+**Dein Ergebnis:** Formuliere die Frage, die du klären müsstest, um zu einer Entscheidung zu kommen.
+
+---
+
+## 5. Ein konkreter nächster Schritt
+
+**Konzept aus dem Workshop:** "Die Frage ist nicht 'Darf man KI nutzen?', sondern 'Wer lernt dabei was?'"
+
+**Deine Aufgabe:** Wähle eine konkrete Änderung, die du in den nächsten Wochen in einem deiner Module umsetzen willst.
+
+Formuliere deinen Vorsatz nach diesem Muster:
+
+> "In [Modul/Kurs] werde ich [konkrete Massnahme], um [Ziel bezüglich KI und Lernen]."
+
+Überlege:
+
+a) Woran wirst du erkennen, ob diese Änderung die gewünschte Wirkung hat?
+b) Was könnte schiefgehen, und wie würdest du darauf reagieren?
+
+**Dein Ergebnis:** Dein formulierter Vorsatz mit einem Erfolgskriterium.
+
+---
+
+## Weiterführend
+
+Diese Reflexionsfragen sind ein Ausgangspunkt. Die eigentliche Arbeit beginnt, wenn du deine Überlegungen in die Praxis umsetzt, beobachtest, was passiert, und deine Ansätze anpasst.
+
+Für den Austausch mit Kolleg*innen und weitere Unterstützung:
+
+- [Virtuelle Akademie Knowledge Base](https://virtuelleakademie.ch/knowledge-base/)
+- [Weiterbildung: KI in der Lehre (Intermediate)](https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/)
