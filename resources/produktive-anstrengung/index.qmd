@@ -17,9 +17,9 @@ Wie James Lang in *Cheating Lessons* [@langCheatingLessons2013] argumentiert, is
 Forschung zu „wünschenswerten Schwierigkeiten“ [@bjorkMemoryMetamemoryConsiderations1994; @bjorkMakingThingsHard2011] zeigt, dass Lernen kognitive Anstrengung erfordert—wenn wir das Ringen entfernen, entfernen wir das Lernen. Doch Studierende erhalten oft keinen Anreiz, sich auf anstrengende Verarbeitung einzulassen. Das Ziel ist es, Umgebungen zu schaffen, in denen Lernende sich bewusst auf diese Anstrengung einlassen, weil sie deren Notwendigkeit für tiefes Lernen verstehen.
 
 ::: {.callout-important}
-## Das Paradox des Lernens
+## Die Logik des Lernens
 
-Bedingungen, die die Leistung während des Trainings gut aussehen lassen, fördern häufig kein nachhaltiges Lernen. Die folgenden Schwierigkeiten erscheinen im Moment härter und weniger effizient, führen aber zu überlegenem Langzeitbehalten und besserem Transfer:
+Dieser scheinbare Widerspruch ist kein Paradox, sondern folgt direkt aus der kognitiven Architektur: Bedingungen, die die Leistung während des Trainings gut aussehen lassen, fördern häufig kein nachhaltiges Lernen. Die folgenden Schwierigkeiten erscheinen im Moment härter und weniger effizient, führen aber zu überlegenem Langzeitbehalten und besserem Transfer:
 
 - **Generationseffekt**: Lernende generieren (auch falsche) Antworten, bevor sie Informationen erhalten
 - **Spacing-Effekt**: Übung über die Zeit verteilen statt sie zu bündeln

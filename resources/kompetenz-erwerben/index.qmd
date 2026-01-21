@@ -404,9 +404,45 @@ Jeder Zyklus:
 Das Auslagern kognitiver Prozesse an KI erzeugt eine gefährliche Illusion:
 
 - **Oberflächenflüssigkeit**: Perfekte Antworten ohne Verständnis
-- **Falsches Selbstvertrauen**: Glauben, es „verstanden zu haben“ ohne Übung
+- **Falsches Selbstvertrauen**: Glauben, es „verstanden zu haben" ohne Übung
 - **Fragiles Wissen**: Bricht ohne KI-Unterstützung zusammen
 - **Begrenzter Transfer**: Kann nicht auf neue Situationen angewandt werden
+
+### Metakognitive Grenzen: Warum wir unser eigenes Lernen schlecht einschätzen
+
+Ein oft übersehenes Problem: Menschen sind notorisch schlechte Richter über ihr eigenes Lernen. Die Forschung von Bjork, Dunlosky und Kornell zeigt konsistent, dass **subjektive Lerneinschätzungen oft schlecht mit tatsächlichem Lernen korrelieren**.
+
+::: {.callout-warning}
+## Die Fluency-Falle
+
+**Das Problem**: Bedingungen, die sich leicht und flüssig anfühlen, führen oft zu schlechterem Langzeitlernen. Umgekehrt fühlt sich effektives Lernen oft schwierig und frustrierend an.
+
+**Beispiele:**
+
+- Wiederholtes Lesen fühlt sich produktiv an, ist aber weniger effektiv als Selbsttests
+- Geblockte Übung (alle Aufgaben eines Typs hintereinander) fühlt sich einfacher an, führt aber zu weniger Transfer als vermischte Übung
+- KI-unterstütztes Arbeiten fühlt sich effizient an, kann aber die kognitive Anstrengung eliminieren, die Lernen produziert
+:::
+
+**Warum das für KI-Nutzung relevant ist:**
+
+Wenn du mit KI arbeitest und das Gefühl hast, produktiv zu sein, sagt das **nichts darüber aus, ob du lernst**. Das Gefühl der Produktivität kommt von der Leichtigkeit des Prozesses. Aber Lernen erfordert die Schwierigkeit, die KI gerade entfernt hat.
+
+**Praktische Implikation:**
+
+Du kannst nicht durch Introspektion entscheiden, ob eine KI-Nutzung zum Lernen beiträgt. Die Frage „Hat sich das produktiv angefühlt?" ist irrelevant. Die relevanten Fragen sind:
+
+1. Habe ich eigene Vorhersagen gemacht, bevor ich die Antwort bekam?
+2. Habe ich mit meinen Fehlern gerungen?
+3. Könnte ich das Gleiche ohne KI-Unterstützung?
+
+::: {.callout-note}
+## Für Lehrende
+
+Wenn du Studierende fragst, ob sie mit KI „besser gelernt" haben, bekommst du keine valide Antwort. Ihre subjektive Einschätzung korreliert wahrscheinlich mit der Leichtigkeit des Prozesses, nicht mit dem tatsächlichen Lernerfolg.
+
+Stattdessen: Prüfe Kompetenz ohne KI-Zugang. Nur das zeigt, was wirklich gelernt wurde.
+:::
 
 ### Forschungsergebnisse: Die Kosten des kognitiven Auslagerns
 

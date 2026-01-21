@@ -28,6 +28,15 @@ Stelle dich auf einer imaginären Linie auf:
 {{< timer 5 >}}
 :::
 
+::: {.callout-note}
+## Für die Moderation
+
+Merke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:
+
+- **Bei Gruppenaktivitäten**: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)
+- **Warum**: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen, die Annahmen hinterfragen.
+:::
+
 ## Ziel des Workshops
 
 Was wir heute **nicht** tun:

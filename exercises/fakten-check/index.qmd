@@ -6,27 +6,112 @@ sidebar: exercises
 
 ## Lernziele
 
-- Erfahren, dass Chatbots selbstbewusst falsche Informationen liefern können
+- Verstehen, warum Chatbots selbstbewusst falsche Informationen liefern können
 - Strategien entwickeln, um KI-Outputs zu überprüfen
+- Die Grenzen der eigenen Evaluationsfähigkeit erkennen
+
+::: {.key-point}
+## Teil 1: Das Problem verstehen (10 min)
+
+### Warum Chatbots "halluzinieren"
+
+Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Sie haben **kein internes Faktenregister** und **keine Möglichkeit zu prüfen**, ob ihre Aussagen wahr sind.
+
+**Die Mechanik der Halluzination:**
+
+1. **Statistische Plausibilität statt Wahrheit**: Ein Sprachmodell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. "Zürich ist die Hauptstadt der Schweiz" klingt statistisch plausibel (grosse Stadt, wichtiges Land), auch wenn es falsch ist.
+
+2. **Selbstsichere Formulierung ist trainiert**: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. Das Modell hat gelernt, dass Aussagen typischerweise ohne Hedging formuliert werden.
+
+3. **Kein Zugang zu Quellen beim Generieren**: Auch wenn das Modell auf Milliarden von Texten trainiert wurde, "erinnert" es sich nicht an konkrete Quellen. Es rekonstruiert plausibel klingende Informationen.
+
+### Forschungsbefunde
+
+Studien zeigen konsistent:
+
+- **Halluzinationsraten variieren stark** je nach Thema, Modell und Fragetyp
+- **Fachspezifische Fragen** sind besonders anfällig, da die Trainingsdaten weniger davon enthalten
+- **Aktuelle Informationen** sind problematisch, da das Training einen Stichtag hat
+- **Numerische Details** (Daten, Zahlen, Statistiken) sind besonders unzuverlässig
+- **Die Selbstsicherheit korreliert nicht mit Korrektheit**: Falsche Antworten klingen genauso überzeugend wie richtige
+
+### Beispiele aus der Praxis
+
+**Beispiel 1: Erfundene Zitate**
+
+> Frage: "Was hat Einstein über das Internet gesagt?"
+>
+> Antwort: "Einstein sagte einmal: 'Das Internet wird die Art verändern, wie wir kommunizieren und lernen.'"
+
+Das klingt plausibel. Einstein war ein Visionär. Aber er starb 1955, das Internet existierte noch nicht. Das Zitat ist erfunden.
+
+**Beispiel 2: Falsche Fakten mit korrektem Kontext**
+
+> Frage: "Wann wurde die BFH gegründet?"
+>
+> Antwort: "Die Berner Fachhochschule wurde 1997 gegründet und ist eine der grössten Fachhochschulen der Schweiz."
+
+Die Jahreszahl könnte stimmen oder nicht. Der Kontext (Fachhochschule, Schweiz, gross) ist korrekt und macht die Antwort überzeugend, auch wenn das Detail falsch wäre.
+
+**Beispiel 3: Plausible Erfindung**
+
+> Frage: "Welche Dosierung empfiehlt die Schweizer Gesellschaft für Kardiologie für Metoprolol bei Herzinsuffizienz?"
+>
+> Antwort: "Die Schweizer Gesellschaft für Kardiologie empfiehlt eine Anfangsdosis von 12.5-25mg zweimal täglich, mit schrittweiser Erhöhung auf bis zu 200mg täglich."
+
+Das klingt medizinisch korrekt (Titration, typische Dosierungsbereiche). Aber: Ist das die aktuelle Empfehlung? Hat die SGK überhaupt eigene Empfehlungen oder übernimmt sie ESC-Leitlinien? Ein Experte würde sofort skeptisch sein.
+:::
+
+::: {.callout-important}
+## Die entscheidende Einsicht
+
+Als Experte in deinem Fach kannst du Halluzinationen erkennen.
+
+**Deine Studierenden können das nicht.**
+
+Sie haben nicht das Hintergrundwissen, um zu merken, wenn etwas subtil falsch ist. Für sie klingt die falsche Antwort genauso überzeugend wie die richtige.
+
+Das bedeutet:
+
+- Wenn Studierende Chatbots als Informationsquelle nutzen, lernen sie möglicherweise Falsches
+- Sie können nicht evaluieren, was sie nicht verstehen
+- Die Selbstsicherheit der KI vermittelt falsches Vertrauen
+:::
 
 ::: {.experiment}
-## Deine Aufgabe
+## Teil 2: Selbst testen (10 min)
 
-### Teil 1: Fragen stellen (10 min)
+Jetzt testest du das Phänomen in deinem eigenen Fachgebiet.
 
-Stelle einem Chatbot **3 faktische Fragen aus deinem Fachgebiet**.
+### Wähle deinen Pfad
 
-Wähle Fragen, die:
+::: {.panel-tabset}
 
-- Nicht trivial sind (nicht "Was ist die Hauptstadt der Schweiz?")
-- Überprüfbar sind (du kennst die richtige Antwort oder kannst sie nachschlagen)
-- Fachspezifisch sind (aus deinem Lehrgebiet)
+## Pfad A: Grundlagen
 
-Beispiele:
+**Für Teilnehmende, die Chatbots noch nicht regelmässig nutzen**
 
-- "Wann wurde [Gesetz X] in der Schweiz eingeführt?"
-- "Welche Dosierung empfiehlt [Richtlinie Y] für [Medikament Z]?"
-- "Wie lautet die Formel für [Konzept X]?"
+Stelle 3 Fragen aus dem Bereich Allgemeinwissen, bei denen du die Antwort sicher kennst:
+
+- Eine historische Frage (Datum, Person, Ereignis aus deinem Fachgebiet)
+- Eine Frage zu einer bekannten Definition oder Formel
+- Eine Frage zu einem Standardwerk oder einer wichtigen Person in deinem Fach
+
+**Beispiel**: "In welchem Jahr wurde die Pflichtversicherung gegen Unfälle in der Schweiz eingeführt?"
+
+## Pfad B: Fachspezifisch
+
+**Für Teilnehmende mit regelmässiger KI-Erfahrung**
+
+Stelle 3 Fragen, die typisch für deine Studierenden wären:
+
+- Eine Frage, die Studierende im 1. Semester stellen würden
+- Eine Frage aus einer Prüfung oder Übung
+- Eine Frage zu einem häufigen Missverständnis in deinem Fach
+
+**Beispiel**: "Welche Dosierung empfiehlt die aktuelle Schweizer Leitlinie für [Medikament X] bei [Indikation Y]?"
+
+:::
 
 Notiere die Fragen und Antworten.
 
@@ -34,44 +119,58 @@ Notiere die Fragen und Antworten.
 :::
 
 ::: {.experiment}
-## Teil 2: Überprüfen (10 min)
+## Teil 3: Überprüfen (10 min)
 
-Überprüfe die Antworten des Chatbots:
+Überprüfe die Antworten des Chatbots mit deinem Fachwissen:
 
-- Stimmen sie mit deinem Fachwissen überein?
+- Stimmen sie mit deinem Wissen überein?
 - Kannst du die Informationen in einer zuverlässigen Quelle bestätigen?
 
 Kategorisiere jede Antwort:
 
-- ✓ Korrekt
-- ~ Teilweise korrekt
-- ✗ Falsch (Halluzination)
+| Kategorie | Bedeutung |
+|-----------|-----------|
+| ✓ Korrekt | Inhaltlich richtig, keine Fehler |
+| ~ Teilweise korrekt | Grundidee stimmt, aber Details falsch oder ungenau |
+| ✗ Falsch (Halluzination) | Inhaltlich falsch, erfunden, oder irreführend |
 
 {{< timer 10 >}}
 :::
 
 ::: {.group}
-## Teil 3: Austausch (5 min)
+## Teil 4: Austausch (5 min)
 
-Tauscht euch in Kleingruppen aus:
+Tauscht euch in Kleingruppen aus (idealerweise gemischte Gruppen aus Pfad A und B):
 
 - Was habt ihr gefunden?
-- Bei welchen Themen waren die Chatbots zuverlässig?
+- Bei welchen Themen waren die Chatbots zuverlässiger?
 - Wo gab es Fehler?
+- Hättet ihr die Fehler ohne euer Fachwissen erkannt?
+
+::: {.callout-tip collapse="true"}
+## Vertiefung für erfahrene Nutzende
+
+Falls ihr alle den fachspezifischen Pfad gewählt habt:
+
+- Vergleicht: Waren bestimmte Fachbereiche anfälliger für Halluzinationen?
+- Diskutiert: Wie könntet ihr das Phänomen euren Studierenden demonstrieren, ohne sie zu überfordern?
+:::
 
 {{< timer 5 >}}
 :::
 
 ::: {.reflect}
-## Teil 4: Strukturierte Reflexion (5 min)
+## Teil 5: Strukturierte Reflexion (5 min)
 
 Beantworte für dich diese Fragen:
 
-1. **Muster erkennen**: Für welche Art von Fragen war der Chatbot zuverlässiger? Wann war er weniger zuverlässig?
+1. **Muster erkennen**: Für welche Art von Fragen war der Chatbot zuverlässiger? Bei welchen Fragetypen traten mehr Fehler auf?
 
 2. **Verbindung zur Textgenerierung**: Der Chatbot klang bei falschen Antworten genauso selbstbewusst wie bei richtigen. Wie erklärst du dir das, basierend auf dem, was du über Textgenerierung gelernt hast?
 
 3. **Implikationen für Studierende**: Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen, ohne Fachexpertise zu haben?
+
+4. **Deine Rolle**: Was könntest du tun, um deine Studierenden für dieses Problem zu sensibilisieren?
 
 {{< timer 5 >}}
 :::
@@ -104,4 +203,5 @@ Für Lehrende bedeutet das:
 - Eigene Outputs immer prüfen
 - Studierende für dieses Problem sensibilisieren
 - Kritische Evaluation als Kompetenz vermitteln
+- Bewusstsein schaffen: Expertise ist Voraussetzung für Evaluation
 :::

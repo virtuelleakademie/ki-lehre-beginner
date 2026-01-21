@@ -86,14 +86,16 @@ Das **Werkzeug** denkt, du akzeptierst.
 | KI erklärt Konzept | OK | Kommt drauf an |
 | KI generiert Übungen | OK | Könnte OK sein |
 
-## Das Produktivitäts-Lern-Paradox
+## Der Produktivitäts-Lern-Zielkonflikt
 
 ::: {.key-point}
-## Das zentrale Problem
+## Kein Paradox, sondern vorhersagbar
 
 KI macht Aufgaben **einfacher**.
 
 Aber Lernen braucht **kognitive Anstrengung**.
+
+Das ist kein überraschender Widerspruch. Es folgt direkt aus der kognitiven Architektur: Das Gehirn lernt durch Vorhersagefehler, die nur entstehen, wenn man selbst denkt.
 
 Wenn Studierende auslagern, was sie üben sollten, bekommen sie das **Produkt**, aber nicht den **Lerneffekt**.
 :::

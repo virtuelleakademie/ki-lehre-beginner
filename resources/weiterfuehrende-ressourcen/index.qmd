@@ -14,7 +14,7 @@ Unser umfassender Leitfaden behandelt die theoretischen Grundlagen dieses Worksh
 - Wie Sprachmodelle funktionieren
 - Expertise-Entwicklung und kognitive Architektur
 - Cognitive Load Theory und Lernen
-- Das Produktivitäts-Lern-Paradox
+- Der Produktivitäts-Lern-Zielkonflikt
 - Kritisches Denken und Domänenwissen
 
 [→ Zum Refresher Guide](https://virtuelleakademie.github.io/ki-lehre-refresher/guide/)
@@ -43,9 +43,9 @@ Eine empirische Studie zu studentischen KI-Nutzungsmustern zeigt:
 
 ## Schlüsselstudien
 
-### Das Produktivitäts-Lern-Paradox
+### Der Produktivitäts-Lern-Zielkonflikt
 
-Die Bastani-Studie (2024) zeigt das zentrale Problem: Studierende mit GPT-4-Zugang lösten 48% mehr Mathematikaufgaben, schnitten aber 17% schlechter ab, als sie danach ohne KI-Zugang getestet wurden.
+Die Bastani-Studie (2024) illustriert den zentralen Zielkonflikt: Studierende mit GPT-4-Zugang lösten 48% mehr Mathematikaufgaben, schnitten aber 17% schlechter ab, als sie danach ohne KI-Zugang getestet wurden. Das ist keine überraschende Entdeckung, sondern folgt direkt aus dem, was wir über Lernen wissen: Produktivitätsgewinne durch Auslagerung kognitiver Arbeit können zu Lernverlusten führen.
 
 Diese Studie wird im [Refresher Guide](https://virtuelleakademie.github.io/ki-lehre-refresher/guide/) ausführlich diskutiert.
 
