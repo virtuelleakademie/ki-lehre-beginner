@@ -1738,5 +1738,17 @@
       "Frage 2: Wofür kann KI verwendet werden?",
       "Slides: Möglichkeiten & Grenzen"
     ]
+  },
+  {
+    "objectID": "slides/frage-3-wozu-soll-ich/index.html#was-die-hirnforschung-zeigt",
+    "href": "slides/frage-3-wozu-soll-ich/index.html#was-die-hirnforschung-zeigt",
+    "title": "Frage 3: Wann hilft KI, wann schadet sie?",
+    "section": "Was die Hirnforschung zeigt",
+    "text": "Was die Hirnforschung zeigt\nNeurowissenschaftliche Forschung von Fedorenko und Gibson am MIT zeigt: Sprache und Denken sind im Gehirn getrennt [@fedorenkoLanguagePrimarilyTool2024].\nDas Sprachsystem des Gehirns (etwa so gross wie eine Erdbeere) funktioniert als Übersetzer: Es übersetzt zwischen externer Sprache und internen Bedeutungsrepräsentationen in anderen Hirnarealen. Wenn wir denken, sind die Sprachareale kaum aktiv.\n\nDie Verbindung zu Offloading und Outsourcing\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nWenn du einen Chatbot nutzt, um einen Text zu verfassen:\n\nOffloading: Du hast die Ideen, die Argumente, das Wissen. Du nutzt KI, um diese in polierte Sprache zu übersetzen. Das Denken passiert bei dir.\nOutsourcing: Du lässt die KI Ideen, Argumente und Inhalte generieren, ohne diese selbst zu durchdenken.\n\nFür Studierende, die lernen sollen, selbst zu denken, ist Outsourcing problematisch: Der Text sieht fertig aus, aber die kognitiven Prozesse, die zu Lernen führen, haben bei der Person nicht stattgefunden.",
+    "crumbs": [
+      "Workshop",
+      "Frage 3: Wann hilft KI, wann schadet sie?",
+      "Slides: Offloading vs. Outsourcing"
+    ]
   }
 ]
