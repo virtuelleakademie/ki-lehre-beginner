@@ -95,6 +95,23 @@ Sprachmodelle werden trainiert, **plausibel klingende** Fortsetzungen zu generie
 Das Ergebnis: Sie können überzeugend klingende Texte produzieren, die inhaltlich falsch sind.
 :::
 
+## Warum halluzinieren Sprachmodelle?
+
+Neue Forschung gibt Einblick in den Mechanismus:
+
+1. Der **Standardzustand** ist "keine Antwort geben"
+2. Ein internes Signal sagt: "Ich weiss das"
+3. Dieses Signal **überschreibt** den Standardzustand
+4. Wenn das Signal **falsch feuert** → Halluzination
+
+::: {.fragment}
+Das Modell "glaubt", es weiss etwas, obwohl es das nicht tut.
+:::
+
+::: aside
+Quelle: [Anthropic Research: Tracing Thoughts](https://www.anthropic.com/research/tracing-thoughts-language-model)
+:::
+
 ## Chain-of-Thought "Denken"
 
 Explizites Nachdenken verbessert die Ergebnisse:
