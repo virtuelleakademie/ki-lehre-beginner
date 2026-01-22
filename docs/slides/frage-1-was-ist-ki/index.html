@@ -1,373 +1,556 @@
 <!DOCTYPE html>
-<html lang="de"><head>
-<link href="../..//assets/robot.png" rel="icon" type="image/png">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Frage 1: Was ist KI? – KI in der Lehre: Beginner</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../exercises/copilot-einstieg/index.html" rel="next">
+<link href="../../workshop/einstieg/index.html" rel="prev">
+<link href="../..//assets/robot.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-a94639a2a79a10208c3806ea22bc16b3.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-f7ea35562251465ded65364387175922.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-a94639a2a79a10208c3806ea22bc16b3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-b3afa4386286488c542f1afdd5bd1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
-<link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.8.27">
+<link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+<script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<style>
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f06a' !important;
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f0c3' !important;
+  background-image: none;
+}
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f075' !important;
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f51b' !important;
+  background-image: none;
+}
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\e2ca' !important;
+  background-image: none;
+}
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f005' !important;
+  background-image: none;
+}
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f002' !important;
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f0eb' !important;
+  background-image: none;
+}
+div.callout-group.callout {
+  border-left-color: #A3195B;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f0c0' !important;
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f328' !important;
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: #A3195B;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f007' !important;
+  background-image: none;
+}
+</style>
 
-  <title>KI in der Lehre: Beginner – Frage 1: Was ist KI?</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-      vertical-align: middle;
-    }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-ba71eb4af3d9108b4a00943b659efcae.css">
-  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/reveal-attribution/attribution.css" rel="stylesheet">
-  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <script type="application/json" class="js-hypothesis-config">
-  {
-    "theme": "clean"
-  }
-  </script>
-  <script async="" src="https://hypothes.is/embed.js"></script>
-  <script>
-    window.document.addEventListener("DOMContentLoaded", function (_event) {
-      document.body.classList.add('hypothesis-enabled');
-    });
-  </script>
-  <style type="text/css">
-    .reveal div.sourceCode {
-      margin: 0;
-      overflow: auto;
-    }
-    .reveal div.hanging-indent {
-      margin-left: 1em;
-      text-indent: -1em;
-    }
-    .reveal .slide:not(.center) {
-      height: 100%;
-    }
-    .reveal .slide.scrollable {
-      overflow-y: auto;
-    }
-    .reveal .footnotes {
-      height: 100%;
-      overflow-y: auto;
-    }
-    .reveal .slide .absolute {
-      position: absolute;
-      display: block;
-    }
-    .reveal .footnotes ol {
-      counter-reset: ol;
-      list-style-type: none; 
-      margin-left: 0;
-    }
-    .reveal .footnotes ol li:before {
-      counter-increment: ol;
-      content: counter(ol) ". "; 
-    }
-    .reveal .footnotes ol li > p:first-child {
-      display: inline-block;
-    }
-    .reveal .slide ul,
-    .reveal .slide ol {
-      margin-bottom: 0.5em;
-    }
-    .reveal .slide ul li,
-    .reveal .slide ol li {
-      margin-top: 0.4em;
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide ul[role="tablist"] li {
-      margin-bottom: 0;
-    }
-    .reveal .slide ul li > *:first-child,
-    .reveal .slide ol li > *:first-child {
-      margin-block-start: 0;
-    }
-    .reveal .slide ul li > *:last-child,
-    .reveal .slide ol li > *:last-child {
-      margin-block-end: 0;
-    }
-    .reveal .slide .columns:nth-child(3) {
-      margin-block-start: 0.8em;
-    }
-    .reveal blockquote {
-      box-shadow: none;
-    }
-    .reveal .tippy-content>* {
-      margin-top: 0.2em;
-      margin-bottom: 0.7em;
-    }
-    .reveal .tippy-content>*:last-child {
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide > img.stretch.quarto-figure-center,
-    .reveal .slide > img.r-stretch.quarto-figure-center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-left,
-    .reveal .slide > img.r-stretch.quarto-figure-left  {
-      display: block;
-      margin-left: 0;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-right,
-    .reveal .slide > img.r-stretch.quarto-figure-right  {
-      display: block;
-      margin-left: auto;
-      margin-right: 0; 
-    }
-  </style>
-  <script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-  <link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
-  <style>
-  div.callout-source-check.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-source-check.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f002' !important;
-    background-image: none;
-  }
-  div.callout-experiment.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-experiment.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f0c3' !important;
-    background-image: none;
-  }
-  div.callout-pro-tip.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-pro-tip.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\e2ca' !important;
-    background-image: none;
-  }
-  div.callout-reflect.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-reflect.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f0eb' !important;
-    background-image: none;
-  }
-  div.callout-prompt.callout {
-    border-left-color: #333333;
-  }
-  div.callout-prompt.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
-  }
-  div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f328' !important;
-    background-image: none;
-  }
-  div.callout-demonstration.callout {
-    border-left-color: #333333;
-  }
-  div.callout-demonstration.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
-  }
-  div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f51b' !important;
-    background-image: none;
-  }
-  div.callout-warning.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-warning.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f06a' !important;
-    background-image: none;
-  }
-  div.callout-scenario.callout {
-    border-left-color: #666666;
-  }
-  div.callout-scenario.callout-style-default > .callout-header {
-    background-color: rgba(102, 102, 102, 0.13);
-  }
-  div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f075' !important;
-    background-image: none;
-  }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f007' !important;
-    background-image: none;
-  }
-  div.callout-group.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-group.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f0c0' !important;
-    background-image: none;
-  }
-  div.callout-key-point.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f005' !important;
-    background-image: none;
-  }
-  </style>
+
+<link rel="stylesheet" href="../../styles/styles.css">
+<link rel="stylesheet" href="../../site_libs/quarto-contrib/quarto-project/quarto-ext/fontawesome/assets/css/all.css">
 <meta property="og:title" content="Frage 1: Was ist KI? – KI in der Lehre: Beginner">
 <meta property="og:description" content="Wie funktionieren Sprachmodelle wirklich?">
 <meta property="og:site_name" content="KI in der Lehre: Beginner">
 </head>
-<body class="quarto-light">
-  <div class="reveal">
-    <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Frage 1: Was ist KI?</h1>
-  <p class="subtitle">Wie funktionieren Sprachmodelle wirklich?</p>
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
-<div class="quarto-title-authors">
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">KI in der Lehre: Beginner</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../workshop/index.html" aria-current="page"> <i class="bi bi-card-list" role="img">
+</i> 
+<span class="menu-text">Workshop</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../slides/index.html"> <i class="bi bi-file-slides" role="img">
+</i> 
+<span class="menu-text">Slides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../exercises/index.html"> <i class="bi bi-pencil" role="img">
+</i> 
+<span class="menu-text">Übungen</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ressourcen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-book" role="img">
+</i> 
+ <span class="menu-text">Ressourcen</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-ressourcen">    
+        <li>
+    <a class="dropdown-item" href="../../resources/reflexion/index.html">
+ <span class="dropdown-text">Reflexionsfragen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/schreiben-als-sampling/index.html">
+ <span class="dropdown-text">Schreiben als Sampling</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/prompting-basics/index.html">
+ <span class="dropdown-text">Prompting für Einsteiger</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/weiterfuehrende-ressourcen/index.html">
+ <span class="dropdown-text">Weiterführende Ressourcen</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-dokumente" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-file-earmark-text" role="img">
+</i> 
+ <span class="menu-text">Dokumente</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-dokumente">    
+        <li>
+    <a class="dropdown-item" href="https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf" target="_blank">
+ <span class="dropdown-text">KI Policy der BFH</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx" target="_blank">
+ <span class="dropdown-text">Abgeklärte KI-Tools (Intranet)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Datenklassifikation.aspx" target="_blank">
+ <span class="dropdown-text">Datenklassifikation (Intranet)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../assets/pdfs/Begleitdokument.pdf" target="_blank">
+ <span class="dropdown-text">Begleitdokument: KI Weiterbildung</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../assets/pdfs/Orientierungshilfe.pdf" target="_blank">
+ <span class="dropdown-text">Orientierungshilfe</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/" title="BFH Weiterbildung: KI in der Lehre" class="quarto-navigation-tool px-1" aria-label="BFH Weiterbildung: KI in der Lehre" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
+    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base" target="_blank"><i class="bi bi-lightbulb-fill"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../slides/frage-1-was-ist-ki/index.html">Frage 1: Was ist KI?</a></li><li class="breadcrumb-item"><a href="../../slides/frage-1-was-ist-ki/index.html">Slides: Grundlagen</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Suchen"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../workshop/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übersicht</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../workshop/einstieg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einstieg</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frage 1: Was ist KI?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../slides/frage-1-was-ist-ki/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Slides: Grundlagen</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frage 2: Wofür kann KI verwendet werden?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/copilot-einstieg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung: Copilot Onboarding</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../slides/frage-2-wozu-kann-ki/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides: Möglichkeiten &amp; Grenzen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/fakten-check/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung: Fakten-Check</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Frage 3: Wann hilft KI, wann schadet sie?</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../slides/frage-3-wozu-soll-ich/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides: Offloading vs.&nbsp;Outsourcing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../exercises/offloading-outsourcing/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung: Szenarien analysieren</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../workshop/abschluss/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Abschluss</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../resources/reflexion/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reflexionsfragen</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#präsentation" id="toc-präsentation" class="nav-link active" data-scroll-target="#präsentation">Präsentation</a></li>
+  <li><a href="#inhaltsübersicht" id="toc-inhaltsübersicht" class="nav-link" data-scroll-target="#inhaltsübersicht">Inhaltsübersicht</a>
+  <ul class="collapse">
+  <li><a href="#kernbotschaften" id="toc-kernbotschaften" class="nav-link" data-scroll-target="#kernbotschaften">Kernbotschaften</a></li>
+  </ul></li>
+  <li><a href="#interaktiv-token-vorhersage" id="toc-interaktiv-token-vorhersage" class="nav-link" data-scroll-target="#interaktiv-token-vorhersage">Interaktiv: Token-Vorhersage</a></li>
+  <li><a href="#interaktiv-temperature" id="toc-interaktiv-temperature" class="nav-link" data-scroll-target="#interaktiv-temperature">Interaktiv: Temperature</a></li>
+  <li><a href="#die-parallele-zum-schreiben" id="toc-die-parallele-zum-schreiben" class="nav-link" data-scroll-target="#die-parallele-zum-schreiben">Die Parallele zum Schreiben</a></li>
+  <li><a href="#kurze-reflexion-2-min" id="toc-kurze-reflexion-2-min" class="nav-link" data-scroll-target="#kurze-reflexion-2-min">Kurze Reflexion (2 min)</a></li>
+  <li><a href="#takeaway" id="toc-takeaway" class="nav-link" data-scroll-target="#takeaway">Takeaway</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../slides/frage-1-was-ist-ki/index.html">Frage 1: Was ist KI?</a></li><li class="breadcrumb-item"><a href="../../slides/frage-1-was-ist-ki/index.html">Slides: Grundlagen</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Frage 1: Was ist KI?</h1>
+<p class="subtitle lead">Wie funktionieren Sprachmodelle wirklich?</p>
 </div>
 
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="präsentation" class="level2">
+<h2 class="anchored" data-anchor-id="präsentation">Präsentation</h2>
+<p>In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch statistische Vorhersage und Denken durch Chain-of-Thought.</p>
+<p><a href="slides.html" class="btn btn-primary" target="_blank">Slides in neuem Fenster öffnen</a></p>
+<iframe src="slides.html" width="100%" height="500" style="border: 1px solid #ccc; border-radius: 4px;">
+</iframe>
 </section>
-<section id="überblick" class="slide level2">
-<h2>Überblick</h2>
+<section id="inhaltsübersicht" class="level2">
+<h2 class="anchored" data-anchor-id="inhaltsübersicht">Inhaltsübersicht</h2>
 <p><strong>Dauer:</strong> 45 Minuten</p>
-<table class="caption-top">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Thema</th>
@@ -389,75 +572,63 @@
 </tr>
 </tbody>
 </table>
-</section>
-<section id="kernbotschaften" class="slide level2">
-<h2>Kernbotschaften</h2>
+<section id="kernbotschaften" class="level3">
+<h3 class="anchored" data-anchor-id="kernbotschaften">Kernbotschaften</h3>
 <ol type="1">
 <li>LLMs sagen das nächste Wort vorher, basierend auf Mustern in Trainingsdaten</li>
 <li>Denken (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext</li>
 <li>Moderne Modelle sind extrem leistungsfähig; der Kontext bestimmt das Ergebnis</li>
 </ol>
 </section>
-<section id="was-ist-ein-sprachmodell" class="slide level2">
-<h2>Was ist ein Sprachmodell?</h2>
-<p>Ein Sprachmodell berechnet <strong>Wahrscheinlichkeiten für das nächste Wort</strong>.</p>
-<blockquote>
-<p>“Der Hund liegt auf dem ___”</p>
-</blockquote>
-<p>Das Modell hat gelernt:</p>
-<ul>
-<li>“Boden” ist wahrscheinlich (32%)</li>
-<li>“Sofa” ist wahrscheinlich (24%)</li>
-<li>“Dach” ist unwahrscheinlich (1%)</li>
-</ul>
 </section>
-<section id="interaktiv-token-vorhersage" class="slide level2">
-<h2>Interaktiv: Token-Vorhersage</h2>
+<section id="interaktiv-token-vorhersage" class="level2">
+<h2 class="anchored" data-anchor-id="interaktiv-token-vorhersage">Interaktiv: Token-Vorhersage</h2>
+<p>Wie sieht “Next-Word-Prediction” konkret aus? Wähle einen Satzanfang und sieh die Wahrscheinlichkeitsverteilung für das nächste Wort.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="55" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 54;"><span id="cb1-55"><a></a>tokenDatabase <span class="op">=</span> ({</span>
-<span id="cb1-56"><a></a>  <span class="st">"Der Hund liegt auf dem"</span><span class="op">:</span> [</span>
-<span id="cb1-57"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Boden"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.32</span>}<span class="op">,</span></span>
-<span id="cb1-58"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Sofa"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
-<span id="cb1-59"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Bett"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.18</span>}<span class="op">,</span></span>
-<span id="cb1-60"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Teppich"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.14</span>}<span class="op">,</span></span>
-<span id="cb1-61"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Rasen"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
-<span id="cb1-62"><a></a>  ]<span class="op">,</span></span>
-<span id="cb1-63"><a></a>  <span class="st">"Die Katze sitzt auf dem"</span><span class="op">:</span> [</span>
-<span id="cb1-64"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Dach"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.28</span>}<span class="op">,</span></span>
-<span id="cb1-65"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Baum"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
-<span id="cb1-66"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Sofa"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
-<span id="cb1-67"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Tisch"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.16</span>}<span class="op">,</span></span>
-<span id="cb1-68"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Fensterbrett"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
-<span id="cb1-69"><a></a>  ]<span class="op">,</span></span>
-<span id="cb1-70"><a></a>  <span class="st">"Die Studierenden lernen für die"</span><span class="op">:</span> [</span>
-<span id="cb1-71"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Prüfung"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.45</span>}<span class="op">,</span></span>
-<span id="cb1-72"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Klausur"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.25</span>}<span class="op">,</span></span>
-<span id="cb1-73"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Zukunft"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}<span class="op">,</span></span>
-<span id="cb1-74"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Vorlesung"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.10</span>}<span class="op">,</span></span>
-<span id="cb1-75"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Karriere"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.08</span>}</span>
-<span id="cb1-76"><a></a>  ]<span class="op">,</span></span>
-<span id="cb1-77"><a></a>  <span class="st">"Der Professor erklärt das"</span><span class="op">:</span> [</span>
-<span id="cb1-78"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Konzept"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.28</span>}<span class="op">,</span></span>
-<span id="cb1-79"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Thema"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
-<span id="cb1-80"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Problem"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
-<span id="cb1-81"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Modell"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.16</span>}<span class="op">,</span></span>
-<span id="cb1-82"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Prinzip"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
-<span id="cb1-83"><a></a>  ]<span class="op">,</span></span>
-<span id="cb1-84"><a></a>  <span class="st">"KI wird in Zukunft"</span><span class="op">:</span> [</span>
-<span id="cb1-85"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"wichtiger"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
-<span id="cb1-86"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"viele"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
-<span id="cb1-87"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"eine"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.18</span>}<span class="op">,</span></span>
-<span id="cb1-88"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"immer"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
-<span id="cb1-89"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"unsere"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.18</span>}</span>
-<span id="cb1-90"><a></a>  ]</span>
-<span id="cb1-91"><a></a>})</span>
-<span id="cb1-92"><a></a></span>
-<span id="cb1-93"><a></a>viewof selectedSentence <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(<span class="bu">Object</span><span class="op">.</span><span class="fu">keys</span>(tokenDatabase)<span class="op">,</span> {</span>
-<span id="cb1-94"><a></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Satzanfang:"</span><span class="op">,</span></span>
-<span id="cb1-95"><a></a>  <span class="dt">value</span><span class="op">:</span> <span class="st">"Der Hund liegt auf dem"</span></span>
-<span id="cb1-96"><a></a>})</span>
-<span id="cb1-97"><a></a></span>
-<span id="cb1-98"><a></a>currentProbs <span class="op">=</span> tokenDatabase[selectedSentence]</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="43" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 42;"><span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>tokenDatabase <span class="op">=</span> ({</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Der Hund liegt auf dem"</span><span class="op">:</span> [</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Boden"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.32</span>}<span class="op">,</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Sofa"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Bett"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.18</span>}<span class="op">,</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Teppich"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.14</span>}<span class="op">,</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Rasen"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Die Katze sitzt auf dem"</span><span class="op">:</span> [</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Dach"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.28</span>}<span class="op">,</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Baum"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Sofa"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Tisch"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.16</span>}<span class="op">,</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Fensterbrett"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Die Studierenden lernen für die"</span><span class="op">:</span> [</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Prüfung"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.45</span>}<span class="op">,</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Klausur"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.25</span>}<span class="op">,</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Zukunft"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}<span class="op">,</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Vorlesung"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.10</span>}<span class="op">,</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Karriere"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.08</span>}</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Der Professor erklärt das"</span><span class="op">:</span> [</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Konzept"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.28</span>}<span class="op">,</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Thema"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Problem"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Modell"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.16</span>}<span class="op">,</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Prinzip"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>  <span class="st">"KI wird in Zukunft"</span><span class="op">:</span> [</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"wichtiger"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"viele"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"eine"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.18</span>}<span class="op">,</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"immer"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"unsere"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.18</span>}</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>viewof selectedSentence <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(<span class="bu">Object</span><span class="op">.</span><span class="fu">keys</span>(tokenDatabase)<span class="op">,</span> {</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Satzanfang:"</span><span class="op">,</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="st">"Der Hund liegt auf dem"</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>currentProbs <span class="op">=</span> tokenDatabase[selectedSentence]</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -480,78 +651,60 @@
 </div>
 </div>
 </div>
-</section>
-<section id="token-wahrscheinlichkeiten" class="slide level2">
-<h2>Token-Wahrscheinlichkeiten</h2>
 <p><strong>Kontext:</strong> <span><span id="ojs-element-id-1"></span></span> ___</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="106" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 105;"><span id="cb2-106"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb2-107"><a></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">120</span><span class="op">,</span></span>
-<span id="cb2-108"><a></a>  <span class="dt">width</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(<span class="dv">700</span><span class="op">,</span> width)<span class="op">,</span></span>
-<span id="cb2-109"><a></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">250</span><span class="op">,</span></span>
-<span id="cb2-110"><a></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="fl">0.5</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Wahrscheinlichkeit"</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d <span class="op">*</span> <span class="dv">100</span>) <span class="op">+</span> <span class="st">"%"</span>}<span class="op">,</span></span>
-<span id="cb2-111"><a></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
-<span id="cb2-112"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb2-113"><a></a>    Plot<span class="op">.</span><span class="fu">barX</span>(currentProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"-x"</span>}})<span class="op">,</span></span>
-<span id="cb2-114"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>(currentProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">prob</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>) <span class="op">+</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">8</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})</span>
-<span id="cb2-115"><a></a>  ]</span>
-<span id="cb2-116"><a></a>})</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="92" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 91;"><span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span></span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(<span class="dv">500</span><span class="op">,</span> width)<span class="op">,</span></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">180</span><span class="op">,</span></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="fl">0.5</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Wahrscheinlichkeit"</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d <span class="op">*</span> <span class="dv">100</span>) <span class="op">+</span> <span class="st">"%"</span>}<span class="op">,</span></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">barX</span>(currentProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"-x"</span>}})<span class="op">,</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(currentProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">prob</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>) <span class="op">+</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})</span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 
 </div>
 </div>
 </div>
-<aside class="notes">
-<p>Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort basierend auf Mustern aus den Trainingsdaten.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<div class="callout callout-style-default callout-key-point callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Key-point</span>Kernaussage
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern aus den Trainingsdaten. Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.</p>
+</div>
+</div>
 </section>
-<section id="was-bedeutet-das" class="slide level2">
-<h2>Was bedeutet das?</h2>
-<p>Das Modell berechnet Wahrscheinlichkeiten für <strong>jedes mögliche nächste Wort</strong>.</p>
-<p>Die Auswahl basiert auf Mustern aus den Trainingsdaten.</p>
-<p>Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung.</p>
-<p><strong>Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.</strong></p>
-</section>
-<section id="temperature-wie-wird-gewählt" class="slide level2">
-<h2>Temperature: Wie wird gewählt?</h2>
+<section id="interaktiv-temperature" class="level2">
+<h2 class="anchored" data-anchor-id="interaktiv-temperature">Interaktiv: Temperature</h2>
 <p>Der Parameter “Temperature” beeinflusst, wie das Modell aus den Wahrscheinlichkeiten wählt.</p>
-<ul>
-<li><strong>Niedrig (0.1-0.5)</strong>: Fast immer das wahrscheinlichste Wort</li>
-<li><strong>Mittel (0.7-1.0)</strong>: Gute Mischung aus Konsistenz und Variation</li>
-<li><strong>Hoch (1.2-1.5)</strong>: Mehr Kreativität, mehr Überraschungen</li>
-</ul>
-</section>
-<section id="interaktiv-temperature" class="slide level2">
-<h2>Interaktiv: Temperature</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="148" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 147;"><span id="cb3-148"><a></a>viewof temperature <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="fl">0.1</span><span class="op">,</span> <span class="fl">2.0</span>]<span class="op">,</span> {</span>
-<span id="cb3-149"><a></a>  <span class="dt">value</span><span class="op">:</span> <span class="fl">1.0</span><span class="op">,</span></span>
-<span id="cb3-150"><a></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span></span>
-<span id="cb3-151"><a></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Temperature"</span></span>
-<span id="cb3-152"><a></a>})</span>
-<span id="cb3-153"><a></a></span>
-<span id="cb3-154"><a></a>scaledProbs <span class="op">=</span> {</span>
-<span id="cb3-155"><a></a>  <span class="kw">const</span> t <span class="op">=</span> temperature<span class="op">;</span></span>
-<span id="cb3-156"><a></a>  <span class="kw">const</span> logits <span class="op">=</span> currentProbs<span class="op">.</span><span class="fu">map</span>(p <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(p<span class="op">.</span><span class="at">prob</span>))<span class="op">;</span></span>
-<span id="cb3-157"><a></a>  <span class="kw">const</span> scaled <span class="op">=</span> logits<span class="op">.</span><span class="fu">map</span>(l <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(l <span class="op">/</span> t))<span class="op">;</span></span>
-<span id="cb3-158"><a></a>  <span class="kw">const</span> sum <span class="op">=</span> scaled<span class="op">.</span><span class="fu">reduce</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a <span class="op">+</span> b<span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
-<span id="cb3-159"><a></a>  <span class="cf">return</span> currentProbs<span class="op">.</span><span class="fu">map</span>((p<span class="op">,</span> i) <span class="kw">=&gt;</span> ({<span class="dt">token</span><span class="op">:</span> p<span class="op">.</span><span class="at">token</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> scaled[i] <span class="op">/</span> sum}))<span class="op">;</span></span>
-<span id="cb3-160"><a></a>}</span>
-<span id="cb3-161"><a></a></span>
-<span id="cb3-162"><a></a>tempDescription <span class="op">=</span> temperature <span class="op">&lt;</span> <span class="fl">0.5</span> <span class="op">?</span> <span class="st">"Deterministisch: Fast immer das wahrscheinlichste Wort"</span> <span class="op">:</span></span>
-<span id="cb3-163"><a></a>  temperature <span class="op">&lt;</span> <span class="fl">1.0</span> <span class="op">?</span> <span class="st">"Ausgeglichen: Gute Mischung"</span> <span class="op">:</span></span>
-<span id="cb3-164"><a></a>  temperature <span class="op">&lt;</span> <span class="fl">1.5</span> <span class="op">?</span> <span class="st">"Kreativ: Mehr Variation"</span> <span class="op">:</span> <span class="st">"Chaotisch: Fast zufällig"</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="118" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 117;"><span id="cb3-118"><a href="#cb3-118" aria-hidden="true" tabindex="-1"></a>viewof temperature <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="fl">0.1</span><span class="op">,</span> <span class="fl">2.0</span>]<span class="op">,</span> {</span>
+<span id="cb3-119"><a href="#cb3-119" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="fl">1.0</span><span class="op">,</span></span>
+<span id="cb3-120"><a href="#cb3-120" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span></span>
+<span id="cb3-121"><a href="#cb3-121" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Temperature"</span></span>
+<span id="cb3-122"><a href="#cb3-122" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb3-123"><a href="#cb3-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-124"><a href="#cb3-124" aria-hidden="true" tabindex="-1"></a>scaledProbs <span class="op">=</span> {</span>
+<span id="cb3-125"><a href="#cb3-125" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> t <span class="op">=</span> temperature<span class="op">;</span></span>
+<span id="cb3-126"><a href="#cb3-126" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> logits <span class="op">=</span> currentProbs<span class="op">.</span><span class="fu">map</span>(p <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(p<span class="op">.</span><span class="at">prob</span>))<span class="op">;</span></span>
+<span id="cb3-127"><a href="#cb3-127" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> scaled <span class="op">=</span> logits<span class="op">.</span><span class="fu">map</span>(l <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(l <span class="op">/</span> t))<span class="op">;</span></span>
+<span id="cb3-128"><a href="#cb3-128" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sum <span class="op">=</span> scaled<span class="op">.</span><span class="fu">reduce</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a <span class="op">+</span> b<span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
+<span id="cb3-129"><a href="#cb3-129" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> currentProbs<span class="op">.</span><span class="fu">map</span>((p<span class="op">,</span> i) <span class="kw">=&gt;</span> ({<span class="dt">token</span><span class="op">:</span> p<span class="op">.</span><span class="at">token</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> scaled[i] <span class="op">/</span> sum}))<span class="op">;</span></span>
+<span id="cb3-130"><a href="#cb3-130" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-131"><a href="#cb3-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-132"><a href="#cb3-132" aria-hidden="true" tabindex="-1"></a>tempDescription <span class="op">=</span> temperature <span class="op">&lt;</span> <span class="fl">0.5</span> <span class="op">?</span> <span class="st">"Deterministisch: Fast immer das wahrscheinlichste Wort"</span> <span class="op">:</span></span>
+<span id="cb3-133"><a href="#cb3-133" aria-hidden="true" tabindex="-1"></a>  temperature <span class="op">&lt;</span> <span class="fl">1.0</span> <span class="op">?</span> <span class="st">"Ausgeglichen: Gute Mischung"</span> <span class="op">:</span></span>
+<span id="cb3-134"><a href="#cb3-134" aria-hidden="true" tabindex="-1"></a>  temperature <span class="op">&lt;</span> <span class="fl">1.5</span> <span class="op">?</span> <span class="st">"Kreativ: Mehr Variation"</span> <span class="op">:</span> <span class="st">"Chaotisch: Fast zufällig"</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-3-1" data-nodetype="declaration">
@@ -576,63 +729,49 @@
 </div>
 <p><strong>Temperature = <span><span id="ojs-element-id-2"></span></span></strong>: <span><span id="ojs-element-id-3"></span></span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="170" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 169;"><span id="cb4-170"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb4-171"><a></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">120</span><span class="op">,</span></span>
-<span id="cb4-172"><a></a>  <span class="dt">width</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(<span class="dv">700</span><span class="op">,</span> width)<span class="op">,</span></span>
-<span id="cb4-173"><a></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">250</span><span class="op">,</span></span>
-<span id="cb4-174"><a></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Angepasste Wahrscheinlichkeit"</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d <span class="op">*</span> <span class="dv">100</span>) <span class="op">+</span> <span class="st">"%"</span>}<span class="op">,</span></span>
-<span id="cb4-175"><a></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
-<span id="cb4-176"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb4-177"><a></a>    Plot<span class="op">.</span><span class="fu">barX</span>(scaledProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#D4A03E"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"-x"</span>}})<span class="op">,</span></span>
-<span id="cb4-178"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>(scaledProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">prob</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>) <span class="op">+</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">8</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})</span>
-<span id="cb4-179"><a></a>  ]</span>
-<span id="cb4-180"><a></a>})</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="140" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 139;"><span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span></span>
+<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(<span class="dv">500</span><span class="op">,</span> width)<span class="op">,</span></span>
+<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">180</span><span class="op">,</span></span>
+<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Angepasste Wahrscheinlichkeit"</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d <span class="op">*</span> <span class="dv">100</span>) <span class="op">+</span> <span class="st">"%"</span>}<span class="op">,</span></span>
+<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
+<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">barX</span>(scaledProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#D4A03E"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"-x"</span>}})<span class="op">,</span></span>
+<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(scaledProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">prob</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>) <span class="op">+</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})</span>
+<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="expression">
 
 </div>
 </div>
 </div>
+<div class="callout callout-style-default callout-pro-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Pro-tip</span>Temperature in der Praxis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Niedrig (0.1-0.5)</strong>: Für Zusammenfassungen, Fakten, konsistente Ausgaben</li>
+<li><strong>Mittel (0.7-1.0)</strong>: Für die meisten Aufgaben ein guter Standard</li>
+<li><strong>Hoch (1.2-1.5)</strong>: Für Brainstorming und kreative Texte</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-<section id="temperature-in-der-praxis" class="slide level2">
-<h2>Temperature in der Praxis</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Einstellung</th>
-<th>Wert</th>
-<th>Anwendung</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Niedrig</td>
-<td>0.1-0.5</td>
-<td>Zusammenfassungen, Fakten, konsistente Ausgaben</td>
-</tr>
-<tr class="even">
-<td>Mittel</td>
-<td>0.7-1.0</td>
-<td>Allgemeine Aufgaben (Standard)</td>
-</tr>
-<tr class="odd">
-<td>Hoch</td>
-<td>1.2-1.5</td>
-<td>Brainstorming, kreative Texte</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="die-parallele-zum-schreiben" class="slide level2">
-<h2>Die Parallele zum Schreiben</h2>
-<p>Du kennst das Gefühl: Du sitzt vor einem leeren Dokument, und viele mögliche Anfänge schwirren im Kopf.</p>
-<p>Dann schreibst du den ersten Satz.</p>
-<p>Plötzlich sind manche Fortsetzungen naheliegend, andere ausgeschlossen.</p>
-<p><strong>Der Text, den du geschrieben hast, wird zum Kontext für das, was als Nächstes kommt.</strong></p>
-</section>
-<section id="schreiben-mensch-vs.-modell" class="slide level2">
-<h2>Schreiben: Mensch vs.&nbsp;Modell</h2>
-<table class="caption-top">
+<section id="die-parallele-zum-schreiben" class="level2">
+<h2 class="anchored" data-anchor-id="die-parallele-zum-schreiben">Die Parallele zum Schreiben</h2>
+<p>Du kennst das Gefühl: Du sitzt vor einem leeren Dokument, und viele mögliche Anfänge schwirren im Kopf. Dann schreibst du den ersten Satz. Plötzlich sind manche Fortsetzungen naheliegend, andere ausgeschlossen. Der Text, den du geschrieben hast, wird zum Kontext für das, was als Nächstes kommt.</p>
+<p>Das ist überraschend ähnlich zu dem, was Sprachmodelle tun:</p>
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Du beim Schreiben</th>
@@ -658,22 +797,39 @@
 </tr>
 </tbody>
 </table>
-<p>Der leere Bildschirm ist schwer, weil wenig Kontext da ist.</p>
-<p>Sobald du anfängst, baut sich Momentum auf.</p>
-</section>
-<section id="warum-das-für-lernen-wichtig-ist" class="slide level2">
-<h2>Warum das für Lernen wichtig ist</h2>
-<p>Wenn du <strong>selbst schreibst</strong>, machst du die Auswahl-Arbeit:</p>
-<p>Du entscheidest, welche Formulierung, welcher Gedankengang.</p>
-<p><strong>Diese Arbeit <em>ist</em> ein Teil des Denkens.</strong></p>
-<div class="fragment">
-<p>Wenn <strong>KI für dich schreibt</strong>, übernimmt sie diese Auswahl.</p>
-<p>Du bekommst das Produkt, aber du hast den Prozess nicht durchlaufen.</p>
+<p>Der leere Bildschirm ist schwer, weil wenig Kontext da ist. Sobald du anfängst, baut sich Momentum auf. Das gilt für Menschen wie für Modelle.</p>
+<div class="callout callout-style-default callout-pro-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Pro-tip</span>Warum das für Lernen wichtig ist
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Wenn du selbst schreibst, machst du die Auswahl-Arbeit: Du entscheidest, welche Formulierung, welcher Gedankengang. Diese Arbeit <em>ist</em> ein Teil des Denkens.</p>
+<p>Wenn KI für dich schreibt, übernimmt sie diese Auswahl. Du bekommst das Produkt, aber du hast den Prozess nicht durchlaufen.</p>
+<p>Mehr dazu: <a href="../../resources/schreiben-als-sampling/index.html">Schreiben als Sampling</a></p>
+</div>
+</div>
 </div>
 </section>
-<section id="kurze-reflexion" class="slide level2">
-<h2>Kurze Reflexion</h2>
-<p>Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.</p>
+<section id="kurze-reflexion-2-min" class="level2">
+<h2 class="anchored" data-anchor-id="kurze-reflexion-2-min">Kurze Reflexion (2 min)</h2>
+<div class="callout callout-style-default callout-reflect callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Reflect</span>Reflexion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bevor wir zur Pause gehen: Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.</p>
 <div id="timer-1"></div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -681,21 +837,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+</div>
+</div>
 </section>
-<section id="takeaway-was-ist-ki" class="slide level2">
-<h2>Takeaway: Was ist KI?</h2>
-<p>Sprachmodelle generieren Text durch <strong>Vorhersage des nächsten Worts</strong>.</p>
-<p>Das klingt simpel, aber es ist funktional ähnlich wie das, was unser Gehirn ständig tut: Muster vervollständigen auf Basis gelernter Assoziationen.</p>
-</section>
-<section id="zwei-faktoren-bestimmen-das-ergebnis" class="slide level2">
-<h2>Zwei Faktoren bestimmen das Ergebnis</h2>
+<section id="takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="takeaway">Takeaway</h2>
+<div class="callout callout-style-default callout-key-point callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Key-point</span>Antwort auf Frage 1: Was ist KI?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Das klingt simpel, aber es ist funktional ähnlich wie das, was unser Gehirn ständig tut: Muster vervollständigen auf Basis gelernter Assoziationen. Die Implementierung ist anders, aber die kognitive Operation hat echte Parallelen.</p>
+<p>Zwei Faktoren bestimmen das Ergebnis:</p>
 <ol type="1">
 <li><strong>Das Modell</strong>: Was es aus Trainingsdaten gelernt hat</li>
 <li><strong>Der Kontext</strong>: Was du im Prompt mitgibst (inkl. Dokumente, Web-Suche, Chat-Verlauf)</li>
 </ol>
-<div class="fragment">
-<p>Moderne Modelle sind extrem leistungsfähig.</p>
-<p><strong>Wenn das Ergebnis nicht passt, frag dich: Was fehlt im Kontext?</strong></p>
+<p>Moderne Modelle sind extrem leistungsfähig. Wenn das Ergebnis nicht passt, frag dich: <strong>Was fehlt im Kontext?</strong></p>
+</div>
+</div>
 
 
 <div class="ojs-auto-generated hidden">
@@ -703,403 +868,501 @@ document.addEventListener("DOMContentLoaded", function () {
 eyJjb250ZW50cyI6WyAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7c2VsZWN0ZWRTZW50ZW5jZX08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTEifSwgIHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImlubGluZSI6InRydWUiLCJzb3VyY2UiOiJodGwuaHRtbGA8c3Bhbj4ke3RlbXBlcmF0dXJlLnRvRml4ZWQoMSl9PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC0yIn0sICB7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOiJ0cnVlIiwic291cmNlIjoiaHRsLmh0bWxgPHNwYW4+JHt0ZW1wRGVzY3JpcHRpb259PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC0zIn1dfQ==
 </script>
 </div>
-</div>
 </section>
-    </div>
-  <div class="quarto-auto-generated-content" style="display: none;">
-<div class="footer footer-default">
-<p>KI in der Lehre: Beginner</p>
-</div>
-</div></div>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../../site_libs/revealjs/plugin/reveal-attribution/attribution.js"></script>
-  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Find all prompt callouts
+  const promptCallouts = document.querySelectorAll('.callout-prompt');
 
-  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+  promptCallouts.forEach(function(callout) {
+    // Find the callout body where the text is
+    const body = callout.querySelector('.callout-body-container');
+    if (!body) return;
 
-  <script>
+    // Get the text content (excluding the copy button itself)
+    const getPromptText = function() {
+      const bodyContent = body.querySelector('.callout-body');
+      if (bodyContent) {
+        return bodyContent.textContent.trim();
+      }
+      return body.textContent.trim();
+    };
 
-      // Full list of configuration options available at:
-      // https://revealjs.com/config/
-      Reveal.initialize({
-'controlsAuto': false,
-'previewLinksAuto': true,
-'pdfSeparateFragments': false,
-'autoAnimateEasing': "ease",
-'autoAnimateDuration': 1,
-'autoAnimateUnmatched': true,
-'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': false,
- 
-        // Display controls in the bottom right corner
-        controls: true,
+    // Create copy button
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'prompt-copy-btn';
+    copyBtn.innerHTML = '<i class="fa fa-copy"></i> Kopieren';
+    copyBtn.title = 'In die Zwischenablage kopieren';
 
-        // Help the user learn the controls by providing hints, for example by
-        // bouncing the down arrow when they first encounter a vertical slide
-        controlsTutorial: false,
+    // Add click handler
+    copyBtn.addEventListener('click', function() {
+      const text = getPromptText();
+      navigator.clipboard.writeText(text).then(function() {
+        // Show success feedback
+        copyBtn.innerHTML = '<i class="fa fa-check"></i> Kopiert!';
+        copyBtn.classList.add('copied');
 
-        // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
-
-        // Visibility rule for backwards navigation arrows; "faded", "hidden"
-        // or "visible"
-        controlsBackArrows: 'faded',
-
-        // Display a presentation progress bar
-        progress: true,
-
-        // Display the page number of the current slide
-        slideNumber: 'c/t',
-
-        // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
-
-        // Add the current slide number to the URL hash so that reloading the
-        // page/copying the URL will return you to the same slide
-        hash: true,
-
-        // Start with 1 for the hash rather than 0
-        hashOneBasedIndex: false,
-
-        // Flags if we should monitor the hash and change slides accordingly
-        respondToHashChanges: true,
-
-        // Push each slide change to the browser history
-        history: true,
-
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
-
-        // Enable the slide overview mode
-        overview: true,
-
-        // Disables the default reveal.js slide layout (scaling and centering)
-        // so that you can use custom CSS layout
-        disableLayout: false,
-
-        // Vertical centering of slides
-        center: false,
-
-        // Enables touch navigation on devices with touch input
-        touch: true,
-
-        // Loop the presentation
-        loop: false,
-
-        // Change the presentation direction to be RTL
-        rtl: false,
-
-        // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
-
-        // Randomizes the order of slides each time the presentation loads
-        shuffle: false,
-
-        // Turns fragments on and off globally
-        fragments: true,
-
-        // Flags whether to include the current fragment in the URL,
-        // so that reloading brings you to the same fragment position
-        fragmentInURL: false,
-
-        // Flags if the presentation is running in an embedded mode,
-        // i.e. contained within a limited portion of the screen
-        embedded: false,
-
-        // Flags if we should show a help overlay when the questionmark
-        // key is pressed
-        help: true,
-
-        // Flags if it should be possible to pause the presentation (blackout)
-        pause: true,
-
-        // Flags if speaker notes should be visible to all viewers
-        showNotes: false,
-
-        // Global override for autoplaying embedded media (null/true/false)
-        autoPlayMedia: null,
-
-        // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
-
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
-
-        // Use this method for navigation when auto-sliding
-        autoSlideMethod: null,
-
-        // Specify the average time in seconds that you think you will spend
-        // presenting each slide. This is used to show a pacing timer in the
-        // speaker view
-        defaultTiming: null,
-
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
-
-        // The display mode that will be used to show slides
-        display: 'block',
-
-        // Hide cursor if inactive
-        hideInactiveCursor: true,
-
-        // Time before the cursor is hidden (in ms)
-        hideCursorTime: 5000,
-
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
-
-        // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'fade',
-
-        // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
-
-        // Transition style for full page slide backgrounds
-        // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
-
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
-
-        // Number of slides away from the current that are visible on mobile
-        // devices. It is advisable to set this to a lower number than
-        // viewDistance in order to save resources.
-        mobileViewDistance: 2,
-
-        // The "normal" size of the presentation, aspect ratio will be preserved
-        // when the presentation is scaled to fit different resolutions. Can be
-        // specified using percentage units.
-        width: 1600,
-
-        height: 900,
-
-        // Factor of the display size that should remain empty around the content
-        margin: 0.1,
-
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
-        // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealAttribution, QuartoSupport,
-
-          RevealMath,
-          RevealNotes,
-          RevealSearch,
-          RevealZoom
-        ]
+        // Reset after 2 seconds
+        setTimeout(function() {
+          copyBtn.innerHTML = '<i class="fa fa-copy"></i> Kopieren';
+          copyBtn.classList.remove('copied');
+        }, 2000);
+      }).catch(function(err) {
+        console.error('Failed to copy:', err);
+        copyBtn.innerHTML = '<i class="fa fa-times"></i> Fehler';
+        setTimeout(function() {
+          copyBtn.innerHTML = '<i class="fa fa-copy"></i> Kopieren';
+        }, 2000);
       });
-    </script>
-    <script type="ojs-module-contents">
-    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxudG9rZW5EYXRhYmFzZSA9ICh7XG4gIFwiRGVyIEh1bmQgbGllZ3QgYXVmIGRlbVwiOiBbXG4gICAge3Rva2VuOiBcIkJvZGVuXCIsIHByb2I6IDAuMzJ9LFxuICAgIHt0b2tlbjogXCJTb2ZhXCIsIHByb2I6IDAuMjR9LFxuICAgIHt0b2tlbjogXCJCZXR0XCIsIHByb2I6IDAuMTh9LFxuICAgIHt0b2tlbjogXCJUZXBwaWNoXCIsIHByb2I6IDAuMTR9LFxuICAgIHt0b2tlbjogXCJSYXNlblwiLCBwcm9iOiAwLjEyfVxuICBdLFxuICBcIkRpZSBLYXR6ZSBzaXR6dCBhdWYgZGVtXCI6IFtcbiAgICB7dG9rZW46IFwiRGFjaFwiLCBwcm9iOiAwLjI4fSxcbiAgICB7dG9rZW46IFwiQmF1bVwiLCBwcm9iOiAwLjI0fSxcbiAgICB7dG9rZW46IFwiU29mYVwiLCBwcm9iOiAwLjIwfSxcbiAgICB7dG9rZW46IFwiVGlzY2hcIiwgcHJvYjogMC4xNn0sXG4gICAge3Rva2VuOiBcIkZlbnN0ZXJicmV0dFwiLCBwcm9iOiAwLjEyfVxuICBdLFxuICBcIkRpZSBTdHVkaWVyZW5kZW4gbGVybmVuIGbDvHIgZGllXCI6IFtcbiAgICB7dG9rZW46IFwiUHLDvGZ1bmdcIiwgcHJvYjogMC40NX0sXG4gICAge3Rva2VuOiBcIktsYXVzdXJcIiwgcHJvYjogMC4yNX0sXG4gICAge3Rva2VuOiBcIlp1a3VuZnRcIiwgcHJvYjogMC4xMn0sXG4gICAge3Rva2VuOiBcIlZvcmxlc3VuZ1wiLCBwcm9iOiAwLjEwfSxcbiAgICB7dG9rZW46IFwiS2FycmllcmVcIiwgcHJvYjogMC4wOH1cbiAgXSxcbiAgXCJEZXIgUHJvZmVzc29yIGVya2zDpHJ0IGRhc1wiOiBbXG4gICAge3Rva2VuOiBcIktvbnplcHRcIiwgcHJvYjogMC4yOH0sXG4gICAge3Rva2VuOiBcIlRoZW1hXCIsIHByb2I6IDAuMjR9LFxuICAgIHt0b2tlbjogXCJQcm9ibGVtXCIsIHByb2I6IDAuMjB9LFxuICAgIHt0b2tlbjogXCJNb2RlbGxcIiwgcHJvYjogMC4xNn0sXG4gICAge3Rva2VuOiBcIlByaW56aXBcIiwgcHJvYjogMC4xMn1cbiAgXSxcbiAgXCJLSSB3aXJkIGluIFp1a3VuZnRcIjogW1xuICAgIHt0b2tlbjogXCJ3aWNodGlnZXJcIiwgcHJvYjogMC4yNH0sXG4gICAge3Rva2VuOiBcInZpZWxlXCIsIHByb2I6IDAuMjB9LFxuICAgIHt0b2tlbjogXCJlaW5lXCIsIHByb2I6IDAuMTh9LFxuICAgIHt0b2tlbjogXCJpbW1lclwiLCBwcm9iOiAwLjIwfSxcbiAgICB7dG9rZW46IFwidW5zZXJlXCIsIHByb2I6IDAuMTh9XG4gIF1cbn0pXG5cbnZpZXdvZiBzZWxlY3RlZFNlbnRlbmNlID0gSW5wdXRzLnNlbGVjdChPYmplY3Qua2V5cyh0b2tlbkRhdGFiYXNlKSwge1xuICBsYWJlbDogXCJTYXR6YW5mYW5nOlwiLFxuICB2YWx1ZTogXCJEZXIgSHVuZCBsaWVndCBhdWYgZGVtXCJcbn0pXG5cbmN1cnJlbnRQcm9icyA9IHRva2VuRGF0YWJhc2Vbc2VsZWN0ZWRTZW50ZW5jZV1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuUGxvdC5wbG90KHtcbiAgbWFyZ2luTGVmdDogMTIwLFxuICB3aWR0aDogTWF0aC5taW4oNzAwLCB3aWR0aCksXG4gIGhlaWdodDogMjUwLFxuICB4OiB7ZG9tYWluOiBbMCwgMC41XSwgbGFiZWw6IFwiV2FocnNjaGVpbmxpY2hrZWl0XCIsIHRpY2tGb3JtYXQ6IGQgPT4gKGQgKiAxMDApICsgXCIlXCJ9LFxuICB5OiB7bGFiZWw6IG51bGx9LFxuICBtYXJrczogW1xuICAgIFBsb3QuYmFyWChjdXJyZW50UHJvYnMsIHt5OiBcInRva2VuXCIsIHg6IFwicHJvYlwiLCBmaWxsOiBcIiNBMzE5NUJcIiwgc29ydDoge3k6IFwiLXhcIn19KSxcbiAgICBQbG90LnRleHQoY3VycmVudFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgdGV4dDogZCA9PiAoZC5wcm9iICogMTAwKS50b0ZpeGVkKDApICsgXCIlXCIsIGR4OiA4LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCJ9KVxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG52aWV3b2YgdGVtcGVyYXR1cmUgPSBJbnB1dHMucmFuZ2UoWzAuMSwgMi4wXSwge1xuICB2YWx1ZTogMS4wLFxuICBzdGVwOiAwLjEsXG4gIGxhYmVsOiBcIlRlbXBlcmF0dXJlXCJcbn0pXG5cbnNjYWxlZFByb2JzID0ge1xuICBjb25zdCB0ID0gdGVtcGVyYXR1cmU7XG4gIGNvbnN0IGxvZ2l0cyA9IGN1cnJlbnRQcm9icy5tYXAocCA9PiBNYXRoLmxvZyhwLnByb2IpKTtcbiAgY29uc3Qgc2NhbGVkID0gbG9naXRzLm1hcChsID0+IE1hdGguZXhwKGwgLyB0KSk7XG4gIGNvbnN0IHN1bSA9IHNjYWxlZC5yZWR1Y2UoKGEsIGIpID0+IGEgKyBiLCAwKTtcbiAgcmV0dXJuIGN1cnJlbnRQcm9icy5tYXAoKHAsIGkpID0+ICh7dG9rZW46IHAudG9rZW4sIHByb2I6IHNjYWxlZFtpXSAvIHN1bX0pKTtcbn1cblxudGVtcERlc2NyaXB0aW9uID0gdGVtcGVyYXR1cmUgPCAwLjUgPyBcIkRldGVybWluaXN0aXNjaDogRmFzdCBpbW1lciBkYXMgd2FocnNjaGVpbmxpY2hzdGUgV29ydFwiIDpcbiAgdGVtcGVyYXR1cmUgPCAxLjAgPyBcIkF1c2dlZ2xpY2hlbjogR3V0ZSBNaXNjaHVuZ1wiIDpcbiAgdGVtcGVyYXR1cmUgPCAxLjUgPyBcIktyZWF0aXY6IE1laHIgVmFyaWF0aW9uXCIgOiBcIkNoYW90aXNjaDogRmFzdCB6dWbDpGxsaWdcIlxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5QbG90LnBsb3Qoe1xuICBtYXJnaW5MZWZ0OiAxMjAsXG4gIHdpZHRoOiBNYXRoLm1pbig3MDAsIHdpZHRoKSxcbiAgaGVpZ2h0OiAyNTAsXG4gIHg6IHtkb21haW46IFswLCAxXSwgbGFiZWw6IFwiQW5nZXBhc3N0ZSBXYWhyc2NoZWlubGljaGtlaXRcIiwgdGlja0Zvcm1hdDogZCA9PiAoZCAqIDEwMCkgKyBcIiVcIn0sXG4gIHk6IHtsYWJlbDogbnVsbH0sXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5iYXJYKHNjYWxlZFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgZmlsbDogXCIjRDRBMDNFXCIsIHNvcnQ6IHt5OiBcIi14XCJ9fSksXG4gICAgUGxvdC50ZXh0KHNjYWxlZFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgdGV4dDogZCA9PiAoZC5wcm9iICogMTAwKS50b0ZpeGVkKDApICsgXCIlXCIsIGR4OiA4LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCJ9KVxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZFNlbnRlbmNlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3RlbXBlcmF0dXJlJykifV19
-    </script>
-    <script type="module">
-    if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-    window._ojs.paths.runtimeToDoc = "../../slides/frage-1-was-ist-ki";
-    window._ojs.paths.runtimeToRoot = "../..";
-    window._ojs.paths.docToRoot = "../..";
-    window._ojs.selfContained = false;
-    window._ojs.runtime.interpretFromScriptTags();
-    </script>
-    <script id="quarto-html-after-body" type="application/javascript">
-      window.document.addEventListener("DOMContentLoaded", function (event) {
-        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-        tabsets.forEach(function(tabset) {
-          const tabby = new Tabby('#' + tabset.id);
-        });
-        const isCodeAnnotation = (el) => {
-          for (const clz of el.classList) {
-            if (clz.startsWith('code-annotation-')) {                     
-              return true;
+    });
+
+    // Insert button into the callout header
+    const header = callout.querySelector('.callout-header');
+    if (header) {
+      header.style.display = 'flex';
+      header.style.justifyContent = 'space-between';
+      header.style.alignItems = 'center';
+      header.appendChild(copyBtn);
+    }
+  });
+});
+</script>
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxudG9rZW5EYXRhYmFzZSA9ICh7XG4gIFwiRGVyIEh1bmQgbGllZ3QgYXVmIGRlbVwiOiBbXG4gICAge3Rva2VuOiBcIkJvZGVuXCIsIHByb2I6IDAuMzJ9LFxuICAgIHt0b2tlbjogXCJTb2ZhXCIsIHByb2I6IDAuMjR9LFxuICAgIHt0b2tlbjogXCJCZXR0XCIsIHByb2I6IDAuMTh9LFxuICAgIHt0b2tlbjogXCJUZXBwaWNoXCIsIHByb2I6IDAuMTR9LFxuICAgIHt0b2tlbjogXCJSYXNlblwiLCBwcm9iOiAwLjEyfVxuICBdLFxuICBcIkRpZSBLYXR6ZSBzaXR6dCBhdWYgZGVtXCI6IFtcbiAgICB7dG9rZW46IFwiRGFjaFwiLCBwcm9iOiAwLjI4fSxcbiAgICB7dG9rZW46IFwiQmF1bVwiLCBwcm9iOiAwLjI0fSxcbiAgICB7dG9rZW46IFwiU29mYVwiLCBwcm9iOiAwLjIwfSxcbiAgICB7dG9rZW46IFwiVGlzY2hcIiwgcHJvYjogMC4xNn0sXG4gICAge3Rva2VuOiBcIkZlbnN0ZXJicmV0dFwiLCBwcm9iOiAwLjEyfVxuICBdLFxuICBcIkRpZSBTdHVkaWVyZW5kZW4gbGVybmVuIGbDvHIgZGllXCI6IFtcbiAgICB7dG9rZW46IFwiUHLDvGZ1bmdcIiwgcHJvYjogMC40NX0sXG4gICAge3Rva2VuOiBcIktsYXVzdXJcIiwgcHJvYjogMC4yNX0sXG4gICAge3Rva2VuOiBcIlp1a3VuZnRcIiwgcHJvYjogMC4xMn0sXG4gICAge3Rva2VuOiBcIlZvcmxlc3VuZ1wiLCBwcm9iOiAwLjEwfSxcbiAgICB7dG9rZW46IFwiS2FycmllcmVcIiwgcHJvYjogMC4wOH1cbiAgXSxcbiAgXCJEZXIgUHJvZmVzc29yIGVya2zDpHJ0IGRhc1wiOiBbXG4gICAge3Rva2VuOiBcIktvbnplcHRcIiwgcHJvYjogMC4yOH0sXG4gICAge3Rva2VuOiBcIlRoZW1hXCIsIHByb2I6IDAuMjR9LFxuICAgIHt0b2tlbjogXCJQcm9ibGVtXCIsIHByb2I6IDAuMjB9LFxuICAgIHt0b2tlbjogXCJNb2RlbGxcIiwgcHJvYjogMC4xNn0sXG4gICAge3Rva2VuOiBcIlByaW56aXBcIiwgcHJvYjogMC4xMn1cbiAgXSxcbiAgXCJLSSB3aXJkIGluIFp1a3VuZnRcIjogW1xuICAgIHt0b2tlbjogXCJ3aWNodGlnZXJcIiwgcHJvYjogMC4yNH0sXG4gICAge3Rva2VuOiBcInZpZWxlXCIsIHByb2I6IDAuMjB9LFxuICAgIHt0b2tlbjogXCJlaW5lXCIsIHByb2I6IDAuMTh9LFxuICAgIHt0b2tlbjogXCJpbW1lclwiLCBwcm9iOiAwLjIwfSxcbiAgICB7dG9rZW46IFwidW5zZXJlXCIsIHByb2I6IDAuMTh9XG4gIF1cbn0pXG5cbnZpZXdvZiBzZWxlY3RlZFNlbnRlbmNlID0gSW5wdXRzLnNlbGVjdChPYmplY3Qua2V5cyh0b2tlbkRhdGFiYXNlKSwge1xuICBsYWJlbDogXCJTYXR6YW5mYW5nOlwiLFxuICB2YWx1ZTogXCJEZXIgSHVuZCBsaWVndCBhdWYgZGVtXCJcbn0pXG5cbmN1cnJlbnRQcm9icyA9IHRva2VuRGF0YWJhc2Vbc2VsZWN0ZWRTZW50ZW5jZV1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuUGxvdC5wbG90KHtcbiAgbWFyZ2luTGVmdDogMTAwLFxuICB3aWR0aDogTWF0aC5taW4oNTAwLCB3aWR0aCksXG4gIGhlaWdodDogMTgwLFxuICB4OiB7ZG9tYWluOiBbMCwgMC41XSwgbGFiZWw6IFwiV2FocnNjaGVpbmxpY2hrZWl0XCIsIHRpY2tGb3JtYXQ6IGQgPT4gKGQgKiAxMDApICsgXCIlXCJ9LFxuICB5OiB7bGFiZWw6IG51bGx9LFxuICBtYXJrczogW1xuICAgIFBsb3QuYmFyWChjdXJyZW50UHJvYnMsIHt5OiBcInRva2VuXCIsIHg6IFwicHJvYlwiLCBmaWxsOiBcIiNBMzE5NUJcIiwgc29ydDoge3k6IFwiLXhcIn19KSxcbiAgICBQbG90LnRleHQoY3VycmVudFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgdGV4dDogZCA9PiAoZC5wcm9iICogMTAwKS50b0ZpeGVkKDApICsgXCIlXCIsIGR4OiA1LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCJ9KVxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG52aWV3b2YgdGVtcGVyYXR1cmUgPSBJbnB1dHMucmFuZ2UoWzAuMSwgMi4wXSwge1xuICB2YWx1ZTogMS4wLFxuICBzdGVwOiAwLjEsXG4gIGxhYmVsOiBcIlRlbXBlcmF0dXJlXCJcbn0pXG5cbnNjYWxlZFByb2JzID0ge1xuICBjb25zdCB0ID0gdGVtcGVyYXR1cmU7XG4gIGNvbnN0IGxvZ2l0cyA9IGN1cnJlbnRQcm9icy5tYXAocCA9PiBNYXRoLmxvZyhwLnByb2IpKTtcbiAgY29uc3Qgc2NhbGVkID0gbG9naXRzLm1hcChsID0+IE1hdGguZXhwKGwgLyB0KSk7XG4gIGNvbnN0IHN1bSA9IHNjYWxlZC5yZWR1Y2UoKGEsIGIpID0+IGEgKyBiLCAwKTtcbiAgcmV0dXJuIGN1cnJlbnRQcm9icy5tYXAoKHAsIGkpID0+ICh7dG9rZW46IHAudG9rZW4sIHByb2I6IHNjYWxlZFtpXSAvIHN1bX0pKTtcbn1cblxudGVtcERlc2NyaXB0aW9uID0gdGVtcGVyYXR1cmUgPCAwLjUgPyBcIkRldGVybWluaXN0aXNjaDogRmFzdCBpbW1lciBkYXMgd2FocnNjaGVpbmxpY2hzdGUgV29ydFwiIDpcbiAgdGVtcGVyYXR1cmUgPCAxLjAgPyBcIkF1c2dlZ2xpY2hlbjogR3V0ZSBNaXNjaHVuZ1wiIDpcbiAgdGVtcGVyYXR1cmUgPCAxLjUgPyBcIktyZWF0aXY6IE1laHIgVmFyaWF0aW9uXCIgOiBcIkNoYW90aXNjaDogRmFzdCB6dWbDpGxsaWdcIlxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5QbG90LnBsb3Qoe1xuICBtYXJnaW5MZWZ0OiAxMDAsXG4gIHdpZHRoOiBNYXRoLm1pbig1MDAsIHdpZHRoKSxcbiAgaGVpZ2h0OiAxODAsXG4gIHg6IHtkb21haW46IFswLCAxXSwgbGFiZWw6IFwiQW5nZXBhc3N0ZSBXYWhyc2NoZWlubGljaGtlaXRcIiwgdGlja0Zvcm1hdDogZCA9PiAoZCAqIDEwMCkgKyBcIiVcIn0sXG4gIHk6IHtsYWJlbDogbnVsbH0sXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5iYXJYKHNjYWxlZFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgZmlsbDogXCIjRDRBMDNFXCIsIHNvcnQ6IHt5OiBcIi14XCJ9fSksXG4gICAgUGxvdC50ZXh0KHNjYWxlZFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgdGV4dDogZCA9PiAoZC5wcm9iICogMTAwKS50b0ZpeGVkKDApICsgXCIlXCIsIGR4OiA1LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCJ9KVxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZFNlbnRlbmNlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3RlbXBlcmF0dXJlJykifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../slides/frage-1-was-ist-ki";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "../..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/virtuelleakademie\.github\.io\/ki-lehre-beginner\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
             }
-          }
-          return false;
+            // default icon
+            link.classList.add("external");
         }
-        const onCopySuccess = function(e) {
-          // button target
-          const button = e.trigger;
-          // don't keep focus
-          button.blur();
-          // flash "checked"
-          button.classList.add('code-copy-button-checked');
-          var currentTitle = button.getAttribute("title");
-          button.setAttribute("title", "Kopiert");
-          let tooltip;
-          if (window.bootstrap) {
-            button.setAttribute("data-bs-toggle", "tooltip");
-            button.setAttribute("data-bs-placement", "left");
-            button.setAttribute("data-bs-title", "Kopiert");
-            tooltip = new bootstrap.Tooltip(button, 
-              { trigger: "manual", 
-                customClass: "code-copy-button-tooltip",
-                offset: [0, -8]});
-            tooltip.show();    
-          }
-          setTimeout(function() {
-            if (tooltip) {
-              tooltip.hide();
-              button.removeAttribute("data-bs-title");
-              button.removeAttribute("data-bs-toggle");
-              button.removeAttribute("data-bs-placement");
-            }
-            button.setAttribute("title", currentTitle);
-            button.classList.remove('code-copy-button-checked');
-          }, 1000);
-          // clear code selection
-          e.clearSelection();
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
           }
-          return codeEl.innerText;
         }
-        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-          text: getTextToCopy
-        });
-        clipboard.on('success', onCopySuccess);
-        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-            text: getTextToCopy,
-            container: window.document.getElementById('quarto-embedded-source-code-modal')
-          });
-          clipboardModal.on('success', onCopySuccess);
-        }
-          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-          var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/virtuelleakademie\.github\.io\/ki-lehre-beginner\/");
-          var isInternal = (href) => {
-              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-          }
-          // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-          for (var i=0; i<links.length; i++) {
-            const link = links[i];
-            if (!isInternal(link.href)) {
-              // undo the damage that might have been done by quarto-nav.js in the case of
-              // links that we want to consider external
-              if (link.dataset.originalHref !== undefined) {
-                link.href = link.dataset.originalHref;
-              }
-            }
-          }
-        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-          const config = {
-            allowHTML: true,
-            maxWidth: 500,
-            delay: 100,
-            arrow: false,
-            appendTo: function(el) {
-                return el.closest('section.slide') || el.parentElement;
-            },
-            interactive: true,
-            interactiveBorder: 10,
-            theme: 'light-border',
-            placement: 'bottom-start',
-          };
-          if (contentFn) {
-            config.content = contentFn;
-          }
-          if (onTriggerFn) {
-            config.onTrigger = onTriggerFn;
-          }
-          if (onUntriggerFn) {
-            config.onUntrigger = onUntriggerFn;
-          }
-            config['offset'] = [0,0];
-            config['maxWidth'] = 700;
-          window.tippy(el, config); 
-        }
-        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-        for (var i=0; i<noterefs.length; i++) {
-          const ref = noterefs[i];
-          tippyHover(ref, function() {
-            // use id or data attribute instead here
-            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-            try { href = new URL(href).hash; } catch {}
-            const id = href.replace(/^#\/?/, "");
-            const note = window.document.getElementById(id);
-            if (note) {
-              return note.innerHTML;
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
             } else {
-              return "";
+              container.appendChild(child.cloneNode(true));
+              break;
             }
-          });
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
         }
-        const findCites = (el) => {
-          const parentEl = el.parentElement;
-          if (parentEl) {
-            const cites = parentEl.dataset.cites;
-            if (cites) {
-              return {
-                el,
-                cites: cites.split(' ')
-              };
-            } else {
-              return findCites(el.parentElement)
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
             }
           } else {
-            return undefined;
-          }
-        };
-        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-        for (var i=0; i<bibliorefs.length; i++) {
-          const ref = bibliorefs[i];
-          const citeInfo = findCites(ref);
-          if (citeInfo) {
-            tippyHover(citeInfo.el, function() {
-              var popup = window.document.createElement('div');
-              citeInfo.cites.forEach(function(cite) {
-                var citeDiv = window.document.createElement('div');
-                citeDiv.classList.add('hanging-indent');
-                citeDiv.classList.add('csl-entry');
-                var biblioDiv = window.document.getElementById('ref-' + cite);
-                if (biblioDiv) {
-                  citeDiv.innerHTML = biblioDiv.innerHTML;
-                }
-                popup.appendChild(citeDiv);
-              });
-              return popup.innerHTML;
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
             });
           }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
         }
+      }, function(instance) {
       });
-      </script>
-    
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../workshop/einstieg/index.html" class="pagination-link" aria-label="Einstieg">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Einstieg</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../exercises/copilot-einstieg/index.html" class="pagination-link" aria-label="Übung: Copilot Onboarding">
+        <span class="nav-page-text">Übung: Copilot Onboarding</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
 
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

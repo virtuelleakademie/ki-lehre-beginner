@@ -1,25 +1,23 @@
 ---
 title: "Frage 2: Wofür kann KI verwendet werden?"
 subtitle: "Möglichkeiten, Grenzen und was an der BFH gilt"
-format:
-  revealjs:
-    theme: default
-    slide-number: true
-    preview-links: auto
-    footer: "KI in der Lehre: Beginner"
-    navigation-mode: linear
-    controls: true
-    progress: true
-    hash: true
-    center: false
-    transition: fade
-    width: 1600
-    height: 900
-    margin: 0.1
-bibliography: ../../bibliography.bib
+sidebar: workshop
 ---
 
-## Überblick
+## Präsentation
+
+In dieser Einheit lernen wir die Fähigkeiten und Grenzen von Chatbots kennen, sowie die BFH-Richtlinien für den KI-Einsatz.
+
+[Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
+
+<iframe
+  src="slides.html"
+  width="100%"
+  height="500"
+  style="border: 1px solid #ccc; border-radius: 4px;"
+></iframe>
+
+## Inhaltsübersicht
 
 **Dauer:** 50 Minuten (inkl. Aktivität)
 
@@ -29,7 +27,7 @@ bibliography: ../../bibliography.bib
 | BFH-Landschaft (Policy, Tools) | 10 min |
 | Fakten-Check Aktivität | 25 min |
 
-## Kernbotschaften
+### Kernbotschaften
 
 1. Moderne Chatbots sind extrem vielseitig (Text, Bilder, Code, Web-Suche)
 2. Wenn Ergebnisse nicht passen: Kontext verbessern (mehr Info, präziser sein, Dokumente hochladen)
@@ -42,7 +40,7 @@ Moderne Chatbots haben erstaunlich vielseitige Fähigkeiten:
 | Fähigkeit | Beispiel |
 |-----------|----------|
 | Fragen beantworten | Erklärungen, Definitionen, Zusammenfassungen |
-| Bilder analysieren | Beschreibung, Textextraktion, Diagramme |
+| Bilder analysieren | Beschreibung, Textextraktion, Diagramme interpretieren |
 | Dokumente verarbeiten | PDFs zusammenfassen, Tabellen extrahieren |
 | Websuche | Aktuelle Informationen abrufen |
 | Code ausführen | Berechnungen, Datenanalyse |
@@ -59,15 +57,11 @@ Die meisten "Probleme" sind Kontextprobleme:
 | Reasoning geht schief | Modell Schritt für Schritt denken lassen |
 | Falsches Format | Beispiel zeigen |
 
-## Die zentrale Einsicht
+::: {.key-point}
+Moderne Modelle können fast alles. Die Frage ist: **Welche Information fehlt im Kontext?**
+:::
 
-Moderne Modelle können fast alles.
-
-. . .
-
-**Die Frage ist: Welche Information fehlt im Kontext?**
-
-## Was bleibt: Keine Faktenprüfung
+## Was bleibt: Keine eingebaute Faktenprüfung
 
 Ein echtes Limit: Chatbots generieren plausiblen Text, nicht geprüfte Fakten.
 
@@ -77,15 +71,17 @@ Ein echtes Limit: Chatbots generieren plausiblen Text, nicht geprüfte Fakten.
 | Erfundene Quellen | Referenzen verifizieren |
 | Veraltete Infos | Web-Suche aktivieren oder selbst recherchieren |
 
-## BFH KI-Policy
+## BFH-Richtlinien
 
-Die fünf Grundsätze:
+::: {.key-point}
+## Die fünf Grundsätze der BFH KI-Policy
 
 1. **Transparenz**: KI-Nutzung offenlegen
 2. **Datenschutz**: Keine persönlichen Daten eingeben
 3. **Ethik**: Verantwortungsvoll einsetzen
 4. **Integrität**: Wissenschaftliche Standards einhalten
 5. **Didaktik**: Lernziele berücksichtigen
+:::
 
 ## Freigegebene Tools
 
@@ -97,34 +93,38 @@ Die BFH hat mehrere KI-Tools abgeklärt und freigegeben:
 | **ChatGPT** | Persönliches Konto | Vielseitige Aufgaben, Coding |
 | **Claude** | Persönliches Konto | Lange Dokumente, Analyse |
 
-::: {.notes}
+::: {.pro-tip}
+## Wo finden?
+
 mybfh → IT-Applikationen → Abgeklärte KI-Tools
 :::
 
 ## Aktivität: Fakten-Check
 
-Im Anschluss folgt die **Fakten-Check Aktivität** (25 min):
+Im Anschluss an die Präsentation folgt die **Fakten-Check Aktivität** (25 min):
 
 1. Du stellst 3 faktische Fragen aus deinem Fachgebiet
 2. Du überprüfst die Antworten
 3. Ihr tauscht euch in Kleingruppen aus
 
-## Kurze Reflexion
+[→ Zur Fakten-Check Aktivität](../../exercises/fakten-check/index.qmd)
 
+## Kurze Reflexion (2 min)
+
+::: {.reflect}
 Nach der Fakten-Check Aktivität: Wie hat sich dein Vertrauen in Chatbot-Antworten verändert?
 
 {{< timer 2 >}}
+:::
 
-## Takeaway: Wofür kann KI verwendet werden?
+## Takeaway
 
-Moderne Chatbots können fast alles: Text, Bilder, Code, Web-Suche.
+::: {.key-point}
+## Antwort auf Frage 2: Wofür kann KI verwendet werden?
 
-Wenn Ergebnisse nicht passen, verbessere den Kontext.
+Moderne Chatbots können fast alles: Text, Bilder, Code, Web-Suche. Wenn Ergebnisse nicht passen, verbessere den Kontext.
 
-. . .
-
-Was bleibt: Chatbots haben keine Faktenprüfung.
-
-**Du musst kritisch bleiben.**
+Was bleibt: Chatbots haben keine Faktenprüfung. **Du musst kritisch bleiben.**
 
 An der BFH: Klare Richtlinien und freigegebene Tools nutzen.
+:::

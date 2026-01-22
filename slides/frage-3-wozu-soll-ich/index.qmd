@@ -1,25 +1,23 @@
 ---
 title: "Frage 3: Wann hilft KI, wann schadet sie?"
 subtitle: "Offloading vs. Outsourcing: Wann ist KI-Nutzung sinnvoll?"
-format:
-  revealjs:
-    theme: default
-    slide-number: true
-    preview-links: auto
-    footer: "KI in der Lehre: Beginner"
-    navigation-mode: linear
-    controls: true
-    progress: true
-    hash: true
-    center: false
-    transition: fade
-    width: 1600
-    height: 900
-    margin: 0.1
-bibliography: ../../bibliography.bib
+sidebar: workshop
 ---
 
-## Überblick
+## Präsentation
+
+In dieser Einheit diskutieren wir, wann KI-Nutzung sinnvoll ist und wann sie das Lernen behindern kann. Der Fokus liegt auf der Unterscheidung zwischen kognitivem Offloading und Outsourcing.
+
+[Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
+
+<iframe
+  src="slides.html"
+  width="100%"
+  height="500"
+  style="border: 1px solid #ccc; border-radius: 4px;"
+></iframe>
+
+## Inhaltsübersicht
 
 **Dauer:** 40 Minuten
 
@@ -29,14 +27,16 @@ bibliography: ../../bibliography.bib
 | Konzepte: Offloading vs. Outsourcing | 10 min |
 | Diskussion und Transfer | 10 min |
 
-## Kernbotschaften
+### Kernbotschaften
 
 1. **Offloading**: Du externalisierst, aber denkst selbst weiter
 2. **Outsourcing**: Du überträgst die Denkarbeit
 3. **Die entscheidende Frage**: Ist das, was ausgelagert wird, etwas, das die Person lernen sollte?
 4. **Der Zielkonflikt**: Dieselbe KI-Nutzung kann für Expert*innen produktiv und für Lernende schädlich sein
 
-## Kognitives Offloading
+## Die zwei Konzepte
+
+### Kognitives Offloading
 
 Du externalisierst Informationen, um dein Arbeitsgedächtnis zu entlasten, **während du selbst weiter denkst**.
 
@@ -48,7 +48,7 @@ Du externalisierst Informationen, um dein Arbeitsgedächtnis zu entlasten, **wä
 
 Das Werkzeug **speichert**, was du produzierst.
 
-## Kognitives Outsourcing
+### Kognitives Outsourcing
 
 Du überträgst die **eigentliche Denkarbeit** an ein externes System.
 
@@ -62,9 +62,9 @@ Das Werkzeug **entscheidet**, **produziert** und denkt für dich.
 
 ## Die entscheidende Frage
 
+::: {.key-point}
 > Ist die ausgelagerte Arbeit das, was die Person **lernen oder üben** sollte?
-
-. . .
+:::
 
 Diese Frage unterscheidet sinnvolle von problematischer KI-Nutzung.
 
@@ -72,63 +72,50 @@ Diese Frage unterscheidet sinnvolle von problematischer KI-Nutzung.
 
 | Situation | Lehrende | Studierende |
 |-----------|----------|-------------|
-| KI schreibt Feedback | OK (Effizienz) | — |
-| KI schreibt Essay | — | Problematisch |
-| KI erklärt Konzept | OK | Kommt drauf an |
-| KI generiert Übungen | OK | Könnte OK sein |
-| KI debuggt Code | OK | Wenn ohne Verständnis: Problematisch |
+| KI schreibt Feedback | ✓ OK (Effizienz) | — |
+| KI schreibt Essay | — | ✗ Problematisch |
+| KI erklärt Konzept | ✓ OK | ? Kommt drauf an |
+| KI generiert Übungen | ✓ OK | ? Könnte OK sein |
+| KI debuggt Code | ✓ OK | ✗ Wenn ohne Verständnis |
 
 ## Der Produktivitäts-Lern-Zielkonflikt
+
+::: {.reflect}
+## Kein Paradox, sondern vorhersagbar
 
 Der Konflikt zwischen Produktivität und Lernen ist kein Paradox. Er folgt direkt aus dem, was wir über kognitive Architektur wissen:
 
 - **KI-Tools sind für Expert*innen gemacht**: Sie steigern Produktivität, indem sie kognitive Arbeit übernehmen.
 - **Lernen erfordert kognitive Anstrengung**: Das Gehirn lernt durch Vorhersagefehler, die nur entstehen, wenn man selbst denkt.
+- **Wenn Studierende auslagern, was sie üben sollten**: Sie bekommen das **Produkt**, aber nicht den **Lerneffekt**.
 
-## Was das bedeutet
-
-Wenn Studierende auslagern, was sie üben sollten:
-
-Sie bekommen das **Produkt**, aber nicht den **Lerneffekt**.
-
-. . .
-
-- Für **Lehrende** ist Outsourcing oft produktiv (Arbeit, nicht Lernen).
-- Für **Studierende** ist Outsourcing oft problematisch (sie brauchen die Übung).
+Für Lehrende ist Outsourcing oft produktiv (Arbeit, nicht Lernen).
+Für Studierende ist Outsourcing oft problematisch (sie brauchen die Übung).
+:::
 
 ## Was die Hirnforschung zeigt
 
-Neurowissenschaftliche Forschung von Fedorenko und Gibson am MIT zeigt:
+Neurowissenschaftliche Forschung von Fedorenko und Gibson am MIT zeigt: **Sprache und Denken sind im Gehirn getrennt** [@fedorenkoLanguagePrimarilyTool2024].
 
-**Sprache und Denken sind im Gehirn getrennt** [@fedorenkoLanguagePrimarilyTool2024].
+Das Sprachsystem des Gehirns (etwa so gross wie eine Erdbeere) funktioniert als **Übersetzer**: Es übersetzt zwischen externer Sprache und internen Bedeutungsrepräsentationen in anderen Hirnarealen. Wenn wir denken, sind die Sprachareale kaum aktiv.
 
-Das Sprachsystem des Gehirns funktioniert als **Übersetzer**: Es übersetzt zwischen externer Sprache und internen Bedeutungsrepräsentationen.
+### Die Verbindung zu Offloading und Outsourcing
 
-Wenn wir denken, sind die Sprachareale kaum aktiv.
-
-## Die Verbindung zu Offloading und Outsourcing
-
+::: {.key-point}
 Wenn du einen Chatbot nutzt, um einen Text zu verfassen:
 
-**Offloading**: Du hast die Ideen, die Argumente, das Wissen. Du nutzt KI, um diese in polierte Sprache zu übersetzen. Das Denken passiert bei dir.
+- **Offloading**: Du hast die Ideen, die Argumente, das Wissen. Du nutzt KI, um diese in polierte Sprache zu übersetzen. Das Denken passiert bei dir.
 
-. . .
+- **Outsourcing**: Du lässt die KI Ideen, Argumente und Inhalte generieren, ohne diese selbst zu durchdenken.
 
-**Outsourcing**: Du lässt die KI Ideen, Argumente und Inhalte generieren, ohne diese selbst zu durchdenken.
-
-## Für Studierende
-
-Für Studierende, die **lernen sollen, selbst zu denken**, ist Outsourcing problematisch:
-
-Der Text sieht fertig aus, aber die kognitiven Prozesse, die zu Lernen führen, haben bei der Person nicht stattgefunden.
+Für Studierende, die **lernen sollen, selbst zu denken**, ist Outsourcing problematisch: Der Text sieht fertig aus, aber die kognitiven Prozesse, die zu Lernen führen, haben bei der Person nicht stattgefunden.
+:::
 
 ## Aktivität: Szenario-Karten
 
-Im Anschluss folgt die **Szenario-Karten Aktivität** (20 min):
+Die vollständige Aktivität mit allen Szenarien findest du hier:
 
-- Ihr analysiert verschiedene Szenarien
-- Ist es Offloading oder Outsourcing?
-- Ist es für diese Person sinnvoll?
+[→ Zur Szenario-Karten Aktivität](../../exercises/offloading-outsourcing/index.qmd)
 
 ## Leitfragen für deine Praxis
 
@@ -137,27 +124,21 @@ Für **dich als Lehrperson**:
 - Wo kann ich KI produktiv für Routineaufgaben einsetzen?
 - Wo gewinne ich Zeit für wichtigere Aufgaben?
 
-. . .
-
 Für **deine Studierenden**:
 
 - Welche kognitiven Prozesse sind zentral für das Lernziel?
 - Wo würde KI-Nutzung genau diese Prozesse umgehen?
 
-## Takeaway: Wann hilft KI, wann schadet sie?
+## Takeaway
+
+::: {.key-point}
+## Antwort auf Frage 3: Wann hilft KI, wann schadet sie?
 
 KI-Tools sind für **Expert*innen** gemacht. Sie steigern Produktivität.
 
-Für **Lernende** ist die Situation komplizierter: Lernen braucht **kognitive Anstrengung**.
+Für **Lernende** ist die Situation komplizierter: Lernen braucht **kognitive Anstrengung**. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
 
-. . .
+**Die Frage ist nicht "Darf man KI nutzen?", sondern "Wer lernt dabei was?"**
+:::
 
-Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
-
-## Die zentrale Frage
-
-**Die Frage ist nicht "Darf man KI nutzen?"**
-
-. . .
-
-**Sondern: "Wer lernt dabei was?"**
+## Referenzen

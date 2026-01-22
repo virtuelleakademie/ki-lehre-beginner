@@ -1,25 +1,23 @@
 ---
 title: "Frage 1: Was ist KI?"
 subtitle: "Wie funktionieren Sprachmodelle wirklich?"
-format:
-  revealjs:
-    theme: default
-    slide-number: true
-    preview-links: auto
-    footer: "KI in der Lehre: Beginner"
-    navigation-mode: linear
-    controls: true
-    progress: true
-    hash: true
-    center: false
-    transition: fade
-    width: 1600
-    height: 900
-    margin: 0.1
-bibliography: ../../bibliography.bib
+sidebar: workshop
 ---
 
-## Überblick
+## Präsentation
+
+In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch statistische Vorhersage und Denken durch Chain-of-Thought.
+
+[Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
+
+<iframe
+  src="slides.html"
+  width="100%"
+  height="500"
+  style="border: 1px solid #ccc; border-radius: 4px;"
+></iframe>
+
+## Inhaltsübersicht
 
 **Dauer:** 45 Minuten
 
@@ -29,25 +27,15 @@ bibliography: ../../bibliography.bib
 | Chain-of-Thought Denken | 15 min |
 | Mini-Experiment | 10 min |
 
-## Kernbotschaften
+### Kernbotschaften
 
 1. LLMs sagen das nächste Wort vorher, basierend auf Mustern in Trainingsdaten
 2. Denken (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext
 3. Moderne Modelle sind extrem leistungsfähig; der Kontext bestimmt das Ergebnis
 
-## Was ist ein Sprachmodell?
-
-Ein Sprachmodell berechnet **Wahrscheinlichkeiten für das nächste Wort**.
-
-> "Der Hund liegt auf dem ___"
-
-Das Modell hat gelernt:
-
-- "Boden" ist wahrscheinlich (32%)
-- "Sofa" ist wahrscheinlich (24%)
-- "Dach" ist unwahrscheinlich (1%)
-
 ## Interaktiv: Token-Vorhersage
+
+Wie sieht "Next-Word-Prediction" konkret aus? Wähle einen Satzanfang und sieh die Wahrscheinlichkeitsverteilung für das nächste Wort.
 
 ```{ojs}
 //| echo: false
@@ -98,49 +86,31 @@ viewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {
 currentProbs = tokenDatabase[selectedSentence]
 ```
 
-## Token-Wahrscheinlichkeiten
-
 **Kontext:** ${selectedSentence} ___
 
 ```{ojs}
 //| echo: false
 
 Plot.plot({
-  marginLeft: 120,
-  width: Math.min(700, width),
-  height: 250,
+  marginLeft: 100,
+  width: Math.min(500, width),
+  height: 180,
   x: {domain: [0, 0.5], label: "Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
   y: {label: null},
   marks: [
     Plot.barX(currentProbs, {y: "token", x: "prob", fill: "#A3195B", sort: {y: "-x"}}),
-    Plot.text(currentProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 8, textAnchor: "start"})
+    Plot.text(currentProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
   ]
 })
 ```
 
-::: {.notes}
-Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort basierend auf Mustern aus den Trainingsdaten.
+::: {.key-point}
+Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern aus den Trainingsdaten. Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.
 :::
 
-## Was bedeutet das?
-
-Das Modell berechnet Wahrscheinlichkeiten für **jedes mögliche nächste Wort**.
-
-Die Auswahl basiert auf Mustern aus den Trainingsdaten.
-
-Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung.
-
-**Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.**
-
-## Temperature: Wie wird gewählt?
+## Interaktiv: Temperature
 
 Der Parameter "Temperature" beeinflusst, wie das Modell aus den Wahrscheinlichkeiten wählt.
-
-- **Niedrig (0.1-0.5)**: Fast immer das wahrscheinlichste Wort
-- **Mittel (0.7-1.0)**: Gute Mischung aus Konsistenz und Variation
-- **Hoch (1.2-1.5)**: Mehr Kreativität, mehr Überraschungen
-
-## Interaktiv: Temperature
 
 ```{ojs}
 //| echo: false
@@ -170,37 +140,31 @@ tempDescription = temperature < 0.5 ? "Deterministisch: Fast immer das wahrschei
 //| echo: false
 
 Plot.plot({
-  marginLeft: 120,
-  width: Math.min(700, width),
-  height: 250,
+  marginLeft: 100,
+  width: Math.min(500, width),
+  height: 180,
   x: {domain: [0, 1], label: "Angepasste Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
   y: {label: null},
   marks: [
     Plot.barX(scaledProbs, {y: "token", x: "prob", fill: "#D4A03E", sort: {y: "-x"}}),
-    Plot.text(scaledProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 8, textAnchor: "start"})
+    Plot.text(scaledProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
   ]
 })
 ```
 
+::: {.pro-tip}
 ## Temperature in der Praxis
 
-| Einstellung | Wert | Anwendung |
-|-------------|------|-----------|
-| Niedrig | 0.1-0.5 | Zusammenfassungen, Fakten, konsistente Ausgaben |
-| Mittel | 0.7-1.0 | Allgemeine Aufgaben (Standard) |
-| Hoch | 1.2-1.5 | Brainstorming, kreative Texte |
+- **Niedrig (0.1-0.5)**: Für Zusammenfassungen, Fakten, konsistente Ausgaben
+- **Mittel (0.7-1.0)**: Für die meisten Aufgaben ein guter Standard
+- **Hoch (1.2-1.5)**: Für Brainstorming und kreative Texte
+:::
 
 ## Die Parallele zum Schreiben
 
-Du kennst das Gefühl: Du sitzt vor einem leeren Dokument, und viele mögliche Anfänge schwirren im Kopf.
+Du kennst das Gefühl: Du sitzt vor einem leeren Dokument, und viele mögliche Anfänge schwirren im Kopf. Dann schreibst du den ersten Satz. Plötzlich sind manche Fortsetzungen naheliegend, andere ausgeschlossen. Der Text, den du geschrieben hast, wird zum Kontext für das, was als Nächstes kommt.
 
-Dann schreibst du den ersten Satz.
-
-Plötzlich sind manche Fortsetzungen naheliegend, andere ausgeschlossen.
-
-**Der Text, den du geschrieben hast, wird zum Kontext für das, was als Nächstes kommt.**
-
-## Schreiben: Mensch vs. Modell
+Das ist überraschend ähnlich zu dem, was Sprachmodelle tun:
 
 | Du beim Schreiben | Das Sprachmodell |
 |-------------------|------------------|
@@ -209,43 +173,37 @@ Plötzlich sind manche Fortsetzungen naheliegend, andere ausgeschlossen.
 | Geschriebenes wird zum Kontext | Token wird zum Kontext |
 | Nächster Satz baut darauf auf | Nächste Vorhersage konditioniert |
 
-Der leere Bildschirm ist schwer, weil wenig Kontext da ist.
+Der leere Bildschirm ist schwer, weil wenig Kontext da ist. Sobald du anfängst, baut sich Momentum auf. Das gilt für Menschen wie für Modelle.
 
-Sobald du anfängst, baut sich Momentum auf.
-
+::: {.pro-tip}
 ## Warum das für Lernen wichtig ist
 
-Wenn du **selbst schreibst**, machst du die Auswahl-Arbeit:
+Wenn du selbst schreibst, machst du die Auswahl-Arbeit: Du entscheidest, welche Formulierung, welcher Gedankengang. Diese Arbeit *ist* ein Teil des Denkens.
 
-Du entscheidest, welche Formulierung, welcher Gedankengang.
+Wenn KI für dich schreibt, übernimmt sie diese Auswahl. Du bekommst das Produkt, aber du hast den Prozess nicht durchlaufen.
 
-**Diese Arbeit *ist* ein Teil des Denkens.**
+Mehr dazu: [Schreiben als Sampling](../../resources/schreiben-als-sampling/index.qmd)
+:::
 
-. . .
+## Kurze Reflexion (2 min)
 
-Wenn **KI für dich schreibt**, übernimmt sie diese Auswahl.
-
-Du bekommst das Produkt, aber du hast den Prozess nicht durchlaufen.
-
-## Kurze Reflexion
-
-Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.
+::: {.reflect}
+Bevor wir zur Pause gehen: Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.
 
 {{< timer 2 >}}
+:::
 
-## Takeaway: Was ist KI?
+## Takeaway
 
-Sprachmodelle generieren Text durch **Vorhersage des nächsten Worts**.
+::: {.key-point}
+## Antwort auf Frage 1: Was ist KI?
 
-Das klingt simpel, aber es ist funktional ähnlich wie das, was unser Gehirn ständig tut: Muster vervollständigen auf Basis gelernter Assoziationen.
+Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Das klingt simpel, aber es ist funktional ähnlich wie das, was unser Gehirn ständig tut: Muster vervollständigen auf Basis gelernter Assoziationen. Die Implementierung ist anders, aber die kognitive Operation hat echte Parallelen.
 
-## Zwei Faktoren bestimmen das Ergebnis
+Zwei Faktoren bestimmen das Ergebnis:
 
 1. **Das Modell**: Was es aus Trainingsdaten gelernt hat
 2. **Der Kontext**: Was du im Prompt mitgibst (inkl. Dokumente, Web-Suche, Chat-Verlauf)
 
-. . .
-
-Moderne Modelle sind extrem leistungsfähig.
-
-**Wenn das Ergebnis nicht passt, frag dich: Was fehlt im Kontext?**
+Moderne Modelle sind extrem leistungsfähig. Wenn das Ergebnis nicht passt, frag dich: **Was fehlt im Kontext?**
+:::
