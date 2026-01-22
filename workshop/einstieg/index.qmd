@@ -29,31 +29,171 @@ Die dritte Frage ist die wichtigste.
 ## Wo stehst du?
 
 ::: {.experiment}
-## Positioniere dich
+## Markiere deine Position
 
-**Dimension 1: Erfahrung**
+Klicke auf das Koordinatensystem, um deine Position zu markieren:
 
-Stelle dich auf einer imaginären Linie auf:
+- **X-Achse**: Wie viel Erfahrung hast du mit KI-Tools?
+- **Y-Achse**: Wie stehst du zu KI in der Lehre?
 
-- Links: "Ich habe noch nie einen Chatbot benutzt"
-- Rechts: "Ich nutze KI-Tools täglich"
+```{ojs}
+//| echo: false
 
-**Dimension 2: Haltung**
+viewof position = {
+  const width = 380;
+  const height = 380;
+  const margin = 40;
 
-- Links: "Ich bin skeptisch gegenüber KI in der Lehre"
-- Rechts: "Ich bin optimistisch über KI in der Lehre"
+  const svg = d3.create("svg")
+    .attr("viewBox", [0, 0, width, height])
+    .attr("width", "100%")
+    .attr("max-width", width)
+    .style("cursor", "crosshair")
+    .style("background", "#fafafa")
+    .style("border", "1px solid #ddd")
+    .style("border-radius", "8px");
 
-{{< timer 5 >}}
+  // Quadrant backgrounds
+  const quadrantColors = ["#e8f5e9", "#fff3e0", "#e3f2fd", "#fce4ec"];
+  const quadrants = [
+    {x: margin, y: margin, label: "Optimistisch\n& wenig Erfahrung"},
+    {x: width/2, y: margin, label: "Optimistisch\n& viel Erfahrung"},
+    {x: margin, y: height/2, label: "Skeptisch\n& wenig Erfahrung"},
+    {x: width/2, y: height/2, label: "Skeptisch\n& viel Erfahrung"}
+  ];
+
+  quadrants.forEach((q, i) => {
+    svg.append("rect")
+      .attr("x", q.x)
+      .attr("y", q.y)
+      .attr("width", (width - 2*margin) / 2)
+      .attr("height", (height - 2*margin) / 2)
+      .attr("fill", quadrantColors[i])
+      .attr("opacity", 0.5);
+  });
+
+  // Axes
+  svg.append("line")
+    .attr("x1", margin)
+    .attr("y1", height/2)
+    .attr("x2", width - margin)
+    .attr("y2", height/2)
+    .attr("stroke", "#333")
+    .attr("stroke-width", 2);
+
+  svg.append("line")
+    .attr("x1", width/2)
+    .attr("y1", margin)
+    .attr("x2", width/2)
+    .attr("y2", height - margin)
+    .attr("stroke", "#333")
+    .attr("stroke-width", 2);
+
+  // Axis labels (inside the diagram)
+  svg.append("text")
+    .attr("x", width - margin - 5)
+    .attr("y", height/2 - 8)
+    .attr("text-anchor", "end")
+    .attr("font-size", "10px")
+    .attr("fill", "#555")
+    .text("Viel Erfahrung →");
+
+  svg.append("text")
+    .attr("x", margin + 5)
+    .attr("y", height/2 - 8)
+    .attr("text-anchor", "start")
+    .attr("font-size", "10px")
+    .attr("fill", "#555")
+    .text("← Wenig");
+
+  svg.append("text")
+    .attr("x", width/2 + 8)
+    .attr("y", margin + 15)
+    .attr("text-anchor", "start")
+    .attr("font-size", "10px")
+    .attr("fill", "#555")
+    .text("↑ Optimistisch");
+
+  svg.append("text")
+    .attr("x", width/2 + 8)
+    .attr("y", height - margin - 8)
+    .attr("text-anchor", "start")
+    .attr("font-size", "10px")
+    .attr("fill", "#555")
+    .text("↓ Skeptisch");
+
+  // Marker
+  const marker = svg.append("circle")
+    .attr("r", 10)
+    .attr("fill", "#A3195B")
+    .attr("stroke", "white")
+    .attr("stroke-width", 3)
+    .attr("visibility", "hidden");
+
+  // Click handler
+  let currentPos = null;
+
+  svg.on("click", function(event) {
+    const [x, y] = d3.pointer(event);
+    if (x >= margin && x <= width - margin && y >= margin && y <= height - margin) {
+      marker
+        .attr("cx", x)
+        .attr("cy", y)
+        .attr("visibility", "visible");
+
+      // Convert to -1 to 1 scale
+      const normX = ((x - margin) / (width - 2*margin)) * 2 - 1;
+      const normY = -(((y - margin) / (height - 2*margin)) * 2 - 1);
+      currentPos = {x: normX.toFixed(2), y: normY.toFixed(2)};
+      svg.node().value = currentPos;
+      svg.node().dispatchEvent(new Event("input"));
+    }
+  });
+
+  svg.node().value = null;
+  return svg.node();
+}
+```
+
+```{ojs}
+//| echo: false
+
+positionText = position ? html`<p style="text-align: center; font-size: 0.95em; margin-top: 0.75em;">
+  <strong>Deine Position:</strong>
+  Erfahrung: ${position.x > 0 ? "mehr" : "weniger"} |
+  Haltung: ${position.y > 0 ? "optimistisch" : "skeptisch"}
+</p>` : html`<p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 0.75em;"><em>Klicke auf das Diagramm, um deine Position zu markieren.</em></p>`
+```
+
+{{< timer 2 >}}
 :::
 
-::: {.callout-note}
+::: {.experiment}
+## Finde dein Gegenüber
+
+Zeig deinen Nachbarn deine Position. Finde jemanden im **gegenüberliegenden Quadranten**:
+
+<!-- | Dein Quadrant | Suche jemanden in... |
+|---------------|----------------------|
+| Oben links | Unten rechts |
+| Oben rechts | Unten links |
+| Unten links | Oben rechts |
+| Unten rechts | Oben links | -->
+
+Setzt euch zusammen. Ihr arbeitet heute als Paar.
+
+{{< timer 2 >}}
+:::
+
+<!-- ::: {.callout-note}
 ## Für die Moderation
 
-Merke dir, wer wo steht. Diese Information ist wertvoll für die spätere Gruppenbildung:
+**Diagonale Paare** bringen maximale Vielfalt: unterschiedliche Erfahrung *und* unterschiedliche Haltung.
 
-- **Bei Gruppenaktivitäten**: Bilde gemischte Gruppen (mindestens eine Person mit viel und eine mit wenig KI-Erfahrung pro Gruppe)
-- **Warum**: Erfahrene Teilnehmende bringen konkrete Beispiele ein. Weniger Erfahrene stellen oft die besseren Grundsatzfragen.
-:::
+Falls die Verteilung ungleich ist: Paare mit mindestens einer Achsen-Differenz bilden.
+
+**Am Ende wiederholen**: Hat sich die Position verändert?
+::: -->
 
 ## Was wir heute nicht tun
 
@@ -61,8 +201,8 @@ Wir werden nicht behaupten, dass KI gut oder schlecht ist.
 
 **Stattdessen**: Gemeinsam herausfinden, wann KI das Lernen unterstützt und wann sie es behindert.
 
-## Spielregeln
+<!-- ## Spielregeln
 
 - Experimentieren ist erwünscht
 - Es gibt keine dummen Fragen
-- Wir lernen voneinander
+- Wir lernen voneinander -->
