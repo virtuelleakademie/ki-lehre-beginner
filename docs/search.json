@@ -149,7 +149,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#mehr-als-textgenerierung",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Mehr als Textgenerierung",
-    "text": "Mehr als Textgenerierung\nModerne Chatbots sind keine reinen Textgeneratoren mehr.\nSie können:\n\nIm Internet suchen\nDateien analysieren (PDFs, Bilder)\nCode ausführen\nMit externen Diensten interagieren",
+    "text": "Mehr als Textgenerierung\nModerne Chatbots sind keine reinen Textgeneratoren mehr.\n\n\nSie können:\n\nIm Internet suchen\nDateien analysieren (PDFs, Bilder)\nCode ausführen\nMit externen Diensten interagieren",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
@@ -259,7 +259,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#ki-an-der-bfh",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "KI an der BFH",
-    "text": "KI an der BFH\nDie BFH hat eine KI-Policy verabschiedet (Mai 2025):\nDie fünf Grundsätze:\n\nTransparenz und Nachvollziehbarkeit\nInformationssicherheit und Datenschutz\nEthische Reflexion und Verantwortlichkeit\nWissenschaftliche Integrität\nDidaktische Angemessenheit und Chancengleichheit",
+    "text": "KI an der BFH\nDie BFH hat eine KI-Policy verabschiedet (Mai 2025):\nDie fünf Grundsätze:\n\nTransparenz und Nachvollziehbarkeit\nInformationssicherheit und Datenschutz\nEthische Reflexion und Verantwortlichkeit\nWissenschaftliche Integrität\nDidaktische Angemessenheit und Chancengleichheit\n\n\nKI-Policy BFH (Mai 2025)\nDie Policy gilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb.\nDie fünf Grundsätze:\n\nTransparenz: Offen kommunizieren\nDatenschutz: BFH-Richtlinien: Neue Tools müssen geprüft werden\nEthik: Nutzer tragen Verantwortung\nIntegrität: Plagiate vermeiden\nDidaktik: Pädagogischer Mehrwert?\n\nZusätzlich: Nachhaltigkeit (Energieeffizienz, Ressourcen) beachten.\nWer hilft? CISO, Fachstelle Datenschutz, Virtuelle Akademie.",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
@@ -270,7 +270,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#deine-verantwortung-als-lehrperson",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Deine Verantwortung als Lehrperson",
-    "text": "Deine Verantwortung als Lehrperson\n\nAuswahl und Einsatz von KI-Tools verantworten\nEignung für Lernziele prüfen\nStudierende transparent informieren\nFestlegen, wie KI-Inhalte zu kennzeichnen sind",
+    "text": "Deine Verantwortung als Lehrperson\nLaut KI-Policy sind Lehrende verantwortlich für:\n\nAuswahl und Einsatz von KI-Tools als Teil des Lehrkonzepts\nPrüfung der Eignung im Hinblick auf Lernziele und Kompetenzförderung\nTransparente Information der Studierenden über eingesetzte Tools\nFestlegung, wie KI-generierte Inhalte zu kennzeichnen sind",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
@@ -292,7 +292,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#freigegebene-tools",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Freigegebene Tools",
-    "text": "Freigegebene Tools\n\n\n\nTool\nZugang\nStärken\n\n\n\n\nMicrosoft Copilot\nBFH-Lizenz\nOffice-Integration, Datenschutz\n\n\nChatGPT\nPersönlich/Abo\nVielseitig, viele Funktionen\n\n\nClaude\nPersönlich/Abo\nLange Texte, Reasoning\n\n\n\n\nWo finden? mybfh → IT-Applikationen → Abgeklärte KI-Tools",
+    "text": "Freigegebene Tools\n\n\n\n\n\n\n\n\n\nTool\nÖFFENTLICH\nINTERN\nVERTRAULICH\n\n\n\n\nMicrosoft Copilot (BFH)\n\n\n\n\n\nChatGPT Edu (BFH Pilot)\n\n\n\n\n\nChatGPT (persönlich)1\n\n\n\n\n\nLokale KI (ohne Cloud)\n\n\n\n\n\n\nAlle abgeklärten Tools auf mybfh \n“Learning” muss manuell ausgeschaltet werden!",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
@@ -303,7 +303,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#datenschutz-copilot",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Datenschutz: Copilot",
-    "text": "Datenschutz: Copilot\nMicrosoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:\n\nBenutzerdaten sind verschlüsselt\nMicrosoft verwendet Daten nicht ohne Anweisung\nFür sensible Aufgaben: Copilot bevorzugen",
+    "text": "Datenschutz: Copilot\nMicrosoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:\n\n\n\nBenutzerdaten sind verschlüsselt\nMicrosoft verwendet Daten nicht ohne Anweisung\nFür sensible Aufgaben: Copilot bevorzugen",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
@@ -325,7 +325,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#takeaway",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Takeaway",
-    "text": "Takeaway\n\n\n\n\n\n\nAntwort auf Frage 2\n\n\nWofür kann KI verwendet werden?\nChatbots sind vielseitige Werkzeuge mit echten Fähigkeiten. Aber sie generieren selbstbewusst auch Falsches.\nKritische Prüfung ist immer nötig.",
+    "text": "Takeaway\n\n\n\n\n\n\nAntwort auf Frage 2\n\n\nWofür kann KI verwendet werden?\nChatbots sind vielseitige Werkzeuge mit echten Fähigkeiten. Aber Falsches klingt genauso überzeugend wie Richtiges.\nKritische Prüfung ist immer nötig.",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
@@ -1654,6 +1654,28 @@
     "crumbs": [
       "Slides",
       "Frage 1: Was ist KI?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-2-wozu-kann-ki/index.html#datenklassifikation",
+    "href": "slides/frage-2-wozu-kann-ki/index.html#datenklassifikation",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "Datenklassifikation",
+    "text": "Datenklassifikation\n\n\n\n\n\n\n\n\n\n\n\nÖFFENTLICH\nINTERN\nVERTRAULICH\nGEHEIM\n\n\n\n\nSchutzbedarf\nKein\nMittel\nHoch\nSehr hoch\n\n\nIntern\nAllen zugänglich\nNur Mitarbeitende (Standard)\nNur bei Bedarf\nDefinierter Personenkreis\n\n\nDritte\nAllgemeinheit\nMit Vertraulichkeitspflicht\nMit Vertraulichkeitspflicht\nIm definierten Kreis\n\n\nBei Datenleck\nKeine Folgen\nBeeinträchtigung\nSchaden\nMassiver Schaden\n\n\nBeispiele\nMedienmitteilungen, Studienangebot\nUnterrichtsmaterialien, Protokolle\nVerträge, Studierendendossiers\nNationale Sicherheit\n\n\n\nVollständige Übersicht auf mybfh",
+    "crumbs": [
+      "Slides",
+      "Frage 2: Wofür kann KI verwendet werden?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-2-wozu-kann-ki/index.html#was-darf-in-den-chatbot",
+    "href": "slides/frage-2-wozu-kann-ki/index.html#was-darf-in-den-chatbot",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "Was darf in den Chatbot?",
+    "text": "Was darf in den Chatbot?\n  Unbedenklich (ÖFFENTLICH/INTERN):\n\nAllgemeine Fragen, Unterrichtsmaterialien, Ideenentwicklung\n\n Nicht eingeben (VERTRAULICH):\n\nNamen von Studierenden, Prüfungsleistungen, Verträge, Personaldaten\n\n\n\n\n\n\n\nFaustregel\n\n\nWürdest du es an eine Pinnwand hängen? Dann ist es okay.\n\n\n\n Vollständige Datenklassifikation auf mybfh",
+    "crumbs": [
+      "Slides",
+      "Frage 2: Wofür kann KI verwendet werden?"
     ]
   }
 ]
