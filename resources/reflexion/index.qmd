@@ -88,7 +88,6 @@ b) Was könnte schiefgehen, und wie würdest du darauf reagieren?
 
 Diese Reflexionsfragen sind ein Ausgangspunkt. Die eigentliche Arbeit beginnt, wenn du deine Überlegungen in die Praxis umsetzt, beobachtest, was passiert, und deine Ansätze anpasst.
 
-Für den Austausch mit Kolleg*innen und weitere Unterstützung:
+Für weitere Unterstützung:
 
-- [Virtuelle Akademie Knowledge Base](https://virtuelleakademie.ch/knowledge-base/)
 - [Weiterbildung: KI in der Lehre (Intermediate)](https://virtuelleakademie.github.io/de/teaching/bfh-weiterbildung/)
