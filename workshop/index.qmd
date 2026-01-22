@@ -41,8 +41,8 @@ Am Ende dieses Workshops kannst du:
 | Frage | Aktivität | Dauer |
 |-------|-----------|-------|
 | Vor 2 | **Copilot Onboarding**: Erste Schritte | 20 min |
-| 2 | Fakten-Check: Chatbot-Antworten überprüfen | 30 min |
-| 3 | Szenario-Karten: Offloading vs. Outsourcing | 35 min |
+| 2 | Fakten-Check: Chatbot-Antworten überprüfen | 20 min |
+| 3 | Szenario-Karten: Offloading vs. Outsourcing | 25 min |
 
 ## Takeaways
 

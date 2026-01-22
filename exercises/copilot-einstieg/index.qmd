@@ -1,16 +1,16 @@
 ---
 title: "Copilot Onboarding"
-subtitle: "Erste Schritte mit dem BFH-Chatbot"
+subtitle: "Erste Schritte mit dem an der BFH zugelassenen Chatbot"
 sidebar: exercises
 ---
 
 ## Lernziele
 
-- Copilot öffnen und eine erste Konversation starten
+- [Copilot](https://copilot.microsoft.com) öffnen und eine erste Konversation starten
 - Die grundlegende Interaktionsstruktur eines Chatbots verstehen
 - Einen einfachen Prompt formulieren und die Antwort interpretieren
 
-::: {.key-point}
+::: {.key-point collapse="true"}
 ## Warum diese Übung?
 
 Dieser Workshop vermittelt, dass Lernende (im Gegensatz zu Expert\*innen) nicht selbstständig entdecken können, was sie noch nicht wissen.
@@ -23,7 +23,7 @@ Deshalb zeigen wir dir zuerst, wie du Copilot nutzt, bevor du es selbst ausprobi
 ## Teil 1: Demonstration (5 min) {#demonstration}
 
 ::: {.demonstration}
-## Die Workshopleitung zeigt
+{{< timer 5 autostart=false >}}
 
 **1. Copilot öffnen**
 
@@ -32,8 +32,6 @@ Deshalb zeigen wir dir zuerst, wie du Copilot nutzt, bevor du es selbst ausprobi
 - Du siehst das Chat-Fenster
 
 **2. Einen einfachen Prompt eingeben**
-
-Die Workshopleitung gibt diesen Prompt ein:
 
 ::: {.prompt}
 Ich unterrichte an einer Fachhochschule. Erkläre mir in 3 Sätzen, wie du als Sprachmodell Text generierst.
@@ -58,6 +56,7 @@ Gib mir eine Analogie, die ich meinen Studierenden zeigen könnte.
 
 ::: {.group}
 ## Wir machen das zusammen
+{{< timer 5 autostart=false >}}
 
 Jetzt machst du es selbst, aber mit genauer Anleitung.
 
@@ -90,14 +89,13 @@ Stelle eine Nachfrage, zum Beispiel:
 ::: {.prompt}
 Was bedeutet "nächstes Wort vorhersagen" genauer?
 :::
-
-{{< timer 5 >}}
 :::
 
 ## Teil 3: Selbstständig erkunden (8 min) {#selbststaendig}
 
 ::: {.experiment}
 ## Deine ersten eigenen Interaktionen
+{{< timer 8 autostart=false >}}
 
 Jetzt stellst du eigene Fragen. **Probiere mindestens zwei der folgenden Optionen aus**, um ein Gefühl für verschiedene Anwendungen zu bekommen.
 
@@ -132,33 +130,42 @@ Erstelle drei Beispielaufgaben zum Thema [THEMA] für Erstsemester.
 - Hast du etwas Unerwartetes bemerkt?
 
 **Tipp**: Stelle bei mindestens einer Antwort eine Nachfrage, um die Verfeinerung zu üben.
+:::
 
-{{< timer 8 >}}
+::: {.pro-tip}
+## Zusatzaufgabe: Die Grenzen deiner Evaluation
+
+Schneller fertig? Probiere das Gegenteil:
+
+Stelle eine Frage zu einem Thema, von dem du **wenig Ahnung** hast. Lies die Antwort.
+
+- Klingt sie plausibel?
+- Kannst du beurteilen, ob sie stimmt?
+
+Wenn die Antwort überzeugend klingt, du aber nicht prüfen kannst, ob sie korrekt ist: Genau so geht es deinen Studierenden bei Fachfragen.
 :::
 
 ## Teil 4: Kurzer Austausch (3 min) {#austausch}
 
 ::: {.group}
 ## Erfahrungen teilen
+{{< timer 3 autostart=false >}}
 
 Tauscht euch kurz mit 1-2 Nachbarpersonen aus:
 
 - Was hat funktioniert?
 - Was war überraschend?
 - Welche Fragen sind aufgetaucht?
-
-{{< timer 3 >}}
 :::
 
 ::: {.reflect}
 ## Kurzer Selbsttest (1 min)
+{{< timer 1 autostart=false >}}
 
 Beantworte ohne auf deine Notizen zu schauen:
 
-1. Was sind die drei Prompting-Grundregeln?
+1. Welche drei einfachen Regeln haben wir für das Prompten besprochen?
 2. Warum ist es wichtig, der Selbstsicherheit des Chatbots nicht blind zu vertrauen?
-
-{{< timer 1 >}}
 :::
 
 ::: {.key-point}
@@ -180,9 +187,17 @@ Für diese Übung reichen drei einfache Regeln:
 
 | Regel | Beispiel |
 |-------|----------|
-| **Kontext geben** | "Ich bin Dozent*in für Chemie..." |
-| **Aufgabe klar formulieren** | "...erkläre mir in 3 Sätzen..." |
-| **Bei Bedarf nachfragen** | "Erkläre das genauer" |
+| **Rolle zuweisen** | "Du bist ein Experte für..." (der Chatbot ist ein Simulator für alle möglichen Dialoge) |
+| **Klare Anweisungen geben** | "Erkläre in 3 Sätzen..." |
+| **Beispiele zeigen** | "Verwende dieses Format: ..." |
+
+**Tipp:** Im Dialog verfeinern: "Erkläre das genauer" oder "Gib mir ein konkretes Beispiel"
+
+::: {.callout-note}
+## Kontext bereinigen
+
+Du kannst deinen letzten Beitrag bearbeiten und von dort aus neu verzweigen. Manchmal ist es auch sinnvoll, einen neuen Chat zu starten, wenn der Kontext zu lang oder in eine falsche Richtung gelaufen ist.
+:::
 
 ::: {.pro-tip}
 ## Mehr zu Prompting

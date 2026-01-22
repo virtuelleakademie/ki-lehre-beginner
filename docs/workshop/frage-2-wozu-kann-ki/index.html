@@ -48,8 +48,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-6a8df5911e0fca7b9ce44b1a88908514.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark-6a8df5911e0fca7b9ce44b1a88908514.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-6a8df5911e0fca7b9ce44b1a88908514.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
-<link href="../../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,19 +89,6 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f51b' !important;
-  background-image: none;
-}
 div.callout-key-point.callout {
   border-left-color: #D4A03E;
 }
@@ -115,6 +102,19 @@ div.callout-key-point.callout-style-default .callout-icon::before, div.callout-k
   content: '\f005' !important;
   background-image: none;
 }
+div.callout-source-check.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-source-check.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f002' !important;
+  background-image: none;
+}
 div.callout-group.callout {
   border-left-color: #A3195B;
 }
@@ -126,19 +126,6 @@ div.callout-group.callout-style-default .callout-icon::before, div.callout-group
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f0c0' !important;
-  background-image: none;
-}
-div.callout-reflect.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-reflect.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f0eb' !important;
   background-image: none;
 }
 div.callout-warning.callout {
@@ -167,17 +154,17 @@ div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prom
   content: '\f328' !important;
   background-image: none;
 }
-div.callout-source-check.callout {
-  border-left-color: #D4A03E;
+div.callout-demonstration.callout {
+  border-left-color: #333333;
 }
-div.callout-source-check.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
 }
-div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f002' !important;
+  content: '\f51b' !important;
   background-image: none;
 }
 div.callout-individual.callout {
@@ -191,19 +178,6 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f007' !important;
-  background-image: none;
-}
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
-}
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f0c3' !important;
   background-image: none;
 }
 div.callout-pro-tip.callout {
@@ -230,6 +204,32 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f075' !important;
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f0eb' !important;
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f0c3' !important;
   background-image: none;
 }
 </style>
@@ -481,7 +481,6 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
   <li><a href="#bfh-richtlinien" id="toc-bfh-richtlinien" class="nav-link" data-scroll-target="#bfh-richtlinien">BFH-Richtlinien</a></li>
   <li><a href="#freigegebene-tools" id="toc-freigegebene-tools" class="nav-link" data-scroll-target="#freigegebene-tools">Freigegebene Tools</a></li>
   <li><a href="#aktivität-fakten-check" id="toc-aktivität-fakten-check" class="nav-link" data-scroll-target="#aktivität-fakten-check">Aktivität: Fakten-Check</a></li>
-  <li><a href="#kurze-reflexion-2-min" id="toc-kurze-reflexion-2-min" class="nav-link" data-scroll-target="#kurze-reflexion-2-min">Kurze Reflexion (2 min)</a></li>
   <li><a href="#takeaway" id="toc-takeaway" class="nav-link" data-scroll-target="#takeaway">Takeaway</a></li>
   </ul>
 </nav>
@@ -520,7 +519,7 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 </section>
 <section id="inhaltsübersicht" class="level2">
 <h2 class="anchored" data-anchor-id="inhaltsübersicht">Inhaltsübersicht</h2>
-<p><strong>Dauer:</strong> 50 Minuten (inkl. Aktivität)</p>
+<p><strong>Dauer:</strong> 35 Minuten (inkl. Aktivität)</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -531,15 +530,15 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 <tbody>
 <tr class="odd">
 <td>Tool-Fähigkeiten (Web, Dateien, Code)</td>
-<td>15 min</td>
+<td>10 min</td>
 </tr>
 <tr class="even">
 <td>BFH-Landschaft (Policy, Tools)</td>
-<td>10 min</td>
+<td>5 min</td>
 </tr>
 <tr class="odd">
 <td>Fakten-Check Aktivität</td>
-<td>25 min</td>
+<td>20 min</td>
 </tr>
 </tbody>
 </table>
@@ -693,47 +692,48 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 <h2 class="anchored" data-anchor-id="freigegebene-tools">Freigegebene Tools</h2>
 <p>Die BFH hat mehrere KI-Tools abgeklärt und freigegeben:</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 30%">
+<col style="width: 20%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Tool</th>
-<th>Zugang</th>
-<th>Empfohlen für</th>
+<th style="text-align: center;">ÖFFENTLICH</th>
+<th style="text-align: center;">INTERN</th>
+<th style="text-align: center;">VERTRAULICH</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Microsoft Copilot</strong></td>
-<td>BFH-Lizenz</td>
-<td>Office-Aufgaben, sensible Daten</td>
+<td><strong>Microsoft Copilot</strong> (BFH)</td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-check" aria-label="circle-check"></i></p></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-check" aria-label="circle-check"></i></p></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-xmark" aria-label="circle-xmark"></i></p></td>
 </tr>
 <tr class="even">
-<td><strong>ChatGPT</strong></td>
-<td>Persönliches Konto</td>
-<td>Vielseitige Aufgaben, Coding</td>
+<td><strong>ChatGPT Edu</strong> (BFH Pilot)</td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-check" aria-label="circle-check"></i></p></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-check" aria-label="circle-check"></i></p></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-xmark" aria-label="circle-xmark"></i></p></td>
 </tr>
 <tr class="odd">
-<td><strong>Claude</strong></td>
-<td>Persönliches Konto</td>
-<td>Lange Dokumente, Analyse</td>
+<td><strong>ChatGPT</strong> (persönlich)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-check" aria-label="circle-check"></i></p></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-xmark" aria-label="circle-xmark"></i></p></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-xmark" aria-label="circle-xmark"></i></p></td>
+</tr>
+<tr class="even">
+<td><strong>Lokale KI</strong> (ohne Cloud)</td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-check" aria-label="circle-check"></i></p></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-check" aria-label="circle-check"></i></p></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-circle-check" aria-label="circle-check"></i></p></td>
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-default callout-pro-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Pro-tip</span>Wo finden?
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>mybfh → IT-Applikationen → Abgeklärte KI-Tools</p>
-</div>
-</div>
-</div>
+<p><a href="https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx" target="_blank">Alle abgeklärten Tools auf mybfh</a></p>
 </section>
 <section id="aktivität-fakten-check" class="level2">
 <h2 class="anchored" data-anchor-id="aktivität-fakten-check">Aktivität: Fakten-Check</h2>
@@ -744,29 +744,6 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 <li>Ihr tauscht euch in Kleingruppen aus</li>
 </ol>
 <p><a href="../../exercises/fakten-check/index.html">→ Zur Fakten-Check Aktivität</a></p>
-</section>
-<section id="kurze-reflexion-2-min" class="level2">
-<h2 class="anchored" data-anchor-id="kurze-reflexion-2-min">Kurze Reflexion (2 min)</h2>
-<div class="callout callout-style-default callout-reflect callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Reflect</span>Reflexion
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Nach der Fakten-Check Aktivität: Wie hat sich dein Vertrauen in Chatbot-Antworten verändert?</p>
-<div id="timer-1"></div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    initializeTimer("timer-1", 120, "slide");
-});
-</script>
-
-</div>
-</div>
 </section>
 <section id="takeaway" class="level2">
 <h2 class="anchored" data-anchor-id="takeaway">Takeaway</h2>
@@ -789,7 +766,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Wiederverwendung</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Fußnoten</h2>
+
+<ol>
+<li id="fn1"><p>“Learning” muss manuell ausgeschaltet werden!<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Wiederverwendung</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.de">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Find all prompt callouts

@@ -12,13 +12,13 @@ In dieser Einheit lernen wir die Fähigkeiten und Grenzen von Chatbots kennen, s
 
 ## Inhaltsübersicht
 
-**Dauer:** 50 Minuten (inkl. Aktivität)
+**Dauer:** 35 Minuten (inkl. Aktivität)
 
 | Thema | Zeit |
 |-------|------|
-| Tool-Fähigkeiten (Web, Dateien, Code) | 15 min |
-| BFH-Landschaft (Policy, Tools) | 10 min |
-| Fakten-Check Aktivität | 25 min |
+| Tool-Fähigkeiten (Web, Dateien, Code) | 10 min |
+| BFH-Landschaft (Policy, Tools) | 5 min |
+| Fakten-Check Aktivität | 20 min |
 
 ### Kernbotschaften
 
@@ -80,17 +80,16 @@ Ein echtes Limit: Chatbots generieren plausiblen Text, nicht geprüfte Fakten.
 
 Die BFH hat mehrere KI-Tools abgeklärt und freigegeben:
 
-| Tool | Zugang | Empfohlen für |
-|------|--------|---------------|
-| **Microsoft Copilot** | BFH-Lizenz | Office-Aufgaben, sensible Daten |
-| **ChatGPT** | Persönliches Konto | Vielseitige Aufgaben, Coding |
-| **Claude** | Persönliches Konto | Lange Dokumente, Analyse |
+| Tool | ÖFFENTLICH | INTERN | VERTRAULICH |
+|------|:----------:|:------:|:-----------:|
+| **Microsoft Copilot** (BFH) | {{< fa circle-check >}} | {{< fa circle-check >}} | {{< fa circle-xmark >}} |
+| **ChatGPT Edu** (BFH Pilot) | {{< fa circle-check >}} | {{< fa circle-check >}} | {{< fa circle-xmark >}} |
+| **ChatGPT** (persönlich)[^1] | {{< fa circle-check >}} | {{< fa circle-xmark >}} | {{< fa circle-xmark >}} |
+| **Lokale KI** (ohne Cloud) | {{< fa circle-check >}} | {{< fa circle-check >}} | {{< fa circle-check >}} |
 
-::: {.pro-tip}
-## Wo finden?
+[^1]: "Learning" muss manuell ausgeschaltet werden!
 
-mybfh → IT-Applikationen → Abgeklärte KI-Tools
-:::
+[Alle abgeklärten Tools auf mybfh](https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx){target="_blank"}
 
 ## Aktivität: Fakten-Check
 
@@ -101,14 +100,6 @@ Im Anschluss an die Präsentation folgt die **Fakten-Check Aktivität** (25 min)
 3. Ihr tauscht euch in Kleingruppen aus
 
 [→ Zur Fakten-Check Aktivität](../../exercises/fakten-check/index.qmd)
-
-## Kurze Reflexion (2 min)
-
-::: {.reflect}
-Nach der Fakten-Check Aktivität: Wie hat sich dein Vertrauen in Chatbot-Antworten verändert?
-
-{{< timer 2 >}}
-:::
 
 ## Takeaway
 

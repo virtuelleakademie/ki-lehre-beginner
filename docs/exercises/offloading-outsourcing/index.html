@@ -89,6 +89,45 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f328' !important;
+  background-image: none;
+}
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
+}
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f0c3' !important;
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f51b' !important;
+  background-image: none;
+}
 div.callout-group.callout {
   border-left-color: #A3195B;
 }
@@ -115,43 +154,17 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
   content: '\f0eb' !important;
   background-image: none;
 }
-div.callout-key-point.callout {
-  border-left-color: #D4A03E;
+div.callout-scenario.callout {
+  border-left-color: #666666;
 }
-div.callout-key-point.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
 }
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f005' !important;
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\e2ca' !important;
-  background-image: none;
-}
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f51b' !important;
+  content: '\f075' !important;
   background-image: none;
 }
 div.callout-warning.callout {
@@ -167,6 +180,19 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
   content: '\f06a' !important;
   background-image: none;
 }
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\e2ca' !important;
+  background-image: none;
+}
 div.callout-source-check.callout {
   border-left-color: #D4A03E;
 }
@@ -180,17 +206,17 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
   content: '\f002' !important;
   background-image: none;
 }
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f0c3' !important;
+  content: '\f005' !important;
   background-image: none;
 }
 div.callout-individual.callout {
@@ -204,32 +230,6 @@ div.callout-individual.callout-style-default .callout-icon::before, div.callout-
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f007' !important;
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f328' !important;
-  background-image: none;
-}
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f075' !important;
   background-image: none;
 }
 </style>
@@ -463,6 +463,13 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
    
   <ul>
   <li><a href="#lernziele" id="toc-lernziele" class="nav-link active" data-scroll-target="#lernziele">Lernziele</a></li>
+  <li><a href="#die-konzepte" id="toc-die-konzepte" class="nav-link" data-scroll-target="#die-konzepte">Die Konzepte</a>
+  <ul class="collapse">
+  <li><a href="#kognitives-offloading" id="toc-kognitives-offloading" class="nav-link" data-scroll-target="#kognitives-offloading">Kognitives Offloading</a></li>
+  <li><a href="#kognitives-outsourcing" id="toc-kognitives-outsourcing" class="nav-link" data-scroll-target="#kognitives-outsourcing">Kognitives Outsourcing</a></li>
+  <li><a href="#die-zwei-fragen" id="toc-die-zwei-fragen" class="nav-link" data-scroll-target="#die-zwei-fragen">Die zwei Fragen</a></li>
+  <li><a href="#ein-beispiel" id="toc-ein-beispiel" class="nav-link" data-scroll-target="#ein-beispiel">Ein Beispiel</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -494,22 +501,13 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 <ul>
 <li>Den Unterschied zwischen kognitivem Offloading und Outsourcing verstehen</li>
 <li>Einschätzen, wann KI-Nutzung das Lernen unterstützt oder behindert</li>
-<li>Erkennen, dass dieselbe KI-Nutzung für Expert*innen und Lernende unterschiedlich wirkt</li>
 </ul>
-<div class="callout callout-style-default callout-key-point callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Key-point</span>Teil 1: Die Konzepte (10 min)
-</div>
-</div>
-<div class="callout-body-container callout-body">
+</section>
+<section id="die-konzepte" class="level2">
+<h2 class="anchored" data-anchor-id="die-konzepte">Die Konzepte</h2>
 <section id="kognitives-offloading" class="level3">
 <h3 class="anchored" data-anchor-id="kognitives-offloading">Kognitives Offloading</h3>
 <p>Du nutzt ein externes Werkzeug, um dein Arbeitsgedächtnis zu entlasten, <strong>während du selbst die kognitive Arbeit machst</strong>.</p>
-<p><strong>Kernmerkmal</strong>: Du denkst, evaluierst und entscheidest. Das Werkzeug unterstützt.</p>
 <p>Beispiele:</p>
 <ul>
 <li>Notizen machen (du formulierst, das Papier speichert)</li>
@@ -520,249 +518,14 @@ div.callout-scenario.callout-style-default .callout-icon::before, div.callout-sc
 <section id="kognitives-outsourcing" class="level3">
 <h3 class="anchored" data-anchor-id="kognitives-outsourcing">Kognitives Outsourcing</h3>
 <p>Du überträgst die <strong>eigentliche Denkarbeit</strong> an ein externes System und übernimmst das Ergebnis ohne tiefe Evaluation.</p>
-<p><strong>Kernmerkmal</strong>: Das Werkzeug denkt, du akzeptierst.</p>
 <p>Beispiele:</p>
 <ul>
 <li>GPS-Navigation folgen, ohne die Route zu verstehen</li>
 <li>KI-generierten Text übernehmen ohne kritische Prüfung</li>
-<li>Chatbot-Antwort akzeptieren, ohne sie zu hinterfragen</li>
 </ul>
 </section>
-<section id="die-entscheidenden-fragen" class="level3">
-<h3 class="anchored" data-anchor-id="die-entscheidenden-fragen">Die entscheidenden Fragen</h3>
-<blockquote class="blockquote">
-<ol type="1">
-<li><strong>Wer evaluiert?</strong> Prüfst du kritisch, was das Werkzeug produziert?</li>
-<li><strong>Was sollte geübt werden?</strong> Ist die ausgelagerte Arbeit das, was die Person lernen sollte?</li>
-</ol>
-</blockquote>
-</section>
-<section id="der-kontext-macht-den-unterschied" class="level3">
-<h3 class="anchored" data-anchor-id="der-kontext-macht-den-unterschied">Der Kontext macht den Unterschied</h3>
-<p>Dieselbe KI-Nutzung kann sein:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 28%">
-<col style="width: 35%">
-<col style="width: 35%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Situation</th>
-<th>Für Expert*innen</th>
-<th>Für Lernende</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>KI schreibt Feedback</td>
-<td>OK (kann Qualität beurteilen)</td>
-<td>N/A</td>
-</tr>
-<tr class="even">
-<td>KI schreibt Essay</td>
-<td>N/A</td>
-<td>Problematisch (brauchen Schreibübung)</td>
-</tr>
-<tr class="odd">
-<td>KI erklärt Konzept</td>
-<td>OK (kann Erklärung prüfen)</td>
-<td>Kommt drauf an (hinterfragen sie aktiv?)</td>
-</tr>
-<tr class="even">
-<td>KI generiert Übungen</td>
-<td>OK (können Qualität beurteilen)</td>
-<td>Könnte OK sein (wenn kritisch geprüft)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Für Lehrende</strong>: Outsourcing ist oft produktiv, weil ihr nicht lernt, sondern arbeitet, und weil ihr die Qualität beurteilen könnt.</p>
-<p><strong>Für Studierende</strong>: Outsourcing ist oft problematisch, weil sie die kognitive Arbeit brauchen, um Kompetenzen aufzubauen, und weil ihnen die Expertise zur Evaluation fehlt.</p>
-</section>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>Teil 2: Durchgearbeitete Beispiele (aufklappen)
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Bevor wir mit den Szenarien arbeiten, hier zwei Beispiele, bei denen wir die diagnostischen Fragen systematisch anwenden.</p>
-<section id="beispiel-a-erfahrene-lehrperson" class="level3">
-<h3 class="anchored" data-anchor-id="beispiel-a-erfahrene-lehrperson">Beispiel A: Erfahrene Lehrperson</h3>
-<p><strong>Szenario</strong>: Eine dozierende Person mit 15 Jahren Lehrerfahrung nutzt Claude, um einen ersten Entwurf für Feedback auf eine Studierendenarbeit zu generieren. Sie liest den Entwurf, streicht zwei Punkte, ergänzt einen spezifischen Hinweis auf ein Konzept aus ihrer Vorlesung, und formuliert den Schluss um.</p>
-<p><strong>Analyse mit den diagnostischen Fragen:</strong></p>
-<ol type="1">
-<li><p><strong>Wer evaluiert?</strong> Die Person evaluiert aktiv. Sie nutzt ihre Expertise, um den KI-Output kritisch zu prüfen, Teile zu verwerfen und eigene Inhalte hinzuzufügen. Sie kann beurteilen, ob das Feedback fachlich korrekt und pädagogisch sinnvoll ist.</p></li>
-<li><p><strong>Was sollte geübt werden?</strong> Als erfahrene Lehrperson muss sie das Feedback-Schreiben nicht mehr üben. Ihre Kompetenz ist bereits aufgebaut. Ihre Zeit ist besser investiert in die individuelle Anpassung als in die Grundformulierung.</p></li>
-</ol>
-<p><strong>Einordnung</strong>: <strong>Offloading</strong>. Das Werkzeug entlastet ihr Arbeitsgedächtnis (erste Formulierung), aber sie bleibt die denkende Instanz.</p>
-</section>
-<section id="beispiel-b-programmieren-lernen" class="level3">
-<h3 class="anchored" data-anchor-id="beispiel-b-programmieren-lernen">Beispiel B: Programmieren lernen</h3>
-<p><strong>Szenario</strong>: Eine studierende Person im ersten Semester Informatik hat einen Fehler im Python-Code. Sie kopiert den Code in ChatGPT, bekommt eine korrigierte Version zurück, und ersetzt ihren Code damit. Der Code funktioniert jetzt, aber sie hat nicht verstanden, was der Fehler war.</p>
-<p><strong>Analyse mit den diagnostischen Fragen:</strong></p>
-<ol type="1">
-<li><p><strong>Wer evaluiert?</strong> Die Person evaluiert nicht. Sie kann nicht beurteilen, ob die Korrektur korrekt ist oder ob es bessere Lösungen gäbe. Sie akzeptiert das Ergebnis, weil es funktioniert.</p></li>
-<li><p><strong>Was sollte geübt werden?</strong> Genau das: Fehler finden, verstehen und beheben. Debugging ist eine Kernkompetenz beim Programmieren. Jeder selbst gefundene Fehler stärkt das Verständnis für Code-Logik.</p></li>
-</ol>
-<p><strong>Einordnung</strong>: <strong>Outsourcing</strong>. Die kognitive Arbeit (Fehleranalyse, Problemlösung) wurde vollständig an die KI übertragen. Die Person hat das Produkt (funktionierender Code), aber nicht den Lerneffekt.</p>
-</section>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-experiment callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Experiment</span>Teil 3: Szenario-Karten (15 min)
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Jetzt wendet ihr die Konzepte selbst an. Arbeitet in Kleingruppen (3-4 Personen).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Hinweis</span>Gruppenbildung
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Bildet gemischte Gruppen: Idealerweise hat jede Gruppe mindestens eine Person mit viel und eine mit weniger KI-Erfahrung. Die unterschiedlichen Perspektiven bereichern die Diskussion.</p>
-</div>
-</div>
-<p>Für jedes Szenario beantwortet ihr drei Fragen:</p>
-<ol type="1">
-<li><strong>Einschätzung</strong>: Tendiert diese Situation eher zu Offloading oder Outsourcing?</li>
-<li><strong>Begründung</strong>: <em>Warum</em> kommt ihr zu dieser Einschätzung? Bezieht euch auf die diagnostischen Fragen.</li>
-<li><strong>Unsicherheit</strong>: Was müsstet ihr zusätzlich wissen, um das sicher zu entscheiden?</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Hinweis</span>Wichtig
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Die Unterscheidung liegt nicht in der Handlung, sondern <strong>im Kopf der Person</strong>. Kognitive Prozesse sind nicht direkt beobachtbar.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tipp</span>Hilfestellung (bei Unsicherheit aufklappen)
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Wenn du bei einem Szenario unsicher bist, nutze diese Leitfragen:</p>
-<ol type="1">
-<li><strong>Stell dir vor, du beobachtest die Person</strong>: Was siehst du sie tun? (Das ist die Handlung, nicht die Kategorie.)</li>
-<li><strong>Jetzt stell dir vor, du könntest in ihren Kopf schauen</strong>: Denkt sie aktiv nach, oder wartet sie auf das Ergebnis?</li>
-<li><strong>Die Testfrage</strong>: Könnte diese Person das Gleiche ohne KI, nur langsamer? Wenn ja, tendiert es zu Offloading. Wenn nein, tendiert es zu Outsourcing.</li>
-<li><strong>Die Lernfrage</strong>: Ist das, was die KI macht, etwas, das die Person üben sollte?</li>
-</ol>
-</div>
-</div>
-</div>
-<section id="die-szenarien" class="level3">
-<h3 class="anchored" data-anchor-id="die-szenarien">Die Szenarien</h3>
-<p>Diskutiert mindestens 3-4 dieser Szenarien. Für jedes Szenario: Beantwortet die drei Fragen oben und schliesst mit einer Beurteilung ab: <strong>Unterstützt oder behindert diese KI-Nutzung das Lernen der Person?</strong></p>
-<p><strong>Szenario 1</strong>: Eine studierende Person nutzt ChatGPT, um eine Gliederung für ihre Seminararbeit zu erstellen.</p>
-<p><strong>Szenario 2</strong>: Eine dozierende Person nutzt Claude, um Feedback-Entwürfe auf Studierendenarbeiten zu formulieren.</p>
-<p><strong>Szenario 3</strong>: Eine studierende Person bittet Copilot, ein komplexes Konzept zu erklären, das sie nicht verstanden hat.</p>
-<p><strong>Szenario 4</strong>: Eine studierende Person lässt ChatGPT ihren Essay schreiben und reicht ihn ein.</p>
-<p><strong>Szenario 5</strong>: Eine studierende Person nutzt KI als Sparringspartner, um ihre Argumente zu testen.</p>
-<div id="timer-1"></div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    initializeTimer("timer-1", 720, "slide");
-});
-</script>
-
-<p>Sammelt eure Einschätzungen auf einem Flipchart oder digital.</p>
-</section>
-</div>
-</div>
-<div class="callout callout-style-default callout-group callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Group</span>Teil 4: Diskussion (5 min)
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Zwei Fragen:</p>
-<ol type="1">
-<li><strong>Wo kannst DU als Lehrperson produktiv outsourcen?</strong></li>
-<li><strong>Wo sollten deine STUDIERENDEN NICHT outsourcen?</strong></li>
-</ol>
-<div id="timer-2"></div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    initializeTimer("timer-2", 300, "slide");
-});
-</script>
-
-</div>
-</div>
-<div class="callout callout-style-default callout-reflect callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Reflect</span>Teil 5: Strukturierte Reflexion
-</div>
-</div>
-<section id="reflexionsfragen" class="level3 callout-body-container callout-body">
-<h3 class="anchored" data-anchor-id="reflexionsfragen">Reflexionsfragen</h3>
-<ol type="1">
-<li><p><strong>Zurück zu den Szenarien</strong>: Gab es Szenarien, bei denen ihr euch nicht einig wart? Was machte die Entscheidung schwierig?</p></li>
-<li><p><strong>Grauzone</strong>: Die meisten realen Situationen sind weder reines Offloading noch reines Outsourcing. Was bestimmt, wohin die Situation tendiert?</p></li>
-<li><p><strong>Metakognition</strong>: Wie können Studierende selbst erkennen, ob sie gerade offloaden oder outsourcen?</p></li>
-</ol>
-</section>
-</div>
-<div class="callout callout-style-default callout-group callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Group</span>Debrief im Plenum
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<section id="zentrale-erkenntnisse-sammeln" class="level3">
-<h3 class="anchored" data-anchor-id="zentrale-erkenntnisse-sammeln">Zentrale Erkenntnisse sammeln</h3>
-<ol type="1">
-<li><p><strong>Beobachtbarkeit</strong>: Konntet ihr von aussen erkennen, ob jemand offloaded oder outsourced? Was sagt das über die Bewertung von Studierendenleistungen?</p></li>
-<li><p><strong>Expertiserolle</strong>: Warum können Lehrende oft produktiv outsourcen, während es für Studierende problematisch ist?</p></li>
-<li><p><strong>Evaluationskompetenz</strong>: Was brauchen Studierende, um KI-Outputs kritisch zu evaluieren?</p></li>
-</ol>
-</section>
-<section id="die-schlüsseleinsicht" class="level3">
-<h3 class="anchored" data-anchor-id="die-schlüsseleinsicht">Die Schlüsseleinsicht</h3>
+<section id="die-zwei-fragen" class="level3">
+<h3 class="anchored" data-anchor-id="die-zwei-fragen">Die zwei Fragen</h3>
 <div class="callout callout-style-default callout-key-point callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -773,19 +536,82 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Der Unterschied zwischen produktiver KI-Nutzung und problematischem Outsourcing liegt in zwei Faktoren:</p>
 <ol type="1">
-<li><strong>Evaluationsfähigkeit</strong>: Kann die Person beurteilen, ob das Ergebnis gut ist?</li>
-<li><strong>Lernbedarf</strong>: Braucht die Person die kognitive Arbeit, um etwas zu lernen?</li>
+<li><strong>Wer evaluiert?</strong> Prüfst du kritisch, was das Werkzeug produziert?</li>
+<li><strong>Was sollte geübt werden?</strong> Ist die ausgelagerte Arbeit das, was die Person lernen sollte?</li>
 </ol>
-<p>Expert*innen haben Evaluationsfähigkeit und arbeiten (statt zu lernen). Studierenden fehlt oft beides.</p>
 </div>
 </div>
 </section>
+<section id="ein-beispiel" class="level3">
+<h3 class="anchored" data-anchor-id="ein-beispiel">Ein Beispiel</h3>
+<p>Jemand im ersten Semester hat einen Fehler im Python-Code. Die Person kopiert den Code in ChatGPT, bekommt eine korrigierte Version zurück, und ersetzt ihren Code damit. Der Code funktioniert, aber sie hat nicht verstanden, was der Fehler war.</p>
+<p><strong>Analyse</strong>: Sie evaluiert nicht (kann nicht beurteilen, ob die Lösung gut ist). Und Debugging ist genau das, was sie üben sollte. → <strong>Outsourcing</strong>, problematisch fürs Lernen.</p>
+<div class="callout callout-style-default callout-experiment callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Experiment</span>Szenarien diskutieren (15 min)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Arbeitet in Kleingruppen. Für jedes Szenario:</p>
+<ol type="1">
+<li>Tendiert es zu Offloading oder Outsourcing?</li>
+<li>Warum? (Bezieht euch auf die zwei Fragen)</li>
+<li>Unterstützt oder behindert diese KI-Nutzung das Lernen?</li>
+</ol>
+<p><strong>Szenario 1</strong>: Im Studium nutzt jemand ChatGPT, um eine Gliederung für die Seminararbeit zu erstellen.</p>
+<p><strong>Szenario 2</strong>: Im Studium bittet jemand Copilot, ein komplexes Konzept zu erklären, das nicht verstanden wurde.</p>
+<p><strong>Szenario 3</strong>: Im Studium nutzt jemand KI als Sparringspartner, um die eigenen Argumente zu testen.</p>
+<div id="timer-1"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    initializeTimer("timer-1", 900, "interaction");
+});
+</script>
+
+</div>
+</div>
+<div class="callout callout-style-default callout-group callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Group</span>Debrief (10 min)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p><strong>Grauzone</strong>: Die meisten Situationen sind weder rein Offloading noch rein Outsourcing. Was bestimmt, wohin es tendiert?</p></li>
+<li><p><strong>Für euch als Lehrende</strong>: Wo könnt ihr produktiv outsourcen? Wo sollten eure Studierenden es nicht?</p></li>
+</ol>
+<div class="callout callout-style-default callout-key-point callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Key-point</span>Kernaussage
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Expert*innen können oft outsourcen, weil sie:</p>
+<ul>
+<li>die Ergebnisse evaluieren können</li>
+<li>nicht mehr lernen müssen, sondern arbeiten</li>
+</ul>
+<p>Studierenden fehlt oft beides.</p>
+</div>
+</div>
 </div>
 </div>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->

@@ -21,13 +21,13 @@ return {
     local containerId = "timer-" .. counter
     local minutes = tonumber(pandoc.utils.stringify(args[1])) or 5
     local timeLimit = minutes * 60
-    local startOn = "slide"
+    local startOn = "interaction"
 
-    -- Check for autostart parameter (default true)
+    -- Check for autostart parameter (default false)
     if kwargs["autostart"] then
       local autostart = pandoc.utils.stringify(kwargs["autostart"])
-      if autostart == "false" or autostart == "no" then
-        startOn = "interaction"
+      if autostart == "true" or autostart == "yes" then
+        startOn = "slide"
       end
     end
 

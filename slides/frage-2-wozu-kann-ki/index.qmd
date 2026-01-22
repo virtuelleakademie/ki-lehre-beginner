@@ -8,27 +8,26 @@ format:
     progress: true
     controls: true
     navigation-mode: linear
-footer: "KI in der Lehre: Grundlagen"
+footer: "KI in der Lehre: Beginner"
 ---
 
-## Die zweite Frage
-
-::: {.r-fit-text}
-**Wofür kann KI verwendet werden?**
-:::
-
-Möglichkeiten, Grenzen, und was an der BFH gilt
-
-## Mehr als Textgenerierung
+## Mehr als Textgenerierung {.smaller}
 
 Moderne Chatbots sind **keine reinen Textgeneratoren** mehr.
 
+::: {.columns}
+::: {.column width="40%"}
 Sie können:
 
 - Im Internet suchen
 - Dateien analysieren (PDFs, Bilder)
 - Code ausführen
 - Mit externen Diensten interagieren
+:::
+::: {.column width="60%"}
+![](../../assets/images/claude.png)
+:::
+::::
 
 ## Fragen beantworten
 
@@ -103,12 +102,32 @@ Die BFH hat eine KI-Policy verabschiedet (Mai 2025):
 4. Wissenschaftliche Integrität
 5. Didaktische Angemessenheit und Chancengleichheit
 
+::: {.notes}
+**KI-Policy BFH (Mai 2025)**
+
+Die Policy gilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb.
+
+**Die fünf Grundsätze:**
+
+1. **Transparenz**: Offen kommunizieren
+2. **Datenschutz**: BFH-Richtlinien: Neue Tools müssen geprüft werden
+3. **Ethik**: Nutzer tragen Verantwortung
+4. **Integrität**: Plagiate vermeiden
+5. **Didaktik**: Pädagogischer Mehrwert?
+
+**Zusätzlich**: Nachhaltigkeit (Energieeffizienz, Ressourcen) beachten.
+
+**Wer hilft?** CISO, Fachstelle Datenschutz, Virtuelle Akademie.
+:::
+
 ## Deine Verantwortung als Lehrperson
 
-- Auswahl und Einsatz von KI-Tools verantworten
-- Eignung für Lernziele prüfen
-- Studierende transparent informieren
-- Festlegen, wie KI-Inhalte zu kennzeichnen sind
+Laut KI-Policy sind **Lehrende verantwortlich** für:
+
+- Auswahl und Einsatz von KI-Tools als Teil des Lehrkonzepts
+- Prüfung der Eignung im Hinblick auf Lernziele und Kompetenzförderung
+- Transparente Information der Studierenden über eingesetzte Tools
+- Festlegung, wie KI-generierte Inhalte zu kennzeichnen sind
 
 ## Rechtliche Aspekte
 
@@ -130,39 +149,54 @@ Die BFH hat eine KI-Policy verabschiedet (Mai 2025):
 :::
 ::::
 
-## Freigegebene Tools
+## Was darf in den Chatbot? {.smaller}
+<br>
+{{< fa circle-check >}} **Unbedenklich** (ÖFFENTLICH/INTERN):
 
-| Tool | Zugang | Stärken |
-|------|--------|---------|
-| Microsoft Copilot | BFH-Lizenz | Office-Integration, Datenschutz |
-| ChatGPT | Persönlich/Abo | Vielseitig, viele Funktionen |
-| Claude | Persönlich/Abo | Lange Texte, Reasoning |
+- Allgemeine Fragen, Unterrichtsmaterialien, Ideenentwicklung
 
-::: {.fragment}
-**Wo finden?** mybfh → IT-Applikationen → Abgeklärte KI-Tools
+{{< fa circle-xmark >}} **Nicht eingeben** (VERTRAULICH):
+
+- Namen von Studierenden, Prüfungsleistungen, Verträge, Personaldaten
+
+::: {.pro-tip}
+## Faustregel
+Würdest du es an eine Pinnwand hängen? Dann ist es okay.
 :::
+
+<br>
+[Vollständige Datenklassifikation auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Datenklassifikation.aspx){target="_blank"}
+
+## Freigegebene Tools {.smaller}
+
+| Tool | ÖFFENTLICH | INTERN | VERTRAULICH |
+|------|:----------:|:------:|:-----------:|
+| **Microsoft Copilot** (BFH) | {{< fa circle-check >}} | {{< fa circle-check >}} | {{< fa circle-xmark >}} |
+| **ChatGPT Edu** (BFH Pilot) | {{< fa circle-check >}} | {{< fa circle-check >}} | {{< fa circle-xmark >}} |
+| **ChatGPT** (persönlich)[^1] | {{< fa circle-check >}} | {{< fa circle-xmark >}} | {{< fa circle-xmark >}} |
+| **Lokale KI** (ohne Cloud) | {{< fa circle-check >}} | {{< fa circle-check >}} | {{< fa circle-check >}} |
+
+[^1]: "Learning" muss manuell ausgeschaltet werden!
+
+[Alle abgeklärten Tools auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx){target="_blank"}
+
+
 
 ## Datenschutz: Copilot
 
 Microsoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:
 
+::: {.columns}
+::: {.column width="50%"}
 - Benutzerdaten sind verschlüsselt
 - Microsoft verwendet Daten nicht ohne Anweisung
 - Für sensible Aufgaben: Copilot bevorzugen
+:::
+::: {.column width="50%"}
+![](../../assets/images/copilot-datenschutz.png)
+:::
+::::
 
-## Zusammenfassung: Wofür kann KI verwendet werden?
-
-**Möglichkeiten**:
-
-- Vielseitige Werkzeuge (Text, Bild, Code, Suche)
-- Zeitersparnis bei Routineaufgaben
-- Unterstützung bei komplexen Aufgaben
-
-**Grenzen**:
-
-- Keine Faktendatenbank
-- Halluzinationen möglich
-- Datenschutz beachten
 
 ## Takeaway
 
@@ -171,7 +205,7 @@ Microsoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:
 
 **Wofür kann KI verwendet werden?**
 
-Chatbots sind vielseitige Werkzeuge mit echten Fähigkeiten. Aber sie generieren selbstbewusst auch Falsches.
+Chatbots sind vielseitige Werkzeuge mit echten Fähigkeiten. Aber Falsches klingt genauso überzeugend wie Richtiges.
 
 **Kritische Prüfung ist immer nötig.**
 :::
