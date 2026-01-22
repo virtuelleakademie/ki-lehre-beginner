@@ -19,30 +19,6 @@ footer: "KI in der Lehre: Grundlagen"
 
 Von "kann" zu "soll": Wann ist KI-Nutzung sinnvoll?
 
-## Szenario-Aktivität
-
-::: {.experiment}
-## Gruppenarbeit (20 min)
-
-Ihr erhaltet Szenarien. Für jedes Szenario diskutiert:
-
-1. Ist das **Offloading** oder **Outsourcing**?
-2. Ist das in diesem Kontext **problematisch**?
-
-{{< timer 20 >}}
-:::
-
-## Die Szenarien
-
-1. Student nutzt KI für Gliederung einer Seminararbeit
-2. Dozentin nutzt KI für Feedback-Entwürfe
-3. Student bittet KI um Erklärung eines Konzepts
-4. Dozentin generiert Prüfungsfragen mit KI
-5. Student lässt KI seinen Essay schreiben
-6. Dozentin bereitet Vorlesung mit KI vor
-7. Student nutzt KI als Sparringspartner für Argumente
-8. Student debuggt Code mit KI, ohne den Fehler zu verstehen
-
 ## Die Konzepte
 
 Zwei verschiedene Arten, kognitive Arbeit auszulagern:
@@ -77,6 +53,30 @@ Das Werkzeug **entscheidet** für dich.
 ::: {.r-fit-text}
 > Ist die ausgelagerte Arbeit das, was die Person **lernen oder üben** sollte?
 :::
+
+## Szenario-Aktivität
+
+::: {.experiment}
+## Gruppenarbeit (20 min)
+
+Ihr erhaltet Szenarien. Für jedes Szenario diskutiert:
+
+1. Ist das **Offloading** oder **Outsourcing**?
+2. Ist das in diesem Kontext **problematisch**?
+
+{{< timer 20 >}}
+:::
+
+## Die Szenarien
+
+1. Student nutzt KI für Gliederung einer Seminararbeit
+2. Dozentin nutzt KI für Feedback-Entwürfe
+3. Student bittet KI um Erklärung eines Konzepts
+4. Dozentin generiert Prüfungsfragen mit KI
+5. Student lässt KI seinen Essay schreiben
+6. Dozentin bereitet Vorlesung mit KI vor
+7. Student nutzt KI als Sparringspartner für Argumente
+8. Student debuggt Code mit KI, ohne den Fehler zu verstehen
 
 ## Der Kontext macht den Unterschied
 

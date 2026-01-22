@@ -16,8 +16,8 @@ In dieser Einheit diskutieren wir, wann KI-Nutzung sinnvoll ist und wann sie das
 
 | Thema | Zeit |
 |-------|------|
-| Szenario-Aktivität | 20 min |
 | Konzepte: Offloading vs. Outsourcing | 10 min |
+| Szenario-Aktivität | 20 min |
 | Diskussion und Transfer | 10 min |
 
 ### Kernbotschaften
