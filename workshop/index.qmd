@@ -29,7 +29,7 @@ Am Ende dieses Workshops kannst du:
 | Zeit | Phase | Inhalt |
 |------|-------|--------|
 | 09:00–09:10 | Einstieg | Begrüssung und Selbsteinschätzung |
-| 09:10–09:55 | **Frage 1: Was ist KI?** | Textgenerierung, Chain-of-Thought, Mini-Experiment |
+| 09:10–09:55 | **Frage 1: Was ist KI?** | Textgenerierung, Chain-of-Thought, Demonstration |
 | 09:55–10:15 | **Copilot Onboarding** | Demonstration + Guided Practice |
 | 10:15–10:30 | Pause | |
 | 10:30–11:05 | **Frage 2: Wofür kann KI verwendet werden?** | Fähigkeiten, BFH-Policy, Fakten-Check Aktivität |
@@ -38,11 +38,8 @@ Am Ende dieses Workshops kannst du:
 
 ## Aktivitäten
 
-Jede Frage enthält eine praktische Aktivität:
-
 | Frage | Aktivität | Dauer |
 |-------|-----------|-------|
-| 1 | Mini-Experiment: Chain-of-Thought testen | 10 min |
 | Vor 2 | **Copilot Onboarding**: Erste Schritte | 20 min |
 | 2 | Fakten-Check: Chatbot-Antworten überprüfen | 30 min |
 | 3 | Szenario-Karten: Offloading vs. Outsourcing | 35 min |
