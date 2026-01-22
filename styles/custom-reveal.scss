@@ -93,31 +93,33 @@ $presentation-heading-font: "News Cycle", sans-serif !default;
 }
 
 // OJS interactive elements in slides
-.cell {
-  font-size: 0.6em;
-}
+.reveal {
+  .cell {
+    font-size: 0.8em;
+  }
 
-form {
-  font-size: 0.65em;
-}
+  .observablehq {
+    font-size: 0.8em;
+  }
 
-form label {
-  font-size: 1em;
-}
+  form {
+    font-size: 14px !important;
+  }
 
-input[type="range"] {
-  width: 250px;
-}
+  form label {
+    font-size: 14px !important;
+  }
 
-select {
-  font-size: 1em;
-  padding: 0.2em 0.4em;
-}
+  select {
+    font-size: 14px !important;
+    padding: 0.3em 0.5em;
+  }
 
-svg text {
-  font-size: 0.9em;
-}
+  input[type="range"] {
+    width: 250px;
+  }
 
-.observablehq {
-  font-size: 0.6em;
+  svg text {
+    font-size: 0.8em;
+  }
 }

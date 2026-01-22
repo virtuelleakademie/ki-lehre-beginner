@@ -95,7 +95,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-ba71eb4af3d9108b4a00943b659efcae.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-500a76f15a9d1475d5c96c1a1b0901ec.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -202,108 +202,17 @@
   <script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
   <link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
   <style>
-  div.callout-reflect.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-reflect.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f0eb' !important;
-    background-image: none;
-  }
-  div.callout-group.callout {
+  div.callout-warning.callout {
     border-left-color: #A3195B;
   }
-  div.callout-group.callout-style-default > .callout-header {
+  div.callout-warning.callout-style-default > .callout-header {
     background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free', FontAwesome;
     font-style: normal;
-    content: '\f0c0' !important;
-    background-image: none;
-  }
-  div.callout-individual.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-individual.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f007' !important;
-    background-image: none;
-  }
-  div.callout-source-check.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-source-check.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f002' !important;
-    background-image: none;
-  }
-  div.callout-pro-tip.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-pro-tip.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\e2ca' !important;
-    background-image: none;
-  }
-  div.callout-prompt.callout {
-    border-left-color: #333333;
-  }
-  div.callout-prompt.callout-style-default > .callout-header {
-    background-color: rgba(51, 51, 51, 0.13);
-  }
-  div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f328' !important;
-    background-image: none;
-  }
-  div.callout-key-point.callout {
-    border-left-color: #D4A03E;
-  }
-  div.callout-key-point.callout-style-default > .callout-header {
-    background-color: rgba(212, 160, 62, 0.13);
-  }
-  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f005' !important;
-    background-image: none;
-  }
-  div.callout-experiment.callout {
-    border-left-color: #A3195B;
-  }
-  div.callout-experiment.callout-style-default > .callout-header {
-    background-color: rgba(163, 25, 91, 0.13);
-  }
-  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
-    font-family: 'Font Awesome 6 Free', FontAwesome;
-    font-style: normal;
-    content: '\f0c3' !important;
+    content: '\f06a' !important;
     background-image: none;
   }
   div.callout-demonstration.callout {
@@ -319,17 +228,108 @@
     content: '\f51b' !important;
     background-image: none;
   }
-  div.callout-warning.callout {
+  div.callout-individual.callout {
     border-left-color: #A3195B;
   }
-  div.callout-warning.callout-style-default > .callout-header {
+  div.callout-individual.callout-style-default > .callout-header {
     background-color: rgba(163, 25, 91, 0.13);
   }
-  div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-  div.callout-warning.callout-style-default .callout-icon::before, div.callout-warning.callout-titled .callout-icon::before {
+  div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
     font-family: 'Font Awesome 6 Free', FontAwesome;
     font-style: normal;
-    content: '\f06a' !important;
+    content: '\f007' !important;
+    background-image: none;
+  }
+  div.callout-key-point.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-key-point.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free', FontAwesome;
+    font-style: normal;
+    content: '\f005' !important;
+    background-image: none;
+  }
+  div.callout-pro-tip.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-pro-tip.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro-tip.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free', FontAwesome;
+    font-style: normal;
+    content: '\e2ca' !important;
+    background-image: none;
+  }
+  div.callout-group.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-group.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free', FontAwesome;
+    font-style: normal;
+    content: '\f0c0' !important;
+    background-image: none;
+  }
+  div.callout-experiment.callout {
+    border-left-color: #A3195B;
+  }
+  div.callout-experiment.callout-style-default > .callout-header {
+    background-color: rgba(163, 25, 91, 0.13);
+  }
+  div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free', FontAwesome;
+    font-style: normal;
+    content: '\f0c3' !important;
+    background-image: none;
+  }
+  div.callout-reflect.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-reflect.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-reflect.callout-style-default .callout-icon::before, div.callout-reflect.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free', FontAwesome;
+    font-style: normal;
+    content: '\f0eb' !important;
+    background-image: none;
+  }
+  div.callout-source-check.callout {
+    border-left-color: #D4A03E;
+  }
+  div.callout-source-check.callout-style-default > .callout-header {
+    background-color: rgba(212, 160, 62, 0.13);
+  }
+  div.callout-source-check .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-source-check.callout-style-default .callout-icon::before, div.callout-source-check.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free', FontAwesome;
+    font-style: normal;
+    content: '\f002' !important;
+    background-image: none;
+  }
+  div.callout-prompt.callout {
+    border-left-color: #333333;
+  }
+  div.callout-prompt.callout-style-default > .callout-header {
+    background-color: rgba(51, 51, 51, 0.13);
+  }
+  div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+  div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prompt.callout-titled .callout-icon::before {
+    font-family: 'Font Awesome 6 Free', FontAwesome;
+    font-style: normal;
+    content: '\f328' !important;
     background-image: none;
   }
   div.callout-scenario.callout {
@@ -400,39 +400,68 @@
 <p><span class="math display">\[\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})\]</span></p>
 <p>Jede Vorhersage basiert auf dem <strong>Kontext</strong> und dem internen <strong>Modell</strong>.</p>
 </section>
-<section id="token-vorhersage" class="slide level2">
-<h2>Token-Vorhersage</h2>
+<section id="was-bedeutet-das-konkret" class="slide level2 smaller">
+<h2>Was bedeutet das konkret?</h2>
+<p>Gegeben einen Satzanfang wie <em>“Der Hund liegt auf dem”</em>, berechnet das Modell die Wahrscheinlichkeit für jedes mögliche nächste Wort:</p>
+<ul>
+<li>“Boden” → 32%</li>
+<li>“Sofa” → 24%</li>
+<li>“Bett” → 18%</li>
+<li>…</li>
+</ul>
+<p>Zwei Faktoren bestimmen diese Vorhersage:</p>
+<ol type="1">
+<li><strong>Kontext</strong>: Was wurde bisher gesagt?</li>
+<li><strong>Modell</strong>: Was hat das System aus Trainingsdaten gelernt?</li>
+</ol>
+</section>
+<section id="token-vorhersage-und-temperatur" class="slide level2 smaller">
+<h2>Token-Vorhersage und Temperatur</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="69" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 68;"><span id="cb1-69"><a></a>tokenDatabase <span class="op">=</span> ({</span>
-<span id="cb1-70"><a></a>  <span class="st">"Der Hund liegt auf dem"</span><span class="op">:</span> [</span>
-<span id="cb1-71"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Boden"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.32</span>}<span class="op">,</span></span>
-<span id="cb1-72"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Sofa"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
-<span id="cb1-73"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Bett"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.18</span>}<span class="op">,</span></span>
-<span id="cb1-74"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Teppich"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.14</span>}<span class="op">,</span></span>
-<span id="cb1-75"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Rasen"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
-<span id="cb1-76"><a></a>  ]<span class="op">,</span></span>
-<span id="cb1-77"><a></a>  <span class="st">"Die Katze sitzt auf dem"</span><span class="op">:</span> [</span>
-<span id="cb1-78"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Dach"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.28</span>}<span class="op">,</span></span>
-<span id="cb1-79"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Baum"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
-<span id="cb1-80"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Sofa"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
-<span id="cb1-81"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Tisch"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.16</span>}<span class="op">,</span></span>
-<span id="cb1-82"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Fensterbrett"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
-<span id="cb1-83"><a></a>  ]<span class="op">,</span></span>
-<span id="cb1-84"><a></a>  <span class="st">"Die Studierenden lernen für die"</span><span class="op">:</span> [</span>
-<span id="cb1-85"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Prüfung"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.45</span>}<span class="op">,</span></span>
-<span id="cb1-86"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Klausur"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.25</span>}<span class="op">,</span></span>
-<span id="cb1-87"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Zukunft"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}<span class="op">,</span></span>
-<span id="cb1-88"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Vorlesung"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.10</span>}<span class="op">,</span></span>
-<span id="cb1-89"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Karriere"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.08</span>}</span>
-<span id="cb1-90"><a></a>  ]</span>
-<span id="cb1-91"><a></a>})</span>
-<span id="cb1-92"><a></a></span>
-<span id="cb1-93"><a></a>viewof selectedSentence <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(<span class="bu">Object</span><span class="op">.</span><span class="fu">keys</span>(tokenDatabase)<span class="op">,</span> {</span>
-<span id="cb1-94"><a></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Satzanfang:"</span><span class="op">,</span></span>
-<span id="cb1-95"><a></a>  <span class="dt">value</span><span class="op">:</span> <span class="st">"Der Hund liegt auf dem"</span></span>
-<span id="cb1-96"><a></a>})</span>
-<span id="cb1-97"><a></a></span>
-<span id="cb1-98"><a></a>currentProbs <span class="op">=</span> tokenDatabase[selectedSentence]</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="83" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 82;"><span id="cb1-83"><a></a>tokenDatabase <span class="op">=</span> ({</span>
+<span id="cb1-84"><a></a>  <span class="st">"Der Hund liegt auf dem"</span><span class="op">:</span> [</span>
+<span id="cb1-85"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Boden"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.32</span>}<span class="op">,</span></span>
+<span id="cb1-86"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Sofa"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
+<span id="cb1-87"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Bett"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.18</span>}<span class="op">,</span></span>
+<span id="cb1-88"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Teppich"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.14</span>}<span class="op">,</span></span>
+<span id="cb1-89"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Rasen"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
+<span id="cb1-90"><a></a>  ]<span class="op">,</span></span>
+<span id="cb1-91"><a></a>  <span class="st">"Die Katze sitzt auf dem"</span><span class="op">:</span> [</span>
+<span id="cb1-92"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Dach"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.28</span>}<span class="op">,</span></span>
+<span id="cb1-93"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Baum"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.24</span>}<span class="op">,</span></span>
+<span id="cb1-94"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Sofa"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.20</span>}<span class="op">,</span></span>
+<span id="cb1-95"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Tisch"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.16</span>}<span class="op">,</span></span>
+<span id="cb1-96"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Fensterbrett"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}</span>
+<span id="cb1-97"><a></a>  ]<span class="op">,</span></span>
+<span id="cb1-98"><a></a>  <span class="st">"Die Studierenden lernen für die"</span><span class="op">:</span> [</span>
+<span id="cb1-99"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Prüfung"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.45</span>}<span class="op">,</span></span>
+<span id="cb1-100"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Klausur"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.25</span>}<span class="op">,</span></span>
+<span id="cb1-101"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Zukunft"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.12</span>}<span class="op">,</span></span>
+<span id="cb1-102"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Vorlesung"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.10</span>}<span class="op">,</span></span>
+<span id="cb1-103"><a></a>    {<span class="dt">token</span><span class="op">:</span> <span class="st">"Karriere"</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> <span class="fl">0.08</span>}</span>
+<span id="cb1-104"><a></a>  ]</span>
+<span id="cb1-105"><a></a>})</span>
+<span id="cb1-106"><a></a></span>
+<span id="cb1-107"><a></a>viewof selectedSentence <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(<span class="bu">Object</span><span class="op">.</span><span class="fu">keys</span>(tokenDatabase)<span class="op">,</span> {</span>
+<span id="cb1-108"><a></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Satzanfang:"</span><span class="op">,</span></span>
+<span id="cb1-109"><a></a>  <span class="dt">value</span><span class="op">:</span> <span class="st">"Der Hund liegt auf dem"</span></span>
+<span id="cb1-110"><a></a>})</span>
+<span id="cb1-111"><a></a></span>
+<span id="cb1-112"><a></a>currentProbs <span class="op">=</span> tokenDatabase[selectedSentence]</span>
+<span id="cb1-113"><a></a></span>
+<span id="cb1-114"><a></a>viewof temperature <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="fl">0.1</span><span class="op">,</span> <span class="fl">2.0</span>]<span class="op">,</span> {</span>
+<span id="cb1-115"><a></a>  <span class="dt">value</span><span class="op">:</span> <span class="fl">1.0</span><span class="op">,</span></span>
+<span id="cb1-116"><a></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span></span>
+<span id="cb1-117"><a></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Temperature"</span></span>
+<span id="cb1-118"><a></a>})</span>
+<span id="cb1-119"><a></a></span>
+<span id="cb1-120"><a></a>scaledProbs <span class="op">=</span> {</span>
+<span id="cb1-121"><a></a>  <span class="kw">const</span> t <span class="op">=</span> temperature<span class="op">;</span></span>
+<span id="cb1-122"><a></a>  <span class="kw">const</span> logits <span class="op">=</span> currentProbs<span class="op">.</span><span class="fu">map</span>(p <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(p<span class="op">.</span><span class="at">prob</span>))<span class="op">;</span></span>
+<span id="cb1-123"><a></a>  <span class="kw">const</span> scaled <span class="op">=</span> logits<span class="op">.</span><span class="fu">map</span>(l <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(l <span class="op">/</span> t))<span class="op">;</span></span>
+<span id="cb1-124"><a></a>  <span class="kw">const</span> sum <span class="op">=</span> scaled<span class="op">.</span><span class="fu">reduce</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a <span class="op">+</span> b<span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
+<span id="cb1-125"><a></a>  <span class="cf">return</span> currentProbs<span class="op">.</span><span class="fu">map</span>((p<span class="op">,</span> i) <span class="kw">=&gt;</span> ({<span class="dt">token</span><span class="op">:</span> p<span class="op">.</span><span class="at">token</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> scaled[i] <span class="op">/</span> sum}))<span class="op">;</span></span>
+<span id="cb1-126"><a></a>}</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -454,89 +483,63 @@
 </div>
 </div>
 </div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
 </div>
-<p><strong>Kontext:</strong> <span><span id="ojs-element-id-1"></span></span> ___</p>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Basis-Wahrscheinlichkeiten</strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="104" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 103;"><span id="cb2-104"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb2-105"><a></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span></span>
-<span id="cb2-106"><a></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
-<span id="cb2-107"><a></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">180</span><span class="op">,</span></span>
-<span id="cb2-108"><a></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="fl">0.5</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Wahrscheinlichkeit"</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d <span class="op">*</span> <span class="dv">100</span>) <span class="op">+</span> <span class="st">"%"</span>}<span class="op">,</span></span>
-<span id="cb2-109"><a></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
-<span id="cb2-110"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb2-111"><a></a>    Plot<span class="op">.</span><span class="fu">barX</span>(currentProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"-x"</span>}})<span class="op">,</span></span>
-<span id="cb2-112"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>(currentProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">prob</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>) <span class="op">+</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})</span>
-<span id="cb2-113"><a></a>  ]</span>
-<span id="cb2-114"><a></a>})</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="134" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 133;"><span id="cb2-134"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-135"><a></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">80</span><span class="op">,</span></span>
+<span id="cb2-136"><a></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">380</span><span class="op">,</span></span>
+<span id="cb2-137"><a></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">150</span><span class="op">,</span></span>
+<span id="cb2-138"><a></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="fl">0.5</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Wahrscheinlichkeit"</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d <span class="op">*</span> <span class="dv">100</span>) <span class="op">+</span> <span class="st">"%"</span>}<span class="op">,</span></span>
+<span id="cb2-139"><a></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
+<span id="cb2-140"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-141"><a></a>    Plot<span class="op">.</span><span class="fu">barX</span>(currentProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#A3195B"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"-x"</span>}})<span class="op">,</span></span>
+<span id="cb2-142"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>(currentProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">prob</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>) <span class="op">+</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})</span>
+<span id="cb2-143"><a></a>  ]</span>
+<span id="cb2-144"><a></a>})</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 
 </div>
 </div>
 </div>
-</section>
-<section id="temperatur" class="slide level2">
-<h2>Temperatur</h2>
-<p><strong>Kontext:</strong> <span><span id="ojs-element-id-2"></span></span> ___</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Mit Temperature = <span><span id="ojs-element-id-1"></span></span></strong></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="126" data-source-offset="-1"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 125;"><span id="cb3-126"><a></a>viewof temperature <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="fl">0.1</span><span class="op">,</span> <span class="fl">2.0</span>]<span class="op">,</span> {</span>
-<span id="cb3-127"><a></a>  <span class="dt">value</span><span class="op">:</span> <span class="fl">1.0</span><span class="op">,</span></span>
-<span id="cb3-128"><a></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span></span>
-<span id="cb3-129"><a></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Temperature"</span></span>
-<span id="cb3-130"><a></a>})</span>
-<span id="cb3-131"><a></a></span>
-<span id="cb3-132"><a></a>scaledProbs <span class="op">=</span> {</span>
-<span id="cb3-133"><a></a>  <span class="kw">const</span> t <span class="op">=</span> temperature<span class="op">;</span></span>
-<span id="cb3-134"><a></a>  <span class="kw">const</span> logits <span class="op">=</span> currentProbs<span class="op">.</span><span class="fu">map</span>(p <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">log</span>(p<span class="op">.</span><span class="at">prob</span>))<span class="op">;</span></span>
-<span id="cb3-135"><a></a>  <span class="kw">const</span> scaled <span class="op">=</span> logits<span class="op">.</span><span class="fu">map</span>(l <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">exp</span>(l <span class="op">/</span> t))<span class="op">;</span></span>
-<span id="cb3-136"><a></a>  <span class="kw">const</span> sum <span class="op">=</span> scaled<span class="op">.</span><span class="fu">reduce</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a <span class="op">+</span> b<span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span>
-<span id="cb3-137"><a></a>  <span class="cf">return</span> currentProbs<span class="op">.</span><span class="fu">map</span>((p<span class="op">,</span> i) <span class="kw">=&gt;</span> ({<span class="dt">token</span><span class="op">:</span> p<span class="op">.</span><span class="at">token</span><span class="op">,</span> <span class="dt">prob</span><span class="op">:</span> scaled[i] <span class="op">/</span> sum}))<span class="op">;</span></span>
-<span id="cb3-138"><a></a>}</span>
-<span id="cb3-139"><a></a></span>
-<span id="cb3-140"><a></a>tempDescription <span class="op">=</span> temperature <span class="op">&lt;</span> <span class="fl">0.5</span> <span class="op">?</span> <span class="st">"Deterministisch: Fast immer das wahrscheinlichste Wort"</span> <span class="op">:</span></span>
-<span id="cb3-141"><a></a>  temperature <span class="op">&lt;</span> <span class="fl">1.0</span> <span class="op">?</span> <span class="st">"Ausgeglichen: Gute Mischung"</span> <span class="op">:</span></span>
-<span id="cb3-142"><a></a>  temperature <span class="op">&lt;</span> <span class="fl">1.5</span> <span class="op">?</span> <span class="st">"Kreativ: Mehr Variation"</span> <span class="op">:</span> <span class="st">"Unvorhersehbar: Auch unwahrscheinliche Wörter werden gewählt"</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="154" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 153;"><span id="cb3-154"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb3-155"><a></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">80</span><span class="op">,</span></span>
+<span id="cb3-156"><a></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">380</span><span class="op">,</span></span>
+<span id="cb3-157"><a></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">150</span><span class="op">,</span></span>
+<span id="cb3-158"><a></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Angepasste Wahrscheinlichkeit"</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d <span class="op">*</span> <span class="dv">100</span>) <span class="op">+</span> <span class="st">"%"</span>}<span class="op">,</span></span>
+<span id="cb3-159"><a></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
+<span id="cb3-160"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb3-161"><a></a>    Plot<span class="op">.</span><span class="fu">barX</span>(scaledProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#D4A03E"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"-x"</span>}})<span class="op">,</span></span>
+<span id="cb3-162"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>(scaledProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">prob</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>) <span class="op">+</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})</span>
+<span id="cb3-163"><a></a>  ]</span>
+<span id="cb3-164"><a></a>})</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-3-1" data-nodetype="declaration">
+<div id="ojs-cell-3" data-nodetype="expression">
 
 </div>
 </div>
 </div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-3-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-3-3" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-</div>
-<p><strong>Temperature = <span><span id="ojs-element-id-3"></span></span></strong>: <span><span id="ojs-element-id-4"></span></span></p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="148" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 147;"><span id="cb4-148"><a></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb4-149"><a></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span></span>
-<span id="cb4-150"><a></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">500</span><span class="op">,</span></span>
-<span id="cb4-151"><a></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">180</span><span class="op">,</span></span>
-<span id="cb4-152"><a></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Angepasste Wahrscheinlichkeit"</span><span class="op">,</span> <span class="dt">tickFormat</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d <span class="op">*</span> <span class="dv">100</span>) <span class="op">+</span> <span class="st">"%"</span>}<span class="op">,</span></span>
-<span id="cb4-153"><a></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
-<span id="cb4-154"><a></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb4-155"><a></a>    Plot<span class="op">.</span><span class="fu">barX</span>(scaledProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"#D4A03E"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"-x"</span>}})<span class="op">,</span></span>
-<span id="cb4-156"><a></a>    Plot<span class="op">.</span><span class="fu">text</span>(scaledProbs<span class="op">,</span> {<span class="dt">y</span><span class="op">:</span> <span class="st">"token"</span><span class="op">,</span> <span class="dt">x</span><span class="op">:</span> <span class="st">"prob"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> (d<span class="op">.</span><span class="at">prob</span> <span class="op">*</span> <span class="dv">100</span>)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">0</span>) <span class="op">+</span> <span class="st">"%"</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span>})</span>
-<span id="cb4-157"><a></a>  ]</span>
-<span id="cb4-158"><a></a>})</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-4" data-nodetype="expression">
-
-</div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="vorhersage-in-aktion" class="slide level2">
 <h2>Vorhersage in Aktion</h2>
@@ -684,7 +687,7 @@
 
 <div class="ojs-auto-generated hidden">
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6WyAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7c2VsZWN0ZWRTZW50ZW5jZX08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTEifSwgIHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImlubGluZSI6InRydWUiLCJzb3VyY2UiOiJodGwuaHRtbGA8c3Bhbj4ke3NlbGVjdGVkU2VudGVuY2V9PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC0yIn0sICB7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOiJ0cnVlIiwic291cmNlIjoiaHRsLmh0bWxgPHNwYW4+JHt0ZW1wZXJhdHVyZS50b0ZpeGVkKDEpfTwvc3Bhbj5gIiwgImNlbGxOYW1lIjoib2pzLWVsZW1lbnQtaWQtMyJ9LCAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGVtcERlc2NyaXB0aW9ufTwvc3Bhbj5gIiwgImNlbGxOYW1lIjoib2pzLWVsZW1lbnQtaWQtNCJ9XX0=
+eyJjb250ZW50cyI6WyAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGVtcGVyYXR1cmUudG9GaXhlZCgxKX08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTEifV19
 </script>
 </div>
 </section>
@@ -905,7 +908,7 @@ eyJjb250ZW50cyI6WyAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNv
       });
     </script>
     <script type="ojs-module-contents">
-    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxudG9rZW5EYXRhYmFzZSA9ICh7XG4gIFwiRGVyIEh1bmQgbGllZ3QgYXVmIGRlbVwiOiBbXG4gICAge3Rva2VuOiBcIkJvZGVuXCIsIHByb2I6IDAuMzJ9LFxuICAgIHt0b2tlbjogXCJTb2ZhXCIsIHByb2I6IDAuMjR9LFxuICAgIHt0b2tlbjogXCJCZXR0XCIsIHByb2I6IDAuMTh9LFxuICAgIHt0b2tlbjogXCJUZXBwaWNoXCIsIHByb2I6IDAuMTR9LFxuICAgIHt0b2tlbjogXCJSYXNlblwiLCBwcm9iOiAwLjEyfVxuICBdLFxuICBcIkRpZSBLYXR6ZSBzaXR6dCBhdWYgZGVtXCI6IFtcbiAgICB7dG9rZW46IFwiRGFjaFwiLCBwcm9iOiAwLjI4fSxcbiAgICB7dG9rZW46IFwiQmF1bVwiLCBwcm9iOiAwLjI0fSxcbiAgICB7dG9rZW46IFwiU29mYVwiLCBwcm9iOiAwLjIwfSxcbiAgICB7dG9rZW46IFwiVGlzY2hcIiwgcHJvYjogMC4xNn0sXG4gICAge3Rva2VuOiBcIkZlbnN0ZXJicmV0dFwiLCBwcm9iOiAwLjEyfVxuICBdLFxuICBcIkRpZSBTdHVkaWVyZW5kZW4gbGVybmVuIGbDvHIgZGllXCI6IFtcbiAgICB7dG9rZW46IFwiUHLDvGZ1bmdcIiwgcHJvYjogMC40NX0sXG4gICAge3Rva2VuOiBcIktsYXVzdXJcIiwgcHJvYjogMC4yNX0sXG4gICAge3Rva2VuOiBcIlp1a3VuZnRcIiwgcHJvYjogMC4xMn0sXG4gICAge3Rva2VuOiBcIlZvcmxlc3VuZ1wiLCBwcm9iOiAwLjEwfSxcbiAgICB7dG9rZW46IFwiS2FycmllcmVcIiwgcHJvYjogMC4wOH1cbiAgXVxufSlcblxudmlld29mIHNlbGVjdGVkU2VudGVuY2UgPSBJbnB1dHMuc2VsZWN0KE9iamVjdC5rZXlzKHRva2VuRGF0YWJhc2UpLCB7XG4gIGxhYmVsOiBcIlNhdHphbmZhbmc6XCIsXG4gIHZhbHVlOiBcIkRlciBIdW5kIGxpZWd0IGF1ZiBkZW1cIlxufSlcblxuY3VycmVudFByb2JzID0gdG9rZW5EYXRhYmFzZVtzZWxlY3RlZFNlbnRlbmNlXVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5QbG90LnBsb3Qoe1xuICBtYXJnaW5MZWZ0OiAxMDAsXG4gIHdpZHRoOiA1MDAsXG4gIGhlaWdodDogMTgwLFxuICB4OiB7ZG9tYWluOiBbMCwgMC41XSwgbGFiZWw6IFwiV2FocnNjaGVpbmxpY2hrZWl0XCIsIHRpY2tGb3JtYXQ6IGQgPT4gKGQgKiAxMDApICsgXCIlXCJ9LFxuICB5OiB7bGFiZWw6IG51bGx9LFxuICBtYXJrczogW1xuICAgIFBsb3QuYmFyWChjdXJyZW50UHJvYnMsIHt5OiBcInRva2VuXCIsIHg6IFwicHJvYlwiLCBmaWxsOiBcIiNBMzE5NUJcIiwgc29ydDoge3k6IFwiLXhcIn19KSxcbiAgICBQbG90LnRleHQoY3VycmVudFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgdGV4dDogZCA9PiAoZC5wcm9iICogMTAwKS50b0ZpeGVkKDApICsgXCIlXCIsIGR4OiA1LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCJ9KVxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG52aWV3b2YgdGVtcGVyYXR1cmUgPSBJbnB1dHMucmFuZ2UoWzAuMSwgMi4wXSwge1xuICB2YWx1ZTogMS4wLFxuICBzdGVwOiAwLjEsXG4gIGxhYmVsOiBcIlRlbXBlcmF0dXJlXCJcbn0pXG5cbnNjYWxlZFByb2JzID0ge1xuICBjb25zdCB0ID0gdGVtcGVyYXR1cmU7XG4gIGNvbnN0IGxvZ2l0cyA9IGN1cnJlbnRQcm9icy5tYXAocCA9PiBNYXRoLmxvZyhwLnByb2IpKTtcbiAgY29uc3Qgc2NhbGVkID0gbG9naXRzLm1hcChsID0+IE1hdGguZXhwKGwgLyB0KSk7XG4gIGNvbnN0IHN1bSA9IHNjYWxlZC5yZWR1Y2UoKGEsIGIpID0+IGEgKyBiLCAwKTtcbiAgcmV0dXJuIGN1cnJlbnRQcm9icy5tYXAoKHAsIGkpID0+ICh7dG9rZW46IHAudG9rZW4sIHByb2I6IHNjYWxlZFtpXSAvIHN1bX0pKTtcbn1cblxudGVtcERlc2NyaXB0aW9uID0gdGVtcGVyYXR1cmUgPCAwLjUgPyBcIkRldGVybWluaXN0aXNjaDogRmFzdCBpbW1lciBkYXMgd2FocnNjaGVpbmxpY2hzdGUgV29ydFwiIDpcbiAgdGVtcGVyYXR1cmUgPCAxLjAgPyBcIkF1c2dlZ2xpY2hlbjogR3V0ZSBNaXNjaHVuZ1wiIDpcbiAgdGVtcGVyYXR1cmUgPCAxLjUgPyBcIktyZWF0aXY6IE1laHIgVmFyaWF0aW9uXCIgOiBcIlVudm9yaGVyc2VoYmFyOiBBdWNoIHVud2FocnNjaGVpbmxpY2hlIFfDtnJ0ZXIgd2VyZGVuIGdld8OkaGx0XCJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuUGxvdC5wbG90KHtcbiAgbWFyZ2luTGVmdDogMTAwLFxuICB3aWR0aDogNTAwLFxuICBoZWlnaHQ6IDE4MCxcbiAgeDoge2RvbWFpbjogWzAsIDFdLCBsYWJlbDogXCJBbmdlcGFzc3RlIFdhaHJzY2hlaW5saWNoa2VpdFwiLCB0aWNrRm9ybWF0OiBkID0+IChkICogMTAwKSArIFwiJVwifSxcbiAgeToge2xhYmVsOiBudWxsfSxcbiAgbWFya3M6IFtcbiAgICBQbG90LmJhclgoc2NhbGVkUHJvYnMsIHt5OiBcInRva2VuXCIsIHg6IFwicHJvYlwiLCBmaWxsOiBcIiNENEEwM0VcIiwgc29ydDoge3k6IFwiLXhcIn19KSxcbiAgICBQbG90LnRleHQoc2NhbGVkUHJvYnMsIHt5OiBcInRva2VuXCIsIHg6IFwicHJvYlwiLCB0ZXh0OiBkID0+IChkLnByb2IgKiAxMDApLnRvRml4ZWQoMCkgKyBcIiVcIiwgZHg6IDUsIHRleHRBbmNob3I6IFwic3RhcnRcIn0pXG4gIF1cbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkU2VudGVuY2UnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgndGVtcGVyYXR1cmUnKSJ9XX0=
+    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxudG9rZW5EYXRhYmFzZSA9ICh7XG4gIFwiRGVyIEh1bmQgbGllZ3QgYXVmIGRlbVwiOiBbXG4gICAge3Rva2VuOiBcIkJvZGVuXCIsIHByb2I6IDAuMzJ9LFxuICAgIHt0b2tlbjogXCJTb2ZhXCIsIHByb2I6IDAuMjR9LFxuICAgIHt0b2tlbjogXCJCZXR0XCIsIHByb2I6IDAuMTh9LFxuICAgIHt0b2tlbjogXCJUZXBwaWNoXCIsIHByb2I6IDAuMTR9LFxuICAgIHt0b2tlbjogXCJSYXNlblwiLCBwcm9iOiAwLjEyfVxuICBdLFxuICBcIkRpZSBLYXR6ZSBzaXR6dCBhdWYgZGVtXCI6IFtcbiAgICB7dG9rZW46IFwiRGFjaFwiLCBwcm9iOiAwLjI4fSxcbiAgICB7dG9rZW46IFwiQmF1bVwiLCBwcm9iOiAwLjI0fSxcbiAgICB7dG9rZW46IFwiU29mYVwiLCBwcm9iOiAwLjIwfSxcbiAgICB7dG9rZW46IFwiVGlzY2hcIiwgcHJvYjogMC4xNn0sXG4gICAge3Rva2VuOiBcIkZlbnN0ZXJicmV0dFwiLCBwcm9iOiAwLjEyfVxuICBdLFxuICBcIkRpZSBTdHVkaWVyZW5kZW4gbGVybmVuIGbDvHIgZGllXCI6IFtcbiAgICB7dG9rZW46IFwiUHLDvGZ1bmdcIiwgcHJvYjogMC40NX0sXG4gICAge3Rva2VuOiBcIktsYXVzdXJcIiwgcHJvYjogMC4yNX0sXG4gICAge3Rva2VuOiBcIlp1a3VuZnRcIiwgcHJvYjogMC4xMn0sXG4gICAge3Rva2VuOiBcIlZvcmxlc3VuZ1wiLCBwcm9iOiAwLjEwfSxcbiAgICB7dG9rZW46IFwiS2FycmllcmVcIiwgcHJvYjogMC4wOH1cbiAgXVxufSlcblxudmlld29mIHNlbGVjdGVkU2VudGVuY2UgPSBJbnB1dHMuc2VsZWN0KE9iamVjdC5rZXlzKHRva2VuRGF0YWJhc2UpLCB7XG4gIGxhYmVsOiBcIlNhdHphbmZhbmc6XCIsXG4gIHZhbHVlOiBcIkRlciBIdW5kIGxpZWd0IGF1ZiBkZW1cIlxufSlcblxuY3VycmVudFByb2JzID0gdG9rZW5EYXRhYmFzZVtzZWxlY3RlZFNlbnRlbmNlXVxuXG52aWV3b2YgdGVtcGVyYXR1cmUgPSBJbnB1dHMucmFuZ2UoWzAuMSwgMi4wXSwge1xuICB2YWx1ZTogMS4wLFxuICBzdGVwOiAwLjEsXG4gIGxhYmVsOiBcIlRlbXBlcmF0dXJlXCJcbn0pXG5cbnNjYWxlZFByb2JzID0ge1xuICBjb25zdCB0ID0gdGVtcGVyYXR1cmU7XG4gIGNvbnN0IGxvZ2l0cyA9IGN1cnJlbnRQcm9icy5tYXAocCA9PiBNYXRoLmxvZyhwLnByb2IpKTtcbiAgY29uc3Qgc2NhbGVkID0gbG9naXRzLm1hcChsID0+IE1hdGguZXhwKGwgLyB0KSk7XG4gIGNvbnN0IHN1bSA9IHNjYWxlZC5yZWR1Y2UoKGEsIGIpID0+IGEgKyBiLCAwKTtcbiAgcmV0dXJuIGN1cnJlbnRQcm9icy5tYXAoKHAsIGkpID0+ICh7dG9rZW46IHAudG9rZW4sIHByb2I6IHNjYWxlZFtpXSAvIHN1bX0pKTtcbn1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuUGxvdC5wbG90KHtcbiAgbWFyZ2luTGVmdDogODAsXG4gIHdpZHRoOiAzODAsXG4gIGhlaWdodDogMTUwLFxuICB4OiB7ZG9tYWluOiBbMCwgMC41XSwgbGFiZWw6IFwiV2FocnNjaGVpbmxpY2hrZWl0XCIsIHRpY2tGb3JtYXQ6IGQgPT4gKGQgKiAxMDApICsgXCIlXCJ9LFxuICB5OiB7bGFiZWw6IG51bGx9LFxuICBtYXJrczogW1xuICAgIFBsb3QuYmFyWChjdXJyZW50UHJvYnMsIHt5OiBcInRva2VuXCIsIHg6IFwicHJvYlwiLCBmaWxsOiBcIiNBMzE5NUJcIiwgc29ydDoge3k6IFwiLXhcIn19KSxcbiAgICBQbG90LnRleHQoY3VycmVudFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgdGV4dDogZCA9PiAoZC5wcm9iICogMTAwKS50b0ZpeGVkKDApICsgXCIlXCIsIGR4OiA1LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCJ9KVxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5QbG90LnBsb3Qoe1xuICBtYXJnaW5MZWZ0OiA4MCxcbiAgd2lkdGg6IDM4MCxcbiAgaGVpZ2h0OiAxNTAsXG4gIHg6IHtkb21haW46IFswLCAxXSwgbGFiZWw6IFwiQW5nZXBhc3N0ZSBXYWhyc2NoZWlubGljaGtlaXRcIiwgdGlja0Zvcm1hdDogZCA9PiAoZCAqIDEwMCkgKyBcIiVcIn0sXG4gIHk6IHtsYWJlbDogbnVsbH0sXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5iYXJYKHNjYWxlZFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgZmlsbDogXCIjRDRBMDNFXCIsIHNvcnQ6IHt5OiBcIi14XCJ9fSksXG4gICAgUGxvdC50ZXh0KHNjYWxlZFByb2JzLCB7eTogXCJ0b2tlblwiLCB4OiBcInByb2JcIiwgdGV4dDogZCA9PiAoZC5wcm9iICogMTAwKS50b0ZpeGVkKDApICsgXCIlXCIsIGR4OiA1LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCJ9KVxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZFNlbnRlbmNlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3RlbXBlcmF0dXJlJykifV19
     </script>
     <script type="module">
     if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

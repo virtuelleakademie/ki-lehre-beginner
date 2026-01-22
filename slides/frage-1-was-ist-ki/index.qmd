@@ -3,7 +3,7 @@ title: "Frage 1: Was ist KI?"
 subtitle: "Wie funktionieren Sprachmodelle wirklich?"
 format:
   revealjs:
-    theme: default
+    theme: [default, ../../styles/custom-reveal.scss]
     slide-number: true
     progress: true
     controls: true
@@ -61,7 +61,21 @@ $$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 
 Jede Vorhersage basiert auf dem **Kontext** und dem internen **Modell**.
 
-## Token-Vorhersage
+## Was bedeutet das konkret? {.smaller}
+
+Gegeben einen Satzanfang wie _"Der Hund liegt auf dem"_, berechnet das Modell die Wahrscheinlichkeit für jedes mögliche nächste Wort:
+
+- "Boden" → 32%
+- "Sofa" → 24%
+- "Bett" → 18%
+- ...
+
+Zwei Faktoren bestimmen diese Vorhersage:
+
+1. **Kontext**: Was wurde bisher gesagt?
+2. **Modell**: Was hat das System aus Trainingsdaten gelernt?
+
+## Token-Vorhersage und Temperatur {.smaller}
 
 ```{ojs}
 //| echo: false
@@ -96,32 +110,6 @@ viewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {
 })
 
 currentProbs = tokenDatabase[selectedSentence]
-```
-
-**Kontext:** ${selectedSentence} ___
-
-```{ojs}
-//| echo: false
-
-Plot.plot({
-  marginLeft: 100,
-  width: 500,
-  height: 180,
-  x: {domain: [0, 0.5], label: "Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
-  y: {label: null},
-  marks: [
-    Plot.barX(currentProbs, {y: "token", x: "prob", fill: "#A3195B", sort: {y: "-x"}}),
-    Plot.text(currentProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
-  ]
-})
-```
-
-## Temperatur
-
-**Kontext:** ${selectedSentence} ___
-
-```{ojs}
-//| echo: false
 
 viewof temperature = Inputs.range([0.1, 2.0], {
   value: 1.0,
@@ -136,21 +124,39 @@ scaledProbs = {
   const sum = scaled.reduce((a, b) => a + b, 0);
   return currentProbs.map((p, i) => ({token: p.token, prob: scaled[i] / sum}));
 }
-
-tempDescription = temperature < 0.5 ? "Deterministisch: Fast immer das wahrscheinlichste Wort" :
-  temperature < 1.0 ? "Ausgeglichen: Gute Mischung" :
-  temperature < 1.5 ? "Kreativ: Mehr Variation" : "Unvorhersehbar: Auch unwahrscheinliche Wörter werden gewählt"
 ```
 
-**Temperature = ${temperature.toFixed(1)}**: ${tempDescription}
+:::: {.columns}
+::: {.column width="50%"}
+**Basis-Wahrscheinlichkeiten**
 
 ```{ojs}
 //| echo: false
 
 Plot.plot({
-  marginLeft: 100,
-  width: 500,
-  height: 180,
+  marginLeft: 80,
+  width: 380,
+  height: 150,
+  x: {domain: [0, 0.5], label: "Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
+  y: {label: null},
+  marks: [
+    Plot.barX(currentProbs, {y: "token", x: "prob", fill: "#A3195B", sort: {y: "-x"}}),
+    Plot.text(currentProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
+  ]
+})
+```
+:::
+
+::: {.column width="50%"}
+**Mit Temperature = ${temperature.toFixed(1)}**
+
+```{ojs}
+//| echo: false
+
+Plot.plot({
+  marginLeft: 80,
+  width: 380,
+  height: 150,
   x: {domain: [0, 1], label: "Angepasste Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
   y: {label: null},
   marks: [
@@ -159,6 +165,9 @@ Plot.plot({
   ]
 })
 ```
+:::
+::::
+
 
 ## Vorhersage in Aktion
 
