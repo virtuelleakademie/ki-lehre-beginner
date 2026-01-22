@@ -43,9 +43,9 @@ tokenDatabase = ({
     {token: "Vorlesung", prob: 0.10},
     {token: "Karriere", prob: 0.08}
   ],
-  "Der Professor erklärt das": [
-    {token: "Konzept", prob: 0.28},
-    {token: "Thema", prob: 0.24},
+  "Die Vorlesung behandelt das": [
+    {token: "Thema", prob: 0.28},
+    {token: "Konzept", prob: 0.24},
     {token: "Problem", prob: 0.20},
     {token: "Modell", prob: 0.16},
     {token: "Prinzip", prob: 0.12}

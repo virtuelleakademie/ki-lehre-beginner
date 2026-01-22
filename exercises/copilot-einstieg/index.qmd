@@ -36,7 +36,7 @@ Deshalb zeigen wir dir zuerst, wie du Copilot nutzt, bevor du es selbst ausprobi
 Die Workshopleitung gibt diesen Prompt ein:
 
 ::: {.prompt}
-Ich bin Dozent an einer Fachhochschule. Erkläre mir in 3 Sätzen, wie du als Sprachmodell Text generierst.
+Ich unterrichte an einer Fachhochschule. Erkläre mir in 3 Sätzen, wie du als Sprachmodell Text generierst.
 :::
 
 **3. Die Antwort lesen und interpretieren**
