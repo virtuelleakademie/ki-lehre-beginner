@@ -11,14 +11,6 @@ format:
 footer: "KI in der Lehre: Beginner"
 ---
 
-## Die dritte Frage
-
-::: {.r-fit-text}
-**Wofür sollte ich KI verwenden?**
-:::
-
-Von "kann" zu "soll": Wann ist KI-Nutzung sinnvoll?
-
 ## Die Konzepte
 
 Zwei verschiedene Arten, kognitive Arbeit auszulagern:
@@ -57,14 +49,14 @@ Das Werkzeug **entscheidet** für dich.
 ## Szenario-Aktivität
 
 ::: {.experiment}
-## Partnerarbeit (20 min)
+## Partnerarbeit (15 min)
 
 Diskutiert mit eurem Gegenüber die Szenarien. Für jedes Szenario:
 
 1. Ist das **Offloading** oder **Outsourcing**?
 2. Ist das in diesem Kontext **problematisch**?
 
-{{< timer 20 >}}
+{{< timer 15 >}}
 :::
 
 ## Die Szenarien
@@ -131,7 +123,7 @@ Outsourcing ist oft **problematisch**:
 
 2. **Wo sollten deine STUDIERENDEN NICHT outsourcen?**
 
-{{< timer 5 >}}
+{{< timer 10 >}}
 :::
 
 ## Zusammenfassung: Wofür sollte ich KI verwenden?

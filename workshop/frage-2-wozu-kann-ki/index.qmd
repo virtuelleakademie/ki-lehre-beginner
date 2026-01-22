@@ -12,13 +12,13 @@ In dieser Einheit lernen wir die Fähigkeiten und Grenzen von Chatbots kennen, s
 
 ## Inhaltsübersicht
 
-**Dauer:** 50 Minuten (inkl. Aktivität)
+**Dauer:** 35 Minuten (inkl. Aktivität)
 
 | Thema | Zeit |
 |-------|------|
-| Tool-Fähigkeiten (Web, Dateien, Code) | 15 min |
-| BFH-Landschaft (Policy, Tools) | 10 min |
-| Fakten-Check Aktivität | 25 min |
+| Tool-Fähigkeiten (Web, Dateien, Code) | 10 min |
+| BFH-Landschaft (Policy, Tools) | 5 min |
+| Fakten-Check Aktivität | 20 min |
 
 ### Kernbotschaften
 

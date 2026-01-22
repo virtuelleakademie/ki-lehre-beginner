@@ -136,20 +136,20 @@ Diskutiert mindestens 3-4 dieser Szenarien. Für jedes Szenario: Beantwortet die
 
 **Szenario 5**: Eine studierende Person nutzt KI als Sparringspartner, um ihre Argumente zu testen.
 
-{{< timer 12 >}}
+{{< timer 15 >}}
 
 Sammelt eure Einschätzungen auf einem Flipchart oder digital.
 :::
 
 ::: {.group}
-## Teil 4: Diskussion (5 min)
+## Teil 4: Diskussion (10 min)
 
 Zwei Fragen:
 
 1. **Wo kannst DU als Lehrperson produktiv outsourcen?**
 2. **Wo sollten deine STUDIERENDEN NICHT outsourcen?**
 
-{{< timer 5 >}}
+{{< timer 10 >}}
 :::
 
 ::: {.reflect}
