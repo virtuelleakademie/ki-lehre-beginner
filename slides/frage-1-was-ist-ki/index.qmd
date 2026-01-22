@@ -8,27 +8,28 @@ format:
     progress: true
     controls: true
     navigation-mode: linear
-    css: styles.css
 footer: "KI in der Lehre: Grundlagen"
 ---
-
-## Die erste Frage
-
-::: {.r-fit-text}
-**Was ist KI?**
-:::
-
-Heute: Fokus auf **Sprachmodelle** (LLMs) und **Chatbots**
 
 ## Was sind Chatbots?
 
 :::: {.columns}
-::: {.column width="30%"}
-
+::: {.column width="50%"}
+![](../../assets/images/claude.png)
 :::
 
-::: {.column width="70%"}
-![](../../assets/images/claude.png)
+::: {.column width="50%"}
+![](../../assets/images/gemini.png)
+:::
+::::
+
+:::: {.columns}
+::: {.column width="50%"}
+[[Claude](https://claude.ai){target="_blank"} (Anthropic)]{style="font-size: 0.6em;"}
+:::
+
+::: {.column width="50%"}
+[[Gemini](https://gemini.google.com/){target="_blank"} (Google)]{style="font-size: 0.6em;"}
 :::
 ::::
 
