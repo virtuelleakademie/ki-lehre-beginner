@@ -1309,7 +1309,7 @@
     "href": "slides/frage-1-was-ist-ki/index.html#chain-of-thought-denken",
     "title": "Frage 1: Was ist KI?",
     "section": "Chain-of-Thought “Denken”",
-    "text": "Chain-of-Thought “Denken”\nExplizites Nachdenken verbessert die Ergebnisse:\n\n“Denke Schritt für Schritt”\nDer Chatbot zeigt seinen “Denkprozess”\nBesonders hilfreich bei komplexen Aufgaben",
+    "text": "Chain-of-Thought “Denken”\nWenn wir das Modell auffordern, “Schritt für Schritt zu denken”:\n\nEs generiert Zwischenschritte als zusätzliche Tokens\nDiese Tokens erweitern den Kontext für die nächste Vorhersage\nMehr Kontext führt zu besseren Vorhersagen\n\nDas “Denken” ist zusätzliche Textgenerierung. Dieser Text dient als erweiterter Kontext.",
     "crumbs": [
       "Slides",
       "Frage 1: Was ist KI?"
@@ -1618,6 +1618,39 @@
     "title": "Frage 1: Was ist KI?",
     "section": "Token-Vorhersage und Temperatur",
     "text": "Token-Vorhersage und Temperatur\n\ntokenDatabase = ({\n  \"Der Hund liegt auf dem\": [\n    {token: \"Boden\", prob: 0.32},\n    {token: \"Sofa\", prob: 0.24},\n    {token: \"Bett\", prob: 0.18},\n    {token: \"Teppich\", prob: 0.14},\n    {token: \"Rasen\", prob: 0.12}\n  ],\n  \"Die Katze sitzt auf dem\": [\n    {token: \"Dach\", prob: 0.28},\n    {token: \"Baum\", prob: 0.24},\n    {token: \"Sofa\", prob: 0.20},\n    {token: \"Tisch\", prob: 0.16},\n    {token: \"Fensterbrett\", prob: 0.12}\n  ],\n  \"Die Studierenden lernen für die\": [\n    {token: \"Prüfung\", prob: 0.45},\n    {token: \"Klausur\", prob: 0.25},\n    {token: \"Zukunft\", prob: 0.12},\n    {token: \"Vorlesung\", prob: 0.10},\n    {token: \"Karriere\", prob: 0.08}\n  ]\n})\n\nviewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {\n  label: \"Satzanfang:\",\n  value: \"Der Hund liegt auf dem\"\n})\n\ncurrentProbs = tokenDatabase[selectedSentence]\n\nviewof temperature = Inputs.range([0.1, 2.0], {\n  value: 1.0,\n  step: 0.1,\n  label: \"Temperature\"\n})\n\nscaledProbs = {\n  const t = temperature;\n  const logits = currentProbs.map(p =&gt; Math.log(p.prob));\n  const scaled = logits.map(l =&gt; Math.exp(l / t));\n  const sum = scaled.reduce((a, b) =&gt; a + b, 0);\n  return currentProbs.map((p, i) =&gt; ({token: p.token, prob: scaled[i] / sum}));\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasis-Wahrscheinlichkeiten\n\nPlot.plot({\n  marginLeft: 80,\n  width: 380,\n  height: 150,\n  x: {domain: [0, 0.5], label: \"Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(currentProbs, {y: \"token\", x: \"prob\", fill: \"#A3195B\", sort: {y: \"-x\"}}),\n    Plot.text(currentProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})\n\n\n\n\n\n\n\nMit Temperature = \n\nPlot.plot({\n  marginLeft: 80,\n  width: 380,\n  height: 150,\n  x: {domain: [0, 1], label: \"Angepasste Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(scaledProbs, {y: \"token\", x: \"prob\", fill: \"#D4A03E\", sort: {y: \"-x\"}}),\n    Plot.text(scaledProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})",
+    "crumbs": [
+      "Slides",
+      "Frage 1: Was ist KI?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/index.html#wie-generieren-llms-sätze",
+    "href": "slides/frage-1-was-ist-ki/index.html#wie-generieren-llms-sätze",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Wie generieren LLMs Sätze?",
+    "text": "Wie generieren LLMs Sätze?\n\n\\[\\green{P(\\text{Wort}_{i+1}} \\mid \\red{\\text{Kontext}}, \\blue{\\text{Modell}})\\]",
+    "crumbs": [
+      "Slides",
+      "Frage 1: Was ist KI?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/index.html#wie-generieren-llms-ganze-sequenzen",
+    "href": "slides/frage-1-was-ist-ki/index.html#wie-generieren-llms-ganze-sequenzen",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Wie generieren LLMs ganze Sequenzen?",
+    "text": "Wie generieren LLMs ganze Sequenzen?\n\n\\[\\green{P(\\text{Wort}_{i+1}} \\mid \\red{\\text{Kontext}}, \\blue{\\text{Modell}})\\]",
+    "crumbs": [
+      "Slides",
+      "Frage 1: Was ist KI?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/index.html#think-deeper-in-copilot",
+    "href": "slides/frage-1-was-ist-ki/index.html#think-deeper-in-copilot",
+    "title": "Frage 1: Was ist KI?",
+    "section": "“Think Deeper” in Copilot",
+    "text": "“Think Deeper” in Copilot",
     "crumbs": [
       "Slides",
       "Frage 1: Was ist KI?"

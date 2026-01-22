@@ -183,7 +183,7 @@ _"Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. Das Haus st
 
 Welche Wörter sind besonders wichtig für die Vorhersage?
 
-## Wie generieren LLMs Text?
+## Wie generieren LLMs ganze Sequenzen?
 
 <br>
 
@@ -207,11 +207,13 @@ Auch wir vervollständigen Muster auf Basis von Erfahrung, nicht durch direkten 
 
 ## Chain-of-Thought "Denken"
 
-Explizites Nachdenken verbessert die Ergebnisse:
+Wenn wir das Modell auffordern, "Schritt für Schritt zu denken":
 
-- "Denke Schritt für Schritt"
-- Der Chatbot zeigt seinen "Denkprozess"
-- Besonders hilfreich bei komplexen Aufgaben
+1. Es generiert Zwischenschritte als zusätzliche Tokens
+2. Diese Tokens erweitern den Kontext für die nächste Vorhersage
+3. Mehr Kontext führt zu besseren Vorhersagen
+
+Das "Denken" ist zusätzliche Textgenerierung. Dieser Text dient als erweiterter Kontext.
 
 ## Beispiel: 9.11 vs 9.8
 
@@ -229,14 +231,16 @@ Explizites Nachdenken verbessert die Ergebnisse:
 Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
 :::
 
-## Live-Demonstration
+## "Think Deeper" in Copilot
 
-::: {.demonstration}
-## Vergleich: Direkt vs. Schritt für Schritt
+::: {.r-stack}
+![](../../assets/images/copilot-default.png){.fragment width="70%"}
 
+![](../../assets/images/copilot-choose-mode.png){.fragment width="70%"}
 
-1. **Direkt**: "Was ist grösser: 9.11 oder 9.8?"
-2. **Mit Anleitung**: "Denke Schritt für Schritt. Was ist grösser: 9.11 oder 9.8?"
+![](../../assets/images/copilot-reasoning-hidden.png){.fragment width="70%"}
+
+![](../../assets/images/copilot-reasoning.png){.fragment width="80%" style="border: 3px solid #A3195B; border-radius: 8px; padding: 5px;"}
 :::
 
 ## Warum funktioniert "Denken"?
@@ -248,15 +252,6 @@ Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
 
 Die Implementierung unterscheidet sich von menschlichem Denken, aber die Funktion ist ähnlich: Schritt für Schritt zum Ziel.
 :::
-
-## Zusammenfassung: Was ist KI?
-
-| Aspekt | Realität |
-|--------|----------|
-| Textgenerierung | Vorhersage des nächsten Worts basierend auf Mustern |
-| Verarbeitung | Mustervervollständigung (ähnlich wie unser Gehirn) |
-| "Denken" | Mehr Kontext = bessere Vorhersagen |
-| Wissen | Muster aus Trainingsdaten, weniger zuverlässig als Fakten |
 
 ## Takeaway
 
