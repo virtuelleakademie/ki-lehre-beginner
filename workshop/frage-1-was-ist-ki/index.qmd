@@ -17,8 +17,8 @@ In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch 
 | Thema | Zeit |
 |-------|------|
 | Sprachmodelle als Textvorhersage | 20 min |
-| Chain-of-Thought Denken | 15 min |
-| Mini-Experiment | 10 min |
+| Chain-of-Thought Denken (inkl. Demonstration) | 15 min |
+| Reflexion und Überleitung | 10 min |
 
 ### Kernbotschaften
 
@@ -124,7 +124,7 @@ scaledProbs = {
 
 tempDescription = temperature < 0.5 ? "Deterministisch: Fast immer das wahrscheinlichste Wort" :
   temperature < 1.0 ? "Ausgeglichen: Gute Mischung" :
-  temperature < 1.5 ? "Kreativ: Mehr Variation" : "Chaotisch: Fast zufällig"
+  temperature < 1.5 ? "Kreativ: Mehr Variation" : "Unvorhersehbar: Auch unwahrscheinliche Wörter werden gewählt"
 ```
 
 **Temperature = ${temperature.toFixed(1)}**: ${tempDescription}
@@ -151,6 +151,41 @@ Plot.plot({
 - **Niedrig (0.1-0.5)**: Für Zusammenfassungen, Fakten, konsistente Ausgaben
 - **Mittel (0.7-1.0)**: Für die meisten Aufgaben ein guter Standard
 - **Hoch (1.2-1.5)**: Für Brainstorming und kreative Texte
+:::
+
+## Chain-of-Thought "Denken"
+
+Wenn du ein schwieriges Problem löst, denkst du wahrscheinlich laut oder schreibst Zwischenschritte auf. Das hilft, weil jeder Schritt dir Kontext für den nächsten gibt.
+
+Chatbots funktionieren ähnlich: Wenn sie Zwischenschritte ausformulieren, wird jeder Schritt Teil des Kontexts für die nächste Vorhersage. Das nennt man **Chain-of-Thought** (Gedankenkette).
+
+### Die Mechanik dahinter
+
+Erinnere dich: Das Modell sagt immer das nächste Wort vorher, basierend auf allem, was davor steht.
+
+- **Ohne Zwischenschritte**: Frage → Antwort (wenig Kontext für komplexe Schlüsse)
+- **Mit Zwischenschritten**: Frage → Schritt 1 → Schritt 2 → ... → Antwort (jeder Schritt liefert Kontext)
+
+Je mehr "Denkschritte" im Text stehen, desto mehr Information hat das Modell für die finale Antwort.
+
+### Beispiel: 9.11 vs 9.8
+
+**Frage**: "Was ist grösser: 9.11 oder 9.8?"
+
+Ohne Anleitung antwortet das Modell oft falsch, weil "9.11" als Datum interpretiert werden kann (11. September). Mit der Anweisung "Denke Schritt für Schritt" schreibt das Modell die Dezimalstellen explizit aus (9.11 = 9 + 0.11, 9.8 = 9 + 0.80) und vergleicht dann korrekt.
+
+::: {.demonstration}
+## Live-Demonstration
+
+Die Kursleitung zeigt den Unterschied zwischen direkter Frage und "Denke Schritt für Schritt" an einem Beispiel.
+:::
+
+::: {.key-point}
+## Denken = Mehr Kontext = Bessere Vorhersagen
+
+Das "Denken" eines Chatbots ist kein Bewusstsein. Es ist eine Technik, bei der das Modell Zwischenschritte generiert, die dann als zusätzlicher Kontext für die nächste Vorhersage dienen.
+
+Die Parallele zum menschlichen Denken ist real: Auch wir profitieren davon, Gedanken zu externalisieren. Der Unterschied liegt darin, was "unter der Haube" passiert.
 :::
 
 ## Die Parallele zum Schreiben

@@ -120,7 +120,6 @@ website:
               file: exercises/offloading-outsourcing/index.qmd
         - text: "Abschluss"
           file: workshop/abschluss/index.qmd
-        - text: "---"
         - text: "Reflexionsfragen"
           file: resources/reflexion/index.qmd
 

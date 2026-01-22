@@ -1,0 +1,31 @@
+/* Smaller fonts for OJS elements in slides */
+.cell {
+  font-size: 0.6em;
+}
+
+form {
+  font-size: 0.65em;
+}
+
+form label {
+  font-size: 1em;
+}
+
+input[type="range"] {
+  width: 250px;
+}
+
+select {
+  font-size: 1em;
+  padding: 0.2em 0.4em;
+}
+
+/* Plot axis labels and ticks */
+svg text {
+  font-size: 0.9em;
+}
+
+/* OJS output text */
+.observablehq {
+  font-size: 0.6em;
+}
