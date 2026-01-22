@@ -1,209 +1,164 @@
 ---
 title: "Frage 1: Was ist KI?"
 subtitle: "Wie funktionieren Sprachmodelle wirklich?"
-sidebar: workshop
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    progress: true
+    controls: true
+    navigation-mode: linear
+footer: "KI in der Lehre: Grundlagen"
 ---
 
-## Präsentation
+## Die erste Frage
 
-In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch statistische Vorhersage und Denken durch Chain-of-Thought.
+::: {.r-fit-text}
+**Was ist KI?**
+:::
 
-[Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
+Heute: Fokus auf **Sprachmodelle** (LLMs) und **Chatbots**
 
-<iframe
-  src="slides.html"
-  width="100%"
-  height="500"
-  style="border: 1px solid #ccc; border-radius: 4px;"
-></iframe>
+## Was sind Chatbots?
 
-## Inhaltsübersicht
+:::: {.columns}
+::: {.column width="30%"}
 
-**Dauer:** 45 Minuten
+:::
 
-| Thema | Zeit |
-|-------|------|
-| Sprachmodelle als Textvorhersage | 20 min |
-| Chain-of-Thought Denken | 15 min |
-| Mini-Experiment | 10 min |
+::: {.column width="70%"}
+![](../../assets/images/claude.png)
+:::
+::::
 
-### Kernbotschaften
+## Was sind LLMs?
 
-1. LLMs sagen das nächste Wort vorher, basierend auf Mustern in Trainingsdaten
-2. Denken (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext
-3. Moderne Modelle sind extrem leistungsfähig; der Kontext bestimmt das Ergebnis
+:::: {.columns}
+::: {.column width="60%"}
+Ein LLM kann man sich wie einen ausgefeilten Autocomplete-Mechanismus vorstellen.
+:::
+::: {.column width="40%"}
+![](../../assets/images/predictive-text.png)
+:::
+::::
 
-## Interaktiv: Token-Vorhersage
+## Die Kernidee
 
-Wie sieht "Next-Word-Prediction" konkret aus? Wähle einen Satzanfang und sieh die Wahrscheinlichkeitsverteilung für das nächste Wort.
+Sprachmodelle sagen das **nächste Wort** vorher.
 
-```{ojs}
-//| echo: false
+::: {.hidden}
+$$
+\newcommand{\green}[1]{\color{green}{#1}}
+\newcommand{\purple}[1]{\color{purple}{#1}}
+\newcommand{\red}[1]{\color{red}{#1}}
+\newcommand{\blue}[1]{\color{blue}{#1}}
+$$
+:::
 
-tokenDatabase = ({
-  "Der Hund liegt auf dem": [
-    {token: "Boden", prob: 0.32},
-    {token: "Sofa", prob: 0.24},
-    {token: "Bett", prob: 0.18},
-    {token: "Teppich", prob: 0.14},
-    {token: "Rasen", prob: 0.12}
-  ],
-  "Die Katze sitzt auf dem": [
-    {token: "Dach", prob: 0.28},
-    {token: "Baum", prob: 0.24},
-    {token: "Sofa", prob: 0.20},
-    {token: "Tisch", prob: 0.16},
-    {token: "Fensterbrett", prob: 0.12}
-  ],
-  "Die Studierenden lernen für die": [
-    {token: "Prüfung", prob: 0.45},
-    {token: "Klausur", prob: 0.25},
-    {token: "Zukunft", prob: 0.12},
-    {token: "Vorlesung", prob: 0.10},
-    {token: "Karriere", prob: 0.08}
-  ],
-  "Der Professor erklärt das": [
-    {token: "Konzept", prob: 0.28},
-    {token: "Thema", prob: 0.24},
-    {token: "Problem", prob: 0.20},
-    {token: "Modell", prob: 0.16},
-    {token: "Prinzip", prob: 0.12}
-  ],
-  "KI wird in Zukunft": [
-    {token: "wichtiger", prob: 0.24},
-    {token: "viele", prob: 0.20},
-    {token: "eine", prob: 0.18},
-    {token: "immer", prob: 0.20},
-    {token: "unsere", prob: 0.18}
-  ]
-})
+$$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 
-viewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {
-  label: "Satzanfang:",
-  value: "Der Hund liegt auf dem"
-})
+Jede Vorhersage basiert auf dem **Kontext** und dem internen **Modell**.
 
-currentProbs = tokenDatabase[selectedSentence]
-```
+## Vorhersage in Aktion
 
-**Kontext:** ${selectedSentence} ___
+Nicht alle Teile des Kontexts sind gleich wichtig:
 
-```{ojs}
-//| echo: false
+<br>
 
-Plot.plot({
-  marginLeft: 100,
-  width: Math.min(500, width),
-  height: 180,
-  x: {domain: [0, 0.5], label: "Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
-  y: {label: null},
-  marks: [
-    Plot.barX(currentProbs, {y: "token", x: "prob", fill: "#A3195B", sort: {y: "-x"}}),
-    Plot.text(currentProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
-  ]
-})
-```
+:::{.r-fit-text}
+_"Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. Das Haus stand inmitten eines weitläufigen Gartens. Es war bekannt für seine prächtige Fassade und die grosszügigen ___"_
+:::
+
+<br>
+
+Welche Wörter sind besonders wichtig für die Vorhersage?
+
+## Wie generieren LLMs Text?
+
+<br>
+
+$$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
+
+![](../../assets/images/hf-is-a-startup.gif)
+
+## Wie werden LLMs trainiert?
+
+![](../../assets/images/llm-training.png)
+
+## Wichtige Einsicht
 
 ::: {.key-point}
-Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern aus den Trainingsdaten. Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.
+## Statistik, nicht Verstehen
+
+Sprachmodelle **verstehen** nicht.
+
+Sie berechnen statistische Wahrscheinlichkeiten basierend auf Mustern in den Trainingsdaten.
 :::
 
-## Interaktiv: Temperature
+## Chain-of-Thought "Denken"
 
-Der Parameter "Temperature" beeinflusst, wie das Modell aus den Wahrscheinlichkeiten wählt.
+Explizites Nachdenken verbessert die Ergebnisse:
 
-```{ojs}
-//| echo: false
+- "Denke Schritt für Schritt"
+- Der Chatbot zeigt seinen "Denkprozess"
+- Besonders hilfreich bei komplexen Aufgaben
 
-viewof temperature = Inputs.range([0.1, 2.0], {
-  value: 1.0,
-  step: 0.1,
-  label: "Temperature"
-})
+## Beispiel: 9.11 vs 9.8
 
-scaledProbs = {
-  const t = temperature;
-  const logits = currentProbs.map(p => Math.log(p.prob));
-  const scaled = logits.map(l => Math.exp(l / t));
-  const sum = scaled.reduce((a, b) => a + b, 0);
-  return currentProbs.map((p, i) => ({token: p.token, prob: scaled[i] / sum}));
-}
+**Frage**: "Was ist grösser: 9.11 oder 9.8?"
 
-tempDescription = temperature < 0.5 ? "Deterministisch: Fast immer das wahrscheinlichste Wort" :
-  temperature < 1.0 ? "Ausgeglichen: Gute Mischung" :
-  temperature < 1.5 ? "Kreativ: Mehr Variation" : "Chaotisch: Fast zufällig"
-```
+<br>
 
-**Temperature = ${temperature.toFixed(1)}**: ${tempDescription}
+**Ohne Anleitung**: Oft falsch (verwechselt mit Datumsformat)
 
-```{ojs}
-//| echo: false
+**Mit "Denke Schritt für Schritt"**: Meist richtig
 
-Plot.plot({
-  marginLeft: 100,
-  width: Math.min(500, width),
-  height: 180,
-  x: {domain: [0, 1], label: "Angepasste Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
-  y: {label: null},
-  marks: [
-    Plot.barX(scaledProbs, {y: "token", x: "prob", fill: "#D4A03E", sort: {y: "-x"}}),
-    Plot.text(scaledProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
-  ]
-})
-```
+<br>
 
-::: {.pro-tip}
-## Temperature in der Praxis
-
-- **Niedrig (0.1-0.5)**: Für Zusammenfassungen, Fakten, konsistente Ausgaben
-- **Mittel (0.7-1.0)**: Für die meisten Aufgaben ein guter Standard
-- **Hoch (1.2-1.5)**: Für Brainstorming und kreative Texte
+::: {.fragment}
+Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
 :::
 
-## Die Parallele zum Schreiben
+## Mini-Experiment
 
-Du kennst das Gefühl: Du sitzt vor einem leeren Dokument, und viele mögliche Anfänge schwirren im Kopf. Dann schreibst du den ersten Satz. Plötzlich sind manche Fortsetzungen naheliegend, andere ausgeschlossen. Der Text, den du geschrieben hast, wird zum Kontext für das, was als Nächstes kommt.
+::: {.experiment}
+## Ausprobieren
 
-Das ist überraschend ähnlich zu dem, was Sprachmodelle tun:
+Stelle dieselbe Frage zweimal an einen Chatbot:
 
-| Du beim Schreiben | Das Sprachmodell |
-|-------------------|------------------|
-| Viele Formulierungen möglich | Wahrscheinlichkeitsverteilung |
-| Du wählst bestimmte Worte | Modell sampelt ein Token |
-| Geschriebenes wird zum Kontext | Token wird zum Kontext |
-| Nächster Satz baut darauf auf | Nächste Vorhersage konditioniert |
+1. Direkt: "Was ist die Antwort auf X?"
+2. Mit Anleitung: "Denke Schritt für Schritt. Was ist die Antwort auf X?"
 
-Der leere Bildschirm ist schwer, weil wenig Kontext da ist. Sobald du anfängst, baut sich Momentum auf. Das gilt für Menschen wie für Modelle.
+Vergleiche die Antworten.
 
-::: {.pro-tip}
-## Warum das für Lernen wichtig ist
-
-Wenn du selbst schreibst, machst du die Auswahl-Arbeit: Du entscheidest, welche Formulierung, welcher Gedankengang. Diese Arbeit *ist* ein Teil des Denkens.
-
-Wenn KI für dich schreibt, übernimmt sie diese Auswahl. Du bekommst das Produkt, aber du hast den Prozess nicht durchlaufen.
-
-Mehr dazu: [Schreiben als Sampling](../../resources/schreiben-als-sampling/index.qmd)
+{{< timer 5 >}}
 :::
 
-## Kurze Reflexion (2 min)
+## "Denken" ist auch Statistik
 
-::: {.reflect}
-Bevor wir zur Pause gehen: Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.
+::: {.key-point}
+## Keine echte Kognition
 
-{{< timer 2 >}}
+"Denken" verbessert die Ergebnisse, aber es ist kein menschliches Denken.
+
+Es ist eine Technik, die bessere Token-Vorhersagen ermöglicht, weil mehr Kontext (die Zwischenschritte) zur Verfügung steht.
 :::
+
+## Zusammenfassung: Was ist KI?
+
+| Aspekt | Realität |
+|--------|----------|
+| Textgenerierung | Statistische Vorhersage des nächsten Worts |
+| "Verstehen" | Mustererkennung, kein echtes Verstehen |
+| "Denken" | Mehr Tokens = bessere Vorhersagen |
+| Wissen | Muster aus Trainingsdaten, keine Faktendatenbank |
 
 ## Takeaway
 
 ::: {.key-point}
-## Antwort auf Frage 1: Was ist KI?
+## Antwort auf Frage 1
 
-Sprachmodelle generieren Text durch Vorhersage des nächsten Worts. Das klingt simpel, aber es ist funktional ähnlich wie das, was unser Gehirn ständig tut: Muster vervollständigen auf Basis gelernter Assoziationen. Die Implementierung ist anders, aber die kognitive Operation hat echte Parallelen.
+**Was ist KI?**
 
-Zwei Faktoren bestimmen das Ergebnis:
-
-1. **Das Modell**: Was es aus Trainingsdaten gelernt hat
-2. **Der Kontext**: Was du im Prompt mitgibst (inkl. Dokumente, Web-Suche, Chat-Verlauf)
-
-Moderne Modelle sind extrem leistungsfähig. Wenn das Ergebnis nicht passt, frag dich: **Was fehlt im Kontext?**
+Sprachmodelle sind statistische Textgeneratoren. Sie "verstehen" nicht, sie berechnen Wahrscheinlichkeiten basierend auf Mustern in Trainingsdaten.
 :::

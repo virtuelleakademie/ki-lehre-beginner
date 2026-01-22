@@ -1,144 +1,153 @@
 ---
-title: "Frage 3: Wann hilft KI, wann schadet sie?"
+title: "Frage 3: Wofür sollte ich KI verwenden?"
 subtitle: "Offloading vs. Outsourcing: Wann ist KI-Nutzung sinnvoll?"
-sidebar: workshop
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    progress: true
+    controls: true
+    navigation-mode: linear
+footer: "KI in der Lehre: Grundlagen"
 ---
 
-## Präsentation
+## Die dritte Frage
 
-In dieser Einheit diskutieren wir, wann KI-Nutzung sinnvoll ist und wann sie das Lernen behindern kann. Der Fokus liegt auf der Unterscheidung zwischen kognitivem Offloading und Outsourcing.
+::: {.r-fit-text}
+**Wofür sollte ich KI verwenden?**
+:::
 
-[Slides in neuem Fenster öffnen](slides.html){target="_blank" .btn .btn-primary}
+Von "kann" zu "soll": Wann ist KI-Nutzung sinnvoll?
 
-<iframe
-  src="slides.html"
-  width="100%"
-  height="500"
-  style="border: 1px solid #ccc; border-radius: 4px;"
-></iframe>
+## Szenario-Aktivität
 
-## Inhaltsübersicht
+::: {.experiment}
+## Gruppenarbeit (20 min)
 
-**Dauer:** 40 Minuten
+Ihr erhaltet Szenarien. Für jedes Szenario diskutiert:
 
-| Thema | Zeit |
-|-------|------|
-| Szenario-Aktivität | 20 min |
-| Konzepte: Offloading vs. Outsourcing | 10 min |
-| Diskussion und Transfer | 10 min |
+1. Ist das **Offloading** oder **Outsourcing**?
+2. Ist das in diesem Kontext **problematisch**?
 
-### Kernbotschaften
+{{< timer 20 >}}
+:::
 
-1. **Offloading**: Du externalisierst, aber denkst selbst weiter
-2. **Outsourcing**: Du überträgst die Denkarbeit
-3. **Die entscheidende Frage**: Ist das, was ausgelagert wird, etwas, das die Person lernen sollte?
-4. **Der Zielkonflikt**: Dieselbe KI-Nutzung kann für Expert*innen produktiv und für Lernende schädlich sein
+## Die Szenarien
 
-## Die zwei Konzepte
+1. Student nutzt KI für Gliederung einer Seminararbeit
+2. Dozentin nutzt KI für Feedback-Entwürfe
+3. Student bittet KI um Erklärung eines Konzepts
+4. Dozentin generiert Prüfungsfragen mit KI
+5. Student lässt KI seinen Essay schreiben
+6. Dozentin bereitet Vorlesung mit KI vor
+7. Student nutzt KI als Sparringspartner für Argumente
+8. Student debuggt Code mit KI, ohne den Fehler zu verstehen
 
+## Die Konzepte
+
+Zwei verschiedene Arten, kognitive Arbeit auszulagern:
+
+:::: {.columns}
+::: {.column width="50%"}
 ### Kognitives Offloading
 
-Du externalisierst Informationen, um dein Arbeitsgedächtnis zu entlasten, **während du selbst weiter denkst**.
-
-**Beispiele**:
+Du externalisierst, aber **denkst selbst weiter**
 
 - Notizen machen
 - Mind-Maps erstellen
-- Taschenrechner für Berechnungen nutzen
+- Taschenrechner nutzen
 
 Das Werkzeug **speichert**, was du produzierst.
-
+:::
+::: {.column width="50%"}
 ### Kognitives Outsourcing
 
-Du überträgst die **eigentliche Denkarbeit** an ein externes System.
-
-**Beispiele**:
+Du überträgst die **eigentliche Denkarbeit**
 
 - GPS statt eigene Navigation
-- KI-generierter Text statt eigenes Schreiben
-- KI-Analyse statt eigenes Durchdenken
+- KI-generierter Text
+- KI-Analyse
 
-Das Werkzeug **entscheidet**, **produziert** und denkt für dich.
+Das Werkzeug **entscheidet** für dich.
+:::
+::::
 
 ## Die entscheidende Frage
 
-::: {.key-point}
+::: {.r-fit-text}
 > Ist die ausgelagerte Arbeit das, was die Person **lernen oder üben** sollte?
 :::
 
-Diese Frage unterscheidet sinnvolle von problematischer KI-Nutzung.
+## Der Kontext macht den Unterschied
 
-## Matrix: Wer macht was?
+| Situation | Für Experten | Für Lernende |
+|-----------|--------------|--------------|
+| KI schreibt Feedback | OK (Effizienz) | N/A |
+| KI schreibt Essay | N/A | Problematisch |
+| KI erklärt Konzept | OK | Kommt drauf an |
+| KI generiert Übungen | OK | Könnte OK sein |
 
-| Situation | Lehrende | Studierende |
-|-----------|----------|-------------|
-| KI schreibt Feedback | ✓ OK (Effizienz) | — |
-| KI schreibt Essay | — | ✗ Problematisch |
-| KI erklärt Konzept | ✓ OK | ? Kommt drauf an |
-| KI generiert Übungen | ✓ OK | ? Könnte OK sein |
-| KI debuggt Code | ✓ OK | ✗ Wenn ohne Verständnis |
-
-## Der Produktivitäts-Lern-Zielkonflikt
-
-::: {.reflect}
-## Kein Paradox, sondern vorhersagbar
-
-Der Konflikt zwischen Produktivität und Lernen ist kein Paradox. Er folgt direkt aus dem, was wir über kognitive Architektur wissen:
-
-- **KI-Tools sind für Expert*innen gemacht**: Sie steigern Produktivität, indem sie kognitive Arbeit übernehmen.
-- **Lernen erfordert kognitive Anstrengung**: Das Gehirn lernt durch Vorhersagefehler, die nur entstehen, wenn man selbst denkt.
-- **Wenn Studierende auslagern, was sie üben sollten**: Sie bekommen das **Produkt**, aber nicht den **Lerneffekt**.
-
-Für Lehrende ist Outsourcing oft produktiv (Arbeit, nicht Lernen).
-Für Studierende ist Outsourcing oft problematisch (sie brauchen die Übung).
-:::
-
-## Was die Hirnforschung zeigt
-
-Neurowissenschaftliche Forschung von Fedorenko und Gibson am MIT zeigt: **Sprache und Denken sind im Gehirn getrennt** [@fedorenkoLanguagePrimarilyTool2024].
-
-Das Sprachsystem des Gehirns (etwa so gross wie eine Erdbeere) funktioniert als **Übersetzer**: Es übersetzt zwischen externer Sprache und internen Bedeutungsrepräsentationen in anderen Hirnarealen. Wenn wir denken, sind die Sprachareale kaum aktiv.
-
-### Die Verbindung zu Offloading und Outsourcing
+## Das Produktivitäts-Lern-Paradox
 
 ::: {.key-point}
-Wenn du einen Chatbot nutzt, um einen Text zu verfassen:
+## Das zentrale Problem
 
-- **Offloading**: Du hast die Ideen, die Argumente, das Wissen. Du nutzt KI, um diese in polierte Sprache zu übersetzen. Das Denken passiert bei dir.
+KI macht Aufgaben **einfacher**.
 
-- **Outsourcing**: Du lässt die KI Ideen, Argumente und Inhalte generieren, ohne diese selbst zu durchdenken.
+Aber Lernen braucht **kognitive Anstrengung**.
 
-Für Studierende, die **lernen sollen, selbst zu denken**, ist Outsourcing problematisch: Der Text sieht fertig aus, aber die kognitiven Prozesse, die zu Lernen führen, haben bei der Person nicht stattgefunden.
+Wenn Studierende auslagern, was sie üben sollten, bekommen sie das **Produkt**, aber nicht den **Lerneffekt**.
 :::
 
-## Aktivität: Szenario-Karten
+## Für Lehrende vs. Studierende
 
-Die vollständige Aktivität mit allen Szenarien findest du hier:
+:::: {.columns}
+::: {.column width="50%"}
+### Lehrende
 
-[→ Zur Szenario-Karten Aktivität](../../exercises/offloading-outsourcing/index.qmd)
+Outsourcing ist oft **produktiv**:
 
-## Leitfragen für deine Praxis
+- Ihr lernt nicht mehr, ihr arbeitet
+- Effizienz zählt
+- Zeit für wichtigere Aufgaben
+:::
+::: {.column width="50%"}
+### Studierende
 
-Für **dich als Lehrperson**:
+Outsourcing ist oft **problematisch**:
 
-- Wo kann ich KI produktiv für Routineaufgaben einsetzen?
-- Wo gewinne ich Zeit für wichtigere Aufgaben?
+- Sie sollen Kompetenzen aufbauen
+- Die kognitive Arbeit IST der Lernprozess
+- Abkürzungen verhindern Lernen
+:::
+::::
 
-Für **deine Studierenden**:
+## Diskussion
 
-- Welche kognitiven Prozesse sind zentral für das Lernziel?
-- Wo würde KI-Nutzung genau diese Prozesse umgehen?
+::: {.group}
+## Zwei Fragen
+
+1. **Wo kannst DU als Lehrperson produktiv outsourcen?**
+
+2. **Wo sollten deine STUDIERENDEN NICHT outsourcen?**
+
+{{< timer 5 >}}
+:::
+
+## Zusammenfassung: Wofür sollte ich KI verwenden?
+
+**Für Lehrende**: Dort, wo Effizienz zählt und das Lernen bereits abgeschlossen ist.
+
+**Für Studierende**: Nur dort, wo es nicht das Üben ersetzt, das für den Kompetenzaufbau nötig ist.
 
 ## Takeaway
 
 ::: {.key-point}
-## Antwort auf Frage 3: Wann hilft KI, wann schadet sie?
+## Antwort auf Frage 3
 
-KI-Tools sind für **Expert*innen** gemacht. Sie steigern Produktivität.
+**Wofür sollte ich KI verwenden?**
 
-Für **Lernende** ist die Situation komplizierter: Lernen braucht **kognitive Anstrengung**. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
+KI-Tools sind für **Experten** gemacht. Sie steigern Produktivität.
 
-**Die Frage ist nicht "Darf man KI nutzen?", sondern "Wer lernt dabei was?"**
+Für **Lernende** ist die Situation komplizierter: Lernen braucht kognitive Anstrengung. Wenn Studierende auslagern, was sie üben sollten, bekommen sie das Produkt, aber nicht den Lerneffekt.
 :::
-
-## Referenzen
