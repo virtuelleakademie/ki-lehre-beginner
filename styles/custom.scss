@@ -447,7 +447,6 @@ th {
 .quarto-title-block {
   padding-bottom: $spacing-xl;
   margin-bottom: $spacing-xl;
-  @include border-bottom;
 }
 
 .quarto-title-block .quarto-title .title {
