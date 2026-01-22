@@ -1089,7 +1089,7 @@
     "href": "workshop/index.html#lernziele",
     "title": "Workshop: KI in der Lehre",
     "section": "Lernziele",
-    "text": "Lernziele\nAm Ende dieses Workshops kannst du:\n\nErklären, wie Sprachmodelle Text generieren (statistische Vorhersage)\nDie Fähigkeiten und Grenzen moderner Chatbots einschätzen\nDie BFH-Richtlinien kennen und den BFH-Copilot nutzen\nZwischen kognitivem Offloading und Outsourcing unterscheiden\nBeurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert",
+    "text": "Lernziele\nAm Ende dieses Workshops kannst du:\n\nErklären, wie Sprachmodelle Text generieren (statistische Vorhersage)\nDie Fähigkeiten und Grenzen moderner Chatbots einschätzen\nEntscheiden, wann und wie KI-basierte Tools gemäss Richtlinien eingesetzt werden dürfen\nZwischen kognitivem Offloading und Outsourcing unterscheiden\nBeurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert",
     "crumbs": [
       "Workshop",
       "Übersicht"
@@ -1100,7 +1100,7 @@
     "href": "workshop/index.html#ablauf",
     "title": "Workshop: KI in der Lehre",
     "section": "Ablauf",
-    "text": "Ablauf\n\n\n\n\n\n\n\n\nZeit\nPhase\nInhalt\n\n\n\n\n09:00–09:15\nEinstieg\nBegrüssung und Spektrum-Aktivität\n\n\n09:15–10:00\nFrage 1: Was ist KI?\nTextgenerierung, Chain-of-Thought, Mini-Experiment\n\n\n10:00–10:10\nPause\n\n\n\n10:10–10:30\nCopilot Onboarding\nDemonstration + Guided Practice\n\n\n10:30–11:10\nFrage 2: Wofür kann KI verwendet werden?\nFähigkeiten, BFH-Policy, Fakten-Check Aktivität\n\n\n11:10–11:20\nPause\n\n\n\n11:20–11:50\nFrage 3: Wann hilft KI, wann schadet sie?\nSzenario-Karten, Offloading vs. Outsourcing\n\n\n11:50–12:00\nAbschluss\nTransfer und Vorsätze",
+    "text": "Ablauf\n\n\n\n\n\n\n\n\nZeit\nPhase\nInhalt\n\n\n\n\n09:00–09:15\nEinstieg\nBegrüssung und Selbsteinschätzung\n\n\n09:15–10:00\nFrage 1: Was ist KI?\nTextgenerierung, Chain-of-Thought, Mini-Experiment\n\n\n10:00–10:10\nPause\n\n\n\n10:10–10:30\nCopilot Onboarding\nDemonstration + Guided Practice\n\n\n10:30–11:10\nFrage 2: Wofür kann KI verwendet werden?\nFähigkeiten, BFH-Policy, Fakten-Check Aktivität\n\n\n11:10–11:20\nPause\n\n\n\n11:20–11:50\nFrage 3: Wann hilft KI, wann schadet sie?\nSzenario-Karten, Offloading vs. Outsourcing\n\n\n11:50–12:00\nAbschluss\nTransfer und Vorsätze",
     "crumbs": [
       "Workshop",
       "Übersicht"
@@ -1111,7 +1111,7 @@
     "href": "workshop/index.html#aktivitäten",
     "title": "Workshop: KI in der Lehre",
     "section": "Aktivitäten",
-    "text": "Aktivitäten\nJede Frage enthält eine praktische Aktivität:\n\n\n\n\n\n\n\n\nFrage\nAktivität\nDauer\n\n\n\n\n1\nMini-Experiment: Chain-of-Thought testen\n10 min\n\n\nVor 2\nCopilot Onboarding: Erste Schritte mit dem BFH-Chatbot\n20 min\n\n\n2\nFakten-Check: Chatbot-Antworten überprüfen\n30 min\n\n\n3\nSzenario-Karten ODER Dual Planning Task\n30-35 min\n\n\n\n\n\n\n\n\n\nPro-tipAktivität für Frage 3 wählen\n\n\n\n\n\n\nSzenario-Karten (35 min): Strukturierte Gruppenarbeit, gut für grössere Gruppen\nDual Planning Task (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen",
+    "text": "Aktivitäten\nJede Frage enthält eine praktische Aktivität:\n\n\n\nFrage\nAktivität\nDauer\n\n\n\n\n1\nMini-Experiment: Chain-of-Thought testen\n10 min\n\n\nVor 2\nCopilot Onboarding: Erste Schritte\n20 min\n\n\n2\nFakten-Check: Chatbot-Antworten überprüfen\n30 min\n\n\n3\nSzenario-Karten ODER Dual Planning Task\n30-35 min\n\n\n\n\n\n\n\n\n\nPro-tipAktivität für Frage 3 wählen\n\n\n\n\n\n\nSzenario-Karten (35 min): Strukturierte Gruppenarbeit, gut für grössere Gruppen\nDual Planning Task (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen",
     "crumbs": [
       "Workshop",
       "Übersicht"
