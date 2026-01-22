@@ -86,23 +86,6 @@ Für Lehrende ist Outsourcing oft produktiv (Arbeit, nicht Lernen).
 Für Studierende ist Outsourcing oft problematisch (sie brauchen die Übung).
 :::
 
-## Was die Hirnforschung zeigt
-
-Neurowissenschaftliche Forschung von Fedorenko und Gibson am MIT zeigt: **Sprache und Denken sind im Gehirn getrennt** [@fedorenkoLanguagePrimarilyTool2024].
-
-Das Sprachsystem des Gehirns (etwa so gross wie eine Erdbeere) funktioniert als **Übersetzer**: Es übersetzt zwischen externer Sprache und internen Bedeutungsrepräsentationen in anderen Hirnarealen. Wenn wir denken, sind die Sprachareale kaum aktiv.
-
-### Die Verbindung zu Offloading und Outsourcing
-
-::: {.key-point}
-Wenn du einen Chatbot nutzt, um einen Text zu verfassen:
-
-- **Offloading**: Du hast die Ideen, die Argumente, das Wissen. Du nutzt KI, um diese in polierte Sprache zu übersetzen. Das Denken passiert bei dir.
-
-- **Outsourcing**: Du lässt die KI Ideen, Argumente und Inhalte generieren, ohne diese selbst zu durchdenken.
-
-Für Studierende, die **lernen sollen, selbst zu denken**, ist Outsourcing problematisch: Der Text sieht fertig aus, aber die kognitiven Prozesse, die zu Lernen führen, haben bei der Person nicht stattgefunden.
-:::
 
 ## Aktivität: Szenario-Karten
 

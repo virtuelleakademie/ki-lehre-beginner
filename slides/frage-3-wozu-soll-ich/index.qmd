@@ -11,13 +11,15 @@ format:
 footer: "KI in der Lehre: Beginner"
 ---
 
-## Die Konzepte
+## Die Konzepte {.smaller}
 
 Zwei verschiedene Arten, kognitive Arbeit auszulagern:
 
+<br>
+
 :::: {.columns}
 ::: {.column width="50%"}
-### Kognitives Offloading
+#### Kognitives Offloading
 
 Du externalisierst, aber **denkst selbst weiter**
 
@@ -28,7 +30,7 @@ Du externalisierst, aber **denkst selbst weiter**
 Das Werkzeug **speichert**, was du produzierst.
 :::
 ::: {.column width="50%"}
-### Kognitives Outsourcing
+#### Kognitives Outsourcing
 
 Du überträgst die **eigentliche Denkarbeit**
 
@@ -42,21 +44,22 @@ Das Werkzeug **entscheidet** für dich.
 
 ## Die entscheidende Frage
 
+<br> <br> 
+
 ::: {.r-fit-text}
-> Ist die ausgelagerte Arbeit das, was die Person **lernen oder üben** sollte?
+Ist die ausgelagerte Arbeit das, was die Person **lernen oder üben** sollte?
 :::
 
 ## Szenario-Aktivität
 
 ::: {.experiment}
-## Partnerarbeit (15 min)
+## Kleingruppen (15 min)
 
-Diskutiert mit eurem Gegenüber die Szenarien. Für jedes Szenario:
+Arbeitet in Gruppen von 2-4 Personen. Für jedes Szenario:
 
-1. Ist das **Offloading** oder **Outsourcing**?
-2. Ist das in diesem Kontext **problematisch**?
-
-{{< timer 15 >}}
+1. **Einschätzung**: Offloading oder Outsourcing?
+2. **Begründung**: Warum?
+3. **Unsicherheit**: Was müsstet ihr zusätzlich wissen?
 :::
 
 ## Die Szenarien
@@ -64,11 +67,8 @@ Diskutiert mit eurem Gegenüber die Szenarien. Für jedes Szenario:
 1. Student*in nutzt KI für Gliederung einer Seminararbeit
 2. Dozierende Person nutzt KI für Feedback-Entwürfe
 3. Student*in bittet KI um Erklärung eines Konzepts
-4. Dozierende Person generiert Prüfungsfragen mit KI
-5. Student*in lässt KI den Essay schreiben
-6. Dozierende Person bereitet Vorlesung mit KI vor
-7. Student*in nutzt KI als Sparringspartner für Argumente
-8. Student*in debuggt Code mit KI, ohne den Fehler zu verstehen
+4. Student*in lässt KI den Essay schreiben
+5. Student*in nutzt KI als Sparringspartner für Argumente
 
 ## Der Kontext macht den Unterschied
 
@@ -91,7 +91,9 @@ Aber Lernen braucht **kognitive Anstrengung**.
 Wenn Studierende auslagern, was sie üben sollten, bekommen sie das **Produkt**, aber nicht den **Lerneffekt**.
 :::
 
-## Für Lehrende vs. Studierende
+## Für Lehrende vs. Studierende {.smaller}
+
+<br> 
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -109,28 +111,21 @@ Outsourcing ist oft **produktiv**:
 Outsourcing ist oft **problematisch**:
 
 - Sie sollen Kompetenzen aufbauen
-- Die kognitive Arbeit IST der Lernprozess
+- Die kognitive Arbeit **ist** der Lernprozess
 - Abkürzungen verhindern Lernen
 :::
 ::::
 
-## Diskussion
+<!-- ## Diskussion
 
-::: {.experiment}
-## Austausch mit deinem Gegenüber
+::: {.group}
+## Gruppendiskussion (10 min)
 
 1. **Wo kannst DU als Lehrperson produktiv outsourcen?**
 
 2. **Wo sollten deine STUDIERENDEN NICHT outsourcen?**
+::: -->
 
-{{< timer 10 >}}
-:::
-
-## Zusammenfassung: Wofür sollte ich KI verwenden?
-
-**Für Lehrende**: Dort, wo Effizienz zählt und das Lernen bereits abgeschlossen ist.
-
-**Für Studierende**: Nur dort, wo es nicht das Üben ersetzt, das für den Kompetenzaufbau nötig ist.
 
 ## Takeaway
 

@@ -91,7 +91,7 @@ Bevor wir mit den Szenarien arbeiten, hier zwei Beispiele, bei denen wir die dia
 ::: {.experiment}
 ## Teil 3: Szenario-Karten (15 min)
 
-Jetzt wendet ihr die Konzepte selbst an. Arbeitet in Kleingruppen (3-4 Personen).
+Jetzt wendet ihr die Konzepte selbst an. Arbeitet in Kleingruppen (2-4 Personen).
 
 ::: {.callout-note}
 ## Gruppenbildung
