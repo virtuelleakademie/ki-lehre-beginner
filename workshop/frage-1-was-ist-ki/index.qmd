@@ -17,8 +17,8 @@ In dieser Einheit lernen wir, wie Chatbots funktionieren: Textgenerierung durch 
 | Thema | Zeit |
 |-------|------|
 | Sprachmodelle als Textvorhersage | 20 min |
-| Chain-of-Thought Denken (inkl. Demonstration) | 15 min |
-| Reflexion und Überleitung | 10 min |
+| Chain-of-Thought Denken (inkl. Demonstration) | 20 min |
+| Reflexion und Überleitung | 5 min |
 
 ### Kernbotschaften
 
@@ -55,9 +55,9 @@ tokenDatabase = ({
     {token: "Vorlesung", prob: 0.10},
     {token: "Karriere", prob: 0.08}
   ],
-  "Der Professor erklärt das": [
-    {token: "Konzept", prob: 0.28},
-    {token: "Thema", prob: 0.24},
+  "Die Vorlesung behandelt das": [
+    {token: "Thema", prob: 0.28},
+    {token: "Konzept", prob: 0.24},
     {token: "Problem", prob: 0.20},
     {token: "Modell", prob: 0.16},
     {token: "Prinzip", prob: 0.12}
@@ -98,7 +98,7 @@ Plot.plot({
 ```
 
 ::: {.key-point}
-Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern aus den Trainingsdaten. Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.
+Das Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern die anhand der Trainingsdaten gelernt werden. Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.
 :::
 
 ## Interaktiv: Temperature
@@ -127,6 +127,8 @@ tempDescription = temperature < 0.5 ? "Deterministisch: Fast immer das wahrschei
   temperature < 1.5 ? "Kreativ: Mehr Variation" : "Unvorhersehbar: Auch unwahrscheinliche Wörter werden gewählt"
 ```
 
+**Kontext:** ${selectedSentence} ___
+
 **Temperature = ${temperature.toFixed(1)}**: ${tempDescription}
 
 ```{ojs}
@@ -145,13 +147,6 @@ Plot.plot({
 })
 ```
 
-::: {.pro-tip}
-## Temperature in der Praxis
-
-- **Niedrig (0.1-0.5)**: Für Zusammenfassungen, Fakten, konsistente Ausgaben
-- **Mittel (0.7-1.0)**: Für die meisten Aufgaben ein guter Standard
-- **Hoch (1.2-1.5)**: Für Brainstorming und kreative Texte
-:::
 
 ## Chain-of-Thought "Denken"
 
@@ -174,16 +169,11 @@ Je mehr "Denkschritte" im Text stehen, desto mehr Information hat das Modell fü
 
 Ohne Anleitung antwortet das Modell oft falsch, weil "9.11" als Datum interpretiert werden kann (11. September). Mit der Anweisung "Denke Schritt für Schritt" schreibt das Modell die Dezimalstellen explizit aus (9.11 = 9 + 0.11, 9.8 = 9 + 0.80) und vergleicht dann korrekt.
 
-::: {.demonstration}
-## Live-Demonstration
-
-Die Kursleitung zeigt den Unterschied zwischen direkter Frage und "Denke Schritt für Schritt" an einem Beispiel.
-:::
 
 ::: {.key-point}
 ## Denken = Mehr Kontext = Bessere Vorhersagen
 
-Das "Denken" eines Chatbots ist kein Bewusstsein. Es ist eine Technik, bei der das Modell Zwischenschritte generiert, die dann als zusätzlicher Kontext für die nächste Vorhersage dienen.
+Das "Denken" eines Chatbots ist eine Technik, bei der das Modell Zwischenschritte generiert, die dann als zusätzlicher Kontext für die nächste Vorhersage dienen.
 
 Die Parallele zum menschlichen Denken ist real: Auch wir profitieren davon, Gedanken zu externalisieren. Der Unterschied liegt darin, was "unter der Haube" passiert.
 :::
@@ -213,12 +203,12 @@ Wenn KI für dich schreibt, übernimmt sie diese Auswahl. Du bekommst das Produk
 <!-- Mehr dazu: [Schreiben als Sampling](../../resources/schreiben-als-sampling/index.qmd) -->
 :::
 
-## Kurze Reflexion (2 min)
+## Kurze Reflexion (3 min)
 
 ::: {.reflect}
 Bevor wir zur Pause gehen: Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.
 
-{{< timer 2 >}}
+{{< timer 3 autostart=false >}}
 :::
 
 ## Takeaway

@@ -20,7 +20,7 @@ Am Ende dieses Workshops kannst du:
 
 - Erklären, wie Sprachmodelle Text generieren (statistische Vorhersage)
 - Die Fähigkeiten und Grenzen moderner Chatbots einschätzen
-- Die BFH-Richtlinien kennen und den BFH-Copilot nutzen
+- Entscheiden, wann und wie KI-basierte Tools gemäss Richtlinien eingesetzt werden dürfen
 - Zwischen kognitivem Offloading und Outsourcing unterscheiden
 - Beurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert
 
@@ -28,32 +28,21 @@ Am Ende dieses Workshops kannst du:
 
 | Zeit | Phase | Inhalt |
 |------|-------|--------|
-| 09:00–09:15 | Einstieg | Begrüssung und Spektrum-Aktivität |
-| 09:15–10:00 | **Frage 1: Was ist KI?** | Textgenerierung, Chain-of-Thought, Mini-Experiment |
-| 10:00–10:10 | Pause | |
-| 10:10–10:30 | **Copilot Onboarding** | Demonstration + Guided Practice |
-| 10:30–11:10 | **Frage 2: Wofür kann KI verwendet werden?** | Fähigkeiten, BFH-Policy, Fakten-Check Aktivität |
-| 11:10–11:20 | Pause | |
-| 11:20–11:50 | **Frage 3: Wann hilft KI, wann schadet sie?** | Szenario-Karten, Offloading vs. Outsourcing |
-| 11:50–12:00 | Abschluss | Transfer und Vorsätze |
+| 09:00–09:10 | Einstieg | Begrüssung und Selbsteinschätzung |
+| 09:10–09:55 | **Frage 1: Was ist KI?** | Textgenerierung, Chain-of-Thought, Demonstration |
+| 09:55–10:15 | **Copilot Onboarding** | Demonstration + Guided Practice |
+| 10:15–10:30 | Pause | |
+| 10:30–11:05 | **Frage 2: Wofür kann KI verwendet werden?** | Fähigkeiten, BFH-Policy, Fakten-Check Aktivität |
+| 11:05–11:40 | **Frage 3: Wann hilft KI, wann schadet sie?** | Szenario-Karten, Offloading vs. Outsourcing |
+| 11:40–12:00 | Abschluss | Transfer und Vorsätze |
 
 ## Aktivitäten
 
-Jede Frage enthält eine praktische Aktivität:
-
 | Frage | Aktivität | Dauer |
 |-------|-----------|-------|
-| 1 | Mini-Experiment: Chain-of-Thought testen | 10 min |
-| Vor 2 | **Copilot Onboarding**: Erste Schritte mit dem BFH-Chatbot | 20 min |
+| Vor 2 | **Copilot Onboarding**: Erste Schritte | 20 min |
 | 2 | Fakten-Check: Chatbot-Antworten überprüfen | 30 min |
-| 3 | Szenario-Karten ODER Dual Planning Task | 30-35 min |
-
-::: {.pro-tip}
-## Aktivität für Frage 3 wählen
-
-- **Szenario-Karten** (35 min): Strukturierte Gruppenarbeit, gut für grössere Gruppen
-- **Dual Planning Task** (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen
-:::
+| 3 | Szenario-Karten: Offloading vs. Outsourcing | 35 min |
 
 ## Takeaways
 

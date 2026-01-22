@@ -4,10 +4,10 @@ subtitle: "Der Elefant im Raum"
 sidebar: workshop
 ---
 
-## Der Elefant im Raum
+<!-- ## Der Elefant im Raum -->
 
 ::: {.scenario}
-Stelle dir vor: Deine beste studierende Person hat eine hervorragende Arbeit abgegeben.
+Stelle dir vor: Jemand aus deinem Kurs hat eine hervorragende Arbeit abgegeben.
 
 Kannst du sicher sein, dass sie selbst gedacht hat?
 
@@ -164,25 +164,17 @@ positionText = position ? html`<p style="text-align: center; font-size: 0.95em; 
   Haltung: ${position.y > 0 ? "optimistisch" : "skeptisch"}
 </p>` : html`<p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 0.75em;"><em>Klicke auf das Diagramm, um deine Position zu markieren.</em></p>`
 ```
-
-{{< timer 2 >}}
 :::
 
 ::: {.experiment}
-## Finde dein Gegenüber
+## Kurzer Austausch
 
-Zeig deinen Nachbarn deine Position. Finde jemanden im **gegenüberliegenden Quadranten**:
+Zeig deiner Nachbarin oder deinem Nachbarn deine Position. Tauscht euch kurz aus:
 
-<!-- | Dein Quadrant | Suche jemanden in... |
-|---------------|----------------------|
-| Oben links | Unten rechts |
-| Oben rechts | Unten links |
-| Unten links | Oben rechts |
-| Unten rechts | Oben links | -->
+- Wo habt ihr euch platziert?
+- Was hat eure Einschätzung geprägt?
 
-Setzt euch zusammen. Ihr arbeitet heute als Paar.
-
-{{< timer 2 >}}
+{{< timer 2 autostart=false >}}
 :::
 
 <!-- ::: {.callout-note}

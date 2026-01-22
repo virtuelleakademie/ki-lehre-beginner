@@ -91,3 +91,35 @@ $presentation-heading-font: "News Cycle", sans-serif !default;
   margin-bottom: 0.3rem !important;
   margin-top: 0.3rem !important;
 }
+
+// OJS interactive elements in slides
+.reveal {
+  .cell {
+    font-size: 0.8em;
+  }
+
+  .observablehq {
+    font-size: 0.8em;
+  }
+
+  form {
+    font-size: 14px !important;
+  }
+
+  form label {
+    font-size: 14px !important;
+  }
+
+  select {
+    font-size: 14px !important;
+    padding: 0.3em 0.5em;
+  }
+
+  input[type="range"] {
+    width: 250px;
+  }
+
+  svg text {
+    font-size: 0.8em;
+  }
+}

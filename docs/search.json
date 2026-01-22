@@ -504,7 +504,7 @@
     "href": "exercises/copilot-einstieg/index.html#demonstration",
     "title": "Copilot Onboarding",
     "section": "Teil 1: Demonstration (5 min)",
-    "text": "Teil 1: Demonstration (5 min)\n\n\n\n\n\n\nDemonstrationDie Workshopleitung zeigt\n\n\n\n1. Copilot öffnen\n\nGehe zu copilot.microsoft.com\nMelde dich mit deinem BFH-Konto an\nDu siehst das Chat-Fenster\n\n2. Einen einfachen Prompt eingeben\nDie Workshopleitung gibt diesen Prompt ein:\n\n\n\n\n\n\nPromptPrompt\n\n\n\nIch bin Dozent an einer Fachhochschule. Erkläre mir in 3 Sätzen, wie du als Sprachmodell Text generierst.\n\n\n3. Die Antwort lesen und interpretieren\nBeachte:\n\nDer Chatbot antwortet sofort und selbstbewusst\nDie Antwort klingt kompetent, unabhängig davon, ob sie korrekt ist\nDu kannst Nachfragen stellen (“Erkläre das genauer” oder “Gib mir ein Beispiel”)\n\n4. Eine Nachfrage stellen\n\n\n\n\n\n\nPromptPrompt\n\n\n\nGib mir eine Analogie, die ich meinen Studierenden zeigen könnte.",
+    "text": "Teil 1: Demonstration (5 min)\n\n\n\n\n\n\nDemonstrationDie Workshopleitung zeigt\n\n\n\n1. Copilot öffnen\n\nGehe zu copilot.microsoft.com\nMelde dich mit deinem BFH-Konto an\nDu siehst das Chat-Fenster\n\n2. Einen einfachen Prompt eingeben\nDie Workshopleitung gibt diesen Prompt ein:\n\n\n\n\n\n\nPromptPrompt\n\n\n\nIch unterrichte an einer Fachhochschule. Erkläre mir in 3 Sätzen, wie du als Sprachmodell Text generierst.\n\n\n3. Die Antwort lesen und interpretieren\nBeachte:\n\nDer Chatbot antwortet sofort und selbstbewusst\nDie Antwort klingt kompetent, unabhängig davon, ob sie korrekt ist\nDu kannst Nachfragen stellen (“Erkläre das genauer” oder “Gib mir ein Beispiel”)\n\n4. Eine Nachfrage stellen\n\n\n\n\n\n\nPromptPrompt\n\n\n\nGib mir eine Analogie, die ich meinen Studierenden zeigen könnte.",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -720,7 +720,7 @@
     "href": "workshop/frage-1-was-ist-ki/index.html#inhaltsübersicht",
     "title": "Frage 1: Was ist KI?",
     "section": "Inhaltsübersicht",
-    "text": "Inhaltsübersicht\nDauer: 45 Minuten\n\n\n\nThema\nZeit\n\n\n\n\nSprachmodelle als Textvorhersage\n20 min\n\n\nChain-of-Thought Denken (inkl. Demonstration)\n15 min\n\n\nReflexion und Überleitung\n10 min\n\n\n\n\nKernbotschaften\n\nLLMs sagen das nächste Wort vorher, basierend auf Mustern in Trainingsdaten\nDenken (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext\nModerne Modelle sind extrem leistungsfähig; der Kontext bestimmt das Ergebnis",
+    "text": "Inhaltsübersicht\nDauer: 45 Minuten\n\n\n\nThema\nZeit\n\n\n\n\nSprachmodelle als Textvorhersage\n20 min\n\n\nChain-of-Thought Denken (inkl. Demonstration)\n20 min\n\n\nReflexion und Überleitung\n5 min\n\n\n\n\nKernbotschaften\n\nLLMs sagen das nächste Wort vorher, basierend auf Mustern in Trainingsdaten\nDenken (Chain-of-Thought) verbessert Ergebnisse durch mehr Kontext\nModerne Modelle sind extrem leistungsfähig; der Kontext bestimmt das Ergebnis",
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
@@ -732,7 +732,7 @@
     "href": "workshop/frage-1-was-ist-ki/index.html#interaktiv-token-vorhersage",
     "title": "Frage 1: Was ist KI?",
     "section": "Interaktiv: Token-Vorhersage",
-    "text": "Interaktiv: Token-Vorhersage\nWie sieht “Next-Word-Prediction” konkret aus? Wähle einen Satzanfang und sieh die Wahrscheinlichkeitsverteilung für das nächste Wort.\n\ntokenDatabase = ({\n  \"Der Hund liegt auf dem\": [\n    {token: \"Boden\", prob: 0.32},\n    {token: \"Sofa\", prob: 0.24},\n    {token: \"Bett\", prob: 0.18},\n    {token: \"Teppich\", prob: 0.14},\n    {token: \"Rasen\", prob: 0.12}\n  ],\n  \"Die Katze sitzt auf dem\": [\n    {token: \"Dach\", prob: 0.28},\n    {token: \"Baum\", prob: 0.24},\n    {token: \"Sofa\", prob: 0.20},\n    {token: \"Tisch\", prob: 0.16},\n    {token: \"Fensterbrett\", prob: 0.12}\n  ],\n  \"Die Studierenden lernen für die\": [\n    {token: \"Prüfung\", prob: 0.45},\n    {token: \"Klausur\", prob: 0.25},\n    {token: \"Zukunft\", prob: 0.12},\n    {token: \"Vorlesung\", prob: 0.10},\n    {token: \"Karriere\", prob: 0.08}\n  ],\n  \"Der Professor erklärt das\": [\n    {token: \"Konzept\", prob: 0.28},\n    {token: \"Thema\", prob: 0.24},\n    {token: \"Problem\", prob: 0.20},\n    {token: \"Modell\", prob: 0.16},\n    {token: \"Prinzip\", prob: 0.12}\n  ],\n  \"KI wird in Zukunft\": [\n    {token: \"wichtiger\", prob: 0.24},\n    {token: \"viele\", prob: 0.20},\n    {token: \"eine\", prob: 0.18},\n    {token: \"immer\", prob: 0.20},\n    {token: \"unsere\", prob: 0.18}\n  ]\n})\n\nviewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {\n  label: \"Satzanfang:\",\n  value: \"Der Hund liegt auf dem\"\n})\n\ncurrentProbs = tokenDatabase[selectedSentence]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKontext:  ___\n\nPlot.plot({\n  marginLeft: 100,\n  width: Math.min(500, width),\n  height: 180,\n  x: {domain: [0, 0.5], label: \"Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(currentProbs, {y: \"token\", x: \"prob\", fill: \"#A3195B\", sort: {y: \"-x\"}}),\n    Plot.text(currentProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nDas Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern aus den Trainingsdaten. Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.",
+    "text": "Interaktiv: Token-Vorhersage\nWie sieht “Next-Word-Prediction” konkret aus? Wähle einen Satzanfang und sieh die Wahrscheinlichkeitsverteilung für das nächste Wort.\n\ntokenDatabase = ({\n  \"Der Hund liegt auf dem\": [\n    {token: \"Boden\", prob: 0.32},\n    {token: \"Sofa\", prob: 0.24},\n    {token: \"Bett\", prob: 0.18},\n    {token: \"Teppich\", prob: 0.14},\n    {token: \"Rasen\", prob: 0.12}\n  ],\n  \"Die Katze sitzt auf dem\": [\n    {token: \"Dach\", prob: 0.28},\n    {token: \"Baum\", prob: 0.24},\n    {token: \"Sofa\", prob: 0.20},\n    {token: \"Tisch\", prob: 0.16},\n    {token: \"Fensterbrett\", prob: 0.12}\n  ],\n  \"Die Studierenden lernen für die\": [\n    {token: \"Prüfung\", prob: 0.45},\n    {token: \"Klausur\", prob: 0.25},\n    {token: \"Zukunft\", prob: 0.12},\n    {token: \"Vorlesung\", prob: 0.10},\n    {token: \"Karriere\", prob: 0.08}\n  ],\n  \"Die Vorlesung behandelt das\": [\n    {token: \"Thema\", prob: 0.28},\n    {token: \"Konzept\", prob: 0.24},\n    {token: \"Problem\", prob: 0.20},\n    {token: \"Modell\", prob: 0.16},\n    {token: \"Prinzip\", prob: 0.12}\n  ],\n  \"KI wird in Zukunft\": [\n    {token: \"wichtiger\", prob: 0.24},\n    {token: \"viele\", prob: 0.20},\n    {token: \"eine\", prob: 0.18},\n    {token: \"immer\", prob: 0.20},\n    {token: \"unsere\", prob: 0.18}\n  ]\n})\n\nviewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {\n  label: \"Satzanfang:\",\n  value: \"Der Hund liegt auf dem\"\n})\n\ncurrentProbs = tokenDatabase[selectedSentence]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKontext:  ___\n\nPlot.plot({\n  marginLeft: 100,\n  width: Math.min(500, width),\n  height: 180,\n  x: {domain: [0, 0.5], label: \"Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(currentProbs, {y: \"token\", x: \"prob\", fill: \"#A3195B\", sort: {y: \"-x\"}}),\n    Plot.text(currentProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nDas Modell berechnet Wahrscheinlichkeiten für jedes mögliche nächste Wort. Die Auswahl basiert auf Mustern die anhand der Trainingsdaten gelernt werden. Das ist nicht so anders, wie es klingt: Auch unser Gehirn vervollständigt Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit, nicht in der Grundmechanik.",
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
@@ -744,7 +744,7 @@
     "href": "workshop/frage-1-was-ist-ki/index.html#interaktiv-temperature",
     "title": "Frage 1: Was ist KI?",
     "section": "Interaktiv: Temperature",
-    "text": "Interaktiv: Temperature\nDer Parameter “Temperature” beeinflusst, wie das Modell aus den Wahrscheinlichkeiten wählt.\n\nviewof temperature = Inputs.range([0.1, 2.0], {\n  value: 1.0,\n  step: 0.1,\n  label: \"Temperature\"\n})\n\nscaledProbs = {\n  const t = temperature;\n  const logits = currentProbs.map(p =&gt; Math.log(p.prob));\n  const scaled = logits.map(l =&gt; Math.exp(l / t));\n  const sum = scaled.reduce((a, b) =&gt; a + b, 0);\n  return currentProbs.map((p, i) =&gt; ({token: p.token, prob: scaled[i] / sum}));\n}\n\ntempDescription = temperature &lt; 0.5 ? \"Deterministisch: Fast immer das wahrscheinlichste Wort\" :\n  temperature &lt; 1.0 ? \"Ausgeglichen: Gute Mischung\" :\n  temperature &lt; 1.5 ? \"Kreativ: Mehr Variation\" : \"Unvorhersehbar: Auch unwahrscheinliche Wörter werden gewählt\"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTemperature = : \n\nPlot.plot({\n  marginLeft: 100,\n  width: Math.min(500, width),\n  height: 180,\n  x: {domain: [0, 1], label: \"Angepasste Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(scaledProbs, {y: \"token\", x: \"prob\", fill: \"#D4A03E\", sort: {y: \"-x\"}}),\n    Plot.text(scaledProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\nPro-tipTemperature in der Praxis\n\n\n\n\n\n\nNiedrig (0.1-0.5): Für Zusammenfassungen, Fakten, konsistente Ausgaben\nMittel (0.7-1.0): Für die meisten Aufgaben ein guter Standard\nHoch (1.2-1.5): Für Brainstorming und kreative Texte",
+    "text": "Interaktiv: Temperature\nDer Parameter “Temperature” beeinflusst, wie das Modell aus den Wahrscheinlichkeiten wählt.\n\nviewof temperature = Inputs.range([0.1, 2.0], {\n  value: 1.0,\n  step: 0.1,\n  label: \"Temperature\"\n})\n\nscaledProbs = {\n  const t = temperature;\n  const logits = currentProbs.map(p =&gt; Math.log(p.prob));\n  const scaled = logits.map(l =&gt; Math.exp(l / t));\n  const sum = scaled.reduce((a, b) =&gt; a + b, 0);\n  return currentProbs.map((p, i) =&gt; ({token: p.token, prob: scaled[i] / sum}));\n}\n\ntempDescription = temperature &lt; 0.5 ? \"Deterministisch: Fast immer das wahrscheinlichste Wort\" :\n  temperature &lt; 1.0 ? \"Ausgeglichen: Gute Mischung\" :\n  temperature &lt; 1.5 ? \"Kreativ: Mehr Variation\" : \"Unvorhersehbar: Auch unwahrscheinliche Wörter werden gewählt\"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKontext:  ___\nTemperature = : \n\nPlot.plot({\n  marginLeft: 100,\n  width: Math.min(500, width),\n  height: 180,\n  x: {domain: [0, 1], label: \"Angepasste Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(scaledProbs, {y: \"token\", x: \"prob\", fill: \"#D4A03E\", sort: {y: \"-x\"}}),\n    Plot.text(scaledProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})",
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
@@ -756,7 +756,7 @@
     "href": "workshop/frage-1-was-ist-ki/index.html#chain-of-thought-denken",
     "title": "Frage 1: Was ist KI?",
     "section": "Chain-of-Thought “Denken”",
-    "text": "Chain-of-Thought “Denken”\nWenn du ein schwieriges Problem löst, denkst du wahrscheinlich laut oder schreibst Zwischenschritte auf. Das hilft, weil jeder Schritt dir Kontext für den nächsten gibt.\nChatbots funktionieren ähnlich: Wenn sie Zwischenschritte ausformulieren, wird jeder Schritt Teil des Kontexts für die nächste Vorhersage. Das nennt man Chain-of-Thought (Gedankenkette).\n\nDie Mechanik dahinter\nErinnere dich: Das Modell sagt immer das nächste Wort vorher, basierend auf allem, was davor steht.\n\nOhne Zwischenschritte: Frage → Antwort (wenig Kontext für komplexe Schlüsse)\nMit Zwischenschritten: Frage → Schritt 1 → Schritt 2 → … → Antwort (jeder Schritt liefert Kontext)\n\nJe mehr “Denkschritte” im Text stehen, desto mehr Information hat das Modell für die finale Antwort.\n\n\nBeispiel: 9.11 vs 9.8\nFrage: “Was ist grösser: 9.11 oder 9.8?”\nOhne Anleitung antwortet das Modell oft falsch, weil “9.11” als Datum interpretiert werden kann (11. September). Mit der Anweisung “Denke Schritt für Schritt” schreibt das Modell die Dezimalstellen explizit aus (9.11 = 9 + 0.11, 9.8 = 9 + 0.80) und vergleicht dann korrekt.\n\n\n\n\n\n\nDemonstrationLive-Demonstration\n\n\n\nDie Kursleitung zeigt den Unterschied zwischen direkter Frage und “Denke Schritt für Schritt” an einem Beispiel.\n\n\n\n\n\n\n\n\nKey-pointDenken = Mehr Kontext = Bessere Vorhersagen\n\n\n\nDas “Denken” eines Chatbots ist kein Bewusstsein. Es ist eine Technik, bei der das Modell Zwischenschritte generiert, die dann als zusätzlicher Kontext für die nächste Vorhersage dienen.\nDie Parallele zum menschlichen Denken ist real: Auch wir profitieren davon, Gedanken zu externalisieren. Der Unterschied liegt darin, was “unter der Haube” passiert.",
+    "text": "Chain-of-Thought “Denken”\nWenn du ein schwieriges Problem löst, denkst du wahrscheinlich laut oder schreibst Zwischenschritte auf. Das hilft, weil jeder Schritt dir Kontext für den nächsten gibt.\nChatbots funktionieren ähnlich: Wenn sie Zwischenschritte ausformulieren, wird jeder Schritt Teil des Kontexts für die nächste Vorhersage. Das nennt man Chain-of-Thought (Gedankenkette).\n\nDie Mechanik dahinter\nErinnere dich: Das Modell sagt immer das nächste Wort vorher, basierend auf allem, was davor steht.\n\nOhne Zwischenschritte: Frage → Antwort (wenig Kontext für komplexe Schlüsse)\nMit Zwischenschritten: Frage → Schritt 1 → Schritt 2 → … → Antwort (jeder Schritt liefert Kontext)\n\nJe mehr “Denkschritte” im Text stehen, desto mehr Information hat das Modell für die finale Antwort.\n\n\nBeispiel: 9.11 vs 9.8\nFrage: “Was ist grösser: 9.11 oder 9.8?”\nOhne Anleitung antwortet das Modell oft falsch, weil “9.11” als Datum interpretiert werden kann (11. September). Mit der Anweisung “Denke Schritt für Schritt” schreibt das Modell die Dezimalstellen explizit aus (9.11 = 9 + 0.11, 9.8 = 9 + 0.80) und vergleicht dann korrekt.\n\n\n\n\n\n\nKey-pointDenken = Mehr Kontext = Bessere Vorhersagen\n\n\n\nDas “Denken” eines Chatbots ist eine Technik, bei der das Modell Zwischenschritte generiert, die dann als zusätzlicher Kontext für die nächste Vorhersage dienen.\nDie Parallele zum menschlichen Denken ist real: Auch wir profitieren davon, Gedanken zu externalisieren. Der Unterschied liegt darin, was “unter der Haube” passiert.",
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
@@ -859,14 +859,14 @@
     "href": "index.html",
     "title": "KI in der Lehre: Beginner",
     "section": "",
-    "text": "Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.\n\n\n\nWorkshop: Ablauf und Lernziele\nSlides: Präsentationen zum Workshop\nÜbungen: Praktische Aufgaben und Reflexionen"
+    "text": "Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.\n 23. Januar 2026\n 9:00–12:00 Uhr\n P103 im Pavillion, Dept. W, Brückenstrasse 73, 3005 Bern\n\n\n\nWorkshop: Ablauf und Lernziele\nSlides: Präsentationen zum Workshop\nÜbungen: Praktische Aufgaben und Reflexionen"
   },
   {
     "objectID": "index.html#willkommen",
     "href": "index.html#willkommen",
     "title": "KI in der Lehre: Beginner",
     "section": "",
-    "text": "Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.\n\n\n\nWorkshop: Ablauf und Lernziele\nSlides: Präsentationen zum Workshop\nÜbungen: Praktische Aufgaben und Reflexionen"
+    "text": "Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.\n 23. Januar 2026\n 9:00–12:00 Uhr\n P103 im Pavillion, Dept. W, Brückenstrasse 73, 3005 Bern\n\n\n\nWorkshop: Ablauf und Lernziele\nSlides: Präsentationen zum Workshop\nÜbungen: Praktische Aufgaben und Reflexionen"
   },
   {
     "objectID": "index.html#kontakt",
@@ -880,7 +880,7 @@
     "href": "workshop/einstieg/index.html",
     "title": "Ankommen",
     "section": "",
-    "text": "ScenarioSzenario\n\n\n\nStelle dir vor: Deine beste studierende Person hat eine hervorragende Arbeit abgegeben.\nKannst du sicher sein, dass sie selbst gedacht hat?\nUnd wenn nicht: Was bedeutet das für deine Lehre?",
+    "text": "ScenarioSzenario\n\n\n\nStelle dir vor: Jemand aus deinem Kurs hat eine hervorragende Arbeit abgegeben.\nKannst du sicher sein, dass sie selbst gedacht hat?\nUnd wenn nicht: Was bedeutet das für deine Lehre?",
     "crumbs": [
       "Workshop",
       "Einstieg"
@@ -913,7 +913,7 @@
     "href": "workshop/einstieg/index.html#wo-stehst-du",
     "title": "Ankommen",
     "section": "Wo stehst du?",
-    "text": "Wo stehst du?\n\n\n\n\n\n\nExperimentMarkiere deine Position\n\n\n\nKlicke auf das Koordinatensystem, um deine Position zu markieren:\n\nX-Achse: Wie viel Erfahrung hast du mit KI-Tools?\nY-Achse: Wie stehst du zu KI in der Lehre?\n\n\nviewof position = {\n  const width = 380;\n  const height = 380;\n  const margin = 40;\n\n  const svg = d3.create(\"svg\")\n    .attr(\"viewBox\", [0, 0, width, height])\n    .attr(\"width\", \"100%\")\n    .attr(\"max-width\", width)\n    .style(\"cursor\", \"crosshair\")\n    .style(\"background\", \"#fafafa\")\n    .style(\"border\", \"1px solid #ddd\")\n    .style(\"border-radius\", \"8px\");\n\n  // Quadrant backgrounds\n  const quadrantColors = [\"#e8f5e9\", \"#fff3e0\", \"#e3f2fd\", \"#fce4ec\"];\n  const quadrants = [\n    {x: margin, y: margin, label: \"Optimistisch\\n& wenig Erfahrung\"},\n    {x: width/2, y: margin, label: \"Optimistisch\\n& viel Erfahrung\"},\n    {x: margin, y: height/2, label: \"Skeptisch\\n& wenig Erfahrung\"},\n    {x: width/2, y: height/2, label: \"Skeptisch\\n& viel Erfahrung\"}\n  ];\n\n  quadrants.forEach((q, i) =&gt; {\n    svg.append(\"rect\")\n      .attr(\"x\", q.x)\n      .attr(\"y\", q.y)\n      .attr(\"width\", (width - 2*margin) / 2)\n      .attr(\"height\", (height - 2*margin) / 2)\n      .attr(\"fill\", quadrantColors[i])\n      .attr(\"opacity\", 0.5);\n  });\n\n  // Axes\n  svg.append(\"line\")\n    .attr(\"x1\", margin)\n    .attr(\"y1\", height/2)\n    .attr(\"x2\", width - margin)\n    .attr(\"y2\", height/2)\n    .attr(\"stroke\", \"#333\")\n    .attr(\"stroke-width\", 2);\n\n  svg.append(\"line\")\n    .attr(\"x1\", width/2)\n    .attr(\"y1\", margin)\n    .attr(\"x2\", width/2)\n    .attr(\"y2\", height - margin)\n    .attr(\"stroke\", \"#333\")\n    .attr(\"stroke-width\", 2);\n\n  // Axis labels (inside the diagram)\n  svg.append(\"text\")\n    .attr(\"x\", width - margin - 5)\n    .attr(\"y\", height/2 - 8)\n    .attr(\"text-anchor\", \"end\")\n    .attr(\"font-size\", \"10px\")\n    .attr(\"fill\", \"#555\")\n    .text(\"Viel Erfahrung →\");\n\n  svg.append(\"text\")\n    .attr(\"x\", margin + 5)\n    .attr(\"y\", height/2 - 8)\n    .attr(\"text-anchor\", \"start\")\n    .attr(\"font-size\", \"10px\")\n    .attr(\"fill\", \"#555\")\n    .text(\"← Wenig\");\n\n  svg.append(\"text\")\n    .attr(\"x\", width/2 + 8)\n    .attr(\"y\", margin + 15)\n    .attr(\"text-anchor\", \"start\")\n    .attr(\"font-size\", \"10px\")\n    .attr(\"fill\", \"#555\")\n    .text(\"↑ Optimistisch\");\n\n  svg.append(\"text\")\n    .attr(\"x\", width/2 + 8)\n    .attr(\"y\", height - margin - 8)\n    .attr(\"text-anchor\", \"start\")\n    .attr(\"font-size\", \"10px\")\n    .attr(\"fill\", \"#555\")\n    .text(\"↓ Skeptisch\");\n\n  // Marker\n  const marker = svg.append(\"circle\")\n    .attr(\"r\", 10)\n    .attr(\"fill\", \"#A3195B\")\n    .attr(\"stroke\", \"white\")\n    .attr(\"stroke-width\", 3)\n    .attr(\"visibility\", \"hidden\");\n\n  // Click handler\n  let currentPos = null;\n\n  svg.on(\"click\", function(event) {\n    const [x, y] = d3.pointer(event);\n    if (x &gt;= margin && x &lt;= width - margin && y &gt;= margin && y &lt;= height - margin) {\n      marker\n        .attr(\"cx\", x)\n        .attr(\"cy\", y)\n        .attr(\"visibility\", \"visible\");\n\n      // Convert to -1 to 1 scale\n      const normX = ((x - margin) / (width - 2*margin)) * 2 - 1;\n      const normY = -(((y - margin) / (height - 2*margin)) * 2 - 1);\n      currentPos = {x: normX.toFixed(2), y: normY.toFixed(2)};\n      svg.node().value = currentPos;\n      svg.node().dispatchEvent(new Event(\"input\"));\n    }\n  });\n\n  svg.node().value = null;\n  return svg.node();\n}\n\n\n\n\n\n\n\npositionText = position ? html`&lt;p style=\"text-align: center; font-size: 0.95em; margin-top: 0.75em;\"&gt;\n  &lt;strong&gt;Deine Position:&lt;/strong&gt;\n  Erfahrung: ${position.x &gt; 0 ? \"mehr\" : \"weniger\"} |\n  Haltung: ${position.y &gt; 0 ? \"optimistisch\" : \"skeptisch\"}\n&lt;/p&gt;` : html`&lt;p style=\"text-align: center; color: #666; font-size: 0.9em; margin-top: 0.75em;\"&gt;&lt;em&gt;Klicke auf das Diagramm, um deine Position zu markieren.&lt;/em&gt;&lt;/p&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExperimentFinde dein Gegenüber\n\n\n\nZeig deinen Nachbarn deine Position. Finde jemanden im gegenüberliegenden Quadranten:\n\nSetzt euch zusammen. Ihr arbeitet heute als Paar.",
+    "text": "Wo stehst du?\n\n\n\n\n\n\nExperimentMarkiere deine Position\n\n\n\nKlicke auf das Koordinatensystem, um deine Position zu markieren:\n\nX-Achse: Wie viel Erfahrung hast du mit KI-Tools?\nY-Achse: Wie stehst du zu KI in der Lehre?\n\n\nviewof position = {\n  const width = 380;\n  const height = 380;\n  const margin = 40;\n\n  const svg = d3.create(\"svg\")\n    .attr(\"viewBox\", [0, 0, width, height])\n    .attr(\"width\", \"100%\")\n    .attr(\"max-width\", width)\n    .style(\"cursor\", \"crosshair\")\n    .style(\"background\", \"#fafafa\")\n    .style(\"border\", \"1px solid #ddd\")\n    .style(\"border-radius\", \"8px\");\n\n  // Quadrant backgrounds\n  const quadrantColors = [\"#e8f5e9\", \"#fff3e0\", \"#e3f2fd\", \"#fce4ec\"];\n  const quadrants = [\n    {x: margin, y: margin, label: \"Optimistisch\\n& wenig Erfahrung\"},\n    {x: width/2, y: margin, label: \"Optimistisch\\n& viel Erfahrung\"},\n    {x: margin, y: height/2, label: \"Skeptisch\\n& wenig Erfahrung\"},\n    {x: width/2, y: height/2, label: \"Skeptisch\\n& viel Erfahrung\"}\n  ];\n\n  quadrants.forEach((q, i) =&gt; {\n    svg.append(\"rect\")\n      .attr(\"x\", q.x)\n      .attr(\"y\", q.y)\n      .attr(\"width\", (width - 2*margin) / 2)\n      .attr(\"height\", (height - 2*margin) / 2)\n      .attr(\"fill\", quadrantColors[i])\n      .attr(\"opacity\", 0.5);\n  });\n\n  // Axes\n  svg.append(\"line\")\n    .attr(\"x1\", margin)\n    .attr(\"y1\", height/2)\n    .attr(\"x2\", width - margin)\n    .attr(\"y2\", height/2)\n    .attr(\"stroke\", \"#333\")\n    .attr(\"stroke-width\", 2);\n\n  svg.append(\"line\")\n    .attr(\"x1\", width/2)\n    .attr(\"y1\", margin)\n    .attr(\"x2\", width/2)\n    .attr(\"y2\", height - margin)\n    .attr(\"stroke\", \"#333\")\n    .attr(\"stroke-width\", 2);\n\n  // Axis labels (inside the diagram)\n  svg.append(\"text\")\n    .attr(\"x\", width - margin - 5)\n    .attr(\"y\", height/2 - 8)\n    .attr(\"text-anchor\", \"end\")\n    .attr(\"font-size\", \"10px\")\n    .attr(\"fill\", \"#555\")\n    .text(\"Viel Erfahrung →\");\n\n  svg.append(\"text\")\n    .attr(\"x\", margin + 5)\n    .attr(\"y\", height/2 - 8)\n    .attr(\"text-anchor\", \"start\")\n    .attr(\"font-size\", \"10px\")\n    .attr(\"fill\", \"#555\")\n    .text(\"← Wenig\");\n\n  svg.append(\"text\")\n    .attr(\"x\", width/2 + 8)\n    .attr(\"y\", margin + 15)\n    .attr(\"text-anchor\", \"start\")\n    .attr(\"font-size\", \"10px\")\n    .attr(\"fill\", \"#555\")\n    .text(\"↑ Optimistisch\");\n\n  svg.append(\"text\")\n    .attr(\"x\", width/2 + 8)\n    .attr(\"y\", height - margin - 8)\n    .attr(\"text-anchor\", \"start\")\n    .attr(\"font-size\", \"10px\")\n    .attr(\"fill\", \"#555\")\n    .text(\"↓ Skeptisch\");\n\n  // Marker\n  const marker = svg.append(\"circle\")\n    .attr(\"r\", 10)\n    .attr(\"fill\", \"#A3195B\")\n    .attr(\"stroke\", \"white\")\n    .attr(\"stroke-width\", 3)\n    .attr(\"visibility\", \"hidden\");\n\n  // Click handler\n  let currentPos = null;\n\n  svg.on(\"click\", function(event) {\n    const [x, y] = d3.pointer(event);\n    if (x &gt;= margin && x &lt;= width - margin && y &gt;= margin && y &lt;= height - margin) {\n      marker\n        .attr(\"cx\", x)\n        .attr(\"cy\", y)\n        .attr(\"visibility\", \"visible\");\n\n      // Convert to -1 to 1 scale\n      const normX = ((x - margin) / (width - 2*margin)) * 2 - 1;\n      const normY = -(((y - margin) / (height - 2*margin)) * 2 - 1);\n      currentPos = {x: normX.toFixed(2), y: normY.toFixed(2)};\n      svg.node().value = currentPos;\n      svg.node().dispatchEvent(new Event(\"input\"));\n    }\n  });\n\n  svg.node().value = null;\n  return svg.node();\n}\n\n\n\n\n\n\n\npositionText = position ? html`&lt;p style=\"text-align: center; font-size: 0.95em; margin-top: 0.75em;\"&gt;\n  &lt;strong&gt;Deine Position:&lt;/strong&gt;\n  Erfahrung: ${position.x &gt; 0 ? \"mehr\" : \"weniger\"} |\n  Haltung: ${position.y &gt; 0 ? \"optimistisch\" : \"skeptisch\"}\n&lt;/p&gt;` : html`&lt;p style=\"text-align: center; color: #666; font-size: 0.9em; margin-top: 0.75em;\"&gt;&lt;em&gt;Klicke auf das Diagramm, um deine Position zu markieren.&lt;/em&gt;&lt;/p&gt;`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExperimentKurzer Austausch\n\n\n\nZeig deiner Nachbarin oder deinem Nachbarn deine Position. Tauscht euch kurz aus:\n\nWo habt ihr euch platziert?\nWas hat eure Einschätzung geprägt?",
     "crumbs": [
       "Workshop",
       "Einstieg"
@@ -1089,7 +1089,7 @@
     "href": "workshop/index.html#lernziele",
     "title": "Workshop: KI in der Lehre",
     "section": "Lernziele",
-    "text": "Lernziele\nAm Ende dieses Workshops kannst du:\n\nErklären, wie Sprachmodelle Text generieren (statistische Vorhersage)\nDie Fähigkeiten und Grenzen moderner Chatbots einschätzen\nDie BFH-Richtlinien kennen und den BFH-Copilot nutzen\nZwischen kognitivem Offloading und Outsourcing unterscheiden\nBeurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert",
+    "text": "Lernziele\nAm Ende dieses Workshops kannst du:\n\nErklären, wie Sprachmodelle Text generieren (statistische Vorhersage)\nDie Fähigkeiten und Grenzen moderner Chatbots einschätzen\nEntscheiden, wann und wie KI-basierte Tools gemäss Richtlinien eingesetzt werden dürfen\nZwischen kognitivem Offloading und Outsourcing unterscheiden\nBeurteilen, wann KI-Nutzung das Lernen unterstützt oder behindert",
     "crumbs": [
       "Workshop",
       "Übersicht"
@@ -1100,7 +1100,7 @@
     "href": "workshop/index.html#ablauf",
     "title": "Workshop: KI in der Lehre",
     "section": "Ablauf",
-    "text": "Ablauf\n\n\n\n\n\n\n\n\nZeit\nPhase\nInhalt\n\n\n\n\n09:00–09:15\nEinstieg\nBegrüssung und Spektrum-Aktivität\n\n\n09:15–10:00\nFrage 1: Was ist KI?\nTextgenerierung, Chain-of-Thought, Mini-Experiment\n\n\n10:00–10:10\nPause\n\n\n\n10:10–10:30\nCopilot Onboarding\nDemonstration + Guided Practice\n\n\n10:30–11:10\nFrage 2: Wofür kann KI verwendet werden?\nFähigkeiten, BFH-Policy, Fakten-Check Aktivität\n\n\n11:10–11:20\nPause\n\n\n\n11:20–11:50\nFrage 3: Wann hilft KI, wann schadet sie?\nSzenario-Karten, Offloading vs. Outsourcing\n\n\n11:50–12:00\nAbschluss\nTransfer und Vorsätze",
+    "text": "Ablauf\n\n\n\n\n\n\n\n\nZeit\nPhase\nInhalt\n\n\n\n\n09:00–09:10\nEinstieg\nBegrüssung und Selbsteinschätzung\n\n\n09:10–09:55\nFrage 1: Was ist KI?\nTextgenerierung, Chain-of-Thought, Demonstration\n\n\n09:55–10:15\nCopilot Onboarding\nDemonstration + Guided Practice\n\n\n10:15–10:30\nPause\n\n\n\n10:30–11:05\nFrage 2: Wofür kann KI verwendet werden?\nFähigkeiten, BFH-Policy, Fakten-Check Aktivität\n\n\n11:05–11:40\nFrage 3: Wann hilft KI, wann schadet sie?\nSzenario-Karten, Offloading vs. Outsourcing\n\n\n11:40–12:00\nAbschluss\nTransfer und Vorsätze",
     "crumbs": [
       "Workshop",
       "Übersicht"
@@ -1111,7 +1111,7 @@
     "href": "workshop/index.html#aktivitäten",
     "title": "Workshop: KI in der Lehre",
     "section": "Aktivitäten",
-    "text": "Aktivitäten\nJede Frage enthält eine praktische Aktivität:\n\n\n\n\n\n\n\n\nFrage\nAktivität\nDauer\n\n\n\n\n1\nMini-Experiment: Chain-of-Thought testen\n10 min\n\n\nVor 2\nCopilot Onboarding: Erste Schritte mit dem BFH-Chatbot\n20 min\n\n\n2\nFakten-Check: Chatbot-Antworten überprüfen\n30 min\n\n\n3\nSzenario-Karten ODER Dual Planning Task\n30-35 min\n\n\n\n\n\n\n\n\n\nPro-tipAktivität für Frage 3 wählen\n\n\n\n\n\n\nSzenario-Karten (35 min): Strukturierte Gruppenarbeit, gut für grössere Gruppen\nDual Planning Task (30 min): Erfahrungsbasiert, tiefere Reflexion, kleinere Gruppen",
+    "text": "Aktivitäten\n\n\n\nFrage\nAktivität\nDauer\n\n\n\n\nVor 2\nCopilot Onboarding: Erste Schritte\n20 min\n\n\n2\nFakten-Check: Chatbot-Antworten überprüfen\n30 min\n\n\n3\nSzenario-Karten: Offloading vs. Outsourcing\n35 min",
     "crumbs": [
       "Workshop",
       "Übersicht"
@@ -1169,7 +1169,7 @@
     "href": "exercises/index.html",
     "title": "Übungen",
     "section": "",
-    "text": "Übung\nDauer\nBeschreibung\n\n\n\n\nCopilot Onboarding\n20 min\nErste Schritte mit dem BFH-Chatbot (I do → We do → You do)\n\n\nFakten-Check\n30 min\nKritische Evaluation von KI-Outputs (I do → We do → You do)\n\n\nOffloading vs. Outsourcing\n35 min\nSzenario-Karten: Wann unterstützt KI das Lernen?\n\n\nDual Planning Task\n30 min\nErfahrungsbasiert: Wo steckt das Denken?",
+    "text": "Übung\nDauer\nBeschreibung\n\n\n\n\nCopilot Onboarding\n20 min\nErste Schritte mit dem BFH-Chatbot (I do → We do → You do)\n\n\nFakten-Check\n30 min\nKritische Evaluation von KI-Outputs (I do → We do → You do)\n\n\nOffloading vs. Outsourcing\n35 min\nSzenario-Karten: Wann unterstützt KI das Lernen?",
     "crumbs": [
       "Übungen"
     ]
@@ -1179,7 +1179,7 @@
     "href": "exercises/index.html#aktivitäten",
     "title": "Übungen",
     "section": "",
-    "text": "Übung\nDauer\nBeschreibung\n\n\n\n\nCopilot Onboarding\n20 min\nErste Schritte mit dem BFH-Chatbot (I do → We do → You do)\n\n\nFakten-Check\n30 min\nKritische Evaluation von KI-Outputs (I do → We do → You do)\n\n\nOffloading vs. Outsourcing\n35 min\nSzenario-Karten: Wann unterstützt KI das Lernen?\n\n\nDual Planning Task\n30 min\nErfahrungsbasiert: Wo steckt das Denken?",
+    "text": "Übung\nDauer\nBeschreibung\n\n\n\n\nCopilot Onboarding\n20 min\nErste Schritte mit dem BFH-Chatbot (I do → We do → You do)\n\n\nFakten-Check\n30 min\nKritische Evaluation von KI-Outputs (I do → We do → You do)\n\n\nOffloading vs. Outsourcing\n35 min\nSzenario-Karten: Wann unterstützt KI das Lernen?",
     "crumbs": [
       "Übungen"
     ]
@@ -1210,7 +1210,7 @@
     "href": "slides/frage-1-was-ist-ki/index.html#was-sind-chatbots",
     "title": "Frage 1: Was ist KI?",
     "section": "Was sind Chatbots?",
-    "text": "Was sind Chatbots?",
+    "text": "Was sind Chatbots?\n\n\n\n\n\n\n\n\nClaude (Anthropic)\n\nGemini (Google)",
     "crumbs": [
       "Slides",
       "Frage 1: Was ist KI?"
@@ -1309,7 +1309,7 @@
     "href": "slides/frage-1-was-ist-ki/index.html#chain-of-thought-denken",
     "title": "Frage 1: Was ist KI?",
     "section": "Chain-of-Thought “Denken”",
-    "text": "Chain-of-Thought “Denken”\nExplizites Nachdenken verbessert die Ergebnisse:\n\n“Denke Schritt für Schritt”\nDer Chatbot zeigt seinen “Denkprozess”\nBesonders hilfreich bei komplexen Aufgaben",
+    "text": "Chain-of-Thought “Denken”\nWenn wir das Modell auffordern, “Schritt für Schritt zu denken”:\n\nEs generiert Zwischenschritte als zusätzliche Tokens\nDiese Tokens erweitern den Kontext für die nächste Vorhersage\nMehr Kontext führt zu besseren Vorhersagen\n\nDas “Denken” ist zusätzliche Textgenerierung. Dieser Text dient als erweiterter Kontext.",
     "crumbs": [
       "Slides",
       "Frage 1: Was ist KI?"
@@ -1397,7 +1397,7 @@
     "href": "slides/frage-3-wozu-soll-ich/index.html#die-szenarien",
     "title": "Frage 3: Wofür sollte ich KI verwenden?",
     "section": "Die Szenarien",
-    "text": "Die Szenarien\n\nStudent nutzt KI für Gliederung einer Seminararbeit\nDozentin nutzt KI für Feedback-Entwürfe\nStudent bittet KI um Erklärung eines Konzepts\nDozentin generiert Prüfungsfragen mit KI\nStudent lässt KI seinen Essay schreiben\nDozentin bereitet Vorlesung mit KI vor\nStudent nutzt KI als Sparringspartner für Argumente\nStudent debuggt Code mit KI, ohne den Fehler zu verstehen",
+    "text": "Die Szenarien\n\nStudent*in nutzt KI für Gliederung einer Seminararbeit\nDozierende Person nutzt KI für Feedback-Entwürfe\nStudent*in bittet KI um Erklärung eines Konzepts\nDozierende Person generiert Prüfungsfragen mit KI\nStudent*in lässt KI den Essay schreiben\nDozierende Person bereitet Vorlesung mit KI vor\nStudent*in nutzt KI als Sparringspartner für Argumente\nStudent*in debuggt Code mit KI, ohne den Fehler zu verstehen",
     "crumbs": [
       "Slides",
       "Frage 3: Wofür sollte ich KI verwenden?"
@@ -1588,5 +1588,72 @@
     "title": "Schreiben als Sampling",
     "section": "Weiterführend",
     "text": "Weiterführend\nDiese Perspektive basiert auf Arbeiten zu:\n\nSchreibforschung: Bereiter und Scardamalia (1987) unterschieden zwischen knowledge-telling (Wissen wiedergeben) und knowledge-transforming (Wissen durch Schreiben umstrukturieren)\nSelbsterklärungseffekte: Chi und Kollegen zeigten, dass das Generieren von Erklärungen tieferes Lernen produziert als passives Review (Chi u. a. 1994)\nExtended Cognition: Clark und Chalmers (1998) argumentierten, dass kognitive Prozesse sich über das Gehirn hinaus auf externe Repräsentationen erstrecken können"
+  },
+  {
+    "objectID": "workshop/frage-1-was-ist-ki/index.html#kurze-reflexion-3-min",
+    "href": "workshop/frage-1-was-ist-ki/index.html#kurze-reflexion-3-min",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Kurze Reflexion (3 min)",
+    "text": "Kurze Reflexion (3 min)\n\n\n\n\n\n\nReflectReflexion\n\n\n\nBevor wir zur Pause gehen: Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.",
+    "crumbs": [
+      "Workshop",
+      "Frage 1: Was ist KI?",
+      "Präsentation"
+    ]
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/index.html#was-bedeutet-das-konkret",
+    "href": "slides/frage-1-was-ist-ki/index.html#was-bedeutet-das-konkret",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Was bedeutet das konkret?",
+    "text": "Was bedeutet das konkret?\nGegeben einen Satzanfang wie “Der Hund liegt auf dem”, berechnet das Modell die Wahrscheinlichkeit für jedes mögliche nächste Wort:\n\n“Boden” → 32%\n“Sofa” → 24%\n“Bett” → 18%\n…\n\nZwei Faktoren bestimmen diese Vorhersage:\n\nKontext: Was wurde bisher gesagt?\nModell: Was hat das System aus Trainingsdaten gelernt?",
+    "crumbs": [
+      "Slides",
+      "Frage 1: Was ist KI?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/index.html#token-vorhersage-und-temperatur",
+    "href": "slides/frage-1-was-ist-ki/index.html#token-vorhersage-und-temperatur",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Token-Vorhersage und Temperatur",
+    "text": "Token-Vorhersage und Temperatur\n\ntokenDatabase = ({\n  \"Der Hund liegt auf dem\": [\n    {token: \"Boden\", prob: 0.32},\n    {token: \"Sofa\", prob: 0.24},\n    {token: \"Bett\", prob: 0.18},\n    {token: \"Teppich\", prob: 0.14},\n    {token: \"Rasen\", prob: 0.12}\n  ],\n  \"Die Katze sitzt auf dem\": [\n    {token: \"Dach\", prob: 0.28},\n    {token: \"Baum\", prob: 0.24},\n    {token: \"Sofa\", prob: 0.20},\n    {token: \"Tisch\", prob: 0.16},\n    {token: \"Fensterbrett\", prob: 0.12}\n  ],\n  \"Die Studierenden lernen für die\": [\n    {token: \"Prüfung\", prob: 0.45},\n    {token: \"Klausur\", prob: 0.25},\n    {token: \"Zukunft\", prob: 0.12},\n    {token: \"Vorlesung\", prob: 0.10},\n    {token: \"Karriere\", prob: 0.08}\n  ]\n})\n\nviewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {\n  label: \"Satzanfang:\",\n  value: \"Der Hund liegt auf dem\"\n})\n\ncurrentProbs = tokenDatabase[selectedSentence]\n\nviewof temperature = Inputs.range([0.1, 2.0], {\n  value: 1.0,\n  step: 0.1,\n  label: \"Temperature\"\n})\n\nscaledProbs = {\n  const t = temperature;\n  const logits = currentProbs.map(p =&gt; Math.log(p.prob));\n  const scaled = logits.map(l =&gt; Math.exp(l / t));\n  const sum = scaled.reduce((a, b) =&gt; a + b, 0);\n  return currentProbs.map((p, i) =&gt; ({token: p.token, prob: scaled[i] / sum}));\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasis-Wahrscheinlichkeiten\n\nPlot.plot({\n  marginLeft: 80,\n  width: 380,\n  height: 150,\n  x: {domain: [0, 0.5], label: \"Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(currentProbs, {y: \"token\", x: \"prob\", fill: \"#A3195B\", sort: {y: \"-x\"}}),\n    Plot.text(currentProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})\n\n\n\n\n\n\n\nMit Temperature = \n\nPlot.plot({\n  marginLeft: 80,\n  width: 380,\n  height: 150,\n  x: {domain: [0, 1], label: \"Angepasste Wahrscheinlichkeit\", tickFormat: d =&gt; (d * 100) + \"%\"},\n  y: {label: null},\n  marks: [\n    Plot.barX(scaledProbs, {y: \"token\", x: \"prob\", fill: \"#D4A03E\", sort: {y: \"-x\"}}),\n    Plot.text(scaledProbs, {y: \"token\", x: \"prob\", text: d =&gt; (d.prob * 100).toFixed(0) + \"%\", dx: 5, textAnchor: \"start\"})\n  ]\n})",
+    "crumbs": [
+      "Slides",
+      "Frage 1: Was ist KI?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/index.html#wie-generieren-llms-sätze",
+    "href": "slides/frage-1-was-ist-ki/index.html#wie-generieren-llms-sätze",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Wie generieren LLMs Sätze?",
+    "text": "Wie generieren LLMs Sätze?\n\n\\[\\green{P(\\text{Wort}_{i+1}} \\mid \\red{\\text{Kontext}}, \\blue{\\text{Modell}})\\]",
+    "crumbs": [
+      "Slides",
+      "Frage 1: Was ist KI?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/index.html#wie-generieren-llms-ganze-sequenzen",
+    "href": "slides/frage-1-was-ist-ki/index.html#wie-generieren-llms-ganze-sequenzen",
+    "title": "Frage 1: Was ist KI?",
+    "section": "Wie generieren LLMs ganze Sequenzen?",
+    "text": "Wie generieren LLMs ganze Sequenzen?\n\n\\[\\green{P(\\text{Wort}_{i+1}} \\mid \\red{\\text{Kontext}}, \\blue{\\text{Modell}})\\]",
+    "crumbs": [
+      "Slides",
+      "Frage 1: Was ist KI?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-1-was-ist-ki/index.html#think-deeper-in-copilot",
+    "href": "slides/frage-1-was-ist-ki/index.html#think-deeper-in-copilot",
+    "title": "Frage 1: Was ist KI?",
+    "section": "“Think Deeper” in Copilot",
+    "text": "“Think Deeper” in Copilot",
+    "crumbs": [
+      "Slides",
+      "Frage 1: Was ist KI?"
+    ]
   }
 ]

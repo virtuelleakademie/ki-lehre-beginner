@@ -3,32 +3,33 @@ title: "Frage 1: Was ist KI?"
 subtitle: "Wie funktionieren Sprachmodelle wirklich?"
 format:
   revealjs:
-    theme: default
+    theme: [default, ../../styles/custom-reveal.scss]
     slide-number: true
     progress: true
     controls: true
     navigation-mode: linear
-    css: styles.css
 footer: "KI in der Lehre: Grundlagen"
 ---
-
-## Die erste Frage
-
-::: {.r-fit-text}
-**Was ist KI?**
-:::
-
-Heute: Fokus auf **Sprachmodelle** (LLMs) und **Chatbots**
 
 ## Was sind Chatbots?
 
 :::: {.columns}
-::: {.column width="30%"}
-
+::: {.column width="50%"}
+![](../../assets/images/claude.png)
 :::
 
-::: {.column width="70%"}
-![](../../assets/images/claude.png)
+::: {.column width="50%"}
+![](../../assets/images/gemini.png)
+:::
+::::
+
+:::: {.columns}
+::: {.column width="50%"}
+[[Claude](https://claude.ai){target="_blank"} (Anthropic)]{style="font-size: 0.6em;"}
+:::
+
+::: {.column width="50%"}
+[[Gemini](https://gemini.google.com/){target="_blank"} (Google)]{style="font-size: 0.6em;"}
 :::
 ::::
 
@@ -60,7 +61,21 @@ $$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 
 Jede Vorhersage basiert auf dem **Kontext** und dem internen **Modell**.
 
-## Token-Vorhersage
+## Was bedeutet das konkret? {.smaller}
+
+Gegeben einen Satzanfang wie _"Der Hund liegt auf dem"_, berechnet das Modell die Wahrscheinlichkeit für jedes mögliche nächste Wort:
+
+- "Boden" → 32%
+- "Sofa" → 24%
+- "Bett" → 18%
+- ...
+
+Zwei Faktoren bestimmen diese Vorhersage:
+
+1. **Kontext**: Was wurde bisher gesagt?
+2. **Modell**: Was hat das System aus Trainingsdaten gelernt?
+
+## Token-Vorhersage und Temperatur {.smaller}
 
 ```{ojs}
 //| echo: false
@@ -95,32 +110,6 @@ viewof selectedSentence = Inputs.select(Object.keys(tokenDatabase), {
 })
 
 currentProbs = tokenDatabase[selectedSentence]
-```
-
-**Kontext:** ${selectedSentence} ___
-
-```{ojs}
-//| echo: false
-
-Plot.plot({
-  marginLeft: 100,
-  width: 500,
-  height: 180,
-  x: {domain: [0, 0.5], label: "Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
-  y: {label: null},
-  marks: [
-    Plot.barX(currentProbs, {y: "token", x: "prob", fill: "#A3195B", sort: {y: "-x"}}),
-    Plot.text(currentProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
-  ]
-})
-```
-
-## Temperatur
-
-**Kontext:** ${selectedSentence} ___
-
-```{ojs}
-//| echo: false
 
 viewof temperature = Inputs.range([0.1, 2.0], {
   value: 1.0,
@@ -135,21 +124,39 @@ scaledProbs = {
   const sum = scaled.reduce((a, b) => a + b, 0);
   return currentProbs.map((p, i) => ({token: p.token, prob: scaled[i] / sum}));
 }
-
-tempDescription = temperature < 0.5 ? "Deterministisch: Fast immer das wahrscheinlichste Wort" :
-  temperature < 1.0 ? "Ausgeglichen: Gute Mischung" :
-  temperature < 1.5 ? "Kreativ: Mehr Variation" : "Unvorhersehbar: Auch unwahrscheinliche Wörter werden gewählt"
 ```
 
-**Temperature = ${temperature.toFixed(1)}**: ${tempDescription}
+:::: {.columns}
+::: {.column width="50%"}
+**Basis-Wahrscheinlichkeiten**
 
 ```{ojs}
 //| echo: false
 
 Plot.plot({
-  marginLeft: 100,
-  width: 500,
-  height: 180,
+  marginLeft: 80,
+  width: 380,
+  height: 150,
+  x: {domain: [0, 0.5], label: "Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
+  y: {label: null},
+  marks: [
+    Plot.barX(currentProbs, {y: "token", x: "prob", fill: "#A3195B", sort: {y: "-x"}}),
+    Plot.text(currentProbs, {y: "token", x: "prob", text: d => (d.prob * 100).toFixed(0) + "%", dx: 5, textAnchor: "start"})
+  ]
+})
+```
+:::
+
+::: {.column width="50%"}
+**Mit Temperature = ${temperature.toFixed(1)}**
+
+```{ojs}
+//| echo: false
+
+Plot.plot({
+  marginLeft: 80,
+  width: 380,
+  height: 150,
   x: {domain: [0, 1], label: "Angepasste Wahrscheinlichkeit", tickFormat: d => (d * 100) + "%"},
   y: {label: null},
   marks: [
@@ -158,6 +165,9 @@ Plot.plot({
   ]
 })
 ```
+:::
+::::
+
 
 ## Vorhersage in Aktion
 
@@ -173,7 +183,7 @@ _"Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. Das Haus st
 
 Welche Wörter sind besonders wichtig für die Vorhersage?
 
-## Wie generieren LLMs Text?
+## Wie generieren LLMs ganze Sequenzen?
 
 <br>
 
@@ -197,11 +207,13 @@ Auch wir vervollständigen Muster auf Basis von Erfahrung, nicht durch direkten 
 
 ## Chain-of-Thought "Denken"
 
-Explizites Nachdenken verbessert die Ergebnisse:
+Wenn wir das Modell auffordern, "Schritt für Schritt zu denken":
 
-- "Denke Schritt für Schritt"
-- Der Chatbot zeigt seinen "Denkprozess"
-- Besonders hilfreich bei komplexen Aufgaben
+1. Es generiert Zwischenschritte als zusätzliche Tokens
+2. Diese Tokens erweitern den Kontext für die nächste Vorhersage
+3. Mehr Kontext führt zu besseren Vorhersagen
+
+Das "Denken" ist zusätzliche Textgenerierung. Dieser Text dient als erweiterter Kontext.
 
 ## Beispiel: 9.11 vs 9.8
 
@@ -219,14 +231,16 @@ Explizites Nachdenken verbessert die Ergebnisse:
 Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
 :::
 
-## Live-Demonstration
+## "Think Deeper" in Copilot
 
-::: {.demonstration}
-## Vergleich: Direkt vs. Schritt für Schritt
+::: {.r-stack}
+![](../../assets/images/copilot-default.png){.fragment width="70%"}
 
+![](../../assets/images/copilot-choose-mode.png){.fragment width="70%"}
 
-1. **Direkt**: "Was ist grösser: 9.11 oder 9.8?"
-2. **Mit Anleitung**: "Denke Schritt für Schritt. Was ist grösser: 9.11 oder 9.8?"
+![](../../assets/images/copilot-reasoning-hidden.png){.fragment width="70%"}
+
+![](../../assets/images/copilot-reasoning.png){.fragment width="80%" style="border: 3px solid #A3195B; border-radius: 8px; padding: 5px;"}
 :::
 
 ## Warum funktioniert "Denken"?
@@ -238,15 +252,6 @@ Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
 
 Die Implementierung unterscheidet sich von menschlichem Denken, aber die Funktion ist ähnlich: Schritt für Schritt zum Ziel.
 :::
-
-## Zusammenfassung: Was ist KI?
-
-| Aspekt | Realität |
-|--------|----------|
-| Textgenerierung | Vorhersage des nächsten Worts basierend auf Mustern |
-| Verarbeitung | Mustervervollständigung (ähnlich wie unser Gehirn) |
-| "Denken" | Mehr Kontext = bessere Vorhersagen |
-| Wissen | Muster aus Trainingsdaten, weniger zuverlässig als Fakten |
 
 ## Takeaway
 

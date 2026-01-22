@@ -23,6 +23,14 @@ return {
     local timeLimit = minutes * 60
     local startOn = "slide"
 
+    -- Check for autostart parameter (default true)
+    if kwargs["autostart"] then
+      local autostart = pandoc.utils.stringify(kwargs["autostart"])
+      if autostart == "false" or autostart == "no" then
+        startOn = "interaction"
+      end
+    end
+
     local htmlSnippet = string.format([[
 <div id="%s"></div>
 <script>
