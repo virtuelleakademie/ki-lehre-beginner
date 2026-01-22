@@ -8,7 +8,7 @@ format:
     progress: true
     controls: true
     navigation-mode: linear
-footer: "KI in der Lehre: Grundlagen"
+footer: "KI in der Lehre: Beginner"
 ---
 
 ## Die dritte Frage

@@ -8,7 +8,7 @@ format:
     progress: true
     controls: true
     navigation-mode: linear
-footer: "KI in der Lehre: Grundlagen"
+footer: "KI in der Lehre: Beginner"
 ---
 
 ## Was sind Chatbots?
@@ -195,7 +195,7 @@ $$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 
 ![](../../assets/images/llm-training.png)
 
-## Wichtige Einsicht
+<!-- ## Wichtige Einsicht
 
 ::: {.key-point}
 ## Mustervervollständigung
@@ -203,7 +203,7 @@ $$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 Das klingt simpel, aber es ist nicht so anders von dem, was unser Gehirn tut.
 
 Auch wir vervollständigen Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit.
-:::
+::: -->
 
 ## Chain-of-Thought "Denken"
 
