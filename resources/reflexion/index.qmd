@@ -25,8 +25,6 @@ c) Sind die Prozesse, die der Chatbot übernehmen würde, zentral für dein Lern
 
 **Dein Ergebnis:** Formuliere einen Satz: "Bei dieser Aufgabe wäre KI-Nutzung eher [Offloading/Outsourcing], weil..."
 
----
-
 ## 2. Wo dein Fachwissen entscheidend ist
 
 **Konzept aus dem Workshop:** Chatbots generieren plausiblen Text, nicht geprüfte Fakten. Ohne Fachwissen kannst du nicht beurteilen, ob eine Antwort korrekt ist.
@@ -40,8 +38,6 @@ b) Welches Vorwissen bräuchten Studierende, um solche Fehler zu erkennen?
 c) Haben deine Studierenden dieses Vorwissen bereits, oder müssen sie es erst aufbauen?
 
 **Dein Ergebnis:** Notiere ein konkretes Beispiel, das du im Unterricht als Warnung verwenden könntest.
-
----
 
 ## 3. Studierende mit unterschiedlichen Voraussetzungen
 
@@ -57,8 +53,6 @@ c) Welche Unterstützung bräuchte die zweite Person, um KI produktiv statt sch�
 
 **Dein Ergebnis:** Formuliere eine konkrete Massnahme, die du für Studierende mit schwächeren Grundlagen einführen könntest.
 
----
-
 ## 4. Grenzfälle und Unklarheiten
 
 **Konzept aus dem Workshop:** Die Unterscheidung zwischen Offloading und Outsourcing ist nicht immer eindeutig. Manche Situationen liegen in einer Grauzone.
@@ -72,8 +66,6 @@ b) Welche zusätzlichen Informationen bräuchtest du, um eine Entscheidung zu tr
 c) Könnte es sein, dass die Antwort für verschiedene Studierende unterschiedlich ausfällt?
 
 **Dein Ergebnis:** Formuliere die Frage, die du klären müsstest, um zu einer Entscheidung zu kommen.
-
----
 
 ## 5. Ein konkreter nächster Schritt
 
@@ -91,8 +83,6 @@ a) Woran wirst du erkennen, ob diese Änderung die gewünschte Wirkung hat?
 b) Was könnte schiefgehen, und wie würdest du darauf reagieren?
 
 **Dein Ergebnis:** Dein formulierter Vorsatz mit einem Erfolgskriterium.
-
----
 
 ## Weiterführend
 

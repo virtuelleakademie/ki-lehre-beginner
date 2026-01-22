@@ -96,6 +96,4 @@ Falls der eingebettete Chat nicht funktioniert, kannst du diese Tools direkt nut
 | ChatGPT | Kostenloses Konto | [chat.openai.com](https://chat.openai.com) |
 | Claude | Kostenloses Konto | [claude.ai](https://claude.ai) |
 
----
-
 [← Zurück zum Workshop](../../workshop/index.qmd)
