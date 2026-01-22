@@ -42,42 +42,14 @@ Das Werkzeug **entscheidet** für dich.
 :::
 ::::
 
-## Die entscheidende Frage
+## Die zwei Fragen
 
-<br> <br> 
+<br>
 
 ::: {.r-fit-text}
-Ist die ausgelagerte Arbeit das, was die Person **lernen oder üben** sollte?
+1. **Kannst du das Ergebnis beurteilen?**
+2. **Solltest du das eigentlich selbst üben?**
 :::
-
-## Szenario-Aktivität
-
-::: {.experiment}
-## Kleingruppen (15 min)
-
-Arbeitet in Gruppen von 2-4 Personen. Für jedes Szenario:
-
-1. **Einschätzung**: Offloading oder Outsourcing?
-2. **Begründung**: Warum?
-3. **Unsicherheit**: Was müsstet ihr zusätzlich wissen?
-:::
-
-## Die Szenarien
-
-1. Student*in nutzt KI für Gliederung einer Seminararbeit
-2. Dozierende Person nutzt KI für Feedback-Entwürfe
-3. Student*in bittet KI um Erklärung eines Konzepts
-4. Student*in lässt KI den Essay schreiben
-5. Student*in nutzt KI als Sparringspartner für Argumente
-
-## Der Kontext macht den Unterschied
-
-| Situation | Für Experten | Für Lernende |
-|-----------|--------------|--------------|
-| KI schreibt Feedback | OK (Effizienz) | N/A |
-| KI schreibt Essay | N/A | Problematisch |
-| KI erklärt Konzept | OK | Kommt drauf an |
-| KI generiert Übungen | OK | Könnte OK sein |
 
 ## Das Produktivitäts-Lern-Paradox
 
