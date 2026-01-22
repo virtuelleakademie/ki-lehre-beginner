@@ -57,9 +57,9 @@ Das Werkzeug **entscheidet** für dich.
 ## Szenario-Aktivität
 
 ::: {.experiment}
-## Gruppenarbeit (20 min)
+## Partnerarbeit (20 min)
 
-Ihr erhaltet Szenarien. Für jedes Szenario diskutiert:
+Diskutiert mit eurem Gegenüber die Szenarien. Für jedes Szenario:
 
 1. Ist das **Offloading** oder **Outsourcing**?
 2. Ist das in diesem Kontext **problematisch**?
@@ -124,8 +124,8 @@ Outsourcing ist oft **problematisch**:
 
 ## Diskussion
 
-::: {.group}
-## Zwei Fragen
+::: {.experiment}
+## Austausch mit deinem Gegenüber
 
 1. **Wo kannst DU als Lehrperson produktiv outsourcen?**
 

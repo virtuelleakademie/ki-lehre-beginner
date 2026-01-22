@@ -53,8 +53,8 @@ website:
         menu:
           - text: "Reflexionsfragen"
             file: resources/reflexion/index.qmd
-          - text: "Schreiben als Sampling"
-            file: resources/schreiben-als-sampling/index.qmd
+          # - text: "Schreiben als Sampling"
+          #   file: resources/schreiben-als-sampling/index.qmd
           - text: "Prompting für Einsteiger"
             file: resources/prompting-basics/index.qmd
           - text: "Weiterführende Ressourcen"

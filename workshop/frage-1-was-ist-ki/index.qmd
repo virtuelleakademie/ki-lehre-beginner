@@ -210,7 +210,7 @@ Wenn du selbst schreibst, machst du die Auswahl-Arbeit: Du entscheidest, welche 
 
 Wenn KI für dich schreibt, übernimmt sie diese Auswahl. Du bekommst das Produkt, aber du hast den Prozess nicht durchlaufen.
 
-Mehr dazu: [Schreiben als Sampling](../../resources/schreiben-als-sampling/index.qmd)
+<!-- Mehr dazu: [Schreiben als Sampling](../../resources/schreiben-als-sampling/index.qmd) -->
 :::
 
 ## Kurze Reflexion (2 min)

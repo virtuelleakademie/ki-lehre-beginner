@@ -768,7 +768,7 @@
     "href": "workshop/frage-1-was-ist-ki/index.html#die-parallele-zum-schreiben",
     "title": "Frage 1: Was ist KI?",
     "section": "Die Parallele zum Schreiben",
-    "text": "Die Parallele zum Schreiben\nDu kennst das Gefühl: Du sitzt vor einem leeren Dokument, und viele mögliche Anfänge schwirren im Kopf. Dann schreibst du den ersten Satz. Plötzlich sind manche Fortsetzungen naheliegend, andere ausgeschlossen. Der Text, den du geschrieben hast, wird zum Kontext für das, was als Nächstes kommt.\nDas ist überraschend ähnlich zu dem, was Sprachmodelle tun:\n\n\n\nDu beim Schreiben\nDas Sprachmodell\n\n\n\n\nViele Formulierungen möglich\nWahrscheinlichkeitsverteilung\n\n\nDu wählst bestimmte Worte\nModell sampelt ein Token\n\n\nGeschriebenes wird zum Kontext\nToken wird zum Kontext\n\n\nNächster Satz baut darauf auf\nNächste Vorhersage konditioniert\n\n\n\nDer leere Bildschirm ist schwer, weil wenig Kontext da ist. Sobald du anfängst, baut sich Momentum auf. Das gilt für Menschen wie für Modelle.\n\n\n\n\n\n\nPro-tipWarum das für Lernen wichtig ist\n\n\n\n\n\nWenn du selbst schreibst, machst du die Auswahl-Arbeit: Du entscheidest, welche Formulierung, welcher Gedankengang. Diese Arbeit ist ein Teil des Denkens.\nWenn KI für dich schreibt, übernimmt sie diese Auswahl. Du bekommst das Produkt, aber du hast den Prozess nicht durchlaufen.\nMehr dazu: Schreiben als Sampling",
+    "text": "Die Parallele zum Schreiben\nDu kennst das Gefühl: Du sitzt vor einem leeren Dokument, und viele mögliche Anfänge schwirren im Kopf. Dann schreibst du den ersten Satz. Plötzlich sind manche Fortsetzungen naheliegend, andere ausgeschlossen. Der Text, den du geschrieben hast, wird zum Kontext für das, was als Nächstes kommt.\nDas ist überraschend ähnlich zu dem, was Sprachmodelle tun:\n\n\n\nDu beim Schreiben\nDas Sprachmodell\n\n\n\n\nViele Formulierungen möglich\nWahrscheinlichkeitsverteilung\n\n\nDu wählst bestimmte Worte\nModell sampelt ein Token\n\n\nGeschriebenes wird zum Kontext\nToken wird zum Kontext\n\n\nNächster Satz baut darauf auf\nNächste Vorhersage konditioniert\n\n\n\nDer leere Bildschirm ist schwer, weil wenig Kontext da ist. Sobald du anfängst, baut sich Momentum auf. Das gilt für Menschen wie für Modelle.\n\n\n\n\n\n\nPro-tipWarum das für Lernen wichtig ist\n\n\n\n\n\nWenn du selbst schreibst, machst du die Auswahl-Arbeit: Du entscheidest, welche Formulierung, welcher Gedankengang. Diese Arbeit ist ein Teil des Denkens.\nWenn KI für dich schreibt, übernimmt sie diese Auswahl. Du bekommst das Produkt, aber du hast den Prozess nicht durchlaufen.",
     "crumbs": [
       "Workshop",
       "Frage 1: Was ist KI?",
@@ -1386,7 +1386,7 @@
     "href": "slides/frage-3-wozu-soll-ich/index.html#szenario-aktivität",
     "title": "Frage 3: Wofür sollte ich KI verwenden?",
     "section": "Szenario-Aktivität",
-    "text": "Szenario-Aktivität\n\n\n\n\n\n\nGruppenarbeit (20 min)\n\n\nIhr erhaltet Szenarien. Für jedes Szenario diskutiert:\n\nIst das Offloading oder Outsourcing?\nIst das in diesem Kontext problematisch?",
+    "text": "Szenario-Aktivität\n\n\n\n\n\n\nPartnerarbeit (20 min)\n\n\nDiskutiert mit eurem Gegenüber die Szenarien. Für jedes Szenario:\n\nIst das Offloading oder Outsourcing?\nIst das in diesem Kontext problematisch?",
     "crumbs": [
       "Slides",
       "Frage 3: Wofür sollte ich KI verwenden?"
@@ -1463,7 +1463,7 @@
     "href": "slides/frage-3-wozu-soll-ich/index.html#diskussion",
     "title": "Frage 3: Wofür sollte ich KI verwenden?",
     "section": "Diskussion",
-    "text": "Diskussion\n\n\n\n\n\n\nZwei Fragen\n\n\n\nWo kannst DU als Lehrperson produktiv outsourcen?\nWo sollten deine STUDIERENDEN NICHT outsourcen?",
+    "text": "Diskussion\n\n\n\n\n\n\nAustausch mit deinem Gegenüber\n\n\n\nWo kannst DU als Lehrperson produktiv outsourcen?\nWo sollten deine STUDIERENDEN NICHT outsourcen?",
     "crumbs": [
       "Slides",
       "Frage 3: Wofür sollte ich KI verwenden?"
