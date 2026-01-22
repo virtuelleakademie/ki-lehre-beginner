@@ -89,6 +89,19 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
+div.callout-group.callout {
+  border-left-color: #A3195B;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f0c0' !important;
+  background-image: none;
+}
 div.callout-prompt.callout {
   border-left-color: #333333;
 }
@@ -100,19 +113,6 @@ div.callout-prompt.callout-style-default .callout-icon::before, div.callout-prom
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f328' !important;
-  background-image: none;
-}
-div.callout-individual.callout {
-  border-left-color: #A3195B;
-}
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f007' !important;
   background-image: none;
 }
 div.callout-source-check.callout {
@@ -128,17 +128,17 @@ div.callout-source-check.callout-style-default .callout-icon::before, div.callou
   content: '\f002' !important;
   background-image: none;
 }
-div.callout-key-point.callout {
-  border-left-color: #D4A03E;
+div.callout-experiment.callout {
+  border-left-color: #A3195B;
 }
-div.callout-key-point.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
+div.callout-experiment.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
 }
-div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
+div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f005' !important;
+  content: '\f0c3' !important;
   background-image: none;
 }
 div.callout-warning.callout {
@@ -154,19 +154,6 @@ div.callout-warning.callout-style-default .callout-icon::before, div.callout-war
   content: '\f06a' !important;
   background-image: none;
 }
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f51b' !important;
-  background-image: none;
-}
 div.callout-pro-tip.callout {
   border-left-color: #D4A03E;
 }
@@ -180,43 +167,17 @@ div.callout-pro-tip.callout-style-default .callout-icon::before, div.callout-pro
   content: '\e2ca' !important;
   background-image: none;
 }
-div.callout-experiment.callout {
-  border-left-color: #A3195B;
+div.callout-key-point.callout {
+  border-left-color: #D4A03E;
 }
-div.callout-experiment.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
+div.callout-key-point.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
 }
-div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-experiment.callout-style-default .callout-icon::before, div.callout-experiment.callout-titled .callout-icon::before {
+div.callout-key-point .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-key-point.callout-style-default .callout-icon::before, div.callout-key-point.callout-titled .callout-icon::before {
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
-  content: '\f0c3' !important;
-  background-image: none;
-}
-div.callout-group.callout {
-  border-left-color: #A3195B;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-group.callout-style-default .callout-icon::before, div.callout-group.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f0c0' !important;
-  background-image: none;
-}
-div.callout-scenario.callout {
-  border-left-color: #666666;
-}
-div.callout-scenario.callout-style-default > .callout-header {
-  background-color: rgba(102, 102, 102, 0.13);
-}
-div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
-  font-family: 'Font Awesome 6 Free', FontAwesome;
-  font-style: normal;
-  content: '\f075' !important;
+  content: '\f005' !important;
   background-image: none;
 }
 div.callout-reflect.callout {
@@ -230,6 +191,45 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
   font-family: 'Font Awesome 6 Free', FontAwesome;
   font-style: normal;
   content: '\f0eb' !important;
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-demonstration.callout-style-default .callout-icon::before, div.callout-demonstration.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f51b' !important;
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: #A3195B;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-individual.callout-style-default .callout-icon::before, div.callout-individual.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f007' !important;
+  background-image: none;
+}
+div.callout-scenario.callout {
+  border-left-color: #666666;
+}
+div.callout-scenario.callout-style-default > .callout-header {
+  background-color: rgba(102, 102, 102, 0.13);
+}
+div.callout-scenario .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout-scenario.callout-style-default .callout-icon::before, div.callout-scenario.callout-titled .callout-icon::before {
+  font-family: 'Font Awesome 6 Free', FontAwesome;
+  font-style: normal;
+  content: '\f075' !important;
   background-image: none;
 }
 </style>
@@ -470,7 +470,8 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
   <li><a href="#you-do" id="toc-you-do" class="nav-link" data-scroll-target="#you-do">Teil 4: You do (10 min)</a></li>
   <li><a href="#austausch" id="toc-austausch" class="nav-link" data-scroll-target="#austausch">Teil 5: Austausch (5 min)</a></li>
   <li><a href="#debrief" id="toc-debrief" class="nav-link" data-scroll-target="#debrief">Debrief im Plenum</a></li>
-  <li><a href="#referenz" id="toc-referenz" class="nav-link" data-scroll-target="#referenz">Zum Mitnehmen: Evaluations-Kurzreferenz</a></li>
+  <li><a href="#kurze-reflexion-2-min" id="toc-kurze-reflexion-2-min" class="nav-link" data-scroll-target="#kurze-reflexion-2-min">Kurze Reflexion (2 min)</a></li>
+  <li><a href="#weiterführend-lateral-reading-workshop" id="toc-weiterführend-lateral-reading-workshop" class="nav-link" data-scroll-target="#weiterführend-lateral-reading-workshop">Weiterführend: Lateral Reading Workshop</a></li>
   </ul>
 </nav>
     </div>
@@ -514,7 +515,7 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Diese Übung folgt dem Prinzip <strong>I do → We do → You do</strong>:</p>
+<p>Diese Übung folgt dem Prinzip <a href="https://evidencebasedteaching.org/the-i-do-we-do-you-do-model-explained/"><strong>I do → We do → You do</strong></a>:</p>
 <ol type="1">
 <li><strong>I do</strong>: Die Workshopleitung zeigt, wie man eine Chatbot-Antwort evaluiert</li>
 <li><strong>We do</strong>: Wir evaluieren gemeinsam eine Antwort</li>
@@ -522,6 +523,13 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 </ol>
 </div>
 </div>
+<div id="timer-1"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    initializeTimer("timer-1", 2100, "interaction");
+});
+</script>
+
 </section>
 <section id="problem" class="level2">
 <h2 class="anchored" data-anchor-id="problem">Teil 1: Das Problem verstehen (5 min)</h2>
@@ -535,8 +543,7 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Das klingt fremd, aber Menschen funktionieren ähnlich: Auch wir haben keinen direkten Zugang zur Wahrheit, sondern vervollständigen Muster auf Basis von Erfahrung.</p>
-<p>Der Unterschied? <strong>Häufigkeit und Zuverlässigkeit.</strong> LLMs halluzinieren öfter und in anderen Situationen als Menschen. Aber das Grundprinzip ist vergleichbar: Plausibilität wird mit Wahrheit verwechselt.</p>
+<p>Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Das Phänomen hat Parallelen zur menschlichen <strong>Konfabulation</strong>: Wir erzeugen plausible Erklärungen und Erinnerungen, auch wenn sie nicht der Realität entsprechen.</p>
 <p><strong>Wie Halluzinationen entstehen:</strong></p>
 <ol type="1">
 <li><p><strong>Statistische Plausibilität statt Wahrheit</strong>: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel, auch wenn es falsch ist. (Menschen machen ähnliche Fehler: Wir erinnern uns an das, was “passt”, nicht unbedingt an das, was stimmt.)</p></li>
@@ -550,6 +557,29 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 <li>Numerische Details (Daten, Zahlen, Statistiken)</li>
 <li>Zitate und Quellenangaben</li>
 </ul>
+<div id="timer-2"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    initializeTimer("timer-2", 300, "interaction");
+});
+</script>
+
+</div>
+</div>
+<div class="callout callout-style-default callout-key-point callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Key-point</span>Aber moderne Chatbots sind doch ziemlich gut?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ja, moderne Chatbots mit Websuche beantworten einfache Faktenfragen oft korrekt. Das ist nicht der Punkt dieser Übung.</p>
+<p><strong>Der Punkt ist: Du weisst vorher nicht, wann der Fehler kommt.</strong></p>
+<p>Ein Chatbot, der 9 von 10 Fragen richtig beantwortet, klingt bei allen 10 Antworten gleich selbstbewusst. Die eine falsche Antwort ist nicht als solche erkennbar. Deshalb ist systematische Verifikation notwendig: nicht um Fehler zu “fangen”, sondern weil du nie weisst, ob du gerade die eine falsche Antwort vor dir hast.</p>
+<p>Bei komplexeren, fachspezifischen Fragen steigt die Fehlerquote deutlich. Aber auch dort klingen die Antworten gleich überzeugend.</p>
 </div>
 </div>
 </section>
@@ -593,6 +623,13 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 </ul>
 <p><strong>Schritt 4: Fazit formulieren</strong></p>
 <p>Die Workshopleitung erklärt ihr Urteil und die Begründung.</p>
+<div id="timer-3"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    initializeTimer("timer-3", 300, "interaction");
+});
+</script>
+
 </div>
 </div>
 </section>
@@ -605,7 +642,7 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Key-point</span>Die 5 Prüffragen
+<span class="screen-reader-only">Key-point</span>5 wichtige Prüffragen
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -752,10 +789,11 @@ div.callout-reflect.callout-style-default .callout-icon::before, div.callout-ref
 <li>Stimmt die Studierendenzahl?</li>
 <li>Zu welcher Bewertung kommt ihr?</li>
 </ul>
-<div id="timer-1"></div>
+<p><em>Falls die Antwort korrekt war:</em> Das ist gut, aber nicht der Punkt. Die Frage ist: Hättet ihr es gemerkt, wenn sie falsch gewesen wäre? Und wie viel Aufwand war die Verifikation?</p>
+<div id="timer-4"></div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    initializeTimer("timer-1", 480, "slide");
+    initializeTimer("timer-4", 480, "interaction");
 });
 </script>
 
@@ -820,6 +858,44 @@ document.addEventListener("DOMContentLoaded", function () {
 <p>Wie hoch ist [RELEVANTE KENNZAHL] in der Schweiz aktuell?</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-pro-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Pro-tip</span>Beispiel aus der Statistik
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Frage an den Chatbot:</strong></p>
+<div class="callout callout-style-default callout-prompt callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Prompt</span>Prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Meine Daten sind nicht normalverteilt (Shapiro-Wilk p = 0.02). Kann ich trotzdem eine ANOVA durchführen, oder muss ich einen nicht-parametrischen Test verwenden?</p>
+</div>
+</div>
+<p><strong>Worauf du achten kannst:</strong></p>
+<p>Der Chatbot wird eine Antwort geben, die vernünftig klingt. Aber um zu beurteilen, ob der Rat für deine konkrete Situation stimmt, brauchst du Fachwissen:</p>
+<ul>
+<li>Wie robust ist ANOVA tatsächlich gegen Verletzungen der Normalverteilung?</li>
+<li>Welche Rolle spielt die Stichprobengrösse?</li>
+<li>Was genau testet Shapiro-Wilk, und ist p = 0.02 bei deiner Stichprobengrösse überhaupt relevant?</li>
+<li>Wäre ein Bootstrap-Ansatz besser als ein nicht-parametrischer Test?</li>
+</ul>
+<p>Der Punkt: Die Antwort klingt kompetent. Aber ob sie für deinen Fall richtig ist, kannst du nur mit statistischem Hintergrundwissen beurteilen. Deine Studierenden haben dieses Hintergrundwissen noch nicht.</p>
+</div>
+</div>
+</div>
 </section>
 <section id="vorgehen" class="level3">
 <h3 class="anchored" data-anchor-id="vorgehen">Vorgehen</h3>
@@ -856,10 +932,10 @@ document.addEventListener("DOMContentLoaded", function () {
 </tr>
 </tbody>
 </table>
-<div id="timer-2"></div>
+<div id="timer-5"></div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    initializeTimer("timer-2", 600, "slide");
+    initializeTimer("timer-5", 600, "interaction");
 });
 </script>
 
@@ -902,10 +978,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <p>Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen?</p>
 </div>
 </div>
-<div id="timer-3"></div>
+<div id="timer-6"></div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    initializeTimer("timer-3", 300, "slide");
+    initializeTimer("timer-6", 300, "interaction");
 });
 </script>
 
@@ -926,7 +1002,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li><p><strong>Warum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?</strong></p>
-<p>Erinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die “Selbstsicherheit” kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.</p></li>
+<p>Zwei Gründe: Erstens wurden Sprachmodelle auf selbstbewusst formulierten Texten trainiert. Zweitens werden sie durch RLHF (Reinforcement Learning from Human Feedback) darauf optimiert, hilfreiche und überzeugende Antworten zu geben, weil das von menschlichen Bewertern belohnt wird.</p></li>
 <li><p><strong>Konntet ihr die Fehler erkennen?</strong></p>
 <p>Mit eurer Fachkompetenz konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.</p></li>
 <li><p><strong>Was bedeutet das für den Lernprozess?</strong></p>
@@ -955,34 +1031,49 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 </div>
 </section>
-<section id="referenz" class="level2">
-<h2 class="anchored" data-anchor-id="referenz">Zum Mitnehmen: Evaluations-Kurzreferenz</h2>
-<div class="callout callout-style-default callout-pro-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<section id="kurze-reflexion-2-min" class="level2">
+<h2 class="anchored" data-anchor-id="kurze-reflexion-2-min">Kurze Reflexion (2 min)</h2>
+<div class="callout callout-style-default callout-reflect callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Pro-tip</span>Schnellcheck für KI-Outputs
+<span class="screen-reader-only">Reflect</span>Reflexion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wie hat sich dein Vertrauen in Chatbot-Antworten durch diese Übung verändert?</p>
+<div id="timer-7"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    initializeTimer("timer-7", 120, "interaction");
+});
+</script>
+
+</div>
+</div>
+</section>
+<section id="weiterführend-lateral-reading-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="weiterführend-lateral-reading-workshop">Weiterführend: Lateral Reading Workshop</h2>
+<div class="callout callout-style-default callout-pro-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Pro-tip</span>Vertiefungsworkshop: KI-Antworten kritisch prüfen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Vor der Nutzung fragen:</strong></p>
-<ol type="1">
-<li>Enthält spezifische Fakten? → Prüfen!</li>
-<li>Nennt Quellen? → Quellen verifizieren!</li>
-<li>Klingt “zu perfekt”? → Skeptisch sein!</li>
-<li>Spezialisiertes Thema? → Besonders vorsichtig!</li>
-<li>Kann ich das prüfen? → Wenn nein: nicht verwenden!</li>
-</ol>
-<p><strong>Bewerten:</strong></p>
+<p>Willst du tiefer in die Thematik einsteigen? Der 40-minütige Workshop <a href="https://virtuelleakademie.github.io/ki-fact-checking-rsr/"><strong>KI-Antworten kritisch prüfen</strong></a> vermittelt “Lateral Reading”, eine Verifikationstechnik aus dem professionellen Fact-Checking.</p>
+<p><strong>Du lernst:</strong></p>
 <ul>
-<li>✓ Korrekt → verwenden</li>
-<li>~ Teilweise → mit Korrekturen verwenden</li>
-<li>✗ Falsch → nicht verwenden</li>
-<li>? Nicht prüfbar → nicht verwenden ohne externe Prüfung</li>
+<li>Wann KI-Antworten externe Überprüfung brauchen</li>
+<li>Wie deine Fragestellung die Antworten beeinflusst</li>
+<li>Fakten selbstständig zu verifizieren</li>
 </ul>
 </div>
 </div>

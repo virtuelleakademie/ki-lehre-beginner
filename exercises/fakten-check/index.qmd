@@ -13,21 +13,22 @@ sidebar: exercises
 ::: {.key-point}
 ## Die Struktur dieser Übung
 
-Diese Übung folgt dem Prinzip **I do → We do → You do**:
+Diese Übung folgt dem Prinzip [**I do → We do → You do**](https://evidencebasedteaching.org/the-i-do-we-do-you-do-model-explained/):
 
 1. **I do**: Die Workshopleitung zeigt, wie man eine Chatbot-Antwort evaluiert
 2. **We do**: Wir evaluieren gemeinsam eine Antwort
 3. **You do**: Du evaluierst selbstständig Antworten aus deinem Fachgebiet
 :::
 
+{{< timer 35 autostart=false >}}
+
 ## Teil 1: Das Problem verstehen (5 min) {#problem}
 
 ::: {.key-point}
 ### Warum Chatbots halluzinieren
 
-Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Das klingt fremd, aber Menschen funktionieren ähnlich: Auch wir haben keinen direkten Zugang zur Wahrheit, sondern vervollständigen Muster auf Basis von Erfahrung.
+Sprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Das Phänomen hat Parallelen zur menschlichen **Konfabulation**: Wir erzeugen plausible Erklärungen und Erinnerungen, auch wenn sie nicht der Realität entsprechen.
 
-Der Unterschied? **Häufigkeit und Zuverlässigkeit.** LLMs halluzinieren öfter und in anderen Situationen als Menschen. Aber das Grundprinzip ist vergleichbar: Plausibilität wird mit Wahrheit verwechselt.
 
 **Wie Halluzinationen entstehen:**
 
@@ -43,6 +44,20 @@ Der Unterschied? **Häufigkeit und Zuverlässigkeit.** LLMs halluzinieren öfter
 - Aktuelle Informationen (Training hat einen Stichtag)
 - Numerische Details (Daten, Zahlen, Statistiken)
 - Zitate und Quellenangaben
+
+{{< timer 5 >}}
+:::
+
+::: {.key-point}
+### Aber moderne Chatbots sind doch ziemlich gut?
+
+Ja, moderne Chatbots mit Websuche beantworten einfache Faktenfragen oft korrekt. Das ist nicht der Punkt dieser Übung.
+
+**Der Punkt ist: Du weisst vorher nicht, wann der Fehler kommt.**
+
+Ein Chatbot, der 9 von 10 Fragen richtig beantwortet, klingt bei allen 10 Antworten gleich selbstbewusst. Die eine falsche Antwort ist nicht als solche erkennbar. Deshalb ist systematische Verifikation notwendig: nicht um Fehler zu "fangen", sondern weil du nie weisst, ob du gerade die eine falsche Antwort vor dir hast.
+
+Bei komplexeren, fachspezifischen Fragen steigt die Fehlerquote deutlich. Aber auch dort klingen die Antworten gleich überzeugend.
 :::
 
 ## Teil 2: I do (5 min) {#i-do}
@@ -73,6 +88,8 @@ Die Workshopleitung wendet die **Evaluations-Checkliste** an (siehe unten) und z
 **Schritt 4: Fazit formulieren**
 
 Die Workshopleitung erklärt ihr Urteil und die Begründung.
+
+{{< timer 5 >}}
 :::
 
 ## Evaluations-Checkliste {#checkliste}
@@ -80,7 +97,7 @@ Die Workshopleitung erklärt ihr Urteil und die Begründung.
 Nutze diese Checkliste für jede Chatbot-Antwort:
 
 ::: {.key-point}
-### Die 5 Prüffragen
+### 5 wichtige Prüffragen
 
 | # | Frage | Warnsignale |
 |---|-------|-------------|
@@ -136,6 +153,8 @@ Gehe die 5 Prüffragen durch:
 - Stimmt die Studierendenzahl?
 - Zu welcher Bewertung kommt ihr?
 
+*Falls die Antwort korrekt war:* Das ist gut, aber nicht der Punkt. Die Frage ist: Hättet ihr es gemerkt, wenn sie falsch gewesen wäre? Und wie viel Aufwand war die Verifikation?
+
 {{< timer 8 >}}
 :::
 
@@ -166,6 +185,27 @@ Was ist die offizielle Definition von [FACHBEGRIFF] gemäss [RELEVANTE ORGANISAT
 
 ::: {.prompt}
 Wie hoch ist [RELEVANTE KENNZAHL] in der Schweiz aktuell?
+:::
+
+::: {.pro-tip collapse="true"}
+## Beispiel aus der Statistik
+
+**Frage an den Chatbot:**
+
+::: {.prompt}
+Meine Daten sind nicht normalverteilt (Shapiro-Wilk p = 0.02). Kann ich trotzdem eine ANOVA durchführen, oder muss ich einen nicht-parametrischen Test verwenden?
+:::
+
+**Worauf du achten kannst:**
+
+Der Chatbot wird eine Antwort geben, die vernünftig klingt. Aber um zu beurteilen, ob der Rat für deine konkrete Situation stimmt, brauchst du Fachwissen:
+
+- Wie robust ist ANOVA tatsächlich gegen Verletzungen der Normalverteilung?
+- Welche Rolle spielt die Stichprobengrösse?
+- Was genau testet Shapiro-Wilk, und ist p = 0.02 bei deiner Stichprobengrösse überhaupt relevant?
+- Wäre ein Bootstrap-Ansatz besser als ein nicht-parametrischer Test?
+
+Der Punkt: Die Antwort klingt kompetent. Aber ob sie für deinen Fall richtig ist, kannst du nur mit statistischem Hintergrundwissen beurteilen. Deine Studierenden haben dieses Hintergrundwissen noch nicht.
 :::
 
 ### Vorgehen
@@ -215,7 +255,7 @@ Was bedeutet das für Studierende, die Chatbots als Informationsquelle nutzen?
 
 1. **Warum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?**
 
-   Erinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die "Selbstsicherheit" kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.
+   Zwei Gründe: Erstens wurden Sprachmodelle auf selbstbewusst formulierten Texten trainiert. Zweitens werden sie durch RLHF (Reinforcement Learning from Human Feedback) darauf optimiert, hilfreiche und überzeugende Antworten zu geben, weil das von menschlichen Bewertern belohnt wird.
 
 2. **Konntet ihr die Fehler erkennen?**
 
@@ -239,23 +279,26 @@ Für Lehrende bedeutet das:
 - Bewusstsein schaffen: **Expertise ist Voraussetzung für Evaluation**
 :::
 
-## Zum Mitnehmen: Evaluations-Kurzreferenz {#referenz}
+
+
+## Kurze Reflexion (2 min)
+
+::: {.reflect}
+Wie hat sich dein Vertrauen in Chatbot-Antworten durch diese Übung verändert?
+
+{{< timer 2 autostart=false >}}
+:::
+
+## Weiterführend: Lateral Reading Workshop
 
 ::: {.pro-tip}
-## Schnellcheck für KI-Outputs
+## Vertiefungsworkshop: KI-Antworten kritisch prüfen
 
-**Vor der Nutzung fragen:**
+Willst du tiefer in die Thematik einsteigen? Der 40-minütige Workshop [**KI-Antworten kritisch prüfen**](https://virtuelleakademie.github.io/ki-fact-checking-rsr/) vermittelt "Lateral Reading", eine Verifikationstechnik aus dem professionellen Fact-Checking.
 
-1. Enthält spezifische Fakten? → Prüfen!
-2. Nennt Quellen? → Quellen verifizieren!
-3. Klingt "zu perfekt"? → Skeptisch sein!
-4. Spezialisiertes Thema? → Besonders vorsichtig!
-5. Kann ich das prüfen? → Wenn nein: nicht verwenden!
+**Du lernst:**
 
-**Bewerten:**
-
-- ✓ Korrekt → verwenden
-- ~ Teilweise → mit Korrekturen verwenden
-- ✗ Falsch → nicht verwenden
-- ? Nicht prüfbar → nicht verwenden ohne externe Prüfung
+- Wann KI-Antworten externe Überprüfung brauchen
+- Wie deine Fragestellung die Antworten beeinflusst
+- Fakten selbstständig zu verifizieren
 :::

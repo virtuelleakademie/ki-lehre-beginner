@@ -292,7 +292,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#freigegebene-tools",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Freigegebene Tools",
-    "text": "Freigegebene Tools\n\n\n\n\n\n\n\n\n\nTool\nÖFFENTLICH\nINTERN\nVERTRAULICH\n\n\n\n\nMicrosoft Copilot (BFH)\n\n\n\n\n\nChatGPT Edu (BFH Pilot)\n\n\n\n\n\nChatGPT (persönlich)1\n\n\n\n\n\nLokale KI (ohne Cloud)\n\n\n\n\n\n\nAlle abgeklärten Tools auf mybfh \n“Learning” muss manuell ausgeschaltet werden!",
+    "text": "Freigegebene Tools\n\n\n\n\n\n\n\n\n\nTool\nÖFFENTLICH\nINTERN\nVERTRAULICH\n\n\n\n\nMicrosoft Copilot (BFH)\n\n\n\n\n\nChatGPT Edu (BFH Pilot)\n\n\n\n\n\nChatGPT (persönlich)1\n\n\n\n\n\nLokale KI (ohne Cloud)\n\n\n\n\n\n\nAlle abgeklärten Tools auf mybfh\n“Learning” muss manuell ausgeschaltet werden!",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
@@ -303,7 +303,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#datenschutz-copilot",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Datenschutz: Copilot",
-    "text": "Datenschutz: Copilot\nMicrosoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:\n\n\n\nBenutzerdaten sind verschlüsselt\nMicrosoft verwendet Daten nicht ohne Anweisung\nFür sensible Aufgaben: Copilot bevorzugen",
+    "text": "Datenschutz: Copilot\nMicrosoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:\n\nBenutzerdaten sind verschlüsselt\nMicrosoft verwendet Daten nicht ohne Anweisung\nFür sensible Aufgaben: Copilot bevorzugen",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
@@ -325,7 +325,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#takeaway",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Takeaway",
-    "text": "Takeaway\n\n\n\n\n\n\nAntwort auf Frage 2\n\n\nWofür kann KI verwendet werden?\nChatbots sind vielseitige Werkzeuge mit echten Fähigkeiten. Aber Falsches klingt genauso überzeugend wie Richtiges.\nKritische Prüfung ist immer nötig.",
+    "text": "Takeaway\n\n\n\n\n\n\nAntwort auf Frage 2\n\n\nWofür kann KI verwendet werden?\nChatbots sind vielseitige Werkzeuge mit echten Fähigkeiten. Aber sie generieren selbstbewusst auch Falsches.\nKritische Prüfung ist immer nötig.",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
@@ -384,7 +384,7 @@
     "href": "exercises/fakten-check/index.html#problem",
     "title": "Fakten-Check",
     "section": "Teil 1: Das Problem verstehen (5 min)",
-    "text": "Teil 1: Das Problem verstehen (5 min)\n\n\n\n\n\n\nKey-pointWarum Chatbots halluzinieren\n\n\n\nSprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Das klingt fremd, aber Menschen funktionieren ähnlich: Auch wir haben keinen direkten Zugang zur Wahrheit, sondern vervollständigen Muster auf Basis von Erfahrung.\nDer Unterschied? Häufigkeit und Zuverlässigkeit. LLMs halluzinieren öfter und in anderen Situationen als Menschen. Aber das Grundprinzip ist vergleichbar: Plausibilität wird mit Wahrheit verwechselt.\nWie Halluzinationen entstehen:\n\nStatistische Plausibilität statt Wahrheit: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel, auch wenn es falsch ist. (Menschen machen ähnliche Fehler: Wir erinnern uns an das, was “passt”, nicht unbedingt an das, was stimmt.)\nSelbstsichere Formulierung ist trainiert: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. (Auch Menschen formulieren oft selbstbewusster, als ihr Wissen rechtfertigt.)\nKein Zugang zu Quellen beim Generieren: Das Modell erinnert sich nicht an konkrete Quellen. (Menschen auch nicht immer: Wir wissen oft nicht mehr, woher wir etwas wissen.)\n\nBesonders anfällig für Fehler:\n\nFachspezifische Fragen (weniger Trainingsdaten)\nAktuelle Informationen (Training hat einen Stichtag)\nNumerische Details (Daten, Zahlen, Statistiken)\nZitate und Quellenangaben",
+    "text": "Teil 1: Das Problem verstehen (5 min)\n\n\n\n\n\n\nKey-pointWarum Chatbots halluzinieren\n\n\n\nSprachmodelle generieren Text, indem sie vorhersagen, welches Wort als nächstes am wahrscheinlichsten kommt. Das Phänomen hat Parallelen zur menschlichen Konfabulation: Wir erzeugen plausible Erklärungen und Erinnerungen, auch wenn sie nicht der Realität entsprechen.\nWie Halluzinationen entstehen:\n\nStatistische Plausibilität statt Wahrheit: Das Modell wählt Wörter basierend darauf, was in ähnlichen Kontexten häufig vorkam. “Zürich ist die Hauptstadt der Schweiz” klingt statistisch plausibel, auch wenn es falsch ist. (Menschen machen ähnliche Fehler: Wir erinnern uns an das, was “passt”, nicht unbedingt an das, was stimmt.)\nSelbstsichere Formulierung ist trainiert: Die Trainingsdaten enthalten überwiegend selbstbewusst formulierte Texte. (Auch Menschen formulieren oft selbstbewusster, als ihr Wissen rechtfertigt.)\nKein Zugang zu Quellen beim Generieren: Das Modell erinnert sich nicht an konkrete Quellen. (Menschen auch nicht immer: Wir wissen oft nicht mehr, woher wir etwas wissen.)\n\nBesonders anfällig für Fehler:\n\nFachspezifische Fragen (weniger Trainingsdaten)\nAktuelle Informationen (Training hat einen Stichtag)\nNumerische Details (Daten, Zahlen, Statistiken)\nZitate und Quellenangaben\n\n\n\n\n\n\n\n\n\n\n\n\nKey-pointAber moderne Chatbots sind doch ziemlich gut?\n\n\n\nJa, moderne Chatbots mit Websuche beantworten einfache Faktenfragen oft korrekt. Das ist nicht der Punkt dieser Übung.\nDer Punkt ist: Du weisst vorher nicht, wann der Fehler kommt.\nEin Chatbot, der 9 von 10 Fragen richtig beantwortet, klingt bei allen 10 Antworten gleich selbstbewusst. Die eine falsche Antwort ist nicht als solche erkennbar. Deshalb ist systematische Verifikation notwendig: nicht um Fehler zu “fangen”, sondern weil du nie weisst, ob du gerade die eine falsche Antwort vor dir hast.\nBei komplexeren, fachspezifischen Fragen steigt die Fehlerquote deutlich. Aber auch dort klingen die Antworten gleich überzeugend.",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -408,7 +408,7 @@
     "href": "exercises/fakten-check/index.html#checkliste",
     "title": "Fakten-Check",
     "section": "Evaluations-Checkliste",
-    "text": "Evaluations-Checkliste\nNutze diese Checkliste für jede Chatbot-Antwort:\n\n\n\n\n\n\nKey-pointDie 5 Prüffragen\n\n\n\n\n\n\n\n\n\n\n\n#\nFrage\nWarnsignale\n\n\n\n\n1\nEnthält die Antwort spezifische Fakten? (Zahlen, Daten, Namen, Zitate)\nSpezifische Details sind oft erfunden\n\n\n2\nNennt die Antwort Quellen?\nQuellen können erfunden sein oder nicht existieren\n\n\n3\nKlingt die Antwort “zu perfekt”?\nEchte Fachinfos haben oft Nuancen und Einschränkungen\n\n\n4\nLiegt das Thema ausserhalb gängiger Informationen?\nSpezialisierte oder aktuelle Themen sind anfälliger\n\n\n5\nKann ich das mit meinem Fachwissen prüfen?\nWas du nicht prüfen kannst, solltest du nicht verwenden\n\n\n\n\n\n\n\n\n\n\n\nKey-pointDie Bewertungskategorien\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nKategorie\nBedeutung\nKonsequenz\n\n\n\n\n✓\nKorrekt\nInhaltlich richtig, verifizierbar\nKann verwendet werden\n\n\n~\nTeilweise korrekt\nGrundidee stimmt, aber Details falsch/ungenau\nNur mit Korrekturen verwenden\n\n\n✗\nFalsch (Halluzination)\nInhaltlich falsch, erfunden, oder irreführend\nNicht verwenden\n\n\n?\nNicht prüfbar\nLiegt ausserhalb meiner Expertise\nNicht verwenden ohne externe Prüfung",
+    "text": "Evaluations-Checkliste\nNutze diese Checkliste für jede Chatbot-Antwort:\n\n\n\n\n\n\nKey-point5 wichtige Prüffragen\n\n\n\n\n\n\n\n\n\n\n\n#\nFrage\nWarnsignale\n\n\n\n\n1\nEnthält die Antwort spezifische Fakten? (Zahlen, Daten, Namen, Zitate)\nSpezifische Details sind oft erfunden\n\n\n2\nNennt die Antwort Quellen?\nQuellen können erfunden sein oder nicht existieren\n\n\n3\nKlingt die Antwort “zu perfekt”?\nEchte Fachinfos haben oft Nuancen und Einschränkungen\n\n\n4\nLiegt das Thema ausserhalb gängiger Informationen?\nSpezialisierte oder aktuelle Themen sind anfälliger\n\n\n5\nKann ich das mit meinem Fachwissen prüfen?\nWas du nicht prüfen kannst, solltest du nicht verwenden\n\n\n\n\n\n\n\n\n\n\n\nKey-pointDie Bewertungskategorien\n\n\n\n\n\n\n\n\n\n\n\n\nSymbol\nKategorie\nBedeutung\nKonsequenz\n\n\n\n\n✓\nKorrekt\nInhaltlich richtig, verifizierbar\nKann verwendet werden\n\n\n~\nTeilweise korrekt\nGrundidee stimmt, aber Details falsch/ungenau\nNur mit Korrekturen verwenden\n\n\n✗\nFalsch (Halluzination)\nInhaltlich falsch, erfunden, oder irreführend\nNicht verwenden\n\n\n?\nNicht prüfbar\nLiegt ausserhalb meiner Expertise\nNicht verwenden ohne externe Prüfung",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -420,7 +420,7 @@
     "href": "exercises/fakten-check/index.html#we-do",
     "title": "Fakten-Check",
     "section": "Teil 3: We do (8 min)",
-    "text": "Teil 3: We do (8 min)\n\n\n\n\n\n\nGroupWir evaluieren gemeinsam\n\n\n\nJetzt machen wir das zusammen. Alle stellen dieselbe Frage und evaluieren gemeinsam.\nSchritt 1: Diesen Prompt kopieren und in Copilot eingeben\n\n\n\n\n\n\nPromptPrompt\n\n\n\nWann wurde die Berner Fachhochschule gegründet und wie viele Studierende hat sie aktuell?\n\n\nSchritt 2: Antwort lesen (1 min)\nLies die Antwort, die du bekommst.\nSchritt 3: Checkliste anwenden (3 min)\nGehe die 5 Prüffragen durch:\n\nEnthält die Antwort spezifische Fakten? (Jahreszahl, Studierendenzahl)\nNennt sie Quellen?\nKlingt sie “zu perfekt”?\nIst das Thema spezialisiert oder aktuell?\nKannst du das prüfen?\n\nSchritt 4: Gemeinsame Diskussion (4 min)\n\nWas habt ihr gefunden?\nStimmt das Gründungsjahr?\nStimmt die Studierendenzahl?\nZu welcher Bewertung kommt ihr?",
+    "text": "Teil 3: We do (8 min)\n\n\n\n\n\n\nGroupWir evaluieren gemeinsam\n\n\n\nJetzt machen wir das zusammen. Alle stellen dieselbe Frage und evaluieren gemeinsam.\nSchritt 1: Diesen Prompt kopieren und in Copilot eingeben\n\n\n\n\n\n\nPromptPrompt\n\n\n\nWann wurde die Berner Fachhochschule gegründet und wie viele Studierende hat sie aktuell?\n\n\nSchritt 2: Antwort lesen (1 min)\nLies die Antwort, die du bekommst.\nSchritt 3: Checkliste anwenden (3 min)\nGehe die 5 Prüffragen durch:\n\nEnthält die Antwort spezifische Fakten? (Jahreszahl, Studierendenzahl)\nNennt sie Quellen?\nKlingt sie “zu perfekt”?\nIst das Thema spezialisiert oder aktuell?\nKannst du das prüfen?\n\nSchritt 4: Gemeinsame Diskussion (4 min)\n\nWas habt ihr gefunden?\nStimmt das Gründungsjahr?\nStimmt die Studierendenzahl?\nZu welcher Bewertung kommt ihr?\n\nFalls die Antwort korrekt war: Das ist gut, aber nicht der Punkt. Die Frage ist: Hättet ihr es gemerkt, wenn sie falsch gewesen wäre? Und wie viel Aufwand war die Verifikation?",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -432,7 +432,7 @@
     "href": "exercises/fakten-check/index.html#you-do",
     "title": "Fakten-Check",
     "section": "Teil 4: You do (10 min)",
-    "text": "Teil 4: You do (10 min)\n\n\n\n\n\n\nExperimentSelbstständig evaluieren\n\n\n\nJetzt testest du das Verfahren in deinem eigenen Fachgebiet.\n\nWähle einen Prompt\nKopiere einen dieser Prompts und passe ihn an dein Fach an:\nOption A: Historische/faktische Frage\n\n\n\n\n\n\nPromptPrompt\n\n\n\nWann wurde [WICHTIGE INSTITUTION/GESETZ/THEORIE IN DEINEM FACH] eingeführt und was war der Anlass?\n\n\nOption B: Definitionsfrage\n\n\n\n\n\n\nPromptPrompt\n\n\n\nWas ist die offizielle Definition von [FACHBEGRIFF] gemäss [RELEVANTE ORGANISATION/STANDARD]?\n\n\nOption C: Zahlen/Statistik-Frage\n\n\n\n\n\n\nPromptPrompt\n\n\n\nWie hoch ist [RELEVANTE KENNZAHL] in der Schweiz aktuell?\n\n\n\n\nVorgehen\n\nPasse den Prompt an dein Fachgebiet an\nStelle die Frage an Copilot\nWende die Evaluations-Checkliste an\nNotiere dein Urteil (✓ / ~ / ✗ / ?) mit Begründung\n\n\n\nDokumentation\n\n\n\n\n\n\n\n\n\nMeine Frage\nChatbot-Antwort (Kurzfassung)\nMein Urteil\nBegründung",
+    "text": "Teil 4: You do (10 min)\n\n\n\n\n\n\nExperimentSelbstständig evaluieren\n\n\n\nJetzt testest du das Verfahren in deinem eigenen Fachgebiet.\n\nWähle einen Prompt\nKopiere einen dieser Prompts und passe ihn an dein Fach an:\nOption A: Historische/faktische Frage\n\n\n\n\n\n\nPromptPrompt\n\n\n\nWann wurde [WICHTIGE INSTITUTION/GESETZ/THEORIE IN DEINEM FACH] eingeführt und was war der Anlass?\n\n\nOption B: Definitionsfrage\n\n\n\n\n\n\nPromptPrompt\n\n\n\nWas ist die offizielle Definition von [FACHBEGRIFF] gemäss [RELEVANTE ORGANISATION/STANDARD]?\n\n\nOption C: Zahlen/Statistik-Frage\n\n\n\n\n\n\nPromptPrompt\n\n\n\nWie hoch ist [RELEVANTE KENNZAHL] in der Schweiz aktuell?\n\n\n\n\n\n\n\n\nPro-tipBeispiel aus der Statistik\n\n\n\n\n\nFrage an den Chatbot:\n\n\n\n\n\n\nPromptPrompt\n\n\n\nMeine Daten sind nicht normalverteilt (Shapiro-Wilk p = 0.02). Kann ich trotzdem eine ANOVA durchführen, oder muss ich einen nicht-parametrischen Test verwenden?\n\n\nWorauf du achten kannst:\nDer Chatbot wird eine Antwort geben, die vernünftig klingt. Aber um zu beurteilen, ob der Rat für deine konkrete Situation stimmt, brauchst du Fachwissen:\n\nWie robust ist ANOVA tatsächlich gegen Verletzungen der Normalverteilung?\nWelche Rolle spielt die Stichprobengrösse?\nWas genau testet Shapiro-Wilk, und ist p = 0.02 bei deiner Stichprobengrösse überhaupt relevant?\nWäre ein Bootstrap-Ansatz besser als ein nicht-parametrischer Test?\n\nDer Punkt: Die Antwort klingt kompetent. Aber ob sie für deinen Fall richtig ist, kannst du nur mit statistischem Hintergrundwissen beurteilen. Deine Studierenden haben dieses Hintergrundwissen noch nicht.\n\n\n\n\n\nVorgehen\n\nPasse den Prompt an dein Fachgebiet an\nStelle die Frage an Copilot\nWende die Evaluations-Checkliste an\nNotiere dein Urteil (✓ / ~ / ✗ / ?) mit Begründung\n\n\n\nDokumentation\n\n\n\n\n\n\n\n\n\nMeine Frage\nChatbot-Antwort (Kurzfassung)\nMein Urteil\nBegründung",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -456,7 +456,7 @@
     "href": "exercises/fakten-check/index.html#debrief",
     "title": "Fakten-Check",
     "section": "Debrief im Plenum",
-    "text": "Debrief im Plenum\n\n\n\n\n\n\nGroupDiskussionsfragen\n\n\n\n\nWarum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?\nErinnerung: Sprachmodelle generieren Text, der statistisch plausibel klingt. Die “Selbstsicherheit” kommt nicht aus Wissen, sondern aus dem Training auf selbstbewusst formulierte Texte.\nKonntet ihr die Fehler erkennen?\nMit eurer Fachkompetenz konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.\nWas bedeutet das für den Lernprozess?\nWenn Studierende falsche Informationen unkritisch übernehmen, lernen sie nicht nur nicht, sondern lernen möglicherweise Falsches.\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nChatbots sind selbstbewusst, aber nicht zuverlässig. Sie können plausibel klingende Falschaussagen generieren.\nFür Lehrende bedeutet das:\n\nEigene Outputs immer prüfen\nStudierende für dieses Problem sensibilisieren\nKritische Evaluation als Kompetenz vermitteln\nBewusstsein schaffen: Expertise ist Voraussetzung für Evaluation",
+    "text": "Debrief im Plenum\n\n\n\n\n\n\nGroupDiskussionsfragen\n\n\n\n\nWarum klingt der Chatbot so selbstbewusst, auch wenn er falsch liegt?\nZwei Gründe: Erstens wurden Sprachmodelle auf selbstbewusst formulierten Texten trainiert. Zweitens werden sie durch RLHF (Reinforcement Learning from Human Feedback) darauf optimiert, hilfreiche und überzeugende Antworten zu geben, weil das von menschlichen Bewertern belohnt wird.\nKonntet ihr die Fehler erkennen?\nMit eurer Fachkompetenz konntet ihr die Aussagen evaluieren. Eure Studierenden haben diese Expertise noch nicht.\nWas bedeutet das für den Lernprozess?\nWenn Studierende falsche Informationen unkritisch übernehmen, lernen sie nicht nur nicht, sondern lernen möglicherweise Falsches.\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nChatbots sind selbstbewusst, aber nicht zuverlässig. Sie können plausibel klingende Falschaussagen generieren.\nFür Lehrende bedeutet das:\n\nEigene Outputs immer prüfen\nStudierende für dieses Problem sensibilisieren\nKritische Evaluation als Kompetenz vermitteln\nBewusstsein schaffen: Expertise ist Voraussetzung für Evaluation",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -1019,7 +1019,7 @@
     "href": "workshop/frage-2-wozu-kann-ki/index.html#freigegebene-tools",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Freigegebene Tools",
-    "text": "Freigegebene Tools\nDie BFH hat mehrere KI-Tools abgeklärt und freigegeben:\n\n\n\nTool\nZugang\nEmpfohlen für\n\n\n\n\nMicrosoft Copilot\nBFH-Lizenz\nOffice-Aufgaben, sensible Daten\n\n\nChatGPT\nPersönliches Konto\nVielseitige Aufgaben, Coding\n\n\nClaude\nPersönliches Konto\nLange Dokumente, Analyse\n\n\n\n\n\n\n\n\n\nPro-tipWo finden?\n\n\n\n\n\nmybfh → IT-Applikationen → Abgeklärte KI-Tools",
+    "text": "Freigegebene Tools\nDie BFH hat mehrere KI-Tools abgeklärt und freigegeben:\n\n\n\n\n\n\n\n\n\nTool\nÖFFENTLICH\nINTERN\nVERTRAULICH\n\n\n\n\nMicrosoft Copilot (BFH)\n\n\n\n\n\nChatGPT Edu (BFH Pilot)\n\n\n\n\n\nChatGPT (persönlich)1\n\n\n\n\n\nLokale KI (ohne Cloud)\n\n\n\n\n\n\nAlle abgeklärten Tools auf mybfh",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -1676,6 +1676,42 @@
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
+    ]
+  },
+  {
+    "objectID": "workshop/frage-2-wozu-kann-ki/index.html#footnotes",
+    "href": "workshop/frage-2-wozu-kann-ki/index.html#footnotes",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "Fußnoten",
+    "text": "Fußnoten\n\n\n“Learning” muss manuell ausgeschaltet werden!↩︎",
+    "crumbs": [
+      "Workshop",
+      "Frage 2: Wofür kann KI verwendet werden?",
+      "Präsentation"
+    ]
+  },
+  {
+    "objectID": "exercises/fakten-check/index.html#kurze-reflexion-2-min",
+    "href": "exercises/fakten-check/index.html#kurze-reflexion-2-min",
+    "title": "Fakten-Check",
+    "section": "Kurze Reflexion (2 min)",
+    "text": "Kurze Reflexion (2 min)\n\n\n\n\n\n\nReflectReflexion\n\n\n\nWie hat sich dein Vertrauen in Chatbot-Antworten durch diese Übung verändert?",
+    "crumbs": [
+      "Workshop",
+      "Frage 2: Wofür kann KI verwendet werden?",
+      "Übung: Fakten-Check"
+    ]
+  },
+  {
+    "objectID": "exercises/fakten-check/index.html#weiterführend-lateral-reading-workshop",
+    "href": "exercises/fakten-check/index.html#weiterführend-lateral-reading-workshop",
+    "title": "Fakten-Check",
+    "section": "Weiterführend: Lateral Reading Workshop",
+    "text": "Weiterführend: Lateral Reading Workshop\n\n\n\n\n\n\nPro-tipVertiefungsworkshop: KI-Antworten kritisch prüfen\n\n\n\n\n\nWillst du tiefer in die Thematik einsteigen? Der 40-minütige Workshop KI-Antworten kritisch prüfen vermittelt “Lateral Reading”, eine Verifikationstechnik aus dem professionellen Fact-Checking.\nDu lernst:\n\nWann KI-Antworten externe Überprüfung brauchen\nWie deine Fragestellung die Antworten beeinflusst\nFakten selbstständig zu verifizieren",
+    "crumbs": [
+      "Workshop",
+      "Frage 2: Wofür kann KI verwendet werden?",
+      "Übung: Fakten-Check"
     ]
   }
 ]
