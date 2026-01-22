@@ -151,6 +151,15 @@ Ein Prompt ist selten perfekt beim ersten Mal. Nutze Nachfragen, um die Antwort 
 | Zu lang | "Fasse das in 3 Sätzen zusammen." |
 | Format passt nicht | "Formatiere das als Tabelle." |
 
+::: {.callout-note}
+## Kontext bereinigen
+
+Du kannst deinen letzten Beitrag bearbeiten und von dort aus neu verzweigen. Manchmal ist es auch sinnvoll, einen neuen Chat zu starten, wenn der Kontext zu lang oder in eine falsche Richtung gelaufen ist. Der Chatbot "erinnert" sich an alles im aktuellen Chat, was sowohl nützlich als auch hinderlich sein kann.
+
+![Nachricht bearbeiten in Copilot](../../assets/images/copilot-edit.png)
+:::
+
+
 ## Häufige Fehler
 
 | Fehler | Problem | Lösung |
