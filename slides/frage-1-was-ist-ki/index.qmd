@@ -224,7 +224,6 @@ Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
 ::: {.demonstration}
 ## Vergleich: Direkt vs. Schritt für Schritt
 
-Die Kursleitung zeigt den Unterschied:
 
 1. **Direkt**: "Was ist grösser: 9.11 oder 9.8?"
 2. **Mit Anleitung**: "Denke Schritt für Schritt. Was ist grösser: 9.11 oder 9.8?"
