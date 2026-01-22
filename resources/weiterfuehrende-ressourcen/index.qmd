@@ -49,9 +49,21 @@ Eine empirische Studie zu studentischen KI-Nutzungsmustern zeigt:
 
 Diese Studie wird im [Refresher Guide](https://virtuelleakademie.github.io/ki-lehre-refresher/guide/) ausführlich diskutiert.
 
+
+## Praxis: Cognitive Offloading reduzieren
+
+Ulrike Hanke bietet acht konkrete Strategien, um Lernumgebungen so zu gestalten, dass Studierende motiviert sind, selbst zu denken statt an KI zu delegieren:
+
+- Aufgaben bedeutsam gestalten
+- Zeitdruck reduzieren
+- Prozess statt nur Ergebnis bewerten
+- Reflexion über eigenes Lernen fördern
+
+[→ Lernprozesse auch im Zeitalter generativer KI sichern](https://hochschuldidaktik-online.de/lernprozesse-auch-im-zeitalter-generativer-ki-sichern-so-reduzieren-sie-die-auftretenswahrscheinlichkeit-von-cognitive-offloading/)
+
 ## BFH-spezifische Dokumente
 
 - [KI Policy der BFH](https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf)
-- [Orientierungshilfe](../resources.qmd)
+- [Orientierungshilfe](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/)
 
 ## Referenzen

@@ -188,7 +188,7 @@ Microsoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:
 
 ::: {.columns}
 ::: {.column width="50%"}
-- Benutzerdaten sind verschlüsselt
+- Benutzerdaten sind verschlüsselt (Transport-Verschlüsselung, kein End-to-End)
 - Microsoft verwendet Daten nicht ohne Anweisung
 - Für sensible Aufgaben: Copilot bevorzugen
 :::

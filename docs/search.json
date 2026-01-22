@@ -28,6 +28,13 @@
     "text": "Schlüsselstudien\n\nDer Produktivitäts-Lern-Zielkonflikt\nBastani u. a. (2025) illustriert den zentralen Zielkonflikt: Studierende mit GPT-4-Zugang lösten 48% mehr Mathematikaufgaben, schnitten aber 17% schlechter ab, als sie danach ohne KI-Zugang getestet wurden. Das ist keine überraschende Entdeckung, sondern folgt direkt aus dem, was wir über Lernen wissen: Produktivitätsgewinne durch Auslagerung kognitiver Arbeit können zu Lernverlusten führen.\nDiese Studie wird im Refresher Guide ausführlich diskutiert."
   },
   {
+    "objectID": "resources/weiterfuehrende-ressourcen/index.html#praxis-cognitive-offloading-reduzieren",
+    "href": "resources/weiterfuehrende-ressourcen/index.html#praxis-cognitive-offloading-reduzieren",
+    "title": "Weiterführende Ressourcen",
+    "section": "Praxis: Cognitive Offloading reduzieren",
+    "text": "Praxis: Cognitive Offloading reduzieren\nUlrike Hanke bietet acht konkrete Strategien, um Lernumgebungen so zu gestalten, dass Studierende motiviert sind, selbst zu denken statt an KI zu delegieren:\n\nAufgaben bedeutsam gestalten\nZeitdruck reduzieren\nProzess statt nur Ergebnis bewerten\nReflexion über eigenes Lernen fördern\n\n→ Lernprozesse auch im Zeitalter generativer KI sichern"
+  },
+  {
     "objectID": "resources/weiterfuehrende-ressourcen/index.html#bfh-spezifische-dokumente",
     "href": "resources/weiterfuehrende-ressourcen/index.html#bfh-spezifische-dokumente",
     "title": "Weiterführende Ressourcen",
@@ -303,7 +310,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#datenschutz-copilot",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Datenschutz: Copilot",
-    "text": "Datenschutz: Copilot\nMicrosoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:\n\n\n\nBenutzerdaten sind verschlüsselt\nMicrosoft verwendet Daten nicht ohne Anweisung\nFür sensible Aufgaben: Copilot bevorzugen",
+    "text": "Datenschutz: Copilot\nMicrosoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:\n\n\n\nBenutzerdaten sind verschlüsselt (Transport-Verschlüsselung, kein End-to-End)\nMicrosoft verwendet Daten nicht ohne Anweisung\nFür sensible Aufgaben: Copilot bevorzugen",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
