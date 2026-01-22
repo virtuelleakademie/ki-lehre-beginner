@@ -132,6 +132,19 @@ Erstelle drei Beispielaufgaben zum Thema [THEMA] für Erstsemester.
 **Tipp**: Stelle bei mindestens einer Antwort eine Nachfrage, um die Verfeinerung zu üben.
 :::
 
+::: {.pro-tip}
+## Zusatzaufgabe: Die Grenzen deiner Evaluation
+
+Schneller fertig? Probiere das Gegenteil:
+
+Stelle eine Frage zu einem Thema, von dem du **wenig Ahnung** hast. Lies die Antwort.
+
+- Klingt sie plausibel?
+- Kannst du beurteilen, ob sie stimmt?
+
+Wenn die Antwort überzeugend klingt, du aber nicht prüfen kannst, ob sie korrekt ist: Genau so geht es deinen Studierenden bei Fachfragen.
+:::
+
 ## Teil 4: Kurzer Austausch (3 min) {#austausch}
 
 ::: {.group}
