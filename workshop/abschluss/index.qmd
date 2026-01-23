@@ -72,5 +72,5 @@ Im nächsten Workshop lernen wir **warum** Outsourcing problematisch fürs Lerne
 ## Ressourcen
 
 - [KI-Policy BFH](https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf)
-- [Bildung 6.0](https://bildung6.bfh.ch)
+- [Bildung 6.0](https://www.bildung6.ch/)
 - [Virtuelle Akademie Knowledge Base](https://virtuelleakademie.ch/knowledge-base/)
