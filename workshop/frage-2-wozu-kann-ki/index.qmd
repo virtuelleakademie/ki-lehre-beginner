@@ -67,13 +67,14 @@ Ein echtes Limit: Chatbots generieren plausiblen Text, nicht geprüfte Fakten.
 ## BFH-Richtlinien
 
 ::: {.key-point}
-## Die fünf Grundsätze der BFH KI-Policy
+## Die sechs Grundsätze der BFH KI-Policy
 
 1. **Transparenz**: KI-Nutzung offenlegen
 2. **Datenschutz**: Keine persönlichen Daten eingeben
 3. **Ethik**: Verantwortungsvoll einsetzen
 4. **Integrität**: Wissenschaftliche Standards einhalten
 5. **Didaktik**: Lernziele berücksichtigen
+6. **Nachhaltigkeit**: Langfristig nachhaltig einsetzen
 :::
 
 ## Freigegebene Tools
