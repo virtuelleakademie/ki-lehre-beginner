@@ -3,14 +3,19 @@ title: "Transfer und Abschluss"
 sidebar: workshop
 ---
 
-::: {.callout-note}
-## Hinweis zur Reflexion
+::: {.reflect}
+## Reflektion (Teil 1)
+Versuche aus deinem Gedächtnis, ohne die Folien oder deine Aufschriebe zu konsultieren, die heute besprochenen Antworten auf die drei Fragen in je einem Satz zu formulieren. Schreibe diesen Satz auf.
 
-Kurze Reflexionsmomente sind nach jeder Frage eingebaut. Dieser Abschluss fokussiert auf **Transfer**: konkrete Vorsätze für die eigene Praxis.
+1. Was ist KI?
+2. Wofür kann man KI verwenden?
+3. Wann hilft KI, wann schadet sie?
 :::
 
 ## Eine Sache, die du morgen anders machst
-
+::: {.callout-note}
+Der folgende Abschluss fokussiert auf **Transfer**: konkrete Vorsätze für die eigene Praxis.
+:::
 ::: {.individual}
 ## Konkreter Vorsatz (3 min)
 
@@ -38,6 +43,10 @@ Teile deinen Vorsatz mit einer Person neben dir.
 :::
 
 ## Was wir heute gemacht haben
+::: {.reflect}
+## Reflektion (Teil 2)
+Vergleiche deine Antworten aus Teil 1 mit den hier gegebenen. Gibt es relevante Diskrepanzen?
+:::
 
 | Frage | Einsicht |
 |-------|----------|
