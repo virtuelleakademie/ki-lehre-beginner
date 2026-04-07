@@ -158,30 +158,7 @@ Tauscht euch kurz mit 1-2 Nachbarpersonen aus:
 - Welche Fragen sind aufgetaucht?
 :::
 
-::: {.reflect}
-## Kurzer Selbsttest (1 min)
-{{< timer 1 autostart=false >}}
-
-Beantworte ohne auf deine Notizen zu schauen:
-
-1. Welche drei einfachen Regeln haben wir für das Prompten besprochen?
-2. Warum ist es wichtig, der Selbstsicherheit des Chatbots nicht blind zu vertrauen?
-:::
-
-::: {.key-point}
-## Was du jetzt kannst
-
-Du hast gelernt:
-
-1. **Copilot öffnen** und eine Konversation starten
-2. **Einen Prompt formulieren** mit Kontext (wer du bist, was du brauchst)
-3. **Nachfragen stellen**, um die Antwort zu verfeinern
-4. **Kritisch lesen**, ohne der Selbstsicherheit des Chatbots blind zu vertrauen
-
-Diese Grundlagen brauchst du für die nächste Übung: den **Fakten-Check**.
-:::
-
-## Prompting-Grundlagen
+## Teil 5: Prompting-Grundlagen
 
 Für diese Übung reichen drei einfache Regeln:
 
@@ -219,4 +196,29 @@ Für strukturiertes Prompting-Training steht dir ein spezieller Copilot-Agent zu
 [Prompting-Tutor öffnen](https://m365.cloud.microsoft/chat/?titleId=T_7974f581-f4b9-7537-f20b-121abdc50196)
 
 *Nutze den Tutor nach dem Workshop für vertieftes Lernen.*
+:::
+
+## Reflektion
+
+::: {.reflect}
+## Kurzer Selbsttest (1 min)
+{{< timer 1 autostart=false >}}
+
+Beantworte ohne auf deine Notizen zu schauen:
+
+1. Welche drei einfachen Regeln haben wir für das Prompten besprochen?
+2. Warum ist es wichtig, der Selbstsicherheit des Chatbots nicht blind zu vertrauen?
+:::
+
+::: {.key-point}
+## Was du jetzt kannst
+
+Du hast gelernt:
+
+1. **Copilot öffnen** und eine Konversation starten
+2. **Einen Prompt formulieren** mit Kontext (wer du bist, was du brauchst)
+3. **Nachfragen stellen**, um die Antwort zu verfeinern
+4. **Kritisch lesen**, ohne der Selbstsicherheit des Chatbots blind zu vertrauen
+
+Diese Grundlagen brauchst du für die nächste Übung: den **Fakten-Check**.
 :::
