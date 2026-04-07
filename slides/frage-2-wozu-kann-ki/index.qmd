@@ -167,7 +167,7 @@ Würdest du es an eine Pinnwand hängen? Dann ist es okay.
 :::
 
 <br>
-[Vollständige Datenklassifikation auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Datenklassifikation.aspx){target="_blank"}
+[Vollständige Datenklassifikation auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-Informationssicherheit-Datenschutz-de/SitePages/Datenklassifikation.aspx){target="_blank"}
 
 ## Freigegebene Tools {.smaller}
 
@@ -180,7 +180,7 @@ Würdest du es an eine Pinnwand hängen? Dann ist es okay.
 
 [^1]: "Learning" muss manuell ausgeschaltet werden!
 
-[Alle abgeklärten Tools auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx){target="_blank"}
+[Alle abgeklärten Tools auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-Informationssicherheit-Datenschutz-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx){target="_blank"}
 
 
 

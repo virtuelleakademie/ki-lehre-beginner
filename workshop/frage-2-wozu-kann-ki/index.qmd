@@ -90,7 +90,7 @@ Die BFH hat mehrere KI-Tools abgeklärt und freigegeben:
 
 [^1]: "Learning" muss manuell ausgeschaltet werden!
 
-[Alle abgeklärten Tools auf mybfh](https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx){target="_blank"}
+[Alle abgeklärten Tools auf mybfh](https://bernerfachhochschule.sharepoint.com/sites/mybfh-Informationssicherheit-Datenschutz-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx){target="_blank"}
 
 ## Aktivität: Fakten-Check
 
