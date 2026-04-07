@@ -168,6 +168,10 @@ Plot.plot({
 :::
 ::::
 
+::: {.notes}
+Wahrscheinlichkeiten tatsächlich nicht über nur 5, sondern alle (30-130k) tokens. Top-5 summieren also nicht zu 100%.
+:::
+
 
 ## Vorhersage in Aktion
 
@@ -204,6 +208,12 @@ Das klingt simpel, aber es ist nicht so anders von dem, was unser Gehirn tut.
 
 Auch wir vervollständigen Muster auf Basis von Erfahrung, nicht durch direkten Zugriff auf Fakten. Der Unterschied liegt im Grad der Zuverlässigkeit.
 ::: -->
+
+::: {.notes}
+1. Pretraining
+2. Supervised Fine-Tuning (SFT)
+3. Reinforcement Learnint from Human Feedback (RLHF), Direct Preference Optimization (DPO), und andere... 
+:::
 
 ## Chain-of-Thought "Denken"
 

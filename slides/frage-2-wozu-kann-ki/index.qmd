@@ -29,6 +29,11 @@ Sie können:
 :::
 ::::
 
+::: {.notes}
+Dies ist eigentlich noch zur Hälfte Teil 1.
+Moderne KI-Interfaces sind zumeist Agenten, bzw. Multi-Agent-Frameworks. 
+:::
+
 ## Fragen beantworten
 
 ![](../../assets/images/fragen-beantworten.png)
@@ -73,6 +78,14 @@ Sie können:
 ![](../../assets/images/Pothole.png)
 :::
 ::::
+
+::: {.notes}
+Energieverbrauch: 
+- Hauptrechenleistung fällt remote an, nicht auf persönlichen Devices.
+- KI-App nicht gleich Wetter-App
+    - Wetter-App: Modell einmal berechnet, Nutzende rufen aus Datenbank ab. 
+    - KI-App: Individuelle Berechnungen pro Nutzeranfrage. "Etwa so, als würde man die Wettermodelle mit jedem Nutzeraufruf neu rechnen." 
+:::
 
 ## Keine Wissensdatenbank
 
