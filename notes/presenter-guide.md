@@ -52,11 +52,12 @@ Notizen:
 
 > Nach Klick auf „Präsentation": Taste `s` für Speaker View, `f` für Vollbild.
 
-*→ Wie funktionieren Sprachmodelle?*
+*→ Wie funktioniert KI?*
 
 #### [Frage 1: Was ist KI?](../slides/frage-1-was-ist-ki/index.qmd) — *Wie funktionieren Sprachmodelle wirklich?*
 
-- KI heute meist «Sprachmodelle» bzw. Zusammenspiel von «generativen» Modellen
+- KI heute meist «Sprachmodelle» / Large Language Models (LLMs)
+- bzw. Zusammenspiel von «generativen» Modellen
 
 <details>
 <summary>Hintergrund: Generative KI</summary>
@@ -93,7 +94,7 @@ Generative KI: erstellt neue Daten
    - Hat Vor- und Nachteile
 - Kann (nicht nur) Textkommunikation
    - Dateien als Input hochladen
-      - Bilder 
+      - Bilder
       - pdf
       - Word, Excel
       - ...
@@ -102,11 +103,11 @@ Generative KI: erstellt neue Daten
    - Promptvorschläge
    - weitere Spezialmodi (Anwendungseinbindungen, Agenten, Skills, ...)
 
-*→ Dazu später mehr. Wir fokussieren erst einmal auf  das Sprachmodell. Wie funktioniert das?* 
+*→ Dazu später mehr. Wir fokussieren erst einmal auf  das Sprachmodell. Wie funktioniert das?*
 
 #### [Was sind LLMs?](../slides/frage-1-was-ist-ki/index.qmd#was-sind-llms)
 
-- Side-Note: Warum ist Autocomplete auf meinem Smartphone so schlecht? --> Weil es 5 Jahre alt ist. 
+- Side-Note: Warum ist Autocomplete auf meinem Smartphone so schlecht? --> Weil es 5 Jahre alt ist.
 
 *→ Im hintergrund werden Wahrscheinlichkeiten berechnet*
 
@@ -118,7 +119,7 @@ Generative KI: erstellt neue Daten
 
 #### [Was bedeutet das konkret?](../slides/frage-1-was-ist-ki/index.qmd#was-bedeutet-das-konkret)
 
-- 
+-
 
 *→ Aufgrund der Wahrscheinlichkeit ist jede tatsächliche Generierung anders*
 
@@ -135,39 +136,62 @@ Generative KI: erstellt neue Daten
 <!-- TODO: LM Studio Übung Temperature einfügen-->
 <!-- TODO: Hintergrundwissen Tokens, Temperature & Selection einfügen -->
 
-*→* 
+*→*
 
 #### [Vorhersage in Aktion](../slides/frage-1-was-ist-ki/index.qmd#vorhersage-in-aktion)
 
 - [Teilnehmende selbst überlegen lassen]
-- Bei KI: "Attention"-Mechanismus 
+- Bei KI: "Attention"-Mechanismus
 - gewichtete Bezüge über Distanzen herstellen
 - "Distanz" --> Kontextlänge (2026 bis zu ~10 Mio Tokens)
 - Highlight zeigt Semantik. Tatsächlich: Unterschiedliche Blickwinkel (Multi-headed attention), wie z.B. Syntax
+
+<!-- NOTE: Kann ggf. gekürzt werden -->
 
 *→*
 
 #### [Wie generieren LLMs ganze Sequenzen?](../slides/frage-1-was-ist-ki/index.qmd#wie-generieren-llms-ganze-sequenzen)
 
--
+- Generierung ist "autoregressiv"
+   - nächstes Wort = alles bisherige neu in Kontext
+- auch bei vermeintlich "geplanten" Texten wie Gedichten
 
-*→*
+<!-- NOTE: Kann ggf. gekürzt werden -->
+
+*→ Woher können LLMs dies?*
 
 #### [Wie werden LLMs trainiert?](../slides/frage-1-was-ist-ki/index.qmd#wie-werden-llms-trainiert)
 
--
+- Links: Pretraining
+   - Textproduktion und Inhalte
+   - Datenbasis: grosse Mengen unkuratierter Text (von Wissenschaft bis Internetforen)
+   - Kann so nicht viel:
+      - z.B. Antwort auf Frage eher ähnliche Frage
+      - weiss nicht, welche Antwort gut/schlecht
+- Mitte: Supervised Fine-Tuning (SFT)
+   - Anleitungen befolgen, sinnvoll strukturieren
+   - Datenbasis: "qualitativ hochwertige" Konversationen (z.B. Prompt-Antwort paare)
+- Rechts: Reinforcement Learning from Human Feedback (RLHF), Direct Preference Optimization (DPO), und andere...
+   - besser/schlechter, menschliche Präferenzen
+      - z.B. nicht beleidigen, Sycophancy
+   - Datenbasis: Ranking von Antworten durch Menschen
+
+<!-- TODO: Hintergrundwissen "Sycophancy" hinzufügen -->
 
 *→*
 
 #### [Chain-of-Thought "Denken"](../slides/frage-1-was-ist-ki/index.qmd#chain-of-thought-denken)
 
--
+- Analogie: Mensch bei schwieriger (Rechen-)aufgabe
+   - nicht sofort Lösung,
+   - sondern Notizen, Planung, (schriftl. Rechenweg)
 
-*→*
+*→ Ein Beispiel..*
 
 #### [Beispiel: 9.11 vs 9.8](../slides/frage-1-was-ist-ki/index.qmd#beispiel-9.11-vs-9.8)
 
--
+- 9.8 ist grösser, da 9.80
+<!-- TODO: ggf. Übung LM Studio mit/ohne Thinking zeigen, z.b. mit 9.11 vs. 9.8 aufgabe.-->
 
 *→*
 
@@ -187,12 +211,7 @@ Generative KI: erstellt neue Daten
 
 -
 
-### 3b. Interaktive Elemente (Webseite)
-
-- [Token-Vorhersage](../workshop/frage-1-was-ist-ki/index.qmd#interaktiv-token-vorhersage)
-- [Temperature](../workshop/frage-1-was-ist-ki/index.qmd#interaktiv-temperature)
-- [Die Parallele zum Schreiben](../workshop/frage-1-was-ist-ki/index.qmd#die-parallele-zum-schreiben)
-- [Kurze Reflexion (3 min)](../workshop/frage-1-was-ist-ki/index.qmd#kurze-reflexion-3-min)
+#### [Reflexion (auf Präsentationsseite ganz nach unten scrollen)](../workshop/frage-1-was-ist-ki/index.qmd#kurze-reflexion-3-min)
 
 Notizen:
 
@@ -206,9 +225,17 @@ Notizen:
 
 [→ Copilot Einstieg](../exercises/copilot-einstieg/index.qmd)
 
+- erste Übung: Demo; zweite stark geleitet, dritte selbstständig (folgt didakt. Scaffolding/Fading-Prinzip)
+- jeweils Timer durch Klick starten
+- Hinweis (Vorgriff auf später): Eure Eingaben unterliegen den Datenschutzvereinbarungen zwischen BFH und Microsoft
+   - schweizer Server
+   - kein Modelltraining
+   - dürfen es nutzen, aber nicht mit vertraulichen Daten
+
 #### [Demonstration (5 min)](../exercises/copilot-einstieg/index.qmd#demonstration)
 
--
+- auch Edit-Funktion demonstrieren
+- [Hinweis: Copilot mach bei Edit im Frontend keinen neuen Konversationszweig auf, sondern führt die Konversation linear fort. Evtl. nach dem "editierten" Prompt geführte dialoge bleiben im Frontend in der Konversation. Im hintergrund wird aber die Konversation aufgesplittet und nur dialoge vor dem "edit" bleiben im Kontext.]
 
 #### [Gemeinsam ausprobieren (5 min)](../exercises/copilot-einstieg/index.qmd#gemeinsam)
 
@@ -222,9 +249,14 @@ Notizen:
 
 -
 
+
+Spätestens hier: PAUSE! 
+
 #### [Prompting-Grundlagen](../exercises/copilot-einstieg/index.qmd#teil-5-prompting-grundlagen)
 
 -
+
+<!-- TODO: ggf. Reihenfolge anpassen! -->
 
 #### [Reflektion](../exercises/copilot-einstieg/index.qmd#reflektion)
 
@@ -241,13 +273,14 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 -
 
-*→*
+*→ Sprachmodelle noch die Grundlage, aber*
 
 #### [Mehr als Textgenerierung](../slides/frage-2-wozu-kann-ki/index.qmd#mehr-als-textgenerierung)
 
--
-
-*→*
+- noch zur Hälfte Teil 1.
+- Wie schon erwähnt: häufig "Agenten", bzw. "Multi-Agent-Frameworks"
+   - spezialisierte Sprachmodelle, die Werkzeuge benutzen und miteinander kollaborieren können
+*→ Was also kann moderne KI? (Nicht unbedingt "was sollte"!)*
 
 #### [Fragen beantworten](../slides/frage-2-wozu-kann-ki/index.qmd#fragen-beantworten)
 
@@ -257,7 +290,7 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 #### [Bilder analysieren](../slides/frage-2-wozu-kann-ki/index.qmd#bilder-analysieren)
 
--
+- Sogenannte Vision Language Models (VLMs)
 
 *→*
 
@@ -269,13 +302,13 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 #### [Output strukturieren](../slides/frage-2-wozu-kann-ki/index.qmd#output-strukturieren)
 
--
+- auch word, ppt erstellen
 
 *→*
 
 #### [Websuche](../slides/frage-2-wozu-kann-ki/index.qmd#websuche)
 
--
+- Aktuelle Chatbots finden zumeist automatisch heraus, was von ihnen verlangt wird
 
 *→*
 
@@ -283,35 +316,57 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 -
 
-*→*
+*→ Darüber hinaus, viele spezialisierte Anwendungen*
 
 #### [Custom GPTs](../slides/frage-2-wozu-kann-ki/index.qmd#custom-gpts)
 
--
+- Selbst (oder durch andere Nutzende) erstellte Agenten
+- Copilot: Agenten
+- Wer mehr erfahren will: KI in der Lehre: KI-Tools bauen.
 
-*→*
+*→ Wie ihr vermutlich gehört habt, ist das ganze nicht problemfrei*
 
 #### [Aber: Grenzen und Gefahren](../slides/frage-2-wozu-kann-ki/index.qmd#aber-grenzen-und-gefahren)
 
--
+- Urheberrecht:
+   - Wurde auf "dem Internet" trainiert
+   - war für wissenschaftliche Zwecke legal
+   - jetzt aber kommerzielle Vermarktung
+- Bias
+   - lernt so, wie im Internet repräsentiert
+   - moderne tools haben "anti-bias-training"
+<!-- TODO: Demo tool ohne anti-bias-training in LM Studio zeigen -->
+- Energieverbrauch 
+   - Training extrem aufwendig, aber Gesamtimpact der Generierung inzwischen höher (wg. viel Nutzung)
+   - Hauptrechenleistung remote, nicht auf persönlichen Devices.
+   - KI-App nicht gleich Wetter-App
+      - Wetter-App: Modell einmal berechnet, Nutzende rufen aus Datenbank ab. 
+      - KI-App: Individuelle Berechnungen pro Nutzeranfrage. "Etwa so, als würde man die Wettermodelle mit jedem Nutzeraufruf neu rechnen."
+   - Relation zu anderen Aktivitäten wie Suchmaschinennutzung, Videostreams?
+      - CAVEAT: Quellen nicht einheitlich - deshalb im Moment keine Antwort
+      <!-- TODO: besser recherchieren! Selbst Elicit-Suche war nicht sehr hilfreich. Evtl. umkämpfte Meinungshohheit? -->
 
 *→*
 
 #### [Keine Wissensdatenbank](../slides/frage-2-wozu-kann-ki/index.qmd#keine-wissensdatenbank)
 
--
+- LLMs können per Design nicht konzeptionell denken 
+- auch wenn sie z.T. erstaunlich gute Ergebnisse in konzeptionellen Tasks liefern
 
 *→*
 
 #### [KI an der BFH](../slides/frage-2-wozu-kann-ki/index.qmd#ki-an-der-bfh)
 
--
+- Die Policy gilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb.
 
 *→*
 
 #### [Deine Verantwortung als Lehrperson](../slides/frage-2-wozu-kann-ki/index.qmd#deine-verantwortung-als-lehrperson)
 
--
+- Wer hilft?
+   - CISO (Datenschautzbeauftragte)
+   - Fachstelle Datenschutz
+   - Virtuelle Akademie
 
 *→*
 
@@ -319,12 +374,16 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 -
 
-*→*
+*→ Was bedeutet das für die Praxis?*
 
 #### [Was darf in den Chatbot?](../slides/frage-2-wozu-kann-ki/index.qmd#was-darf-in-den-chatbot)
 
--
-
+- Unterrichtsskripte und Bücher: 
+   - eigenes Thema, derzeit keine klare Antwort
+   <!-- TODO: rechtlich abklären -->
+   - z.B. dieser Kurs (CC-BY-4.0) wäre in BFH-Copilot okay.
+   - in anderer KI evtl. problematisch --> Verwendung zum Training verletzt evtl. Attribuierung?
+   - Lehrbuchausschnitte dürfen z.B. nicht auf Dropbox
 *→*
 
 #### [Freigegebene Tools](../slides/frage-2-wozu-kann-ki/index.qmd#freigegebene-tools)
@@ -349,7 +408,15 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 #### [Das Problem verstehen (3 min)](../exercises/fakten-check/index.qmd#problem)
 
--
+- erstens: TN lesen "Das Problem verstehen" (Timer starten)
+- zweitens: Kursleitung demonstriert (vorbereiten!)
+   - Prüffragen & Bewertungskategorien
+- drittens: TN probieren stark geleitet
+   - gemeinsame Diskussion (timen)
+   <!-- TODO: Timer ist falsch (5 min für 8 min Inhalt) -->
+- viertens: TN probieren frei
+- fünftens: wieder gemeinsame Diskussion & Debrief
+- sechstens: Reflektion
 
 #### [I do (3 min)](../exercises/fakten-check/index.qmd#i-do)
 
@@ -390,13 +457,15 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 #### [Frage 3: Wofür sollte ich KI verwenden?](../slides/frage-3-wozu-soll-ich/index.qmd) — *Offloading vs. Outsourcing: Wann ist KI-Nutzung sinnvoll?*
 
--
+- Verweis auf Kurs: KI in der Lehre: Lernen mit KI gestalten
+- dort detaillierter lernpsychologische Grundlagen & Konsequenzen
 
 *→*
 
 #### [Die Konzepte](../slides/frage-3-wozu-soll-ich/index.qmd#die-konzepte)
 
--
+- Nuancen bei Beispielen: Kommt auf Art der Verwendung an.
+<!-- TODO: Info Offloading vs. Outsourcing einfügen -->
 
 *→*
 
