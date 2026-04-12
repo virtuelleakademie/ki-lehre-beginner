@@ -3,6 +3,7 @@
 > Notizen entlang des Workshop-Ablaufs.
 > Links verweisen auf die jeweiligen Seiten/Abschnitte der Website.
 <!-- TODO: Claude in Folien explizite IDs vergeben lassen für robustere Verlinkung -->
+<!-- TODO: Rückwärts-Link Folienreihenfolge in Präsentation zu Reihenfolge in presenter-guide sicherstellen -->
 ## 1. Begrüssung & Übersicht
 
 [→ Workshop-Übersicht](../workshop/index.qmd)
@@ -35,7 +36,6 @@ Notizen:
 3. [Diskussion: „Wo stehst du?"](../workshop/einstieg/index.qmd#wo-stehst-du)
    - Timer durch Klick starten
    - Selbstorganisation in 2er-/3er-Teams funktioniert üblicherweise gut
-4. [Was wir heute nicht tun](../workshop/einstieg/index.qmd#was-wir-heute-nicht-tun)
 
 Notizen:
 
@@ -54,7 +54,7 @@ Notizen:
 
 *→ Wie funktionieren Sprachmodelle?*
 
-#### [Was sind Chatbots?](../slides/frage-1-was-ist-ki/index.qmd#was-sind-chatbots)
+#### [Frage 1: Was ist KI?](../slides/frage-1-was-ist-ki/index.qmd) — *Wie funktionieren Sprachmodelle wirklich?*
 
 - KI heute meist «Sprachmodelle» bzw. Zusammenspiel von «generativen» Modellen
 
@@ -64,57 +64,86 @@ Notizen:
 Generative AI (auf Deutsch meist generative KI) bezeichnet eine Form der künstlichen Intelligenz, die neue Inhalte erzeugen kann, anstatt nur bestehende Daten zu analysieren oder zu klassifizieren. [en.wikipedia.org], [ibm.com]
 
 **Kurz erklärt:**
-Generative KI lernt aus sehr grossen Datenmengen (z. B. Texte, Bilder, Musik) typische Muster und Strukturen und nutzt dieses Wissen, um neue, originelle Inhalte zu erzeugen, die den gelernten Daten ähneln, aber keine blossen Kopien sind. [en.wikipedia.org]
+Generative KI lernt aus sehr großen Datenmengen (z. B. Texte, Bilder, Musik) typische Muster und Strukturen und nutzt dieses Wissen, um neue, originelle Inhalte zu erzeugen, die den gelernten Daten ähneln – aber keine bloßen Kopien sind. [en.wikipedia.org]
+Was kann generative KI erzeugen?
+Generative KI kann unter anderem:
 
-**Was kann generative KI erzeugen?**
+Texte (z. B. E‑Mails, Berichte, Zusammenfassungen)
+Bilder und Grafiken
+Audio (z. B. Sprache, Musik)
+Videos
+Software‑Code
+erstellen – meist als Reaktion auf eine Texteingabe (Prompt) durch Nutzer:innen. [en.wikipedia.org], [ibm.com]
 
-- Texte (z. B. E-Mails, Berichte, Zusammenfassungen)
-- Bilder und Grafiken
-- Audio (z. B. Sprache, Musik)
-- Videos
-- Software-Code
+Wie unterscheidet sie sich von „klassischer" KI?
 
-Meist als Reaktion auf eine Texteingabe (Prompt) durch Nutzer:innen. [en.wikipedia.org], [ibm.com]
-
-**Wie unterscheidet sie sich von „klassischer" KI?**
-
-- Klassische (prädiktive) KI: trifft Vorhersagen oder Entscheidungen (z. B. „Ist auf diesem Bild eine Katze?")
-- Generative KI: erstellt neue Daten (z. B. „Erzeuge ein neues Bild einer Katze.") [news.mit.edu]
+Klassische (prädiktive) KI: trifft Vorhersagen oder Entscheidungen
+(z. B. „Ist auf diesem Bild eine Katze?")
+Generative KI: erstellt neue Daten
+(z. B. „Erzeuge ein neues Bild einer Katze.") [news.mit.edu]
 
 </details>
-
+<br>
 *→ Wie sehen typische Nutzerinterfaces solcher KI aus?*
 
-#### [Was sind LLMs?](../slides/frage-1-was-ist-ki/index.qmd#was-sind-llms)
+#### [Was sind Chatbots?](../slides/frage-1-was-ist-ki/index.qmd#was-sind-chatbots)
 
 - Wir sehen gleich noch Copilot (BFH) – aber die meisten recht ähnlich.
 - Wissen über mich (je nach Einstellungen)
-  - Hat Vor- und Nachteile
+   - Hat Vor- und Nachteile
 - Kann (nicht nur) Textkommunikation
+   - Dateien als Input hochladen
+      - Bilder 
+      - pdf
+      - Word, Excel
+      - ...
+   - Artefakte erstellen
+      - z.B. Bilder
+   - Promptvorschläge
+   - weitere Spezialmodi (Anwendungseinbindungen, Agenten, Skills, ...)
 
-*→*
+*→ Dazu später mehr. Wir fokussieren erst einmal auf  das Sprachmodell. Wie funktioniert das?* 
+
+#### [Was sind LLMs?](../slides/frage-1-was-ist-ki/index.qmd#was-sind-llms)
+
+- Side-Note: Warum ist Autocomplete auf meinem Smartphone so schlecht? --> Weil es 5 Jahre alt ist. 
+
+*→ Im hintergrund werden Wahrscheinlichkeiten berechnet*
 
 #### [Die Kernidee](../slides/frage-1-was-ist-ki/index.qmd#die-kernidee)
 
--
+- [Lies: "Wahrscheinlichkeit nächstes Wort *gegeben* Kontext und Modell]
 
-*→*
+*→ Wenn wir also z.B. einen Satzanfang vorgeben...*
 
 #### [Was bedeutet das konkret?](../slides/frage-1-was-ist-ki/index.qmd#was-bedeutet-das-konkret)
 
--
+- 
 
-*→*
+*→ Aufgrund der Wahrscheinlichkeit ist jede tatsächliche Generierung anders*
 
 #### [Token-Vorhersage und Temperatur](../slides/frage-1-was-ist-ki/index.qmd#token-vorhersage-und-temperatur)
 
--
+- Modell kann Wahrscheinlichkeiten unterschiedlich nutzen
+- "Kreativität" des Outputs
+   - Höhere Temperatur: Variablerer Output
+   - aber auch: ggf. unplausibler
+- [Wahrscheinlichkeiten tatsächlich nicht über nur 5, sondern alle (30-130k) tokens. Top-5 summieren also nicht zu 100%.]
+- Temperatur 0 ist deterministisch (immer dasselbe nächste Wort)
 
-*→*
+<!-- TODO: Hintergrundwissen Temperature einfügen -->
+<!-- TODO: LM Studio Übung Temperature einfügen-->
+<!-- TODO: Hintergrundwissen Tokens, Temperature & Selection einfügen -->
+
+*→* 
 
 #### [Vorhersage in Aktion](../slides/frage-1-was-ist-ki/index.qmd#vorhersage-in-aktion)
 
--
+- [Teilnehmende selbst überlegen lassen]
+- Bei KI: "Attention"-Mechanismus 
+- gewichtete Bezüge über Distanzen herstellen
+- "Distanz" --> Kontextlänge (2026 bis zu ~10 Mio Tokens)
+- Highlight zeigt Semantik. Tatsächlich: Unterschiedliche Blickwinkel (Multi-headed attention), wie z.B. Syntax
 
 *→*
 
@@ -207,6 +236,10 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 [→ Webseite](../workshop/frage-2-wozu-kann-ki/index.qmd) |
 [→ Folien](../slides/frage-2-wozu-kann-ki/index.qmd)
+
+#### [Frage 2: Wofür kann KI verwendet werden?](../slides/frage-2-wozu-kann-ki/index.qmd) — *Möglichkeiten, Grenzen und was an der BFH gilt*
+
+-
 
 *→*
 
@@ -354,6 +387,10 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 [→ Webseite](../workshop/frage-3-wozu-soll-ich/index.qmd) |
 [→ Folien](../slides/frage-3-wozu-soll-ich/index.qmd)
+
+#### [Frage 3: Wofür sollte ich KI verwenden?](../slides/frage-3-wozu-soll-ich/index.qmd) — *Offloading vs. Outsourcing: Wann ist KI-Nutzung sinnvoll?*
+
+-
 
 *→*
 
