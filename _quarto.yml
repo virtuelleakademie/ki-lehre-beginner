@@ -67,10 +67,10 @@ website:
             href: https://www.bfh.ch/dam/jcr:3b64bdc7-c5d6-4c62-8dc5-0e6a60901c70/KI-Policy_BFH_FHL7Mai25_verabschiedet-1.pdf
             target: _blank
           - text: "Abgeklärte KI-Tools (Intranet)"
-            href: https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx
+            href: https://bernerfachhochschule.sharepoint.com/sites/mybfh-Informationssicherheit-Datenschutz-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx
             target: _blank
           - text: "Datenklassifikation (Intranet)"
-            href: https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Datenklassifikation.aspx
+            href: https://bernerfachhochschule.sharepoint.com/sites/mybfh-Informationssicherheit-Datenschutz-de/SitePages/Datenklassifikation.aspx
             target: _blank
           - text: "Begleitdokument: KI Weiterbildung"
             href: assets/pdfs/Begleitdokument.pdf
@@ -192,28 +192,28 @@ custom-callout:
   # Activity types - what participants DO (Magenta)
   experiment:
     title: "Deine Aufgabe"
-    icon-symbol: "fa-flask"
+    icon-symbol: "🧪"
     appearance: default
     collapse: false
     color: "#A3195B"  # Deep Magenta (action)
 
   individual:
     title: "Einzelarbeit"
-    icon-symbol: "fa-user"
+    icon-symbol: "♟"
     appearance: default
     color: "#A3195B"  # Deep Magenta (action)
     collapse: false
 
   group:
     title: "Gruppenarbeit"
-    icon-symbol: "fa-users"
+    icon-symbol: "⚇"
     appearance: default
     color: "#A3195B"  # Deep Magenta (action)
     collapse: false
 
   demonstration:
     title: "Demonstration"
-    icon-symbol: "fa-chalkboard"
+    icon-symbol: "▶"
     appearance: default
     collapse: false
     color: "#333333"  # Dark grey (instructor-led, neutral)
@@ -221,21 +221,21 @@ custom-callout:
   # Thinking types - reflection and insights (Gold)
   scenario:
     title: "Szenario"
-    icon-symbol: "fa-comment"
+    icon-symbol: "💬"
     appearance: default
     color: "#666666"  # Medium grey (neutral context)
     collapse: false
 
   reflect:
     title: "Reflexion"
-    icon-symbol: "fa-lightbulb"
+    icon-symbol: "🧠"
     appearance: default
     color: "#D4A03E"  # Warm Gold (insight)
     collapse: false
 
   key-point:
     title: "Kernaussage"
-    icon-symbol: "fa-star"
+    icon-symbol: "★"
     appearance: default
     collapse: false
     color: "#D4A03E"  # Warm Gold (importance)
@@ -243,7 +243,7 @@ custom-callout:
   # Alert type
   warning:
     title: "Achtung"
-    icon-symbol: "fa-exclamation-circle"
+    icon-symbol: "⚠"
     appearance: default
     color: "#A3195B"  # Deep Magenta (attention)
     collapse: false
@@ -251,14 +251,14 @@ custom-callout:
   # Guidance types (Gold)
   pro-tip:
     title: "Tipp"
-    icon-symbol: "fa-wand-magic-sparkles"
+    icon-symbol: "✧"
     appearance: default
     color: "#D4A03E"  # Warm Gold (helpful)
     collapse: true
 
   source-check:
     title: "Quellen-Check"
-    icon-symbol: "fa-search"
+    icon-symbol: "🔍"
     appearance: default
     color: "#D4A03E"  # Warm Gold (verification)
     collapse: false
@@ -266,7 +266,7 @@ custom-callout:
   # Technical - copyable prompt for chatbot input
   prompt:
     title: "Prompt"
-    icon-symbol: "fa-clipboard"
+    icon-symbol: "📋"
     appearance: default
     color: "#333333"  # Dark grey (code-like)
     collapse: false

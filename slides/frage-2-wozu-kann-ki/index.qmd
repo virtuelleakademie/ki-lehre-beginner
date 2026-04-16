@@ -29,6 +29,11 @@ Sie können:
 :::
 ::::
 
+::: {.notes}
+Dies ist eigentlich noch zur Hälfte Teil 1.
+Moderne KI-Interfaces sind zumeist Agenten, bzw. Multi-Agent-Frameworks. 
+:::
+
 ## Fragen beantworten
 
 ![](../../assets/images/fragen-beantworten.png)
@@ -74,6 +79,14 @@ Sie können:
 :::
 ::::
 
+::: {.notes}
+Energieverbrauch: 
+- Hauptrechenleistung fällt remote an, nicht auf persönlichen Devices.
+- KI-App nicht gleich Wetter-App
+    - Wetter-App: Modell einmal berechnet, Nutzende rufen aus Datenbank ab. 
+    - KI-App: Individuelle Berechnungen pro Nutzeranfrage. "Etwa so, als würde man die Wettermodelle mit jedem Nutzeraufruf neu rechnen." 
+:::
+
 ## Keine Wissensdatenbank
 
 :::: {.columns}
@@ -94,13 +107,14 @@ Sie können:
 
 Die BFH hat eine KI-Policy verabschiedet (Mai 2025):
 
-**Die fünf Grundsätze**:
+**Die sechs Grundsätze**:
 
 1. Transparenz und Nachvollziehbarkeit
 2. Informationssicherheit und Datenschutz
 3. Ethische Reflexion und Verantwortlichkeit
 4. Wissenschaftliche Integrität
 5. Didaktische Angemessenheit und Chancengleichheit
+6. Nachhaltiger Umgang
 
 ::: {.notes}
 **KI-Policy BFH (Mai 2025)**
@@ -114,6 +128,7 @@ Die Policy gilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb.
 3. **Ethik**: Nutzer tragen Verantwortung
 4. **Integrität**: Plagiate vermeiden
 5. **Didaktik**: Pädagogischer Mehrwert?
+6. **Nachhaltigkeit**: Verantwortungsvoller Umgang
 
 **Zusätzlich**: Nachhaltigkeit (Energieeffizienz, Ressourcen) beachten.
 
@@ -165,7 +180,7 @@ Würdest du es an eine Pinnwand hängen? Dann ist es okay.
 :::
 
 <br>
-[Vollständige Datenklassifikation auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Datenklassifikation.aspx){target="_blank"}
+[Vollständige Datenklassifikation auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-Informationssicherheit-Datenschutz-de/SitePages/Datenklassifikation.aspx){target="_blank"}
 
 ## Freigegebene Tools {.smaller}
 
@@ -178,7 +193,7 @@ Würdest du es an eine Pinnwand hängen? Dann ist es okay.
 
 [^1]: "Learning" muss manuell ausgeschaltet werden!
 
-[Alle abgeklärten Tools auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-IT-Applikationen-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx){target="_blank"}
+[Alle abgeklärten Tools auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-Informationssicherheit-Datenschutz-de/SitePages/Abgekl%C3%A4rte-KI-Tools.aspx){target="_blank"}
 
 
 
