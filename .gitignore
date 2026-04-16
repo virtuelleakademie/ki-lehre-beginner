@@ -50,3 +50,5 @@ pages/config.yaml
 
 # Generated files
 *.html
+# Claude Code
+CLAUDE.md
