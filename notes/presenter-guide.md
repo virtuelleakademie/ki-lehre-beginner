@@ -1,5 +1,13 @@
 # Presenter Guide: KI in der Lehre (Beginner)
 
+## 0. Vorab
+Es sollte geklärt/verfügbar sein:
+
+- TN-Liste
+- Evaluationslink
+- Raum (VA-Kalender)
+- eigener Laptop für Präsentation
+
 > Notizen entlang des Workshop-Ablaufs.
 > Links verweisen auf die jeweiligen Seiten/Abschnitte der Website.
 <!-- TODO: Claude in Folien explizite IDs vergeben lassen für robustere Verlinkung -->
@@ -36,6 +44,8 @@ Notizen:
 3. [Diskussion: „Wo stehst du?"](../workshop/einstieg/index.qmd#wo-stehst-du)
    - Timer durch Klick starten
    - Selbstorganisation in 2er-/3er-Teams funktioniert üblicherweise gut
+
+**Während TN Übung machen, TN-Liste ausfüllen**
 
 Notizen:
 
@@ -516,6 +526,8 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 ## 6. Abschluss
 
 [→ Abschluss](../workshop/abschluss/index.qmd)
+
+**Evaluationslink verfügbar machen **(als QR-Code funktioniert nicht gut)
 
 #### [Reflektion (Teil 1)](../workshop/abschluss/index.qmd#reflektion-teil-1)
 
