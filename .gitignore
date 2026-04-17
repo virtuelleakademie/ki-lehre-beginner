@@ -1,5 +1,3 @@
-
-
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -25,7 +23,8 @@ apps/*
 /.quarto/
 pages/*_cache/
 pages/*_files/
-/notes/
+/notes/*
+!/notes/presenter-guide.md
 /_do-not-build/**
 
 # venv
@@ -49,6 +48,8 @@ pages/config.yaml
 
 **/*.quarto_ipynb
 
+# Generated files
+*.html
 # Claude Code
 CLAUDE.md
 /.remember/
