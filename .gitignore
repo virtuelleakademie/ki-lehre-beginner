@@ -52,3 +52,4 @@ pages/config.yaml
 *.html
 # Claude Code
 CLAUDE.md
+/.remember/
