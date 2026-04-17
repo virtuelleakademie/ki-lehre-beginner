@@ -92,6 +92,22 @@ $presentation-heading-font: "News Cycle", sans-serif !default;
   margin-top: 0.3rem !important;
 }
 
+// Click-to-highlight fragments: fully visible before and after click
+.reveal .slides section .fragment.highlight-bg,
+.reveal .slides section .fragment.dim-out {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.reveal .slides section .fragment.highlight-bg.visible {
+  background-color: #D4A03E88;
+  border-radius: 3px;
+}
+
+.reveal .slides section .fragment.dim-out.visible {
+  opacity: 0.8 !important;
+}
+
 // OJS interactive elements in slides
 .reveal {
   .cell {

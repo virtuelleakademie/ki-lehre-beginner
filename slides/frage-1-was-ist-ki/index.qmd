@@ -180,7 +180,7 @@ Nicht alle Teile des Kontexts sind gleich wichtig:
 <br>
 
 :::{.r-fit-text}
-_"Die Familie, die sehr wohlhabend war, lebte in einem grossen Haus. Das Haus stand inmitten eines weitläufigen Gartens. Es war bekannt für seine prächtige Fassade und die grosszügigen ___"_
+_"[Die Familie, die sehr]{.fragment .dim-out data-fragment-index="1"} [wohlhabend]{.fragment .highlight-bg data-fragment-index="1"} [war, lebte in einem grossen]{.fragment .dim-out data-fragment-index="1"} [Haus]{.fragment .highlight-bg data-fragment-index="1"}[.]{.fragment .dim-out data-fragment-index="1"} [Das]{.fragment .dim-out data-fragment-index="1"} [Haus]{.fragment .highlight-bg data-fragment-index="1"} [stand inmitten eines weitläufigen]{.fragment .dim-out data-fragment-index="1"} [Gartens]{.fragment .highlight-bg data-fragment-index="1"}[.]{.fragment .dim-out data-fragment-index="1"} [Es war bekannt für seine]{.fragment .dim-out data-fragment-index="1"} [prächtige]{.fragment .highlight-bg data-fragment-index="1"} [Fassade]{.fragment .highlight-bg data-fragment-index="1"} [und die]{.fragment .dim-out data-fragment-index="1"} [grosszügigen]{.fragment .highlight-bg data-fragment-index="1"} [..."]{.fragment .dim-out data-fragment-index="1"}_
 :::
 
 <br>

@@ -22,7 +22,7 @@ Dieser Workshop beantwortet drei Fragen:
 |-------|-------|
 | **Was ist KI?** | Wie funktioniert das eigentlich? |
 | **Wofür kann KI verwendet werden?** | Möglichkeiten und Grenzen |
-| **Wofür sollte ich KI verwenden?** | Wann ist es sinnvoll, wann nicht? |
+| **Wann hilft KI, wann schadet sie?** | Wann fördert, wann hindert KI Lernen? |
 
 Die dritte Frage ist die wichtigste.
 
