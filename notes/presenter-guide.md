@@ -19,10 +19,13 @@ Es sollte geklärt/verfügbar sein:
    b. Kursleitung vorstellen
    c. [Weiterbildung & CAS](https://bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/)
 2. Website-Ressourcen zeigen
-   a. „Workshop" in Navbar öffnet Seitenleiste links
-   b. Dort: Präsentationen, unter Präsentationen: Inhalte ausformuliert
-   c. Prompting Guide benötigt evtl. BFH-Login
-3. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
+   a. „Workshop" in Navbar öffnet Seitenleiste links - diese durchgehen
+      - "Präsentation" --> unterhalb des Slide-Decks sind Inhalte ausformuliert
+3. Unter "Übersicht" 
+   a. [Lernziele](../workshop/index.qmd#lernziele) 
+      - dazu kurzer Exkurs: Wie funktioniert Lernen?
+   a. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
+   a. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
 4. Zeit für Fragen
 <!-- TODO: Reihenfolge der Webiste auf Präsentationsreihenfolge anpassen.-->
 
@@ -38,7 +41,7 @@ Notizen:
 
 1. [Einstiegsproblem „Szenario"](../workshop/einstieg/index.qmd#was-wir-heute-klären) vorstellen
    - Auf positive Formulierung achten
-2. [Lernziele](../workshop/index.qmd#lernziele): Kurzer Exkurs: Wie funktioniert Lernen?
+
 3. [Diskussion: „Wo stehst du?"](../workshop/einstieg/index.qmd#wo-stehst-du)
    - Timer durch Klick starten
    - Selbstorganisation in 2er-/3er-Teams funktioniert üblicherweise gut

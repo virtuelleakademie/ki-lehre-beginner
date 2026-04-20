@@ -14,6 +14,8 @@ Dieser Workshop beantwortet drei Fragen:
 | 2 | **Wofür kann KI verwendet werden?** | Möglichkeiten, Grenzen und BFH-Richtlinien |
 | 3 | **Wann hilft KI, wann schadet sie?** | Offloading vs. Outsourcing, Produktivität vs. Lernen |
 
+Die dritte Frage ist die wichtigste.
+
 ## Lernziele
 
 Am Ende dieses Workshops kannst du:

@@ -5,7 +5,6 @@ sidebar: workshop
 ---
 
 <!-- ## Der Elefant im Raum -->
-
 ::: {.scenario}
 Stelle dir vor: Jemand aus deinem Kurs hat eine hervorragende Arbeit abgegeben.
 
@@ -13,18 +12,6 @@ Kannst du sicher sein, dass sie selbst gedacht hat?
 
 Und wenn nicht: Was bedeutet das für deine Lehre?
 :::
-
-## Was wir heute klären
-
-Dieser Workshop beantwortet drei Fragen:
-
-| Frage | Fokus |
-|-------|-------|
-| **Was ist KI?** | Wie funktioniert das eigentlich? |
-| **Wofür kann KI verwendet werden?** | Möglichkeiten und Grenzen |
-| **Wann hilft KI, wann schadet sie?** | Wann fördert, wann hindert KI Lernen? |
-
-Die dritte Frage ist die wichtigste.
 
 ## Wo stehst du?
 
