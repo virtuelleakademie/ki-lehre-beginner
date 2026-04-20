@@ -1,4 +1,14 @@
 # Presenter Guide: KI in der Lehre (Beginner)
+Dieser Guide soll neuen Dozierenden bei der Durchführung des Kurses helfen.
+Es sind:
+1. Die Ablaufreihenfolge sowie Notizen zum Ablauf festgehalten
+2. z.T. Vorschläge, was bei den Folien zu sagen ist
+   a. *→ * kennzeichnet "Transitionen", mögliche Überleitungen zwischen Folien.
+   b. *Nicht alle folien haben Inhaltsvorschläge oder Transitionen*
+3. In aufklappbaren "Hintergrund"-Texten steht Wissen für Dozierende zur Verfügung. Diese müssen nicht standardmässig vermittelt werden, bereiten aber auf Rückfragen vor und geben einen Wissensvorsprung. 
+
+Der Guide ist als ***lebendes Dokument*** gedacht und kann nach Bedarf ergänzt werden. 
+
 
 ## 0. Vorab
 Es sollte geklärt/verfügbar sein:
@@ -10,8 +20,6 @@ Es sollte geklärt/verfügbar sein:
 
 > Notizen entlang des Workshop-Ablaufs.
 > Links verweisen auf die jeweiligen Seiten/Abschnitte der Website.
-<!-- TODO: Claude in Folien explizite IDs vergeben lassen für robustere Verlinkung -->
-<!-- TODO: Rückwärts-Link Folienreihenfolge in Präsentation zu Reihenfolge in presenter-guide sicherstellen -->
 ## 1. Begrüssung & Übersicht
 
 [→ Workshop-Übersicht](../workshop/index.qmd)
@@ -21,12 +29,14 @@ Es sollte geklärt/verfügbar sein:
    b. Kursleitung vorstellen
    c. [Weiterbildung & CAS](https://bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/)
 2. Website-Ressourcen zeigen
-   a. „Workshop" in Navbar öffnet Seitenleiste links
-   b. Dort: Präsentationen, unter Präsentationen: Inhalte ausformuliert
-   c. Prompting Guide benötigt evtl. BFH-Login
-3. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
+   a. „Workshop" in Navbar öffnet Seitenleiste links - diese durchgehen
+      - "Präsentation" --> unterhalb des Slide-Decks sind Inhalte ausformuliert
+3. Unter "Übersicht" 
+   a. [Lernziele](../workshop/index.qmd#lernziele) 
+      - zu 3. (wann hilft): kurzer Exkurs: Wie funktioniert Lernen?
+   b. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
+   c. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
 4. Zeit für Fragen
-<!-- TODO: Reihenfolge der Webiste auf Präsentationsreihenfolge anpassen.-->
 
 Notizen:
 
@@ -40,7 +50,7 @@ Notizen:
 
 1. [Einstiegsproblem „Szenario"](../workshop/einstieg/index.qmd#was-wir-heute-klären) vorstellen
    - Auf positive Formulierung achten
-2. [Lernziele](../workshop/index.qmd#lernziele): Kurzer Exkurs: Wie funktioniert Lernen?
+
 3. [Diskussion: „Wo stehst du?"](../workshop/einstieg/index.qmd#wo-stehst-du)
    - Timer durch Klick starten
    - Selbstorganisation in 2er-/3er-Teams funktioniert üblicherweise gut
@@ -64,7 +74,7 @@ Notizen:
 
 *→ Wie funktioniert KI?*
 
-#### [Frage 1: Was ist KI?](../slides/frage-1-was-ist-ki/index.qmd) — *Wie funktionieren Sprachmodelle wirklich?*
+#### [01 - Frage 1: Was ist KI?](../slides/frage-1-was-ist-ki/index.qmd) — *Wie funktionieren Sprachmodelle wirklich?*
 
 - KI heute meist «Sprachmodelle» / Large Language Models (LLMs)
 - bzw. Zusammenspiel von «generativen» Modellen
@@ -97,7 +107,7 @@ Generative KI: erstellt neue Daten
 <br>
 *→ Wie sehen typische Nutzerinterfaces solcher KI aus?*
 
-#### [Was sind Chatbots?](../slides/frage-1-was-ist-ki/index.qmd#was-sind-chatbots)
+#### [02 - Was sind Chatbots?](../slides/frage-1-was-ist-ki/index.qmd#p1-f02-was-sind-chatbots)
 
 - Wir sehen gleich noch Copilot (BFH) – aber die meisten recht ähnlich.
 - Wissen über mich (je nach Einstellungen)
@@ -115,25 +125,25 @@ Generative KI: erstellt neue Daten
 
 *→ Dazu später mehr. Wir fokussieren erst einmal auf  das Sprachmodell. Wie funktioniert das?*
 
-#### [Was sind LLMs?](../slides/frage-1-was-ist-ki/index.qmd#was-sind-llms)
+#### [03 - Was sind LLMs?](../slides/frage-1-was-ist-ki/index.qmd#p1-f03-was-sind-llms)
 
 - Side-Note: Warum ist Autocomplete auf meinem Smartphone so schlecht? --> Weil es 5 Jahre alt ist.
 
 *→ Im hintergrund werden Wahrscheinlichkeiten berechnet*
 
-#### [Die Kernidee](../slides/frage-1-was-ist-ki/index.qmd#die-kernidee)
+#### [04 - Die Kernidee](../slides/frage-1-was-ist-ki/index.qmd#p1-f04-kernidee)
 
 - [Lies: "Wahrscheinlichkeit nächstes Wort *gegeben* Kontext und Modell]
 
 *→ Wenn wir also z.B. einen Satzanfang vorgeben...*
 
-#### [Was bedeutet das konkret?](../slides/frage-1-was-ist-ki/index.qmd#was-bedeutet-das-konkret)
+#### [05 - Was bedeutet das konkret?](../slides/frage-1-was-ist-ki/index.qmd#p1-f05-was-bedeutet-das-konkret)
 
 -
 
 *→ Aufgrund der Wahrscheinlichkeit ist jede tatsächliche Generierung anders*
 
-#### [Token-Vorhersage und Temperatur](../slides/frage-1-was-ist-ki/index.qmd#token-vorhersage-und-temperatur)
+#### [06 - Token-Vorhersage und Temperatur](../slides/frage-1-was-ist-ki/index.qmd#p1-f06-token-vorhersage-temperatur)
 
 - Modell kann Wahrscheinlichkeiten unterschiedlich nutzen
 - "Kreativität" des Outputs
@@ -142,13 +152,23 @@ Generative KI: erstellt neue Daten
 - [Wahrscheinlichkeiten tatsächlich nicht über nur 5, sondern alle (30-130k) tokens. Top-5 summieren also nicht zu 100%.]
 - Temperatur 0 ist deterministisch (immer dasselbe nächste Wort)
 
-<!-- TODO: Hintergrundwissen Temperature einfügen -->
+<details>
+<summary>Hintergrund: Tokens, Temperature & Selection</summary>
+
+**Tokens:** Sprachmodelle verarbeiten Text nicht Wort für Wort, sondern in Tokens — kleinen Bausteinen, die oft Wortteilen oder Silben entsprechen. Moderne Modelle haben typischerweise ein Vokabular von ca. 30'000–130'000 Tokens; ein Wort wie "Temperatur" wird z.B. in mehrere Tokens zerlegt.
+
+**Temperature:** Dieser Parameter skaliert die Wahrscheinlichkeitsverteilung vor der Token-Auswahl: 
+Grösseres T macht die Verteilung flacher, sodass im Training seltenere Tokens gewählt werden - das Modell wird variabler, "kreativer" und fehleranfälliger. Kleineres T "schärft" die Verteilung, sodass eher standardmässige Folgetokens ausgewählt werden. **T=0** wählt deterministisch das wahrscheinlichste Token.
+
+**Selection:** Auch bei T>0 wird selten aus der gesamten Verteilung gesampelt. Gängige Strategien sind **Top-k** (nur die k wahrscheinlichsten Tokens kommen in Frage) und **Top-p / Nucleus** (kleinste Menge, deren kumulative Wahrscheinlichkeit p überschreitet). Aus dieser Restmenge wird gewichtet zufällig gewählt.
+
+</details>
+<br>
 <!-- TODO: LM Studio Übung Temperature einfügen-->
-<!-- TODO: Hintergrundwissen Tokens, Temperature & Selection einfügen -->
 
 *→*
 
-#### [Vorhersage in Aktion](../slides/frage-1-was-ist-ki/index.qmd#vorhersage-in-aktion)
+#### [07 - Vorhersage in Aktion](../slides/frage-1-was-ist-ki/index.qmd#p1-f07-vorhersage-in-aktion)
 
 - [Teilnehmende selbst überlegen lassen]
 - Bei KI: "Attention"-Mechanismus
@@ -160,7 +180,7 @@ Generative KI: erstellt neue Daten
 
 *→*
 
-#### [Wie generieren LLMs ganze Sequenzen?](../slides/frage-1-was-ist-ki/index.qmd#wie-generieren-llms-ganze-sequenzen)
+#### [08 - Wie generieren LLMs ganze Sequenzen?](../slides/frage-1-was-ist-ki/index.qmd#p1-f08-sequenzen-generieren)
 
 - Generierung ist "autoregressiv"
    - nächstes Wort = alles bisherige neu in Kontext
@@ -170,7 +190,7 @@ Generative KI: erstellt neue Daten
 
 *→ Woher können LLMs dies?*
 
-#### [Wie werden LLMs trainiert?](../slides/frage-1-was-ist-ki/index.qmd#wie-werden-llms-trainiert)
+#### [09 - Wie werden LLMs trainiert?](../slides/frage-1-was-ist-ki/index.qmd#p1-f09-training)
 
 - Links: Pretraining
    - Textproduktion und Inhalte
@@ -186,11 +206,29 @@ Generative KI: erstellt neue Daten
       - z.B. nicht beleidigen, Sycophancy
    - Datenbasis: Ranking von Antworten durch Menschen
 
-<!-- TODO: Hintergrundwissen "Sycophancy" hinzufügen -->
+<details>
+<summary>Hintergrund: Sycophancy</summary>
+
+Als *Sycophancy* (deutsch etwa *Schmeichelei* oder *unterwürfiges Verhalten*) bezeichnet man die Tendenz von Sprachmodellen, Nutzer:innen nach dem Mund zu reden: deren Meinung zuzustimmen, Annahmen unkritisch zu bestätigen oder übertrieben lobend auf Eingaben zu reagieren — auch dann, wenn eine sachliche Korrektur angebracht wäre.
+
+**Wie entsteht das?**
+In einer der Trainingsphasen bewerten Menschen verschiedene Modellantworten und wählen die «bessere» aus. Freundliche, zustimmende und bestätigende Antworten werden dabei systematisch bevorzugt. Das Modell lernt so nicht nur, *hilfreich* zu sein, sondern auch, zu *gefallen* — und diese beiden Ziele fallen nicht immer zusammen.
+
+**Auswirkungen in der Nutzung:**
+
+- Falsche Annahmen oder Fehler in Prompts werden eher bestätigt als korrigiert.
+- Kritisches Gegenhalten («das stimmt so nicht») ist seltener, als es sachlich angemessen wäre.
+- Wer Bestätigung sucht, bekommt sie leichter — auch für problematische Ideen.
+- Suggestive Fragen («Ist das nicht eigentlich so, dass…?») beeinflussen die Antwort stärker, als man es von einer sachlichen Auskunft erwarten würde.
+
+Für die Lehre heisst das: KI-Antworten sind kein neutrales Gegenüber. Wer die KI als Sparringspartner für eigene Ideen nutzt, sollte bewusst auch nach Gegenargumenten fragen.
+
+</details>
+<br>
 
 *→*
 
-#### [Chain-of-Thought "Denken"](../slides/frage-1-was-ist-ki/index.qmd#chain-of-thought-denken)
+#### [10 - Chain-of-Thought "Denken"](../slides/frage-1-was-ist-ki/index.qmd#p1-f10-chain-of-thought)
 
 - Analogie: Mensch bei schwieriger (Rechen-)aufgabe
    - nicht sofort Lösung,
@@ -198,26 +236,26 @@ Generative KI: erstellt neue Daten
 
 *→ Ein Beispiel..*
 
-#### [Beispiel: 9.11 vs 9.8](../slides/frage-1-was-ist-ki/index.qmd#beispiel-9.11-vs-9.8)
+#### [11 - Beispiel: 9.11 vs 9.8](../slides/frage-1-was-ist-ki/index.qmd#p1-f11-beispiel-9-11)
 
 - 9.8 ist grösser, da 9.80
 <!-- TODO: ggf. Übung LM Studio mit/ohne Thinking zeigen, z.b. mit 9.11 vs. 9.8 aufgabe.-->
 
 *→*
 
-#### ["Think Deeper" in Copilot](../slides/frage-1-was-ist-ki/index.qmd#think-deeper-in-copilot)
+#### [12 - "Think Deeper" in Copilot](../slides/frage-1-was-ist-ki/index.qmd#p1-f12-think-deeper)
 
 -
 
 *→*
 
-#### [Warum funktioniert "Denken"?](../slides/frage-1-was-ist-ki/index.qmd#warum-funktioniert-denken)
+#### [13 - Warum funktioniert "Denken"?](../slides/frage-1-was-ist-ki/index.qmd#p1-f13-warum-denken)
 
 -
 
 *→*
 
-#### [Takeaway](../slides/frage-1-was-ist-ki/index.qmd#takeaway)
+#### [14 - Takeaway](../slides/frage-1-was-ist-ki/index.qmd#p1-f14-takeaway)
 
 -
 
@@ -279,56 +317,56 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 [→ Webseite](../workshop/frage-2-wozu-kann-ki/index.qmd) |
 [→ Folien](../slides/frage-2-wozu-kann-ki/index.qmd)
 
-#### [Frage 2: Wofür kann KI verwendet werden?](../slides/frage-2-wozu-kann-ki/index.qmd) — *Möglichkeiten, Grenzen und was an der BFH gilt*
+#### [01 - Frage 2: Wofür kann KI verwendet werden?](../slides/frage-2-wozu-kann-ki/index.qmd) — *Möglichkeiten, Grenzen und was an der BFH gilt*
 
 -
 
 *→ Sprachmodelle noch die Grundlage, aber*
 
-#### [Mehr als Textgenerierung](../slides/frage-2-wozu-kann-ki/index.qmd#mehr-als-textgenerierung)
+#### [02 - Mehr als Textgenerierung](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f02-mehr-als-textgenerierung)
 
 - noch zur Hälfte Teil 1.
 - Wie schon erwähnt: häufig "Agenten", bzw. "Multi-Agent-Frameworks"
    - spezialisierte Sprachmodelle, die Werkzeuge benutzen und miteinander kollaborieren können
 *→ Was also kann moderne KI? (Nicht unbedingt "was sollte"!)*
 
-#### [Fragen beantworten](../slides/frage-2-wozu-kann-ki/index.qmd#fragen-beantworten)
+#### [03 - Fragen beantworten](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f03-fragen-beantworten)
 
 -
 
 *→*
 
-#### [Bilder analysieren](../slides/frage-2-wozu-kann-ki/index.qmd#bilder-analysieren)
+#### [04 - Bilder analysieren](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f04-bilder-analysieren)
 
 - Sogenannte Vision Language Models (VLMs)
 
 *→*
 
-#### [Dokumente zusammenfassen](../slides/frage-2-wozu-kann-ki/index.qmd#dokumente-zusammenfassen)
+#### [05 - Dokumente zusammenfassen](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f05-dokumente-zusammenfassen)
 
 -
 
 *→*
 
-#### [Output strukturieren](../slides/frage-2-wozu-kann-ki/index.qmd#output-strukturieren)
+#### [06 - Output strukturieren](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f06-output-strukturieren)
 
 - auch word, ppt erstellen
 
 *→*
 
-#### [Websuche](../slides/frage-2-wozu-kann-ki/index.qmd#websuche)
+#### [07 - Websuche](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f07-websuche)
 
 - Aktuelle Chatbots finden zumeist automatisch heraus, was von ihnen verlangt wird
 
 *→*
 
-#### [Datenanalyse](../slides/frage-2-wozu-kann-ki/index.qmd#datenanalyse)
+#### [08 - Datenanalyse](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f08-datenanalyse)
 
 -
 
 *→ Darüber hinaus, viele spezialisierte Anwendungen*
 
-#### [Custom GPTs](../slides/frage-2-wozu-kann-ki/index.qmd#custom-gpts)
+#### [09 - Custom GPTs](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f09-custom-gpts)
 
 - Selbst (oder durch andere Nutzende) erstellte Agenten
 - Copilot: Agenten
@@ -336,7 +374,7 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 *→ Wie ihr vermutlich gehört habt, ist das ganze nicht problemfrei*
 
-#### [Aber: Grenzen und Gefahren](../slides/frage-2-wozu-kann-ki/index.qmd#aber-grenzen-und-gefahren)
+#### [10 - Aber: Grenzen und Gefahren](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f10-grenzen-gefahren)
 
 - Urheberrecht:
    - Wurde auf "dem Internet" trainiert
@@ -358,20 +396,20 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 *→*
 
-#### [Keine Wissensdatenbank](../slides/frage-2-wozu-kann-ki/index.qmd#keine-wissensdatenbank)
+#### [11 - Keine Wissensdatenbank](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f11-keine-wissensdatenbank)
 
 - LLMs können per Design nicht konzeptionell denken 
 - auch wenn sie z.T. erstaunlich gute Ergebnisse in konzeptionellen Tasks liefern
 
 *→*
 
-#### [KI an der BFH](../slides/frage-2-wozu-kann-ki/index.qmd#ki-an-der-bfh)
+#### [12 - KI an der BFH](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f12-ki-an-der-bfh)
 
 - Die Policy gilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb.
 
 *→*
 
-#### [Deine Verantwortung als Lehrperson](../slides/frage-2-wozu-kann-ki/index.qmd#deine-verantwortung-als-lehrperson)
+#### [13 - Deine Verantwortung als Lehrperson](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f13-verantwortung-lehrperson)
 
 - Wer hilft?
    - CISO (Datenschautzbeauftragte)
@@ -380,13 +418,13 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 *→*
 
-#### [Rechtliche Aspekte](../slides/frage-2-wozu-kann-ki/index.qmd#rechtliche-aspekte)
+#### [14 - Rechtliche Aspekte](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f14-rechtliche-aspekte)
 
 -
 
 *→ Was bedeutet das für die Praxis?*
 
-#### [Was darf in den Chatbot?](../slides/frage-2-wozu-kann-ki/index.qmd#was-darf-in-den-chatbot)
+#### [15 - Was darf in den Chatbot?](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f15-was-darf-in-chatbot)
 
 - Unterrichtsskripte und Bücher: 
    - eigenes Thema, derzeit keine klare Antwort
@@ -396,19 +434,19 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
    - Lehrbuchausschnitte dürfen z.B. nicht auf Dropbox
 *→*
 
-#### [Freigegebene Tools](../slides/frage-2-wozu-kann-ki/index.qmd#freigegebene-tools)
+#### [16 - Freigegebene Tools](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f16-freigegebene-tools)
 
 -
 
 *→*
 
-#### [Datenschutz: Copilot](../slides/frage-2-wozu-kann-ki/index.qmd#datenschutz-copilot)
+#### [17 - Datenschutz: Copilot](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f17-datenschutz-copilot)
 
 -
 
 *→*
 
-#### [Takeaway](../slides/frage-2-wozu-kann-ki/index.qmd#takeaway)
+#### [18 - Takeaway](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f18-takeaway)
 
 -
 
@@ -465,39 +503,46 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 [→ Webseite](../workshop/frage-3-wozu-soll-ich/index.qmd) |
 [→ Folien](../slides/frage-3-wozu-soll-ich/index.qmd)
 
-#### [Frage 3: Wofür sollte ich KI verwenden?](../slides/frage-3-wozu-soll-ich/index.qmd) — *Offloading vs. Outsourcing: Wann ist KI-Nutzung sinnvoll?*
+#### [01 - Frage 3: Wofür sollte ich KI verwenden?](../slides/frage-3-wozu-soll-ich/index.qmd) — *Offloading vs. Outsourcing: Wann ist KI-Nutzung sinnvoll?*
 
 - Verweis auf Kurs: KI in der Lehre: Lernen mit KI gestalten
 - dort detaillierter lernpsychologische Grundlagen & Konsequenzen
 
 *→*
 
-#### [Die Konzepte](../slides/frage-3-wozu-soll-ich/index.qmd#die-konzepte)
+#### [02 - Die Konzepte](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f02-konzepte)
 
 - Nuancen bei Beispielen: Kommt auf Art der Verwendung an.
-<!-- TODO: Info Offloading vs. Outsourcing einfügen -->
+
+<details>
+<summary>Hintergrund: Cognitive Offloading vs. Cognitive Outsourcing</summary>
+
+**Kognitives Offloading** ist ein etablierter Begriff aus der Kognitionspsychologie (Risko & Gilbert, 2016): Man lagert Gedächtnis- oder Berechnungsaufgaben auf externe Werkzeuge aus (Notizen, Kalender, Taschenrechner), behält aber die eigentliche Denk- und Entscheidungsarbeit selbst. **Cognitive Outsourcing** beschreibt dagegen, dass das Denken selbst delegiert wird — das Werkzeug entscheidet und produziert, die Person konsumiert nur das Ergebnis. Die Unterscheidung liegt nicht im Werkzeug, sondern in der Art der Nutzung: Derselbe Chatbot kann offloaden (z.B. beim strukturierten Durchdenken unterstützen) oder outsourcen (z.B. einen Text komplett schreiben). Bezogen auf das Lernen hängt die Unterscheidung vom Lernziel ab. Die Verwendung eines Taschenrechners ist für Grundschulkinder, die Kopfrechnen lernen sollen Outsourcing. Für Studierende, die komplexe Konzepte in der Mathematik verstehen sollen, ist es eher Offloading. 
+
+</details>
+<br>
 
 *→*
 
-#### [Die zwei Fragen](../slides/frage-3-wozu-soll-ich/index.qmd#die-zwei-fragen)
+#### [03 - Die zwei Fragen](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f03-zwei-fragen)
 
 -
 
 *→*
 
-#### [Das Produktivitäts-Lern-Paradox](../slides/frage-3-wozu-soll-ich/index.qmd#das-produktivitäts-lern-paradox)
+#### [04 - Das Produktivitäts-Lern-Paradox](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f04-produktivitaets-lern-paradox)
 
 -
 
 *→*
 
-#### [Für Lehrende vs. Studierende](../slides/frage-3-wozu-soll-ich/index.qmd#für-lehrende-vs.-studierende)
+#### [05 - Für Lehrende vs. Studierende](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f05-lehrende-vs-studierende)
 
 -
 
 *→*
 
-#### [Takeaway](../slides/frage-3-wozu-soll-ich/index.qmd#takeaway)
+#### [06 - Takeaway](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f06-takeaway)
 
 -
 

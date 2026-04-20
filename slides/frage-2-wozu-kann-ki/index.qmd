@@ -11,7 +11,7 @@ format:
 footer: "KI in der Lehre: Beginner"
 ---
 
-## Mehr als Textgenerierung {.smaller}
+## Mehr als Textgenerierung {#p2-f02-mehr-als-textgenerierung .smaller}
 
 Moderne Chatbots sind **keine reinen Textgeneratoren** mehr.
 
@@ -34,35 +34,35 @@ Dies ist eigentlich noch zur Hälfte Teil 1.
 Moderne KI-Interfaces sind zumeist Agenten, bzw. Multi-Agent-Frameworks. 
 :::
 
-## Fragen beantworten
+## Fragen beantworten {#p2-f03-fragen-beantworten}
 
 ![](../../assets/images/fragen-beantworten.png)
 
-## Bilder analysieren
+## Bilder analysieren {#p2-f04-bilder-analysieren}
 
 ![](../../assets/images/bilder-analysieren.png)
 
-## Dokumente zusammenfassen
+## Dokumente zusammenfassen {#p2-f05-dokumente-zusammenfassen}
 
 ![](../../assets/images/dokumente-zusammenfassen.png)
 
-## Output strukturieren
+## Output strukturieren {#p2-f06-output-strukturieren}
 
 ![](../../assets/images/output-strukturieren.png)
 
-## Websuche
+## Websuche {#p2-f07-websuche}
 
 ![](../../assets/images/websuche.png)
 
-## Datenanalyse
+## Datenanalyse {#p2-f08-datenanalyse}
 
 ![](../../assets/images/datenanalyse.png)
 
-## Custom GPTs
+## Custom GPTs {#p2-f09-custom-gpts}
 
 ![](../../assets/images/gpts.png)
 
-## Aber: Grenzen und Gefahren
+## Aber: Grenzen und Gefahren {#p2-f10-grenzen-gefahren}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -87,7 +87,7 @@ Energieverbrauch:
     - KI-App: Individuelle Berechnungen pro Nutzeranfrage. "Etwa so, als würde man die Wettermodelle mit jedem Nutzeraufruf neu rechnen." 
 :::
 
-## Keine Wissensdatenbank
+## Keine Wissensdatenbank {#p2-f11-keine-wissensdatenbank}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -103,7 +103,7 @@ Energieverbrauch:
 :::
 ::::
 
-## KI an der BFH
+## KI an der BFH {#p2-f12-ki-an-der-bfh}
 
 Die BFH hat eine KI-Policy verabschiedet (Mai 2025):
 
@@ -135,7 +135,7 @@ Die Policy gilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb.
 **Wer hilft?** CISO, Fachstelle Datenschutz, Virtuelle Akademie.
 :::
 
-## Deine Verantwortung als Lehrperson
+## Deine Verantwortung als Lehrperson {#p2-f13-verantwortung-lehrperson}
 
 Laut KI-Policy sind **Lehrende verantwortlich** für:
 
@@ -144,7 +144,7 @@ Laut KI-Policy sind **Lehrende verantwortlich** für:
 - Transparente Information der Studierenden über eingesetzte Tools
 - Festlegung, wie KI-generierte Inhalte zu kennzeichnen sind
 
-## Rechtliche Aspekte
+## Rechtliche Aspekte {#p2-f14-rechtliche-aspekte}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -164,7 +164,7 @@ Laut KI-Policy sind **Lehrende verantwortlich** für:
 :::
 ::::
 
-## Was darf in den Chatbot? {.smaller}
+## Was darf in den Chatbot? {#p2-f15-was-darf-in-chatbot .smaller}
 <br>
 {{< fa circle-check >}} **Unbedenklich** (ÖFFENTLICH/INTERN):
 
@@ -182,7 +182,7 @@ Würdest du es an eine Pinnwand hängen? Dann ist es okay.
 <br>
 [Vollständige Datenklassifikation auf mybfh {{< fa arrow-up-right-from-square >}}](https://bernerfachhochschule.sharepoint.com/sites/mybfh-Informationssicherheit-Datenschutz-de/SitePages/Datenklassifikation.aspx){target="_blank"}
 
-## Freigegebene Tools {.smaller}
+## Freigegebene Tools {#p2-f16-freigegebene-tools .smaller}
 
 | Tool | ÖFFENTLICH | INTERN | VERTRAULICH |
 |------|:----------:|:------:|:-----------:|
@@ -197,7 +197,7 @@ Würdest du es an eine Pinnwand hängen? Dann ist es okay.
 
 
 
-## Datenschutz: Copilot
+## Datenschutz: Copilot {#p2-f17-datenschutz-copilot}
 
 Microsoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:
 
@@ -213,7 +213,7 @@ Microsoft Copilot garantiert BFH-Mitarbeitenden Datenschutz:
 ::::
 
 
-## Takeaway
+## Takeaway {#p2-f18-takeaway}
 
 ::: {.key-point}
 ## Antwort auf Frage 2
