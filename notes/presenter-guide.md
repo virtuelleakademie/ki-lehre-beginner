@@ -3,8 +3,10 @@ Dieser Guide soll neuen Dozierenden bei der Durchführung des Kurses helfen.
 Es sind:
 1. Die Ablaufreihenfolge sowie Notizen zum Ablauf festgehalten
 2. z.T. Vorschläge, was bei den Folien zu sagen ist
-   a. *→ * kennzeichnet Transitionen
-   a. *Nicht alle folien haben Inhaltsvorschläge oder Transitionen*
+   a. *→ * kennzeichnet "Transitionen", mögliche Überleitungen zwischen Folien.
+   b. *Nicht alle folien haben Inhaltsvorschläge oder Transitionen*
+3. In aufklappbaren "Hintergrund"-Texten steht Wissen für Dozierende zur Verfügung. Diese müssen nicht standardmässig vermittelt werden, bereiten aber auf Rückfragen vor und geben einen Wissensvorsprung. 
+
 Der Guide ist als ***lebendes Dokument*** gedacht und kann nach Bedarf ergänzt werden. 
 
 
@@ -32,8 +34,8 @@ Es sollte geklärt/verfügbar sein:
 3. Unter "Übersicht" 
    a. [Lernziele](../workshop/index.qmd#lernziele) 
       - zu 3. (wann hilft): kurzer Exkurs: Wie funktioniert Lernen?
-   a. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
-   a. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
+   b. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
+   c. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
 4. Zeit für Fragen
 
 Notizen:
