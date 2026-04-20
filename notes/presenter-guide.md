@@ -1,4 +1,12 @@
 # Presenter Guide: KI in der Lehre (Beginner)
+Dieser Guide soll neuen Dozierenden bei der Durchführung des Kurses helfen.
+Es sind:
+1. Die Ablaufreihenfolge sowie Notizen zum Ablauf festgehalten
+2. z.T. Vorschläge, was bei den Folien zu sagen ist
+   a. *→ * kennzeichnet Transitionen
+   a. *Nicht alle folien haben Inhaltsvorschläge oder Transitionen*
+Der Guide ist als ***lebendes Dokument*** gedacht und kann nach Bedarf ergänzt werden. 
+
 
 ## 0. Vorab
 Es sollte geklärt/verfügbar sein:
