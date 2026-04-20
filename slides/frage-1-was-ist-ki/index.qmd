@@ -11,7 +11,7 @@ format:
 footer: "KI in der Lehre: Beginner"
 ---
 
-## Was sind Chatbots?
+## Was sind Chatbots? {#p1-f02-was-sind-chatbots}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -33,7 +33,7 @@ footer: "KI in der Lehre: Beginner"
 :::
 ::::
 
-## Was sind LLMs?
+## Was sind LLMs? {#p1-f03-was-sind-llms}
 
 :::: {.columns}
 ::: {.column width="60%"}
@@ -44,7 +44,7 @@ Ein LLM kann man sich wie einen ausgefeilten Autocomplete-Mechanismus vorstellen
 :::
 ::::
 
-## Die Kernidee
+## Die Kernidee {#p1-f04-kernidee}
 
 Sprachmodelle sagen das **nächste Wort** vorher.
 
@@ -61,7 +61,7 @@ $$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 
 Jede Vorhersage basiert auf dem **Kontext** und dem internen **Modell**.
 
-## Was bedeutet das konkret? {.smaller}
+## Was bedeutet das konkret? {#p1-f05-was-bedeutet-das-konkret .smaller}
 
 Gegeben einen Satzanfang wie _"Der Hund liegt auf dem"_, berechnet das Modell die Wahrscheinlichkeit für jedes mögliche nächste Wort:
 
@@ -75,7 +75,7 @@ Zwei Faktoren bestimmen diese Vorhersage:
 1. **Kontext**: Was wurde bisher gesagt?
 2. **Modell**: Was hat das System aus Trainingsdaten gelernt?
 
-## Token-Vorhersage und Temperatur {.smaller}
+## Token-Vorhersage und Temperatur {#p1-f06-token-vorhersage-temperatur .smaller}
 
 ```{ojs}
 //| echo: false
@@ -173,7 +173,7 @@ Wahrscheinlichkeiten tatsächlich nicht über nur 5, sondern alle (30-130k) toke
 :::
 
 
-## Vorhersage in Aktion
+## Vorhersage in Aktion {#p1-f07-vorhersage-in-aktion}
 
 Nicht alle Teile des Kontexts sind gleich wichtig:
 
@@ -187,7 +187,7 @@ _"[Die Familie, die sehr]{.fragment .dim-out data-fragment-index="1"} [wohlhaben
 
 Welche Wörter sind besonders wichtig für die Vorhersage?
 
-## Wie generieren LLMs ganze Sequenzen?
+## Wie generieren LLMs ganze Sequenzen? {#p1-f08-sequenzen-generieren}
 
 <br>
 
@@ -195,7 +195,7 @@ $$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 
 ![](../../assets/images/hf-is-a-startup.gif)
 
-## Wie werden LLMs trainiert?
+## Wie werden LLMs trainiert? {#p1-f09-training}
 
 ![](../../assets/images/llm-training.png)
 
@@ -215,7 +215,7 @@ Auch wir vervollständigen Muster auf Basis von Erfahrung, nicht durch direkten 
 3. Reinforcement Learnint from Human Feedback (RLHF), Direct Preference Optimization (DPO), und andere... 
 :::
 
-## Chain-of-Thought "Denken"
+## Chain-of-Thought "Denken" {#p1-f10-chain-of-thought}
 
 Wenn wir das Modell auffordern, "Schritt für Schritt zu denken":
 
@@ -225,7 +225,7 @@ Wenn wir das Modell auffordern, "Schritt für Schritt zu denken":
 
 Das "Denken" ist zusätzliche Textgenerierung. Dieser Text dient als erweiterter Kontext.
 
-## Beispiel: 9.11 vs 9.8
+## Beispiel: 9.11 vs 9.8 {#p1-f11-beispiel-9-11}
 
 **Frage**: "Was ist grösser: 9.11 oder 9.8?"
 
@@ -241,7 +241,7 @@ Das "Denken" ist zusätzliche Textgenerierung. Dieser Text dient als erweiterter
 Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
 :::
 
-## "Think Deeper" in Copilot
+## "Think Deeper" in Copilot {#p1-f12-think-deeper}
 
 ::: {.r-stack}
 ![](../../assets/images/copilot-default.png){.fragment width="70%"}
@@ -253,7 +253,7 @@ Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
 ![](../../assets/images/copilot-reasoning.png){.fragment width="80%" style="border: 3px solid #A3195B; border-radius: 8px; padding: 5px;"}
 :::
 
-## Warum funktioniert "Denken"?
+## Warum funktioniert "Denken"? {#p1-f13-warum-denken}
 
 ::: {.key-point}
 ## Mehr Kontext, bessere Vorhersagen
@@ -263,7 +263,7 @@ Warum? Mehr Tokens = mehr "Rechenzeit" für die statistische Vorhersage
 Die Implementierung unterscheidet sich von menschlichem Denken, aber die Funktion ist ähnlich: Schritt für Schritt zum Ziel.
 :::
 
-## Takeaway
+## Takeaway {#p1-f14-takeaway}
 
 ::: {.key-point}
 ## Antwort auf Frage 1

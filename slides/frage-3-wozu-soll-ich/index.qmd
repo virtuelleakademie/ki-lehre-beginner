@@ -11,7 +11,7 @@ format:
 footer: "KI in der Lehre: Beginner"
 ---
 
-## Die Konzepte {.smaller}
+## Die Konzepte {#p3-f02-konzepte .smaller}
 
 Zwei verschiedene Arten, kognitive Arbeit auszulagern:
 
@@ -42,7 +42,7 @@ Das Werkzeug **entscheidet** für dich.
 :::
 ::::
 
-## Die zwei Fragen
+## Die zwei Fragen {#p3-f03-zwei-fragen}
 
 <br>
 
@@ -51,7 +51,7 @@ Das Werkzeug **entscheidet** für dich.
 2. **Solltest du das eigentlich selbst üben?**
 :::
 
-## Das Produktivitäts-Lern-Paradox
+## Das Produktivitäts-Lern-Paradox {#p3-f04-produktivitaets-lern-paradox}
 
 ::: {.key-point}
 ## Das zentrale Problem
@@ -63,7 +63,7 @@ Aber Lernen braucht **kognitive Anstrengung**.
 Wenn Studierende auslagern, was sie üben sollten, bekommen sie das **Produkt**, aber nicht den **Lerneffekt**.
 :::
 
-## Für Lehrende vs. Studierende {.smaller}
+## Für Lehrende vs. Studierende {#p3-f05-lehrende-vs-studierende .smaller}
 
 <br> 
 
@@ -99,7 +99,7 @@ Outsourcing ist oft **problematisch**:
 ::: -->
 
 
-## Takeaway
+## Takeaway {#p3-f06-takeaway}
 
 ::: {.key-point}
 ## Antwort auf Frage 3
