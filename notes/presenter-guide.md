@@ -23,11 +23,10 @@ Es sollte geklärt/verfügbar sein:
       - "Präsentation" --> unterhalb des Slide-Decks sind Inhalte ausformuliert
 3. Unter "Übersicht" 
    a. [Lernziele](../workshop/index.qmd#lernziele) 
-      - dazu kurzer Exkurs: Wie funktioniert Lernen?
+      - zu 3. (wann hilft): kurzer Exkurs: Wie funktioniert Lernen?
    a. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
    a. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
 4. Zeit für Fragen
-<!-- TODO: Reihenfolge der Webiste auf Präsentationsreihenfolge anpassen.-->
 
 Notizen:
 
@@ -143,9 +142,19 @@ Generative KI: erstellt neue Daten
 - [Wahrscheinlichkeiten tatsächlich nicht über nur 5, sondern alle (30-130k) tokens. Top-5 summieren also nicht zu 100%.]
 - Temperatur 0 ist deterministisch (immer dasselbe nächste Wort)
 
-<!-- TODO: Hintergrundwissen Temperature einfügen -->
+<details>
+<summary>Hintergrund: Tokens, Temperature & Selection</summary>
+
+**Tokens:** Sprachmodelle verarbeiten Text nicht Wort für Wort, sondern in Tokens — kleinen Bausteinen, die oft Wortteilen oder Silben entsprechen. Moderne Modelle haben typischerweise ein Vokabular von ca. 30'000–130'000 Tokens; ein Wort wie "Temperatur" wird z.B. in mehrere Tokens zerlegt.
+
+**Temperature:** Dieser Parameter skaliert die Wahrscheinlichkeitsverteilung vor der Token-Auswahl: 
+Grösseres T macht die Verteilung flacher, sodass im Training seltenere Tokens gewählt werden - das Modell wird variabler, "kreativer" und fehleranfälliger. Kleineres T "schärft" die Verteilung, sodass eher standardmässige Folgetokens ausgewählt werden. **T=0** wählt deterministisch das wahrscheinlichste Token.
+
+**Selection:** Auch bei T>0 wird selten aus der gesamten Verteilung gesampelt. Gängige Strategien sind **Top-k** (nur die k wahrscheinlichsten Tokens kommen in Frage) und **Top-p / Nucleus** (kleinste Menge, deren kumulative Wahrscheinlichkeit p überschreitet). Aus dieser Restmenge wird gewichtet zufällig gewählt.
+
+</details>
+<br>
 <!-- TODO: LM Studio Übung Temperature einfügen-->
-<!-- TODO: Hintergrundwissen Tokens, Temperature & Selection einfügen -->
 
 *→*
 
@@ -187,7 +196,25 @@ Generative KI: erstellt neue Daten
       - z.B. nicht beleidigen, Sycophancy
    - Datenbasis: Ranking von Antworten durch Menschen
 
-<!-- TODO: Hintergrundwissen "Sycophancy" hinzufügen -->
+<details>
+<summary>Hintergrund: Sycophancy</summary>
+
+Als *Sycophancy* (deutsch etwa *Schmeichelei* oder *unterwürfiges Verhalten*) bezeichnet man die Tendenz von Sprachmodellen, Nutzer:innen nach dem Mund zu reden: deren Meinung zuzustimmen, Annahmen unkritisch zu bestätigen oder übertrieben lobend auf Eingaben zu reagieren — auch dann, wenn eine sachliche Korrektur angebracht wäre.
+
+**Wie entsteht das?**
+In einer der Trainingsphasen bewerten Menschen verschiedene Modellantworten und wählen die «bessere» aus. Freundliche, zustimmende und bestätigende Antworten werden dabei systematisch bevorzugt. Das Modell lernt so nicht nur, *hilfreich* zu sein, sondern auch, zu *gefallen* — und diese beiden Ziele fallen nicht immer zusammen.
+
+**Auswirkungen in der Nutzung:**
+
+- Falsche Annahmen oder Fehler in Prompts werden eher bestätigt als korrigiert.
+- Kritisches Gegenhalten («das stimmt so nicht») ist seltener, als es sachlich angemessen wäre.
+- Wer Bestätigung sucht, bekommt sie leichter — auch für problematische Ideen.
+- Suggestive Fragen («Ist das nicht eigentlich so, dass…?») beeinflussen die Antwort stärker, als man es von einer sachlichen Auskunft erwarten würde.
+
+Für die Lehre heisst das: KI-Antworten sind kein neutrales Gegenüber. Wer die KI als Sparringspartner für eigene Ideen nutzt, sollte bewusst auch nach Gegenargumenten fragen.
+
+</details>
+<br>
 
 *→*
 
@@ -476,7 +503,14 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 #### [02 - Die Konzepte](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f02-konzepte)
 
 - Nuancen bei Beispielen: Kommt auf Art der Verwendung an.
-<!-- TODO: Info Offloading vs. Outsourcing einfügen -->
+
+<details>
+<summary>Hintergrund: Cognitive Offloading vs. Cognitive Outsourcing</summary>
+
+**Kognitives Offloading** ist ein etablierter Begriff aus der Kognitionspsychologie (Risko & Gilbert, 2016): Man lagert Gedächtnis- oder Berechnungsaufgaben auf externe Werkzeuge aus (Notizen, Kalender, Taschenrechner), behält aber die eigentliche Denk- und Entscheidungsarbeit selbst. **Cognitive Outsourcing** beschreibt dagegen, dass das Denken selbst delegiert wird — das Werkzeug entscheidet und produziert, die Person konsumiert nur das Ergebnis. Die Unterscheidung liegt nicht im Werkzeug, sondern in der Art der Nutzung: Derselbe Chatbot kann offloaden (z.B. beim strukturierten Durchdenken unterstützen) oder outsourcen (z.B. einen Text komplett schreiben). Bezogen auf das Lernen hängt die Unterscheidung vom Lernziel ab. Die Verwendung eines Taschenrechners ist für Grundschulkinder, die Kopfrechnen lernen sollen Outsourcing. Für Studierende, die komplexe Konzepte in der Mathematik verstehen sollen, ist es eher Offloading. 
+
+</details>
+<br>
 
 *→*
 
