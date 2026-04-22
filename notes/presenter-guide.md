@@ -1,10 +1,12 @@
+<!-- TODO: Voll-  vs gekürzte Druckversion erstellen. Z.B. mittels Quarto-profilen (in _quarto.yml full vs. reduced definieren. Abschnitte mit {.content-visible when-profile="full"} markieren. quarto render --profile reduced ) -->
+
 # Presenter Guide: KI in der Lehre (Beginner)
 Dieser Guide soll neuen Dozierenden bei der Durchführung des Kurses helfen.
 Es sind:
 1. Die Ablaufreihenfolge sowie Notizen zum Ablauf festgehalten
 2. z.T. Vorschläge, was bei den Folien zu sagen ist
-   a. *→ * kennzeichnet "Transitionen", mögliche Überleitungen zwischen Folien.
-   b. *Nicht alle folien haben Inhaltsvorschläge oder Transitionen*
+   1. *→* kennzeichnet "Transitionen", mögliche Überleitungen zwischen Folien.
+   2. *Nicht alle folien haben Inhaltsvorschläge oder Transitionen*
 3. In aufklappbaren "Hintergrund"-Texten steht Wissen für Dozierende zur Verfügung. Diese müssen nicht standardmässig vermittelt werden, bereiten aber auf Rückfragen vor und geben einen Wissensvorsprung. 
 
 Der Guide ist als ***lebendes Dokument*** gedacht und kann nach Bedarf ergänzt werden. 
@@ -25,17 +27,17 @@ Es sollte geklärt/verfügbar sein:
 [→ Workshop-Übersicht](../workshop/index.qmd)
 
 1. Begrüssung
-   a. [Virtuelle Akademie](https://virtuelleakademie.ch) vorstellen
-   b. Kursleitung vorstellen
-   c. [Weiterbildung & CAS](https://bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/)
+   1. [Virtuelle Akademie](https://virtuelleakademie.ch) vorstellen
+   2. Kursleitung vorstellen
+   3. [Weiterbildung & CAS](https://bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/)
 2. Website-Ressourcen zeigen
-   a. „Workshop" in Navbar öffnet Seitenleiste links - diese durchgehen
+   1. „Workshop" in Navbar öffnet Seitenleiste links - diese durchgehen
       - "Präsentation" --> unterhalb des Slide-Decks sind Inhalte ausformuliert
 3. Unter "Übersicht" 
-   a. [Lernziele](../workshop/index.qmd#lernziele) 
+   1. [Lernziele](../workshop/index.qmd#lernziele) 
       - zu 3. (wann hilft): kurzer Exkurs: Wie funktioniert Lernen?
-   b. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
-   c. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
+   2. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
+   3. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
 4. Zeit für Fragen
 
 Notizen:
@@ -105,7 +107,8 @@ Generative KI: erstellt neue Daten
 
 </details>
 <br>
-*→ Wie sehen typische Nutzerinterfaces solcher KI aus?*
+
+*→Wie sehen typische Nutzerinterfaces solcher KI aus?*
 
 #### [02 - Was sind Chatbots?](../slides/frage-1-was-ist-ki/index.qmd#p1-f02-was-sind-chatbots)
 
@@ -582,8 +585,8 @@ Active Retrieval
 
 #### [Eine Sache, die du morgen anders machst](../workshop/abschluss/index.qmd#eine-sache-die-du-morgen-anders-machst)
 
-a. Konkreter Vorsatz (3 min)
-b. Austausch (5 min)
+1. Konkreter Vorsatz (3 min)
+2. Austausch (5 min)
 
 -
 
