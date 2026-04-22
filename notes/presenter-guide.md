@@ -24,7 +24,7 @@ Es sollte geklärt/verfügbar sein:
 > Links verweisen auf die jeweiligen Seiten/Abschnitte der Website.
 ## 1. Begrüssung & Übersicht
 
-[→ Workshop-Übersicht](../workshop/index.qmd)
+[» Workshop » Übersicht](../workshop/index.qmd)
 
 1. Begrüssung
    1. [Virtuelle Akademie](https://virtuelleakademie.ch) vorstellen
@@ -48,7 +48,7 @@ Notizen:
 
 ## 2. Einstieg
 
-[→ Einstieg](../workshop/einstieg/index.qmd)
+[» Einstieg](../workshop/einstieg/index.qmd)
 
 1. [Einstiegsproblem „Szenario"](../workshop/einstieg/index.qmd#was-wir-heute-klären) vorstellen
    - Auf positive Formulierung achten
@@ -59,18 +59,12 @@ Notizen:
 
 **Während TN Übung machen, TN-Liste ausfüllen**
 
-Notizen:
-
--
+*→ Wir lassen das einfach so stehen und kommen zur ersten Frage.*
 
 ---
 
-## 3. Frage 1: Was ist KI?
-
-### 3a. Präsentation
-
-[→ Webseite](../workshop/frage-1-was-ist-ki/index.qmd) |
-[→ Folien](../slides/frage-1-was-ist-ki/index.qmd)
+## [3. Frage 1: Was ist KI?](../workshop/frage-1-was-ist-ki/index.qmd) |
+### [3a. Präsentation](../slides/frage-1-was-ist-ki/index.qmd)
 
 > Nach Klick auf „Präsentation": Taste `s` für Speaker View, `f` für Vollbild.
 
