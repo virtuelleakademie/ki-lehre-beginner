@@ -39,5 +39,7 @@ Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschu
 ## Kontakt
 
 [Dr. Andrew Ellis](mailto:andrew.ellis@bfh.ch) ist Kognitionspsychologe und Wissenschaftlicher Mitarbeiter an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der Berner Fachhochschule. 
-[Dr. Raphael Schween](mailto:raphael.schween@bfh.ch) ist Wissenschaftler mit Schwerpunkten in (Bewegungs-)Lernen und kognitiver Modellierung und Experte für KI an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der Berner Fachhochschule. 
+
+[Dr. Raphael Schween](mailto:raphael.schween@bfh.ch) ist Wissenschaftler mit Schwerpunkten in (Bewegungs-)Lernen und kognitiver Modellierung und Experte für KI an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der Berner Fachhochschule.
+ 
 Sie erforschen, wie künstliche Intelligenz in Bildungssystemen wirkungsvoll eingesetzt werden kann.
