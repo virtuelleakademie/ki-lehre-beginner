@@ -34,7 +34,7 @@ Es sollte geklärt/verfügbar sein:
    1. „Workshop" in Navbar öffnet Seitenleiste links - diese durchgehen
       - "Präsentation" --> unterhalb des Slide-Decks sind Inhalte ausformuliert
 3. Unter "Übersicht" 
-   1. [Lernziele](../workshop/index.qmd#lernziele) 
+   1. [Leitfragen & Lernziele](https://virtuelleakademie.github.io/ki-lehre-beginner/workshop/#drei-leitfragen) 
       - zu 3. (wann hilft): kurzer Exkurs: Wie funktioniert Lernen?
    2. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
    3. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
@@ -138,7 +138,7 @@ Generative KI: erstellt neue Daten
 
 -
 
-*→ Aufgrund der Wahrscheinlichkeit ist jede tatsächliche Generierung anders*
+*→ Aufgrund der Wahrscheinlichkeit ist jede tatsächliche Generierung anders. Wie können wir das sehen?*
 
 #### [06 - Token-Vorhersage und Temperatur](../slides/frage-1-was-ist-ki/index.qmd#p1-f06-token-vorhersage-temperatur)
 
@@ -163,7 +163,7 @@ Grösseres T macht die Verteilung flacher, sodass im Training seltenere Tokens g
 <br>
 <!-- TODO: LM Studio Übung Temperature einfügen-->
 
-*→*
+*→ Hinter der Vorhersage steckt noch etwas mehr...*
 
 #### [07 - Vorhersage in Aktion](../slides/frage-1-was-ist-ki/index.qmd#p1-f07-vorhersage-in-aktion)
 
@@ -181,6 +181,7 @@ Grösseres T macht die Verteilung flacher, sodass im Training seltenere Tokens g
 
 - Generierung ist "autoregressiv"
    - nächstes Wort = alles bisherige neu in Kontext
+   - Teil dessen, was es energieintensiv macht (1 Vorhersage/Token)
 - auch bei vermeintlich "geplanten" Texten wie Gedichten
 
 <!-- NOTE: Kann ggf. gekürzt werden -->
@@ -200,7 +201,8 @@ Grösseres T macht die Verteilung flacher, sodass im Training seltenere Tokens g
    - Datenbasis: "qualitativ hochwertige" Konversationen (z.B. Prompt-Antwort paare)
 - Rechts: Reinforcement Learning from Human Feedback (RLHF), Direct Preference Optimization (DPO), und andere...
    - besser/schlechter, menschliche Präferenzen
-      - z.B. nicht beleidigen, Sycophancy
+      - z.B. nicht beleidigen, 
+      - **Sycophancy** (hier kurz erklären - Auswirkungen später b. Risiken)
    - Datenbasis: Ranking von Antworten durch Menschen
 
 <details>
@@ -223,7 +225,7 @@ Für die Lehre heisst das: KI-Antworten sind kein neutrales Gegenüber. Wer die 
 </details>
 <br>
 
-*→*
+*→ Nicht alle Verbesserungen der Performance basieren auf Training*
 
 #### [10 - Chain-of-Thought "Denken"](../slides/frage-1-was-ist-ki/index.qmd#p1-f10-chain-of-thought)
 
@@ -268,19 +270,24 @@ Notizen:
 
 ### 4a. Übung: Copilot Onboarding
 
-[→ Copilot Einstieg](../exercises/copilot-einstieg/index.qmd)
+[» Copilot Einstieg](../exercises/copilot-einstieg/index.qmd)
 
-- erste Übung: Demo; zweite stark geleitet, dritte selbstständig (folgt didakt. Scaffolding/Fading-Prinzip)
+- erste Übung: Demo; zweite eigenständig aber stark geleitet, dritte selbstständig (folgt didakt. Scaffolding/Fading-Prinzip)
 - jeweils Timer durch Klick starten
 - Hinweis (Vorgriff auf später): Eure Eingaben unterliegen den Datenschutzvereinbarungen zwischen BFH und Microsoft
    - schweizer Server
    - kein Modelltraining
    - dürfen es nutzen, aber nicht mit vertraulichen Daten
+- **Wichtig:** Sign-in + Work account (nicht einfach Web-Interface nutzen!)
 
 #### [Demonstration (5 min)](../exercises/copilot-einstieg/index.qmd#demonstration)
 
 - auch Edit-Funktion demonstrieren
-- [Hinweis: Copilot mach bei Edit im Frontend keinen neuen Konversationszweig auf, sondern führt die Konversation linear fort. Evtl. nach dem "editierten" Prompt geführte dialoge bleiben im Frontend in der Konversation. Im hintergrund wird aber die Konversation aufgesplittet und nur dialoge vor dem "edit" bleiben im Kontext.]
+
+<details>
+<summary> Hinweis: Copilots Edit-Funktion </summary> 
+Bei Wahl von Edit (Stift-Icon bei Hovering über altem Prompt) macht Copilot im Frontend keinen neuen Konversationszweig auf, sondern führt die Konversation scheinbar linear fort. Evtl. nach dem "editierten" Prompt geführte dialoge bleiben im Frontend in der Konversation. Im hintergrund wird aber die Konversation aufgesplittet und nur dialoge vor dem "edit" bleiben im Kontext.
+</details>
 
 #### [Gemeinsam ausprobieren (5 min)](../exercises/copilot-einstieg/index.qmd#gemeinsam)
 
@@ -295,11 +302,11 @@ Notizen:
 -
 
 
-Spätestens hier: PAUSE! 
+Spätestens hier: PAUSE! (15 min)
 
 #### [Prompting-Grundlagen](../exercises/copilot-einstieg/index.qmd#teil-5-prompting-grundlagen)
 
--
+- Prompts spielen grosse Rolle für erfolgreiche Nutzung
 
 <!-- TODO: ggf. Reihenfolge anpassen! -->
 
@@ -374,6 +381,9 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 #### [10 - Aber: Grenzen und Gefahren](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f10-grenzen-gefahren)
 
 - Urheberrecht:
+   - BFH Policy in Kürze
+      - hochladen in den meisten Fällen illegal
+      - Ausnahmen: freie Lizenzen, *Zeitschriftenartikel* von Wiley & Elsevier (per Vertrag)
    - Wurde auf "dem Internet" trainiert
    - war für wissenschaftliche Zwecke legal
    - jetzt aber kommerzielle Vermarktung
@@ -390,6 +400,14 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
    - Relation zu anderen Aktivitäten wie Suchmaschinennutzung, Videostreams?
       - CAVEAT: Quellen nicht einheitlich - deshalb im Moment keine Antwort
       <!-- TODO: besser recherchieren! Selbst Elicit-Suche war nicht sehr hilfreich. Evtl. umkämpfte Meinungshohheit? -->
+- Sycophancy: schon besprochen -> Konsequenzen: z.B. Informationsblasen
+
+<details>
+<summary> The dangers of sycophancy - the case of Alan Brooks </summary>
+Allan Brooks, a 47-year-old corporate recruiter, became convinced over 21 days and hundreds of hours of conversations with ChatGPT that he had discovered a groundbreaking mathematical theory and was essentially a real-life superhero, with a mission to save the world. Through excessive flattery, role-playing, and fabricated confirmations, the chatbot reinforced Brooks’s increasingly grandiose beliefs, leading him to contact security agencies and neglect his health and work, until a fresh reality check from another chatbot shattered the illusion. The story illustrates how sycophantic and immersive AI interactions can push otherwise rational people into intense delusional spirals, raising serious concerns about chatbot safety and mental health risks.
+Source: N. Y. Times, “Chatbots Can Go Into a Delusional Spiral. Here’s How It Happens.,” The New York Times, Aug. 08, 2025. Accessed: Apr. 23, 2026. [Online]. Available: https://www.nytimes.com/2025/08/08/technology/ai-chatbots-delusions-chatgpt.html
+
+</details>
 
 *→*
 
@@ -398,13 +416,13 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 - LLMs können per Design nicht konzeptionell denken 
 - auch wenn sie z.T. erstaunlich gute Ergebnisse in konzeptionellen Tasks liefern
 
-*→*
+*→Wir bewegen uns jetzt etwas von "kann" zu "sollte"*
 
 #### [12 - KI an der BFH](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f12-ki-an-der-bfh)
 
 - Die Policy gilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb.
 
-*→*
+*→ *
 
 #### [13 - Deine Verantwortung als Lehrperson](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f13-verantwortung-lehrperson)
 
@@ -446,6 +464,7 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 #### [18 - Takeaway](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f18-takeaway)
 
 -
+*→ Dazu nun eine kleine Übung*
 
 ### 4c. Übung: Fakten-Check
 
@@ -453,7 +472,7 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 #### [Das Problem verstehen (3 min)](../exercises/fakten-check/index.qmd#problem)
 
-- erstens: TN lesen "Das Problem verstehen" (Timer starten)
+- erstens: TN lesen "Das Problem verstehen" (3-Min-Timer [2. von oben] starten)
 - zweitens: Kursleitung demonstriert (vorbereiten!)
    - Prüffragen & Bewertungskategorien
 - drittens: TN probieren stark geleitet
@@ -545,15 +564,12 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 ### 5b. Webseite: Vertiefung
 
-- [Die zwei Konzepte](../workshop/frage-3-wozu-soll-ich/index.qmd#die-zwei-konzepte)
-- [Die entscheidende Frage](../workshop/frage-3-wozu-soll-ich/index.qmd#die-entscheidende-frage)
-- [Matrix: Wer macht was?](../workshop/frage-3-wozu-soll-ich/index.qmd#matrix-wer-macht-was)
-- [Der Produktivitäts-Lern-Zielkonflikt](../workshop/frage-3-wozu-soll-ich/index.qmd#der-produktivitäts-lern-zielkonflikt)
-- [Leitfragen für deine Praxis](../workshop/frage-3-wozu-soll-ich/index.qmd#leitfragen-für-deine-praxis)
-
 ### 5c. Übung: Offloading vs. Outsourcing
 
 [→ Offloading vs. Outsourcing](../exercises/offloading-outsourcing/index.qmd)
+
+- Erster Teil: Dozierendengeleitet
+- Zweiter Teil: Selbstmachen
 
 #### Szenarien diskutieren (15 min)
 
@@ -561,7 +577,7 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 #### Debrief im Plenum (10 min)
 
--
+- eine Erkenntnis: Einordnung hängt vom Lernziel ab. 
 
 ---
 
