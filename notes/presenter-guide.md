@@ -308,8 +308,6 @@ Spätestens hier: PAUSE! (15 min)
 
 - Prompts spielen grosse Rolle für erfolgreiche Nutzung
 
-<!-- TODO: ggf. Reihenfolge anpassen! -->
-
 #### [Reflektion](../exercises/copilot-einstieg/index.qmd#reflektion)
 
 -
@@ -477,7 +475,6 @@ Source: N. Y. Times, “Chatbots Can Go Into a Delusional Spiral. Here’s How I
    - Prüffragen & Bewertungskategorien
 - drittens: TN probieren stark geleitet
    - gemeinsame Diskussion (timen)
-   <!-- TODO: Timer ist falsch (5 min für 8 min Inhalt) -->
 - viertens: TN probieren frei
 - fünftens: wieder gemeinsame Diskussion & Debrief
 - sechstens: Reflektion
