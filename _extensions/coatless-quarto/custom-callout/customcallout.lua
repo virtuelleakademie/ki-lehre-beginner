@@ -67,7 +67,10 @@ local function generateCustomCSS()
       css = css .. "}\n"
 
       -- Icon Styling
-      css = css .. string.format("div.callout-%s.callout-style-default .callout-icon::before, div.callout-%s.callout-titled .callout-icon::before {\n", type, type)
+      -- Extra `.callout` class bumps specificity to (0,4,2) so this rule
+      -- ties the reveal.js theme's `.reveal div.callout.callout-style-default
+      -- .callout-icon::before { content: "" }` rule and wins on source order.
+      css = css .. string.format("div.callout.callout-%s.callout-style-default .callout-icon::before, div.callout.callout-%s.callout-titled .callout-icon::before {\n", type, type)
 
       if callout.icon_symbol then
         local icon_symbol_str = pandoc.utils.stringify(callout.icon_symbol)
