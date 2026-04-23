@@ -20,8 +20,9 @@ Und wenn nicht: Was bedeutet das für deine Lehre?
 
 Klicke auf das Koordinatensystem, um deine Position zu markieren:
 
-- **X-Achse**: Wie viel Erfahrung hast du mit KI-Tools?
-- **Y-Achse**: Wie stehst du zu KI in der Lehre?
+**Fragen:**
+- *X-Achse*: Wie viel Erfahrung hast du mit KI-Tools?
+- *Y-Achse*: Wie stehst du zu KI in der Lehre?
 
 ```{ojs}
 //| echo: false
