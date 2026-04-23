@@ -67,7 +67,9 @@ Moderne KI-Interfaces sind zumeist Agenten, bzw. Multi-Agent-Frameworks.
 :::: {.columns}
 ::: {.column width="50%"}
 :::{.r-fit-text}
-- **Urheberrecht**: Trainiert mit möglicherweise geschützten Texten
+- **Urheberrecht**: Trainiert mit möglicherweise geschützten Texten. <br> Ressourcen:
+   - [Policy der Hochschulbibliothek](https://bernerfachhochschule.sharepoint.com/sites/mybfh-Hochschulbibliothek-de?xsdata=MDV8MDJ8fDQyN2ZiYTgwNzU0ZDQ0NmE4MjYyMDhkZTk5MmI5ZmFkfGQ2YTFjZjhjNzY4ZTQxODdhNzM4YjZlNTBjNGRlYjRhfDB8MHw2MzkxMTY2MDk3NzQ3ODEwMjZ8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2paa1pHRTRNbVpsTFRJMU1HRXROR1ExWlMxaU5HRmpMVFprTjJFMlptWm1NVGxsTkY4M01tRmtNalJpWlMxbE16VTRMVFF3TXprdFlXSmxNeTFtTlRobVpUUXhOVGN6TlRKQWRXNXhMbWRpYkM1emNHRmpaWE12YldWemMyRm5aWE12TVRjM05qQTJOREUzTlRjeU1BPT18MTY2NTZjNGM1NDk2NDk0YjJmNTcwOGRlOTkyYjlmYWR8ZmVkNmE4ZjhiMmZiNGE0ZDgwNTVjZWI2ODdhODdkZDk%3D&sdata=Q0FHRzhyd0xGZ3pqNU5hY3cwd0NSMXB2NTVDSkdmeU5rMTd3R0JrTENIMD0%3D&ovuser=d6a1cf8c-768e-4187-a738-b6e50c4deb4a%2Cser5%40bfh.ch&OR=Teams-HL&CT=1776064179608&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNjAzMTIyMzAyMCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D#wissenschaftliche-literatur-und-ki)
+   - [Moodle Kurs](https://moodle.bfh.ch/course/view.php?id=40655)
 - **Bias**: Vorurteile aus Trainingsdaten
 - **Energieverbrauch**: Hoher Ressourcenverbrauch
 - **Sycophancy**: Neigung, Nutzer zu bestätigen
