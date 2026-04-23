@@ -206,7 +206,7 @@ Wenn KI für dich schreibt, übernimmt sie diese Auswahl. Du bekommst das Produk
 ## Kurze Reflexion (3 min)
 
 ::: {.reflect}
-Bevor wir zur Pause gehen: Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.
+Bevor wir zur weitergehen: Notiere dir eine Sache, die du über Sprachmodelle gelernt hast, die du vorher nicht wusstest.
 
 {{< timer 3 autostart=false >}}
 :::
