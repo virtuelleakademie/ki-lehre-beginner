@@ -59,7 +59,7 @@ $$
 
 $$\green{P(\text{Wort}_{i+1}} \mid \red{\text{Kontext}}, \blue{\text{Modell}})$$
 
-Jede Vorhersage basiert auf dem **Kontext** und dem internen **Modell**.
+Jede Vorhersage basiert auf dem **Kontext** und dem **Modell**.
 
 ## Was bedeutet das konkret? {#p1-f05-was-bedeutet-das-konkret .smaller}
 
