@@ -1,10 +1,12 @@
+<!-- TODO: Voll-  vs gekürzte Druckversion erstellen. Z.B. mittels Quarto-profilen (in _quarto.yml full vs. reduced definieren. Abschnitte mit {.content-visible when-profile="full"} markieren. quarto render --profile reduced ) -->
+
 # Presenter Guide: KI in der Lehre (Beginner)
 Dieser Guide soll neuen Dozierenden bei der Durchführung des Kurses helfen.
 Es sind:
 1. Die Ablaufreihenfolge sowie Notizen zum Ablauf festgehalten
 2. z.T. Vorschläge, was bei den Folien zu sagen ist
-   a. *→ * kennzeichnet "Transitionen", mögliche Überleitungen zwischen Folien.
-   b. *Nicht alle folien haben Inhaltsvorschläge oder Transitionen*
+   1. *→* kennzeichnet "Transitionen", mögliche Überleitungen zwischen Folien.
+   2. *Nicht alle folien haben Inhaltsvorschläge oder Transitionen*
 3. In aufklappbaren "Hintergrund"-Texten steht Wissen für Dozierende zur Verfügung. Diese müssen nicht standardmässig vermittelt werden, bereiten aber auf Rückfragen vor und geben einen Wissensvorsprung. 
 
 Der Guide ist als ***lebendes Dokument*** gedacht und kann nach Bedarf ergänzt werden. 
@@ -22,20 +24,20 @@ Es sollte geklärt/verfügbar sein:
 > Links verweisen auf die jeweiligen Seiten/Abschnitte der Website.
 ## 1. Begrüssung & Übersicht
 
-[→ Workshop-Übersicht](../workshop/index.qmd)
+[» Workshop » Übersicht](../workshop/index.qmd)
 
 1. Begrüssung
-   a. [Virtuelle Akademie](https://virtuelleakademie.ch) vorstellen
-   b. Kursleitung vorstellen
-   c. [Weiterbildung & CAS](https://bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/)
+   1. [Virtuelle Akademie](https://virtuelleakademie.ch) vorstellen
+   2. Kursleitung vorstellen
+   3. [Weiterbildung & CAS](https://bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/)
 2. Website-Ressourcen zeigen
-   a. „Workshop" in Navbar öffnet Seitenleiste links - diese durchgehen
+   1. „Workshop" in Navbar öffnet Seitenleiste links - diese durchgehen
       - "Präsentation" --> unterhalb des Slide-Decks sind Inhalte ausformuliert
 3. Unter "Übersicht" 
-   a. [Lernziele](../workshop/index.qmd#lernziele) 
+   1. [Leitfragen & Lernziele](https://virtuelleakademie.github.io/ki-lehre-beginner/workshop/#drei-leitfragen) 
       - zu 3. (wann hilft): kurzer Exkurs: Wie funktioniert Lernen?
-   b. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
-   c. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
+   2. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
+   3. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
 4. Zeit für Fragen
 
 Notizen:
@@ -46,7 +48,7 @@ Notizen:
 
 ## 2. Einstieg
 
-[→ Einstieg](../workshop/einstieg/index.qmd)
+[» Einstieg](../workshop/einstieg/index.qmd)
 
 1. [Einstiegsproblem „Szenario"](../workshop/einstieg/index.qmd#was-wir-heute-klären) vorstellen
    - Auf positive Formulierung achten
@@ -57,18 +59,12 @@ Notizen:
 
 **Während TN Übung machen, TN-Liste ausfüllen**
 
-Notizen:
-
--
+*→ Wir lassen das einfach so stehen und kommen zur ersten Frage.*
 
 ---
 
-## 3. Frage 1: Was ist KI?
-
-### 3a. Präsentation
-
-[→ Webseite](../workshop/frage-1-was-ist-ki/index.qmd) |
-[→ Folien](../slides/frage-1-was-ist-ki/index.qmd)
+## [3. Frage 1: Was ist KI?](../workshop/frage-1-was-ist-ki/index.qmd) |
+### [3a. Präsentation](../slides/frage-1-was-ist-ki/index.qmd)
 
 > Nach Klick auf „Präsentation": Taste `s` für Speaker View, `f` für Vollbild.
 
@@ -105,7 +101,8 @@ Generative KI: erstellt neue Daten
 
 </details>
 <br>
-*→ Wie sehen typische Nutzerinterfaces solcher KI aus?*
+
+*→Wie sehen typische Nutzerinterfaces solcher KI aus?*
 
 #### [02 - Was sind Chatbots?](../slides/frage-1-was-ist-ki/index.qmd#p1-f02-was-sind-chatbots)
 
@@ -141,7 +138,7 @@ Generative KI: erstellt neue Daten
 
 -
 
-*→ Aufgrund der Wahrscheinlichkeit ist jede tatsächliche Generierung anders*
+*→ Aufgrund der Wahrscheinlichkeit ist jede tatsächliche Generierung anders. Wie können wir das sehen?*
 
 #### [06 - Token-Vorhersage und Temperatur](../slides/frage-1-was-ist-ki/index.qmd#p1-f06-token-vorhersage-temperatur)
 
@@ -166,7 +163,7 @@ Grösseres T macht die Verteilung flacher, sodass im Training seltenere Tokens g
 <br>
 <!-- TODO: LM Studio Übung Temperature einfügen-->
 
-*→*
+*→ Hinter der Vorhersage steckt noch etwas mehr...*
 
 #### [07 - Vorhersage in Aktion](../slides/frage-1-was-ist-ki/index.qmd#p1-f07-vorhersage-in-aktion)
 
@@ -184,6 +181,7 @@ Grösseres T macht die Verteilung flacher, sodass im Training seltenere Tokens g
 
 - Generierung ist "autoregressiv"
    - nächstes Wort = alles bisherige neu in Kontext
+   - Teil dessen, was es energieintensiv macht (1 Vorhersage/Token)
 - auch bei vermeintlich "geplanten" Texten wie Gedichten
 
 <!-- NOTE: Kann ggf. gekürzt werden -->
@@ -203,7 +201,8 @@ Grösseres T macht die Verteilung flacher, sodass im Training seltenere Tokens g
    - Datenbasis: "qualitativ hochwertige" Konversationen (z.B. Prompt-Antwort paare)
 - Rechts: Reinforcement Learning from Human Feedback (RLHF), Direct Preference Optimization (DPO), und andere...
    - besser/schlechter, menschliche Präferenzen
-      - z.B. nicht beleidigen, Sycophancy
+      - z.B. nicht beleidigen, 
+      - **Sycophancy** (hier kurz erklären - Auswirkungen später b. Risiken)
    - Datenbasis: Ranking von Antworten durch Menschen
 
 <details>
@@ -226,7 +225,7 @@ Für die Lehre heisst das: KI-Antworten sind kein neutrales Gegenüber. Wer die 
 </details>
 <br>
 
-*→*
+*→ Nicht alle Verbesserungen der Performance basieren auf Training*
 
 #### [10 - Chain-of-Thought "Denken"](../slides/frage-1-was-ist-ki/index.qmd#p1-f10-chain-of-thought)
 
@@ -271,19 +270,24 @@ Notizen:
 
 ### 4a. Übung: Copilot Onboarding
 
-[→ Copilot Einstieg](../exercises/copilot-einstieg/index.qmd)
+[» Copilot Einstieg](../exercises/copilot-einstieg/index.qmd)
 
-- erste Übung: Demo; zweite stark geleitet, dritte selbstständig (folgt didakt. Scaffolding/Fading-Prinzip)
+- erste Übung: Demo; zweite eigenständig aber stark geleitet, dritte selbstständig (folgt didakt. Scaffolding/Fading-Prinzip)
 - jeweils Timer durch Klick starten
 - Hinweis (Vorgriff auf später): Eure Eingaben unterliegen den Datenschutzvereinbarungen zwischen BFH und Microsoft
    - schweizer Server
    - kein Modelltraining
    - dürfen es nutzen, aber nicht mit vertraulichen Daten
+- **Wichtig:** Sign-in + Work account (nicht einfach Web-Interface nutzen!)
 
 #### [Demonstration (5 min)](../exercises/copilot-einstieg/index.qmd#demonstration)
 
 - auch Edit-Funktion demonstrieren
-- [Hinweis: Copilot mach bei Edit im Frontend keinen neuen Konversationszweig auf, sondern führt die Konversation linear fort. Evtl. nach dem "editierten" Prompt geführte dialoge bleiben im Frontend in der Konversation. Im hintergrund wird aber die Konversation aufgesplittet und nur dialoge vor dem "edit" bleiben im Kontext.]
+
+<details>
+<summary> Hinweis: Copilots Edit-Funktion </summary> 
+Bei Wahl von Edit (Stift-Icon bei Hovering über altem Prompt) macht Copilot im Frontend keinen neuen Konversationszweig auf, sondern führt die Konversation scheinbar linear fort. Evtl. nach dem "editierten" Prompt geführte dialoge bleiben im Frontend in der Konversation. Im hintergrund wird aber die Konversation aufgesplittet und nur dialoge vor dem "edit" bleiben im Kontext.
+</details>
 
 #### [Gemeinsam ausprobieren (5 min)](../exercises/copilot-einstieg/index.qmd#gemeinsam)
 
@@ -298,11 +302,11 @@ Notizen:
 -
 
 
-Spätestens hier: PAUSE! 
+Spätestens hier: PAUSE! (15 min)
 
 #### [Prompting-Grundlagen](../exercises/copilot-einstieg/index.qmd#teil-5-prompting-grundlagen)
 
--
+- Prompts spielen grosse Rolle für erfolgreiche Nutzung
 
 <!-- TODO: ggf. Reihenfolge anpassen! -->
 
@@ -377,6 +381,9 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 #### [10 - Aber: Grenzen und Gefahren](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f10-grenzen-gefahren)
 
 - Urheberrecht:
+   - BFH Policy in Kürze
+      - hochladen in den meisten Fällen illegal
+      - Ausnahmen: freie Lizenzen, *Zeitschriftenartikel* von Wiley & Elsevier (per Vertrag)
    - Wurde auf "dem Internet" trainiert
    - war für wissenschaftliche Zwecke legal
    - jetzt aber kommerzielle Vermarktung
@@ -393,6 +400,14 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
    - Relation zu anderen Aktivitäten wie Suchmaschinennutzung, Videostreams?
       - CAVEAT: Quellen nicht einheitlich - deshalb im Moment keine Antwort
       <!-- TODO: besser recherchieren! Selbst Elicit-Suche war nicht sehr hilfreich. Evtl. umkämpfte Meinungshohheit? -->
+- Sycophancy: schon besprochen -> Konsequenzen: z.B. Informationsblasen
+
+<details>
+<summary> The dangers of sycophancy - the case of Alan Brooks </summary>
+Allan Brooks, a 47-year-old corporate recruiter, became convinced over 21 days and hundreds of hours of conversations with ChatGPT that he had discovered a groundbreaking mathematical theory and was essentially a real-life superhero, with a mission to save the world. Through excessive flattery, role-playing, and fabricated confirmations, the chatbot reinforced Brooks’s increasingly grandiose beliefs, leading him to contact security agencies and neglect his health and work, until a fresh reality check from another chatbot shattered the illusion. The story illustrates how sycophantic and immersive AI interactions can push otherwise rational people into intense delusional spirals, raising serious concerns about chatbot safety and mental health risks.
+Source: N. Y. Times, “Chatbots Can Go Into a Delusional Spiral. Here’s How It Happens.,” The New York Times, Aug. 08, 2025. Accessed: Apr. 23, 2026. [Online]. Available: https://www.nytimes.com/2025/08/08/technology/ai-chatbots-delusions-chatgpt.html
+
+</details>
 
 *→*
 
@@ -401,13 +416,13 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 - LLMs können per Design nicht konzeptionell denken 
 - auch wenn sie z.T. erstaunlich gute Ergebnisse in konzeptionellen Tasks liefern
 
-*→*
+*→Wir bewegen uns jetzt etwas von "kann" zu "sollte"*
 
 #### [12 - KI an der BFH](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f12-ki-an-der-bfh)
 
 - Die Policy gilt für alle Bereiche: Lehre, Forschung, Hochschulbetrieb.
 
-*→*
+*→ *
 
 #### [13 - Deine Verantwortung als Lehrperson](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f13-verantwortung-lehrperson)
 
@@ -449,6 +464,7 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 #### [18 - Takeaway](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f18-takeaway)
 
 -
+*→ Dazu nun eine kleine Übung*
 
 ### 4c. Übung: Fakten-Check
 
@@ -456,7 +472,7 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 #### [Das Problem verstehen (3 min)](../exercises/fakten-check/index.qmd#problem)
 
-- erstens: TN lesen "Das Problem verstehen" (Timer starten)
+- erstens: TN lesen "Das Problem verstehen" (3-Min-Timer [2. von oben] starten)
 - zweitens: Kursleitung demonstriert (vorbereiten!)
    - Prüffragen & Bewertungskategorien
 - drittens: TN probieren stark geleitet
@@ -548,15 +564,12 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 ### 5b. Webseite: Vertiefung
 
-- [Die zwei Konzepte](../workshop/frage-3-wozu-soll-ich/index.qmd#die-zwei-konzepte)
-- [Die entscheidende Frage](../workshop/frage-3-wozu-soll-ich/index.qmd#die-entscheidende-frage)
-- [Matrix: Wer macht was?](../workshop/frage-3-wozu-soll-ich/index.qmd#matrix-wer-macht-was)
-- [Der Produktivitäts-Lern-Zielkonflikt](../workshop/frage-3-wozu-soll-ich/index.qmd#der-produktivitäts-lern-zielkonflikt)
-- [Leitfragen für deine Praxis](../workshop/frage-3-wozu-soll-ich/index.qmd#leitfragen-für-deine-praxis)
-
 ### 5c. Übung: Offloading vs. Outsourcing
 
 [→ Offloading vs. Outsourcing](../exercises/offloading-outsourcing/index.qmd)
+
+- Erster Teil: Dozierendengeleitet
+- Zweiter Teil: Selbstmachen
 
 #### Szenarien diskutieren (15 min)
 
@@ -564,7 +577,7 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 #### Debrief im Plenum (10 min)
 
--
+- eine Erkenntnis: Einordnung hängt vom Lernziel ab. 
 
 ---
 
@@ -582,8 +595,8 @@ Active Retrieval
 
 #### [Eine Sache, die du morgen anders machst](../workshop/abschluss/index.qmd#eine-sache-die-du-morgen-anders-machst)
 
-a. Konkreter Vorsatz (3 min)
-b. Austausch (5 min)
+1. Konkreter Vorsatz (3 min)
+2. Austausch (5 min)
 
 -
 
