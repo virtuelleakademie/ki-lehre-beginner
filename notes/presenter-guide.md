@@ -22,6 +22,10 @@ Es sollte geklärt/verfügbar sein:
 
 > Notizen entlang des Workshop-Ablaufs.
 > Links verweisen auf die jeweiligen Seiten/Abschnitte der Website.
+
+Hinweis für Effingerstr. 47: Dort gibt es bisher Standard-BFH-WLan. Die Verbindung mit dem lokalen WLan klappt manchmal nicht bei allen. TN möglichst vor Kursbeginn bitten zu überprüfen. 
+Wenn Anmeldeseite nicht automatisch öffnet, ggf. URL von anderen TN kopieren/manuell eingeben. Notfalls auf Natel-Hotspot zurückgreifen.  
+
 ## 1. Begrüssung & Übersicht
 
 [» Workshop » Übersicht](../workshop/index.qmd)
@@ -39,10 +43,6 @@ Es sollte geklärt/verfügbar sein:
    2. [Ablauf](../workshop/index.qmd#ablauf) durchgehen
    3. Hinweis: Prompting Guide (ganz unten) benötigt evtl. BFH-Login
 4. Zeit für Fragen
-
-Notizen:
-
--
 
 ---
 
@@ -135,8 +135,6 @@ Generative KI: erstellt neue Daten
 *→ Wenn wir also z.B. einen Satzanfang vorgeben...*
 
 #### [05 - Was bedeutet das konkret?](../slides/frage-1-was-ist-ki/index.qmd#p1-f05-was-bedeutet-das-konkret)
-
--
 
 *→ Aufgrund der Wahrscheinlichkeit ist jede tatsächliche Generierung anders. Wie können wir das sehen?*
 
@@ -244,25 +242,15 @@ Für die Lehre heisst das: KI-Antworten sind kein neutrales Gegenüber. Wer die 
 
 #### [12 - "Think Deeper" in Copilot](../slides/frage-1-was-ist-ki/index.qmd#p1-f12-think-deeper)
 
--
-
 *→*
 
 #### [13 - Warum funktioniert "Denken"?](../slides/frage-1-was-ist-ki/index.qmd#p1-f13-warum-denken)
-
--
 
 *→*
 
 #### [14 - Takeaway](../slides/frage-1-was-ist-ki/index.qmd#p1-f14-takeaway)
 
--
-
 #### [Reflexion (auf Präsentationsseite ganz nach unten scrollen)](../workshop/frage-1-was-ist-ki/index.qmd#kurze-reflexion-3-min)
-
-Notizen:
-
--
 
 ---
 
@@ -291,15 +279,9 @@ Bei Wahl von Edit (Stift-Icon bei Hovering über altem Prompt) macht Copilot im 
 
 #### [Gemeinsam ausprobieren (5 min)](../exercises/copilot-einstieg/index.qmd#gemeinsam)
 
--
-
 #### [Selbstständig erkunden (8 min)](../exercises/copilot-einstieg/index.qmd#selbststaendig)
 
--
-
 #### [Kurzer Austausch (3 min)](../exercises/copilot-einstieg/index.qmd#austausch)
-
--
 
 
 Spätestens hier: PAUSE! (15 min)
@@ -310,8 +292,6 @@ Spätestens hier: PAUSE! (15 min)
 
 #### [Reflektion](../exercises/copilot-einstieg/index.qmd#reflektion)
 
--
-
 Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 ### 4b. Präsentation
@@ -320,8 +300,6 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 [→ Folien](../slides/frage-2-wozu-kann-ki/index.qmd)
 
 #### [01 - Frage 2: Wofür kann KI verwendet werden?](../slides/frage-2-wozu-kann-ki/index.qmd) — *Möglichkeiten, Grenzen und was an der BFH gilt*
-
--
 
 *→ Sprachmodelle noch die Grundlage, aber*
 
@@ -334,8 +312,6 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 
 #### [03 - Fragen beantworten](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f03-fragen-beantworten)
 
--
-
 *→*
 
 #### [04 - Bilder analysieren](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f04-bilder-analysieren)
@@ -345,8 +321,6 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 *→*
 
 #### [05 - Dokumente zusammenfassen](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f05-dokumente-zusammenfassen)
-
--
 
 *→*
 
@@ -363,8 +337,6 @@ Referenz: [Prompting für Einsteiger](../resources/prompting-basics/index.qmd)
 *→*
 
 #### [08 - Datenanalyse](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f08-datenanalyse)
-
--
 
 *→ Darüber hinaus, viele spezialisierte Anwendungen*
 
@@ -433,8 +405,6 @@ Source: N. Y. Times, “Chatbots Can Go Into a Delusional Spiral. Here’s How I
 
 #### [14 - Rechtliche Aspekte](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f14-rechtliche-aspekte)
 
--
-
 *→ Was bedeutet das für die Praxis?*
 
 #### [15 - Was darf in den Chatbot?](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f15-was-darf-in-chatbot)
@@ -449,19 +419,13 @@ Source: N. Y. Times, “Chatbots Can Go Into a Delusional Spiral. Here’s How I
 
 #### [16 - Freigegebene Tools](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f16-freigegebene-tools)
 
--
-
 *→*
 
 #### [17 - Datenschutz: Copilot](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f17-datenschutz-copilot)
 
--
-
 *→*
 
 #### [18 - Takeaway](../slides/frage-2-wozu-kann-ki/index.qmd#p2-f18-takeaway)
-
--
 *→ Dazu nun eine kleine Übung*
 
 ### 4c. Übung: Fakten-Check
@@ -481,31 +445,17 @@ Source: N. Y. Times, “Chatbots Can Go Into a Delusional Spiral. Here’s How I
 
 #### [I do (3 min)](../exercises/fakten-check/index.qmd#i-do)
 
--
-
 #### [Evaluations-Checkliste](../exercises/fakten-check/index.qmd#checkliste)
-
--
 
 #### [We do (5 min)](../exercises/fakten-check/index.qmd#we-do)
 
--
-
 #### [You do (6 min)](../exercises/fakten-check/index.qmd#you-do)
-
--
 
 #### [Austausch (3 min)](../exercises/fakten-check/index.qmd#austausch)
 
--
-
 #### [Debrief im Plenum](../exercises/fakten-check/index.qmd#debrief)
 
--
-
 #### [Kurze Reflexion (2 min)](../exercises/fakten-check/index.qmd#kurze-reflexion-2-min)
-
--
 
 ---
 
@@ -539,25 +489,17 @@ Source: N. Y. Times, “Chatbots Can Go Into a Delusional Spiral. Here’s How I
 
 #### [03 - Die zwei Fragen](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f03-zwei-fragen)
 
--
-
 *→*
 
 #### [04 - Das Produktivitäts-Lern-Paradox](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f04-produktivitaets-lern-paradox)
-
--
 
 *→*
 
 #### [05 - Für Lehrende vs. Studierende](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f05-lehrende-vs-studierende)
 
--
-
 *→*
 
 #### [06 - Takeaway](../slides/frage-3-wozu-soll-ich/index.qmd#p3-f06-takeaway)
-
--
 
 ### 5b. Webseite: Vertiefung
 
@@ -570,8 +512,6 @@ Source: N. Y. Times, “Chatbots Can Go Into a Delusional Spiral. Here’s How I
 
 #### Szenarien diskutieren (15 min)
 
--
-
 #### Debrief im Plenum (10 min)
 
 - eine Erkenntnis: Einordnung hängt vom Lernziel ab. 
@@ -582,42 +522,30 @@ Source: N. Y. Times, “Chatbots Can Go Into a Delusional Spiral. Here’s How I
 
 [→ Abschluss](../workshop/abschluss/index.qmd)
 
-**Evaluationslink verfügbar machen **(als QR-Code funktioniert nicht gut)
+**Evaluationslink verfügbar machen** (als QR-Code funktioniert nicht gut)
 
 #### [Reflektion (Teil 1)](../workshop/abschluss/index.qmd#reflektion-teil-1)
 
 Active Retrieval
-
--
 
 #### [Eine Sache, die du morgen anders machst](../workshop/abschluss/index.qmd#eine-sache-die-du-morgen-anders-machst)
 
 1. Konkreter Vorsatz (3 min)
 2. Austausch (5 min)
 
--
-
 #### [Was wir heute gemacht haben](../workshop/abschluss/index.qmd#was-wir-heute-gemacht-haben)
 
 Zusammenfassung
-
--
 
 #### [Reflektion (Teil 2)](../workshop/abschluss/index.qmd#reflektion-teil-2)
 
 Transfer
 
--
-
 #### [Die nächste Frage](../workshop/abschluss/index.qmd#die-nächste-frage)
 
 Ausblick auf Intermediate
 
--
-
 #### [Ressourcen](../workshop/abschluss/index.qmd#ressourcen)
-
--
 
 ---
 
