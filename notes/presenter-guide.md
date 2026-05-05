@@ -23,8 +23,11 @@ Es sollte geklärt/verfügbar sein:
 > Notizen entlang des Workshop-Ablaufs.
 > Links verweisen auf die jeweiligen Seiten/Abschnitte der Website.
 
-Hinweis für Effingerstr. 47: Dort gibt es bisher Standard-BFH-WLan. Die Verbindung mit dem lokalen WLan klappt manchmal nicht bei allen. TN möglichst vor Kursbeginn bitten zu überprüfen. 
-Wenn Anmeldeseite nicht automatisch öffnet, ggf. URL von anderen TN kopieren/manuell eingeben. Notfalls auf Natel-Hotspot zurückgreifen.  
+Troubleshooting WLAN Zugang (insb. Effingerstr. 47): 
+Falls automatisches Öffnen der Anmeldeseite nicht funktioniert:
+- die Anmeldeseite für BFH_xxx WLans ist [wifi.bfh.ch](https://wifi.bfh.ch). 
+- ansonsten versuchen das Netzwerk zu "vergessen" und dann neu darauf zuzugreifen
+- Notfalls auf Natel-Hotspot zurückgreifen.  
 
 ## 1. Begrüssung & Übersicht
 
