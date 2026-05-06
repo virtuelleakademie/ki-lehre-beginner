@@ -99,6 +99,14 @@ Was bedeutet "nächstes Wort vorhersagen" genauer?
 
 Jetzt stellst du eigene Fragen. **Probiere mindestens zwei der folgenden Optionen aus**, um ein Gefühl für verschiedene Anwendungen zu bekommen.
 
+**Für jede Interaktion notiere:**
+
+- Was hast du gefragt?
+- Wie war die Antwort?
+- Hast du etwas Unerwartetes bemerkt?
+
+**Tipp**: Stelle bei mindestens einer Antwort eine Nachfrage, um die Verfeinerung zu üben.
+
 **Option A: Fachliche Frage**
 
 Stelle eine einfache Frage aus deinem Fachgebiet, deren Antwort du kennst.
@@ -123,13 +131,6 @@ Frage nach einer konkreten Aufgabe.
 Erstelle drei Beispielaufgaben zum Thema [THEMA] für Erstsemester.
 :::
 
-**Für jede Interaktion notiere:**
-
-- Was hast du gefragt?
-- Wie war die Antwort?
-- Hast du etwas Unerwartetes bemerkt?
-
-**Tipp**: Stelle bei mindestens einer Antwort eine Nachfrage, um die Verfeinerung zu üben.
 :::
 
 ::: {.pro-tip}
