@@ -13,6 +13,8 @@ Der Guide ist als ***lebendes Dokument*** gedacht und kann nach Bedarf ergänzt 
 
 
 ## 0. Vorab
+Neben Präsentationen auch mit Website und Hintergrundwissen vertraut machen. 
+
 Es sollte geklärt/verfügbar sein - (ggf. bei Denise Stettler nachfragen):
 
 - TN-Liste
