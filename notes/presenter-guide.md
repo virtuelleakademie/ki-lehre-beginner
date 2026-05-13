@@ -240,6 +240,7 @@ Für die Lehre heisst das: KI-Antworten sind kein neutrales Gegenüber. Wer die 
 
 - 9.8 ist grösser, da 9.80
 <!-- TODO: ggf. Übung LM Studio mit/ohne Thinking zeigen, z.b. mit 9.11 vs. 9.8 aufgabe.-->
+- Hinweis: Moderne Chatbots meist korrekt, da sie im Hintergrund bereits mehr machen.
 
 *→*
 
