@@ -13,7 +13,7 @@ Der Guide ist als ***lebendes Dokument*** gedacht und kann nach Bedarf ergänzt 
 
 
 ## 0. Vorab
-Es sollte geklärt/verfügbar sein:
+Es sollte geklärt/verfügbar sein - (ggf. bei Denise Stettler nachfragen):
 
 - TN-Liste
 - Evaluationslink
