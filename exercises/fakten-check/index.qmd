@@ -13,16 +13,15 @@ sidebar: exercises
 ::: {.key-point}
 ## Die Struktur dieser Übung
 
-Diese Übung folgt dem Prinzip [**I do → We do → You do**](https://evidencebasedteaching.org/the-i-do-we-do-you-do-model-explained/):
+Diese Übung folgt dem (verkürzten) Prinzip [**I do → You do**](https://evidencebasedteaching.org/the-i-do-we-do-you-do-model-explained/):
 
 1. **I do**: Die Workshopleitung zeigt, wie man eine Chatbot-Antwort evaluiert
-2. **We do**: Wir evaluieren gemeinsam eine Antwort
-3. **You do**: Du evaluierst selbstständig Antworten aus deinem Fachgebiet
+2. **You do**: Du evaluierst selbstständig Antworten aus deinem Fachgebiet
 :::
 
 {{< timer 20 autostart=false >}}
 
-## Teil 1: Das Problem verstehen (3 min) {#problem}
+## Teil 0: Das Problem verstehen (3 min) {#problem}
 
 ::: {.key-point}
 ### Warum Chatbots halluzinieren
@@ -60,7 +59,7 @@ Ein Chatbot, der 9 von 10 Fragen richtig beantwortet, klingt bei allen 10 Antwor
 Bei komplexeren, fachspezifischen Fragen steigt die Fehlerquote deutlich. Aber auch dort klingen die Antworten gleich überzeugend.
 :::
 
-## Teil 2: I do (3 min) {#i-do}
+## Teil 2: 1 do (5 min) {#i-do}
 
 ::: {.demonstration}
 ## Die Workshopleitung demonstriert
@@ -89,7 +88,7 @@ Die Workshopleitung wendet die **Evaluations-Checkliste** an (siehe unten) und z
 
 Die Workshopleitung erklärt ihr Urteil und die Begründung.
 
-{{< timer 3 >}}
+{{< timer 5 >}}
 :::
 
 ## Evaluations-Checkliste {#checkliste}
@@ -97,68 +96,37 @@ Die Workshopleitung erklärt ihr Urteil und die Begründung.
 Nutze diese Checkliste für jede Chatbot-Antwort:
 
 ::: {.key-point}
-### 5 wichtige Prüffragen
+### Wichtige Prüffragen
 
-| # | Frage | Warnsignale |
+-	Verstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon?
+o	Ist der Jargon fachspezifisch oder hat sie ihn selbst erfunden?
+-	Verstehst du die inhaltlichen Zusammenhänge der Aussage?
+-	Ergeben die inhaltlichen Zusammenhänge der Aussage Sinn?
+
+
+-	Kannst du aufgrund deines Fachwissens beurteilen, ob der Sinn der Aussage korrekt ist? 
+o	Wenn nicht: Kannst du Hilfsmittel heranziehen (welche), um die Korrektheit zu Beurteilen? 
+	Z.B. unabhängige Suche
+
+
+
+| # | Frage | Erläuterung |
 |---|-------|-------------|
-| 1 | **Enthält die Antwort spezifische Fakten?** (Zahlen, Daten, Namen, Zitate) | Spezifische Details sind oft erfunden |
-| 2 | **Nennt die Antwort Quellen?** | Quellen können erfunden sein oder nicht existieren |
-| 3 | **Klingt die Antwort "zu perfekt"?** | Echte Fachinfos haben oft Nuancen und Einschränkungen |
-| 4 | **Liegt das Thema ausserhalb gängiger Informationen?** | Spezialisierte oder aktuelle Themen sind anfälliger |
-| 5 | **Kann ich das mit meinem Fachwissen prüfen?** | Was du nicht prüfen kannst, solltest du nicht verwenden |
+| 1 | **Enthält die Antwort spezifische Fakten?** (Zahlen, Daten, Namen, Zitate) | Spezifische Details sind oft erfunden. |
+| 2 | **Liegt das Thema ausserhalb gängiger Informationen?** | Spezialisierte oder aktuelle Themen sind anfälliger |
+| 3 | **Sind genannte Quellen real, seriös und belegen das, was sie sollen?** | Quellen können erfunden sein oder nicht existieren. |
+| 4 | **Verstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon?** | Hinter Jargon kann die KI fehler "verstecken". |
+| 5 | **Verstehst du die inhaltlichen Zusammenhänge der Aussage?** | Hier ist dein allgemeines Verständnis gefragt. |
+| 6 | **Ergeben die inhaltlichen Zusammenhänge der Aussage Sinn?** |Wenn nicht zufriedenstellend: KI bitten ihre Aussage klarzustellen. Ggf. um weniger Jargon-lastige Sprache bitten. Evtl. anderes Modell ausprobieren. |
+| 7 | **Kannst du aufgrund deines Fachwissens beurteilen, ob der Sinn der Aussage korrekt ist?** | Das ist die Crux! |
+| 8 | **Wenn nicht: Kannst du Hilfsmittel heranziehen (welche), um die Korrektheit zu Beurteilen?** | Z.B. unabhängige Suche |
 :::
 
 ::: {.key-point}
-### Die Bewertungskategorien
-
-| Symbol | Kategorie | Bedeutung | Konsequenz |
-|--------|-----------|-----------|------------|
-| ✓ | **Korrekt** | Inhaltlich richtig, verifizierbar | Kann verwendet werden |
-| ~ | **Teilweise korrekt** | Grundidee stimmt, aber Details falsch/ungenau | Nur mit Korrekturen verwenden |
-| ✗ | **Falsch (Halluzination)** | Inhaltlich falsch, erfunden, oder irreführend | Nicht verwenden |
-| ? | **Nicht prüfbar** | Liegt ausserhalb meiner Expertise | Nicht verwenden ohne externe Prüfung |
+Wenn du alle Punkte positiv beantworten kannst: gut. Wenn nicht: Rufe dir in Erinnerung, wie KI Antworten generiert: Sie hat keinen Sinn für die inhaltliche Korrektheit einer Aussage und sie ist darauf trainiert, überzeugend zu formulieren. Die Aussage mag überzeugend klingen. Die Mehrzahl der Aussagen mögen korrekt sein. Aber wenn du den Inhalt einer spezifischen Aussage nicht bewerten kannst, ist ihre Korrektheit fragwürdig! 
 :::
 
-## Teil 3: We do (8 min) {#we-do}
-
-::: {.group}
-## Wir evaluieren gemeinsam
-
-Jetzt machen wir das zusammen. Alle stellen dieselbe Frage und evaluieren gemeinsam.
-
-**Schritt 1: Diesen Prompt kopieren und in Copilot eingeben**
-
-::: {.prompt}
-Wann wurde die Berner Fachhochschule gegründet und wie viele Studierende hat sie aktuell?
-:::
-
-**Schritt 2: Antwort lesen** (1 min)
-
-Lies die Antwort, die du bekommst.
-
-**Schritt 3: Checkliste anwenden** (3 min)
-
-Gehe die 5 Prüffragen durch:
-
-1. Enthält die Antwort spezifische Fakten? (Jahreszahl, Studierendenzahl)
-2. Nennt sie Quellen?
-3. Klingt sie "zu perfekt"?
-4. Ist das Thema spezialisiert oder aktuell?
-5. Kannst du das prüfen?
-
-**Schritt 4: Gemeinsame Diskussion** (4 min)
-
-- Was habt ihr gefunden?
-- Stimmt das Gründungsjahr?
-- Stimmt die Studierendenzahl?
-- Zu welcher Bewertung kommt ihr?
-
-*Falls die Antwort korrekt war:* Das ist gut, aber nicht der Punkt. Die Frage ist: Hättet ihr es gemerkt, wenn sie falsch gewesen wäre? Und wie viel Aufwand war die Verifikation?
-
-{{< timer 8 >}}
-:::
-
-## Teil 4: You do (6 min) {#you-do}
+## Teil 2: You do (8 min) {#you-do}
 
 ::: {.experiment}
 ## Selbstständig evaluieren
@@ -213,7 +181,7 @@ Der Punkt: Die Antwort klingt kompetent. Aber ob sie für deinen Fall richtig is
 1. Passe den Prompt an dein Fachgebiet an
 2. Stelle die Frage an Copilot
 3. Wende die Evaluations-Checkliste an
-4. Notiere dein Urteil (✓ / ~ / ✗ / ?) mit Begründung
+4. Notiere dein Urteil mit Begründung
 
 ### Dokumentation
 
@@ -221,10 +189,10 @@ Der Punkt: Die Antwort klingt kompetent. Aber ob sie für deinen Fall richtig is
 |-------------|-------------------------------|-------------|------------|
 | | | | |
 
-{{< timer 6 >}}
+{{< timer 8 >}}
 :::
 
-## Teil 5: Austausch (3 min) {#austausch}
+## Teil 3: Austausch (3 min) {#austausch}
 
 ::: {.group}
 ## Erfahrungen teilen
@@ -278,8 +246,6 @@ Für Lehrende bedeutet das:
 - Kritische Evaluation als Kompetenz vermitteln
 - Bewusstsein schaffen: **Expertise ist Voraussetzung für Evaluation**
 :::
-
-
 
 ## Kurze Reflexion (2 min)
 
