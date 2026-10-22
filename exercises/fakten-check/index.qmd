@@ -101,17 +101,17 @@ Nutze diese Checkliste für jede Chatbot-Antwort:
 | # | Frage | Erläuterung |
 |---|-------|-------------|
 | 1 | **Enthält die Antwort spezifische Fakten?** (Zahlen, Daten, Namen, Zitate) | Spezifische Details sind oft erfunden. |
-| 2 | **Liegt das Thema ausserhalb gängiger Informationen?** | Spezialisierte oder aktuelle Themen sind anfälliger |
+| 2 | **Liegt das Thema ausserhalb gängiger Informationen?** | Spezialisierte oder aktuelle Themen sind anfälliger. |
 | 3 | **Sind genannte Quellen real, seriös und belegen das, was sie sollen?** | Quellen können erfunden sein oder nicht existieren. |
-| 4 | **Verstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon?** | Hinter Jargon kann die KI fehler "verstecken". |
+| 4 | **Verstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon?** | Hinter Jargon kann die KI Fehler "verstecken". |
 | 5 | **Verstehst du die inhaltlichen Zusammenhänge der Aussage?** | Hier ist dein allgemeines Verständnis gefragt. |
-| 6 | **Ergeben die inhaltlichen Zusammenhänge der Aussage Sinn?** |Wenn nicht zufriedenstellend: KI bitten ihre Aussage klarzustellen. Ggf. um weniger Jargon-lastige Sprache bitten. Evtl. anderes Modell ausprobieren. |
+| 6 | **Ergeben die inhaltlichen Zusammenhänge der Aussage Sinn?** |Wenn nicht zufriedenstellend: KI instruieren ihre Aussage klarzustellen. Ggf. weniger Jargon-lastige Sprache fordern. Evtl. anderes Modell ausprobieren. |
 | 7 | **Kannst du aufgrund deines Fachwissens beurteilen, ob der Sinn der Aussage korrekt ist?** | Das ist die Crux! |
 | 8 | **Wenn nicht: Kannst du Hilfsmittel heranziehen (welche), um die Korrektheit zu Beurteilen?** | Z.B. unabhängige Suche |
 :::
 
 ::: {.key-point}
-Wenn du alle Punkte positiv beantworten kannst: gut. Wenn nicht: Rufe dir in Erinnerung, wie KI Antworten generiert: Sie hat keinen Sinn für die inhaltliche Korrektheit einer Aussage und sie ist darauf trainiert, überzeugend zu formulieren. Die Aussage mag überzeugend klingen. Die Mehrzahl der Aussagen mögen korrekt sein. Aber wenn du den Inhalt einer spezifischen Aussage nicht bewerten kannst, ist ihre Korrektheit fragwürdig! 
+Wenn du die Fragen zu einer positiven Bewertung führen: gut. Wenn nicht: Rufe dir in Erinnerung, wie KI Antworten generiert: Sie hat keinen Sinn für die inhaltliche Korrektheit einer Aussage und sie ist darauf trainiert, überzeugend zu formulieren. Die Aussage mag überzeugend klingen. Die Mehrzahl der Aussagen mögen korrekt sein. Aber wenn du den Inhalt einer spezifischen Aussage nicht bewerten kannst, ist ihre Korrektheit fragwürdig! 
 :::
 
 ## Teil 2: You do (8 min) {#you-do}
