@@ -22,14 +22,6 @@ about:
 
 Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.
 
-
-{{< bi calendar-event >}} 23. Januar 2026
-
-{{< bi clock >}} 9:00–12:00 Uhr
-
-{{< bi map >}} P103 im Pavillion, Dept. W, Brückenstrasse 73, 3005 Bern
-
-
 ### Inhalt
 
 - [Workshop](workshop/index.qmd): Ablauf und Lernziele
