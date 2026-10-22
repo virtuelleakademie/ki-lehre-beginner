@@ -64,7 +64,8 @@ Moderne KI-Interfaces sind zumeist Agenten, bzw. Multi-Agent-Frameworks.
 
 ## Agenten  {#p2-f10-agenten}
 
-Die meisten KI-Interfaces derzeit arbeiten "agentisch", d.h. ein agentisches LLM
+:::{.r-fit-text}
+Die meisten KI-Interfaces derzeit arbeiten "agentisch", d.h. ein agentisches LLM...
 
 - ist durch Systemprompts spezialisiert
 - kann "Werkzeuge" nutzen
@@ -73,6 +74,7 @@ Die meisten KI-Interfaces derzeit arbeiten "agentisch", d.h. ein agentisches LLM
 - kann Ergebnisse / Erkenntnisse zwischenspeichern
 
 In "Multi-Agent-Frameworks" kollaborieren mehrere solcher Agenten miteinander. Sie erreichen so ein autonomeres, zielgerichteteres und spezialisierteres Handeln als ein einfaches LLM. 
+:::
 
 ## Aber: Grenzen und Gefahren {#p2-f10-grenzen-gefahren}
 
