@@ -98,18 +98,6 @@ Nutze diese Checkliste für jede Chatbot-Antwort:
 ::: {.key-point}
 ### Wichtige Prüffragen
 
--	Verstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon?
-o	Ist der Jargon fachspezifisch oder hat sie ihn selbst erfunden?
--	Verstehst du die inhaltlichen Zusammenhänge der Aussage?
--	Ergeben die inhaltlichen Zusammenhänge der Aussage Sinn?
-
-
--	Kannst du aufgrund deines Fachwissens beurteilen, ob der Sinn der Aussage korrekt ist? 
-o	Wenn nicht: Kannst du Hilfsmittel heranziehen (welche), um die Korrektheit zu Beurteilen? 
-	Z.B. unabhängige Suche
-
-
-
 | # | Frage | Erläuterung |
 |---|-------|-------------|
 | 1 | **Enthält die Antwort spezifische Fakten?** (Zahlen, Daten, Namen, Zitate) | Spezifische Details sind oft erfunden. |
