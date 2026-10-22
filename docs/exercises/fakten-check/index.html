@@ -91,6 +91,83 @@ ul.task-list li input[type="checkbox"] {
   });
 </script>
 <style>
+div.callout-pro-tip.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-pro-tip.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout.callout-pro-tip.callout-style-default .callout-icon::before, div.callout.callout-pro-tip.callout-titled .callout-icon::before {
+  content: '✧';
+  background-image: none;
+}
+div.callout-reflect.callout {
+  border-left-color: #D4A03E;
+}
+div.callout-reflect.callout-style-default > .callout-header {
+  background-color: rgba(212, 160, 62, 0.13);
+}
+div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout.callout-reflect.callout-style-default .callout-icon::before, div.callout.callout-reflect.callout-titled .callout-icon::before {
+  content: '🧠';
+  background-image: none;
+}
+div.callout-individual.callout {
+  border-left-color: #A3195B;
+}
+div.callout-individual.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout.callout-individual.callout-style-default .callout-icon::before, div.callout.callout-individual.callout-titled .callout-icon::before {
+  content: '♟';
+  background-image: none;
+}
+div.callout-group.callout {
+  border-left-color: #A3195B;
+}
+div.callout-group.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout.callout-group.callout-style-default .callout-icon::before, div.callout.callout-group.callout-titled .callout-icon::before {
+  content: '⚇';
+  background-image: none;
+}
+div.callout-prompt.callout {
+  border-left-color: #333333;
+}
+div.callout-prompt.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout.callout-prompt.callout-style-default .callout-icon::before, div.callout.callout-prompt.callout-titled .callout-icon::before {
+  content: '📋';
+  background-image: none;
+}
+div.callout-demonstration.callout {
+  border-left-color: #333333;
+}
+div.callout-demonstration.callout-style-default > .callout-header {
+  background-color: rgba(51, 51, 51, 0.13);
+}
+div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout.callout-demonstration.callout-style-default .callout-icon::before, div.callout.callout-demonstration.callout-titled .callout-icon::before {
+  content: '▶';
+  background-image: none;
+}
+div.callout-warning.callout {
+  border-left-color: #A3195B;
+}
+div.callout-warning.callout-style-default > .callout-header {
+  background-color: rgba(163, 25, 91, 0.13);
+}
+div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
+div.callout.callout-warning.callout-style-default .callout-icon::before, div.callout.callout-warning.callout-titled .callout-icon::before {
+  content: '⚠';
+  background-image: none;
+}
 div.callout-key-point.callout {
   border-left-color: #D4A03E;
 }
@@ -111,83 +188,6 @@ div.callout-experiment.callout-style-default > .callout-header {
 div.callout-experiment .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
 div.callout.callout-experiment.callout-style-default .callout-icon::before, div.callout.callout-experiment.callout-titled .callout-icon::before {
   content: '🧪';
-  background-image: none;
-}
-div.callout-individual.callout {
-  border-left-color: #A3195B;
-}
-div.callout-individual.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-individual .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout.callout-individual.callout-style-default .callout-icon::before, div.callout.callout-individual.callout-titled .callout-icon::before {
-  content: '♟';
-  background-image: none;
-}
-div.callout-warning.callout {
-  border-left-color: #A3195B;
-}
-div.callout-warning.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-warning .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout.callout-warning.callout-style-default .callout-icon::before, div.callout.callout-warning.callout-titled .callout-icon::before {
-  content: '⚠';
-  background-image: none;
-}
-div.callout-prompt.callout {
-  border-left-color: #333333;
-}
-div.callout-prompt.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-prompt .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout.callout-prompt.callout-style-default .callout-icon::before, div.callout.callout-prompt.callout-titled .callout-icon::before {
-  content: '📋';
-  background-image: none;
-}
-div.callout-reflect.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-reflect.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-reflect .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout.callout-reflect.callout-style-default .callout-icon::before, div.callout.callout-reflect.callout-titled .callout-icon::before {
-  content: '🧠';
-  background-image: none;
-}
-div.callout-pro-tip.callout {
-  border-left-color: #D4A03E;
-}
-div.callout-pro-tip.callout-style-default > .callout-header {
-  background-color: rgba(212, 160, 62, 0.13);
-}
-div.callout-pro-tip .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout.callout-pro-tip.callout-style-default .callout-icon::before, div.callout.callout-pro-tip.callout-titled .callout-icon::before {
-  content: '✧';
-  background-image: none;
-}
-div.callout-group.callout {
-  border-left-color: #A3195B;
-}
-div.callout-group.callout-style-default > .callout-header {
-  background-color: rgba(163, 25, 91, 0.13);
-}
-div.callout-group .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout.callout-group.callout-style-default .callout-icon::before, div.callout.callout-group.callout-titled .callout-icon::before {
-  content: '⚇';
-  background-image: none;
-}
-div.callout-demonstration.callout {
-  border-left-color: #333333;
-}
-div.callout-demonstration.callout-style-default > .callout-header {
-  background-color: rgba(51, 51, 51, 0.13);
-}
-div.callout-demonstration .callout-toggle::before {  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(33, 37, 41)" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');}
-div.callout.callout-demonstration.callout-style-default .callout-icon::before, div.callout.callout-demonstration.callout-titled .callout-icon::before {
-  content: '▶';
   background-image: none;
 }
 div.callout-scenario.callout {
@@ -624,12 +624,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><p>Verstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon? o Ist der Jargon fachspezifisch oder hat sie ihn selbst erfunden?</p></li>
-<li><p>Verstehst du die inhaltlichen Zusammenhänge der Aussage?</p></li>
-<li><p>Ergeben die inhaltlichen Zusammenhänge der Aussage Sinn?</p></li>
-<li><p>Kannst du aufgrund deines Fachwissens beurteilen, ob der Sinn der Aussage korrekt ist? o Wenn nicht: Kannst du Hilfsmittel heranziehen (welche), um die Korrektheit zu Beurteilen?  Z.B. unabhängige Suche</p></li>
-</ul>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 13%">
@@ -652,7 +646,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <tr class="even">
 <td>2</td>
 <td><strong>Liegt das Thema ausserhalb gängiger Informationen?</strong></td>
-<td>Spezialisierte oder aktuelle Themen sind anfälliger</td>
+<td>Spezialisierte oder aktuelle Themen sind anfälliger.</td>
 </tr>
 <tr class="odd">
 <td>3</td>
@@ -662,7 +656,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <tr class="even">
 <td>4</td>
 <td><strong>Verstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon?</strong></td>
-<td>Hinter Jargon kann die KI fehler “verstecken”.</td>
+<td>Hinter Jargon kann die KI Fehler “verstecken”.</td>
 </tr>
 <tr class="odd">
 <td>5</td>
@@ -672,7 +666,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <tr class="even">
 <td>6</td>
 <td><strong>Ergeben die inhaltlichen Zusammenhänge der Aussage Sinn?</strong></td>
-<td>Wenn nicht zufriedenstellend: KI bitten ihre Aussage klarzustellen. Ggf. um weniger Jargon-lastige Sprache bitten. Evtl. anderes Modell ausprobieren.</td>
+<td>Wenn nicht zufriedenstellend: KI instruieren ihre Aussage klarzustellen. Ggf. weniger Jargon-lastige Sprache fordern. Evtl. anderes Modell ausprobieren.</td>
 </tr>
 <tr class="odd">
 <td>7</td>
@@ -698,7 +692,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Wenn du alle Punkte positiv beantworten kannst: gut. Wenn nicht: Rufe dir in Erinnerung, wie KI Antworten generiert: Sie hat keinen Sinn für die inhaltliche Korrektheit einer Aussage und sie ist darauf trainiert, überzeugend zu formulieren. Die Aussage mag überzeugend klingen. Die Mehrzahl der Aussagen mögen korrekt sein. Aber wenn du den Inhalt einer spezifischen Aussage nicht bewerten kannst, ist ihre Korrektheit fragwürdig!</p>
+<p>Wenn du die Fragen zu einer positiven Bewertung führen: gut. Wenn nicht: Rufe dir in Erinnerung, wie KI Antworten generiert: Sie hat keinen Sinn für die inhaltliche Korrektheit einer Aussage und sie ist darauf trainiert, überzeugend zu formulieren. Die Aussage mag überzeugend klingen. Die Mehrzahl der Aussagen mögen korrekt sein. Aber wenn du den Inhalt einer spezifischen Aussage nicht bewerten kannst, ist ihre Korrektheit fragwürdig!</p>
 </div>
 </div>
 </section>

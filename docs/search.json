@@ -704,14 +704,14 @@
     "href": "index.html",
     "title": "KI in der Lehre: Beginner",
     "section": "",
-    "text": "Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.\n 23. Januar 2026\n 9:00–12:00 Uhr\n P103 im Pavillion, Dept. W, Brückenstrasse 73, 3005 Bern\n\n\n\nWorkshop: Ablauf und Lernziele\nSlides: Präsentationen zum Workshop\nÜbungen: Praktische Aufgaben und Reflexionen"
+    "text": "Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.\n\n\n\nWorkshop: Ablauf und Lernziele\nSlides: Präsentationen zum Workshop\nÜbungen: Praktische Aufgaben und Reflexionen"
   },
   {
     "objectID": "index.html#willkommen",
     "href": "index.html#willkommen",
     "title": "KI in der Lehre: Beginner",
     "section": "",
-    "text": "Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.\n 23. Januar 2026\n 9:00–12:00 Uhr\n P103 im Pavillion, Dept. W, Brückenstrasse 73, 3005 Bern\n\n\n\nWorkshop: Ablauf und Lernziele\nSlides: Präsentationen zum Workshop\nÜbungen: Praktische Aufgaben und Reflexionen"
+    "text": "Diese Seite begleitet den Einführungsworkshop zu generativer KI in der Hochschulbildung.\n\n\n\nWorkshop: Ablauf und Lernziele\nSlides: Präsentationen zum Workshop\nÜbungen: Praktische Aufgaben und Reflexionen"
   },
   {
     "objectID": "index.html#kontakt",
@@ -1026,7 +1026,7 @@
     "href": "exercises/fakten-check/index.html#checkliste",
     "title": "Fakten-Check",
     "section": "Evaluations-Checkliste",
-    "text": "Evaluations-Checkliste\nNutze diese Checkliste für jede Chatbot-Antwort:\n\n\n\n\n\n\nKey-pointWichtige Prüffragen\n\n\n\n\nVerstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon? o Ist der Jargon fachspezifisch oder hat sie ihn selbst erfunden?\nVerstehst du die inhaltlichen Zusammenhänge der Aussage?\nErgeben die inhaltlichen Zusammenhänge der Aussage Sinn?\nKannst du aufgrund deines Fachwissens beurteilen, ob der Sinn der Aussage korrekt ist? o Wenn nicht: Kannst du Hilfsmittel heranziehen (welche), um die Korrektheit zu Beurteilen?  Z.B. unabhängige Suche\n\n\n\n\n\n\n\n\n\n#\nFrage\nErläuterung\n\n\n\n\n1\nEnthält die Antwort spezifische Fakten? (Zahlen, Daten, Namen, Zitate)\nSpezifische Details sind oft erfunden.\n\n\n2\nLiegt das Thema ausserhalb gängiger Informationen?\nSpezialisierte oder aktuelle Themen sind anfälliger\n\n\n3\nSind genannte Quellen real, seriös und belegen das, was sie sollen?\nQuellen können erfunden sein oder nicht existieren.\n\n\n4\nVerstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon?\nHinter Jargon kann die KI fehler “verstecken”.\n\n\n5\nVerstehst du die inhaltlichen Zusammenhänge der Aussage?\nHier ist dein allgemeines Verständnis gefragt.\n\n\n6\nErgeben die inhaltlichen Zusammenhänge der Aussage Sinn?\nWenn nicht zufriedenstellend: KI bitten ihre Aussage klarzustellen. Ggf. um weniger Jargon-lastige Sprache bitten. Evtl. anderes Modell ausprobieren.\n\n\n7\nKannst du aufgrund deines Fachwissens beurteilen, ob der Sinn der Aussage korrekt ist?\nDas ist die Crux!\n\n\n8\nWenn nicht: Kannst du Hilfsmittel heranziehen (welche), um die Korrektheit zu Beurteilen?\nZ.B. unabhängige Suche\n\n\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nWenn du alle Punkte positiv beantworten kannst: gut. Wenn nicht: Rufe dir in Erinnerung, wie KI Antworten generiert: Sie hat keinen Sinn für die inhaltliche Korrektheit einer Aussage und sie ist darauf trainiert, überzeugend zu formulieren. Die Aussage mag überzeugend klingen. Die Mehrzahl der Aussagen mögen korrekt sein. Aber wenn du den Inhalt einer spezifischen Aussage nicht bewerten kannst, ist ihre Korrektheit fragwürdig!",
+    "text": "Evaluations-Checkliste\nNutze diese Checkliste für jede Chatbot-Antwort:\n\n\n\n\n\n\nKey-pointWichtige Prüffragen\n\n\n\n\n\n\n\n\n\n\n\n#\nFrage\nErläuterung\n\n\n\n\n1\nEnthält die Antwort spezifische Fakten? (Zahlen, Daten, Namen, Zitate)\nSpezifische Details sind oft erfunden.\n\n\n2\nLiegt das Thema ausserhalb gängiger Informationen?\nSpezialisierte oder aktuelle Themen sind anfälliger.\n\n\n3\nSind genannte Quellen real, seriös und belegen das, was sie sollen?\nQuellen können erfunden sein oder nicht existieren.\n\n\n4\nVerstehst du alle Wörter in der Aussage oder verwendet die KI dir unbekannten Jargon?\nHinter Jargon kann die KI Fehler “verstecken”.\n\n\n5\nVerstehst du die inhaltlichen Zusammenhänge der Aussage?\nHier ist dein allgemeines Verständnis gefragt.\n\n\n6\nErgeben die inhaltlichen Zusammenhänge der Aussage Sinn?\nWenn nicht zufriedenstellend: KI instruieren ihre Aussage klarzustellen. Ggf. weniger Jargon-lastige Sprache fordern. Evtl. anderes Modell ausprobieren.\n\n\n7\nKannst du aufgrund deines Fachwissens beurteilen, ob der Sinn der Aussage korrekt ist?\nDas ist die Crux!\n\n\n8\nWenn nicht: Kannst du Hilfsmittel heranziehen (welche), um die Korrektheit zu Beurteilen?\nZ.B. unabhängige Suche\n\n\n\n\n\n\n\n\n\n\n\nKey-pointKernaussage\n\n\n\nWenn du die Fragen zu einer positiven Bewertung führen: gut. Wenn nicht: Rufe dir in Erinnerung, wie KI Antworten generiert: Sie hat keinen Sinn für die inhaltliche Korrektheit einer Aussage und sie ist darauf trainiert, überzeugend zu formulieren. Die Aussage mag überzeugend klingen. Die Mehrzahl der Aussagen mögen korrekt sein. Aber wenn du den Inhalt einer spezifischen Aussage nicht bewerten kannst, ist ihre Korrektheit fragwürdig!",
     "crumbs": [
       "Workshop",
       "Frage 2: Wofür kann KI verwendet werden?",
@@ -1212,6 +1212,17 @@
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Custom GPTs",
     "text": "Custom GPTs",
+    "crumbs": [
+      "Slides",
+      "Frage 2: Wofür kann KI verwendet werden?"
+    ]
+  },
+  {
+    "objectID": "slides/frage-2-wozu-kann-ki/index.html#p2-f10-agenten",
+    "href": "slides/frage-2-wozu-kann-ki/index.html#p2-f10-agenten",
+    "title": "Frage 2: Wofür kann KI verwendet werden?",
+    "section": "Agenten",
+    "text": "Agenten\nDie meisten KI-Interfaces derzeit arbeiten “agentisch”, d.h. ein agentisches LLM\n\nist durch Systemprompts spezialisiert\nkann “Werkzeuge” nutzen\n\nstrukturierter Aufruf von nicht-KI-tools\n\nkann andere LLMs /Agenten instruieren bzw. Instruktionen von diesen empfangen\nkann Ergebnisse / Erkenntnisse zwischenspeichern\n\nIn “Multi-Agent-Frameworks” kollaborieren mehrere solcher Agenten miteinander. Sie erreichen so ein autonomeres, zielgerichteteres und spezialisierteres Handeln als ein einfaches LLM.",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
