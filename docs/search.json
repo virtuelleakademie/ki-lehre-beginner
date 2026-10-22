@@ -1222,7 +1222,7 @@
     "href": "slides/frage-2-wozu-kann-ki/index.html#p2-f10-agenten",
     "title": "Frage 2: Wofür kann KI verwendet werden?",
     "section": "Agenten",
-    "text": "Agenten\nDie meisten KI-Interfaces derzeit arbeiten “agentisch”, d.h. ein agentisches LLM\n\nist durch Systemprompts spezialisiert\nkann “Werkzeuge” nutzen\n\nstrukturierter Aufruf von nicht-KI-tools\n\nkann andere LLMs /Agenten instruieren bzw. Instruktionen von diesen empfangen\nkann Ergebnisse / Erkenntnisse zwischenspeichern\n\nIn “Multi-Agent-Frameworks” kollaborieren mehrere solcher Agenten miteinander. Sie erreichen so ein autonomeres, zielgerichteteres und spezialisierteres Handeln als ein einfaches LLM.",
+    "text": "Agenten\n\nDie meisten KI-Interfaces derzeit arbeiten “agentisch”, d.h. ein agentisches LLM…\n\nist durch Systemprompts spezialisiert\nkann “Werkzeuge” nutzen\n\nstrukturierter Aufruf von nicht-KI-tools\n\nkann andere LLMs /Agenten instruieren bzw. Instruktionen von diesen empfangen\nkann Ergebnisse / Erkenntnisse zwischenspeichern\n\nIn “Multi-Agent-Frameworks” kollaborieren mehrere solcher Agenten miteinander. Sie erreichen so ein autonomeres, zielgerichteteres und spezialisierteres Handeln als ein einfaches LLM.",
     "crumbs": [
       "Slides",
       "Frage 2: Wofür kann KI verwendet werden?"
